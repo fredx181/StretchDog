@@ -1,17 +1,3 @@
-Package: openbox-light
-Architecture: all
-Version: 0.0.4-dd
-Maintainer: fredx181
-Installed-Size: 5700
-Depends: openbox, libdata-dump-perl, tint2, xdotool, nitrogen, obconf, conky, hsetroot, rox-filer, scrot, wbar, wbar-config, yad
-Filename: ./Included/openbox-light_0.0.4-dd_all.deb
-Size: 4170764
-MD5sum: a683a132b22983b00d6447eb4d15c3ed
-SHA1: 3488d44245d8143263bcbc944fde9402e56eee6a
-SHA256: b28fe64edae6ce88e827c0328b0988bc5311df8e6811957447d165819a50e98d
-SHA512: bf3b1a090330b2dd7d934e747f5f52d3483449501f839ebbea55719d0d9f842dcaa6d2f436ff8079a1cee30302c04d95ccc599fcd5ccf715d5e0eea2aaef4ddd
-Description: Openbox-light-setup, lightweight windowmanager
-
 Package: flashplayerchoice
 Architecture: all
 Version: 1.0.1
@@ -27,20 +13,6 @@ SHA512: d79af8a86062dd2078bb0f9222c50962c618afd53959c7b54f23f0e2290563f637756f5e
 Description: The flashplayerchoice script gives choice of several options to install flashplayer :
  - version 11 from https://dl.dropboxusercontent.com (= 19 Mb uncompressed)
  - Install flashplugin-nonfree with apt-get (= 25 Mb uncompressed)
-
-Package: openbox-light
-Architecture: all
-Version: 0.0.3-dd
-Maintainer: fredx181
-Installed-Size: 5700
-Depends: openbox, libdata-dump-perl, tint2, xdotool, nitrogen, obconf, conky, hsetroot, rox-filer, scrot, wbar, wbar-config, yad
-Filename: ./Included/openbox-light_0.0.3-dd_all.deb
-Size: 4170306
-MD5sum: ebfc73ebab2014cbfea41235a1578e4b
-SHA1: aa909bef447783e05fa07e21ffcf2449ccc39ff6
-SHA256: 53efb9bd53be2651775cc43e556064e44fd867465a53dd417bd718632abc0291
-SHA512: f3e65753e719e407a9870ab2a4ab449038ddee7814f48b00110468d40aeab3c56cb626f9b420dcec856431a71f0641ad9e29ac02b374db0d4d5b63c349328765
-Description: Openbox-light-setup, lightweight windowmanager
 
 Package: libgmlib0
 Architecture: amd64
@@ -361,24 +333,6 @@ Description: Load a *.squashfs or *.sfs module.
  - loadsfs-fuse activates a provided *.squashfs or *.sfs module from the commandline or:
  by drag and drop (can be used on a full install).
  - loadsfs-fuse-writesfs: basically the same as loadsfs-fuse but it leaves no traces in / (rootfs), instead it writes the config files (or any other) that a program creates to: /root/<name_of_module> directory
-
-Package: openbox-light
-Architecture: all
-Version: 0.0.6-dd
-Priority: required
-Essential: yes
-Maintainer: fredx181
-Installed-Size: 6000
-Depends: openbox, libdata-dump-perl, tint2, xdotool, nitrogen, obconf, conky, hsetroot, rox-filer, scrot, wbar, wbar-config, yad, openbox-keybinder
-Filename: ./Included/openbox-light_0.0.6-dd_all.deb
-Size: 4561760
-MD5sum: 463ac8b0242b9e54413b2dec0f0185e6
-SHA1: 044b8e096f43f3cc0a5285485eb8c158569b8de4
-SHA256: ef22c0e7f5c40f780b077bae170430f97a156e2b7389a1cda92e42539b2fe007
-SHA512: 3df7e3e2d9572206ef4cb9e666f508af53d89d993387b53afec4ff0a2396fb00e58dfa916cac5cc55f6347d78b3a715241190eb5a595edb7088627afaba20271
-Description: Openbox-light-setup, lightweight windowmanager
- Changes in v 0.0.5: Added keyboard shortcuts, info dialog at login
- Changes in v 0.0.6: Fix for v 0.0.5, not include user configuration files.
 
 Package: libgbm1
 Architecture: amd64
@@ -1026,13 +980,13 @@ Architecture: amd64
 Version: 0.0.1
 Maintainer: fredx181
 Installed-Size: 114
-Depends: libc6, openbox, openbox-light
+Depends: libc6, openbox
 Filename: ./Included/openbox-keybinder_0.0.1_amd64.deb
-Size: 24232
-MD5sum: 38152738f0ebc2821ff9044268214002
-SHA1: 8148476eab83c943bdf222d61c921e09b1fe3d05
-SHA256: 4110a728b0edc88ee80f598b76dc0298bdf406306479cfe18270f1e949544502
-SHA512: 16c1ab4bd052f4856a8500e1e75905d50defaabb3229d347a0c1fd9595d4a4f0a98180b5462ea21ef4870ae51796aaaafc93d4306e6f43504f35ed15de6cd8a5
+Size: 24238
+MD5sum: 9ae2adf161f0ac57f1c53f2d843aa0cc
+SHA1: 97af2e5dfacad9be09dc692f9a6c6b0ad656018d
+SHA256: 5453aea9f4ff7e0369bd128bb29a646ed605c77a51582765916600b674c277e8
+SHA512: 5139d15047152a900c8e6be3e41fe28454bddcec6279d462d4ea3d51f9daaf42611bfef9eafb000aa2c0610b2b780116915906a5e44a1734c529ea7ca188ec4d
 Description: Openbox keybind configuration GUI
 
 Package: domyfile
@@ -1119,24 +1073,6 @@ Description: x264 video coding library
  video streams.
  .
  This package contains the libx264 shared library.
-
-Package: openbox-light
-Architecture: all
-Version: 0.0.7-dd
-Priority: required
-Essential: yes
-Maintainer: fredx181
-Installed-Size: 6000
-Depends: openbox, libdata-dump-perl, tint2, xdotool, nitrogen, obconf, conky, hsetroot, rox-filer, scrot, wbar, wbar-config, yad, openbox-keybinder
-Filename: ./Included/openbox-light_0.0.7-dd_all.deb
-Size: 4561296
-MD5sum: 3a8a7cb53f5e4eba7810643dab4d9eeb
-SHA1: bd07668aa33532c51fde4f9360f0171f9af97d97
-SHA256: 4a4711e35951b1e8243012efc0b301469dd241267d061318f7585f4185c0101a
-SHA512: f1b3b4d6ead06b0aef09ca30ec66f6a39aab9c760e3a7b90123781570699ee5c5788af4d6f1e248518560eccbc915d2472cf85290e6caa0187bab04106b078fd
-Description: Openbox-light-setup, lightweight windowmanager
- Changes in v 0.0.5: Added keyboard shortcuts, info dialog at login
- Changes in v 0.0.6: Fix for v 0.0.5, not include user configuration files.
 
 Package: sfsload
 Architecture: all
@@ -2046,20 +1982,6 @@ Description: X/GTK+ and console FTP client (metapackage)
   * version for the console, using only GLib
  .
  This is an upgrade convenience package, it's only useful for depending on.
-
-Package: upgrade-kernel
-Architecture: all
-Version: 1.0.1
-Maintainer: fredx181 dog@root.nl
-Installed-Size: 20
-Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
-Filename: ./Extra/upgrade-kernel_1.0.1_all.deb
-Size: 10068
-MD5sum: 0460ee3ca0ad53c2ccccab4c5732ed55
-SHA1: b8bd370b123e4ddd82a5dcc53844f30a15854e67
-SHA256: 8851cc4102ebc0434e58f4c5eba63543b3b2e67f5cbb65a3c18627385dd7814f
-SHA512: 90288605f5c6d6cce24e2a3c591df71f96723580a6f60b6b871ea28db0a8ea4d34c99685cb5ccd59027652e6e3a97c1ec0853f055a9f75c8f1e40eaf1e26da87
-Description: Warning - This package works only in DebianDog!
 
 Package: xvidcap
 Architecture: amd64
