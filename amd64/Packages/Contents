@@ -1235,6 +1235,8 @@ usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-cli				    apt2sfs
 usr/local/bin/apt2sfs-cli-fullinst			    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
+usr/local/bin/clear-changes				    quick-remaster
+usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
 usr/local/bin/conv-sfs					    edit-sfs-pcmanfm
@@ -1288,6 +1290,9 @@ usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/openbox-menu				    jwm-setup-dd64
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/ppm2mpeg.sh				    xvidcap
+usr/local/bin/quick-remaster				    quick-remaster
+usr/local/bin/quick-remaster-start			    quick-remaster
+usr/local/bin/quick-remastergui				    quick-remaster
 usr/local/bin/remastercow				    remaster-scripts
 usr/local/bin/remastercow-start				    remaster-scripts
 usr/local/bin/remasterdog				    remaster-scripts
@@ -3271,6 +3276,7 @@ usr/share/applications/apt2sfs-cli.desktop		    apt2sfs
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/ceni.desktop			    ceni
+usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm
 usr/share/applications/desktop_view_edit.desktop	    desktop-editor
 usr/share/applications/domycommand.desktop		    domycommand
@@ -3297,6 +3303,8 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/pfind.desktop			    pfind
+usr/share/applications/quick-remaster.desktop		    quick-remaster
+usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/redshiftgui.desktop		    redshiftgui
 usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
@@ -3931,6 +3939,7 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-view
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
+usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
 usr/share/pixmaps/apt2sfs.png				    apt2sfs
 usr/share/pixmaps/browser-dload.png			    sfs-get-smokey-get
 usr/share/pixmaps/card24.png				    mount-wizard
@@ -3980,6 +3989,7 @@ usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64
+usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/restart.png				    jwm-setup-dd64
 usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/roxterm.xpm				    roxterm-common

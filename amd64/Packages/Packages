@@ -687,6 +687,24 @@ SHA256: c5033ef06e9bc2d752ccb4b54e64bb4eee47b55a7a7150dae90cd2971afb2154
 SHA512: c2613b838775837fb9c43bdb5acb111aa1ca450dd85b3997e95565d165eec91689dd5a12dcc07759a8add2875f96764285ad6ca78eae5d94b0c20899414dcd0c
 Description: Small old(er) version of zenity
 
+Package: quick-remaster
+Architecture: all
+Version: 1.0.6
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 49
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu
+Filename: ./Included/quick-remaster_1.0.6_all.deb
+Size: 9120
+MD5sum: f4b879ed3722024953a4e586f93f3d4d
+SHA1: b32c4515c72105f170d3983876f78c1b53848e0b
+SHA256: bb53909e071666ad4267dd77d8990e2645c335f6e25e20498e613d2e72405e46
+SHA512: 4a6d46c173761e582d8280e354210d8e49e12f2bfc8589a305e8c842697fb1e783162b9db1e89b6d7b3d7fe3c2c87948256aebc688afbad6ca413e49f6f4108c
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+
 Package: portablesfs-loadsfs-fuse
 Architecture: amd64
 Version: 1.0.6
