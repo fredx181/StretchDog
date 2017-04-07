@@ -93,7 +93,11 @@ cd ..
     fi
 done
 
+if [ "$(uname -m)" = "i686" ]; then
+loadmodule -a ../../../git.squashfs
+else
 loadmodule -a ../../../git64.squashfs
+fi
 
 . ../../../gitpushstretch-64
 
