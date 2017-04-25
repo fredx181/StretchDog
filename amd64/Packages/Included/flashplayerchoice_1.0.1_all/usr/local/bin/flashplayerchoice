@@ -1,0 +1,160 @@
+#!/bin/bash
+
+[ "`whoami`" != "root" ] && exec gsu "${0}"
+
+# openssl s_client -connect fpdownload.adobe.com:443 -showcerts
+
+CHOICE=$(yad --image="/usr/share/pixmaps/flash.png" --window-icon="/usr/share/pixmaps/flash.png" --image-on-top --list \
+    --title="Install or remove FlashPlayer" --height 290 --width 660 \
+    --text="  <b>Install or remove FlashPlayer</b> \n  Make your selection                           " \
+    --radiolist --center --borders 5 --print-column=2 \
+    --column="Pick" --column="Option" --hide-column 2 --column="Description" \
+    "FALSE" "flash11tar" "Version 11.2.202.596 tar (extracted in /usr/lib/mozilla/plugins), Install Size: 19MB " \
+    "TRUE" "flash25tar" "Latest Flashplayer from Adobe (extracted in /usr/lib/mozilla/plugins), Install Size: 16MB " \
+    "FALSE" "flash11inst" "Install flashplugin-nonfree with apt-get, Install Size: 25MB" \
+    "FALSE" "remflash25tar" "Remove latest Adobe version or 11.2.202.596 version" \
+    "FALSE" "remflash11inst" "Remove flashplugin-nonfree with apt-get (if installed)")
+
+[ $? -ne 0 ] && exit 1
+export CHOICE=$CHOICE
+
+run_xterm () {
+if [ "$CHOICE" = "flash11tar|" ]; then
+	if [ -L "/usr/lib/mozilla/plugins/flash-mozilla.so" ]; then
+yad --width=500 --title="Install FlashPlayer" --center --text="  It seems that you have already installed package 'flashplugin-nonfree'  \n  (Symlink 'flash-mozilla.so' found in /usr/lib/mozilla/plugins) \n \n  Click OK to remove it first before installing version 11.2.202.596  "
+   if [ $? -ne 0 ]; then
+   exit 1
+   else
+   apt-get purge -q -y flashplugin-nonfree
+   ret=$?
+   apt-get autoremove -q -y
+   dpkg --purge `dpkg --get-selections | grep deinstall | cut -f1` 2> /dev/null
+   [ "$ret" -eq 0 ] && echo -e "\e[0;32mSuccess, package flashplugin-nonfree has been removed\033[0m"
+   sleep 2
+   echo
+   fi
+	fi
+echo "Installing/extracting now flash-player-11.2.202.596..."
+mkdir /usr/lib/mozilla
+mkdir /usr/lib/mozilla/plugins
+cd /usr/lib/mozilla/plugins
+# Sort of wildcard workaround for wget: 'flashplayer11*'
+wget -r -e robots=off -nd -l1 -A "flashplayer11*" http://smokey01.com/OscarTalks/
+# Create variable to continue
+FLASH=$(ls flashplayer11*)
+mv $FLASH ${FLASH}.tar.gz
+tar -zxvf ${FLASH}.tar.gz
+rm -f ${FLASH}.tar.gz
+# Strip .pet from filename to get directory name.
+DIRFLASH=$(echo "${FLASH}" | sed '$s/....$//')
+mv $DIRFLASH/usr/lib/mozilla/plugins/libflashplayer.so /usr/lib/mozilla/plugins/libflashplayer.so
+rm -fr $DIRFLASH
+ret=$?
+rm -f flash-player-11.2.202.596.tar.gz*
+[ "$ret" -eq 0 ] && echo -e "\e[0;32mSuccess, flash-player-11.2.202.596 has been installed\033[0m"
+fi
+
+if [ "$CHOICE" = "flash25tar|" ]; then
+	if [ -L "/usr/lib/mozilla/plugins/flash-mozilla.so" ]; then
+yad --width=500 --title="Install FlashPlayer" --center --text="  It seems that you have already installed package 'flashplugin-nonfree'  \n  (Symlink 'flash-mozilla.so' found in /usr/lib/mozilla/plugins) \n \n  Click OK to remove it first before installing version 25.0.0.127  "
+   if [ $? -ne 0 ]; then
+   exit 1
+   else
+   apt-get purge -q -y flashplugin-nonfree
+   ret=$?
+   apt-get autoremove -q -y
+   dpkg --purge `dpkg --get-selections | grep deinstall | cut -f1` 2> /dev/null
+   [ "$ret" -eq 0 ] && echo -e "\e[0;32mSuccess, package flashplugin-nonfree has been removed\033[0m"
+   sleep 2
+   echo
+   fi
+	fi
+echo "Installing/extracting now flash_player_npapi_linux.i386.tar.gz..."
+cd /tmp
+mkdir .flash_update
+if [ ! -f .flash_update/index.html ]; then
+wget --no-check-certificate -O- --spider adobe.com/software/flash/about/ > .flash_update/flash_url 2>&1
+if grep -q '200 OK' .flash_update/flash_url 2> /dev/null; then
+wget -q -N -P .flash_update adobe.com/software/flash/about/
+else
+echo  -e "\e[0;31mThe Adobe web site appears to be unavailable at this time\033[0m"
+echo "Please try again......."
+rm -r .flash_update         
+fi;fi
+
+export LATEST_VERSION=`cat .flash_update/index.html | grep -A2 Linux | grep [0-9] | awk -F '[><]' '{print $3}' | tr -d "\n"`
+
+export INSTALLED_VERSION=$(busybox strings -n13 /usr/lib/mozilla/plugins/libflashplayer.so  | grep 'FlashPlayer_' | cut -d '_' -f2-5| tr '_' '.')
+
+if [ "$LATEST_VERSION" = "$INSTALLED_VERSION" ]; then
+echo "Adobe Flash is up to date..."
+read -s -n 1 -p "Press any key to close . . ."
+else
+mkdir -p /usr/lib/mozilla/plugins 2> /dev/null
+
+URL='fpdownload.adobe.com/get/flashplayer/pdc/'$LATEST_VERSION'/flash_player_npapi_linux.i386.tar.gz'
+wget --no-check-certificate -4 -c -t 5 -w 5 "$URL"
+tar -zxvf flash_player_npapi_linux.i386.tar.gz -C /usr/lib/mozilla/plugins/ libflashplayer.so &> /dev/null
+ret=$?
+[ "$ret" -eq 0 ] && echo -e "\e[0;32mSuccess, latest Adobe flashplayer has been installed\033[0m"
+rm -f flash_player_npapi_linux.i386.tar.gz
+rm -rf .flash_update
+fi
+
+fi
+
+if [ "$CHOICE" = "flash11inst|" ]; then
+	if [ -f "/usr/lib/mozilla/plugins/libflashplayer.so" ]; then
+yad --width=500 --title="Install FlashPlayer" --center --text="  It seems that you have already installed flashplayer \n  (File 'libflashplayer.so' found in /usr/lib/mozilla/plugins) \n \n  Click OK to remove it first before installing flashplugin-nonfree  " 
+   if [ $? -ne 0 ]; then
+   exit 1
+   else
+   rm -f /usr/lib/mozilla/plugins/libflashplayer.so
+[ "$?" -eq 0 ] && echo -e "\e[0;32mSuccess, flash-player has been removed\033[0m"
+sleep 2
+echo
+   fi
+	fi
+echo "Installing now flashplugin-nonfree..."
+apt-get update
+apt-get install -q -y flashplugin-nonfree
+ret=$?
+update-menus
+rm -f /var/cache/flashplugin-nonfree/*.tar.gz
+[ "$ret" -eq 0 ] && echo -e "\e[0;32mSuccess, flashplugin-nonfree has been installed\033[0m"
+fi
+
+if [ "$CHOICE" = "remflash11tar|" ]; then
+if [ ! -f "/usr/lib/mozilla/plugins/libflashplayer.so" ]; then
+yad --width=500 --title="Install or remove FlashPlayer" --center --text="  File 'libflashplayer.so' NOT found in /usr/lib/mozilla/plugins  \n  It seems that v 11.2.202.596 is not installed  " --button="gtk-close:0"
+exit
+fi
+rm -f /usr/lib/mozilla/plugins/libflashplayer.so
+[ "$?" -eq 0 ] && echo -e "\e[0;32mSuccess, flash-player-11.2.202.596 has been removed\033[0m"
+fi
+
+if [ "$CHOICE" = "remflash25tar|" ]; then
+if [ ! -f "/usr/lib/mozilla/plugins/libflashplayer.so" ]; then
+yad --width=500 --title="Install or remove FlashPlayer" --center --text="  File 'libflashplayer.so' NOT found in /usr/lib/mozilla/plugins  \n  It seems that flashplayer is not installed  " --button="gtk-close:0"
+exit
+fi
+rm -f /usr/lib/mozilla/plugins/libflashplayer.so
+[ "$?" -eq 0 ] && echo -e "\e[0;32mSuccess, flash-player has been removed\033[0m"
+fi
+
+if [ "$CHOICE" = "remflash11inst|" ]; then
+if [ ! -L "/usr/lib/mozilla/plugins/flash-mozilla.so" ]; then
+yad --width=500 --title="Install or remove FlashPlayer" --center --text="  Symlink 'flash-mozilla.so' NOT found in /usr/lib/mozilla/plugins  \n  It seems that the flashplugin-nonfree package is not installed  " --button="gtk-close:0"
+exit
+fi
+apt-get purge -q -y flashplugin-nonfree
+apt-get autoremove -q -y
+dpkg --purge `dpkg --get-selections | grep deinstall | cut -f1` 2> /dev/null
+fi
+
+read -s -n 1 -p "Press any key to close . . ."
+}
+export -f run_xterm
+
+xterm -T "Install FlashPlayer" -e /bin/bash -c run_xterm
+

@@ -1,0 +1,17 @@
+#Notify network_tray-2.7 of interface state changes
+
+issue_notices()
+{
+	case "$reason" in
+	BOUND|REBOOT|STATIC)
+		touch /tmp/.network_tray-${interface}_bound ;; #up
+	RELEASE|NOCARRIER)
+		rm -f /tmp/.network_tray-${interface}_bound ;; #release, down
+	esac
+}
+
+
+if echo "$reason" | grep -q -E 'BOUND|REBOOT|STATIC|RELEASE|NOCARRIER';then
+	issue_notices
+fi
+

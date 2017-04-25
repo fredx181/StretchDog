@@ -1,0 +1,17 @@
+#!/bin/sh
+# /usr/local/apps/Connect/AppRun
+# Wifi Connect/disconnect interface from network_tray
+# Argument 1: connect, disconnect
+
+RUNMODE="$1"
+
+case $RUNMODE in
+  --connect)
+   frisbee-wifi-connect
+   ;;
+  --disconnect)
+   frisbee-wifi-disconnect
+   ;;
+esac
+
+###END###

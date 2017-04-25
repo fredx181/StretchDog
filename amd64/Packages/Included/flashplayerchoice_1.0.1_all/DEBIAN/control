@@ -1,0 +1,19 @@
+Package: flashplayerchoice
+Maintainer: root
+Architecture: all
+Version: 1.0.3
+Installed-Size: 7 
+Depends: libc6, wget, yad, sed, apt, menu, tar, gsu | gksu
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - version 11 from https://dl.dropboxusercontent.com (= 19 Mb uncompressed)
+ - Install flashplugin-nonfree with apt-get (= 25 Mb uncompressed)
+
+
+
+
+
+
+
+
+
+

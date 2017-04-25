@@ -1,0 +1,16 @@
+#!/bin/sh
+
+export TEXTDOMAIN=frisbee
+export OUTPUT_CHARSET=UTF-8
+. gettext.sh
+
+[ -s /var/run/ppp-gprs.pid ] || exit
+PPPDPID=$(cat /var/run/ppp-gprs.pid)
+CONNECTEDDEV="$(ps | grep "^ *$PPPDPID" | grep 'pppd' | grep -v 'grep' | grep -o '/dev/[a-z][^ ]*')"
+echo "frisbee-gprs-disconnect - PPPDPID: $PPPDPID  CONNECTEDDEV: $CONNECTEDDEV  " >> /tmp/debug.log  #DEBUG
+[ "$CONNECTEDDEV" ] || exit
+
+kill $PPPDPID
+rm -f /var/run/ppp-gprs.pid
+
+gtkdialog-splash -timeout 15 -placement center -bg orange -text "`eval_gettext \"Mobile device \\\$CONNECTEDDEV disconnected\"`"

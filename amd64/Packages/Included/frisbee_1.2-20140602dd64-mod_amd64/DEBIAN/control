@@ -1,0 +1,14 @@
+Package: frisbee
+Priority: extra
+Section: checkinstall
+Installed-Size: 524
+Maintainer: root@jessie
+Depends: libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gtkdialog
+Architecture: amd64
+Version: 1.2-20140602dd64-mod
+Conflicts: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool
+Replaces: dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool
+Description: Wireless Network manager
+
+
+

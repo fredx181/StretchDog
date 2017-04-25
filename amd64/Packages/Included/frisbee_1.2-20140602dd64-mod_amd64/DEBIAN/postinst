@@ -1,0 +1,27 @@
+#!/bin/sh
+# postinst script for frisbee
+#
+# see: dh_installdeb(1)
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+
+
+if [ -x "/etc/init.d/frisbee" ]; then
+	update-rc.d frisbee defaults >/dev/null
+	if [ -n "$2" ]; then
+		_dh_action=restart
+	else
+		_dh_action=start
+	fi
+	invoke-rc.d frisbee $_dh_action || exit $?
+fi
+
+
+
+
+db_stop;
+
+exit 0

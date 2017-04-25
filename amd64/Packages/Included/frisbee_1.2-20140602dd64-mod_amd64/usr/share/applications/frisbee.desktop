@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Frisbee
+GenericName=Frisbee
+Icon=/usr/share/pixmaps/frisbee.png
+Comment=Frisbee wireless scanner
+Exec=frisbee
+Terminal=false
+Type=Application
+Categories=Application;Network
