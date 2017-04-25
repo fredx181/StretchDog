@@ -1,7 +1,0 @@
-#!/bin/bash
-INTERFACE=`cat /usr/local/Frisbee/interface`
-#. /usr/local/Frisbee/config
-. /usr/share/frisbee/func
-disconnect
-#reset-dhcp&
-grep -q '^wireless_enabled=0' /etc/frisbee/frisbee.conf || sed -i -e '/^wireless_enabled=/ s/=.*/=0/' /etc/frisbee/frisbee.conf

@@ -1,7 +1,0 @@
-?package(flashplayerchoice):\
-	needs="X11"\
-	section="Applications/System/Administration"\
-	title="FlashPlayer Choice"\
-	command="flashplayerchoice"\
-	icon="/usr/share/pixmaps/flash.png"
-

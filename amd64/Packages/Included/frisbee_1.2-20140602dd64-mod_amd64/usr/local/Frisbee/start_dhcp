@@ -1,5 +1,0 @@
-#!/bin/bash
-INTERFACE=`cat /usr/local/Frisbee/interface`
-#. /usr/local/Frisbee/config
-. /usr/lib/frisbee/func
-start_dhcp
