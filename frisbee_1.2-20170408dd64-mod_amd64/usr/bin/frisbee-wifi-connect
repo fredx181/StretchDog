@@ -1,5 +1,0 @@
-#!/bin/bash
-INTERFACE=`cat /etc/frisbee/interface`
-[ -d /usr/local/frisbee ] && . /usr/local/frisbee/func || . /usr/lib/frisbee/func
-connect
-#reset-dhcp&

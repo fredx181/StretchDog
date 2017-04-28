@@ -1,7 +1,0 @@
-?package(frisbee):\
-	needs="X11"\
-	section="Applications/System/Administration"\
-	title="Frisbee"\
-	command="/usr/bin/frisbee"\
-	icon="frisbee.png"
-
