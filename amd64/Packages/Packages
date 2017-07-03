@@ -399,6 +399,25 @@ Description: Yet Another Dialog - dialogs for shell
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
 
+Package: frisbee
+Architecture: amd64
+Version: 1.2-20170408dd64-mod
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 524
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
+Filename: ./Included/frisbee_1.2-20170408dd64-mod_amd64.deb
+Size: 92382
+MD5sum: e9f5e160750ff4147876e038bfd11422
+SHA1: d8298bfd7e8637bb2db402b42f262e44e05791b8
+SHA256: fde95f9295e15d08ded9258518fe685342158a0e1cc60503fe3fff0855a4ad95
+SHA512: 1d2425481fe9f60d8d3e0deff66a340d6d311f4c6570ef41b13552779e854b84b1379a2d41414097c36da3cc2376d88a81b3a064df2573112e88ac087850810c
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: mount-wizard
 Architecture: all
 Version: 1.0.2
@@ -686,6 +705,22 @@ SHA1: e25755342f65878514319641ca5bdf7140203dec
 SHA256: c5033ef06e9bc2d752ccb4b54e64bb4eee47b55a7a7150dae90cd2971afb2154
 SHA512: c2613b838775837fb9c43bdb5acb111aa1ca450dd85b3997e95565d165eec91689dd5a12dcc07759a8add2875f96764285ad6ca78eae5d94b0c20899414dcd0c
 Description: Small old(er) version of zenity
+
+Package: flashplayerchoice
+Architecture: amd64
+Version: 1.0.2
+Maintainer: root
+Installed-Size: 14
+Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.2_amd64.deb
+Size: 5706
+MD5sum: 266e3aa70d1f4e22434ac435a956fa04
+SHA1: d54046f1574777424ded459f246100fcaf3a74e4
+SHA256: 009bb231766242a81bfb79787b8b736c4420e59697adc2687f1aa66c1f17aa68
+SHA512: 93d31b831bd7e389a4cc55f520ada886a64602743c5f68e9d75492d53e9c21515168bfdb6b2d3e74a2a9228fb901b8ad5565bb5311856b3db6ac3f3c6d7cd403
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
+ - Download latest Flashplayer directly from Adobe
 
 Package: quick-remaster
 Architecture: all
