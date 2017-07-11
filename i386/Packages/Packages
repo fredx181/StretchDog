@@ -2723,28 +2723,6 @@ Description: Curses interface to /etc/network/interfaces
  Ceni can manage basic network interface ifupdown configuration stanzas for
  ethernet and wireless devices.
 
-Package: ceni
-Architecture: all
-Version: 2.31b
-Priority: optional
-Section: net
-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Installed-Size: 235
-Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
-Suggests: wpagui
-Conflicts: frisbee, wifibox, wifibox-dhcpcd
-Replaces: frisbee, wifibox, wifibox-dhcpcd
-Filename: ./Extra/ceni_2.31b_all.deb
-Size: 67182
-MD5sum: 34897ec21217c7406ae7a4dcf5cdceb0
-SHA1: 9f74ff46e08f13634e5012bd2ac0c301d67332f4
-SHA256: bbb44ce57c7805e0b392d017e58cf18443d0e57aa45373c10eb81e9d5821c73a
-SHA512: b5f8357c5b3433006382cc902eb2a0f4bb6c345e17023dbc314806e317d2faa03e2f384f1a613880ca49103f189da2245c4fa8898e31e5ded5ed11254a3cc1cc
-Description: Curses interface to /etc/network/interfaces
- A Curses user interface for configuring network interfaces with ifupdown.
- Ceni can manage basic network interface ifupdown configuration stanzas for
- ethernet and wireless devices.
-
 Package: dogradio
 Architecture: i386
 Version: 0.0.7b
@@ -3496,6 +3474,28 @@ SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
 SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
+
+Package: ceni
+Architecture: i386
+Version: 2.31b
+Priority: optional
+Section: net
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Installed-Size: 235
+Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
+Suggests: wpagui
+Conflicts: frisbee, wifibox, wifibox-dhcpcd
+Replaces: frisbee, wifibox, wifibox-dhcpcd
+Filename: ./Extra/ceni_2.31b_i386.deb
+Size: 67164
+MD5sum: 010a02f877e21de10d755177de044c6a
+SHA1: 3851f5c46342963450168f1243d1f664eeaa03a4
+SHA256: 0722349b83cd01070aa5d0aa95fd4faac1589156d2996c3e5687b8f3305006dd
+SHA512: 46ecf37cadc3dcd3b97085f40ea96375f66a444fa0fcad51c469c80d2a3cea1619327a9327bd68e21c03ca71eda83003b049b44bec6423dde42e953a87cf9f27
+Description: Curses interface to /etc/network/interfaces
+ A Curses user interface for configuring network interfaces with ifupdown.
+ Ceni can manage basic network interface ifupdown configuration stanzas for
+ ethernet and wireless devices.
 
 Package: peasyfwmon
 Architecture: i386
