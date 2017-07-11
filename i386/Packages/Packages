@@ -3431,11 +3431,11 @@ Suggests: wpagui
 Conflicts: frisbee, wifibox, wifibox-dhcpcd
 Replaces: frisbee, wifibox, wifibox-dhcpcd
 Filename: ./Extra/ceni_2.31a_i386.deb
-Size: 67148
-MD5sum: 72661f03152ceaf81bb261961660dc84
-SHA1: 80e53562112f423d22daf29e00d8209ad4d87533
-SHA256: 85a6a81c95019d8145ebcc87a3261d5b0cc3bb2cb0272295883d85b32b2ba0bb
-SHA512: 230b596789b7f2e74f41bb39e6b529960ecf932754a4d9e4d19db615cbce25113103392ffe661824ceb4cab48a9e47930eff016d4a1339e64d8d6716ccccb27a
+Size: 67212
+MD5sum: f6ac994a295c35fa8492555fabcf7c3d
+SHA1: ef02048ba84fe4b12949c2d715e9c7c8cbba1ffd
+SHA256: 1fb1eb2dab0b93317f9d41fb3c48a6879451d12d50f479f69d0964ae896b605d
+SHA512: 36acf49166be021e11df619b127b28a688879cd39d99bb280ff5e9467b61e1651ad0502d44cd8db04ea57410d644de0a1e4fccc3c3e03075ab1948cfa69f4191
 Description: Curses interface to /etc/network/interfaces
  A Curses user interface for configuring network interfaces with ifupdown.
  Ceni can manage basic network interface ifupdown configuration stanzas for
