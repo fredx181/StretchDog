@@ -888,7 +888,7 @@ usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
 usr/bin/ceni						    ceni
 usr/bin/conky						    conky-all,conky-std,conky-cli
-usr/bin/defaultconnect					    frisbee,ceni,wifibox,wifibox-dhcpcd
+usr/bin/defaultconnect					    frisbee,wifibox,ceni,wifibox-dhcpcd
 usr/bin/dillo						    dillo
 usr/bin/dillo-install-hyphenation			    dillo
 usr/bin/dmmediaconverter				    dmmediaconverter
@@ -931,7 +931,7 @@ usr/bin/gtkdialog4					    gtkdialog
 usr/bin/hotplug2stdout					    pburn
 usr/bin/httpfs2						    httpfs2
 usr/bin/iceauth						    x11-xserver-utils
-usr/bin/ipinfo						    frisbee,ceni,wifibox,wifibox-dhcpcd
+usr/bin/ipinfo						    frisbee,wifibox,ceni,wifibox-dhcpcd
 usr/bin/jwm						    jwm
 usr/bin/koi8rxterm					    xterm
 usr/bin/linux-user-chroot				    linux-user-chroot

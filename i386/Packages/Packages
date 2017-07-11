@@ -2701,28 +2701,6 @@ SHA256: 3cd58c9b99a5cfc961cfc810982ef3a1f9e19be2450df7bdbe13fa20b25f043c
 SHA512: 6fe92a79de653c0b92327a59e2827d33b5e5f7b0b0eb2f0d237e0c19d20f0169118400176d0f0bd2d16573061fbf76be3e6e138aff3d80f77cd56d9b8d6eda92
 Description: weav commandline processor
 
-Package: ceni
-Architecture: all
-Version: 2.31a
-Priority: optional
-Section: net
-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Installed-Size: 235
-Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
-Suggests: wpagui
-Conflicts: frisbee, wifibox, wifibox-dhcpcd
-Replaces: frisbee, wifibox, wifibox-dhcpcd
-Filename: ./Extra/ceni_2.31a_all.deb
-Size: 56542
-MD5sum: e24148d7840651132df4da157245c23b
-SHA1: bc9e65ef121442352dddef5e74ed9f9d48bdfc4d
-SHA256: 3846a34d1e3a4ff505e7589a728cae7549a664b062d186f3161abe0ead5c0483
-SHA512: 331327699ee15f2a8dcc76dd49b8a9e0502e390ef50bb4d9e3543aa9f21b31803f6fe1ad74a8b1975adb3680c702d9a3629c45a22cce3e1c8ea4567b1f217c1a
-Description: Curses interface to /etc/network/interfaces
- A Curses user interface for configuring network interfaces with ifupdown.
- Ceni can manage basic network interface ifupdown configuration stanzas for
- ethernet and wireless devices.
-
 Package: dogradio
 Architecture: i386
 Version: 0.0.7b
@@ -3441,6 +3419,28 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
 
+Package: ceni
+Architecture: i386
+Version: 2.31a
+Priority: optional
+Section: net
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Installed-Size: 235
+Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
+Suggests: wpagui
+Conflicts: frisbee, wifibox, wifibox-dhcpcd
+Replaces: frisbee, wifibox, wifibox-dhcpcd
+Filename: ./Extra/ceni_2.31a_i386.deb
+Size: 67148
+MD5sum: 72661f03152ceaf81bb261961660dc84
+SHA1: 80e53562112f423d22daf29e00d8209ad4d87533
+SHA256: 85a6a81c95019d8145ebcc87a3261d5b0cc3bb2cb0272295883d85b32b2ba0bb
+SHA512: 230b596789b7f2e74f41bb39e6b529960ecf932754a4d9e4d19db615cbce25113103392ffe661824ceb4cab48a9e47930eff016d4a1339e64d8d6716ccccb27a
+Description: Curses interface to /etc/network/interfaces
+ A Curses user interface for configuring network interfaces with ifupdown.
+ Ceni can manage basic network interface ifupdown configuration stanzas for
+ ethernet and wireless devices.
+
 Package: redshiftgui
 Architecture: i386
 Version: 0.2.1-ddjessie
@@ -3474,28 +3474,6 @@ SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
 SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
-
-Package: ceni
-Architecture: i386
-Version: 2.31b
-Priority: optional
-Section: net
-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Installed-Size: 235
-Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
-Suggests: wpagui
-Conflicts: frisbee, wifibox, wifibox-dhcpcd
-Replaces: frisbee, wifibox, wifibox-dhcpcd
-Filename: ./Extra/ceni_2.31b_i386.deb
-Size: 67164
-MD5sum: 010a02f877e21de10d755177de044c6a
-SHA1: 3851f5c46342963450168f1243d1f664eeaa03a4
-SHA256: 0722349b83cd01070aa5d0aa95fd4faac1589156d2996c3e5687b8f3305006dd
-SHA512: 46ecf37cadc3dcd3b97085f40ea96375f66a444fa0fcad51c469c80d2a3cea1619327a9327bd68e21c03ca71eda83003b049b44bec6423dde42e953a87cf9f27
-Description: Curses interface to /etc/network/interfaces
- A Curses user interface for configuring network interfaces with ifupdown.
- Ceni can manage basic network interface ifupdown configuration stanzas for
- ethernet and wireless devices.
 
 Package: peasyfwmon
 Architecture: i386
