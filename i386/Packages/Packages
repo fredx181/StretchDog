@@ -587,11 +587,11 @@ Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu,
 Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Filename: ./Included/frisbee_1.2-20170430_i386.deb
-Size: 145650
-MD5sum: c596636187bed3e7980690f1da02d099
-SHA1: 9bbb64bcfe3992f7362362de0dd1f7eb14144ebe
-SHA256: 6c31f013a5463ef45b9fc2009c2a75aa3800611a452dbc73499cdea55785993d
-SHA512: 20bcdd0ddfef1d74277f0721f3d6ad1e5cc7f43e6d62797223586db2906c37bef114530e6649238324d8101c7ea79b27286b1cab84675e4084ebaf28b5295de7
+Size: 145828
+MD5sum: e1c813bc1d49f181aad47d8f5f69b1d5
+SHA1: e8e845f32a2b9c6de8ce65b37d12978ca3e92a60
+SHA256: f082fb0cfbbdcff4b8c2a39d211c32453504d31fec70fdd9c934d25fdf460619
+SHA512: 7ab688d69300415618e45c0c406d00571a4fbaf07306aed121fcf1cc58ab0f62b963173142884093f7e1ec320886e40ab4374cd5d8fbaf2689b757ed6daa0c02
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
@@ -1464,11 +1464,11 @@ Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu,
 Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Filename: ./Included/frisbee_1.2-20170430-xcowsay_i386.deb
-Size: 145670
-MD5sum: 3601cd5ec5b1b215bd397d0ea421adfb
-SHA1: 84131e4750c540387b38ad7386447725ff282b18
-SHA256: 11045a36cb43007ab2d8dbc4b5a4f8922d7eb45339e18877728581fe63defb8c
-SHA512: 60a23970e543c44e59e2fc7bf03a44a62aacf3ff8c8fe6e81aaee2555fc8771fb01e77f377b5115e68d1cb7a6726446aa880a3a7dc070a225c563c63cd8b12ef
+Size: 145876
+MD5sum: d1a5e8956a6615a852ca4e5c983ca682
+SHA1: 085577ff53d93f7c8a86333e537333660ade75f7
+SHA256: 4c274afc1f4c97722dffb69bd33e676f9184a0064c5e0df969c4beec154d64cd
+SHA512: ae09026e6cf2387862bcd4abe95c3040964e603161d21afefce155355886665992a20739b4a327545454458b2e2efe729d04dfa38441bd7c86de508ef8538232
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 

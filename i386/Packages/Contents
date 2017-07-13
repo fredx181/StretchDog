@@ -113,7 +113,7 @@ etc/skel/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 etc/skel/Startup/firewall-puppy				    Firewall-Puppy
 etc/skel/Startup/killmenu-cached			    jwm-setup
 etc/skel/Startup/netmon_wce				    wifibox
-etc/skel/Startup/network_tray.sh			    sns,ceni,wifibox-dhcpcd
+etc/skel/Startup/network_tray.sh			    frisbee,ceni,wifibox-dhcpcd,sns
 etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/startup-jwm					    jwm-setup
 etc/slim.conf						    slim
@@ -178,7 +178,7 @@ home/puppy/Startup/exec_lxrandr-autostart		    lxrandr-save-fix
 home/puppy/Startup/firewall-puppy			    Firewall-Puppy
 home/puppy/Startup/killmenu-cached			    jwm-setup
 home/puppy/Startup/netmon_wce				    wifibox
-home/puppy/Startup/network_tray.sh			    sns,ceni,wifibox-dhcpcd
+home/puppy/Startup/network_tray.sh			    frisbee,ceni,wifibox-dhcpcd,sns
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/startup-jwm					    jwm-setup
 lib/X11/mini-icons/network_tray				    ceni
@@ -863,7 +863,7 @@ root/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 root/Startup/firewall-puppy				    Firewall-Puppy
 root/Startup/killmenu-cached				    jwm-setup
 root/Startup/netmon_wce					    wifibox
-root/Startup/network_tray.sh				    sns,ceni,wifibox-dhcpcd
+root/Startup/network_tray.sh				    frisbee,ceni,wifibox-dhcpcd,sns
 root/Startup/peasyfwmon_tray				    peasyfwmon
 root/startup-jwm					    jwm-setup
 sbin/cryptsetup						    cryptsetup-bin
