@@ -1,0 +1,462 @@
+#!/bin/bash
+
+#################################################
+# quick-remastergui, GUI version of quick-remaster, taken from concept by rufwoof (very creative stuff, btw :) )
+# modified by fredx181, by using the files/folders created from linuxrc (init) by default to read information from
+# fredx181 other changes:
+# not anymore using file 'filesystem.module' (as is in rufwoof's original for reading which main filesystem.squashfs in use) in order to keep porteus-boot options the same, as much as possible
+# old(er) previous main filesystem.squashfs in use will be renamed to e.g. 01-filesystem.squashfs.bak
+# depends only on a small edit in linuxrc (init script in initrd1.xz) to empty save storage at reboot (if requested)
+# prompt for emptying save contents or not and 'paused' for possibly manual cleaning
+# The zerosize idea and function is from Jbv's FoxyRoxyLinux remastering script: http://foxyroxylinux.com
+# fredx181, 20161018 added choice for to backup save storage, suggested by dancytron
+# fredx181, 20161021 check if lz4 compression is available, use lzo if not
+# and added checkbox to merge currently loaded sfs's also in the remaster
+# and added compression type choice 
+#################################################
+
+if [ -z `which gsu` ]; then
+[ "`whoami`" != "root" ] && exec gksu ${0} "$@"
+else
+[ "`whoami`" != "root" ] && exec gsu ${0} "$@"
+fi
+
+set_gtkrc()
+{
+# Yad colored-splash
+# Set variables for foreground, background, fontname and text.
+[ -z "$FOREGROUND" ] && FOREGROUND="#4B200A"
+[ -z "$BACKGROUND" ] && BACKGROUND="#F4E48F"
+[ -z "$FONTNAME" ] && FONTNAME="Bold 12"
+cat > /tmp/gtkrc.yad <<EOF
+style "default" { bg[NORMAL] = "$BACKGROUND" fg[NORMAL] = "$FOREGROUND" font_name="$FONTNAME" } class "GtkWidget"    style "default"
+EOF
+}
+export -f set_gtkrc
+
+# fredx181, check if booted with porteus boot
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=700 --on-top --title="Quick Remaster" --text=" Note that this remaster script works only when porteus boot style is used \n Checking if porteus boot style is used..." --center --undecorated --no-buttons &
+pd=$!
+	if [ ! -f /mnt/live/tmp/modules ]; then
+sleep 3
+kill $pd
+yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --width=500 --title="Quick Remaster" --text=" Porteus boot style is not being used, sorry, cannot continue." --center --button="gtk-close:0"
+exit
+	fi
+sleep 3
+kill $pd
+echo ..........
+echo "Porteus boot style is being used, let's continue..."
+
+SETUP=$(yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --title="Quick-Remaster" --borders=6 --width=600 --text="This script assumes you have booted frugally, initrd and vmlinuz and filesystem.squashfs style booted using something like grub4dos \n It will take all changes to date that have been made and merge those changes into the main filesystem squashfs file \n If required, 'save2flash' will run to save the changes currently made during this session\n <b>At the end it will reboot the system</b> and the new filesystem will be activated \n (if <b>lz4</b> compression is not available, <b>lzo</b> will be used) \n A backup of the old(er) main filesystem.squashfs will be created \n with extension .bak (e.g. 01-filesystem.squashfs.bak) \n Choice for content of save to be emptied during the next reboot (select below)\n Advised is NOT to have any programs running during the remaster" --form \
+--field="Choose compression type:\n LZ4 is the fastest but gives a larger file\n XZ is slow but gives a smaller file:LBL" "" \
+--field=" Select:                                          :CB"  "LZ4 Compression!LZO Compression!GZ Compression!XZ Compression" \
+--field="The changes will be included in the remaster, so recommended:\n to clear the (already) existing changes storage at reboot:LBL" "" \
+--field=" Select:                                          :CB"  "Clear Changes at reboot!Clear Changes at reboot and create backup first (to e.g. changes.bak)!Do nothing, do not clear changes at reboot and create no backup" \
+--field=" Prompt for manual cleaning just before creating filesystem.squashfs (pause the script):CHK" "FALSE" \
+--field=" Merge currently loaded modules e.g. .squashfs or .sfs also into the remaster:CHK" "FALSE" \
+--field=" Create ISO from just created remaster:CHK" "FALSE" \
+--button="gtk-quit:1" --button="gtk-ok:0")
+ret=$?
+[[ $ret -ne 0 ]] && exit 0
+
+export COMPR="`echo $SETUP | cut -d "|" -f 2`"
+export CLEARCHANGES="`echo $SETUP | cut -d "|" -f 4`"
+#export INCLUDECURRENT="`echo $SETUP | cut -d "|" -f 5`"
+export PROMPT="`echo $SETUP | cut -d "|" -f 5`"
+export MERGELOADED="`echo $SETUP | cut -d "|" -f 6`"
+export CREATEISO="`echo $SETUP | cut -d "|" -f 7`"
+
+[ "$COMPR" = "LZ4 Compression" ] && export COMP="lz4"
+[ "$COMPR" = "LZO Compression" ] && export COMP="lzo"
+[ "$COMPR" = "GZ Compression" ] && export COMP="gzip"
+[ "$COMPR" = "XZ Compression" ] && export COMP="xz -b 512k -Xbcj x86"
+
+[ "$CLEARCHANGES" = "Clear Changes at reboot" ] && CLEAR="1"
+[ "$CLEARCHANGES" = "Clear Changes at reboot and create backup first (to e.g. changes.bak)" ] && CLEAR="2"
+[ "$CLEARCHANGES" = "Do nothing, do not clear changes at reboot and create no backup" ] && CLEAR="3"
+
+echo $COMP
+echo $CLEARCHANGES 
+echo $PROMPT
+echo $MERGELOADED
+
+
+function cleanup {
+chmod a=rwx,o+t tmpa/tmp
+ echo "Cleaning..."
+# rm -f tmpa/etc/X11/xorg.conf # if intend to port to another PC
+ rm -f tmpa/var/lib/alsa/asound.state
+ rm -f tmpa/root/.bash_history
+ rm -f tmpa/root/.xsession-errors
+ rm -rf tmpa/root/.cache
+ rm -rf tmpa/root/.thumbnails
+ rm -f tmpa/etc/blkid-cache
+ rm -rf tmpa/etc/udev/rules.d/70-persistent*
+ rm -f tmpa/var/lib/dhcp/dhclient.eth0.leases
+ rm -f tmpa/var/lib/dhcpcd/*.lease
+ rm -rf tmpa/etc/rc.d
+ rm -rf tmpa/lib/consolefonts
+ rm -rf tmpa/lib/keymaps
+ rm -fr tmpa/var/lib/aptitude/*
+
+ # Clean apt cache
+ ls tmpa/var/lib/apt/lists | grep -v "lock" | grep -v "partial" | xargs -i rm tmpa/var/lib/apt/lists/{} ;
+ ls tmpa/var/cache/apt/archives | grep -v "lock" | grep -v "partial" | xargs -i rm tmpa/var/cache/apt/archives/{} ;
+ ls tmpa/var/cache/apt | grep -v "archives" | xargs -i rm tmpa/var/cache/apt/{} ;
+ rm -f tmpa/var/log/* 2> /dev/null
+ rm -f tmpa/mnt/* 2> /dev/null
+ rmdir tmpa/mnt/* 2> /dev/null
+ rm -f tmpa/media/* 2> /dev/null
+ rmdir tmpa/media/* 2> /dev/null
+
+ cd tmpa
+
+ # zerosize (0 bytes) man and doc files...
+# fredx181 skip symlinks (-type l commented out)
+zerosize() {
+  find $* | while read file; do
+    echo -n "."
+    rm -f $file
+    touch $file
+  done
+}
+
+    zerosize usr/share/doc -type f -size +1c
+#    zerosize usr/share/doc -type l
+
+    zerosize usr/share/man -type f -size +1c
+#    zerosize usr/share/man -type l
+
+
+    zerosize usr/share/info -type f -size +1c
+#    zerosize usr/share/info -type l
+
+    zerosize usr/share/gnome/help -type f -size +1c
+#    zerosize usr/share/gnome/help -type l
+
+    zerosize usr/share/gtk-doc -type f -size +1c
+#    zerosize usr/share/gtk-doc -type l
+
+    chown -R man:root usr/share/man
+
+rm -fr "$BASE"/remaster/tmpa/usr/share/doc/elinks
+ln -sf /usr/share/doc/elinks-data "$BASE"/remaster/tmpa/usr/share/doc/elinks
+
+ cd ..
+ sync
+}
+
+# Check if mksquashfs version is 4.3 or higher
+check_mksquashfs_version=$(mksquashfs -version | awk 'NR==1 { print $3 }' | grep -o 4.3)
+verlte() {
+    [  "$1" = "`echo -e "$1\n$2" | sort -V | head -n1`" ]
+}
+
+verlt() {
+    [ "$1" = "$2" ] && return 1 || verlte $1 $2
+}
+
+if verlt $check_mksquashfs_version 4.3
+then
+# use lzo if mksquashfs version is lower than v4.3
+[ "$COMP" = "lz4" ] && export COMP=lzo 
+fi
+
+# fredx181, check if EXIT is being used, then run save2flash if required
+if [ -f "/mnt/live/tmp/changes-exit" ]; then
+NUM=$(ls /mnt/live/memory/images/ | grep -v "changes-exit$" | wc -l)
+    if [ "$NUM" -gt 1 ] && [ "$MERGELOADED" = "FALSE" ]; then
+	/usr/bin/save2flash # Store latest changes
+	export SAVEDONE=TRUE
+	sync
+    fi
+fi
+ 
+# read from /mnt/live/etc/homedrv to get the "live" directory
+# Partition containing BASE is probably mounted already, but there could be exception
+# e.g. in case of copy2ram being used and partition might be manually unmounted 
+export BASE=$(cat /mnt/live/etc/homedrv)
+if [ -z "$(ls "$BASE"/* 2> /dev/null)" ]; then # BASE possibly might not exist
+echo "$BASE directory not existing, so try mount the partition that contains $BASE..."
+PART="$(cat /mnt/live/etc/homedrv | cut -d'/' -f3)"
+mkdir /mnt/$PART
+mount /dev/$PART /mnt/$PART 
+export BASE=$(cat /mnt/live/etc/homedrv)
+if [ -z "$(ls "$BASE"/* 2> /dev/null)" ]; then
+echo "Sorry, directory $BASE not found, something went wrong, cannot continue, exiting..."
+yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --width=500 --title="Quick Remaster" --text=" Sorry, directory $BASE not found, something went wrong, cannot continue." --center --button="gtk-close:0"
+#sleep 3
+exit
+fi
+else
+export BASE=$(cat /mnt/live/etc/homedrv)
+fi
+ 
+if [ ! -w $BASE ]; then
+echo "Sorry, it seems that $BASE is on read-only media, booting from CD maybe?"
+echo "Cannot continue remaster here, exiting..."
+yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --width=500 --title="Quick Remaster" --text=" Sorry, it seems that $BASE is on read-only media, booting from CD maybe? \n Cannot continue remaster here." --center --button="gtk-close:0"
+#sleep 4
+exit
+fi
+
+cd $BASE
+
+mkdir remaster
+cd remaster
+mkdir -p tmp1 tmpa
+# fredx181 read CURRENT from mounted main filesystem.squashfs
+export CURRENT=$(ls /mnt/live/memory/images/ | grep filesystem.squashfs | head -1)
+	if [ "$MERGELOADED" = "FALSE" ]; then
+NUM=$(ls /mnt/live/memory/images/ | grep -v "changes-exit$" | wc -l)
+    if [ "$NUM" -gt 1 ]; then
+if [ -f /mnt/live/tmp/changes-exit ]; then
+BRANCH="/mnt/live/memory/images/changes-exit"
+else
+BRANCH="/mnt/live/memory/changes"
+fi
+mount --bind  /mnt/live/memory/images/$CURRENT tmp1/ >/dev/null 2>&1
+mount -t aufs -o br:"$BRANCH":tmp1 none tmpa/
+    else
+# mount bind, first create directories
+# mount --bind /  tmpa/
+for i in $(find / -maxdepth 1 -mindepth 1 -type d 2> /dev/null); do
+mkdir tmpa${i} 2> /dev/null
+done
+
+for i in $(find / -maxdepth 1 -mindepth 1 -type d -not -name tmp  -not -name mnt -not -name media -not -name sys -not -name run -not -name live -not -name dev -not -name live -not -name proc 2> /dev/null); do
+mount --bind $i tmpa${i}
+done
+
+    fi
+	else
+# merge extra modules is requested so use mount bind
+# mount --bind /  tmpa/
+for i in $(find / -maxdepth 1 -mindepth 1 -type d 2> /dev/null); do
+mkdir tmpa${i} 2> /dev/null
+done
+
+for i in $(find / -maxdepth 1 -mindepth 1 -type d -not -name tmp  -not -name mnt -not -name media -not -name sys -not -name run -not -name live -not -name dev -not -name live -not -name proc 2> /dev/null); do
+mount --bind $i tmpa${i}
+done
+	fi
+
+# create backup of the main filesystem.squashfs
+[ -f ../$CURRENT ] && mv -f ../$CURRENT ../$CURRENT.bak
+clear 
+cleanup
+
+	if [ "$PROMPT" = "TRUE" ]; then
+yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --width=500 --title="Quick Remaster" --center --text=" Now you may want to do some extra cleaning to save more space before creating module with mksquashfs.\n For example: ~/.mozilla or in usr/share/locale  \n Open filemanager in: \n $BASE/remaster/tmpa \n to do so. \n  When done click the 'Continue' button to finally create:\n   $BASE/$CURRENT" --button="Continue:0" 
+	fi
+
+echo "Creating module..."
+xterm -T "Quick Remaster, creating $CURRENT . . ." -si -sb -fg white -bg SkyBlue4 -geometry 75x5 -e bash -c 'mksquashfs tmpa ../$CURRENT -comp $COMP; echo $? > /tmp/squashfserr'
+ret=$(cat /tmp/squashfserr)
+echo $ret
+rm -f /tmp/squashfserr
+if [ $ret -ne 0 ]; then    # in case something went wrong, e.g. not enough diskspace
+echo "Sorry, cannot continue with the remaster, restoring backup and exiting..."
+# restore backup
+echo "Restoring ../$CURRENT.bak to ../$CURRENT"
+yad --window-icon=/usr/share/pixmaps/application-x-squashfs3.png --width=500 --title="Quick Remaster" --text=" Sorry, cannot continue with the remaster \n Not enough diskspace maybe? \n Restoring backup and exiting..." --center --button="gtk-close:0" &
+pd=$!
+[ -f ../$CURRENT.bak ] && mv ../$CURRENT.bak ../$CURRENT
+# unmount and delete remaster directory
+sync
+umount tmpa >/dev/null 2>&1 # case aufs used
+for i in $(find / -maxdepth 1 -mindepth 1 -type d -not -name tmp -not -name mnt -not -name media -not -name sys -not -name run -not -name live -not -name dev -not -name live -not -name proc 2> /dev/null); do
+umount tmpa${i} 2> /dev/null
+done
+sleep 1
+umount tmp1 >/dev/null 2>&1
+ for i in $(find / -maxdepth 1 -mindepth 1 -type d 2> /dev/null); do
+rmdir tmpa${i} 2> /dev/null
+done
+sleep 1
+# find tmpa -maxdepth 1 -xtype l -delete >/dev/null 2>&1
+rmdir tmpa tmp1
+cd ..
+rmdir remaster
+umount /mnt/$PART >/dev/null 2>&1
+sleep 3
+kill $pd
+exit
+fi
+
+# all seems good, continue
+sync
+umount tmpa >/dev/null 2>&1 # case aufs used
+ for i in $(find / -maxdepth 1 -mindepth 1 -type d -not -name tmp  -not -name mnt -not -name media -not -name sys -not -name run -not -name live -not -name dev -not -name live -not -name proc 2> /dev/null); do
+umount tmpa${i} 2> /dev/null
+done
+sleep 1
+umount tmp1 >/dev/null 2>&1 # case aufs used
+ for i in $(find / -maxdepth 1 -mindepth 1 -type d 2> /dev/null); do
+rmdir tmpa${i} 2> /dev/null
+done
+# find tmpa -maxdepth 1 -xtype l -delete >/dev/null 2>&1
+rmdir tmpa tmp1
+cd ..
+rmdir remaster
+umount /mnt/$PART >/dev/null 2>&1
+
+if [ "$CREATEISO" = "TRUE" ]; then
+run_xterm () {
+echo
+echo -e "\e[0;30mISO will be created from the content of $BASE\033[0m"
+echo -e "\e[0;30m(excluding save file or folder)\033[0m"
+echo
+sleep 3
+# Copy files
+echo "Copying files, please wait..."
+cp -af /usr/local/isodata $BASE/
+cp -af $BASE/01-filesystem.squashfs $BASE/isodata/live/ 
+cp -af $BASE/initrd1.xz $BASE/isodata/live/
+cp -af $BASE/initrd.img $BASE/isodata/live/
+cp -af $BASE/vmlinuz1 $BASE/isodata/live/
+echo
+echo
+cd $BASE
+
+# set variables of: path to data, label and output path of new iso (or leave like this)
+NEWISO=isodata
+LABEL=ddog
+NAME=DDog-custom.iso
+
+cd "$NEWISO"
+echo "Creating ISO, please wait..."
+xorriso -as mkisofs -r -J -joliet-long -l -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin -partition_offset 16 -V "$LABEL" -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../${NAME} ../"$NEWISO"
+[ $? -eq 0 ] && echo -e "\e[0;30mSuccess!, ISO: $BASE/${NAME} has been created\033[0m" || echo "Sorry, something went wrong" 
+rm -fr $BASE/isodata
+echo
+sleep 4
+}
+export -f run_xterm
+xterm -T "Make ISO" -si -sb -fg white -bg SkyBlue4 -geometry 80x20 -e /bin/bash -c run_xterm
+fi
+
+BACKDRVEXIT="$(mount -l | grep -P '/mnt/live/memory/images/changes-exit' | cut -d'/' -f3 | cut -d' ' -f1)" # mcewanw
+# fredx181, test first if /mnt/live/memory/changes is not 'tmpfs' (else it would be /dev/sdx)
+TESTBACKDRVCH="$(df -h | grep -P '/mnt/live/memory/changes' | awk '{ print $1}')"
+if [ "$TESTBACKDRVCH" != "tmpfs" ]; then
+BACKDRVCH="$(mount -l | grep -P '/mnt/live/memory/changes' | cut -d'/' -f3 | cut -d' ' -f1)" # mcewanw
+fi
+
+# if [ -n "$BACKDRVEXIT" ]; then
+if [ $BACKDRVEXIT ]; then # fredx, found that this works more secure as the above commented out, without double quotes and without the '-n' parameter 
+BACKDRV="$BACKDRVEXIT"
+# elif [ "$BACKDRVCH" ]; then
+elif [ $BACKDRVCH ]; then # fredx, found that this works more secure as the above commented out, without double quotes and without the '-n' parameter
+BACKDRV="$BACKDRVCH"
+fi
+echo $BACKDRV
+# fredx181, check if linuxrc contains clear-changes-on-reboot
+    if grep -iq clear-changes-on-reboot /mnt/live/linuxrc; then
+
+# fredx181 change, make it work also when savefile is used, e.g. changes.dat
+# cd changes
+# touch clear-changes-on-reboot # set up flag file so initrd1 will empty changes folder at next reboot  # fredx181 changed to below to have a choice (y/n)
+# fredx181, check if EXIT is being used or not to get the changes= path
+if [ -f /mnt/live/tmp/changes-exit ]; then
+CHANGES=$(cat /proc/cmdline | grep -o "changes=.*" |sed 's| .*||' |sed 's|changes=||' | awk 'BEGIN{FS="EXIT:"} {print $2}')
+else
+CHANGES=$(cat /proc/cmdline | grep -o "changes=.*" |sed 's| .*||' |sed 's|changes=||')
+fi
+# fredx181, check if changes=... is being used at all, if not, skip this step
+	if [[ $CHANGES != "" ]]; then
+
+if [ "$CLEAR" = "1" ]; then
+echo -e "\e[1;32mOk, changes content from $CHANGES will be emptied at reboot\033[0m"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  Ok, changes content from $CHANGES will be emptied at reboot \n      Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+if [ -f /mnt/live/tmp/changes-exit ]; then touch /mnt/live/memory/images/changes-exit/clear-changes-on-reboot; else touch /mnt/live/memory/changes/clear-changes-on-reboot; fi
+sleep 5
+kill $pd
+fi
+
+if [ "$CLEAR" = "2" ]; then
+   if [[ "$BACKDRV" =~ "loop" ]]; then      # if savefile used
+echo -e "\e[1;32mOk, changes content from $CHANGES will be emptied at reboot\033[0m"
+echo -e "\e[1;32mAnd backup $CHANGES.bak will be created\033[0m"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  Ok, changes content from $CHANGES will be emptied at reboot \n  And backup ${CHANGES}.bak will be created \n      Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+#if [ -f /mnt/live/tmp/changes-exit ] && [ $SAVEDONE = "" ]; then
+#set_gtkrc
+#GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=500 --on-top --title="Quick Remaster" --text="  Saving changes, before creating backup..." --center --undecorated --no-buttons &
+#pdd=$!
+#/usr/bin/save2flash
+#sleep 1
+#kill $pdd
+#fi
+SAVEFILE=$(losetup /dev/$BACKDRV | awk '{print $NF}' | sed 's:^.\(.*\).$:\1:')
+
+cp -af "$SAVEFILE" "$SAVEFILE".bak 2> /dev/null
+if [ $? -ne 0 ]; then   # if above failed, try /mnt/live/mnt/
+DRV=$(losetup /dev/$BACKDRV | awk '{print $NF}' | sed 's:^.\(.*\).$:\1:' | cut -d'/' -f3 | cut -d' ' -f1)
+cp -af /mnt/live/mnt/$DRV/$CHANGES "/mnt/live/mnt/$DRV/$CHANGES".bak
+fi 
+      if [ -f /mnt/live/tmp/changes-exit ]; then touch /mnt/live/memory/images/changes-exit/clear-changes-on-reboot; else touch /mnt/live/memory/changes/clear-changes-on-reboot; fi
+
+   else       # should be savefolder then
+echo -e "\e[1;32mOk, changes content from $CHANGES/changes will be emptied at reboot\033[0m"
+echo -e "\e[1;32mAnd backup $CHANGES/changes.bak will be created\033[0m"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  Ok, changes content from $CHANGES will be emptied at reboot \n  And backup $CHANGES/changes.bak will be created \n      Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+#if [ -f /mnt/live/tmp/changes-exit ] && [ $SAVEDONE = "" ]; then
+#set_gtkrc
+#GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=500 --on-top --title="Quick Remaster" --text="  Saving changes, before creating backup..." --center --undecorated --no-buttons &
+#pdd=$!
+#/usr/bin/save2flash
+#sleep 1
+#kill $pdd
+#fi
+rm -rf "/mnt/$BACKDRV/$CHANGES/changes.bak/" 2> /dev/null	
+cp -af "/mnt/$BACKDRV/$CHANGES/changes" "/mnt/$BACKDRV/$CHANGES/changes.bak" 2> /dev/null
+if [ $? -ne 0 ]; then   # if above failed, try /mnt/live/mnt/
+cp -af "/mnt/live/mnt/$BACKDRV/$CHANGES/changes" "/mnt/live/mnt/$BACKDRV/$CHANGES/changes.bak"
+fi
+      if [ -f /mnt/live/tmp/changes-exit ]; then touch /mnt/live/memory/images/changes-exit/clear-changes-on-reboot; else touch /mnt/live/memory/changes/clear-changes-on-reboot; fi
+   fi
+sleep 5
+kill $pd
+fi
+
+if [ "$CLEAR" = "3" ]; then
+echo -e "\e[0;31mNothing will be done, changes not emptied at reboot and no backup created\033[0m"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  Nothing will be done, changes not emptied at reboot \n  and no backup created \n        Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+sleep 5
+kill $pd
+fi
+
+	else
+echo "Booted without changes= parameter"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  Booted without changes= parameter \n   Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+sleep 5
+kill $pd
+	fi
+    else
+echo "The initrd1.xz in use doesn't support clear-changes-on-reboot"
+set_gtkrc
+GTK2_RC_FILES="/tmp/gtkrc.yad" yad --width=600 --on-top --title="Quick Remaster" --text="  The initrd1.xz in use doesn't support clear-changes-on-reboot \n The changes content should be removed manually \n      Rebooting in a few seconds..." --center --undecorated --no-buttons &
+pd=$!
+sleep 5
+kill $pd
+    fi
+sync
+echo The system needs to reboot - rebooting ...
+
+# fredx181, the following makes it not prompt to save changes from console
+touch /mnt/live/tmp/changesx
+# wmreboot # fredx181 changed to reboot below
+sleep 0.5
+shutdown -r now

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Clear Changes at Reboot
+Exec=clear-changes-start
+Icon=re-fresh
+Terminal=false
+StartupNotify=false
+Categories=DebianDog;
+

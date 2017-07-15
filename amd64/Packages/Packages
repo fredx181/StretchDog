@@ -372,6 +372,25 @@ SHA512: 44f6c34c78ba2c072001d4865fd00a1b914f22441c3e9bc24d6328af97070c771350b4a4
 Description: The makedebpackage (re)builds a debian package 
  makedebpackage by MakeDEBPackage-GUI.
 
+Package: dogradio
+Architecture: all
+Version: 0.0.7c
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | mplayer, file, streamripper
+Filename: ./Included/dogradio_0.0.7c_all.deb
+Size: 935884
+MD5sum: 359dd5f708307e8b4a2ad1ac9a45f05a
+SHA1: 19c48ec55bab9541c7ebfe3558b9fe53bb156a37
+SHA256: d64fee47f0eacef1378b39d20ce66f2369580782cc657907bcfa7c4410e7f9f3
+SHA512: 11f3a2ba2ac817192225849a0740a18e5eb2e445460dfb245d5af433f661722370624aef02bd2f596f8027e9e07223f107d3ebb16c6a8e67d1068d4cda298e19
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
 Package: yad
 Architecture: amd64
 Version: 0.31.2
@@ -522,6 +541,25 @@ SHA1: a53830e68d7587a260c94534897cd5afe624ebe5
 SHA256: 895913c8cc92bfe6b43535f22a1a43adaec408a05c16086bccc8e25a85d24523
 SHA512: 68ef5a92fa46574316e3528e2b0bce3c42ea47ca6f658f7823503e1c49eea936c3dcb772f7ead8a1a4f8e7d05abfc153698ae09a581c82be56a4a9e2eb6d7913
 Description: Disk volume monitor
+
+Package: quick-remaster
+Architecture: amd64
+Version: 1.0.8
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isotools
+Filename: ./Included/quick-remaster_1.0.8_amd64.deb
+Size: 159310
+MD5sum: 88195d429e69bcd35e9eed29b62af0e2
+SHA1: 901e125cc957c9629296d2df118539112b3cdf99
+SHA256: f50873b1689c8291c3c8550d9b4b1f4e993c8367d2d52fec3d7276792f49c54f
+SHA512: a9d943e1ae7f0bfb2d3ae4b857f392daea7f5dbde4abb1722ab8106a9fb6a81f0e370658837af5bf71d12989af8609b084c977b583c224f1ce766850a350e724
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
 
 Package: flashplayerchoice
 Architecture: all
@@ -1592,6 +1630,22 @@ Description: Secure Sockets Layer toolkit - shared libraries
 
 Package: redshiftgui
 Architecture: amd64
+Version: 0.2.2-ddjessie
+Priority: optional
+Section: util
+Maintainer: Mao Yu [maoserr@gmail.com]
+Installed-Size: 1100
+Depends: libcurl3, libxcb-randr0
+Filename: ./Extra/redshiftgui_0.2.2-ddjessie_amd64.deb
+Size: 379336
+MD5sum: e94901ccd41ce13b8768cd38b1f4fb85
+SHA1: 3590ce82d8539775f6f890126d54063d47e954da
+SHA256: 99c3659b335f790a1dee6169eb985ec4bc7e2dc4e260a0db7045ecfae83fcad7
+SHA512: 4c9e2219fff53345eb805a6230e627a7ea3e8b330e7f3e8464390feec3cb71822d8c4f82f56c1cf81a797b75d5505a9fc95f088270dfaaebeae7099e09ca53e4
+Description: Monitor color adjustment tool.
+
+Package: redshiftgui
+Architecture: amd64
 Version: 0.2.1-ddjessie
 Priority: optional
 Section: util
@@ -1914,6 +1968,24 @@ Description: PNG library - runtime
  This package contains the runtime library files needed to run software
  using libpng.
 
+Package: peasyfwmon
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 163
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy
+Replaces: firewall-puppy
+Filename: ./Extra/peasyfwmon_1.0.1_amd64.deb
+Size: 22766
+MD5sum: 3e64b5c07418e416307d2a6baeb418a8
+SHA1: 453f7a2e5da40ebe9bb64b4abb086c3699cbc72c
+SHA256: 9a30e9bf2184e574d4f8fecc9a7ab1304c8dde92017034e7bea90673be406b2c
+SHA512: a9ef6d8374de0d80cc1cabec7310628c2c10b5fd5d91fd3fb70811a8bc510491eaa635a8ebd0fdb35d61b321f7867a9d0f7b3888cb7a3db5312daf84e42cf105
+Description: Peasy Firewall Monitor
+
 Package: xhippo
 Architecture: amd64
 Version: 1.0.1
@@ -2035,6 +2107,24 @@ Description: X/GTK+ and console FTP client (metapackage)
   * version for the console, using only GLib
  .
  This is an upgrade convenience package, it's only useful for depending on.
+
+Package: firewall-ng
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 120
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy, peasyfwmon
+Replaces: firewall-puppy, peasyfwmon
+Filename: ./Extra/firewall-ng_1.0.1_amd64.deb
+Size: 17632
+MD5sum: ab54f3906dd3b200c5560ee568fb809d
+SHA1: ceb0c38ebbc0e0ef5104f3195d52a8d8fc515c96
+SHA256: 5b06244f7b73434143eb6d8fac8217915708f6878086d98ef5a7dd774ac8bf49
+SHA512: 0de3b0c0c01ea38e3646bbe796a703a42a84ba7ae77ba03681c0f2805c88aee6ab62b510643d35d9b658e3713c3343aa7cffdb397909bbf12d1d26174b87cf58
+Description: Firewall-ng by 01micko, based on Alien Bob's Firewall
 
 Package: xvidcap
 Architecture: amd64

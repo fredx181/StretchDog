@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Make ISO from frugal install
+Comment=
+Exec=mkiso
+Icon=mkiso
+Terminal=false
+StartupNotify=false
+Categories=System;

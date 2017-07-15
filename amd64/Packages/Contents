@@ -17,6 +17,8 @@ etc/frisbee/frisbee.conf				    frisbee
 etc/frisbee/wpa_supplicant.conf				    frisbee
 etc/gftp/bookmarks					    gftp-common
 etc/gftp/gftprc						    gftp-common
+etc/init.d/firewall-ng.sh				    firewall-ng
+etc/init.d/firewall.sh					    peasyfwmon
 etc/init.d/frisbee					    frisbee
 etc/init.d/slim						    slim
 etc/init.d/snapexit					    porteusbootscripts
@@ -31,6 +33,7 @@ etc/pavrecord/.pavrecordrc				    pavrecord
 etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
 etc/ppp/options.gprs					    frisbee
+etc/rc.d/rc.firewall.pfm				    peasyfwmon
 etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-pcmanfm
 etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-pcmanfm
 etc/skel/.config/rox.sourceforge.net/OpenWith/convert-sfs   edit-sfs-pcmanfm
@@ -48,6 +51,7 @@ etc/skel/.xsession-jwm					    jwm-setup-dd64
 etc/skel/.xsession-openbox				    jwm-setup-dd64
 etc/skel/Startup/conkyclock				    jwm-setup-dd64
 etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
+etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/startup-jwm					    jwm-setup-dd64
 etc/slim.conf						    slim
 etc/wgetrc						    wget
@@ -68,6 +72,7 @@ home/puppy/.local/share/applications/synaptic.desktop	    jwm-setup-dd64
 home/puppy/.xsession-jwm				    jwm-setup-dd64
 home/puppy/Startup/conkyclock				    jwm-setup-dd64
 home/puppy/Startup/exec_lxinput-autostart		    lxinputsave
+home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/startup-jwm					    jwm-setup-dd64
 lib/dhcpcd/dhcpcd-hooks					    frisbee
 lib/dhcpcd/dhcpcd-run-hooks				    frisbee
@@ -650,7 +655,9 @@ root/.xhippo/playlists/0default.d/US_kuat128.mp3.m3u	    xhippo
 root/.xhippo/winstate					    xhippo
 root/.xsession-jwm					    jwm-setup-dd64
 root/Startup/conkyclock					    jwm-setup-dd64
+root/Startup/exec_fwstatus-autostart			    firewall-ng
 root/Startup/exec_lxinput-autostart			    lxinputsave
+root/Startup/peasyfwmon_tray				    peasyfwmon
 root/startup-jwm					    jwm-setup-dd64
 sbin/losetup						    mount
 sbin/probedisk						    probepart
@@ -675,6 +682,7 @@ usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
 usr/bin/findnrun					    findnrun
 usr/bin/firefox						    palemoon
+usr/bin/firewallstatus					    firewall-ng
 usr/bin/flashpeak-slimjet				    slimjet
 usr/bin/frisbee						    frisbee
 usr/bin/frisbee-gprs-connect				    frisbee
@@ -1290,6 +1298,8 @@ usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
 usr/local/bin/filemnt					    filemnt-pcmanfm
+usr/local/bin/firewall_ng				    firewall-ng
+usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
 usr/local/bin/flashplayerchoice				    flashplayerchoice
 usr/local/bin/gdialog					    zenity-2.30
@@ -1324,12 +1334,14 @@ usr/local/bin/make-xhippo-playlist			    xhippo
 usr/local/bin/mencoder					    gnome-mplayer-1.0.6
 usr/local/bin/menu-openbox				    jwm-setup-dd64
 usr/local/bin/menumaker					    desktop-editor
+usr/local/bin/mkiso					    quick-remaster
 usr/local/bin/mnt-all					    debdogmountscripts
 usr/local/bin/mnt-backing				    debdogmountscripts
 usr/local/bin/mount-wizard				    mount-wizard
 usr/local/bin/mountlink					    debdogmountscripts
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/openbox-menu				    jwm-setup-dd64
+usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/ppm2mpeg.sh				    xvidcap
 usr/local/bin/quick-remaster				    quick-remaster
@@ -3057,6 +3069,16 @@ usr/local/doc/desktop_drive_icons/INSTALL		    desktop-drive-icons
 usr/local/doc/desktop_drive_icons/NEWS			    desktop-drive-icons
 usr/local/doc/desktop_drive_icons/README		    desktop-drive-icons
 usr/local/etc/xhippo.config				    xhippo
+usr/local/isodata/Examples-boot-codes.txt		    quick-remaster
+usr/local/isodata/isolinux/boot.cat			    quick-remaster
+usr/local/isodata/isolinux/isolinux.bin			    quick-remaster
+usr/local/isodata/isolinux/isolinux.cfg			    quick-remaster
+usr/local/isodata/isolinux/live.cfg			    quick-remaster
+usr/local/isodata/isolinux/menu.cfg			    quick-remaster
+usr/local/isodata/isolinux/splash.png			    quick-remaster
+usr/local/isodata/isolinux/stdmenu.cfg			    quick-remaster
+usr/local/isodata/isolinux/vesamenu.c32			    quick-remaster
+usr/local/isodata/live/stretch-x86_64.sgn		    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee
 usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/file24.png			    grub4dosconfig
@@ -3308,6 +3330,7 @@ usr/share/applications/Create-module-from-changes.desktop   remaster-scripts
 usr/share/applications/DogRadio.desktop			    dogradio
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
+usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
@@ -3327,6 +3350,8 @@ usr/share/applications/edit-sfs.desktop			    edit-sfs-pcmanfm
 usr/share/applications/epdfview.desktop			    epdfview
 usr/share/applications/ffconvert.desktop		    ffconvert
 usr/share/applications/findnrun.desktop			    findnrun
+usr/share/applications/firewall-setup.desktop		    firewall-ng
+usr/share/applications/firewallstatus.desktop		    firewall-ng
 usr/share/applications/fixdepinstall.desktop		    fixdepinstall
 usr/share/applications/flashplayerchoice.desktop	    flashplayerchoice
 usr/share/applications/frisbee.desktop			    frisbee
@@ -3344,6 +3369,7 @@ usr/share/applications/openbox.desktop			    jwm-setup-dd64
 usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
+usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
@@ -3996,6 +4022,8 @@ usr/share/pixmaps/drive24.png				    mount-wizard
 usr/share/pixmaps/epdfview.xpm				    epdfview
 usr/share/pixmaps/fd.png				    mount-wizard
 usr/share/pixmaps/ffconvert.png				    ffconvert
+usr/share/pixmaps/firewall-24.png			    peasyfwmon
+usr/share/pixmaps/firewall-48.png			    peasyfwmon
 usr/share/pixmaps/flash.png				    flashplayerchoice
 usr/share/pixmaps/floppy24.png				    mount-wizard
 usr/share/pixmaps/frisbee.png				    frisbee
@@ -4025,12 +4053,17 @@ usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwm-setup-dd64
 usr/share/pixmaps/makedebpkg.png			    makedebpackage
 usr/share/pixmaps/mini-record.xpm			    pavrecord
+usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mplayer.png				    youtube-get,youtube-get2
 usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64
+usr/share/pixmaps/puppy/firewall.svg			    firewall-ng
+usr/share/pixmaps/puppy/shield_internet.svg		    firewall-ng
+usr/share/pixmaps/puppy/shield_no.svg			    firewall-ng
+usr/share/pixmaps/puppy/shield_yes.svg			    firewall-ng
 usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/restart.png				    jwm-setup-dd64
 usr/share/pixmaps/rocket.png				    desktop-editor

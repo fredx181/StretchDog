@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Quick Remaster Gui
+Exec=quick-remastergui
+Icon=application-x-squashfs3.png
+Terminal=false
+StartupNotify=false
+Categories=DebianDog;Modules;
+

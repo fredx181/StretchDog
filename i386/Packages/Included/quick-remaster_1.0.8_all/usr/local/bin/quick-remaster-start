@@ -1,0 +1,3 @@
+#!/bin/bash
+[ "`whoami`" != "root" ] && exec gsu ${0}
+xterm -T "Quick-Remaster" -si -sb -fg white -bg SkyBlue4 -geometry 80x22 -e /usr/local/bin/quick-remaster
