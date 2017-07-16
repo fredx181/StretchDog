@@ -418,6 +418,20 @@ Description: Yet Another Dialog - dialogs for shell
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
 
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Included/upgrade-kernel_1.0.2_all.deb
+Size: 10200
+MD5sum: 60b6fa331b48a56745436d702a210193
+SHA1: 7434249566d45818ac6aaf7071656fca6833373c
+SHA256: 9d2914446d802a83d2fcd202c41911c6ed528ed58abfab31333990453b21e75e
+SHA512: ecfd46a63c3b2c7840db034c6e354c964e1e429dcfcfdc97e9ac1ecac2d8472d3067118863fbac54d39755e98f9f85a3bf73d41fef91a76ccc3cf97e3a68a371
+Description: Warning - This package works only in DebianDog!
+
 Package: frisbee
 Architecture: amd64
 Version: 1.2-20170408dd64-mod

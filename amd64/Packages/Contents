@@ -1367,6 +1367,8 @@ usr/local/bin/transmission-gtk				    transmission-2.60
 usr/local/bin/transmission-remote			    transmission-2.60
 usr/local/bin/transmission-show				    transmission-2.60
 usr/local/bin/update-menus				    jwm-setup-dd64
+usr/local/bin/upgrade-kernel				    upgrade-kernel
+usr/local/bin/upgrade-kernel-start			    upgrade-kernel
 usr/local/bin/wee.mbr					    debdoginstallscripts
 usr/local/bin/xhippo					    xhippo
 usr/local/bin/xhplay					    xhippo
@@ -3382,6 +3384,7 @@ usr/share/applications/slimjet.desktop			    slimjet
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/transmission.desktop		    transmission-2.60
+usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xrecord.desktop			    xhippo
 usr/share/audio/2barks.au				    pburn
@@ -4075,6 +4078,7 @@ usr/share/pixmaps/shutdown.png				    jwm-setup-dd64
 usr/share/pixmaps/slimjet.xpm				    slimjet
 usr/share/pixmaps/switch.png				    jwm-setup-dd64
 usr/share/pixmaps/transmission.png			    transmission-2.60
+usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/xhippo.xpm				    xhippo
 usr/share/pixmaps/xhippo/mini-record.xpm		    xhippo
 usr/share/pixmaps/xhippo/minimize.png			    xhippo
