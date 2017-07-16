@@ -1880,6 +1880,28 @@ SHA256: 7529c1b1bd8c8fdefa579421e28733485ccfaf2862131a63f6581fdfb4b47330
 SHA512: f042144e6a5db3b4dab4ad27ecd238a4150575e5f3a281f80be1416e264d732f2075fd2149cb609b4ce09da57acc45f614a8118c1e718b296252da01c0e77f19
 Description: Grub4DosConfig GUI script from Shinobar written for Puppy linux.
 
+Package: youtube-get2
+Architecture: all
+Version: 0.1.8
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu
+Recommends: locales
+Replaces: youtube-get
+Filename: ./Extra/youtube-get2_0.1.8_all.deb
+Size: 1496922
+MD5sum: d9e853b655667b476743bf2d8b433a66
+SHA1: ba3478a6dd01a0f449a0c3d0223a3a82483ccb4c
+SHA256: 35dd23df691ecf8fefcf88041620b58a09963b35fb3cc9843fa34299f736bf7e
+SHA512: 2674c23b58f6eb9a788d45abdb22cc347a373470699f520830536be60e73fa48980bdc5d24d5cedf02cc613e55035db37c9ff7c5e2a30bdb54463fd2619d45b1
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+
 Package: slim
 Architecture: amd64
 Version: 1:1.3.6-4-ddjessie
