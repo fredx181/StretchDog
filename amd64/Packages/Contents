@@ -873,6 +873,7 @@ usr/lib/gio/modules/libpup-volume-monitor.so		    pup-volume-monitor
 usr/lib/grub4dos/default				    grub4dosconfig
 usr/lib/grub4dos/grldr					    grub4dosconfig
 usr/lib/grub4dos/wee.mbr				    grub4dosconfig
+usr/lib/gtk-2.0/modules/libgtk2desklet.so		    gtkdesklet
 usr/lib/i386-linux-gnu/perl5/5.20/auto/WWW/YoutubeViewer/.packlist youtube-viewer
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
 usr/lib/libcrypto.so.1					    transmission-2.60
@@ -1303,6 +1304,8 @@ usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
 usr/local/bin/flashplayerchoice				    flashplayerchoice
 usr/local/bin/gdialog					    zenity-2.30
+usr/local/bin/gifondesktop				    gifondesktop
+usr/local/bin/gifshow					    gifondesktop
 usr/local/bin/gnome-mplayer				    gnome-mplayer-1.0.6
 usr/local/bin/grldr					    debdoginstallscripts
 usr/local/bin/gsu					    gsu
@@ -1310,6 +1313,7 @@ usr/local/bin/gsu-notimeout				    gsu
 usr/local/bin/gsu-root					    remaster-scripts
 usr/local/bin/gsu-timeout				    gsu
 usr/local/bin/gsu-xterm					    gsu
+usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/gvidcap					    xvidcap
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
@@ -3326,6 +3330,7 @@ usr/sbin/get_modem_alternate_device			    frisbee
 usr/sbin/grub4dosconfig					    grub4dosconfig
 usr/sbin/micro-edit					    desktop-editor
 usr/share/aclocal/yad.m4				    yad
+usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
 usr/share/applications/ConkyClock.desktop		    conkyclock
 usr/share/applications/ConkyClock2.desktop		    conkyclock2
 usr/share/applications/Create-module-from-changes.desktop   remaster-scripts
@@ -3453,6 +3458,7 @@ usr/share/doc/gftp-text/examples/parse-netrc.pl		    gftp-text
 usr/share/doc/gftp/changelog.Debian.gz			    gftp
 usr/share/doc/gftp/changelog.gz				    gftp
 usr/share/doc/gftp/copyright				    gftp
+usr/share/doc/gtk2desklet/help.txt			    gtkdesklet
 usr/share/doc/help/C/grub4dos.html			    grub4dosconfig
 usr/share/doc/help/C/grub4dosconfig.html		    grub4dosconfig
 usr/share/doc/help/images/gnibbles.png			    grub4dosconfig
@@ -3636,6 +3642,17 @@ usr/share/gftp/tar.xpm					    gftp-gtk
 usr/share/gftp/txt.xpm					    gftp-gtk
 usr/share/gftp/up.xpm					    gftp-gtk
 usr/share/gftp/world.xpm				    gftp-gtk
+usr/share/gifondesktop/deb1.gif				    gifondesktop
+usr/share/gifondesktop/deb2.gif				    gifondesktop
+usr/share/gifondesktop/dog-image.gif			    gifondesktop
+usr/share/gifondesktop/dogrun-red.gif			    gifondesktop
+usr/share/gifondesktop/dogsrunning.gif			    gifondesktop
+usr/share/gifondesktop/earth128.gif			    gifondesktop
+usr/share/gifondesktop/earth273.gif			    gifondesktop
+usr/share/gifondesktop/earth64.gif			    gifondesktop
+usr/share/gifondesktop/hound.gif			    gifondesktop
+usr/share/gifondesktop/hound245.gif			    gifondesktop
+usr/share/gifondesktop/snoopy.gif			    gifondesktop
 usr/share/glib-2.0/schemas/apps.gecko-mediaplayer.preferences.gschema.xml gnome-mplayer-1.0.6
 usr/share/glib-2.0/schemas/apps.gnome-mplayer.preferences.enums.xml gnome-mplayer-1.0.6
 usr/share/glib-2.0/schemas/apps.gnome-mplayer.preferences.gschema.xml gnome-mplayer-1.0.6
@@ -4032,6 +4049,7 @@ usr/share/pixmaps/floppy24.png				    mount-wizard
 usr/share/pixmaps/frisbee.png				    frisbee
 usr/share/pixmaps/gftp.png				    gftp-gtk
 usr/share/pixmaps/gftp.xpm				    gftp-gtk
+usr/share/pixmaps/gif-file.png				    gifondesktop
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/gnome-mplayer.xpm			    gnome-mplayer-1.0.6
 usr/share/pixmaps/go-next.png				    youtube-get2
@@ -4422,4 +4440,7 @@ usr/share/zenity/zenity-scale.png			    zenity-2.30
 usr/share/zenity/zenity-text.png			    zenity-2.30
 usr/share/zenity/zenity.png				    zenity-2.30
 usr/share/zenity/zenity.ui				    zenity-2.30
+usr/src/gtk2desklet/compile				    gtkdesklet
+usr/src/gtk2desklet/install				    gtkdesklet
+usr/src/gtk2desklet/libgtk2desklet.c			    gtkdesklet
 var/local/icons/frisbee.png				    frisbee
