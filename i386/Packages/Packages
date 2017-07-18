@@ -2669,6 +2669,29 @@ SHA256: e8f9156808525024729a1593e6f91782794efd4134e4cd9a1ef2c224c73e5c00
 SHA512: a91d85cf0b8ae6aa3ad1f66c478bc08eee0331f199c5a631ff0db0f291fa6ef3a577dd83d37de31319fdc68f7176efaa2893bb04f77089275fcb60f350e00aec
 Description: weX AV and X11 recorder
 
+Package: bacon
+Architecture: i386
+Version: 3.5.3-1
+Priority: extra
+Section: devel
+Maintainer: Peter van Eerten <peter@basic-converter.org>
+Installed-Size: 2332
+Provides: bacon
+Depends: libc6
+Filename: ./Extra/bacon_3.5.3-1_i386.deb
+Size: 504802
+MD5sum: dc85fc7dbdb827a04ec6c39ceb80fc7a
+SHA1: 80ea6d11319a42728c79526443d7b7956597290b
+SHA256: 78492020db9ab93f0cd5ad12d34d4c5e9144fb1fbccc6339eeb5d46dec7207b4
+SHA512: 289926fd4fc763d7606b1f7504bbb07a2aebde180586d858765b8c76cc95051d5a9fb4e7d9bdc02da4c354d6a4b15676740f9f9151fb0acca3b3a5c1a69fff22
+Description: Free BASIC to C converter for Unix-based systems.
+ BaCon is a free BASIC to C translator for Unix-based systems, which runs on
+ most Unix/Linux/BSD platforms, including MacOSX. It intends to be a programming
+ aid in creating tools which can be compiled on different platforms (including
+ 64bit environments), while trying to revive the days of the good old BASIC.
+ Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
+ clang/LLVM compiler and possibly also by other C compilers.
+
 Package: conkyclock
 Architecture: all
 Version: 0.0.2

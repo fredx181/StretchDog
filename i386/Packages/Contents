@@ -880,6 +880,9 @@ usr/bin/Frisbee						    frisbee
 usr/bin/Lumina-DE					    lumina-desktop-debdog
 usr/bin/Xdialog						    gtkdialog
 usr/bin/apulse						    apulse
+usr/bin/bacon						    bacon
+usr/bin/bacon.sh					    bacon
+usr/bin/bacongui					    bacon
 usr/bin/cddetect					    pburn
 usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
@@ -1322,6 +1325,7 @@ usr/lib/libLuminaUtils.so				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0.0				    lumina-desktop-debdog
+usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
 usr/lib/libmusicbrainz3.so.6				    libmusicbrainz3-6
 usr/lib/libmusicbrainz3.so.6.2.0			    libmusicbrainz3-6
@@ -4547,6 +4551,7 @@ usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
+usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar
@@ -4662,6 +4667,10 @@ usr/share/doc/adwaita-icon-theme/NEWS.gz		    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/README.gz		    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/changelog.Debian.gz	    adwaita-icon-theme
 usr/share/doc/adwaita-icon-theme/copyright		    adwaita-icon-theme
+usr/share/doc/bacon/CHANGES				    bacon
+usr/share/doc/bacon/changelog.Debian.gz			    bacon
+usr/share/doc/bacon/changelog.gz			    bacon
+usr/share/doc/bacon/copyright				    bacon
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
 usr/share/doc/conky-all-dbg/NEWS.Debian.gz		    conky-all-dbg
@@ -4947,6 +4956,7 @@ usr/share/dpkg/abitable					    dpkg
 usr/share/dpkg/cputable					    dpkg
 usr/share/dpkg/ostable					    dpkg
 usr/share/dpkg/triplettable				    dpkg
+usr/share/enscript/hl/bacon.st				    bacon
 usr/share/epdfview/pixmaps/icon_epdfview-24.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-32.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-48.png		    epdfview
@@ -7585,6 +7595,7 @@ usr/share/man/ja/man8/dpkg-divert.8.gz			    dpkg
 usr/share/man/ja/man8/start-stop-daemon.8.gz		    dpkg
 usr/share/man/ja/man8/update-alternatives.8.gz		    dpkg
 usr/share/man/man1/Ceni.1p.gz				    ceni
+usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/ceni.1p.gz				    ceni
 usr/share/man/man1/conky.1.gz				    conky-all,conky-std,conky-cli
 usr/share/man/man1/dillo.1.gz				    dillo
@@ -7832,6 +7843,8 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png y
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
 usr/share/pixmaps/AppImageAssistant.png			    create-portable
+usr/share/pixmaps/BaCon.png				    bacon
+usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/Insight-FileManager.png		    lumina-desktop-debdog
 usr/share/pixmaps/Lumina-DE.png				    lumina-desktop-debdog
 usr/share/pixmaps/QtWeb.png				    qtweb
