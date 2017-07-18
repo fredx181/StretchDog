@@ -669,6 +669,9 @@ usr/bin/Ceni						    ceni
 usr/bin/Frisbee						    frisbee
 usr/bin/Xdialog						    gtkdialog
 usr/bin/apulse						    apulse
+usr/bin/bacon						    bacon
+usr/bin/bacon.sh					    bacon
+usr/bin/bacongui					    bacon
 usr/bin/cddetect					    pburn
 usr/bin/cddetect_quick					    pburn
 usr/bin/cdrecord					    pburn
@@ -875,6 +878,7 @@ usr/lib/grub4dos/grldr					    grub4dosconfig
 usr/lib/grub4dos/wee.mbr				    grub4dosconfig
 usr/lib/gtk-2.0/modules/libgtk2desklet.so		    gtkdesklet
 usr/lib/i386-linux-gnu/perl5/5.20/auto/WWW/YoutubeViewer/.packlist youtube-viewer
+usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
 usr/lib/libcrypto.so.1					    transmission-2.60
 usr/lib/libmusicbrainz3.so.6				    libmusicbrainz3-6
@@ -1370,6 +1374,7 @@ usr/local/bin/transmission-edit				    transmission-2.60
 usr/local/bin/transmission-gtk				    transmission-2.60
 usr/local/bin/transmission-remote			    transmission-2.60
 usr/local/bin/transmission-show				    transmission-2.60
+usr/local/bin/txt2svg					    txt2svg
 usr/local/bin/update-menus				    jwm-setup-dd64
 usr/local/bin/upgrade-kernel				    upgrade-kernel
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
@@ -3330,6 +3335,7 @@ usr/sbin/get_modem_alternate_device			    frisbee
 usr/sbin/grub4dosconfig					    grub4dosconfig
 usr/sbin/micro-edit					    desktop-editor
 usr/share/aclocal/yad.m4				    yad
+usr/share/applications/ Text to SVG_PNG Fancy Text and Logo Generator.desktop txt2svg
 usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
 usr/share/applications/ConkyClock.desktop		    conkyclock
 usr/share/applications/ConkyClock2.desktop		    conkyclock2
@@ -3347,6 +3353,7 @@ usr/share/applications/apt2sfs-cli-fullinst.desktop	    apt2sfs
 usr/share/applications/apt2sfs-cli.desktop		    apt2sfs
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
+usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm
@@ -3412,6 +3419,11 @@ usr/share/desktop-directories/dog-settings.directory	    jwm-setup-dd64
 usr/share/desktop-directories/dog-system.directory	    jwm-setup-dd64
 usr/share/doc-base/libpng12				    libpng12-0
 usr/share/doc-base/roxterm				    roxterm-common
+usr/share/doc/bacon/.CHANGES.swp			    bacon
+usr/share/doc/bacon/CHANGES				    bacon
+usr/share/doc/bacon/changelog.Debian.gz			    bacon
+usr/share/doc/bacon/changelog.gz			    bacon
+usr/share/doc/bacon/copyright				    bacon
 usr/share/doc/ceni/changelog.gz				    ceni
 usr/share/doc/ceni/copyright				    ceni
 usr/share/doc/epdfview/AUTHORS				    epdfview
@@ -3590,6 +3602,7 @@ usr/share/doc/wget/copyright				    wget
 usr/share/doc/x11-xserver-utils/changelog.amd64.gz	    x11-xserver-utils
 usr/share/doc/x11-xserver-utils/changelog.gz		    x11-xserver-utils
 usr/share/doc/x11-xserver-utils/copyright		    x11-xserver-utils
+usr/share/enscript/hl/bacon.st				    bacon
 usr/share/epdfview/pixmaps/icon_epdfview-24.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-32.png		    epdfview
 usr/share/epdfview/pixmaps/icon_epdfview-48.png		    epdfview
@@ -3894,6 +3907,7 @@ usr/share/man/es/man1/roxterm.1.gz			    roxterm-common
 usr/share/man/fr/man1/roxterm-config.1.gz		    roxterm-common
 usr/share/man/fr/man1/roxterm.1.gz			    roxterm-common
 usr/share/man/man1/Ceni.1p.gz				    ceni
+usr/share/man/man1/bacon.1.gz				    bacon
 usr/share/man/man1/ceni.1p.gz				    ceni
 usr/share/man/man1/epdfview.1.gz			    epdfview
 usr/share/man/man1/gftp-gtk.1.gz			    gftp-gtk
@@ -4025,6 +4039,8 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/feed_icon.png youtube-vi
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
+usr/share/pixmaps/BaCon.png				    bacon
+usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
 usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
@@ -4096,6 +4112,7 @@ usr/share/pixmaps/shutdown.png				    jwm-setup-dd64
 usr/share/pixmaps/slimjet.xpm				    slimjet
 usr/share/pixmaps/switch.png				    jwm-setup-dd64
 usr/share/pixmaps/transmission.png			    transmission-2.60
+usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/xhippo.xpm				    xhippo
 usr/share/pixmaps/xhippo/mini-record.xpm		    xhippo

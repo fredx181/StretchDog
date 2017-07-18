@@ -1544,6 +1544,29 @@ Description:  findnrun 1.10.6 (documentation)
   Files in this add-on package: larger English help (HTML).
   https://github.com/step-/find-n-run/
 
+Package: bacon
+Architecture: amd64
+Version: 3.5.4-1
+Priority: extra
+Section: devel
+Maintainer: Peter van Eerten <peter@basic-converter.org>
+Installed-Size: 2364
+Provides: bacon
+Depends: libc6
+Filename: ./Extra/bacon_3.5.4-1_amd64.deb
+Size: 591230
+MD5sum: b1b35b8debf5dc3299af2632aedc97c3
+SHA1: 4196798131e2443164930806ba0a89f483dc0565
+SHA256: d24eb303b5c642544826c92ec30edf23e2e97f559fc58367a15a6abcda795b70
+SHA512: 8b0fb2a23b2653529a686609695292619062c2bfcef1a654cfef77a4c50058210788df6119826af08941197f99790abaf54ce7c9e21b1e1d934f4ba0d2d77d4b
+Description: Free BASIC to C converter for Unix-based systems.
+ BaCon is a free BASIC to C translator for Unix-based systems, which runs on
+ most Unix/Linux/BSD platforms, including MacOSX. It intends to be a programming
+ aid in creating tools which can be compiled on different platforms (including
+ 64bit environments), while trying to revive the days of the good old BASIC.
+ Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
+ clang/LLVM compiler and possibly also by other C compilers.
+
 Package: libssl0.9.8
 Architecture: amd64
 Version: 0.9.8o-4squeeze14
@@ -2139,6 +2162,22 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   Changes in this version 1.0.2
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
+
+Package: txt2svg
+Architecture: amd64
+Version: 20170601
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 155
+Depends: libc6
+Filename: ./Extra/txt2svg_20170601_amd64.deb
+Size: 129472
+MD5sum: 81d67355f2feb5e645e78e9808e3e113
+SHA1: a79e59834cd848e1054aa418140eb9c55a4dde0f
+SHA256: dc7c25d6928cc4f7d41b698e52a772ab5fd9df765e6a3d729a00beb1ea85d3b5
+SHA512: c0b0fd7ceef3b0a58a2be3b87e66ba3d65526deb8db48b3bf0634b0a3f821f326abeafcd9522347a94df66e9ab05ede08cf0fcee764c409840667271c4b2a169
+Description: Text to SVG/PNG Fancy Text and Logo Generator
 
 Package: desktop-drive-icons
 Architecture: amd64

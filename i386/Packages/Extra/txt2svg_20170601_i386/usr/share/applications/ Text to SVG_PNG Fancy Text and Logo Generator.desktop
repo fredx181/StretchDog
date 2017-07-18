@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Text to SVG/PNG Fancy Text and Logo Generator
+Comment=
+Exec=txt2svg
+Icon=txt2svg
+Terminal=false
+StartupNotify=false
+Categories=Graphics;
