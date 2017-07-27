@@ -1,1 +1,0 @@
-/usr/bin/network_tray.sh
