@@ -1,0 +1,15 @@
+#!/bin/sh
+# postinst script for frisbee
+#
+# see: dh_installdeb(1)
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+[ -f /etc/frisbee/wpa_supplicant.conf ] && mv -f /etc/frisbee/wpa_supplicant.conf /etc/frisbee/wpa_supplicant.conf.bak
+
+
+db_stop;
+
+exit 0

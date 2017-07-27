@@ -3569,6 +3569,21 @@ SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f
 Homepage: http://flburn.sourceforge.net/
 Description: Optical disc burning software for linux
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.3-0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools
+Filename: ./Extra/peasywifi_4.3-0_i386.deb
+Size: 14922
+MD5sum: f8d78b182b22c5926beea67282db8b29
+SHA1: 60c14226ead70335f87b69faa3dd652562a6ffe3
+SHA256: 0bd9756c6ac205b2c3dfcea8b69d17f70af2e1bc640628a40d062af5115f7e2b
+SHA512: 8d1c82ae4cac490aa0ecf00fb878466b1b1198aa30fb6e8e3563832e195f10d45261b82f9b28a8bf7cbcbb1cfa3a9282bac515da4c18cd752586fd71d3cdd059
+Description: Reliable network manager
+
 Package: apulse
 Architecture: i386
 Version: 20140922-1
