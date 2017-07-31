@@ -152,13 +152,13 @@ Section: system
 Maintainer: root@jessie
 Installed-Size: 363
 Provides: gtkdialog
-Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, x11-utils, gettext-base
 Filename: ./Included/gtkdialog_0.8.3-1_amd64.deb
-Size: 111898
-MD5sum: 31f46f4985396c26bb99aeda4f3e2a5d
-SHA1: e8af7ae0853fb60d1ce893136158d884ad60ca67
-SHA256: db00a1e757baaf176241cad1df537f1294d908eadda67fb8342afa4d95ca0809
-SHA512: b22f85c9328b21e4856e5b7060df8f9103c7d43f90b7675dc300e1b47836977420f24f0fc7a66070d4ee45e402b0f51b370cbfeffeef61b5e5567ec2c59093ca
+Size: 112144
+MD5sum: 5f57ef573303c4d5ccd4938597bb0168
+SHA1: 5d9b494f772c5bd2d96a5637423aaabb192e5e57
+SHA256: e809e9c507cc29188cadd27b44db7fdb81f523bbe46caf050430e674b4be3075
+SHA512: 557613a6e7430dcaa11d3d9ae92ec08b91fc8a8c9a019931733c718d3f066cf332501c9610dd4c1d2f8d991d18becda63b1f92ada6bea7b6f35af328434c3cf5
 Description: gtkdialog
 
 Package: frisbee
@@ -411,18 +411,18 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
 
 Package: yad
 Architecture: amd64
-Version: 0.31.2
+Version: 1:0.31.2
 Priority: extra
 Section: x11
 Maintainer: fredx181
 Installed-Size: 429
 Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
 Filename: ./Included/yad_0.31.2_amd64.deb
-Size: 171618
-MD5sum: f6ba36324c38e41e85d16cfc0fcf0d5e
-SHA1: 3ee6ebd129c339b2e824a4ef3789b430ac9b207a
-SHA256: 4491582a73f6205182569ea36fe54158533f13bcb4f3df8fdd16e6eb68ce8c2e
-SHA512: 6d010f1c7807ed4ae168afa5bcfa14128a28dbc18c0c8da76a7e44ed4dff9a93dfbb5b41fd80e05726b2f5b1982dca643e2cb7bb8d19e75634cfdc02c4c39396
+Size: 171492
+MD5sum: cc9feb87807b2ac66bc7d4045efe8a83
+SHA1: 5c413356422d1abf1af7d7f8b0642a629ed3234e
+SHA256: fbf428bacd24eea3cf1e811957486013f125f1a1e316ec25eac7160bcd5d8fa9
+SHA512: 3894aebd77d545571442396536244bcb3feee63e8a92b46114c0f7eaa0b552d564317a9b42d5f8397089871c93292845bdcec6cfbbd35f69d5d253fb9ccacb02
 Homepage: http://code.google.com/p/yad/
 Description: Yet Another Dialog - dialogs for shell
  Yad (yet another dialog) is a fork of Zenity with many improvements, such
@@ -1308,6 +1308,168 @@ SHA256: 7b3d8a17b5b10eb78ef81c42c726d85211eeba3ba0057c5432554bf811c33443
 SHA512: aa3dbcf9c8439b7300fab641872605ca01ef8fdc71a057c951a322a228c12b780235d446262695576c080936ca7baed3ed3c78cef29873b75f1daf9ca6a22b87
 Description: Mount .squashfs as unprivileged user.
  Squashfuse lets you mount SquashFS archives in user-space
+
+Package: adwaita-icon-theme
+Architecture: all
+Version: 3.14.0-0
+Multi-Arch: foreign
+Priority: optional
+Section: gnome
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 14087
+Depends: hicolor-icon-theme, libgtk-3-bin, librsvg2-common
+Breaks: gnome-themes-standard-data (<< 3.13.90)
+Replaces: gnome-themes-standard-data (<< 3.13.90)
+Filename: ./Mod/adwaita-icon-theme_3.14.0-0_all.deb
+Size: 474802
+MD5sum: 83e185afe40284c68102bec57c1a1d79
+SHA1: 15863e1265e9697b5ac1cb539b87bfa351950a8a
+SHA256: 9964dd3ec35127b137c4fc2c68e113b7e51cbb5c6587016bebcbc821c5276e05
+SHA512: 268ccb11611d95d49613a63de137855487dcf404df92a9321de0bbe15c4629ab6ea97959d81e42c81562138b51af90505c59642845016825fdbb4b346c0fc8f3
+Description: default icon theme of GNOME
+ This package contains the default icon theme used by the GNOME desktop.
+ The icons are used in many of the official gnome applications like eog,
+ evince, system monitor, and many more.
+
+Package: wget
+Architecture: amd64
+Version: 1.17.1
+Multi-Arch: foreign
+Priority: important
+Section: web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Noël Köthe <noel@debian.org>
+Installed-Size: 880
+Depends: libc6 (>= 2.17), libidn11 (>= 1.13), libpcre3, libssl1.0.0 (>= 1.0.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: wget-ssl
+Filename: ./Mod/wget_1.17.1_amd64.deb
+Size: 298670
+MD5sum: bac9f8d77d62ef2ebbe0833b32c8bcae
+SHA1: ec3e04c79c58e63d0ab23c4a7ff8dca76d709df4
+SHA256: acb02e74838cb78b3794c4d8fc3fda07a4dfc980e0e3228bcb4b18bea4ec08be
+SHA512: 1db1e070b4a6ac85750340192081586e2a6a9d3395805cdeb18b9e2b0319c9169fd3ec28d005ee180c0ad5534a7e691e95fd36da73d83f72f6c928b42b2b4f96
+Homepage: https://www.gnu.org/software/wget/
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
+
+Package: libxml2-dev
+Architecture: amd64
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxml2
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2806
+Depends: libxml2 (= 2.9.1+dfsg1-5+deb8u4)
+Suggests: pkg-config
+Filename: ./Mod/libxml2-dev_2.9.1+dfsg1-5+deb8u4_amd64.deb
+Size: 694928
+MD5sum: 2c9795b564d3f4983fc5dfe639bc3d43
+SHA1: 230ff96c1a39ae455836d545c2f58eb001b2db38
+SHA256: caa9f91965e88e31e5520892d35465752df049c7b054537ac83d4695a45b8d19
+SHA512: 9160ce29fe0dd70cf4aa01c9330dae9cf85dec691cdd20d02dd0a2d361c8a766a0ed89f1fe8bb21d34e24d49e82a4ed652460a80b715ac01384008e2f16b0e67
+Homepage: http://xmlsoft.org/
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
+Package: x11-xserver-utils
+Architecture: amd64
+Version: 1:7.7+7+b1
+Priority: optional
+Section: x11
+Source: x11-xserver-utils (7.7+7)
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 516
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libx11-6, libxaw7, libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6, libxmuu1, libxrandr2 (>= 2:1.5.0), libxrender1, libxt6, libxxf86vm1
+Suggests: nickle, cairo-5c, xorg-docs-core
+Conflicts: iceauth, sessreg, xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xvidtune
+Breaks: arandr (<< 0.1.9)
+Replaces: iceauth, sessreg, xbase-clients (<< 1:7.3), xgamma, xhost, xmodmap, xrandr, xrdb, xrefresh, xrgb, xset, xsetmode, xsetpointer, xsetroot, xstdcmap, xutils (<< 1:7.2), xvidtune
+Filename: ./Mod/x11-xserver-utils_7.7+7+b1_amd64.deb
+Size: 167130
+MD5sum: 6e5ea0ae55340f320ce4babf1cc34280
+SHA1: f126fb28ed75f77ca7c5ecfc28aded799b85649b
+SHA256: ca0538612edc90e3c83a9d71ddcb4348878e40d5c32d31ea348a8e167a8fe7e7
+SHA512: 0b987f6d7e98c326cfd9532ad48ec77b4a528eeb68e6e2cee7499d95d66ed91c4478d8556176ea7c14e2b6bef9aef9858eec4a50a9502a6d63302fbb5c8f847f
+Description: X server utilities
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of X Server utilities
+ that ship with the X Window System, including:
+  - iceauth, a tool for manipulating ICE protocol authorization records;
+  - rgb;
+  - sessreg, a simple program for managing utmp/wtmp entries;
+  - xcmsdb, a device color characteristic utility for the X Color Management
+    System;
+  - xgamma, a tool for querying and setting a monitor's gamma correction;
+  - xhost, a very dangerous program that you should never use;
+  - xmodmap, a utility for modifying keymaps and pointer button mappings in X;
+  - xrandr, a command-line interface to the RandR extension;
+  - xrdb, a tool to manage the X server resource database;
+  - xrefresh, a tool that forces a redraw of the X screen;
+  - xset, a tool for setting miscellaneous X server parameters;
+  - xsetmode and xsetpointer, tools for handling X Input devices;
+  - xsetroot, a tool for tailoring the appearance of the root window;
+  - xstdcmap, a utility to selectively define standard colormap properties;
+  - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: libxml2
+Architecture: amd64
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: standard
+Section: libs
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 1766
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.15), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Recommends: xml-core
+Filename: ./Mod/libxml2_2.9.1+dfsg1-5+deb8u4_amd64.deb
+Size: 801806
+MD5sum: 796e536a9f2f167a080ef1a902d8a1a3
+SHA1: a72478e25d98ff603f923fe418fd63ee88c3496c
+SHA256: c26bd9a184963951bc513190a6bd0fd1bb03ff5cd80074d7066e4c438e184ae5
+SHA512: a91f96c0a4ad7d95d91daa860d51b5941bff9f9863b70efe0ce852a7ac789cd66d624a83fffc15cee04a1c167ef78c6cd9900d95b0ff77d5c6e90d08c3727fdf
+Homepage: http://xmlsoft.org/
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
 
 Package: conkyclock2
 Architecture: all
