@@ -215,13 +215,13 @@ Section: system
 Maintainer: root@wheezy
 Installed-Size: 264
 Provides: gtkdialog
-Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, x11-utils, gettext-base
 Filename: ./Included/gtkdialog_0.8.3-1_i386.deb
-Size: 183852
-MD5sum: 042468d52d00bcb30082eccaf0b83a70
-SHA1: 1256b13aa56101e3c4ec364f31a2d05fd756196b
-SHA256: 6827fa728443a05e07c497961a42e05e1b22797936e95ca77a716e833fc05b63
-SHA512: 882f1d5ab67f7b637f48f0e52fcb26142b992d6f7034ac811fcfdc53661e4d729e424499d19454c81370ff35d6ec279df1840973c0f19502be7268819231a859
+Size: 140842
+MD5sum: 44c477dece616a72496ee28ce601a581
+SHA1: 8087868e40e0e46c014d4c5ee573243b6b046fd3
+SHA256: ff3a359df09e8f2e6756c8a5dc7a2faab1ba58d87b2db9473098b76e8688fa7a
+SHA512: 142ce0b878be7383208b2b31bef99d1c1f02e34f253e3ed576c151d88383ced2dd7443b51cfc36768a0bc230121280f93b1ac408dbb1eed30098462419bfda9f
 Description: gtkdialog
 
 Package: libudev0
@@ -1233,18 +1233,18 @@ Description: The makedebpackage (re)builds a debian package
 
 Package: yad
 Architecture: i386
-Version: 0.38.1
+Version: 1:0.38.1
 Priority: extra
 Section: x11
 Maintainer: fredx181
 Installed-Size: 429
 Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
 Filename: ./Included/yad_0.38.1_i386.deb
-Size: 186402
-MD5sum: b5a9854279c0808d310676c6c4189064
-SHA1: 8ec55e3ef20531edcaf63726b206edaec1d23f37
-SHA256: 241df2a9ff6bd7c1c31af35e437db42b38a3a98e41cef53766a4535c8431c355
-SHA512: b9086e8245ff55b4f0538858ced931d83112fd79eb2129def9c39a70ca328cd889cb18dd49fcc8dcaf27c3a1e1a9b5333452db3b0f0f8686d6c60b131b537d24
+Size: 186466
+MD5sum: 03169289888c05f385e2501414c9724b
+SHA1: b53ccbcbfa7fa7dd0385d33e4de3ab78ae62e355
+SHA256: 8472f0311a077737fc7beac6bc22a5bb0e4a52eec83b10b5456ca7deac28f60a
+SHA512: 63e22255349bcc299f980c8b9a069375190b3332cbf5253ddd0005fa63735b8260474e5f8792aa348bd6e5f45e5c07c4396defecc7b0955fd20a1ec5371508de
 Homepage: http://code.google.com/p/yad/
 Description: Yet Another Dialog - dialogs for shell
  Yad (yet another dialog) is a fork of Zenity with many improvements, such
@@ -1801,6 +1801,64 @@ Description: disk encryption support - command line tools
  .
  This package provides cryptsetup, cryptsetup-reencrypt and luksformat.
 
+Package: libxml2
+Architecture: i386
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: standard
+Section: libs
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 1867
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.15), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Recommends: xml-core
+Filename: ./Mod/libxml2_2.9.1+dfsg1-5+deb8u4_i386.deb
+Size: 835080
+MD5sum: 4b78c664eeb8c24961734ad1530d954c
+SHA1: 4cfaa66ac9e2766e6255b67754cc374cb5fb28f3
+SHA256: df470474ea883a934beb0ed5426ad0adc53b13b8cee85acd15ebad628a8c2856
+SHA512: 22fc200a1acf9b0d9e462110b716624224ce8f5c24cdf226fd9f5e2c80e9b423faf5a9f46132acf8e523a5682f407b77901064941497703d53ca9598efdb167e
+Homepage: http://xmlsoft.org/
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+
+Package: libxml2-dev
+Architecture: i386
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxml2
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2531
+Depends: libxml2 (= 2.9.1+dfsg1-5+deb8u4)
+Suggests: pkg-config
+Filename: ./Mod/libxml2-dev_2.9.1+dfsg1-5+deb8u4_i386.deb
+Size: 743670
+MD5sum: 6e07663171b12149e133a9a547a7c409
+SHA1: 669a3f233b378d75d54e5b141e74b5cbb49899e6
+SHA256: 250b69c7fc7e9c68b4595ee1b06c07105a4a51765d2af4c5c7d3ba4872738d0f
+SHA512: 92f7930dc73fc1d5489720d2ca311d2e029156a89729140da19e66fe9779632e23f1026afbef6d980343394dd4f5875889460993ceb8fbacce8e60c37df18092
+Homepage: http://xmlsoft.org/
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
 Package: x11-xserver-utils
 Architecture: i386
 Version: 1:7.7+7+b1
@@ -1843,6 +1901,45 @@ Description: X server utilities
   - xsetroot, a tool for tailoring the appearance of the root window;
   - xstdcmap, a utility to selectively define standard colormap properties;
   - xvidtune, a tool for customizing X server modelines for your monitor.
+
+Package: wget
+Architecture: i386
+Version: 1.17.1
+Multi-Arch: foreign
+Priority: important
+Section: web
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Noël Köthe <noel@debian.org>
+Installed-Size: 912
+Depends: libc6 (>= 2.17), libidn11 (>= 1.13), libpcre3, libssl1.0.0 (>= 1.0.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Conflicts: wget-ssl
+Filename: ./Mod/wget_1.17.1_i386.deb
+Size: 312048
+MD5sum: 5ca8267691e4479e4897faa6e96ec8cd
+SHA1: 6392d2c4e76dfdf88b9a51e450c69cb2684d9b1d
+SHA256: 84c02e14f6e196330169c9b9f274052d772825c9b596dd177fe1f55544959085
+SHA512: 0b3624c67be71d77a48b187e7205f4572e779f1573280c8540aeb34528fe06e37d94072fd267f1f468b901a77761e99997a2342dc87245bed20c9edac2a32e47
+Homepage: https://www.gnu.org/software/wget/
+Description: retrieves files from the web
+ Wget is a network utility to retrieve files from the web
+ using HTTP(S) and FTP, the two most widely used internet
+ protocols. It works non-interactively, so it will work in
+ the background, after having logged off. The program supports
+ recursive retrieval of web-authoring pages as well as FTP
+ sites -- you can use Wget to make mirrors of archives and
+ home pages or to travel the web like a WWW robot.
+ .
+ Wget works particularly well with slow or unstable connections
+ by continuing to retrieve a document until the document is fully
+ downloaded. Re-getting files from where it left off works on
+ servers (both HTTP and FTP) that support it. Both HTTP and FTP
+ retrievals can be time stamped, so Wget can see if the remote
+ file has changed since the last retrieval and automatically
+ retrieve the new version if it has.
+ .
+ Wget supports proxy servers; this can lighten the network load,
+ speed up retrieval, and provide access behind firewalls.
 
 Package: wget
 Architecture: i386
