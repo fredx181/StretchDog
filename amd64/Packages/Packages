@@ -152,13 +152,13 @@ Section: system
 Maintainer: root@jessie
 Installed-Size: 363
 Provides: gtkdialog
-Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, x11-utils, gettext-base
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, x11-utils, gettext-base, libvte9
 Filename: ./Included/gtkdialog_0.8.3-1_amd64.deb
-Size: 112144
-MD5sum: 5f57ef573303c4d5ccd4938597bb0168
-SHA1: 5d9b494f772c5bd2d96a5637423aaabb192e5e57
-SHA256: e809e9c507cc29188cadd27b44db7fdb81f523bbe46caf050430e674b4be3075
-SHA512: 557613a6e7430dcaa11d3d9ae92ec08b91fc8a8c9a019931733c718d3f066cf332501c9610dd4c1d2f8d991d18becda63b1f92ada6bea7b6f35af328434c3cf5
+Size: 112690
+MD5sum: 2f78b0da6329f279fec42efa9ddfc5df
+SHA1: 8f08ab0fc88c938c40f984c6838821d8e9772a3e
+SHA256: 15edee4b483a53adaf7e8d8bb2ade641c0aa889933bf2a1bd973a9cf5a84c96e
+SHA512: 3296590695e379f5b509a5df2566ce8325b345c52ee4cdd3691e62029dcf7ea1d132c43e805eb62228ac2b8da83b9648021e27f2990cffabba67b32a39f30b72
 Description: gtkdialog
 
 Package: frisbee
