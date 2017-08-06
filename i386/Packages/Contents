@@ -67,6 +67,8 @@ etc/logrotate.d/slim					    slim
 etc/logrotate.d/xdm					    xdm
 etc/menu-methods/jwm					    jwm
 etc/menu-methods/jwm-debdog				    jwm
+etc/modprobe.d/rtl8192cu.conf				    realtek-wifi-drivers-k4.9.0-i386
+etc/modprobe.d/rtl8xxxu.conf				    realtek-wifi-drivers-k4.9.0-i386
 etc/mpv/encoding-profiles.conf				    mpv
 etc/network.conf					    wifibox-dhcpcd,wifibox
 etc/networkmodules					    sns
@@ -87,12 +89,12 @@ etc/skel/.config/rox.sourceforge.net/MIME-types/application jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/text_plain  jwm-setup
-etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar
-etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar
+etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
 etc/skel/.config/rox.sourceforge.net/OpenWith/.application_x-deb/install-deb-and-dependencies fixdepinstall
 etc/skel/.config/rox.sourceforge.net/OpenWith/.inode_directory/install-dir-debs-and-dependencies fixdepinstall
-etc/skel/.config/rox.sourceforge.net/OpenWith/convert-sfs   edit-sfs-thunar
-etc/skel/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar
+etc/skel/.config/rox.sourceforge.net/OpenWith/convert-sfs   edit-sfs-thunar,edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/Options	    jwm-setup
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/globicons    jwm-setup
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/menus2	    jwm-setup
@@ -152,12 +154,12 @@ home/puppy/.config/rox.sourceforge.net/MIME-types/application jwm-setup
 home/puppy/.config/rox.sourceforge.net/MIME-types/image_png jwm-setup
 home/puppy/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwm-setup
 home/puppy/.config/rox.sourceforge.net/MIME-types/text_plain jwm-setup
-home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar
-home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar
+home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
 home/puppy/.config/rox.sourceforge.net/OpenWith/.application_x-deb/install-deb-and-dependencies fixdepinstall
 home/puppy/.config/rox.sourceforge.net/OpenWith/.inode_directory/install-dir-debs-and-dependencies fixdepinstall
-home/puppy/.config/rox.sourceforge.net/OpenWith/convert-sfs edit-sfs-thunar
-home/puppy/.config/rox.sourceforge.net/OpenWith/edit-sfs    edit-sfs-thunar
+home/puppy/.config/rox.sourceforge.net/OpenWith/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/edit-sfs    edit-sfs-thunar,edit-sfs-pcmanfm
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/Options    jwm-setup
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/globicons  jwm-setup
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/menus2	    jwm-setup
@@ -167,7 +169,7 @@ home/puppy/.config/rox.sourceforge.net/ROX-Filer/pinbd-OB   jwm-setup
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Copy    jwm-setup
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Cut	    jwm-setup
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Paste   jwm-setup
-home/puppy/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar
+home/puppy/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar,edit-sfs-pcmanfm
 home/puppy/.config/xfe/scripts/install-deb-and-dependencies fixdepinstall
 home/puppy/.config/xfe/scripts/install-dir-debs-and-dependencies fixdepinstall
 home/puppy/.jwm/jwm.head				    jwm-setup
@@ -243,9 +245,22 @@ lib/dhcpcd/dhcpcd-hooks/99-frisbee_tray			    sns
 lib/dhcpcd/dhcpcd-hooks/99-network_tray			    sns,ceni
 lib/dhcpcd/dhcpcd-hooks/99-notify			    sns,ceni
 lib/dhcpcd/dhcpcd-run-hooks				    frisbee,sns
+lib/firmware/ath9k_htc/htc_7010-1.4.0.fw		    wifi-firmware-stretchdog32
+lib/firmware/ath9k_htc/htc_9271-1.4.0.fw		    wifi-firmware-stretchdog32
+lib/firmware/carl9170-1.fw				    wifi-firmware-stretchdog32
+lib/firmware/mt7601u.bin				    wifi-firmware-stretchdog32
+lib/firmware/rt2870.bin					    wifi-firmware-stretchdog32
+lib/firmware/rtlwifi/rtl8188eufw.bin			    wifi-firmware-stretchdog32
+lib/firmware/rtlwifi/rtl8192dufw.bin			    wifi-firmware-stretchdog32
+lib/firmware/rtlwifi/rtl8192dufw_wol.bin		    wifi-firmware-stretchdog32
+lib/firmware/rtlwifi/rtl8712u.bin			    wifi-firmware-stretchdog32
 lib/i386-linux-gnu/libudev.so.0				    libudev0
 lib/i386-linux-gnu/libudev.so.0.13.0			    libudev0
 lib/libtaz.sh						    wifibox-dhcpcd,wifibox
+lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192cu.ko realtek-wifi-drivers-k4.9.0-i386
+lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192du.ko realtek-wifi-drivers-k4.9.0-i386
+lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192eu.ko realtek-wifi-drivers-k4.9.0-i386
+lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8812au.ko realtek-wifi-drivers-k4.9.0-i386
 lib/systemd/system/slim.service				    slim
 opt/apps/syslinux/extlinux/extlinux			    debdoginstallscripts
 opt/apps/syslinux/extlinux/extlinux.conf		    debdoginstallscripts
@@ -723,8 +738,8 @@ root/.config/rox.sourceforge.net/MIME-types/application	    jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/text_plain	    jwm-setup
-root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar
-root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar
+root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/Play in xhippo xhippo
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/ffconvert ffconvert
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/ffinfo ffconvert
@@ -815,8 +830,8 @@ root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/Play in xhippo xhi
 root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/ffconvert ffconvert
 root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/ffinfo ffconvert
 root/.config/rox.sourceforge.net/OpenWith/Play in xhippo    xhippo
-root/.config/rox.sourceforge.net/OpenWith/convert-sfs	    edit-sfs-thunar
-root/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar
+root/.config/rox.sourceforge.net/OpenWith/convert-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/rox.sourceforge.net/OpenWith/ffconvert	    ffconvert
 root/.config/rox.sourceforge.net/OpenWith/ffinfo	    ffconvert
 root/.config/rox.sourceforge.net/OpenWith/mkplaylist	    ffconvert
@@ -829,7 +844,7 @@ root/.config/rox.sourceforge.net/ROX-Filer/pinbd-OB	    jwm-setup
 root/.config/rox.sourceforge.net/SendTo/Multi-Copy	    jwm-setup
 root/.config/rox.sourceforge.net/SendTo/Multi-Cut	    jwm-setup
 root/.config/rox.sourceforge.net/SendTo/Multi-Paste	    jwm-setup
-root/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar
+root/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/xfe/scripts/install-deb-and-dependencies	    fixdepinstall
 root/.config/xfe/scripts/install-dir-debs-and-dependencies  fixdepinstall
 root/.jwm/jwm.head					    jwm-setup
@@ -911,7 +926,7 @@ usr/bin/dpkg-query					    dpkg
 usr/bin/dpkg-split					    dpkg
 usr/bin/dpkg-statoverride				    dpkg
 usr/bin/dpkg-trigger					    dpkg
-usr/bin/edit-sfs					    edit-sfs-thunar
+usr/bin/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/bin/epdfview					    epdfview
 usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
@@ -942,7 +957,7 @@ usr/bin/ipinfo						    frisbee,wifibox,ceni,wifibox-dhcpcd
 usr/bin/jwm						    jwm
 usr/bin/koi8rxterm					    xterm
 usr/bin/linux-user-chroot				    linux-user-chroot
-usr/bin/losetup-FULL					    filemnt-rox,filemnt-thunar
+usr/bin/losetup-FULL					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
 usr/bin/lumina-config					    lumina-desktop-debdog
 usr/bin/lumina-fileinfo					    lumina-desktop-debdog
 usr/bin/lumina-fm					    lumina-desktop-debdog
@@ -977,8 +992,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-rox,filemnt-thunar
-usr/bin/pupmessage					    filemnt-rox,filemnt-thunar
+usr/bin/pupdialog					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
+usr/bin/pupmessage					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
 usr/bin/redshiftgui					    redshiftgui
 usr/bin/resize						    xterm
 usr/bin/rox						    rox-filer
@@ -994,7 +1009,7 @@ usr/bin/unsquashfs					    squashfs-tools
 usr/bin/update-alternatives				    dpkg
 usr/bin/usleep						    pburn
 usr/bin/uxterm						    xterm
-usr/bin/vercmp						    filemnt-rox,filemnt-thunar
+usr/bin/vercmp						    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
 usr/bin/wget						    wget
 usr/bin/wifi-box					    wifibox-dhcpcd,wifibox
 usr/bin/xcmsdb						    x11-xserver-utils
@@ -1861,7 +1876,7 @@ usr/local/bin/clear-changes				    quick-remaster
 usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
-usr/local/bin/conv-sfs					    edit-sfs-thunar
+usr/local/bin/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/local/bin/create-portable				    create-portable
 usr/local/bin/dancingletters-forum			    dancing-letters
 usr/local/bin/dancingletters-html			    dancing-letters
@@ -1877,6 +1892,7 @@ usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
 usr/local/bin/echinus					    echinus
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
+usr/local/bin/filemnt					    filemnt-pcmanfm
 usr/local/bin/firewall_install				    Firewall-Puppy
 usr/local/bin/firewall_install.sh			    Firewall-Puppy
 usr/local/bin/firewall_ng				    firewall-ng
@@ -4590,7 +4606,7 @@ usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
-usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar
+usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/debdog-advert-blocker.desktop	    debdog-advert-blocker
 usr/share/applications/debian-uxterm.desktop		    xterm
 usr/share/applications/debian-xterm.desktop		    xterm
@@ -4599,7 +4615,7 @@ usr/share/applications/dillo.desktop			    dillo
 usr/share/applications/dmmediaconverter.desktop		    dmmediaconverter
 usr/share/applications/domycommand.desktop		    domycommand
 usr/share/applications/domyfile.desktop			    domyfile
-usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar
+usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/epdfview.desktop			    epdfview
 usr/share/applications/ffconvert.desktop		    ffconvert
 usr/share/applications/findnrun.desktop			    findnrun
@@ -7757,7 +7773,7 @@ usr/share/menu/conky-all				    conky-all
 usr/share/menu/conky-std				    conky-std
 usr/share/menu/conkyclock				    conkyclock
 usr/share/menu/conkyclock2				    conkyclock2
-usr/share/menu/conv-sfs					    edit-sfs-thunar
+usr/share/menu/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/menu/debdog-advert-blocker			    debdog-advert-blocker
 usr/share/menu/debdog-full-install			    debdoginstallscripts
 usr/share/menu/debdog-install				    debdoginstallscripts
@@ -7766,7 +7782,7 @@ usr/share/menu/dillo					    dillo
 usr/share/menu/dogradio					    dogradio
 usr/share/menu/domycommand				    domycommand
 usr/share/menu/domyfile					    domyfile
-usr/share/menu/edit-sfs					    edit-sfs-thunar
+usr/share/menu/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/menu/epdfview					    epdfview
 usr/share/menu/ffconvert				    ffconvert
 usr/share/menu/findnrun					    findnrun
@@ -8022,7 +8038,7 @@ usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/samba-menu.png			    samba-tng-rcrsn-0.5-rc1-debdog
 usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sd2.png				    mount-wizard-2
-usr/share/pixmaps/sfs.png				    edit-sfs-thunar
+usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/shutdown.png				    jwm-setup
