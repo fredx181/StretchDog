@@ -1960,6 +1960,7 @@ usr/local/bin/openbox-menu				    jwm-setup
 usr/local/bin/ourico					    ourico
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
+usr/local/bin/peasymount				    peasymount
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
