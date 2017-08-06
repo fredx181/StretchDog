@@ -1661,6 +1661,46 @@ SHA256: f2f14a76a23627f789dead6d7688a9271c27bbf6577ac4f0cd2fa3713c0fc392
 SHA512: e4a838cdfc5e5b278229937f11690aad170b89ea4c0105841f24e47db469d1307fb785709a0da763c9bd2e0d5bb83f1a086667131dd1fda7195d6872a6e117bb
 Description: gtkdesklet-converted-pet-to-deb
 
+Package: libhunspell-1.3-0
+Priority: optional
+Section: libs
+Installed-Size: 430
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Architecture: amd64
+Source: hunspell
+Version: 1.3.3-3
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Recommends: hunspell-en-us | hunspell-dictionary | myspell-dictionary
+Conflicts: openoffice.org-core (= 2.2.0~rc2-1)
+Filename: ./Extra/libhunspell-1.3-0_1.3.3-3_amd64.deb
+Size: 138994
+MD5sum: 5ed082058887f7d2efadfe84f240ac52
+SHA1: 6aaee53069e612129c4f876bceda2d629755a2ed
+SHA256: 00e3148b6f92628451ebead9e59e160c47508c9582f429f0a08ace649002dda8
+SHA512: 744af780ae78d57af7fadd054a64a3b39ee2df37049da7211dabc0b78671acb26e69c114be3fe6ab4ec78191fb914775d8bc997df03908bce93ca8448733eb1c
+Description: spell checker and morphological analyzer (shared library)
+ Hunspell is a spell checker and morphological analyzer library and program
+ designed for languages with rich morphology and complex word compounding or
+ character encoding. It is based on MySpell and features an Ispell-like
+ terminal interface using Curses library, an Ispell pipe interface and an
+ OpenOffice.org UNO module.
+ .
+ Main features:
+  - Unicode support (first 65535 Unicode character)
+  - morphological analysis (in custom item and arrangement style)
+  - Max. 65535 affix classes and twofold affix stripping (for agglutinative
+    languages, like Azeri, Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compoundings (for example, Hungarian and German)
+  - Support language specific algorithms (for example, handling Azeri
+    and Turkish dotted i, or German sharp s)
+  - Handling conditional affixes, circumfixes, fogemorphemes,
+    forbidden words, pseudoroots and homonyms.
+ .
+ This package contains the shared library.
+Multi-Arch: same
+Homepage: http://hunspell.sourceforge.net/
+
 Package: PeasyWiFi
 Priority: optional
 Section: base

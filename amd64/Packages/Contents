@@ -1271,6 +1271,8 @@ usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28		    libgnutls-deb0-28
 usr/lib/x86_64-linux-gnu/libgnutls-deb0.so.28.41.0	    libgnutls-deb0-28
 usr/lib/x86_64-linux-gnu/libhogweed.so.2		    libhogweed2
 usr/lib/x86_64-linux-gnu/libhogweed.so.2.5		    libhogweed2
+usr/lib/x86_64-linux-gnu/libhunspell-1.3.so.0		    libhunspell-1.3-0
+usr/lib/x86_64-linux-gnu/libhunspell-1.3.so.0.0.0	    libhunspell-1.3-0
 usr/lib/x86_64-linux-gnu/libjpeg.so.8			    libjpeg8
 usr/lib/x86_64-linux-gnu/libjpeg.so.8.4.0		    libjpeg8
 usr/lib/x86_64-linux-gnu/libnettle.so.4			    libnettle4
@@ -3642,6 +3644,9 @@ usr/share/doc/libgnutls-deb0-28/changelog.Debian.gz	    libgnutls-deb0-28
 usr/share/doc/libgnutls-deb0-28/changelog.gz		    libgnutls-deb0-28
 usr/share/doc/libgnutls-deb0-28/copyright		    libgnutls-deb0-28
 usr/share/doc/libhogweed2				    libhogweed2
+usr/share/doc/libhunspell-1.3-0/changelog.Debian.gz	    libhunspell-1.3-0
+usr/share/doc/libhunspell-1.3-0/changelog.gz		    libhunspell-1.3-0
+usr/share/doc/libhunspell-1.3-0/copyright		    libhunspell-1.3-0
 usr/share/doc/libjpeg8/README.gz			    libjpeg8
 usr/share/doc/libjpeg8/changelog.Debian.gz		    libjpeg8
 usr/share/doc/libjpeg8/changelog.gz			    libjpeg8
