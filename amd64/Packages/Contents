@@ -1480,6 +1480,7 @@ usr/local/bin/mountlink					    debdogmountscripts
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/openbox-menu				    jwm-setup-dd64
 usr/local/bin/peasyfwmon				    peasyfwmon
+usr/local/bin/peasymount				    peasymount
 usr/local/bin/peasywifi					    PeasyWiFi
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/ppm2mpeg.sh				    xvidcap

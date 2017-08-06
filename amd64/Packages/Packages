@@ -1582,6 +1582,20 @@ Description: colored FTP client using GLib
  .
   Author:   Brian Masney <masneyb@gftp.org>
 
+Package: peasymount
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasymount_1.0.deb
+Size: 1064
+MD5sum: 2bb1ca347b57bf0ed299a7a85f343453
+SHA1: 0a3fab346a0301ab3b58b195a9a05ce2a7ad819e
+SHA256: e18a3f0b453c1826ce8442eb304825c63adb1a76583fc23d50928999aa39b574
+SHA512: efcb607048b7624bd60a1bb19f0a0e5ab16376a8b79c5c79d2978139297df0897a2afd0bd582e7fec939afeb30175412bb9efdf14f14b2b5f0067f77bfabb207
+Description: Mounts ISO/SFS files
+
 Package: yad-splash
 Architecture: all
 Version: 1.0.1
