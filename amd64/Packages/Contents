@@ -3561,6 +3561,7 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
+usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/quick-remaster.desktop		    quick-remaster
@@ -5200,6 +5201,7 @@ usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64
