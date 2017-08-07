@@ -4695,6 +4695,7 @@ usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasyglue.desktop		    peasyglue
+usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/pfind.desktop			    pfind
@@ -8036,6 +8037,7 @@ usr/share/pixmaps/other.png				    jwm-setup
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasyglue48.png			    peasyglue
+usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi

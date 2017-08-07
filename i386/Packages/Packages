@@ -2152,6 +2152,20 @@ Homepage: http://dmsimpleapps.blogspot.ro/2014/04/dmmediaconverter.html
 Description: dmMediaConverter - ffmpeg GUI. deb modded 2014/08/29 to use external ffmpeg by mcewanw
  dmMediaConverter is a ffmpeg GUI intended to be simple and easy to use but also to be able to achieve complex tasks. It's inspired from a many media converters like Handbrake, WinFF and MkvMergeGui. One feature that was lacking in most such tools is video stream copy (pass-through), this being the main reason for creating dmMediaConverter.
 
+Package: peasymount
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasymount_1.2.deb
+Size: 3492
+MD5sum: 30c5b61eff2cf22b87601b15191953e4
+SHA1: 8521581bb5bb42182d09497b3fb6027400b6bced
+SHA256: 51bc19896ed8b8ca7f69f34fcf9bb26f0c93a3cad43780d4b5f6fb2bfdfad2b4
+SHA512: 2288abd5a858905a42028559b2050988aa3078fc6826a9c48880d1e77bd6b7fba41e15bffe91b4f98b66857d1a73b9b94d2b835b0ef55a3b6b173ead12711444
+Description: Mounts ISO/SFS files
+
 Package: PeasyWiFi
 Architecture: i386
 Version: 4.3-1
