@@ -290,6 +290,25 @@ SHA256: 7fd72933a248cb63f5b8a82209386c0f402f9f35ad37fef16094941c7f59d8ed
 SHA512: 3dc5ede31b915b10d35d0a1e1f48551fb6e13dfabb1cf7e9265ccb053effe2aca0314b2fdc6e11d71b7ebec2feb9ed3a68d8f4ef25662307c2ff9e0cafdf3e43
 Description: Desktop files editor.
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.0_amd64.deb
+Size: 159312
+MD5sum: 95c4ed321f7e51392b72aea0dac214a2
+SHA1: 7d225b94bf3b206f51c41d692dea365609bba398
+SHA256: 3d207a60a0d0bba7fa1382eaf923b53b7df3f21cfa0f90364296e4d36e5dd15e
+SHA512: c0dc2c96a8891b23f90f7f0a6fa295f861aae5136dcf8dd18a98d48983c8205d58a58900a10269fa81f8364eaa94904ce5c0182fdad2f70bf70c0bdb4e3c9220
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+
 Package: squashfuse
 Architecture: amd64
 Version: 0.1.0
