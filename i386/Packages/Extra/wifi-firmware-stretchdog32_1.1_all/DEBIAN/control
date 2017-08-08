@@ -1,0 +1,10 @@
+Package: wifi-firmware-stretchdog32
+Version: 1.1
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: rcrsn51
+Replaces: firmware-linux-free
+Description:various firmware for
+  rt2800usb, mt7601u, r8712u, 8188eu, etc
+

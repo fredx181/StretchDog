@@ -245,15 +245,6 @@ lib/dhcpcd/dhcpcd-hooks/99-frisbee_tray			    sns
 lib/dhcpcd/dhcpcd-hooks/99-network_tray			    sns,ceni
 lib/dhcpcd/dhcpcd-hooks/99-notify			    sns,ceni
 lib/dhcpcd/dhcpcd-run-hooks				    frisbee,sns
-lib/firmware/ath9k_htc/htc_7010-1.4.0.fw		    wifi-firmware-stretchdog32
-lib/firmware/ath9k_htc/htc_9271-1.4.0.fw		    wifi-firmware-stretchdog32
-lib/firmware/carl9170-1.fw				    wifi-firmware-stretchdog32
-lib/firmware/mt7601u.bin				    wifi-firmware-stretchdog32
-lib/firmware/rt2870.bin					    wifi-firmware-stretchdog32
-lib/firmware/rtlwifi/rtl8188eufw.bin			    wifi-firmware-stretchdog32
-lib/firmware/rtlwifi/rtl8192dufw.bin			    wifi-firmware-stretchdog32
-lib/firmware/rtlwifi/rtl8192dufw_wol.bin		    wifi-firmware-stretchdog32
-lib/firmware/rtlwifi/rtl8712u.bin			    wifi-firmware-stretchdog32
 lib/i386-linux-gnu/libudev.so.0				    libudev0
 lib/i386-linux-gnu/libudev.so.0.13.0			    libudev0
 lib/libtaz.sh						    wifibox-dhcpcd,wifibox
