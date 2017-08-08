@@ -919,6 +919,25 @@ Description: ffconvert for DebianDog.
  ffconvert by MakeDEBPackage-GUI.
  checks for Debian version and recommends libav-tools if it is 8 or higher.
 
+Package: quick-remaster
+Architecture: all
+Version: 1.1.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.0_all.deb
+Size: 159310
+MD5sum: e13616d1c4aefadabcdea4ba3f8f3e4c
+SHA1: 2d4b2194552a13ffb22ff82f8fc6614da5901500
+SHA256: 58d149f9844154689cd7c6a4813a3fd9649ad7af9b80b699684a40e4ae47ad05
+SHA512: 02ea8f0f3bcd22bae9f41b969545ddfdc68d9d65141ea9dc7c491ec60226d35eda63fe543962e8c84b7af4cb185b7b6ac09c07f1c3f9e320801e30991389bdb0
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+
 Package: squashfuse
 Architecture: i386
 Version: 0.1.0
@@ -2335,6 +2354,22 @@ Description: fast, lightweight graphical web browser
   * Customizable and extensible interface.
   * Support for extensions (written in C).
   * Custom context menu actions.
+
+Package: wifi-firmware-stretchdog32
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Replaces: firmware-linux-free
+Filename: ./Extra/wifi-firmware-stretchdog32_1.1_all.deb
+Size: 154492
+MD5sum: 33350d514b9865f1b59fc39a14b4e9bd
+SHA1: 2dcf9c53838a0e7b89b644a78dc515c09f939ea1
+SHA256: c071c3862a7ead7284d18cd43fd4f4bc8eda8500137dbe9d6cd68f219b533f7f
+SHA512: 1b03568628eae2e837e94dbe48f4381f996b9f05daa9398cd82b72160206742ae79a2ca8362c57e1ced450d0819ed6ab4783810b47bd8a3f657e3cff48b165bb
+Description: various firmware for
+  rt2800usb, mt7601u, r8712u, 8188eu, etc
 
 Package: gifondesktop
 Architecture: i386
