@@ -69,6 +69,7 @@ etc/menu-methods/jwm					    jwm
 etc/menu-methods/jwm-debdog				    jwm
 etc/modprobe.d/rtl8192cu.conf				    realtek-wifi-drivers-k4.9.0-i386
 etc/modprobe.d/rtl8xxxu.conf				    realtek-wifi-drivers-k4.9.0-i386
+etc/modprobe.d/wl.conf					    broadcom-wl-driver-k4.9.0-3-686-pae
 etc/mpv/encoding-profiles.conf				    mpv
 etc/network.conf					    wifibox-dhcpcd,wifibox
 etc/networkmodules					    sns
@@ -252,6 +253,7 @@ lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192cu.ko realtek-wifi-d
 lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192du.ko realtek-wifi-drivers-k4.9.0-i386
 lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192eu.ko realtek-wifi-drivers-k4.9.0-i386
 lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8812au.ko realtek-wifi-drivers-k4.9.0-i386
+lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wl.ko	    broadcom-wl-driver-k4.9.0-3-686-pae
 lib/systemd/system/slim.service				    slim
 opt/apps/syslinux/extlinux/extlinux			    debdoginstallscripts
 opt/apps/syslinux/extlinux/extlinux.conf		    debdoginstallscripts
@@ -1859,6 +1861,7 @@ usr/local/apps/zenity/zen/usr/share/zenity/zenity.ui	    zenity-portable
 usr/local/apps/zenity/zenity				    zenity-portable
 usr/local/bin/QtWeb					    qtweb
 usr/local/bin/Readme_loadsfs-fuse-writesfs		    portablesfs-loadsfs-fuse
+usr/local/bin/SaveFolderBackup				    SaveFolderBackup
 usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/av-conv					    ffmpeg
@@ -4630,6 +4633,7 @@ usr/share/applications/Make Swap.desktop		    makeswap
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
 usr/share/applications/Remaster-DDog.desktop		    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
+usr/share/applications/SaveFolderBackup.desktop		    SaveFolderBackup
 usr/share/applications/Set Locale_Language.desktop	    locale-conf
 usr/share/applications/UExtract.desktop			    uextract
 usr/share/applications/YouTube-Get.desktop		    youtube-get
@@ -7945,6 +7949,7 @@ usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
 usr/share/pixmaps/application-x-squashfs2.png		    remaster-scripts
 usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
 usr/share/pixmaps/apt2sfs.png				    apt2sfs
+usr/share/pixmaps/backup-restore.png			    SaveFolderBackup
 usr/share/pixmaps/browser-dload.png			    sfs-get-smokey-get
 usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ceni-16.xpm				    ceni

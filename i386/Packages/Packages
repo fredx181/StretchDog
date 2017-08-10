@@ -2322,6 +2322,20 @@ SHA256: f950e47ba5c18ad2d2de6b87ab736b7ae4ad7ea6b1a1b5dd0588a304b41eb86f
 SHA512: e7c95fdf2447926bb431d171e5e64d7d39db1819e3126e265c4570f68b12fb489e02e36bd9e7801ff5768a17f5c422e8bb5a3fe81a496c5e07e8c34a19b4b9c5
 Description: uextract-converted-pet-to-deb
 
+Package: broadcom-wl-driver-k4.9.0-3-686-pae
+Architecture: i386
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/broadcom-wl-driver-k4.9.0-3-686-pae_1.0.deb
+Size: 1410462
+MD5sum: de501fb293878f638f745e99a9d0f05b
+SHA1: 83c45eefa4847c86e2afc92172e39a79cd5b72dc
+SHA256: 8fb4cd852d5f56e0b65bf331743ba8c3b123d15dc5cf7989c5365fb30ebf2173
+SHA512: 25f38ff98df093b1099e73bf0d2e0eb444090fca7656877245da7d980187f469b25a2180f9fe8a6e1eda5330ed14ada89abd2c7757542c6c741742469161bdf8
+Description: Broadcom PCI WiFi kernel module
+
 Package: midori
 Architecture: i386
 Version: 0.5.2
@@ -3900,6 +3914,21 @@ SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
 SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
+
+Package: SaveFolderBackup
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./Extra/SaveFolderBackup_1.2.deb
+Size: 3346
+MD5sum: b59f151f80e9e8ab8527f515fa256cb4
+SHA1: 2da0b44a54373b8ae92354aacb5c8197f7c5207b
+SHA256: 88f584142a0aaeb73174450e0940b7ce66a15b5e57097177b6799f66164c318e
+SHA512: 5e7dfc717f2989b2bc7b0935a3f2ab6691f97b06c872d04dee5ebcf3b9511870f4b7637e1c0bedb1d85f8ecfc94220f0ab7f9eeb33cbfc4d7ae8a8eefded44a8
+Description: Backup/restore tool for any file/folder.
 
 Package: peasyfwmon
 Architecture: i386
