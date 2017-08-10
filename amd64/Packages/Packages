@@ -1977,6 +1977,20 @@ Description: VP8 and VP9 video codec (shared library)
  .
  This package contains the shared libraries.
 
+Package: broadcom-wl-driver-k4.9.0-3-amd64
+Architecture: amd64
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/broadcom-wl-driver-k4.9.0-3-amd64_1.0.deb
+Size: 1439532
+MD5sum: 40c70b4f1bd59286c1b3d6496d486134
+SHA1: cfc06cc53ac2178fd03c2aa9cd8637a595b7677e
+SHA256: 9d2780f95f43d1cfd20c33f96b094b15d8f10b3bad2d2cf69280c6c0a1b76e41
+SHA512: 9751b86279e82066415dd0db0b16bc2ad1192b9aa0096755761ece6dea46a05f9d009f82be97061a526456ca911486d35eed0c49af7c39094534ae213648f3d5
+Description: Broadcom PCI WiFi kernel module
+
 Package: libmusicbrainz3-6
 Architecture: amd64
 Version: 3.0.2-2.1
@@ -2521,6 +2535,21 @@ SHA1: a79e59834cd848e1054aa418140eb9c55a4dde0f
 SHA256: dc7c25d6928cc4f7d41b698e52a772ab5fd9df765e6a3d729a00beb1ea85d3b5
 SHA512: c0b0fd7ceef3b0a58a2be3b87e66ba3d65526deb8db48b3bf0634b0a3f821f326abeafcd9522347a94df66e9ab05ede08cf0fcee764c409840667271c4b2a169
 Description: Text to SVG/PNG Fancy Text and Logo Generator
+
+Package: SaveFolderBackup
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./Extra/SaveFolderBackup_1.2.deb
+Size: 3346
+MD5sum: b59f151f80e9e8ab8527f515fa256cb4
+SHA1: 2da0b44a54373b8ae92354aacb5c8197f7c5207b
+SHA256: 88f584142a0aaeb73174450e0940b7ce66a15b5e57097177b6799f66164c318e
+SHA512: 5e7dfc717f2989b2bc7b0935a3f2ab6691f97b06c872d04dee5ebcf3b9511870f4b7637e1c0bedb1d85f8ecfc94220f0ab7f9eeb33cbfc4d7ae8a8eefded44a8
+Description: Backup/restore tool for any file/folder.
 
 Package: desktop-drive-icons
 Architecture: amd64
