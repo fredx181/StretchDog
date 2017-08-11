@@ -1,0 +1,310 @@
+#!/bin/bash
+# rcrsn51 2013-05-10
+
+export TEXTDOMAIN=peasyglue
+export OUTPUT_CHARSET=UTF-8
+
+TMP="/tmp"
+
+if [ -f $HOME/.peasyglue ]; then
+  TMP=$(cat $HOME/.peasyglue)
+  if [ ! -d "$TMP" ]; then
+    Xdialog --title " " --msgbox "$(gettext 'Temporary folder not found!')" 0 0
+    exit 
+  else
+    Xdialog --title " " --infobox "$(gettext 'Using temporary folder') $TMP" 0 0 2000
+  fi
+fi
+
+export GLUEDIR=$TMP"/gluetmp"
+
+ASPECTCHECK() {
+  [ ! -f $GLUEDIR/glue.pnm ] && exit
+  OUT=$(pamfile $GLUEDIR/glue.pnm | tr "\t" " ")
+  WIDTH=$(echo $OUT | cut -d " " -f 4)
+  HEIGHT=$(echo $OUT | cut -d " " -f 6)
+  CALC=$(echo "110*$WIDTH-85*$HEIGHT" | bc)
+  if [ "$CALC" -lt 0 ]; then
+    Xdialog --title " " --msgbox "$(gettext 'To fit on Letter paper, scale the height.')" 0 0
+  else
+    Xdialog --title " " --msgbox "$(gettext 'To fit on Letter paper, scale the width.')" 0 0
+  fi
+}
+export -f ASPECTCHECK
+
+MAKEPATTERN () {
+  [ -z "$GRIDSIZE" ] && GRIDSIZE="1x1"
+  HSIZE=${GRIDSIZE#*x}
+  VSIZE=${GRIDSIZE%x*}
+
+  LIST=""
+  [ "$SPACING" = "true" ] && LIST=$SPACERFILE
+  for ((I=1; I<=$HSIZE; I++)); do
+    LIST=$LIST" "$GLUEDIR/1.pnm
+    [ "$SPACING" = "true" ] && LIST=$LIST" "$SPACERFILE
+  done
+  pnmcat -lr -jtop -white $LIST > $GLUEDIR/gluerow.pnm
+
+  LIST=""
+  [ "$SPACING" = "true" ] && LIST=$SPACERFILE
+  for ((I=1; I<=$VSIZE; I++)); do
+    LIST=$LIST" "$GLUEDIR/gluerow.pnm
+    [ "$SPACING" = "true" ] && LIST=$LIST" "$SPACERFILE
+  done
+  pnmcat -tb -jleft -white $LIST > $GLUEDIR/glue.pnm
+}
+export -f MAKEPATTERN
+
+DOGLUE () {
+
+ if [ "$HORIZ" = "true" ]; then
+  ORIENT="-lr"
+  ALIGN="-jcenter"
+  [ "$TOP" = "true" ] && ALIGN="-jtop"
+  [ "$BOTTOM" = "true" ] && ALIGN="-jbottom"
+ elif [ "$VERT" = "true" ]; then
+  ORIENT="-tb"
+  ALIGN="-jcenter"
+  [ "$LEFT" = "true" ] && ALIGN="-jleft"
+  [ "$RIGHT" = "true" ] && ALIGN="-jright"
+ fi
+
+ if [ "$SPACING" = "true" ]; then
+  cp $SPACERFILE $GLUEDIR/1s.pnm
+  [ -n "$PIC3" ] && cp $SPACERFILE $GLUEDIR/2s.pnm
+ fi
+
+ LIST=$(find $GLUEDIR -not -type d | sort)
+ pnmcat $ORIENT $ALIGN -white $LIST > $GLUEDIR/glue.pnm
+}
+export -f DOGLUE
+
+GLUE () {
+
+if [ -z "$PIC1" -a -z "$PIC2" -a -z "$PIC3" ]; then
+  Xdialog --title " " --msgbox "$(gettext 'No files selected!')" 0 0
+  exit 
+fi 
+
+if [ -z "$SAVEFILENAME" ]; then
+  Xdialog --title " " --msgbox "$(gettext 'No Save file selected!')" 0 0
+  exit 
+fi 
+
+if [ -e "$SAVEFILENAME" ]; then
+  Xdialog --title " " --yesno "$(gettext 'Save file exists! Overwrite it?')" 0 0
+  [ $? -eq 1 ] && exit
+fi
+
+touch "$SAVEFILENAME" 2> /dev/null
+if [ $? -eq 1 ]; then
+  Xdialog --title " " --msgbox "$(gettext 'Invalid Save filename!')" 0 0
+  exit
+fi
+rm "$SAVEFILENAME"
+
+Xdialog --title " " --msgbox "$(gettext 'Gluing ...')" 0 0 &
+MSGPID=$!
+
+export SPACING=true
+case "$SPACINGSIZE" in 
+  $(gettext 'Narrow') ) export SPACERFILE="/usr/local/peasyglue/spacer8.pnm" ;;
+  $(gettext 'Medium') ) export SPACERFILE="/usr/local/peasyglue/spacer16.pnm" ;;
+  $(gettext 'Wide') )   export SPACERFILE="/usr/local/peasyglue/spacer32.pnm" ;;
+  *) export SPACING=false ;;
+esac
+
+rm -rf $GLUEDIR
+mkdir $GLUEDIR
+
+FILES="$PIC1 $PIC2 $PIC3"
+
+FC=0
+for F in $FILES; do
+  let FC=FC+1
+  FN=$FC".pnm"
+  TYPE=$(file "$F" | cut -d " " -f 2)
+  case $TYPE in
+  JPEG)
+    jpegtopnm "$F" > $GLUEDIR/$FN 
+    ;;
+  PNG)
+    pngtopnm "$F" > $GLUEDIR/$FN  
+    ;;
+  *)
+     Xdialog --title " " --msgbox "$(gettext 'Not a JPG or PNG file!')" 0 0
+     ;;
+  esac
+done
+
+case "$1" in
+  glue) DOGLUE;;
+  pattern) MAKEPATTERN
+           ASPECTCHECK;;
+esac
+
+if [ "$JPG" = "true" ]; then
+   pnmtojpeg $GLUEDIR/glue.pnm > $SAVEFILENAME
+elif [ "$PNG" = "true" ]; then
+   pnmtopng $GLUEDIR/glue.pnm > $SAVEFILENAME
+else
+   cp $GLUEDIR/glue.pnm $SAVEFILENAME
+fi
+RETVAL=$?
+
+kill $MSGPID
+if [ $RETVAL -eq 0 ]; then
+  Xdialog --title " " --infobox "$(gettext 'Done!')" 0 0 2000
+else
+  Xdialog --title " " --msgbox "$(gettext 'Gluing failed! Read the Help about\nmaking more temporary space.')" 0 0  
+fi
+
+}
+export -f GLUE
+
+HELP () {
+  defaultbrowser http://murga-linux.com/puppy/viewtopic.php?p=690619#690619
+}
+export -f HELP
+
+# -------- End of Functions -----------
+
+export PROG="
+<window title=\"PeasyGlue v1.8\">
+<vbox>
+  <frame $(gettext 'Select 2 or 3 graphic files (JPG or PNG)')>
+    <hbox>
+      <entry accept=\"filename\">
+       <variable>PIC1</variable>
+       </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">PIC1</action>
+      </button>
+    </hbox>
+    <hbox>
+      <entry accept=\"filename\">
+       <variable>PIC2</variable>
+       </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">PIC2</action>
+      </button>
+    </hbox>
+    <hbox>
+      <entry accept=\"filename\">
+       <variable>PIC3</variable>
+       </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">PIC3</action>
+      </button>
+    </hbox>
+  </frame>
+  <frame $(gettext 'Glue the images together')>
+    <hbox>
+      <radiobutton> 
+       <variable>HORIZ</variable>
+       <label>$(gettext 'Horizontally')</label>
+     </radiobutton>
+     <radiobutton> 
+       <variable>VERT</variable>
+       <label>$(gettext 'Vertically')</label>
+     </radiobutton>
+     <text><label>\"   \"</label></text>
+     <combobox>
+       <variable>SPACINGSIZE</variable>
+       <item>$(gettext 'No Spacing')</item><item>$(gettext 'Narrow')</item>
+       <item>$(gettext 'Medium')</item><item>$(gettext 'Wide')</item>
+     </combobox>
+     </hbox>
+  </frame>
+  <frame $(gettext 'Align the images along this edge')>
+    <hbox>
+     <radiobutton> 
+       <variable>TOP</variable>
+       <label>$(gettext 'Top')</label>
+      </radiobutton>
+      <radiobutton> 
+       <variable>BOTTOM</variable>
+       <label>$(gettext 'Bottom')</label>
+      </radiobutton>
+      <radiobutton> 
+       <variable>CENTER</variable>
+       <label>$(gettext 'Center')</label>
+       <default>true</default>
+      </radiobutton>
+      <radiobutton> 
+       <variable>LEFT</variable>
+       <label>$(gettext 'Left')</label>
+      </radiobutton>
+      <radiobutton> 
+       <variable>RIGHT</variable>
+       <label>$(gettext 'Right')</label>
+      </radiobutton>
+    </hbox>
+  </frame>
+  <frame $(gettext 'Or make a pattern using file #1')>
+    <hbox>
+      <text><label>$(gettext 'Rows x Columns')</label></text>
+      <entry>
+        <variable>GRIDSIZE</variable>
+        <default>2x2</default>
+      </entry>
+    </hbox>
+  </frame> 
+  <frame $(gettext 'Save the glued image in this file')>
+    <hbox>
+      <entry accept=\"savefilename\">
+      <variable>SAVEFILENAME</variable>
+      </entry>
+      <button>
+        <input file stock=\"gtk-open\"></input>
+        <action type=\"fileselect\">SAVEFILENAME</action>
+      </button>
+    </hbox>
+    <hbox>
+      <text><label>$(gettext 'With this format')   </label></text>
+      <radiobutton> 
+        <variable>JPG</variable>
+        <label>JPG</label>
+      </radiobutton>
+      <radiobutton> 
+        <variable>PNG</variable>
+        <label>PNG</label>
+      </radiobutton>
+      <radiobutton> 
+        <variable>PNM</variable>
+        <label>$(gettext 'raw') PNM</label>
+      </radiobutton>
+    </hbox>
+  </frame>
+  <hbox>
+    <button>
+     <label>$(gettext 'Help')</label>
+     <action>HELP &</action>
+    </button>
+    <text><label>\"   \"</label></text>
+    <button>
+       <label>$(gettext 'Clear')</label>
+       <action>Clear:PIC1</action>
+       <action>Clear:PIC2</action>
+       <action>Clear:PIC3</action>
+       <action>Clear:SAVEFILENAME</action>
+    </button>
+    <button>
+       <label>$(gettext 'Pattern')</label>
+       <action>GLUE pattern</action>
+    </button>
+    <button>
+       <label>$(gettext 'Glue')</label>
+       <action>GLUE glue</action>
+    </button>
+    <button><label>$(gettext 'Quit')</label></button>
+  </hbox>
+</vbox>
+</window>
+"
+
+gtkdialog3 -c -p PROG
+rm -rf $GLUEDIR

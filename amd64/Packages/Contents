@@ -1452,6 +1452,7 @@ usr/local/bin/gsu-xterm					    gsu
 usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/gvidcap					    xvidcap
+usr/local/bin/image-changer				    peasyscale
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
 usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
 usr/local/bin/instdeb					    fixdepinstall
@@ -1485,6 +1486,7 @@ usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwm-setup-dd64
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/ppm2mpeg.sh				    xvidcap
@@ -3566,6 +3568,7 @@ usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasymount.desktop		    peasymount
+usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/quick-remaster.desktop		    quick-remaster
@@ -5110,6 +5113,7 @@ usr/share/menu/mount-wizard				    mount-wizard
 usr/share/menu/palemoon					    palemoon
 usr/share/menu/pavrecord				    pavrecord
 usr/share/menu/pburn					    pburn
+usr/share/menu/peasyscale				    peasyscale
 usr/share/menu/pfind					    pfind
 usr/share/menu/portablesfs				    portablesfs-loadsfs-fuse
 usr/share/menu/refresh-menus-openbox			    jwm-setup-dd64
@@ -5207,6 +5211,7 @@ usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasymount-48.png			    peasymount
+usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64

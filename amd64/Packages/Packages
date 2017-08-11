@@ -1564,6 +1564,22 @@ Description: GNOME XML library
  This package provides a library providing an extensive API to handle
  such XML data files.
 
+Package: peasyscale
+Architecture: amd64
+Version: 2.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libgtk2.0-0, libpango1.0-0, libcairo2, libglib2.0-0
+Filename: ./Extra/peasyscale_2.0_amd64.deb
+Size: 11168
+MD5sum: 694c6aa9e283051007fb97958a3cd5a1
+SHA1: 8122ef062c3abdaf7866f4fd9d928f2b7226998b
+SHA256: b0399ed9b47b5dfbc37317bffdedad4c8d2f8b32f92019a0897cccf0261aa2b3
+SHA512: 09d33c9f9c038c0f95c9ae1b096f4a2a4dd12e63e57f878988ace2255fdffa71d387d233d1ddb05a17f2dba162aeecfdffb33434cbe1a0b06b2425e731360edc
+Description: peasyscale from rcrsn51 for Puppy linux
+
 Package: peasymount
 Architecture: all
 Version: 1.2
