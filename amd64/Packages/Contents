@@ -1485,6 +1485,7 @@ usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwm-setup-dd64
 usr/local/bin/peasyfwmon				    peasyfwmon
+usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
@@ -3265,6 +3266,11 @@ usr/local/pburn/themes/Mini/gtk/progress_green.png	    pburn
 usr/local/pburn/themes/Mini/gtk/progress_red.png	    pburn
 usr/local/pburn/themes/Mini/splash.png			    pburn
 usr/local/pburn/tv_standard				    pburn
+usr/local/peasyglue/peasyglue				    peasyglue
+usr/local/peasyglue/spacer16.pnm			    peasyglue
+usr/local/peasyglue/spacer32.pnm			    peasyglue
+usr/local/peasyglue/spacer4.pnm				    peasyglue
+usr/local/peasyglue/spacer8.pnm				    peasyglue
 usr/local/peasywifi/green.rc				    PeasyWiFi
 usr/local/peasywifi/peasywifi				    PeasyWiFi
 usr/local/pfind/box_input				    pfind
@@ -3567,6 +3573,7 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
+usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
@@ -5113,6 +5120,7 @@ usr/share/menu/mount-wizard				    mount-wizard
 usr/share/menu/palemoon					    palemoon
 usr/share/menu/pavrecord				    pavrecord
 usr/share/menu/pburn					    pburn
+usr/share/menu/peasyglue				    peasyglue
 usr/share/menu/peasyscale				    peasyscale
 usr/share/menu/pfind					    pfind
 usr/share/menu/portablesfs				    portablesfs-loadsfs-fuse
@@ -5210,6 +5218,7 @@ usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi

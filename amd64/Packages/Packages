@@ -2158,6 +2158,26 @@ SHA256: 8298a9d4151ddf46cc23406aa03ff3ad6353c31b8f4309719b59e3870246f58f
 SHA512: 1697cd482081dc47fc149aaa045a220b632597c100033d3eb2fb46a79b8927beef23ebbc6dfb829415978c05b5fc45a5800bca81c90d5ca78a7ad456c14c38ac
 Description: File system type CLI tool from Puppy linux.
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.4-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.4-2_amd64.deb
+Size: 16436
+MD5sum: 1f5397c5495500f27abba1466db3d686
+SHA1: 20dacfcbf232cf19412cc2b56b6377934b2c9d0a
+SHA256: 3a2641b178a3b8da068ee346dff211aed935c718ae117117061faea302471743
+SHA512: 427f71668e6eb379dc3a385a58ac4fbe2fb30a4722b4f75dc5fd917e754251806a2016c89b218281ea4c42c5c0fc06f4c27085feee7c6f92b0ce59542663f771
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+
 Package: libhogweed2
 Architecture: amd64
 Version: 2.7.1-5+deb8u2
@@ -2406,6 +2426,23 @@ Description: shared files for other gFTP packages
    * stop button, and many more features.
  .
   Author:   Brian Masney <masneyb@gftp.org>
+
+Package: peasyglue
+Architecture: all
+Version: 2.0
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 268
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, netpbm, libnetpbm10, bc, poppler-utils
+Filename: ./Extra/peasyglue_2.0.deb
+Size: 6130
+MD5sum: 0cb0f400ca4a64b94589e75d184ee6d1
+SHA1: 27c0c503280dde094c6277aa01e63168ed449944
+SHA256: 5feeaab484af6f2c5aa0978705dd0c671e717e4bd1d1e53fb12d8719060614e5
+SHA512: e0128f3a97fb13256cc9457b88afdce20ddfbf544ac81de456ed7971847bbeb08e422be66298492582c182eb31c95d516fe40c857a49ca1a62531fd95256a8f0
+Description: graphic-utility
 
 Package: libpng12-0
 Architecture: amd64
