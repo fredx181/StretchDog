@@ -1,3 +1,0 @@
-?package(peasyglue):needs="X11" section="Applications/Graphics"\
-  title="PeasyGlue image joiner" command="/usr/local/bin/peasyglue"\
-  icon="/usr/share/pixmaps/peasyglue48.png"

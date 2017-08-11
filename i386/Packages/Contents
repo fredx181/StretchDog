@@ -1915,6 +1915,7 @@ usr/local/bin/gsu-timeout				    gsu
 usr/local/bin/gsu-xterm					    gsu
 usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
+usr/local/bin/image-changer				    peasyscale
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
 usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
 usr/local/bin/instdeb					    fixdepinstall
@@ -1956,6 +1957,7 @@ usr/local/bin/ourico					    ourico
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasyport					    peasyport
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
@@ -4691,6 +4693,7 @@ usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
+usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/pfind.desktop			    pfind
@@ -8034,6 +8037,7 @@ usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
+usr/share/pixmaps/peasyport.png				    peasyport
 usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi

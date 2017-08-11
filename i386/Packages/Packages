@@ -3192,6 +3192,23 @@ SHA256: 0050cd2138f3ad2113b0702ff98f11e236c91584fe0ce4474c21d38b03c3829a
 SHA512: 04c34ebf5d17e09622bfe685fbe08ca4679dd77cf016fa177150a34121abd51e850e58132dcb6be538f7183ba78cf0778d0985ff77d1e52dcd7a703b9d8a3df6
 Description: mount drives utility
 
+Package: peasyport
+Architecture: all
+Version: 2.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Suggests: samba-common-bin
+Filename: ./Extra/peasyport_2.3.deb
+Size: 5110
+MD5sum: 43aed273963e9a6fd574080525094fa3
+SHA1: fb3aca7723db5f78d98b7fce0551c2e7cf990c93
+SHA256: 9b28584655f57abfd294be4bb6459bbaf48ea2135e81fbc655459296ab6e2992
+SHA512: 8a74622842e0e6f7d2a6fa69e424e1c4759fd6c70289e34a9b0a29049bb2d8ee3a96bb21b5e56b05d2a14a8efba48fcdc608fa6569ce67ad92550d18e94d2432
+Description: Network port scanner
+  NETBIOS names lookup requires samba-common-bin > big
+
 Package: lumina-desktop-debdog
 Architecture: i386
 Version: 0.8.7-1-devel-jessie-qt5
@@ -3980,6 +3997,22 @@ SHA256: 47b978289991747d73270eadd0874d3284de739591283319673b984c94c7c6ba
 SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f78ada65beece698f70f132d928d8ae015c5109ff3b7d59fb3fb77843
 Homepage: http://flburn.sourceforge.net/
 Description: Optical disc burning software for linux
+
+Package: peasyscale
+Architecture: i386
+Version: 2.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libgtk2.0-0, libpango1.0-0, libcairo2, libglib2.0-0
+Filename: ./Extra/peasyscale_2.0_i386.deb
+Size: 10950
+MD5sum: 4578a798c7980c3dce101ef8f68eb620
+SHA1: 12a293775a46c59d40ef302cf45804389545ecb6
+SHA256: 1a9456b8003a92201b00ce0bf804aeb66a43b690fba1137b792683b3b41f1da4
+SHA512: 08bf42ac7e786aa9c6e94f0daf9ad59eef2d09fa8ce955ad7ea3f962953a6e85f3160c021b3e43de4dfc3d94426529a3270529961dba07a55307adfc4e53da43
+Description: peasyscale from rcrsn51 for Puppy linux
 
 Package: PeasyWiFi
 Architecture: i386
