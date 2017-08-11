@@ -1304,6 +1304,23 @@ Description: very small lightweight pure X11 window manager with tray and menus
  Compared to other light WM, like Fvwm95, the Jwm consumes considerably
  less memory while providing the same functionality.
 
+Package: peasyglue
+Architecture: all
+Version: 2.0
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 268
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, netpbm, libnetpbm10, bc, poppler-utils
+Filename: ./Included/peasyglue_2.0.deb
+Size: 6130
+MD5sum: 0cb0f400ca4a64b94589e75d184ee6d1
+SHA1: 27c0c503280dde094c6277aa01e63168ed449944
+SHA256: 5feeaab484af6f2c5aa0978705dd0c671e717e4bd1d1e53fb12d8719060614e5
+SHA512: e0128f3a97fb13256cc9457b88afdce20ddfbf544ac81de456ed7971847bbeb08e422be66298492582c182eb31c95d516fe40c857a49ca1a62531fd95256a8f0
+Description: graphic-utility
+
 Package: makedebpackage
 Architecture: i386
 Version: 0.0.3
@@ -3015,6 +3032,26 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Options to enter url(s), playlist, username and to do a search:
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.4-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.4-2_i386.deb
+Size: 16292
+MD5sum: 896df3d3db52c216c683c7e804b26363
+SHA1: b064ecc76b71a53b01ac0c192a5c90ef2bbaac9b
+SHA256: 3406cd9875d752032447bb162ad0447a8525f3fc7f1ccd329a821da189d22b6a
+SHA512: a22dcb9c58d24756a26c3c2ae4d5719f76748e5230df4cf90802f631f422ada22c8abedac7be2d77adb666fd967e8f05077523ebf90b9a99023b86d6d7943f59
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
 
 Package: firewall-ng
 Architecture: i386
