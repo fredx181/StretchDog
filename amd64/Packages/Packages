@@ -2166,11 +2166,11 @@ Section: base
 Maintainer: rcrsn51
 Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
 Filename: ./Extra/peasywifi_4.4-2_amd64.deb
-Size: 16436
-MD5sum: 1f5397c5495500f27abba1466db3d686
-SHA1: 20dacfcbf232cf19412cc2b56b6377934b2c9d0a
-SHA256: 3a2641b178a3b8da068ee346dff211aed935c718ae117117061faea302471743
-SHA512: 427f71668e6eb379dc3a385a58ac4fbe2fb30a4722b4f75dc5fd917e754251806a2016c89b218281ea4c42c5c0fc06f4c27085feee7c6f92b0ce59542663f771
+Size: 16434
+MD5sum: 99bfe5ab856b7fe8e44f35eb28bfdf42
+SHA1: 54765aa03026d69462645979d98a05e7f43f43d8
+SHA256: 3e3a3f30694668f93872642f7c779a40cab2dc18ab0398401eff8a4f2838d3e4
+SHA512: f5d72f5401301afa7b17ad9c010fd9ef94d68a8ffa7318a78431495fe4fc812991266acad8e3d0b7e682356579cd434c465756dc9d4e030d9b2f154668074473
 Description: Reliable network manager
  -changes in v4.4-0 in peasywifi script by rcrsn51:
  - added option (Ethernet tab) to bring the interface down
