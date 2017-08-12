@@ -3246,6 +3246,21 @@ SHA512: 8a74622842e0e6f7d2a6fa69e424e1c4759fd6c70289e34a9b0a29049bb2d8ee3a96bb21
 Description: Network port scanner
   NETBIOS names lookup requires samba-common-bin > big
 
+Package: peasypdf
+Architecture: all
+Version: 4.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils
+Filename: ./Extra/peasypdf_4.1.deb
+Size: 6772
+MD5sum: 091163bb87c771590e554cb7b99ac8b9
+SHA1: 4c54ba28c3806204b3d46b419c831e0ec6bc4a68
+SHA256: b218a34f6a6da03e116556e337aa5ecda27982fa130d2f6a78727b3105bd40f0
+SHA512: f7e544d3b860f0a74560cd54cb27928eac2e15f566556c5926d5823368d022c18167283a27ca32dc6de505810ff85cd3e426f68e3bac1dbd2fd4676ef0f88a9f
+Description: Manipulate PDF documents
+
 Package: lumina-desktop-debdog
 Architecture: i386
 Version: 0.8.7-1-devel-jessie-qt5
@@ -4121,4 +4136,19 @@ Description: GNU TLS library - main runtime library
     Camellia (RFC 4132)).
  .
  This package contains the main runtime library.
+
+Package: peasyxorburn
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, eject, xterm
+Filename: ./Extra/peasyxorburn_1.0.deb
+Size: 9850
+MD5sum: 86976278dec3f3b11de4718f71642529
+SHA1: 89ab754356cfd97d7634e7ec0b968e92eaaec440
+SHA256: 6de9078fe6c53a8edc25af3731ee2af141f7b7d7815c1e6dc56946ac30af602b
+SHA512: 6677cbc2f037d3d683d05ef87900658771e281dfac08f02d1dd5c16a4f0dbfce16d0c2e212f0b423348a30736106ac6edd1ed1c6cf086f858e19bb47653ac962
+Description: Simple burning tool
 

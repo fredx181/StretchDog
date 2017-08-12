@@ -1957,10 +1957,12 @@ usr/local/bin/ourico					    ourico
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasypdf					    peasypdf
 usr/local/bin/peasyport					    peasyport
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
+usr/local/bin/peasyxorburn				    peasyxorburn
 usr/local/bin/pngtopnm					    peasyglue
 usr/local/bin/pnmcat					    peasyglue
 usr/local/bin/pnmtojpeg					    peasyglue
@@ -4633,6 +4635,7 @@ usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
+usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
 usr/share/applications/Remaster-DDog.desktop		    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
@@ -4697,6 +4700,7 @@ usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
+usr/share/applications/peasyxorburn.desktop		    peasyxorburn
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/precord.desktop			    precord
 usr/share/applications/qtweb.desktop			    qtweb
@@ -8038,10 +8042,12 @@ usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
+usr/share/pixmaps/peasypdf.png				    peasypdf
 usr/share/pixmaps/peasyport.png				    peasyport
 usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
+usr/share/pixmaps/peasyxorburn.png			    peasyxorburn
 usr/share/pixmaps/prefs.png				    jwm-setup
 usr/share/pixmaps/puppy/cell1_0.svg			    wifibox
 usr/share/pixmaps/puppy/cell1_1.svg			    wifibox
