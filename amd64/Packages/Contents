@@ -1487,8 +1487,11 @@ usr/local/bin/openbox-menu				    jwm-setup-dd64
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasypdf					    peasypdf
+usr/local/bin/peasyport					    peasyport
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasywifi					    PeasyWiFi
+usr/local/bin/peasyxorburn				    peasyxorburn
 usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/ppm2mpeg.sh				    xvidcap
 usr/local/bin/quick-remaster				    quick-remaster
@@ -3531,6 +3534,7 @@ usr/share/applications/DogRadio.desktop			    dogradio
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
+usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
@@ -3575,8 +3579,10 @@ usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
+usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
+usr/share/applications/peasyxorburn.desktop		    peasyxorburn
 usr/share/applications/pfind.desktop			    pfind
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
@@ -5220,9 +5226,12 @@ usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
+usr/share/pixmaps/peasypdf.png				    peasypdf
+usr/share/pixmaps/peasyport.png				    peasyport
 usr/share/pixmaps/peasyscale.png			    peasyscale
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
+usr/share/pixmaps/peasyxorburn.png			    peasyxorburn
 usr/share/pixmaps/prefs.png				    jwm-setup-dd64
 usr/share/pixmaps/puppy/firewall.svg			    firewall-ng
 usr/share/pixmaps/puppy/shield_internet.svg		    firewall-ng
