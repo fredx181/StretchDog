@@ -22,6 +22,7 @@ etc/init.d/firewall-ng.sh				    firewall-ng
 etc/init.d/firewall.sh					    peasyfwmon
 etc/init.d/frisbee					    frisbee
 etc/init.d/rc.network-start				    PeasyWiFi
+etc/init.d/rc.yassm					    yassm
 etc/init.d/slim						    slim
 etc/init.d/snapexit					    porteusbootscripts
 etc/init.d/start-pup-volume-monitor			    pup-volume-monitor
@@ -1528,6 +1529,7 @@ usr/local/bin/xload					    jwm-setup-dd64
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/xvidcap					    xvidcap
 usr/local/bin/yad-splash				    yad-splash
+usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
 usr/local/bin/youtube-get				    youtube-get
 usr/local/bin/youtube-get-xterm				    youtube-get
@@ -3598,6 +3600,7 @@ usr/share/applications/transmission.desktop		    transmission-2.60
 usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xrecord.desktop			    xhippo
+usr/share/applications/yassm.desktop			    yassm
 usr/share/audio/2barks.au				    pburn
 usr/share/bug/firefox-esr/control			    firefox-esr
 usr/share/bug/firefox-esr/presubj			    firefox-esr
@@ -5261,6 +5264,7 @@ usr/share/pixmaps/xhippo/refresh.png			    xhippo
 usr/share/pixmaps/xhippo/shuffle.png			    xhippo
 usr/share/pixmaps/xhippo/stop.png			    xhippo
 usr/share/pixmaps/xvidcap.png				    xvidcap
+usr/share/pixmaps/yassm.png				    yassm
 usr/share/pixmaps/yt.png				    youtube-get2
 usr/share/pixmaps/ytt.png				    youtube-get,youtube-get2
 usr/share/pixmaps/yyt.png				    youtube-get2
