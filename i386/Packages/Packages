@@ -3246,6 +3246,21 @@ SHA512: 8a74622842e0e6f7d2a6fa69e424e1c4759fd6c70289e34a9b0a29049bb2d8ee3a96bb21
 Description: Network port scanner
   NETBIOS names lookup requires samba-common-bin > big
 
+Package: yassm
+Architecture: all
+Version: 4.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan
+Filename: ./Extra/yassm_4.0.deb
+Size: 7384
+MD5sum: 131dc99f5e432bc85c48fa8f8bbca620
+SHA1: ebaf34d7011734a177daa690f56ecfda63f4ff40
+SHA256: a72d3eb4960ed6ad5638e89679390d773f91f199e40c0b61b212407c58967f6d
+SHA512: 12fb693f29bba01ea1d3fcb791a1c61cf160da96fd4652cab38abc486e0db6cea6aff24948ffb63126fdb6689293fb4f813561afbb008aeb474494b79e655102
+Description: Samba share mounter
+
 Package: peasypdf
 Architecture: all
 Version: 4.1

@@ -49,7 +49,7 @@ etc/init.d/network.sh					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.functions					    wifibox-dhcpcd,wifibox
 etc/init.d/rc.network					    PeasyWiFi
 etc/init.d/rc.network-start				    PeasyWiFi
-etc/init.d/rc.yassm					    yassm-smbclient-mpscan
+etc/init.d/rc.yassm					    yassm,yassm-smbclient-mpscan
 etc/init.d/rcS_slitaz					    wifibox-dhcpcd,wifibox
 etc/init.d/slim						    slim
 etc/init.d/sns						    sns
@@ -2005,6 +2005,7 @@ usr/local/bin/xhrecord					    xhippo
 usr/local/bin/xload					    jwm-setup
 usr/local/bin/xrecord					    xhippo
 usr/local/bin/yad-splash				    yad-splash
+usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
 usr/local/bin/youtube-get				    youtube-get
 usr/local/bin/youtube-get-xterm				    youtube-get
@@ -4735,6 +4736,7 @@ usr/share/applications/xfw.desktop			    xfe
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xrecord.desktop			    xhippo
 usr/share/applications/xvidcap.desktop			    xvidcap
+usr/share/applications/yassm.desktop			    yassm
 usr/share/apport/package-hooks/conky.py			    conky-all,conky-std,conky-cli
 usr/share/audio/2barks.au				    pburn
 usr/share/bug/firefox-esr/control			    firefox-esr
@@ -8126,7 +8128,7 @@ usr/share/pixmaps/xterm-color_48x48.xpm			    xterm
 usr/share/pixmaps/xterm_32x32.xpm			    xterm
 usr/share/pixmaps/xterm_48x48.xpm			    xterm
 usr/share/pixmaps/xvidcap.png				    xvidcap
-usr/share/pixmaps/yassm.png				    yassm-smbclient-mpscan
+usr/share/pixmaps/yassm.png				    yassm,yassm-smbclient-mpscan
 usr/share/pixmaps/yt.png				    youtube-get2
 usr/share/pixmaps/ytb.png				    youtube-get
 usr/share/pixmaps/ytt.png				    youtube-get2,youtube-get
