@@ -721,7 +721,8 @@ root/Startup/exec_lxinput-autostart			    lxinputsave
 root/Startup/killmenu-cached				    jwmconf
 root/Startup/peasyfwmon_tray				    peasyfwmon
 root/Startup/peasywifi_tray				    PeasyWiFi
-root/road.jpg						    jwmconf
+root/fisherman.jpg					    jwmconf
+root/sand.jpg						    jwmconf
 root/startup-jwm					    jwmconf,jwm-setup-dd64
 sbin/losetup						    mount
 sbin/probedisk						    probepart
@@ -1561,8 +1562,8 @@ usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/setbackdrop				    jwmconf
 usr/local/bin/smokey-get				    sfs-get-smokey-get
 usr/local/bin/snap					    porteusbootscripts
-usr/local/bin/start-jwm					    jwmconf,jwm-setup-dd64
-usr/local/bin/start-openbox				    jwmconf,jwm-setup-dd64
+usr/local/bin/start-jwm					    jwm-setup-dd64
+usr/local/bin/start-openbox				    jwm-setup-dd64
 usr/local/bin/start-redshiftgui				    redshiftgui
 usr/local/bin/start-stop-slim				    slim
 usr/local/bin/transmission-cli				    transmission-2.60
@@ -3624,12 +3625,12 @@ usr/share/applications/gftp.desktop			    gftp-gtk
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.6
 usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer
 usr/share/applications/jwm-theme-change.desktop		    jwmconf,jwm-setup-dd64
-usr/share/applications/jwm.desktop			    jwmconf,jwm-setup-dd64
+usr/share/applications/jwm.desktop			    jwm-setup-dd64
 usr/share/applications/keybind.desktop			    openbox-keybinder
 usr/share/applications/menumaker.desktop		    desktop-editor
 usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/mpv.desktop			    mpv
-usr/share/applications/openbox.desktop			    jwmconf,jwm-setup-dd64
+usr/share/applications/openbox.desktop			    jwm-setup-dd64
 usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
@@ -3645,6 +3646,7 @@ usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/redshiftgui.desktop		    redshiftgui
 usr/share/applications/resize-save.desktop		    resize-save-file
+usr/share/applications/rox.desktop			    jwmconf
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
@@ -5194,7 +5196,6 @@ usr/share/menu/resize-save				    resize-save-file
 usr/share/menu/roxterm-gtk2				    roxterm-gtk2
 usr/share/menu/slimjet.menu				    slimjet
 usr/share/menu/smokey-get				    sfs-get-smokey-get
-usr/share/menu/start-openbox				    jwmconf
 usr/share/menu/x11-xserver-utils			    x11-xserver-utils
 usr/share/menu/youtube-get				    youtube-get
 usr/share/menu/youtube-get2				    youtube-get2
@@ -5304,6 +5305,7 @@ usr/share/pixmaps/puppy/shield_yes.svg			    firewall-ng
 usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/restart.png				    jwmconf,jwm-setup-dd64
 usr/share/pixmaps/rocket.png				    desktop-editor
+usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
 usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sfs.png				    edit-sfs-pcmanfm
