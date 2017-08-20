@@ -1926,6 +1926,26 @@ Description: Free BASIC to C converter for Unix-based systems.
  Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
  clang/LLVM compiler and possibly also by other C compilers.
 
+Package: jwmconf
+Architecture: amd64
+Version: 0.0.3
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot, scrot
+Replaces: jwm-setup
+Filename: ./Extra/jwmconf_0.0.3_amd64.deb
+Size: 993892
+MD5sum: 49b9ebcdb7955a5e8e75a31efda8c59d
+SHA1: 68154918e3fdfbeba3c40a926558d700841b6fb8
+SHA256: 14adb8aecd6d4d51bdfd023c24f79c086506dd8859c31915f4a6fdb062cb15ea
+SHA512: 2187429233f04c652469cc2246916aa52baa3d1dabd1f8da746e25075043c29ba19f1d9d599ed716e7d39531e0483cd90945d9785b623accd3b2caeddcfc60d1
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
 Package: libssl0.9.8
 Architecture: amd64
 Version: 0.9.8o-4squeeze14
