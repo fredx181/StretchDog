@@ -3500,6 +3500,26 @@ SHA256: 74f4bdf519f59b75d629d66449085c7f9ace9a0f259c8877803619df2a4de28c
 SHA512: 8b811da7dd23e356639f0bc8e05437fe721f1b1e6d608fe44053d9e21df1939d6e92d8c539b3694f101ecc6abb34c9daf712d4ba06f61d6acf4b709c77f79860
 Description: Light window manager.
 
+Package: jwmconf
+Architecture: i386
+Version: 0.0.4
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot, scrot
+Replaces: jwm-setup
+Filename: ./Extra/jwmconf_0.0.4_i386.deb
+Size: 1035792
+MD5sum: 931aad580134ae0ed63fb032395d572b
+SHA1: d7227400e608e7916f2b4722f7afd5332d009324
+SHA256: bd157d8fa9a9d4b818d6adcc81fd1aa61e748eddcc78875ea9dde1e3b4eb19cd
+SHA512: df82d8ec1011e0ebf68afb7c45edbc74987b2e02a44a45cf0d6ee97fe504fc47388801472074b57a6c41be7ba6aa72f39e1f0317fb85424aca9b4000ba35801b
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
 Package: dogradio
 Architecture: i386
 Version: 0.0.5
@@ -4100,6 +4120,21 @@ SHA1: 12a293775a46c59d40ef302cf45804389545ecb6
 SHA256: 1a9456b8003a92201b00ce0bf804aeb66a43b690fba1137b792683b3b41f1da4
 SHA512: 08bf42ac7e786aa9c6e94f0daf9ad59eef2d09fa8ce955ad7ea3f962953a6e85f3160c021b3e43de4dfc3d94426529a3270529961dba07a55307adfc4e53da43
 Description: peasyscale from rcrsn51 for Puppy linux
+
+Package: camphonetab
+Architecture: all
+Version: 1.5.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs, mtp-tools
+Filename: ./Extra/camphonetab_1.5.3.deb
+Size: 3448
+MD5sum: 3e1cea4db933fd58341a423b26e6d5a4
+SHA1: 0f46fd9a8f192427c36261d4282ad253e54548c0
+SHA256: 9f76504fd9b1dad2c0fb0f35039114743411319c77d8e9971bb6d1ec39b61961
+SHA512: b65a80eb8190d0908cd42ff8ee05fa1afde228c5cb38a4f6f92980dba763e1e49d35e96f78e442ee64d7d7474c11af5ebb34fef30258ae9ed0e4cdc16c7c1e22
+Description: mounts hand-held devices over USB
 
 Package: PeasyWiFi
 Architecture: i386

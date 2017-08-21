@@ -117,6 +117,7 @@ etc/skel/.motion/motion.conf				    motion-light
 etc/skel/.notecase/notecase.ini				    notecase-portable
 etc/skel/.ouricorc					    ourico
 etc/skel/.xsession-jwm					    jwm-setup,jwmconf
+etc/skel/.xsession-openbox				    jwmconf
 etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
 etc/skel/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 etc/skel/Startup/firewall-puppy				    Firewall-Puppy
@@ -1872,6 +1873,7 @@ usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/av-conv					    ffmpeg
 usr/local/bin/avconv					    ffmpeg
+usr/local/bin/camphonetab				    camphonetab
 usr/local/bin/clear-changes				    quick-remaster
 usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
@@ -4654,6 +4656,7 @@ usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/bacongui.desktop			    bacon
+usr/share/applications/camphonetab.desktop		    camphonetab
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
@@ -7967,6 +7970,7 @@ usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
 usr/share/pixmaps/apt2sfs.png				    apt2sfs
 usr/share/pixmaps/backup-restore.png			    SaveFolderBackup
 usr/share/pixmaps/browser-dload.png			    sfs-get-smokey-get
+usr/share/pixmaps/camphonetab.png			    camphonetab
 usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni
