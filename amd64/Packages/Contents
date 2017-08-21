@@ -69,7 +69,7 @@ etc/skel/.local/share/applications/gparted.desktop	    jwmconf,jwm-setup-dd64
 etc/skel/.local/share/applications/synaptic.desktop	    jwmconf,jwm-setup-dd64
 etc/skel/.xsession					    jwm-setup-dd64
 etc/skel/.xsession-jwm					    jwmconf,jwm-setup-dd64
-etc/skel/.xsession-openbox				    jwm-setup-dd64
+etc/skel/.xsession-openbox				    jwm-setup-dd64,jwmconf
 etc/skel/Startup/conkyclock				    jwm-setup-dd64
 etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
 etc/skel/Startup/killmenu-cached			    jwmconf
@@ -1478,6 +1478,7 @@ usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-cli				    apt2sfs
 usr/local/bin/apt2sfs-cli-fullinst			    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
+usr/local/bin/camphonetab				    camphonetab
 usr/local/bin/clear-changes				    quick-remaster
 usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
@@ -3604,6 +3605,7 @@ usr/share/applications/apt2sfs-cli.desktop		    apt2sfs
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
 usr/share/applications/bacongui.desktop			    bacon
+usr/share/applications/camphonetab.desktop		    camphonetab
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
 usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm
@@ -5234,6 +5236,7 @@ usr/share/pixmaps/application-x-squashfs3.png		    quick-remaster
 usr/share/pixmaps/apt2sfs.png				    apt2sfs
 usr/share/pixmaps/backup-restore.png			    SaveFolderBackup
 usr/share/pixmaps/browser-dload.png			    sfs-get-smokey-get
+usr/share/pixmaps/camphonetab.png			    camphonetab
 usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni

@@ -2383,6 +2383,26 @@ Description: low level cryptographic library (symmetric and one-way cryptos)
  algorithms. To avoid having this package depend on libgmp, the
  asymmetric cryptos reside in a separate library, libhogweed.
 
+Package: jwmconf
+Architecture: amd64
+Version: 0.0.4
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot, scrot
+Replaces: jwm-setup
+Filename: ./Extra/jwmconf_0.0.4_amd64.deb
+Size: 1035538
+MD5sum: 723cc009a94a168f827b6366af7857bd
+SHA1: fb01820c87460c33d906c56b63568ea6963f4e28
+SHA256: c8ffcf1a0d083b03f69c25179b337f96f5a6fb78ca3229175b24ff0a9383db4f
+SHA512: ccfae86513cd80c8a7fd0a6ee91dc75bbf863980c122427cbde34a0ae97f98e696a07cca4447e669a6b1b0b13ee12355de5d8e64fc4c2c5572f7ee248a13f997
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
 Package: grub4dosconfig
 Architecture: amd64
 Version: 1.8.9
@@ -2784,6 +2804,21 @@ SHA512: a8c80d035398fd4b6a75511c3c458503481523828b2dd77d4f261f9d7c62d6b83863656a
 Homepage: http://www.slimjet.com
 Description: Fast, smart and powerful browser based on Blink
  Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
+
+Package: camphonetab
+Architecture: all
+Version: 1.5.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs, mtp-tools
+Filename: ./Extra/camphonetab_1.5.3.deb
+Size: 3448
+MD5sum: 3e1cea4db933fd58341a423b26e6d5a4
+SHA1: 0f46fd9a8f192427c36261d4282ad253e54548c0
+SHA256: 9f76504fd9b1dad2c0fb0f35039114743411319c77d8e9971bb6d1ec39b61961
+SHA512: b65a80eb8190d0908cd42ff8ee05fa1afde228c5cb38a4f6f92980dba763e1e49d35e96f78e442ee64d7d7474c11af5ebb34fef30258ae9ed0e4cdc16c7c1e22
+Description: mounts hand-held devices over USB
 
 Package: peasyxorburn
 Architecture: all
