@@ -52,6 +52,7 @@ etc/init.d/rc.network-start				    PeasyWiFi
 etc/init.d/rc.yassm					    yassm,yassm-smbclient-mpscan
 etc/init.d/rcS_slitaz					    wifibox-dhcpcd,wifibox
 etc/init.d/slim						    slim
+etc/init.d/snapexit					    porteusbootscripts
 etc/init.d/sns						    sns
 etc/init.d/start-pup-volume-monitor			    pup-volume-monitor
 etc/init.d/wpa_action.sh				    wifibox
@@ -284,6 +285,10 @@ opt/bin/proxy-setup					    sns
 opt/bin/sns						    sns
 opt/bin/special/dc					    grub4dosconfig
 opt/bin/xhost						    sns
+opt/conf/logrotate.conf					    porteusbootscripts
+opt/conf/logrotate/apt					    porteusbootscripts
+opt/conf/logrotate/dpkg					    porteusbootscripts
+opt/conf/logrotate/rsyslog				    porteusbootscripts
 opt/docs/getty@tty1.service-autologin			    slim
 opt/docs/getty@tty1.service-no-autologin		    slim
 opt/docs/jwm-themes/jwm.tail-blood_red			    jwm-setup,jwmconf
@@ -998,11 +1003,13 @@ usr/bin/redshiftgui					    redshiftgui
 usr/bin/resize						    xterm
 usr/bin/rox						    rox-filer
 usr/bin/rox-filer					    rox-filer
+usr/bin/save2flash					    porteusbootscripts
 usr/bin/sessreg						    x11-xserver-utils
 usr/bin/showrgb						    x11-xserver-utils
 usr/bin/slim						    slim
 usr/bin/slimlock					    slim
 usr/bin/smbclient					    yassm-smbclient-mpscan
+usr/bin/snapmergepuppy					    porteusbootscripts
 usr/bin/squashfuse					    squashfuse
 usr/bin/startx						    xinit
 usr/bin/unsquashfs					    squashfs-tools
@@ -1012,6 +1019,8 @@ usr/bin/uxterm						    xterm
 usr/bin/vercmp						    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
 usr/bin/wget						    wget
 usr/bin/wifi-box					    wifibox-dhcpcd,wifibox
+usr/bin/wmpoweroff					    porteusbootscripts
+usr/bin/wmreboot					    porteusbootscripts
 usr/bin/xcmsdb						    x11-xserver-utils
 usr/bin/xdm						    xdm
 usr/bin/xfe						    xfe
@@ -1994,6 +2003,7 @@ usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwm-setup,jwmconf
 usr/local/bin/sfs-get					    sfs-get-smokey-get
 usr/local/bin/smokey-get				    sfs-get-smokey-get
+usr/local/bin/snap					    porteusbootscripts
 usr/local/bin/start-jwm					    jwm-setup
 usr/local/bin/start-openbox				    jwm-setup
 usr/local/bin/start-redshiftgui				    redshiftgui

@@ -1384,21 +1384,19 @@ Description: Warning - This package works only in DebianDog booted with porteus 
 Package: porteusbootscripts
 Architecture: all
 Version: 0.0.3
+Priority: required
+Essential: yes
 Section: checkinstall
 Maintainer: root@jessie
-Installed-Size: 56
-Depends: libc6
+Installed-Size: 21
+Depends: libc6, anacron, logrotate, yad, gtkdialog
 Filename: ./Included/porteusbootscripts_0.0.3_all.deb
-Size: 10702
-MD5sum: 13a946b5327cbe2dd30cc5d56a9c37eb
-SHA1: 9c1b32299fd6950bf52e34545cedfe41cf46966b
-SHA256: e7c7ae73790919fa75bfc418eec51eaa9fa33673c88be3a16c9a97c1d352eed6
-SHA512: e6237face6661dd4702b1991b9f7c236c52c0df9308135b15729dec9d4663503912f79dcbc2d8a47ca9df7dfb710e47dd99f7edefef79b3ef885b7bd8cda1a7b
-Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
- This version has included the scripts for the new-save-setup
- Note: Removing this package does not make any change.
- This is on purpose because the scrips are essential for porteus-boot to work
- Bug fix: set the correct permissions for /tmp (save2flash script)
+Size: 6806
+MD5sum: 0ba42ff18d231eec95c94a5fbb87d461
+SHA1: 4e552b4abbcd61b043f02073e55bca74876d0d76
+SHA256: ea07bc427098613e3500cc958eb0e1e889b7c0e010a99f8d935b0959577aafdd
+SHA512: 214da3151a19e4206349ccc4c8fec044a65f1c9ab70c9f69fe297ae77383098fd6ddd7d590e3fb35e07ce5ad42527395e34bda999bcced6485824b1ed9c56d4f
+Description: Porteus-boot-scripts
 
 Package: libqt3-mt
 Architecture: i386
