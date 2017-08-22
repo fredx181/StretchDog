@@ -87,6 +87,20 @@ SHA256: c57cf010917b899e57698da3d7f8cbd9b9f9e7caec65b5937bc8fed7e389a0b2
 SHA512: c47627f5d4c6e379b7b0ca0d166d55e514e36b881513602824f9cb9f8c9c9e88a29b20a175dac62ab6bfda8d95a8cb0933e11eb9b511b53f13c46116745e4d0b
 Description: greybird-theme-dd-jessie: A minimal greybird theme
 
+Package: debdogmountscripts
+Architecture: amd64
+Version: 1.0.4
+Maintainer: root
+Installed-Size: 73
+Depends: libc6
+Filename: ./Included/debdogmountscripts_1.0.4_amd64.deb
+Size: 3064
+MD5sum: 9f981ecb28ac0af26b7e2d31773a8bc5
+SHA1: af130971d2c01de6a7dcb6f85cbf9e20eda657b0
+SHA256: bf01c206b2dee04f015cecdb35997ae57bf56f1690a566e7648cad6979c35305
+SHA512: 17af69e214e13001b0d7d381e24220a5681340353324a8c2e4ad60c12687c6925f89963faa9bfedf4ad08ff5833145e2a8771a853c47aba9447bdd509fcd475a
+Description: Special DebianDog mount and drive information scripts.
+
 Package: edit-sfs-pcmanfm
 Architecture: all
 Version: 2.1
