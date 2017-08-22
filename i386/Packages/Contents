@@ -1969,6 +1969,7 @@ usr/local/bin/peasypdf					    peasypdf
 usr/local/bin/peasyport					    peasyport
 usr/local/bin/peasyscale				    peasyscale
 usr/local/bin/peasyscale.bin				    peasyscale
+usr/local/bin/peasyscan					    peasyscan
 usr/local/bin/peasywifi					    PeasyWiFi
 usr/local/bin/peasyxorburn				    peasyxorburn
 usr/local/bin/pngtopnm					    peasyglue
@@ -3840,6 +3841,9 @@ usr/local/peasyglue/spacer16.pnm			    peasyglue
 usr/local/peasyglue/spacer32.pnm			    peasyglue
 usr/local/peasyglue/spacer4.pnm				    peasyglue
 usr/local/peasyglue/spacer8.pnm				    peasyglue
+usr/local/peasyscan/config-sample.cfg			    peasyscan
+usr/local/peasyscan/peasyscan				    peasyscan
+usr/local/peasyscan/xscanimage-peasy			    peasyscan
 usr/local/peasywifi/green.rc				    PeasyWiFi
 usr/local/peasywifi/peasywifi				    PeasyWiFi
 usr/local/pfind/box_input				    pfind
@@ -4709,6 +4713,7 @@ usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
+usr/share/applications/peasyscan.desktop		    peasyscan
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/peasyxorburn.desktop		    peasyxorburn
 usr/share/applications/pfind.desktop			    pfind
@@ -8058,6 +8063,7 @@ usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasypdf.png				    peasypdf
 usr/share/pixmaps/peasyport.png				    peasyport
 usr/share/pixmaps/peasyscale.png			    peasyscale
+usr/share/pixmaps/peasyscan.png				    peasyscan
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
 usr/share/pixmaps/peasyxorburn.png			    peasyxorburn
@@ -8303,6 +8309,7 @@ usr/share/rox/images/rox-symlink.png			    rox-filer
 usr/share/rox/images/rox-xattr.png			    rox-filer
 usr/share/rox/images/symlink.png			    rox-filer
 usr/share/rox/style.css					    rox-filer
+usr/share/sane/sane-style.rc				    peasyscan
 usr/share/slim/themes/debian-lines/COPYRIGHT.background	    slim
 usr/share/slim/themes/debian-lines/COPYRIGHT.panel	    slim
 usr/share/slim/themes/debian-lines/background.jpg	    slim

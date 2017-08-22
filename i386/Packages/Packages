@@ -4121,6 +4121,23 @@ SHA256: 1a9456b8003a92201b00ce0bf804aeb66a43b690fba1137b792683b3b41f1da4
 SHA512: 08bf42ac7e786aa9c6e94f0daf9ad59eef2d09fa8ce955ad7ea3f962953a6e85f3160c021b3e43de4dfc3d94426529a3270529961dba07a55307adfc4e53da43
 Description: peasyscale from rcrsn51 for Puppy linux
 
+Package: peasyscan
+Architecture: i386
+Version: 2.12
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./Extra/peasyscan_2.12_i386.deb
+Size: 43334
+MD5sum: a5163bd2f35e1e8b022738601e128425
+SHA1: c6e4d4087369eba465be16512b8cace36b9e2a8e
+SHA256: 471207cf11bd99cc62b643a9f57240ef61c8bc0f4dc99cf1ea1ccb48c9f4adc9
+SHA512: d71a8cb35c83bd0655d055500013911d19e09385ab65bef062a5ba47d5f2db68c877095f1265f5f403d8e4862bf53c212a5c3021616aca030d6d905f7d4bf44b
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
 Package: camphonetab
 Architecture: all
 Version: 1.5.3
