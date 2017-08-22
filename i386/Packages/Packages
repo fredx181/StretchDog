@@ -150,11 +150,11 @@ Maintainer: root
 Installed-Size: 863
 Depends: libc6, debdogmountscripts
 Filename: ./Included/debdoginstallscripts_1.1.0_i386.deb
-Size: 428842
-MD5sum: d1cf4b526018ef7056c17e573a219984
-SHA1: 3b2063ead6a0368f901ad97635325e9b0d859bec
-SHA256: 594812feb51d27cd976a88ed66584dfa14864ad1f336c7776a74c19c3377bb62
-SHA512: 2a53a486dc79800b5e60dab574fcaafbc05a8d7ce3894f2782acbf64fcb4d939ad4cbfcec8a2d7685e0988c9226cc44226da284c11218ea0c688379309e5829b
+Size: 433736
+MD5sum: 0a278839b6e694e2e44893333f0459ab
+SHA1: 8d7007d185bc09d45dc4e302e3a62dca88ebd4a1
+SHA256: 8015001f203de92ebdcc6a6f0af51cbb5a166b1f789f746a2fe1045ea78b959f
+SHA512: 7aa64cb03215514d9763507b75b5d616ef474a4e55a17896e5a725f1c34f02b7a75caeb3e9391e794a9b3c14ff7802a43a6f759846a744023a6ddaf17f1932a6
 Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: xdm
