@@ -5335,6 +5335,7 @@ usr/share/pixmaps/shutdown.png				    jwmconf,jwm-setup-dd64
 usr/share/pixmaps/slimjet.xpm				    slimjet
 usr/share/pixmaps/suspend.png				    jwmconf
 usr/share/pixmaps/switch.png				    jwmconf,jwm-setup-dd64
+usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/transmission.png			    transmission-2.60
 usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel

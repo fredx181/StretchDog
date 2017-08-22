@@ -1,9 +1,0 @@
-#!/bin/sh
-# postinst script for apt2sfs
-#
-# see: dh_installdeb(1)
-
-set -e
-
-update-menus
-exit 0
