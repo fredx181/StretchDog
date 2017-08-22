@@ -1,0 +1,50 @@
+#!/bin/bash
+# script setup booting from ext3,ext2 and ext4 partition
+set -u
+set -e
+echo "This script setup booting from ext3,ext2 or ext4 partition"
+CWD=`pwd`
+PATHCHECK=`pwd | sed 's|.*/sys||g'`
+if [ $PATHCHECK = "linux" ] ; then
+    echo "Checking directory... You are in directory syslinux, OK."
+else
+    echo "Checking directory... You are not in directory syslinux, FAIL."
+    exit
+fi  
+
+EXTMOUNT=`cd ../ ; pwd`
+EXTDEV=`grep "$EXTMOUNT" /etc/fstab | sed 's|\ .*||g' | sed 's/.$//'`
+
+if [ "$EXTDEV" = "" ]; then
+EXTDEV=`grep "$EXTMOUNT" /etc/mtab | sed 's|\ .*||g' | sed 's/.$//'`
+if [ "$EXTDEV" = "" ]; then
+echo "Hmm.... Not found any disk record of "$EXTMOUNT" in /etc/fstab and /etc/mtab."
+echo "MBR not installed. Exiting..."
+exit
+fi
+fi
+
+echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+echo "                        Welcome to linux boot installer                 "
+echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+echo
+echo "This installer will setup disk $EXTDEV to boot only linux."
+   echo
+   echo "Warning! Master boot record (MBR) of $EXTDEV will be overwritten."
+   echo "If you use $EXTDEV to boot any existing operating system, it will not work"
+   echo "anymore. Only linux will boot from this device. Be careful!"
+   echo
+echo "Press Enter to continue, or Ctrl+C to abort..."
+read junk
+clear
+
+echo "Installing OS Loader to partition "$EXTMOUNT""
+chmod +x $CWD/extlinux
+$CWD/extlinux/extlinux --install $EXTMOUNT/syslinux/extlinux
+echo "Installing boot record to $EXTDEV device"
+cat $CWD/mbr.bin > $EXTDEV
+sync
+echo "OS loader and boot record installed for "$EXTMOUNT""
+echo
+echo "Read the information above and then press Enter to exit..."
+read junk

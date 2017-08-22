@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=DDog-Full-Installer
+Comment=
+Exec=debdog-full-install
+Icon=install
+Terminal=false
+StartupNotify=false
+Categories=DebianDog;System
+

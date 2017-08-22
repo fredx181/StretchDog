@@ -1,0 +1,515 @@
+#!/bin/bash
+#set -x
+#########	Partition a drive, make bootable, and install O.S.
+
+#####	Terence Becker		SunBurnt		Mar. 31  2014
+
+#####	No warranty of any kind... Use at your own risk!
+
+[ "`whoami`" != "root" ] && exec gsu ${0}
+
+rm -f /tmp/cancel 2> /dev/null
+
+install_mbr() {
+rm -f /tmp/wee.mbr
+cp -a /usr/local/bin/wee.mbr /tmp/wee.mbr
+# Read disk signature and partition table from MBR_DEV
+# and write it to wee.mbr:
+dd if=$MBR_DEV bs=1 skip=439 count=72 2>/dev/null | \
+	dd of=/tmp/wee.mbr bs=1 seek=439 conv=notrunc 2>/dev/null
+
+# Back up the sectors about to be overwritten, just in case:
+dd if=$MBR_DEV of=$MNTBOOT/$(basename $MBR_DEV).63s bs=512 count=63 2>/dev/null
+
+# Write wee MBR to $MBR_DEV
+dd if=/tmp/wee.mbr of=$MBR_DEV 2>/dev/null
+
+cat <<EOF
+Wee has been installed to '$MBR_DEV'
+
+Note: Your old MBR was backed up to '$MNTBOOT/$(basename $MBR_DEV).63s'
+If something went wrong, you can restore it with:
+  cat $MNTBOOT/$(basename $MBR_DEV).63s > $MBR_DEV
+
+EOF
+	msg=" Bootloader has been Installed to $DRV.\n  Note: Your old MBR was backed up to '$MNTBOOT/$DRV.63s' \n  If something went wrong, you can restore it with: \n  cat $MNTBOOT/$DRV.63s > $MBR_DEV"
+	Xdialog --title "DDog Full-Installer" --msgbox "`echo -e $msg`" 0 0
+}
+
+#ImgSz="2G"		###  Set "full" size of Live image file.
+
+
+INFO=`drive-info |tail -n +4`
+i=a
+#echo -e "\n$INFO\n"
+
+
+ITEMs=$(echo "$INFO" |while read L
+do
+	P=`echo "$L" |cut -d, -f1`
+	T=`echo "$L" |cut -d, -f2`
+	F=`echo "$L" |cut -d, -f3`
+	B=`echo "$L" |cut -d, -f4`
+	S=`echo "$L" |cut -d, -f5`
+	Lb="`blkid -c /dev/null -o value -s LABEL /dev/$P`"
+	[ "$F" = 'fix' ]&& F=fixed || F=USB
+#	[ "$B" ]|| B=No
+	[ "$i" != ${P:2:1} ]&& i=${P:2:1} &&
+		echo "<item>||||</item>"
+	echo "<item>$P|$T|$F|$B|$Lb|$S</item>"
+done)
+#echo "$ITEMs" ;echo #;exit
+
+
+RET=$(export PART_DIALOG='
+<window title=" DDog Full-Installer">
+<vbox>
+<text><label>For installing DDog only.</label></text>
+  <text><label>Select Drive below, Select Iso and click '"'Install'"'.</label></text>
+  <text><label>There will be option then to install Grub4dos bootloader.</label></text>
+  <text><label>"For only installing MBR to selected drive click '"'Install MBR'"'"</label></text>
+
+<hbox>
+  <table>
+    <width>420</width><height>250</height>
+    <variable>PART</variable>
+    <label>"Part.     |FSys     |Type     |Flag     |Label             |Size            "</label>
+	'$ITEMs'
+  </table>
+
+<vbox>
+  <frame   Select DDog Iso: >
+
+<button height-request="40">
+
+    <label>" .iso File"</label>
+    <input file stock="gtk-open"></input>                            
+    <variable>FILE_BROWSE_FILENAME</variable>
+    <action type="fileselect">PF</action>
+
+</button>
+<entry width-request="200"> 
+		<variable>PF</variable>
+	<label>Select a .iso file</label>
+
+</entry>
+
+ </frame> 
+
+
+
+<button height-request="40">
+<label>" Install "</label>
+<input file stock="gtk-yes"></input>
+    <action>EXIT:INST</action>
+  </button>
+
+  <button>
+    <label>" Install MBR "</label>
+<input file stock="gtk-harddisk"></input>
+    <action>EXIT:INST1</action>
+  </button>
+
+  <button cancel></button>
+
+
+</vbox>
+</hbox>
+
+  <frame>
+	<checkbox>
+<label>"  Disable journal on ext4 filesystem (recommended for flash drives)"</label>
+<default>false</default>
+<variable>CHECKBOX</variable>
+<action>echo Checkbox is $CHECKBOX now.</action>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  <text><label>To Partition and Format selected Drive, click '"'Run gparted'"'</label></text>
+  <hbox>
+
+
+    <button>
+      <input file icon="gparted"></input>
+      <label> Run gparted </label>
+      <action>EXIT:1PART</action>
+    </button>
+  </hbox>
+  </frame>
+</vbox>
+</window>
+'
+gtkdialog --program=PART_DIALOG)
+
+
+eval "$RET"
+echo -e "\n$RET"
+echo
+[ "$EXIT" = 'Cancel' ]&& exit
+[ "$EXIT" = 'abort' ]&& exit
+#msg="\n###  No Partition Selected.\n"
+[ ! "$PART" ]&& Xdialog --title "DDog Full-Installer" --msgbox " No Partition Selected. \n                                                                            " 0 0 && exec "$0"
+
+
+L=`echo "$INFO" |grep "$PART"`
+FS=`echo "$L" |cut -d, -f2`
+F_R=`echo "$L" |cut -d, -f3`
+BOOT=`echo "$L" |cut -d, -f4`
+SIZE=`echo "$L" |cut -d, -f5`
+
+#PI=`parted -l |sed "/${PART:0:3}:/!d;s,^.* ,,"`			# get parted info.
+#nB="${PI: -2}"
+#SZ="${PI:0:$((${#a}-2))}"
+#DRV="${PART:0:3}" # Terry version
+# mcewanw change version follows
+if [ ${#PART} -lt 6 ];then
+ DRV="${PART:0:3}"
+else
+ DRV="${PART:0:7}"
+fi
+
+echo part=$PART
+
+if [ "$EXIT" = 'INST' ]		### install Linux files
+then
+[ "$part" ]&& PART="$part"
+
+Xdialog --title "DDog Full-Installer" --yesno " Warning: Partition "$PART" will be formatted to ext4 filesystem. \n All data on "$PART" will be ERASED. \n Continue? \n Click 'No' to exit the installer. " 0 0
+ ret=$?
+if [[ $ret -eq 0 ]]; then
+
+NOTMNT=`blkid -o list "/dev/$PART" -c /dev/null | grep "(not mounted)"`
+	if [ -z "$NOTMNT" ]; then
+umount "/dev/$PART"
+   if [[ "$?" -eq 0 ]]; then
+echo "Formatting /dev/$PART"
+gtkdialog-splash -bg blue -fg yellow -text "     *** Formatting $PART... ***      " -close never &
+pd=$!
+echo y | mkfs.ext4 /dev/$PART
+tune2fs -c 0 -i 0 /dev/$PART
+kill $pd
+   else
+Xdialog --title "DDog Full-Installer" --msgbox " It's not possible to format the selected partition. \n The reason for this can be: You selected a 'raw' drive e.g. '"'sdb'"' \n  Please try again and select a numbered partition e.g. '"'sdb1'"' \n Or: \n The partition you selected is busy. \n This may be because it's a save partition or a boot partition. \n Please choose another partition. " 0 0 && exec "$0"
+   fi
+	else
+echo "Formatting /dev/$PART"
+gtkdialog-splash -bg blue -fg yellow -text "     *** Formatting $PART... ***      " -close never &
+pd=$!
+echo y | mkfs.ext4 /dev/$PART
+tune2fs -c 0 -i 0 /dev/$PART
+kill $pd
+	fi
+
+else
+exit 1 
+fi
+
+[ "$part" ]&& PART="$part"
+echo check="$CHECKBOX"
+if [ "$CHECKBOX" = "true" ]; then
+echo check="$CHECKBOX"
+CHKFS=`blkid -o value -s TYPE "/dev/$PART" -c /dev/null`
+echo chkfs=$CHKFS
+if [ "$CHKFS" = "ext4" ]; then
+NOTMNT=`blkid -o list "/dev/$PART" -c /dev/null | grep "(not mounted)"`
+if [ -z "$NOTMNT" ]; then
+umount "/dev/$PART"
+fi
+tune2fs -O ^has_journal "/dev/$PART"
+e2fsck -f -y "/dev/$PART"
+fi
+fi
+
+
+	[ "$part" ]&& PART="$part"
+	MNT=`mount |sed "/$PART/!d;s,^.* on ,,;s, .*$,,"`
+
+	if [ ! "$MNT" ]			# mount install part.
+	then
+		MNT="/media/$PART"
+echo mnt="$MNT"
+
+
+#echo '###  MNT' -t "$FS" "/dev/$PART" "$MNT" ;exit
+
+		mkdir -p "$MNT"
+echo FS="$FS"
+		mount -t ext4 "/dev/$PART" "$MNT"
+		[ "$?" -gt 0 ]&& Xdialog --title "DDog Full-Installer" --msgbox " Partition Mount Failed \n The reason for this can be: You selected a 'raw' drive e.g. '"'sdb'"' \n  Please try again and select a numbered partition e.g. '"'sdb1'"' " 0 0 && exec "$0"
+	fi
+	
+		mkdir -p "/media/$PART"	
+
+	if [ "${PF##*.}" = 'iso' ]			## iso file
+	then
+		TARGET=/media/target
+		umount "$TARGET" 2> /dev/null
+		mkdir -p "$TARGET" 2> /dev/null
+		umount /media/iso 2> /dev/null
+		mkdir -p /media/iso "$MNT" 2> /dev/null
+		mount -t iso9660 -o loop "$PF" /media/iso
+		[ "$?" -gt 0 ]&& Xdialog --title "DDog Full-Installer" --msgbox " ISO File Mount Failed. \n                                                                            " 0 0 && exec "$0"
+
+
+mount -o loop /media/iso/live/01-filesystem.squashfs "$TARGET"
+
+# running(){ ps $1 | grep $1 >/dev/null; }
+
+######## Start Progress bar, copying #########
+TOTAL=$(du -cbs --apparent-size "$TARGET" 2> /dev/null | awk 'END {print $1}')
+echo $TOTAL
+
+echo "Copying files to $MNT..."
+
+cp -a "$TARGET"/* "$MNT" &
+#CPPID=$!
+CPPID=$(ps -eo pid,cmd | grep -v grep | grep "cp -a $TARGET" | awk '{ print $1 }')
+trap "kill $CPPID" 1 2 15
+
+(
+set -x
+PERC=0
+   while [ $PERC ]; do
+  
+      COPY=$(du -cbs --apparent-size "$MNT" 2> /dev/null | awk 'END {print $1}')
+       
+      PERC=$((COPY*100/TOTAL))       
+       if [ $PERC -lt 100 ]; then
+       echo $PERC >> /tmp/fullinst_progress # For checking later if cancelled
+       echo $PERC 2> /dev/null
+       fi
+
+      sleep 1
+# Identify existing process ID of cp
+CPPID=$(ps -eo pid,cmd | grep -v grep | grep "cp -a $TARGET" | awk '{ print $1 }')
+# Identify existing process ID of Xdialog progress bar 
+XPID=$(ps -eo pid,cmd | grep -v grep | grep "Xdialog --title DDog Full Installer" | awk '{ print $1 }')
+
+   if [ ! "$XPID" ]; then # Check if progress window cancelled 
+   kill $CPPID 2> /dev/null
+   sleep 2
+   break
+   fi
+	[ -z "$CPPID" ] && break
+
+   done
+   sleep 2
+   if [ "$XPID" ]; then # Do below only if progress window has not been cancelled 
+   echo 100 >> /tmp/fullinst_progress 
+   echo 100 2> /dev/null
+   fi
+) | Xdialog --title "DDog Full Installer" --gauge " Copying files to "$MNT"... \n To Cancel: Close this window. " 7 90 0
+
+pidcp="`ps -eo pid,cmd | grep -v grep | grep "cp -a $TARGET" | awk '{ print $1 }'`"
+   if [ "$(tail -n1 /tmp/fullinst_progress)" -lt 100 ]; then  # If cancelled
+echo cancelled
+rm -f /tmp/fullinst_progress
+kill $pidcp
+sleep 2
+umount -l "$TARGET"
+umount -l /media/iso
+Xdialog --title "DDog Full-Installer" --msgbox " Installing Cancelled. \n                                                                            " 0 0
+exit 0
+fi
+
+wait $CPPID # Just in case the pid of cp still exists
+rm -f /tmp/fullinst_progress
+########### End Progress bar, copying ############
+
+sleep 2
+echo 'loop' >> "$MNT"/etc/modules
+echo "Copying initrd.img and vmlinuz1..."
+cp -a /media/iso/live/vmlinuz1 "$MNT"/boot/
+cp -a /media/iso/live/initrd.img "$MNT"/boot/
+ret=$?
+
+  if [ "$ret" -gt 0 ]; then
+Xdialog --title "DDog Full-Installer" --msgbox " Installing Failed \n                                                                            " 0 0
+sleep 3
+umount "$TARGET"
+umount -d /media/iso
+ ret=$?
+	if [[ $ret -ne 0 ]]; then
+gtkdialog-splash -bg blue -fg yellow -text "<b>*** Syncing and unmounting... Please Wait... ***</b>" -close never &
+pd=$!
+sync
+sleep 2
+umount "$TARGET"
+umount -d /media/iso
+kill $pd
+	fi
+exec "$0"
+  fi
+sleep 3
+umount "$TARGET"
+umount -d /media/iso
+ ret=$?
+	if [[ $ret -ne 0 ]]; then
+gtkdialog-splash -bg blue -fg yellow -text "<b>*** Syncing and unmounting... Please Wait... ***</b>" -close never &
+pd=$!
+sync
+sleep 2
+umount "$TARGET"
+umount -d /media/iso
+kill $pd
+	fi
+rm -rf "$MNT"/lost+found "$MNT"/live-rw-backing "$MNT"/live
+fi
+
+echo drv=$DRV
+MBR_DEV="/dev/$DRV"
+RET1=$(export MAIN_DIALOG='
+ <window title=" Grub4Dos Installer ">
+ <vbox>
+<text>
+ <label>"DDog has been Installed to '$PART'"</label>
+
+     </text>
+  <text use-markup="true">
+  <label>"  Install boot loader(Grub4Dos) on <b>'$DRV'</b> ?   "</label>
+     </text>
+      <text>
+    <label>"  Also 'menu.lst' will be generated. "</label>
+    </text>
+      <text>
+    <label>"If it exists already, the entries will just be added at the bottom."</label>
+    </text>
+      <text>
+    <label>"  Press 'OK' to install. Press 'Cancel' if you do not like to.   "</label>
+    </text>
+  <hbox>
+   <button cancel></button>
+   <button ok></button>
+  </hbox>
+ </vbox>
+ </window>
+'
+
+gtkdialog --program=MAIN_DIALOG)
+
+ eval "$RET1"
+echo -e "\n$RET1"
+echo
+if [ "$EXIT" = 'OK' ]; then
+
+		umount "/dev/$PART" 2> /dev/null
+ # Set boot flag (needs to be removed first if it's present) Terry version - PARTNUM=`echo $PART | cut -c4`
+ PARTNUM=$(echo "$PART" | grep -Eo "[[:digit:]]*$") # mcewanw change
+# Find boot flag and remove it
+for n in /dev/${DRV}* ; do
+if [ "`fdisk -l /dev/$DRV | grep $n | awk '{ print $2 }'`" = "*" ]; then
+echo part=$n
+   #PNUM=`echo $n | cut -c9` # Terry
+   PNUM=$(echo "$n" | grep -Eo "[[:digit:]]*$") # mcewanw change
+echo pnum=$PNUM
+echo -e "a\n${PNUM}\nw" | fdisk /dev/${DRV}
+fi
+done
+if [ -e /dev/${DRV}1 ]; then
+echo -e "a\n1\nw" | fdisk /dev/${DRV}
+else
+echo -e "a\n${PARTNUM}\nw" | fdisk /dev/${DRV}
+fi
+
+if [ -e /dev/${DRV}1 ]; then
+export MNTBOOT="/media/${DRV}1"
+mkdir -p "$MNTBOOT" 2> /dev/null
+mount /dev/${DRV}1 "$MNTBOOT" 2> /dev/null
+else
+export MNTBOOT="$MNT"
+mount "/dev/$PART" "$MNT"  2> /dev/null
+fi
+install_mbr
+
+UUID=`blkid -o value -s UUID /dev/$PART`
+
+# Generate menu.lst
+if [ -f "$MNTBOOT/menu.lst" ]; then
+echo '
+title DDog - sysvinit
+ uuid '"$UUID"'
+ kernel /boot/vmlinuz1 root=UUID='"$UUID"' ro
+ initrd /boot/initrd.img
+ 
+title DDog - systemd
+ uuid '"$UUID"'
+ kernel /boot/vmlinuz1 root=UUID='"$UUID"' init=/bin/systemd rw
+ initrd /boot/initrd.img
+
+' >> "$MNTBOOT/menu.lst"
+else
+echo '
+# menu.lst produced by grub4dosconfig-v1.7
+color white/blue black/cyan white/black cyan/black
+timeout 10
+default 0
+
+title DDog - sysvinit
+ uuid '"$UUID"'
+ kernel /boot/vmlinuz1 root=UUID='"$UUID"' ro
+ initrd /boot/initrd.img
+ 
+title DDog - systemd
+ uuid '"$UUID"'
+ kernel /boot/vmlinuz1 root=UUID='"$UUID"' init=/bin/systemd rw
+ initrd /boot/initrd.img
+
+title Reboot computer
+  reboot
+
+' > "$MNTBOOT/menu.lst"
+fi
+
+#echo drv1=$DRV1
+cp -a /usr/local/bin/grldr "$MNTBOOT"
+else
+exit
+fi
+fi
+
+
+
+if [ "$EXIT" = 'INST1' ]; then
+echo drv=$DRV
+MBR_DEV="/dev/$DRV"
+RET1=$(export MAIN_DIALOG='
+ <window title=" Grub4Dos Installer ">
+ <vbox>
+  <text use-markup="true">
+  <label>"  The boot loader(Grub4Dos) will be installed on <b>'$DRV'</b>   "</label>
+     </text>
+      <text>
+    <label>"  Press 'OK' to install. Press 'Cancel' if you do not like to.   "</label>
+    </text>
+  <hbox>
+   <button cancel></button>
+   <button ok></button>
+  </hbox>
+ </vbox>
+ </window>
+'
+
+gtkdialog --program=MAIN_DIALOG)
+
+ eval "$RET1"
+echo -e "\n$RET1"
+echo
+if [ "$EXIT" = 'OK' ]; then
+install_mbr
+exec "$0"
+else
+exec "$0"
+fi
+fi
+case "$EXIT" in
+	'1PART')
+	echo fs=$FS
+	gparted /dev/"$DRV"
+		exec "$0"
+		;;
+esac
+
+echo
+exit
+
+

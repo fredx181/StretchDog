@@ -8118,6 +8118,7 @@ usr/share/pixmaps/sns.xpm				    sns
 usr/share/pixmaps/suspend.png				    jwm-setup,jwmconf
 usr/share/pixmaps/swap2.png				    makeswap
 usr/share/pixmaps/switch.png				    jwm-setup,jwmconf
+usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/transmission.png			    transmission-2.31
 usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
