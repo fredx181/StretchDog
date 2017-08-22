@@ -1077,11 +1077,11 @@ Maintainer: root
 Installed-Size: 863
 Depends: libc6, debdogmountscripts
 Filename: ./Included/debdoginstallscripts_1.0.8_amd64.deb
-Size: 434276
-MD5sum: 83b628a9f3148a2ef46fddc097a31de6
-SHA1: 19084d36b03b01d219ea8e72ce5df55d69408a42
-SHA256: 859b04288975aa2a7f86e65d3cc16944cc03bad474a771590cecb2ae4a11decd
-SHA512: 05f7c662f1a3d51de258446de983ecbd53a9db1099760af631257febd75c4ccb92af0c4c027913396ff58375273ae9096aa2a9fc33a5f64c75e7dd66c7446d3d
+Size: 439152
+MD5sum: 24e2bacd6e3bdbb9657dbad013c4f564
+SHA1: 85ada5bb82794257aabb59f6a280193761f945d6
+SHA256: 5ecbf9e44cac2e4ac6720c7dd40eba17d280c99f3d12f01f542fe93be31a76c9
+SHA512: 22473d3af330e5a59f746efe9079aed170501690f7c0ae2445300e2827abb9ac77cbff274b966ddfe4b92cf75ad2efc3658aac6e5b39213ce0faef08ae5508bf
 Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: apt2sfs
