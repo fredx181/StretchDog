@@ -1724,6 +1724,23 @@ SHA256: 1064c35efc9a5e0fa9cfea8b63a88f76832ba7bbf70f3b3a536f22bd12581f6f
 SHA512: bb02283cb90b93bd07b62fdfd281baf5cbc168e87684d8492248b8abd8b87ecfb2c26860f68fd0e1f26499d0a581427b314ded0b94228a4c1039ecd0614b8fcd
 Description: graphical yad message utility.
 
+Package: peasyscan
+Architecture: amd64
+Version: 2.12
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./Extra/peasyscan_2.12_amd64.deb
+Size: 44392
+MD5sum: effb47e09f7f3233ea9b9ffffed39ded
+SHA1: 89288c0b60e14f2db859a90bbbd5e566dacf9da1
+SHA256: 7307147e81d0ca92b160950e72fcb3ffdb468d4721a080f809e49977c5b2a127
+SHA512: 97cf11ea342d7b525a6a44b8660678ee713d97863ae3b434fdfb477e87040f66d50dfb5e7cc7d841a99e9aabd7301c1867d867451e52978b26bb10e99f21c5a5
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
 Package: roxterm-common
 Architecture: all
 Version: 2.9.5-1
