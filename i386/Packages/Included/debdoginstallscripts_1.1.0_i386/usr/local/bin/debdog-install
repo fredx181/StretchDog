@@ -1,0 +1,825 @@
+#!/bin/bash
+#set -x
+#########	Partition a drive, make bootable, and install O.S.
+
+#####	Terence Becker		SunBurnt		Mar. 31  2014
+#####	William McEwan		mcewanw	restructured and mods added June 15 2015
+#####		to handle SD card installation and to copy vmlinuz and initrd early.
+#####   Fred                    fredx181 June 19 2015, added checkbox for choice
+#####           to skip copying savefile and/or folder when installing from directory.
+##### 20151011 fredx181 change: set bootflag only when bootloader install is NOT cancelled
+##### 20151011 fredx181 change: make sure only one partition mountpoint is used (in case a partition is already mounted more than once)
+##### See also comments including '20151011 fredx181 change' further below.
+##### 20151017 fredx181 changes; see below for '20151017 fredx181 change'...
+##### Includes mounting selected partition unconditionally on /mnt/sd?*, even when it's already mounted and... 
+##### New function 'disable_journal' added, executed at the end of script.
+##### Added message in case not possible to disable journal (partition busy)
+##### Added 'Please Wait' message while disable journal process is running
+
+##### Fixed 'cp' process returns exit value greater than 0 when e.g. no space left on device, gives 'Copying failed' message now
+##### Previously in that case, the message 'Installation complete' appeared, while in fact the copying was incomplete
+##### 20151210 fredx181 change: Changed disable_journal executed at start
+##### And changed set_bootflag after check_fs_bootloader
+#####	No warranty of any kind... Use at your own risk!
+
+[ "`whoami`" != "root" ] && exec gsu ${0}
+# echo pwd=$PWD
+
+if [ -z `which gtkdialog` ]; then
+	msg="  Cannot continue without gtkdialog, please install it."
+	xmessage "`echo -e $msg`"
+exit 0
+fi
+
+# Functions # mcewanw
+
+install_mbr() { # installs grub4dos wee but not grldr or menu.lst - mcewanw
+rm -f /tmp/wee.mbr
+cp -a /usr/local/bin/wee.mbr /tmp/wee.mbr
+# Read disk signature and partition table from MBR_DEV
+# and write it to wee.mbr:
+dd if=$MBR_DEV bs=1 skip=439 count=72 2>/dev/null | \
+	dd of=/tmp/wee.mbr bs=1 seek=439 conv=notrunc 2>/dev/null
+
+# Back up the sectors about to be overwritten, just in case:
+dd if=$MBR_DEV of=$MNT/$(basename $MBR_DEV).63s bs=512 count=63 2>/dev/null
+
+# Write wee MBR to $MBR_DEV
+dd if=/tmp/wee.mbr of=$MBR_DEV 2>/dev/null
+
+cat <<EOF
+Wee has been installed to '$MBR_DEV'
+
+Note: Your old MBR was backed up to '$MNT/$(basename $MBR_DEV).63s'
+If something went wrong, you can restore it with:
+  cat $MNT/$(basename $MBR_DEV).63s > $MBR_DEV
+
+EOF
+	msg=" Bootloader has been Installed to $DRV.\n  Note: Your old MBR was backed up to '$MNT/$DRV.63s' \n  If something went wrong, you can restore it with: \n  cat $MNT/$DRV.63s > $MBR_DEV"
+	Xdialog --title "DDog Installer" --msgbox "`echo -e $msg`" 0 0
+}
+
+create_menu_lst () { # mcewanw - needs $MNT and $UUID determined earlier
+#DRV1=${DRV}1
+
+#mkdir -p "/media/$DRV1" 2> /dev/null
+#mount /dev/$DRV1 "/media/$DRV1"
+#mount /dev/$PART "${MNT}"
+UUID=`blkid -o value -s UUID /dev/$PART`
+#cd "$MNT"
+#VMLINUZ=`find . -name vmlinuz1 | sed 's/^.\(.*\)/\1/'`
+#INITRD=`find . -name initrd1.img | sed 's/^.\(.*\)/\1/'`
+
+# Generate menu.lst
+if [ -f "${MNT}/menu.lst" ]; then
+echo '
+title Debian-PorteusDog  -  changes to folder /live/ sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 from=/ noauto changes=/live/
+ initrd /live/initrd1.xz
+
+title Debian-PorteusDog  -  Always Fresh sysvinit
+ uuid '"$UUID"'
+kernel /live/vmlinuz1 from=/ nomagic base_only norootcopy
+initrd /live/initrd1.xz
+
+title Debian-PorteusDog  -  Copy to RAM no save sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 noauto from=/ copy2ram
+ initrd /live/initrd1.xz
+ 
+ title DDog  -  live-boot-3 (Debian standard) Persistence Changes sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 boot=live persistence config quickreboot noeject autologin union=aufs
+ initrd /live/initrd.img
+
+title DDog  -  live-boot-3 (Debian standard) (no persistence) sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 boot=live config quickreboot noeject autologin union=aufs
+ initrd /live/initrd.img
+
+' >> "/${MNT}/menu.lst"
+else
+echo '
+# menu.lst produced by grub4dosconfig-v1.7
+color white/blue black/cyan white/black cyan/black
+timeout 10
+default 0
+
+title Debian-PorteusDog  -  changes to /live/ sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 from=/ noauto changes=/live/
+ initrd /live/initrd1.xz
+
+title Debian-PorteusDog  -  Always Fresh sysvinit
+ uuid '"$UUID"'
+kernel /live/vmlinuz1 from=/ nomagic base_only norootcopy
+initrd /live/initrd1.xz
+
+title Debian-PorteusDog  -  Copy to RAM sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 noauto from=/ copy2ram
+ initrd /live/initrd1.xz
+ 
+ title DDog  -  live-boot-3 (default Debian) Persistence Changes sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 boot=live persistence config quickreboot noeject autologin union=aufs
+ initrd /live/initrd.img
+
+title DDog  -  live-boot-3 (default Debian) (no persistence) sysvinit
+ uuid '"$UUID"'
+ kernel /live/vmlinuz1 boot=live config quickreboot noeject autologin union=aufs
+ initrd /live/initrd.img
+
+title Reboot computer
+  reboot
+
+' > "${MNT}/menu.lst"
+fi
+}
+
+install_grldr () { # mcewanw - needs $MNT determined earlier
+ echo drv1=$DRV1
+ cp -a /usr/local/bin/grldr "$MNT"
+}
+
+grub4dos_inst() { # mcewanw - this installs grub4dos and also grldr and menu.lst
+echo drv=$DRV
+MBR_DEV="/dev/$DRV"
+RET1=$(export MAIN_DIALOG='
+ <window title=" Grub4Dos Installer ">
+ <vbox>
+  <text use-markup="true">
+  <label>"  Install boot loader(Grub4Dos) on <b>'$DRV'</b> ?   "</label>
+     </text>
+      <text>
+    <label>"  Also 'menu.lst' will be generated. "</label>
+    </text>
+      <text>
+    <label>"If it exists already, the entries will just be added at the bottom."</label>
+    </text>
+      <text>
+    <label>"  Press 'OK' to install. Press 'Cancel' if you do not like to.   "</label>
+    </text>
+  <hbox>
+   <button cancel></button>
+   <button ok></button>
+  </hbox>
+ </vbox>
+ </window>
+'
+
+gtkdialog --program=MAIN_DIALOG)
+
+eval "$RET1"
+echo -e "\n$RET1"
+echo
+if [ "$EXIT" = 'OK' ]; then
+ install_mbr
+ create_menu_lst # mcewanw - the code was here but now in these functions
+ install_grldr # mcewanw
+else
+ exit
+fi
+}
+
+linux_fs () { # mcewanw - chooses between extlinux and grub4dos
+tempfile=`tempfile 2>/dev/null` || tempfile=/tmp/test$$
+trap "rm -f $tempfile" 0 1 2 5 15
+
+Xdialog --title "DDog Installer" \
+		--clear --cancel-label "Cancel" \
+        --radiolist "Filesystem is '$CHKFS'. \nSelect the bootloader to use: \nGrub4dos will work in most cases.\nIf your BIOS doesn't support it, select extlinux then.         " 0 0 3  \
+"grub4dos" "for ext2,3,4, vfat and ntfs filesystems" off \
+"extlinux" "for ext2,3,4 filesystems" off  2> $tempfile
+	if [ $? -eq 0 ]; then
+export SETBOOTFLAG="yes"
+if grep -q 'extlinux' $tempfile; then 
+choice=extlinux
+echo $choice
+else
+choice=grub4dos
+echo $choice
+fi
+	fi
+}
+
+vfat_fs () { # mcewanw - chooses between syslinux and grub4dos
+tempfile=`tempfile 2>/dev/null` || tempfile=/tmp/test$$
+trap "rm -f $tempfile" 0 1 2 5 15
+
+Xdialog --title "DDog Installer" \
+		--clear --cancel-label "Cancel" \
+        --radiolist "Filesystem is '$CHKFS'. \nSelect the bootloader to use: \nGrub4dos will work in most cases.\nIf your BIOS doesn't support it, select syslinux then.         " 0 0 3  \
+"grub4dos" "for vfat, ext2,3,4 and ntfs filesystems" off \
+"syslinux" "for vfat filesystems" off  2> $tempfile
+	if [ $? -eq 0 ]; then
+export SETBOOTFLAG="yes"
+if grep -q 'syslinux' $tempfile; then 
+choice=syslinux
+echo $choice
+else
+choice=grub4dos
+echo $choice
+fi
+	fi
+}
+
+check_fs_bootloader () { # mcewanw - determines fs on the selected partition - needs $MNT determined earlier
+CHKFS=`blkid -o value -s TYPE "/dev/$PART"`
+CHKLINUX=`blkid -o value -s TYPE "/dev/$PART" | grep 'ext'`
+if [ -n "$CHKLINUX" ]; then
+linux_fs
+fi
+if [ "$CHKFS" = "vfat" ]; then
+vfat_fs
+fi
+if [ "$CHKFS" = "ntfs" ]; then
+grub4dos_inst
+fi
+
+retval=$?
+
+case $retval in
+  0)
+case $choice in
+  grub4dos)
+grub4dos_inst
+    echo "'$choice' is bootloader of choice"
+;;
+syslinux)  
+    echo "'$choice' is bootloader of choice"
+        cp -a /opt/apps/syslinux "$MNT"
+    cd "$MNT"/syslinux
+xterm -si -sb -fg black -bg white -geometry 75x16 -e ./syslinuxinst
+;;
+extlinux)
+    echo "'$choice' is bootloader of choice"
+    cp -a /opt/apps/syslinux "$MNT"
+    cd "$MNT"/syslinux
+xterm -si -sb -fg black -bg white -geometry 75x16 -e ./extlinuxinst
+;;
+esac
+;;
+  1)
+    echo "Cancel pressed."
+exit ;;
+  255)
+    echo "ESC pressed."
+exit ;;
+esac	
+}
+
+mbr_install_only () { # mcewanw - provides GUI menu only and calls install_mbr
+echo drv=$DRV
+MBR_DEV="/dev/$DRV"
+RET1=$(export MAIN_DIALOG='
+ <window title=" Grub4Dos Installer ">
+ <vbox>
+  <text use-markup="true">
+  <label>"  The boot loader(Grub4Dos) will be installed on <b>'$DRV'</b>   "</label>
+     </text>
+      <text>
+    <label>"  Press 'OK' to install. Press 'Cancel' if you do not like to.   "</label>
+    </text>
+  <hbox>
+   <button cancel></button>
+   <button ok></button>
+  </hbox>
+ </vbox>
+ </window>
+'
+
+gtkdialog --program=MAIN_DIALOG)
+
+ eval "$RET1"
+echo -e "\n$RET1"
+echo
+if [ "$EXIT" = 'OK' ]; then
+install_mbr
+exec "$0"
+else
+exec "$0"
+fi
+}
+
+check_install_selections () { # 20151017 fredx181 change, function only for checking if proper selection, see check for disable journal the function 'disable_journal'
+ if [ ! "$PF" ] && [ ! "$FILE_DIRECTORY" ]; then
+  Xdialog --title "DDog Installer" --msgbox " No Linux O.S. Selected. \n                                                                            " 0 0 && exec "$0"
+ fi
+ if [ "$PF" ] && [ "$FILE_DIRECTORY" ]; then
+  Xdialog --title "DDog Installer" --msgbox " You cannot select Iso and Directory both. \n                                                                            " 0 0 && exec "$0"
+ fi
+ [ "$part" ]&& PART="$part"
+}
+
+disable_journal () { # 20151017 fredx181 change, disable journal separate function
+ echo check="$CHECKBOX"
+ if [ "$CHECKBOX" = "true" ]; then
+  echo check="$CHECKBOX"
+  CHKFS=`blkid -o value -s TYPE "/dev/$PART"`
+  echo chkfs=$CHKFS
+    if [ "$CHKFS" = "ext4" ]; then
+# 20151017 fredx181 change, message while disabling journal
+Xdialog --title "DDog Installer" --msgbox " Disable journal, as requested. \n Please Wait... " 0 0 &
+pd=$!
+   NOTMNT=`blkid -o list "/dev/$PART" -c /dev/null | grep "(not mounted)"`
+sync
+sleep 3
+        if [ -z "$NOTMNT" ]; then
+# fredx181, Most reliable check I could find for boot and/or save partition mountpoint:
+#CHKMNT=`blkid -o list "/dev/$PART" -c /dev/null | tail -1 | awk '{ print $3 }'`
+    umount /dev/$PART
+			if [ $? -eq 0 ]; then
+   tune2fs -O ^has_journal "/dev/$PART"
+   e2fsck -f -y "/dev/$PART"
+   sleep 1
+   mount -t "$FS" "/dev/$PART" "$MNT"
+			else
+Xdialog --title "DDog Installer" --msgbox " Disable journal for ext4 failed. \n Probably the reason is that the selected partition is busy. "  0 0
+			fi
+       else
+   tune2fs -O ^has_journal "/dev/$PART"
+   e2fsck -f -y "/dev/$PART"
+   sleep 1
+   mount -t "$FS" "/dev/$PART" "$MNT"
+       fi
+kill $pd
+    fi
+ fi
+}
+
+set_bootflag () {
+ [ "$part" ]&& PART="$part"
+ # Set boot flag (needs to be removed first if it's present) Terry version - PARTNUM=`echo $PART | cut -c4`
+ PARTNUM=$(echo "$PART" | grep -Eo "[[:digit:]]*$") # mcewanw change
+ for n in /dev/${DRV}* ; do
+  if [ "`fdisk -l /dev/$DRV | grep $n | awk '{ print $2 }'`" = "*" ]; then
+   echo part=$n
+   #PNUM=`echo $n | cut -c9` # Terry
+   PNUM=$(echo "$n" | grep -Eo "[[:digit:]]*$") # mcewanw change
+   echo pnum=$PNUM
+   echo -e "a\n${PNUM}\nw" | fdisk /dev/${DRV}
+  fi
+ done
+ echo -e "a\n${PARTNUM}\nw" | fdisk /dev/${DRV}
+}
+export -f set_bootflag
+
+mount_install_part () {
+ #partprobe /dev/${DRV}
+ # MNT=`mount |sed "/$PART/!d;s,^.* on ,,;s, .*$,,"` # Terry version
+# MNT=`mount |sed "/$PART/!d;s,^.* on ,,;s, .*$,," | head -1` # 20151011 fredx181 change, check only one (first) partition, in case more than one mountpoints from the same device.
+
+# if [ ! "$MNT" ]			# mount install part.
+# then
+#  MNT="/media/$PART"
+#  echo mnt="$MNT"
+
+  #echo '###  MNT' -t "$FS" "/dev/$PART" "$MNT" ;exit
+  #		umount "/dev/$PART" 2> /dev/null
+#  mkdir -p "$MNT"
+#  sleep 5
+#  mount -t "$FS" "/dev/$PART" "$MNT"
+#  [ "$?" -gt 0 ]&& Xdialog --title "DDog Installer" --msgbox " Partition Mount Failed \n The reason for this can be: You selected a 'raw' drive e.g. '"'sdb'"' \n  Please try again and select a numbered partition e.g. '"'sdb1'"' " 0 0 && exec "$0"
+# fi
+
+# mkdir -p "/media/$PART"
+ 
+# 20151017 fredx181 change, commented out all above, below change sets mountpoint to /mnt/$PART, (unconditionally, even if mountpoint from device already exist elsewhere)
+# This is probably much more safe in case multiple mountpoints exist already, e.g: changes mounted on this device 
+  MNT="/mnt/$PART"
+  mkdir -p "$MNT" 2> /dev/null 
+  echo mnt="$MNT"
+   sleep 5
+CHKMOUNTED=`grep -w "$MNT" /proc/mounts | grep -w /dev/$PART`
+	if [ -z "$CHKMOUNTED" ]; then
+	mount -t "$FS" "/dev/$PART" "$MNT"
+	[ "$?" -gt 0 ] && Xdialog --title "DDog Installer" --msgbox " Partition Mount Failed \n The reason for this can be: You selected a 'raw' drive e.g. '"'sdb'"' \n  Please try again and select a numbered partition e.g. '"'sdb1'"' " 0 0 && exec "$0"
+	else
+	echo "/dev/$PART already mounted on $MNT, fine, let's continue..."
+	fi
+}
+
+install_from_iso () {
+  umount -d /media/iso 2> /dev/null
+  mkdir -p /media/iso "$MNT"
+  sleep 2
+  mount -t iso9660 -o loop "$PF" /media/iso
+  [ "$?" -gt 0 ]&& Xdialog --title "DDog Installer" --msgbox " ISO File Mount Failed. \n                                                                            " 0 0 && exec "$0"
+
+  DIRCHK="`ls "$MNT/live" 2> /dev/null`"
+
+  if [ -n "$DIRCHK" ]; then
+   Xdialog --title "DDog Installer" --yesno " Warning: Directory '"$MNT/live"' already exists. \n The content will be removed first. \n Click 'No' for not removing it. \n Then you need to rename it first before installing DDog. \n Continue? " 0 0
+   ret=$?
+   if [[ $ret -ne 0 ]]; then
+    umount /media/iso
+    exec "$0"
+   else
+    if [ -n "${MNT+xxx}" ]; then
+     rm -rf "$MNT/live"
+    fi
+   fi
+  fi
+
+echo   Copy /media/iso/live "$MNT"
+mkdir "$MNT/live" 2> /dev/null
+
+running(){ ps $1 | grep $1 >/dev/null; }
+
+TOTAL=$(du -cbs --apparent-size /media/iso/live | awk 'END {print $1}')
+ 
+cp -a /media/iso/live "$MNT" & 
+CPPID=$!
+
+trap "kill $CPPID" 2 15
+
+(
+   while running $CPPID; do
+    
+      COPY=$(du -cbs --apparent-size "$MNT/live" 2> /dev/null | awk 'END {print $1}')
+       
+      PERC=$((COPY*100/TOTAL))
+      echo $PERC
+# Start 20151017 fredx181 change, needed when canceled by closing progress bar
+XDLGPID=$(ps -eo pid,cmd | grep -v grep | grep "Xdialog --title DDog Installer" | awk '{ print $1 }' | tr '\n' ' ')
+
+   if [ ! "$XDLGPID" ]; then # Check if progress window cancelled 
+   kill $CPPID 2> /dev/null
+   sleep 2
+   break
+   fi
+	[ -z "$CPPID" ] && break
+# End 20151017 fredx181 change
+   done       
+   
+   echo 100
+   sleep 2  
+) | Xdialog --title "DDog Installer" --gauge " Copying files to "$MNT"... " 7 70 0 &
+
+wait $CPPID # 20151017 fredx181 change, needed to get exit value from copy process
+ret=$?
+echo $ret
+
+  if [ "$ret" -gt 0 ]; then
+#   kill -- -$(ps -o pgid= $CPPID | grep -o '[0-9]*')  # mcewanw change to kill any copy process group running in background
+   kill $CPPID 2> /dev/null   # replaces the above as there's no copy progress group, only $CPPID
+   # mcewanw - note any running copy process will still take a little time to sync
+
+   Xdialog --title "DDog Installer" --msgbox " File Copy Failed \n Note that any existing copy process will now be stopped \n but will take a minute or so \n since what is already in cache has to be copied out first. \n
+                                                                           " 0 0
+sleep 3 
+umount -d /media/iso
+exec "$0"
+  else
+# disable_journal # 20151017 fredx181 change, disable journal is better as last step, as it requires unmounting the selected partition.
+Xdialog --title "DDog Installer" --msgbox " Installation is complete. \n Note: If you are going to use the porteus-boot method with multiple installations of Debian Dog, \n please ensure that each installation has a unique name for the changes file or folder. \n  Create a directory with unique name for the changes, e.g. /live/usbchanges \n  Then modify the boot command line to match: e.g. changes=/live/usbchanges \n (this is for save changes to directory) " 0 0
+  fi
+sleep 3
+		rm -rf "$MNT"/lost+found
+		umount -d /media/iso
+}
+
+install_from_directory () {
+  VMLINUZ="`ls "${FILE_DIRECTORY}"/vmlinuz* 2> /dev/null`"
+
+  if [ ! "$VMLINUZ" ]; then
+   Xdialog --title "DDog Installer" --msgbox " No vmlinuz file found. \n Please choose a directory containing a vmlinuz file. " 0 0 && exec "$0"
+  fi
+
+  DIRCHK="`ls "$MNT/live" 2> /dev/null`"
+
+  if [ -n "$DIRCHK" ]; then
+   Xdialog --title "DDog Installer" --yesno " Warning: Directory '"$MNT/live"' already exists. \n The content will be removed first. \n Click 'No' for not removing it. \n Then you need to rename it first before installing DDog. \n Continue? " 0 0
+   ret=$?
+   if [[ $ret -ne 0 ]]; then
+    exec "$0"
+   else
+    if [ -n "${MNT+xxx}" ]; then
+     rm -rf "$MNT/live"/*
+    fi
+   fi
+  fi
+
+echo   Copy "${FILE_DIRECTORY}" "$MNT/live"
+  mkdir "$MNT/live"
+
+	if [ "$SKIPCHANGES" = "true" ]; then # fredx181 change
+# Do not copy anything else than the required files and folders, same as in iso
+  running(){ ps $1 | grep $1 >/dev/null; }
+
+  TOTAL=$(du -cbs --apparent-size "$FILE_DIRECTORY"/{base,modules,optional,rootcopy,*.squashfs,vmlinuz*,initrd*} 2> /dev/null | awk 'END {print $1}')
+
+   #cp -a "$FILE_DIRECTORY"/* "$MNT/live" &  # mcewanw change reordering below
+   (
+   cp -a "$FILE_DIRECTORY"/vmlinu* "$MNT/live"
+   cp -a "$FILE_DIRECTORY"/initrd* "$MNT/live"
+   mount -o remount "$MNT"
+   cp -a "$FILE_DIRECTORY"/{base,modules,optional,rootcopy,*.squashfs,*.sgn} "$MNT/live" ) &
+
+  CPPID=$!
+
+# trap "kill $CPPID" 2 15
+  trap "kill -- -$(ps -o pgid= $CPPID | grep -o '[0-9]*')" 2 15 # mcewanw change - since now need to kill whole Process group
+
+  (
+   while running $CPPID; do
+    COPY=$(du -cbs --apparent-size "$MNT/live"/{base,modules,optional,rootcopy,vmlinuz*,initrd*,*.squashfs,*.sgn} 2> /dev/null | awk 'END {print $1}')
+       
+    PERC=$((COPY*100/TOTAL))
+    echo $PERC
+# Start 20151017 fredx181 change, needed when canceled by closing progress bar
+XDLGPID=$(ps -eo pid,cmd | grep -v grep | grep "Xdialog --title DDog Installer" | awk '{ print $1 }' | tr '\n' ' ')
+
+   if [ ! "$XDLGPID" ]; then # Check if progress window cancelled
+ CURPID=$(ps -o pid --no-headers --ppid $CPPID)
+   kill $CPPID $CURPID 2> /dev/null
+   sleep 2
+   break
+   fi
+	[ -z "$CPPID" ] && break
+# End 20151017 fredx181 change
+   done
+  
+   echo 100
+   sleep 2     
+  ) | Xdialog --title "DDog Installer" --gauge " Copying files to "$MNT/live"... " 7 70 0
+	else
+
+  running(){ ps $1 | grep $1 >/dev/null; }
+
+  TOTAL=$(du -cbs --apparent-size "$FILE_DIRECTORY"/* | awk 'END {print $1}')
+ 
+  #cp -a "$FILE_DIRECTORY"/* "$MNT/live" &  # mcewanw change reordering below
+  (
+   cp -a "$FILE_DIRECTORY"/vmlinu* "$MNT/live"
+   cp -a "$FILE_DIRECTORY"/initrd* "$MNT/live"
+   mount -o remount "$MNT"
+# fredx181, commented out now the below find>copy oneliner
+#  find "$FILE_DIRECTORY" -maxdepth 1 -mindepth 1 \( ! -name "initrd*" \) \( ! -name "vmlinuz*" \) -exec cp -a '{}' "$MNT/live" \;
+
+  for REMAINING in $(ls "$FILE_DIRECTORY"|sed 's/vmlinu.*//;s/initrd.*//')
+  do
+  cp -a "$FILE_DIRECTORY"/${REMAINING} "$MNT/live"
+  done
+  ) &
+
+  CPPID=$!
+
+  # trap "kill $CPPID" 2 15
+  trap "kill -- -$(ps -o pgid= $CPPID | grep -o '[0-9]*')" 2 15 # mcewanw change - since now need to kill whole Process group
+
+  (
+   while running $CPPID; do
+    COPY=$(du -cbs --apparent-size "$MNT/live"/* 2> /dev/null | awk 'END {print $1}')
+       
+    PERC=$((COPY*100/TOTAL))
+    echo $PERC
+# Start 20151017 fredx181 change, needed when canceled by closing progress bar
+XDLGPID=$(ps -eo pid,cmd | grep -v grep | grep "Xdialog --title DDog Installer" | awk '{ print $1 }' | tr '\n' ' ')
+
+   if [ ! "$XDLGPID" ]; then # Check if progress window cancelled
+  CURPID=$(ps -o pid --no-headers --ppid $CPPID)
+   kill $CPPID $CURPID 2> /dev/null
+   sleep 2
+   break
+   fi
+	[ -z "$CPPID" ] && break
+# End 20151017 fredx181 change
+   done
+  
+   echo 100
+   sleep 2     
+  ) | Xdialog --title "DDog Installer" --gauge " Copying files to "$MNT/live"... " 7 70 0
+	fi
+wait $CPPID # 20151017 fredx181 change, needed to get exit value from copy process
+  ret=$?
+
+  if [ "$ret" -gt 0 ]; then
+#kill -- -$(ps -o pgid= $CPPID | grep -o '[0-9]*')  # mcewanw change to kill any copy process group running in background
+# fredx181, above command can kill the WM, when running the installer from menu
+# fredx181, first find the current running command, then, kill first
+# the pid of background process CPPID and then the current running command, CURPID
+CURPID=$(ps -o pid --no-headers --ppid $CPPID) 
+kill $CPPID $CURPID 2> /dev/null
+
+   # mcewanw - note any running copy process will still take a little time to sync
+
+   Xdialog --title "DDog Installer" --msgbox " File Copy Failed \n Note that any existing copy process will now be stopped \n but will take a minute or so \n since what is already in cache has to be copied out first. \n                                                                            " 0 0
+   exec "$0"
+  else
+# disable_journal # 20151017 fredx181 change, disable journal is better as last step, as it requires unmounting the selected partition.
+   Xdialog --title "DDog Installer" --msgbox " Installation is complete. " 6 50 0
+  fi
+  rm -rf "$MNT"/lost+found
+}
+
+install_linux_files () { # mcewanw
+ check_install_selections
+echo PART=$PART
+disable_journal
+ mount_install_part # mcewanw - also needed (anywhere) before any call to function check_fs_bootloader I think since determines value for $MNT
+ check_fs_bootloader # mcewanw - determines fs on the selected partition and installs mbr and bootloader files
+ [ "$SETBOOTFLAG" = "yes" ] && set_bootflag # 20151011 fredx181 change, set bootflag only if NOT cancelled installing bootloader
+
+ if [ "${PF##*.}" = 'iso' ]			## iso file
+ then
+  install_from_iso # mcewanw - if iso source selected
+ else												## o.s. files
+  install_from_directory
+ fi
+ # was the grub4dos function definition # mcewanw
+ # was the linux_fs function definition # mcewanw
+ # was the vfat_fs function definition # mcewanw
+
+}
+
+# Main program code following top initialisation code starts here # mcewanw
+
+ImgSz="2G"		###  Set "full" size of Live image file.
+
+INFO=$(drive-info |tail -n +4)
+i=a
+#echo -e "\n$INFO\n"
+
+ITEMs=$(echo "$INFO" |while read L
+do
+	P=`echo "$L" |cut -d, -f1`
+	T=`echo "$L" |cut -d, -f2`
+	F=`echo "$L" |cut -d, -f3`
+	B=`echo "$L" |cut -d, -f4`
+	S=`echo "$L" |cut -d, -f5`
+	Lb="`blkid -c /dev/null -o value -s LABEL /dev/$P`"
+	[ "$F" = 'fix' ]&& F=fixed || F=USB
+#	[ "$B" ]|| B=No
+	[ "$i" != ${P:2:1} ]&& i=${P:2:1} &&
+		echo "<item>||||</item>"
+	echo "<item>$P|$T|$F|$B|$Lb|$S</item>"
+done)
+#echo "$ITEMs" ;echo #;exit
+
+RET=$(export PART_DIALOG='
+<window title=" DDog Installer">
+<vbox>
+  <text width-request="600"><label>For installing DDog only (frugal install).</label></text>
+  <text width-request="600"><label>Select Drive below, Select Iso or Directory and click '"'Install'"'.</label></text>
+  <text width-request="600"><label>Then there will be choice which bootloader to install.</label></text>
+<text width-request="600"><label>Depending on the filesytem type the options are: grub4dos, syslinux or extlinux.</label></text>
+  <text width-request="600"><label>"For only installing bootloader to selected drive click '"'Install MBR'"'"</label></text>
+
+<hbox>
+  <table>
+    <width>420</width><height>250</height>
+    <variable>PART</variable>
+    <label>"Part.     |FSys     |Type     |Flag     |Label             |Size            "</label>
+	'$ITEMs'
+  </table>
+
+<vbox>
+  <frame   Select DDog Iso: >
+
+<button>
+
+    <label>" .iso File "</label>
+    <input file stock="gtk-open"></input>                            
+    <variable>FILE_BROWSE_FILENAME</variable>
+    <action type="fileselect">PF</action>
+
+</button>
+<entry width-request="250" fs-title="Select a DDog .iso file"> 
+		<variable>PF</variable>
+        <action>disable:FILE_BROWSE_DIRECTORY</action>      
+        <action>disable:FILE_DIRECTORY</action>
+
+</entry>
+
+ </frame> 
+
+  <frame  Or Select Directory: >
+      <button>
+    <label>" DDog Folder  "</label>
+        <input file stock="gtk-open"></input>
+        <variable>FILE_BROWSE_DIRECTORY</variable>
+        <action type="fileselect">FILE_DIRECTORY</action>
+      </button>
+      <entry accept="directory" fs-title="Select a Directory containing DDog Files">
+        <variable>FILE_DIRECTORY</variable>
+        <action>disable:FILE_BROWSE_FILENAME</action>      
+        <action>disable:PF</action>
+
+	  </entry>
+	     <button>
+      <label>" Reset "</label>
+<input file stock="gtk-refresh"></input>
+  <action>clear:FILE_DIRECTORY</action>
+    <action>clear:PF</action>     
+ <action>enable:FILE_BROWSE_DIRECTORY</action>
+  <action>enable:FILE_DIRECTORY</action>
+<action>enable:PF</action> 
+<action>enable:FILE_BROWSE_FILENAME</action>
+
+   </button>
+ </frame>
+
+<button height-request="40">
+<label>" Install "</label>
+<input file stock="gtk-yes"></input>
+    <action>EXIT:INST</action>
+  </button>
+
+  <button>
+    <label>" Install MBR "</label>
+<input file stock="gtk-harddisk"></input>
+    <action>EXIT:INST1</action>
+  </button>
+
+  <button cancel></button>
+
+
+</vbox>
+</hbox>
+
+  <frame>
+	<checkbox>
+<label>" Disable journal on ext4 filesystem (recommended for flash drives)"</label>
+<default>true</default>
+<variable>CHECKBOX</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+	<checkbox>
+<label>" Skip copying savefile and/or changes folder (applies for install from directory)"</label>
+<default>true</default>
+<variable>SKIPCHANGES</variable>
+<action>if true enable:ENTRY</action>
+<action>if false disable:ENTRY</action>
+</checkbox>
+  <text><label>To Partition and Format selected Drive, click '"'Run gparted'"'</label></text>
+  <hbox>
+
+
+    <button>
+      <input file icon="gparted"></input>
+      <label> Run gparted </label>
+      <action>EXIT:1PART</action>
+    </button>
+  </hbox>
+  </frame>
+</vbox>
+</window>
+'
+gtkdialog --program=PART_DIALOG)
+
+eval "$RET"
+echo -e "\n$RET"
+echo
+[ "$EXIT" = 'Cancel' ]&& exit
+[ "$EXIT" = 'abort' ]&& exit
+#msg="\n###  No Partition Selected.\n"
+[ ! "$PART" ]&& Xdialog --title "DDog Installer" --msgbox " No Partition Selected. \n                                                                            " 0 0 && exec "$0"
+
+L=`echo "$INFO" |grep "$PART"`
+FS=`echo "$L" |cut -d, -f2`
+F_R=`echo "$L" |cut -d, -f3`
+BOOT=`echo "$L" |cut -d, -f4`
+SIZE=`echo "$L" |cut -d, -f5`
+
+#PI=`parted -l |sed "/${PART:0:3}:/!d;s,^.* ,,"`			# get parted info.
+#nB="${PI: -2}"
+#SZ="${PI:0:$((${#a}-2))}"
+#DRV="${PART:0:3}" # Terry version
+# mcewanw change version follows
+if [ ${#PART} -lt 6 ];then
+ DRV="${PART:0:3}"
+else
+ DRV="${PART:0:7}"
+fi
+
+echo part=$PART
+
+if [ "$EXIT" = 'INST' ]		### install Linux files
+then
+ install_linux_files # the actual code used to be here - mcewanw
+fi
+
+if [ "$EXIT" = 'INST1' ]; then
+ # mbr_install_only # this was original debdog-installer method - mcewanw change
+ # but I wanted choice of bootloader plus install of, for example, grldr and menu.lst, hence calling functions:
+
+ mount_install_part
+ check_fs_bootloader
+ [ "$SETBOOTFLAG" = "yes" ] && set_bootflag # 20151011 fredx181 change, set bootflag only if NOT cancelled installing bootloader 
+ exec $0
+fi
+
+case "$EXIT" in
+	'1PART')
+	echo fs=$FS
+	gparted /dev/"$DRV"
+		exec "$0"
+		;;
+esac
+
+echo
+exit

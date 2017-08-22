@@ -1070,6 +1070,20 @@ Description: GTK+ interface for MPlayer
  used with Gecko Mediaplayer and is the modern replacement for
  mplayerplug-in (from the same author).
 
+Package: debdoginstallscripts
+Architecture: amd64
+Version: 1.0.8
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.0.8_amd64.deb
+Size: 434276
+MD5sum: 83b628a9f3148a2ef46fddc097a31de6
+SHA1: 19084d36b03b01d219ea8e72ce5df55d69408a42
+SHA256: 859b04288975aa2a7f86e65d3cc16944cc03bad474a771590cecb2ae4a11decd
+SHA512: 05f7c662f1a3d51de258446de983ecbd53a9db1099760af631257febd75c4ccb92af0c4c027913396ff58375273ae9096aa2a9fc33a5f64c75e7dd66c7446d3d
+Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: apt2sfs
 Architecture: amd64
 Version: 1.0.9

@@ -3598,6 +3598,8 @@ usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
 usr/share/applications/ConkyClock.desktop		    conkyclock
 usr/share/applications/ConkyClock2.desktop		    conkyclock2
 usr/share/applications/Create-module-from-changes.desktop   remaster-scripts
+usr/share/applications/DDog-Full-Installer.desktop	    debdoginstallscripts
+usr/share/applications/DDog-Installer.desktop		    debdoginstallscripts
 usr/share/applications/DogRadio.desktop			    dogradio
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
