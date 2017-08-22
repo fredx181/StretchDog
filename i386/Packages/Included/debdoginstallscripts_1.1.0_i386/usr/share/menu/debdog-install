@@ -1,7 +1,0 @@
-?package(debdoginstallscripts):\
-	needs="X11"\
-	section="Applications/System/Administration"\
-	title="DDog-Frugal-Install"\
-	command="debdog-install"\
-	icon="/usr/share/pixmaps/install.png"
-
