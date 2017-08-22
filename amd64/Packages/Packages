@@ -64,13 +64,13 @@ Essential: yes
 Section: checkinstall
 Maintainer: root@jessie
 Installed-Size: 21
-Depends: libc6, debdogmountscripts, anacron, logrotate, yad, gtkdialog
+Depends: libc6, anacron, logrotate, yad, gtkdialog
 Filename: ./Included/porteusbootscripts_0.0.3_amd64.deb
-Size: 6598
-MD5sum: 1768b199f3f0f2c97e77f199b95ca0de
-SHA1: 6b9aec522a5d4f07ba8828077ddbfb7086b0f242
-SHA256: 31cc7a5472fbc5aa27f034aeb6f04cfa44c623f2d2a99a12cea19f364da45e85
-SHA512: c59ea3123bfc121e8c6c57ac3217790cf816c2c8bf384d61ab75c6989114de0bc9db9a66051e16341f4cc6d29cb8593cc9dc03f2a3e8067e1a00ddbf3fba7580
+Size: 6800
+MD5sum: 79bbc0623acf54990f11568fe2b0286e
+SHA1: f597be962a490944c14a8c6a0ff534f7235facf2
+SHA256: 8a1b8c4595d0389d9a60f468f6181a36ffae44fc4de6ee70134e63706539ee34
+SHA512: e57e74c42b4b9b1a79c58eda847b070f6899eaa014353fc90e346bd397f0024d9da50864d2639e40f7dfaca6a555e446e1bf47ecb13f8a3e74388d5bf9c24659
 Description: Porteus-boot-scripts
 
 Package: greybird-theme-dd-stretch
@@ -653,6 +653,25 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Bug fix: set the correct permissions for /tmp 
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
  Version 1.0.7: added option to create ISO
+
+Package: porteusbootscripts
+Architecture: all
+Version: 0.0.4
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6
+Filename: ./Included/porteusbootscripts_0.0.4_all.deb
+Size: 10962
+MD5sum: 2d38964a3b48615b87e397b9e7711540
+SHA1: 0a26b3937bda7b5553e25dd7b86e94a0f8b6e5d1
+SHA256: 0548f6974bec47f87c40a466fea14f800427583ac05af47081fabc264de0870f
+SHA512: 58f2aad6070d39f32a29e7a3eb2e7329e5f1ea3cafa839989f8b9b65f2c1272ff0735c17a5f990189bc664ff6824f0477eda5f379433a8b82b0bda3f091814ae
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ Bug fix: set the correct permissions for /tmp (save2flash script)
 
 Package: flashplayerchoice
 Architecture: all

@@ -573,8 +573,17 @@ opt/slimjet/slimjet-sandbox				    slimjet
 opt/slimjet/snapshot_blob.bin				    slimjet
 opt/slimjet/xdg-mime					    slimjet
 opt/slimjet/xdg-settings				    slimjet
+opt/tmp/initchanges.sh					    porteusbootscripts
 opt/tmp/jwm						    jwmconf
 opt/tmp/jwm-debdog					    jwmconf
+opt/tmp/makepfile.sh					    porteusbootscripts
+opt/tmp/mk-save.gtkdlg					    porteusbootscripts
+opt/tmp/save2flash					    porteusbootscripts
+opt/tmp/snap						    porteusbootscripts
+opt/tmp/snapexit					    porteusbootscripts
+opt/tmp/snapmergepuppy					    porteusbootscripts
+opt/tmp/wmpoweroff					    porteusbootscripts
+opt/tmp/wmreboot					    porteusbootscripts
 root/.config/rox.sourceforge.net/MIME-types/application	    jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf
