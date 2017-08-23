@@ -1,3 +1,23 @@
+Package: gsu
+Architecture: all
+Version: 1.0.4
+Priority: optional
+Section: admin
+Maintainer: root
+Installed-Size: 20
+Depends: libc6, sudo, xterm, yad
+Filename: ./Included/gsu_1.0.4_all.deb
+Size: 1606
+MD5sum: 5fb7b0f2aacc5299fba589e99cad0108
+SHA1: 0a087b76285f96f589ee0f2efb5c0a813d1b2dea
+SHA256: 9c873c261b9df668b8a7c5b9371b5a22e35a5a5f2d2e4eb4f38b2d04c9607a1c
+SHA512: 3e099f64627c6642aeacd8c5d0ca9b46198567a0fa2315f45f05d100e384d8804491e907bed520fa57a72273fd4116ff82843572f2408809375ee97258e6c0d6
+Description: graphical frontend to sudo - this version is fix for Jessie and SID upgrade but it is safe to install in Wheezy also.
+  You can keep old gsu version in Wheezy without problem.
+  .
+  More information available here:
+  http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
+
 Package: flashplayerchoice
 Architecture: all
 Version: 1.0.1
@@ -1432,6 +1452,27 @@ Description: Firefox-based, efficient and easy to use web browser
  Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
  that your processor supports it.
 
+Package: apt2sfs
+Architecture: amd64
+Version: 1.1.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 104
+Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
+Filename: ./Included/apt2sfs_1.1.2_amd64.deb
+Size: 9678
+MD5sum: 00eaa5eb9e3a922f5547739eeeed73ec
+SHA1: 4c4f6c6162b44aa386dc1f0cbde242cf8ae2a19a
+SHA256: 243fec43d1555718439d59436a5c09b0f22663eab1e9b9cf1488702cd9463252
+SHA512: 0dbfcf61787f593c1f33342879f4cdc2dc02793e5d33ae989324cece2d21cfc23947951dc77f3b9e21efc9f6df787ad674cf94ac34e2d131cc52dfc4e1bfd266
+Description: Warning - This package works only in DebianDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
+ Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
+ .
+ Fix after version 1.0.3: added option to choose location / or /tmp for working directory (in case you have only vfat or ntfs partitions available).
+ For creating a *.squashfs module from installing by apt-get
+ The installing takes place outside of the running system, in 'chroot'
+ - apt2sfs, GUI using yad
+ - apt2sfs-fullinst, GUI using yad, can be used on a full install
+
 Package: squashfuse
 Architecture: amd64
 Version: 0.1.1
@@ -2076,6 +2117,20 @@ Description: VP8 and VP9 video codec (shared library)
  on which the Theora codec was based.
  .
  This package contains the shared libraries.
+
+Package: peasymount
+Architecture: all
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasymount_1.3.deb
+Size: 3916
+MD5sum: 79413ab35cac9527ec9ab5c2d42cecb0
+SHA1: 1c4d3818c719555e9af9fbaaf138672ce6cb0814
+SHA256: e154fee04e53d1d8cf032f82e013d420283ae391d3d1c2756606f58d5657eddc
+SHA512: ae7285e6dcf4c5d58a963ddbb23efdbdbddc055415e169d95a683165d6a7a793228ce04af00df65335cbb3a57b936814df1f6b1077af3e5805305abae2180b40
+Description: Mounts ISO/SFS files
 
 Package: broadcom-wl-driver-k4.9.0-3-amd64
 Architecture: amd64
