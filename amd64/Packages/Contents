@@ -1346,6 +1346,8 @@ usr/lib/x86_64-linux-gnu/libnettle.so.4			    libnettle4
 usr/lib/x86_64-linux-gnu/libnettle.so.4.7		    libnettle4
 usr/lib/x86_64-linux-gnu/libpng12.so.0			    libpng12-0
 usr/lib/x86_64-linux-gnu/libssl.so.1.0.0		    libssl1.0.0
+usr/lib/x86_64-linux-gnu/libtiff.so.4			    libtiff4
+usr/lib/x86_64-linux-gnu/libtiff.so.4.3.6		    libtiff4
 usr/lib/x86_64-linux-gnu/libungif.so.4			    gnome-mplayer-1.0.6
 usr/lib/x86_64-linux-gnu/libungif.so.4.1		    gnome-mplayer-1.0.6
 usr/lib/x86_64-linux-gnu/libungif.so.4.1.6		    gnome-mplayer-1.0.6
@@ -3817,6 +3819,12 @@ usr/share/doc/libssl0.9.8/copyright			    libssl0.9.8
 usr/share/doc/libssl1.0.0/changelog.Debian.gz		    libssl1.0.0
 usr/share/doc/libssl1.0.0/changelog.gz			    libssl1.0.0
 usr/share/doc/libssl1.0.0/copyright			    libssl1.0.0
+usr/share/doc/libtiff4/README				    libtiff4
+usr/share/doc/libtiff4/README.Debian			    libtiff4
+usr/share/doc/libtiff4/TODO				    libtiff4
+usr/share/doc/libtiff4/changelog.Debian.gz		    libtiff4
+usr/share/doc/libtiff4/changelog.gz			    libtiff4
+usr/share/doc/libtiff4/copyright			    libtiff4
 usr/share/doc/libudev0/changelog.Debian.gz		    libudev0
 usr/share/doc/libudev0/changelog.gz			    libudev0
 usr/share/doc/libudev0/copyright			    libudev0
@@ -4942,6 +4950,7 @@ usr/share/info/wget.info.gz				    wget
 usr/share/lintian/overrides/epdfview			    epdfview
 usr/share/lintian/overrides/firefox-esr			    firefox-esr
 usr/share/lintian/overrides/libgbm1			    libgbm1
+usr/share/lintian/overrides/libtiff4			    libtiff4
 usr/share/lintian/overrides/libxml2			    libxml2
 usr/share/lintian/overrides/mount			    mount
 usr/share/lintian/overrides/palemoon			    palemoon

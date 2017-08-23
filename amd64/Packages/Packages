@@ -2650,6 +2650,29 @@ SHA256: 5feeaab484af6f2c5aa0978705dd0c671e717e4bd1d1e53fb12d8719060614e5
 SHA512: e0128f3a97fb13256cc9457b88afdce20ddfbf544ac81de456ed7971847bbeb08e422be66298492582c182eb31c95d516fe40c857a49ca1a62531fd95256a8f0
 Description: graphic-utility
 
+Package: libtiff4
+Architecture: amd64
+Version: 3.9.6-11+deb7u7
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: tiff3
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Installed-Size: 512
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.11), libjbig0, libjpeg8 (>= 8c), zlib1g (>= 1:1.1.4)
+Filename: ./Extra/libtiff4_3.9.6-11+deb7u7_amd64.deb
+Size: 205000
+MD5sum: 16611b2bd1389e0676a882ac53cfbd09
+SHA1: 186f7d26108fd7a274dd4941e504d576ef347621
+SHA256: 15e43a4827adb5c5a4f2bdd1e8fda0263e249ef81cb730ddeb2b165698399721
+SHA512: 8cf8bff6f8854332cae75ef5660b6b169b60b51812c2b54b9a2830d1a63035ca8f9363abe1bce614be96c1b69160e7a4806a4f2346f95626f7642f9697e265bd
+Homepage: http://libtiff.maptools.org
+Description: Tag Image File Format (TIFF) library (old version)
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+
 Package: libpng12-0
 Architecture: amd64
 Version: 1.2.50-2+deb8u3
