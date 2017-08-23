@@ -3253,6 +3253,29 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
+Package: libtiff4
+Architecture: i386
+Version: 3.9.6-11+deb7u7
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: tiff3
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Installed-Size: 468
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.11), libjbig0, libjpeg8 (>= 8c), zlib1g (>= 1:1.1.4)
+Filename: ./Extra/libtiff4_3.9.6-11+deb7u7_i386.deb
+Size: 203292
+MD5sum: 47aea02555fdaa41d715d9985c86eabd
+SHA1: 176f221977e77580ccd97e5dcb761cf15b5f9785
+SHA256: 11dc1ebc2456bb36fec5bdc0143571e662ed3e6b401ec0b60336b884d8205b0a
+SHA512: f69574d1cd791221f7fca991416d3e1bd087359d405cf635a3711c40b1422e1775f17e9ceeba6abd02627abae5f3b7a4d38f3aba838e4dfd74bdbe7c45ddcc4a
+Homepage: http://libtiff.maptools.org
+Description: Tag Image File Format (TIFF) library (old version)
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+
 Package: scrox
 Architecture: i386
 Version: 0.8-17
