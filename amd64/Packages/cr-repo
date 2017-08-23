@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -x
 # Simple way to create simple repository using apt-ftparchive.
 
 echo "This script assumes that a directory (or subdirectories) containing .deb files have been made already."

@@ -869,6 +869,26 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
+Package: gsu
+Architecture: all
+Version: 1.0.5
+Priority: optional
+Section: admin
+Maintainer: root
+Installed-Size: 20
+Depends: libc6, sudo, xterm, yad
+Filename: ./Included/gsu_1.0.5_all.deb
+Size: 1630
+MD5sum: 72675a7f3957534b53fba71632801d71
+SHA1: 0519aba6dcfd25fd7e4520bd1a80f21806032d45
+SHA256: b3658a4f6a280da205a6afd1e15b07380898c2ba2c49507459581ea3fec4025c
+SHA512: c54cd75268055b15fe915066aedb570be0ee02e0c09a05dd6c12b635fb1efd15c0f127099e346fd44e5feec64fdad14e49cd3c93af38895465157430f068f225
+Description: graphical frontend to sudo - this version is fix for Jessie and SID upgrade but it is safe to install in Wheezy also.
+  You can keep old gsu version in Wheezy without problem.
+  .
+  More information available here:
+  http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
+
 Package: dogradio
 Architecture: all
 Version: 0.0.7b
