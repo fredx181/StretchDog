@@ -46,10 +46,10 @@ etc/skel/.config/rox.sourceforge.net/MIME-types/application jwmconf
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwmconf
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf
 etc/skel/.config/rox.sourceforge.net/MIME-types/text_plain  jwmconf
-etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-pcmanfm
-etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-pcmanfm
-etc/skel/.config/rox.sourceforge.net/OpenWith/convert-sfs   edit-sfs-pcmanfm
-etc/skel/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/convert-sfs   edit-sfs-thunar,edit-sfs-pcmanfm
+etc/skel/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/Options	    jwmconf
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/globicons    jwmconf
 etc/skel/.config/rox.sourceforge.net/ROX-Filer/menus2	    jwmconf
@@ -85,10 +85,10 @@ home/puppy/.config/rox.sourceforge.net/MIME-types/application jwmconf
 home/puppy/.config/rox.sourceforge.net/MIME-types/image_png jwmconf
 home/puppy/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf
 home/puppy/.config/rox.sourceforge.net/MIME-types/text_plain jwmconf
-home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-pcmanfm
-home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-pcmanfm
-home/puppy/.config/rox.sourceforge.net/OpenWith/convert-sfs edit-sfs-pcmanfm
-home/puppy/.config/rox.sourceforge.net/OpenWith/edit-sfs    edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+home/puppy/.config/rox.sourceforge.net/OpenWith/edit-sfs    edit-sfs-thunar,edit-sfs-pcmanfm
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/Options    jwmconf
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/globicons  jwmconf
 home/puppy/.config/rox.sourceforge.net/ROX-Filer/menus2	    jwmconf
@@ -98,7 +98,7 @@ home/puppy/.config/rox.sourceforge.net/ROX-Filer/pinbd-OB   jwmconf
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Copy    jwmconf
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Cut	    jwmconf
 home/puppy/.config/rox.sourceforge.net/SendTo/Multi-Paste   jwmconf
-home/puppy/.config/xfe/scripts/edit-sfs			    edit-sfs-pcmanfm
+home/puppy/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar,edit-sfs-pcmanfm
 home/puppy/.jwm/jwm.head				    jwmconf,jwm-setup-dd64
 home/puppy/.jwm/jwm.main				    jwmconf,jwm-setup-dd64
 home/puppy/.jwm/jwm.main-debian				    jwm-setup-dd64
@@ -588,8 +588,8 @@ root/.config/rox.sourceforge.net/MIME-types/application	    jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwmconf
 root/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf
 root/.config/rox.sourceforge.net/MIME-types/text_plain	    jwmconf
-root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-pcmanfm
-root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/convert-sfs edit-sfs-thunar,edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/.application_octet-stream/edit-sfs edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/Play in xhippo xhippo
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/ffconvert ffconvert
 root/.config/rox.sourceforge.net/OpenWith/.application_ogg/ffinfo ffconvert
@@ -678,8 +678,8 @@ root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/Play in xhippo xhi
 root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/ffconvert ffconvert
 root/.config/rox.sourceforge.net/OpenWith/.video_x-theora+ogg/ffinfo ffconvert
 root/.config/rox.sourceforge.net/OpenWith/Play in xhippo    xhippo
-root/.config/rox.sourceforge.net/OpenWith/convert-sfs	    edit-sfs-pcmanfm
-root/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/convert-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
+root/.config/rox.sourceforge.net/OpenWith/edit-sfs	    edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/rox.sourceforge.net/OpenWith/ffconvert	    ffconvert
 root/.config/rox.sourceforge.net/OpenWith/ffinfo	    ffconvert
 root/.config/rox.sourceforge.net/OpenWith/mkplaylist	    ffconvert
@@ -692,7 +692,7 @@ root/.config/rox.sourceforge.net/ROX-Filer/pinbd-OB	    jwmconf
 root/.config/rox.sourceforge.net/SendTo/Multi-Copy	    jwmconf
 root/.config/rox.sourceforge.net/SendTo/Multi-Cut	    jwmconf
 root/.config/rox.sourceforge.net/SendTo/Multi-Paste	    jwmconf
-root/.config/xfe/scripts/edit-sfs			    edit-sfs-pcmanfm
+root/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar,edit-sfs-pcmanfm
 root/.jwm/jwm.head					    jwmconf,jwm-setup-dd64
 root/.jwm/jwm.main					    jwmconf,jwm-setup-dd64
 root/.jwm/jwm.main-debian				    jwm-setup-dd64
@@ -753,7 +753,7 @@ usr/bin/ceni						    ceni
 usr/bin/defaultconnect					    frisbee
 usr/bin/domycommand					    domycommand
 usr/bin/domyfile					    domyfile
-usr/bin/edit-sfs					    edit-sfs-pcmanfm
+usr/bin/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/bin/epdfview					    epdfview
 usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
@@ -780,7 +780,7 @@ usr/bin/hotplug2stdout					    pburn
 usr/bin/hotplug2stdout_notimeout			    pburn
 usr/bin/iceauth						    x11-xserver-utils
 usr/bin/ipinfo						    frisbee
-usr/bin/losetup-FULL					    filemnt-pcmanfm
+usr/bin/losetup-FULL					    filemnt-pcmanfm,filemnt-thunar
 usr/bin/mkplaylist					    ffconvert
 usr/bin/mpv						    mpv
 usr/bin/network_tray					    frisbee
@@ -796,8 +796,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-pcmanfm
-usr/bin/pupmessage					    filemnt-pcmanfm
+usr/bin/pupdialog					    filemnt-pcmanfm,filemnt-thunar
+usr/bin/pupmessage					    filemnt-pcmanfm,filemnt-thunar
 usr/bin/redshiftgui					    redshiftgui
 usr/bin/roxterm						    roxterm-gtk2
 usr/bin/roxterm-config					    roxterm-gtk2
@@ -809,7 +809,7 @@ usr/bin/slimlock					    slim
 usr/bin/snapmergepuppy					    porteusbootscripts
 usr/bin/squashfuse					    squashfuse
 usr/bin/usleep						    pburn
-usr/bin/vercmp						    filemnt-pcmanfm
+usr/bin/vercmp						    filemnt-pcmanfm,filemnt-thunar
 usr/bin/wget						    wget
 usr/bin/wmpoweroff					    porteusbootscripts
 usr/bin/wmreboot					    porteusbootscripts
@@ -1494,7 +1494,7 @@ usr/local/bin/clear-changes				    quick-remaster
 usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
-usr/local/bin/conv-sfs					    edit-sfs-pcmanfm
+usr/local/bin/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/local/bin/debdog-full-install			    debdoginstallscripts
 usr/local/bin/debdog-install				    debdoginstallscripts
 usr/local/bin/desktop-editor				    desktop-editor
@@ -1502,7 +1502,7 @@ usr/local/bin/desktop_drive_icons			    desktop-drive-icons
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
-usr/local/bin/filemnt					    filemnt-pcmanfm
+usr/local/bin/filemnt					    filemnt-pcmanfm,filemnt-thunar
 usr/local/bin/firewall_ng				    firewall-ng
 usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
@@ -3625,11 +3625,11 @@ usr/share/applications/bacongui.desktop			    bacon
 usr/share/applications/camphonetab.desktop		    camphonetab
 usr/share/applications/ceni.desktop			    ceni
 usr/share/applications/clear-changes.desktop		    quick-remaster
-usr/share/applications/conv-sfs.desktop			    edit-sfs-pcmanfm
+usr/share/applications/conv-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/desktop_view_edit.desktop	    desktop-editor
 usr/share/applications/domycommand.desktop		    domycommand
 usr/share/applications/domyfile.desktop			    domyfile
-usr/share/applications/edit-sfs.desktop			    edit-sfs-pcmanfm
+usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/epdfview.desktop			    epdfview
 usr/share/applications/ffconvert.desktop		    ffconvert
 usr/share/applications/findnrun.desktop			    findnrun
@@ -5191,12 +5191,12 @@ usr/share/menu/apt2sfs-fullinst				    apt2sfs
 usr/share/menu/ceni					    ceni
 usr/share/menu/conkyclock				    conkyclock
 usr/share/menu/conkyclock2				    conkyclock2
-usr/share/menu/conv-sfs					    edit-sfs-pcmanfm
+usr/share/menu/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/menu/desktop_view_edit			    desktop-editor
 usr/share/menu/dogradio					    dogradio
 usr/share/menu/domycommand				    domycommand
 usr/share/menu/domyfile					    domyfile
-usr/share/menu/edit-sfs					    edit-sfs-pcmanfm
+usr/share/menu/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/menu/epdfview					    epdfview
 usr/share/menu/ffconvert				    ffconvert
 usr/share/menu/findnrun					    findnrun
@@ -5338,7 +5338,7 @@ usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
 usr/share/pixmaps/sd.png				    mount-wizard
-usr/share/pixmaps/sfs.png				    edit-sfs-pcmanfm
+usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown.png				    jwmconf,jwm-setup-dd64
 usr/share/pixmaps/slimjet.xpm				    slimjet

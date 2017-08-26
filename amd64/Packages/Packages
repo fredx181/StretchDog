@@ -34,6 +34,23 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - version 11 from https://dl.dropboxusercontent.com (= 19 Mb uncompressed)
  - Install flashplugin-nonfree with apt-get (= 25 Mb uncompressed)
 
+Package: edit-sfs-thunar
+Architecture: all
+Version: 2.3
+Priority: extra
+Section: x11
+Maintainer: root
+Installed-Size: 134
+Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, thunar, disktype, coreutils, xterm
+Replaces: edit-sfs-rox, edit-sfs-pcmanfm
+Filename: ./Included/edit-sfs-thunar_2.3_all.deb
+Size: 6384
+MD5sum: edac31f2ee4ed7e43b75541cae69a448
+SHA1: 53db918a7a1c2d27388b8d41389ce349df0248ac
+SHA256: 655174f7331c4c171684d5608640f7dfff78dc86d1762de6413ca10ee7c25d1b
+SHA512: 9df0f4b85bb0f7aaee8be5ca32cd76de8b3cce03f9cd21ebe194c4a9733c8417d1dd8ce45a41b629fdb2ace5d6e3de7c1eb6205e9946f526fa7dbfeb4cfe8b25
+Description: squashfs editor, converter
+
 Package: libgmlib0
 Architecture: amd64
 Version: 1.0.6-1
@@ -129,13 +146,13 @@ Section: x11
 Maintainer: root
 Installed-Size: 134
 Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, pcmanfm, disktype, coreutils, xterm
-Replaces: edit-sfs-rox
+Replaces: edit-sfs-rox, edit-sfs-thunar
 Filename: ./Included/edit-sfs-pcmanfm_2.1_all.deb
-Size: 6432
-MD5sum: 6fc9d0c9d29136a3d2e5f24ac0b09cb4
-SHA1: 29493c8a9cd75d6bdbc14cdf6f735d75607393c4
-SHA256: 665d3bc17d82211821825da37cd7a794e8f97759bc08c1cdccb99bc492a48202
-SHA512: cdc5d887eeb1ad18cfeb15604eba7547a7338efb56824bfeec59a9194ca7bc564c9ae381d20d87b498ace17f81e2d2d596b343b1d89101584463c77ccba9e974
+Size: 6376
+MD5sum: b0eb57e267788d08cde2187ff4e3086d
+SHA1: 1836a309d9d926b300daaf1d7823731e0680bf08
+SHA256: c9d7f1096d242d6bcd94c71b3fe4fc37f506fbb910e63b46757efb1ff2d11b3d
+SHA512: 30ee24954a55563e33427e6322f25e99f7ccb15986019eb74362269cc3f4d938e300872ca892a4521866dc9767656a6d49c5e5cd2ddd7747a31d90cd26d27e31
 Description: squashfs editor, converter
 
 Package: lxinputsave
@@ -1070,13 +1087,13 @@ Version: 1.0.0
 Maintainer: fredx181 root@dog
 Installed-Size: 39
 Depends: libc6, disktype
-Replaces: filemnt-rox, filemnt-xfe
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar
 Filename: ./Included/filemnt-pcmanfm_1.0.0_amd64.deb
-Size: 42572
-MD5sum: c42f27bd19449a4ef3b07c53f7bb6c21
-SHA1: 14c6dc4747ae8ccdfcaddc71ad51bcf62ac5e227
-SHA256: b558588852f1c99e4fb32e02d4a92e01c066faeac78dccd69228da4a524f8839
-SHA512: 9a3b68af59df8e87fac6c5d62da5946d1ef7dec2aa0ebd2e4db6508a70755ced2888c5295b9f6c9ee5948c2746252636d2c6a41236bf43292889aa4cabe4665f
+Size: 42562
+MD5sum: 1bf2e5afb5f06d2474992f4f5f6d74f0
+SHA1: 28a51eb48b67c0c04582366ad7de61902f9ac67c
+SHA256: 87aaff2055a6bba425fa1b6e2f768912fe65a47a7e6407577f3960c09877406b
+SHA512: 1ba8e2c8e0d129540db55f9e27aac56b223e1d78e9a34a668dea89a9f59c1ca67437f0f8f721647d77b3f037ea62a2a745d31c291bac0c783e6dd7cb73fe369f
 Description: Mount images, savefile, modules
 
 Package: gnome-mplayer-1.0.6
@@ -1390,6 +1407,21 @@ SHA1: b64b20e9f167324f9b355b972a4681328611e7d9
 SHA256: 00cf05e2b2f4e920b075aec611b7d44e43b63d0ac52535c11e58f68ca3230bf3
 SHA512: 6ddaefb51682705e91c6a619dfc1038d90f506d096fdb94bcb5f7dddb1bec2494ba87ff93365e59347e2fd237e8fa5387ec45f13a8b550ffff5e62017d4009b2
 Description: Load a *.squashfs or *.sfs module.
+
+Package: filemnt-thunar
+Architecture: amd64
+Version: 1.0.1
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, gtkdialog, disktype, thunar, gsu | gksu
+Replaces: filemnt-rox, filemnt-xfe, filemnt-pcmanfm
+Filename: ./Included/filemnt-thunar_1.0.1_amd64.deb
+Size: 42658
+MD5sum: 118309b83c3df6810af57593cceecef5
+SHA1: c9597a8f08b7b2a669ce236fe3165e1d57eff742
+SHA256: 05aec964797be3b0d6872c23a1625f3fc3cb94f881409c3736a049ddffd644de
+SHA512: 5768671ecd34375ddb74921b53dbae431fa4f832d01fed782d926e980812076106d7a431aeda47887b6fa7403649b519fc3fd3ef1674680594196fb77a135e88
+Description: Mount images, savefile, modules
 
 Package: gnome-mplayer-1.0.6
 Architecture: amd64
