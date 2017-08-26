@@ -1416,11 +1416,11 @@ Installed-Size: 39
 Depends: libc6, gtkdialog, disktype, thunar, gsu | gksu
 Replaces: filemnt-rox, filemnt-xfe, filemnt-pcmanfm
 Filename: ./Included/filemnt-thunar_1.0.1_amd64.deb
-Size: 42658
-MD5sum: 118309b83c3df6810af57593cceecef5
-SHA1: c9597a8f08b7b2a669ce236fe3165e1d57eff742
-SHA256: 05aec964797be3b0d6872c23a1625f3fc3cb94f881409c3736a049ddffd644de
-SHA512: 5768671ecd34375ddb74921b53dbae431fa4f832d01fed782d926e980812076106d7a431aeda47887b6fa7403649b519fc3fd3ef1674680594196fb77a135e88
+Size: 42638
+MD5sum: ead02da96c2e85b369429ad5c17eaf97
+SHA1: 4b6c535fa6197d0052b78498e1ef4d8adf3eaf6f
+SHA256: 12b4a7d06b68212033f35eb6cd0aeb9c9cf049e8ad09b8efeefe966e8a9b4fa1
+SHA512: 71af35d3e83775a1d501f8744955daf252e637466e5effd5e21bf933621fb82a31dab9a0c342b17738350c16bfab606c32f0dc6922776518656f6504927040a0
 Description: Mount images, savefile, modules
 
 Package: gnome-mplayer-1.0.6

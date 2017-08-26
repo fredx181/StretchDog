@@ -1502,7 +1502,7 @@ usr/local/bin/desktop_drive_icons			    desktop-drive-icons
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
-usr/local/bin/filemnt					    filemnt-pcmanfm,filemnt-thunar
+usr/local/bin/filemnt					    filemnt-pcmanfm
 usr/local/bin/firewall_ng				    firewall-ng
 usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
@@ -1547,6 +1547,7 @@ usr/local/bin/menumaker					    desktop-editor
 usr/local/bin/mkiso					    quick-remaster
 usr/local/bin/mnt-all					    debdogmountscripts
 usr/local/bin/mnt-backing				    debdogmountscripts
+usr/local/bin/mnt-img					    filemnt-thunar
 usr/local/bin/mount-wizard				    mount-wizard
 usr/local/bin/mountlink					    debdogmountscripts
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
