@@ -656,13 +656,13 @@ Version: 1.0.1
 Maintainer: fredx181 root@dog
 Installed-Size: 39
 Depends: libc6, gtkdialog, disktype, thunar, gsu | gksu
-Replaces: filemnt-rox, filemnt-xfe
+Replaces: filemnt-rox, filemnt-xfe, filemnt-pcmanfm
 Filename: ./Included/filemnt-thunar_1.0.1_i386.deb
-Size: 20390
-MD5sum: c6627d92c4e1a1966f78bd46d75b52a2
-SHA1: fd138af9592e222227ab1680f177fe3c763c1e9f
-SHA256: 3d54546b6e4d995355d1ec9c353d8b841cd549baf587c63697aa982dbdb5471d
-SHA512: 73cb438786cea9c2635e871837ee83117a511fc005d9334b49b99153b1cdaa386bd052ab732d13ec0733f077e49a038566e64cc51d4a2ccce37e6338e8ae6c08
+Size: 20386
+MD5sum: 1892fa2d9ca6594d205d9d997d9d9efd
+SHA1: cd665981f8dd7769a7319d28dd236e299538f71f
+SHA256: fe878b6595a57dfe02d94b5adc45cb68ac50cc872365c59bed767da99bdadfbb
+SHA512: f08f87963d8ec24e3ae40db4ba0f0a5a258a7001e13d97fa969433d141eafce4a53e6aeba69ac6f98c1fe84dfda87240c97c9832bd74446e269dfdf49713e773
 Description: Mount images, savefile, modules
 
 Package: firefox-esr
@@ -1738,13 +1738,13 @@ Version: 1.0.0
 Maintainer: fredx181 root@dog
 Installed-Size: 39
 Depends: libc6, disktype
-Replaces: filemnt-rox, filemnt-xfe
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar
 Filename: ./Included/filemnt-pcmanfm_1.0.0_i386.deb
-Size: 20298
-MD5sum: 2e26c5874e1baed048854872d8ed2e58
-SHA1: a8fe9e4d598887d2d88a49bfffd0b7d58534da0d
-SHA256: a40dd0369e2c887a9e1cf4bd12694085742eecf1dfe18b605da6bb6a7e757480
-SHA512: 99edc9f6b588b2295169dd6b88e774fb8ace84609ef782670ce91637458f99af0b2c8b2a1e0ad83abd0562756cfdaa5236ec49a6aa20d7b68177a49c02389d5d
+Size: 20318
+MD5sum: 2081a2a3b349015a971539ba487093be
+SHA1: 12f4f446e64112c56042e6acc23aa82d64b83d5c
+SHA256: 001905a8681fc58a19185b58916a8e4b358aa8dd704215a0d8ebbbecc4c8085d
+SHA512: 70a4d293ac740cfa5000aac0441f6eb8b3bd3d8dec1b8b7ca12294fb6a5a20c3a00c1e097d6259059c7af77d0dc68055abd47c6e77ae2ba2477a8ecc30157050
 Description: Mount images, savefile, modules
 
 Package: pfind
