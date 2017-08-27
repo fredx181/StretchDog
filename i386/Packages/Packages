@@ -3546,6 +3546,21 @@ SHA512: e1490c50fe489c45b8a0932511a329a818b9ac56f20cda33329402299fa9507c4efd0a15
 Description: flite-hts-engine for DebianDog:
  stdout patched version by mcewanw with 1kB buffer
 
+Package: peasyxorburn
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, cdrskin, eject, xterm
+Filename: ./Extra/peasyxorburn_1.1.deb
+Size: 10100
+MD5sum: 92319bd2f7fc91fd352646919fb00e3f
+SHA1: ad325ebf06d5aa30a672363419580f90fbe5b41b
+SHA256: cf09b196f3e5016d43e545704997718e8c9b25fa30df618e2b6a01df01fb531b
+SHA512: 010c8c2ae56f5f33a2a7a5099990fa9df5c1fd01c187f6493bb2792d8059e24863abc871e4a3ec934cf4a7ed12814541c0457600b1666699e970e138671797a6
+Description: Simple burning tool
+
 Package: libnettle4
 Architecture: i386
 Version: 2.7.1-5+deb8u1
