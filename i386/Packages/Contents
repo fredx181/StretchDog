@@ -87,6 +87,7 @@ etc/pwf/udhcpc/default.script				    PeasyWiFi
 etc/rc.d/rc.firewall.pfm				    peasyfwmon
 etc/rc.d/rc.network					    PeasyWiFi
 etc/rcS.conf						    wifibox-dhcpcd,wifibox
+etc/samba/smb.conf.orig					    samba4-control
 etc/skel/.config/rox.sourceforge.net/MIME-types/application jwm-setup,jwmconf
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwm-setup,jwmconf
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwm-setup,jwmconf
@@ -890,6 +891,7 @@ root/Startup/netmon_wce					    wifibox
 root/Startup/network_tray.sh				    frisbee,ceni,wifibox-dhcpcd,sns
 root/Startup/peasyfwmon_tray				    peasyfwmon
 root/Startup/peasywifi_tray				    PeasyWiFi
+root/Startup/samba-autostart				    samba4-control
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwm-setup,jwmconf
@@ -962,7 +964,7 @@ usr/bin/ipinfo						    frisbee,wifibox,ceni,wifibox-dhcpcd
 usr/bin/jwm						    jwm
 usr/bin/koi8rxterm					    xterm
 usr/bin/linux-user-chroot				    linux-user-chroot
-usr/bin/losetup-FULL					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
+usr/bin/losetup-FULL					    filemnt-rox,filemnt-pcmanfm,filemnt-caja,filemnt-thunar
 usr/bin/lumina-config					    lumina-desktop-debdog
 usr/bin/lumina-fileinfo					    lumina-desktop-debdog
 usr/bin/lumina-fm					    lumina-desktop-debdog
@@ -997,8 +999,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
-usr/bin/pupmessage					    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
+usr/bin/pupdialog					    filemnt-rox,filemnt-pcmanfm,filemnt-caja,filemnt-thunar
+usr/bin/pupmessage					    filemnt-rox,filemnt-pcmanfm,filemnt-caja,filemnt-thunar
 usr/bin/redshiftgui					    redshiftgui
 usr/bin/resize						    xterm
 usr/bin/rox						    rox-filer
@@ -1016,7 +1018,7 @@ usr/bin/unsquashfs					    squashfs-tools
 usr/bin/update-alternatives				    dpkg
 usr/bin/usleep						    pburn
 usr/bin/uxterm						    xterm
-usr/bin/vercmp						    filemnt-rox,filemnt-pcmanfm,filemnt-thunar
+usr/bin/vercmp						    filemnt-rox,filemnt-pcmanfm,filemnt-caja,filemnt-thunar
 usr/bin/wget						    wget
 usr/bin/wifi-box					    wifibox-dhcpcd,wifibox
 usr/bin/wmpoweroff					    porteusbootscripts
@@ -1905,7 +1907,7 @@ usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
 usr/local/bin/echinus					    echinus
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
-usr/local/bin/filemnt					    filemnt-pcmanfm
+usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_install				    Firewall-Puppy
 usr/local/bin/firewall_install.sh			    Firewall-Puppy
 usr/local/bin/firewall_ng				    firewall-ng
@@ -2001,6 +2003,7 @@ usr/local/bin/rpcclient					    samba-tng-rcrsn-0.5-rc1-debdog
 usr/local/bin/samba-adduser				    samba-tng-rcrsn-0.5-rc1-debdog
 usr/local/bin/samba-start				    samba-tng-rcrsn-0.5-rc1-debdog
 usr/local/bin/samba-stop				    samba-tng-rcrsn-0.5-rc1-debdog
+usr/local/bin/samba4-control				    samba4-control
 usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwm-setup,jwmconf
 usr/local/bin/sfs-get					    sfs-get-smokey-get
@@ -4664,6 +4667,7 @@ usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
 usr/share/applications/Remaster-DDog.desktop		    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
+usr/share/applications/Samba4-Control.desktop		    samba4-control
 usr/share/applications/SaveFolderBackup.desktop		    SaveFolderBackup
 usr/share/applications/Set Locale_Language.desktop	    locale-conf
 usr/share/applications/UExtract.desktop			    uextract
@@ -8126,6 +8130,7 @@ usr/share/pixmaps/restart.png				    jwm-setup,jwmconf
 usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/samba-menu.png			    samba-tng-rcrsn-0.5-rc1-debdog
+usr/share/pixmaps/samba4-control.png			    samba4-control
 usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sd2.png				    mount-wizard-2
 usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm

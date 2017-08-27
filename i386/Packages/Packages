@@ -1227,6 +1227,21 @@ Description: highly configurable system monitor (basic version)
  .
  MPD, MOC, math, apcupsd, ncurses and I/O stats.
 
+Package: filemnt-caja
+Architecture: i386
+Version: 1.0.0
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
+Filename: ./Included/filemnt-caja_1.0.0_i386.deb
+Size: 20306
+MD5sum: bd51ba1465e89cfe514eff82807cc7ac
+SHA1: 5dca68667b7ace27946df5d9c46d969940da8cf0
+SHA256: db37d28054e5a97557b802b2206aa1450d9a432eb7c2e8a91ffbb72b9ad1ed7e
+SHA512: 5d784390326ab3053b01d6648fb741d93776703daf446b10648a2d63b79cbc8957923ea7371839747af1d1b2a6259dac871f82362eaaf0f1a3aaacd0e0317020
+Description: Mount images, savefile, modules
+
 Package: flashplayerchoice
 Architecture: i386
 Version: 1.0.2
@@ -2632,6 +2647,22 @@ SHA256: ad7839c6949005cd36ce1075f99e0812d23b7b0ff6d5f105b21db1bc4750f3c4
 SHA512: ee64b0ea1f699626a852eb141db9c0b8e8d4cb59c557c222d42f930713f2800d60c3984319c19fde194aba5e00b5336f0042dab4a5a595c549077a704ef16fe2
 Description: Lightweight EWMH taskbar, originally designed for echinus.
 
+Package: samba4-control
+Architecture: i386
+Version: 2.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Extra/samba4_control_2.0_i386.deb
+Size: 6616
+MD5sum: a65ab7c708f66f0c19aae2212f637010
+SHA1: 9ab7de3eea73c1fad714e1cf198a81f289a8e3c5
+SHA256: 889b5e3af2f5fcae14dbbc1d943d4bca9397c6c82cdc6549202297ee0b210abd
+SHA512: 4a8acb26790c54fba6c91b29e73876b3b69750af15d7538e9a25f4c56afc389976e43f5201864ce98bfef06478f2e087cdda290ceeea0a385ab9f20bab87adf6
+Description: Samba server control panel
+	uses the Samba4 Basic 32bit PET
+
 Package: libssl0.9.8
 Architecture: i386
 Version: 0.9.8o-4squeeze14
@@ -3637,6 +3668,21 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Easy add/remove radio stream items
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
+
+Package: yassm
+Architecture: all
+Version: 4.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan
+Filename: ./Extra/yassm_4.1.deb
+Size: 7432
+MD5sum: 076a8c0fa5d26df2d0a30e0d7faded2d
+SHA1: 939386965a922d3813ddf3ffa7067b863bd1755a
+SHA256: 287283c762d184708c8d11bc39fc26e18edc4e9c974426106bb84d83a68493ee
+SHA512: 0d80e7633b450b8beda300338361a8e9136b2bb49e79b9e414e11302204925e360caf5419e4be9d6dc87448d3f54dc514c89076fd835d68952192e685b26b33e
+Description: Samba share mounter
 
 Package: youtube-get2
 Architecture: i386
