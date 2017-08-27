@@ -780,7 +780,7 @@ usr/bin/hotplug2stdout					    pburn
 usr/bin/hotplug2stdout_notimeout			    pburn
 usr/bin/iceauth						    x11-xserver-utils
 usr/bin/ipinfo						    frisbee
-usr/bin/losetup-FULL					    filemnt-pcmanfm,filemnt-thunar
+usr/bin/losetup-FULL					    filemnt-caja,filemnt-thunar,filemnt-pcmanfm
 usr/bin/mkplaylist					    ffconvert
 usr/bin/mpv						    mpv
 usr/bin/network_tray					    frisbee
@@ -796,8 +796,8 @@ usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
 usr/bin/pup-volume-monitor-admin			    pup-volume-monitor
-usr/bin/pupdialog					    filemnt-pcmanfm,filemnt-thunar
-usr/bin/pupmessage					    filemnt-pcmanfm,filemnt-thunar
+usr/bin/pupdialog					    filemnt-caja,filemnt-thunar,filemnt-pcmanfm
+usr/bin/pupmessage					    filemnt-caja,filemnt-thunar,filemnt-pcmanfm
 usr/bin/redshiftgui					    redshiftgui
 usr/bin/roxterm						    roxterm-gtk2
 usr/bin/roxterm-config					    roxterm-gtk2
@@ -809,7 +809,7 @@ usr/bin/slimlock					    slim
 usr/bin/snapmergepuppy					    porteusbootscripts
 usr/bin/squashfuse					    squashfuse
 usr/bin/usleep						    pburn
-usr/bin/vercmp						    filemnt-pcmanfm,filemnt-thunar
+usr/bin/vercmp						    filemnt-caja,filemnt-thunar,filemnt-pcmanfm
 usr/bin/wget						    wget
 usr/bin/wmpoweroff					    porteusbootscripts
 usr/bin/wmreboot					    porteusbootscripts
@@ -1502,7 +1502,7 @@ usr/local/bin/desktop_drive_icons			    desktop-drive-icons
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
-usr/local/bin/filemnt					    filemnt-pcmanfm
+usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_ng				    firewall-ng
 usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall

@@ -195,6 +195,21 @@ Description: Load a *.squashfs or *.sfs module.
  Changes in v 1.0.5:
  - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
 
+Package: filemnt-caja
+Architecture: amd64
+Version: 1.0.0
+Maintainer: fredx181 root@dog
+Installed-Size: 39
+Depends: libc6, disktype
+Replaces: filemnt-rox, filemnt-xfe, filemnt-thunar, filemnt-pcmanfm
+Filename: ./Included/filemnt-caja_1.0.0_amd64.deb
+Size: 42586
+MD5sum: 151b76d719d7f5f4b99b79198ba5fc01
+SHA1: 5844238d425b366fd5fd36b059bc146649391bfd
+SHA256: 664a0b7bd2b5e8ea435d0d3c8920961da8fafdc01b2798bea8b08c65ef9ceb49
+SHA512: d762f3f41b3555a3d336c5c3a4807f3908c9836ed43136b8e4d7d5cebcbfb92a853cd6477ceb35d3cb891764be34b6c0d7f773a7399664793313940da829e694
+Description: Mount images, savefile, modules
+
 Package: gtkdialog
 Architecture: amd64
 Version: 0.8.3-1
@@ -2724,6 +2739,21 @@ Description: Tag Image File Format (TIFF) library (old version)
  libtiff is a library providing support for the Tag Image File Format
  (TIFF), a widely used format for storing image data.  This package
  includes the shared library.
+
+Package: yassm
+Architecture: all
+Version: 4.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan
+Filename: ./Extra/yassm_4.1.deb
+Size: 7432
+MD5sum: 076a8c0fa5d26df2d0a30e0d7faded2d
+SHA1: 939386965a922d3813ddf3ffa7067b863bd1755a
+SHA256: 287283c762d184708c8d11bc39fc26e18edc4e9c974426106bb84d83a68493ee
+SHA512: 0d80e7633b450b8beda300338361a8e9136b2bb49e79b9e414e11302204925e360caf5419e4be9d6dc87448d3f54dc514c89076fd835d68952192e685b26b33e
+Description: Samba share mounter
 
 Package: libpng12-0
 Architecture: amd64
