@@ -744,11 +744,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 72
 Depends: libc6, x11-utils, x11-xserver-utils, findutils, yad, unionfs-fuse, coreutils, menu, mount, procps, sed, squashfs-tools, apt, xterm, gsu | gksu
 Filename: ./Included/apt2sfs_1.1.2_i386.deb
-Size: 9816
-MD5sum: 01789060d3fdbfc16fac5456913c7cdf
-SHA1: 3eb1935937b4a3d0eb51fbcc5dbf988a8e18988a
-SHA256: dbfb5687a205b397b7613463c8522341b6136545a161c5412b5a0358f9a20dde
-SHA512: ad30ea136ec19bf3d3b77c603097a081b832698bcb1d058f1ed202437b739a811b544a2ac7c418cb5e84b77f658a312e352eeb4b0a8dd6bf19471093f6b9dd0a
+Size: 9822
+MD5sum: d5c7bcb97751b60df8d5e8f032648280
+SHA1: 39bfbeb355e3a058a3eeda04bb262de220f5fb21
+SHA256: 919c29905ea1927293bb94111a113e4d0a8adbf8c6b78b86d14c6a0694d03932
+SHA512: 44a62782cd58ef140bdaa8cd17d6263d04bfef5ed561f4f627c317374c9e7f7e0be20b892a4ffcfcf3e6b7406719f651afd136c1f58b781e9a1e130c2632fcd2
 Description: Warning - This package works only in XenialDog! Fix: Force being user 'root' in chroot, otherwise installing might fail (for example when running with new created user).  
  Fix: version 1.0.4 (and earlier) doesn't work well because of 'stable' entry in /etc/apt/sources.list after jessie became stable at 2015-04-25.
  .
@@ -953,11 +953,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 336
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
 Filename: ./Included/quick-remaster_1.1.0_all.deb
-Size: 159310
-MD5sum: e13616d1c4aefadabcdea4ba3f8f3e4c
-SHA1: 2d4b2194552a13ffb22ff82f8fc6614da5901500
-SHA256: 58d149f9844154689cd7c6a4813a3fd9649ad7af9b80b699684a40e4ae47ad05
-SHA512: 02ea8f0f3bcd22bae9f41b969545ddfdc68d9d65141ea9dc7c491ec60226d35eda63fe543962e8c84b7af4cb185b7b6ac09c07f1c3f9e320801e30991389bdb0
+Size: 159306
+MD5sum: eb8b3d5cb8ba47e27508082a2dc50b0e
+SHA1: 326817d9416adcbf6bad371a2199c35c1e9924a3
+SHA256: a7cae38373b17f3182a59d5a77e41b04aabf68d2faf59d38d226e11ceaa58cf8
+SHA512: 38556d4471b683a122fecdf215096ab98a0504f89e8256cf1ff2be2e26fc44aa236a984f5c52eaaa4420b05a9787b836065355094d626c431d2b1e45df7f6fdc
 Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
  Included GUI version using yad: quick-remastergui
  Bug fix: gz compression option not working in previous version 1.0.3
@@ -1074,11 +1074,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 57
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, menu
 Filename: ./Included/remaster-scripts_1.0.6_all.deb
-Size: 8942
-MD5sum: cd7d3aae65498869fa64d91018a4344c
-SHA1: 7123a392121831fdfebaac9b687b8eaeae4fe621
-SHA256: 643d0be563b74fe01911f656e443d9b476ba3977406ce60fa82541ccfc3c147a
-SHA512: 48ab8cbb25170f1b40033144fdc41f04107e64a6b3dc4acc050eced76bdc0434d9499a9238d96c57808528781af6387b95dc79520a11021692927355f2779178
+Size: 8842
+MD5sum: 7b7d140f947d36348a1863f9c1a6d04b
+SHA1: dd8daf9543a5c9aaa843f41900f96fd4eabab6f7
+SHA256: 2bcf9045752f4aec7a58934944a33a2e6b3b45dd387adbd7190a7db2b50e738e
+SHA512: 6b13edf15fac31e3194162d622586abb0c3f209ab9e12b7761c4dc79b09d11409bf2f4c309eaa5a863193d9d02ee5eb10573450cb2ca543ab6367863a236c667
 Description: Warning - This package works only in DDog! In ver. 1.0.3 fixed progress bar bug for very old PC.
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
