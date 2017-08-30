@@ -87,13 +87,13 @@ Section: x11
 Maintainer: root
 Installed-Size: 134
 Depends: libc6 (>= 2.7-1), squashfs-tools (>= 4.2-1), bash, x11-utils, thunar|pcmanfm, disktype, coreutils, xterm
-Replaces: edit-sfs-rox
+Replaces: edit-sfs-rox, edit-sfs-pcmanfm
 Filename: ./Included/edit-sfs-thunar_2.3_all.deb
-Size: 6378
-MD5sum: 1916262f74e30ca8463b4407e9f70f91
-SHA1: ffaa960553b527f08faf0d47f8f2be5822b49107
-SHA256: f2644212e8d04c2096815b0094f9c76dedaba92500249d8a482cc5b07a7769c6
-SHA512: 14ae510ef47a4329918d5e114f187c1f41047f1d3f64038d3bb611a2dfd67446d5b6d72849d0732244848cae2fb53e4187d1631798df7030f2e81ec00d8b946c
+Size: 6380
+MD5sum: 32da098bd1dd7190039f4a005685e9c5
+SHA1: b87b2a733329905037a8a56e4f4470acfeb944a5
+SHA256: 5de81ae8a98d6280201b6ea7bb36d9fb6be3690ee9f999535e80e24d7f46ca0c
+SHA512: 98fa1961c966eddf7b131bfd8d03c2c51b003b248ade750cab7f289348996a8e2e661ab860f279d93e12d5e906aa2904448129ae0018f054a16520406fd39270
 Description: squashfs editor, converter
 
 Package: frisbee
