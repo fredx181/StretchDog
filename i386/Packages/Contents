@@ -260,6 +260,11 @@ lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8192eu.ko realtek-wifi-d
 lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wireless/8812au.ko realtek-wifi-drivers-k4.9.0-i386
 lib/modules/4.9.0-3-686-pae/kernel/drivers/net/wl.ko	    broadcom-wl-driver-k4.9.0-3-686-pae
 lib/systemd/system/slim.service				    slim
+opt/apps/scrotdlg/Makefile				    scrotdlg
+opt/apps/scrotdlg/scrot-howto.txt			    scrotdlg
+opt/apps/scrotdlg/scrotdlg				    scrotdlg
+opt/apps/scrotdlg/scrotdlg.c				    scrotdlg
+opt/apps/scrotdlg/tmp.txt				    scrotdlg
 opt/apps/syslinux/extlinux/extlinux			    debdoginstallscripts
 opt/apps/syslinux/extlinux/extlinux.conf		    debdoginstallscripts
 opt/apps/syslinux/extlinux/vesamenu.c32			    debdoginstallscripts
@@ -1987,6 +1992,8 @@ usr/local/bin/peasyscale.bin				    peasyscale
 usr/local/bin/peasyscan					    peasyscan
 usr/local/bin/peasywifi					    PeasyWiFi
 usr/local/bin/peasyxorburn				    peasyxorburn
+usr/local/bin/picdrop					    picdrop
+usr/local/bin/picscale					    picdrop
 usr/local/bin/pngtopnm					    peasyglue
 usr/local/bin/pnmcat					    peasyglue
 usr/local/bin/pnmtojpeg					    peasyglue
@@ -4665,6 +4672,7 @@ usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
+usr/share/applications/MakeScreenshot.desktop		    scrotdlg
 usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get2,youtube-get
 usr/share/applications/Remaster-DDog.desktop		    remaster-scripts
@@ -8155,6 +8163,7 @@ usr/share/pixmaps/peasyscan.png				    peasyscan
 usr/share/pixmaps/peasywifi-24.png			    PeasyWiFi
 usr/share/pixmaps/peasywifi-48.png			    PeasyWiFi
 usr/share/pixmaps/peasyxorburn.png			    peasyxorburn
+usr/share/pixmaps/picdrop.png				    picdrop
 usr/share/pixmaps/prefs.png				    jwm-setup,jwmconf
 usr/share/pixmaps/puppy/cell1_0.svg			    wifibox
 usr/share/pixmaps/puppy/cell1_1.svg			    wifibox
@@ -8212,6 +8221,7 @@ usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/transmission.png			    transmission-2.31
 usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
+usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg
 usr/share/pixmaps/xfe.png				    xfe
 usr/share/pixmaps/xfe.xpm				    xfe
 usr/share/pixmaps/xfi.png				    xfe

@@ -4071,6 +4071,22 @@ Description:  findnrun 1.10.6 (i18n)
   Files in this add-on package: localized runtime messages.
   https://github.com/step-/find-n-run/
 
+Package: scrotdlg
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 74
+Depends: libc6, scrot, libglib2.0-0, libgtk2.0-0
+Filename: ./Extra/scrotdlg_1.0.0_i386.deb
+Size: 22106
+MD5sum: 42bc3af0cbf63c7bd7082a6d02d8902f
+SHA1: c2d30d75872ef0e8af328b879240b65b4992dffd
+SHA256: 5143d06d7042a5f4d8af8c1cc5fa8c5b5aceb5fab1d876dcd313a5ab08a369e6
+SHA512: 0919e3701558d04602287a9c286a11adc0535222f8d2c799fb3b7c23923a90157aaaef52ac2ba51cf4b18b4d13823c517121400ec68f832562ac406e16e12e07
+Description: Make screenshot, by sklimkin
+
 Package: ffmpeg
 Architecture: i386
 Version: 11:3.1.3
@@ -4316,6 +4332,22 @@ SHA256: 47b978289991747d73270eadd0874d3284de739591283319673b984c94c7c6ba
 SHA512: 736de0107af785a0f015093fbc9a629b5a76815ce09afb007a1e409945f6e7a075eaf99f78ada65beece698f70f132d928d8ae015c5109ff3b7d59fb3fb77843
 Homepage: http://flburn.sourceforge.net/
 Description: Optical disc burning software for linux
+
+Package: picdrop
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 117
+Depends: libc6, mediainfo, libglib2.0-0, libgtk2.0-0
+Filename: ./Extra/picdrop_1.0.0_i386.deb
+Size: 66424
+MD5sum: 2bb97558f2c81aca4f2d80ad63bf6f81
+SHA1: b4f7961128bd66b668a6f5a56f162df92a12722d
+SHA256: 7208c8bd31be977ac881129a5dce38ae1196e56c63245c9d213ad316962d22a0
+SHA512: 71f2b003798f1edafcbe7d8fb262d8fe6f4dd2e5505c1dfa0bb6ac70bcda6c4af1862e0ef8126991a99db1b5e088ce90eccc2e73869a91393b236d5cfee3e676
+Description: Picdrop, resize images, by Terry (sunburnt)
 
 Package: peasyscale
 Architecture: i386
