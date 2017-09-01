@@ -573,6 +573,20 @@ SHA512: 1d2425481fe9f60d8d3e0deff66a340d6d311f4c6570ef41b13552779e854b84b1379a2d
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
+Package: makeswap
+Architecture: all
+Version: 1.0.2
+Maintainer: root
+Installed-Size: 45
+Depends: libc6, gtkdialog, coreutils, util-linux, x11-utils, pv, mount, gsu | gksu
+Filename: ./Included/makeswap_1.0.2_all.deb
+Size: 16162
+MD5sum: baa9055c322b0cca1db9b61ce587a6bd
+SHA1: 268c479b4f3308c94a079b28f1f30b1b668e1bb3
+SHA256: 6d7d38bbaae0f3cd123ed27183949d487544d0ea356270838ea48bd8fe79654c
+SHA512: e894b70dc45a8210be3ae5fdb50e32d98dec639fcd5522f42dc933a783ff87ea6abdbc4eec37fb899f3560dc3680c2d7b2afe80488585cddb5a869400fdfe5eb
+Description: Make and auto-mount swap file script. Security fix: owner root:root and chmod 0600 for new created swap file.
+
 Package: mount-wizard
 Architecture: all
 Version: 1.0.2
@@ -2294,6 +2308,23 @@ SHA256: 99c3659b335f790a1dee6169eb985ec4bc7e2dc4e260a0db7045ecfae83fcad7
 SHA512: 4c9e2219fff53345eb805a6230e627a7ea3e8b330e7f3e8464390feec3cb71822d8c4f82f56c1cf81a797b75d5505a9fc95f088270dfaaebeae7099e09ca53e4
 Description: Monitor color adjustment tool.
 
+Package: weav
+Architecture: all
+Version: 9.1.0
+Priority: extra
+Section: audio
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Installed-Size: 148
+Depends: libc6, gtkdialog, scrox
+Replaces: wex
+Filename: ./Extra/weav_9.1.0_all.deb
+Size: 13642
+MD5sum: 8c0aa4b2c64aafbd466812c07ce687a0
+SHA1: 9158ad6943f061ab8d3767eb76c2f12dcbfcb63c
+SHA256: 7760d85632120dbecd4bd5a6146129ac602932c36328477fb9d64d3129734652
+SHA512: e12217a00929d9f0326169e1c6a65f38489c967a1460293ba272c4a609f4ac74e0dbe2157b3c246a9e49c560e0dfb9da54a54505e634895481737a73e1525188
+Description: weav commandline processor
+
 Package: redshiftgui
 Architecture: amd64
 Version: 0.2.1-ddjessie
@@ -2625,6 +2656,24 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
 
+Package: scrox
+Architecture: amd64
+Version: 0.8-17
+Priority: optional
+Section: graphics
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Installed-Size: 84
+Depends: giblib1, libimlib2, libx11-6
+Filename: ./Extra/scrox_0.8-17_amd64.deb
+Size: 12708
+MD5sum: b772b482897ca34dbdc91b66e37fc0a3
+SHA1: 0bff8d065f3cf71357eb4f097e24754c018db33e
+SHA256: a6ed3af23b72cc91699f0a11d21968cee99144963a19d6f3e2fa97d944499852
+SHA512: 26b70166930e6d3f9542b568c61b59a9ccaa59fe20eeee70802c787d1208346c0cfd9c311add49cfe94f2d802aa0b3743802d8665ec375d6a070abe00f66be45
+Description: scrox is a fork of the scrot command line screen capture utility 
+ including identical functionality plus can output coordinate information for
+ full screen or the selected rectangular area.
+
 Package: peasyxorburn
 Architecture: all
 Version: 1.1
@@ -2769,6 +2818,23 @@ SHA1: 939386965a922d3813ddf3ffa7067b863bd1755a
 SHA256: 287283c762d184708c8d11bc39fc26e18edc4e9c974426106bb84d83a68493ee
 SHA512: 0d80e7633b450b8beda300338361a8e9136b2bb49e79b9e414e11302204925e360caf5419e4be9d6dc87448d3f54dc514c89076fd835d68952192e685b26b33e
 Description: Samba share mounter
+
+Package: wex
+Architecture: all
+Version: 0.8.17
+Priority: extra
+Section: audio
+Maintainer: William McEwan <mcewanw of murga-linux/puppy forum>
+Installed-Size: 284
+Depends: libc6, gtkdialog, scrox
+Replaces: weav
+Filename: ./Extra/wex_0.8.17_all.deb
+Size: 32980
+MD5sum: 9e2041df7beb00db866d2d17c5468dfb
+SHA1: 833a7e122ee274d5d5783a848ae3deedc7b7b9d4
+SHA256: 81f6aafce7f3b09693c244ad36c3e2953f38750259482dee900fc79f5587d4a7
+SHA512: b7fa275ddf4d7e47d5904d2234646a92b252385909d7c461801a8a9696651ac6e339fd23a621aa52f841164eed855455feafec20bf811663f09f8e6e8ac6b422
+Description: weX AV and X11 recorder
 
 Package: libpng12-0
 Architecture: amd64
@@ -2984,6 +3050,22 @@ Description: X/GTK+ and console FTP client (metapackage)
  .
  This is an upgrade convenience package, it's only useful for depending on.
 
+Package: scrotdlg
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 64
+Depends: libc6, scrot, libglib2.0-0, libgtk2.0-0
+Filename: ./Extra/scrotdlg_1.0.0_amd64.deb
+Size: 14032
+MD5sum: f20b35223d2c0d708cbaca32d3462173
+SHA1: db3fc6b5f875e2ca447f6c68d04d2b796adb6bf4
+SHA256: 402bd17e291349e3988ba177c637253d28612dfb1cbdc6414c96db253647e65a
+SHA512: 6525c922a5e1e90d0229ca30c10b88aceb230ddce3a78bf7cece8918cf85777d1048b8692cd22446069ef8361a5e4cd931cef1e46f443a96f79e17c095933e48
+Description: Make screenshot, by sklimkin
+
 Package: firewall-ng
 Architecture: amd64
 Version: 1.0.1
@@ -3001,6 +3083,22 @@ SHA1: ceb0c38ebbc0e0ef5104f3195d52a8d8fc515c96
 SHA256: 5b06244f7b73434143eb6d8fac8217915708f6878086d98ef5a7dd774ac8bf49
 SHA512: 0de3b0c0c01ea38e3646bbe796a703a42a84ba7ae77ba03681c0f2805c88aee6ab62b510643d35d9b658e3713c3343aa7cffdb397909bbf12d1d26174b87cf58
 Description: Firewall-ng by 01micko, based on Alien Bob's Firewall
+
+Package: picdrop
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 247
+Depends: libc6, mediainfo, libglib2.0-0, libgtk2.0-0
+Filename: ./Extra/picdrop_1.0.0_amd64.deb
+Size: 67396
+MD5sum: 8373c464d9523454a0ec15395d5a1dd6
+SHA1: 315207b89c47f449c0daea081b77e9d0d5c97125
+SHA256: a8ce8962d0074451d31b917ffdac1756afe5e20f043442cbb21e62403182580e
+SHA512: 8e77fe218b6aa9d4496510e80edc797102202fa9dc7a33784770853d8363218125cb0c78dd06f97ec4482f4a59322c22d8a3c44f5c53ec39975abbd1d50af111
+Description: Picdrop, resize images, by Terry (sunburnt)
 
 Package: xvidcap
 Architecture: amd64
