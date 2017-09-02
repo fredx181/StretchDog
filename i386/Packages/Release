@@ -6,24 +6,24 @@ Codename: stretch
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sat, 02 Sep 2017 00:01:19 +0000
+Date: Sat, 02 Sep 2017 00:36:02 +0000
 MD5Sum:
  22a4889258a98fa96418fcfe3edd679f           200757 Packages
- b206d5cc9f1c9c766373c61be8dc67d7            74012 Packages.gz
- 0a61543364515b44349dda7f6aff301b              187 Release
- b206d5cc9f1c9c766373c61be8dc67d7            74012 Translation-en.gz
+ e74bb8ddce9ce3662087c91aa8539029            74012 Packages.gz
+ fd260dd4b7b0ad0a7d60004806c1a17a              187 Release
+ e74bb8ddce9ce3662087c91aa8539029            74012 Translation-en.gz
 SHA1:
  c702e1b79f096317d332fe27ee1322c7c50d58f2           200757 Packages
- 5ccb14cdaea23d9668b39dbbf35cac211322462e            74012 Packages.gz
- 4ca23992055b6c3b9b9deb389fc9d33454860fc4              187 Release
- 5ccb14cdaea23d9668b39dbbf35cac211322462e            74012 Translation-en.gz
+ d4a4b2d9db3d30292fca8b4a87b7a00c31e5f7c6            74012 Packages.gz
+ 30519b60702bf7e4035abd5def44cdc6e8bd1534              187 Release
+ d4a4b2d9db3d30292fca8b4a87b7a00c31e5f7c6            74012 Translation-en.gz
 SHA256:
  ea99762265311b724c73cb2bb3f42f066812413d1949292ae7d0e382585c88fd           200757 Packages
- 2795e142fd6f765e5155270d96e67d7daf0a3c4047f8acd680ddc9fe9766d5bf            74012 Packages.gz
- ec04bacc49599cf1295bb87f14f63b96b96a87b0215506fd0c6b4c3c7e4353bc              187 Release
- 2795e142fd6f765e5155270d96e67d7daf0a3c4047f8acd680ddc9fe9766d5bf            74012 Translation-en.gz
+ 65d2b156980b286480e6d5079351ecbcd9d4d8ffeba7f485d450e9456546a7fe            74012 Packages.gz
+ c2d45c2329d337c99496403825b0bab7b673cbe216ab4fb214d1034cada08c7e              187 Release
+ 65d2b156980b286480e6d5079351ecbcd9d4d8ffeba7f485d450e9456546a7fe            74012 Translation-en.gz
 SHA512:
  ac373d5a2deec0e46d6de79610970f682c0f08de98d57de6e9c904d236c4824f5f6d4fb1a07b5e3ab7a7d82617c7623e319f24701e1eab963151c99ce2a21837           200757 Packages
- 83b7e23674e4dd261327e56fc92de5cc06665630d33c656b64658bc9335a4feb8b678b6f35471eae110613281f015145e3291b6bec103f57f658a07463b06c8d            74012 Packages.gz
- bb59f34db16fbbcdc02bac85f94f3cc468cef09a6eb24cea17492a36257834887d903d12376d90684deb66d8cbee166f1d67488cdb64457028457b7bc7e2df8f              187 Release
- 83b7e23674e4dd261327e56fc92de5cc06665630d33c656b64658bc9335a4feb8b678b6f35471eae110613281f015145e3291b6bec103f57f658a07463b06c8d            74012 Translation-en.gz
+ c88b51caf02806150e09ffdd6d5f8efbf2985f30a5c4d85e37a6222fa0d7d7f535b727fd62bc67fb0a41b83063164fd1c83b0a81b0ed05f85cd0a005d7af1b2e            74012 Packages.gz
+ f402a46c951fce016f74c1fa5fc8f94e12fc9b079ecafaa54da6aab4039a31e994e43811374e02e639bc14c51cc24d0eb1270bc7ac56ee4d071be8ff35fb4fe3              187 Release
+ c88b51caf02806150e09ffdd6d5f8efbf2985f30a5c4d85e37a6222fa0d7d7f535b727fd62bc67fb0a41b83063164fd1c83b0a81b0ed05f85cd0a005d7af1b2e            74012 Translation-en.gz
