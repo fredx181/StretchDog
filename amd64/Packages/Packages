@@ -657,6 +657,23 @@ Description: retrieves files from the web
  Wget supports proxy servers; this can lighten the network load,
  speed up retrieval, and provide access behind firewalls.
 
+Package: precord
+Architecture: all
+Version: 9.0.3
+Priority: extra
+Section: audio
+Maintainer: mcewanw <Murga Puppy Linux Forum>
+Installed-Size: 104
+Depends: libc6, gtkdialog
+Filename: ./Included/precord_9.0.3_all.deb
+Size: 10422
+MD5sum: 9e6293269f46bf25d10b0af3faca2bc8
+SHA1: 4aa8be33754bcb51486b8cafa966c3d51fc31a8b
+SHA256: 872c1fd0afee212a83ce16c8c0b1d1c38f09ad5b60884dd7d9167f80abf3f12e
+SHA512: cdc9fb071b4e43f28c219ca63c8c4e64d3f83e723d7f234ff04e876382d72e9c541b92303ceb4ae3b15e167170551956ed7fdd3539b5ce8edee80ff58ebf4630
+Description: precord for DebianDog:
+ precord by mcewanw
+
 Package: frisbee
 Architecture: amd64
 Version: 1.2-20140602
@@ -972,6 +989,20 @@ SHA256: c5033ef06e9bc2d752ccb4b54e64bb4eee47b55a7a7150dae90cd2971afb2154
 SHA512: c2613b838775837fb9c43bdb5acb111aa1ca450dd85b3997e95565d165eec91689dd5a12dcc07759a8add2875f96764285ad6ca78eae5d94b0c20899414dcd0c
 Description: Small old(er) version of zenity
 
+Package: move-in-crypt
+Architecture: all
+Version: 1.0.1
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, gtkdialog, cryptsetup, mount, coreutils, xterm, gsu | gksu
+Filename: ./Included/move-in-crypt_1.0.1_all.deb
+Size: 2696
+MD5sum: f419163baf91de25a73af56701da3d22
+SHA1: 854d87bccfe57690e688e43fae2d468434eb498c
+SHA256: cb6836edd9bcf3a93938942d26a3e901995df536fa4b8ced30aa73b2e216a335
+SHA512: a082879ec5b61b3dcaaddfdba0f206ec575e7f86f8993afddd6104449535985deff2b6f36086b1c8a1558b4391bde8b06169457613043c929ecad96ede601949
+Description: Manage encrypted save file utility.
+
 Package: flashplayerchoice
 Architecture: amd64
 Version: 1.0.2
@@ -1252,6 +1283,23 @@ SHA1: 0e5eb645fbb0bb560c0604a26f6ce4076ea6ff25
 SHA256: 20244921c2764db21840ffb6630b9d0671ca74546585da78ada912670ca6266c
 SHA512: ce8a8d1c478548e1197e2ab30d70b8ab2d2f942bc2e426609e6ea16567badd67ad21379256da2beb248d5495e3dc36c81b7ed0b45a5957e0459d3bdcdd0a8ce5
 Description: Utilty for save file resizing.
+
+Package: lxrandr-save-fix
+Architecture: all
+Version: 1.1
+Priority: extra
+Section: system
+Maintainer: root@wheezy
+Installed-Size: 158
+Provides: save-settings-after-reboot
+Depends: libc6, lxrandr
+Filename: ./Included/lxrandr-save-fix_1.1_all.deb
+Size: 1132
+MD5sum: 6d135c14fc583f896e595b25d517d593
+SHA1: 1e1227a8f6f500e72fd8695bdc502f32a3095ebf
+SHA256: 65a96f35299a808384de524804d1310396654f77ca7ef74fa26f3f516f507d6d
+SHA512: f4d3785a36ae1b5f5cef7e74cd0d2551c0006db76a43cd1f7cf9f07390d3e39da4b9a86820ed619155ea8a375a1becdcab91a20d7627503e041507b1471455ab
+Description: desktop configuration save settings fix for DebianDog
 
 Package: edit-sfs-pcmanfm
 Architecture: all
@@ -1863,6 +1911,22 @@ SHA512: 97cf11ea342d7b525a6a44b8660678ee713d97863ae3b434fdfb477e87040f66d50dfb5e
 Description: Document scanning tool
 	contains the binary xscanimage-peasy
 
+Package: gifenc
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 43
+Depends: libc6, ffmpeg, yad
+Filename: ./Extra/gifenc_1.0.1_all.deb
+Size: 15748
+MD5sum: 0bfbd6a023e2bf499a9e6ab58ed80cee
+SHA1: 73a2f7f30a6bd1cff4b48a28a1b6e368471d9ade
+SHA256: 246e11ce1050cd0f8ace0491679198341a0b6bf3c78d6cb88d44c82590c003c3
+SHA512: 029710e5956491180d9a680b1a6ae6f87dc894ff3d21fcb1e91c201ac93e8b5777d71e6f57a1687289017d42acac43d76805dfb1c6b03153dbe7fe67693ce4f0
+Description: Convert video (or portion of video) to Animated GIF
+
 Package: roxterm-common
 Architecture: all
 Version: 2.9.5-1
@@ -2291,6 +2355,22 @@ Description: Secure Sockets Layer toolkit - shared libraries
  Internet.
  .
  It provides the libssl and libcrypto shared libraries.
+
+Package: create-portable
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1100
+Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
+Filename: ./Extra/create-portable_1.0.0_amd64.deb
+Size: 332688
+MD5sum: df9a091faaab6066b40f1af92da63a13
+SHA1: 5a288a850f8344a9dd79b66a1ec28880f43fe124
+SHA256: 6dc097a16cf9ddb9462077d33859b7cc5977fa3154411f13d03374371e46896f
+SHA512: f24bff80688093e245635343ff1eb7561ec193a4ea030e5561429087b6b191ca88fed55f8e722ecce8d0725f7fecfb59f8ed787ae5008b96e79df2394c28fac2
+Description: Create portable AppImage
 
 Package: redshiftgui
 Architecture: amd64

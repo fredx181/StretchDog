@@ -37,6 +37,7 @@ etc/pavrecord/.pavrecordrc				    pavrecord
 etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
 etc/ppp/options.gprs					    frisbee
+etc/precord/.precordrc					    precord
 etc/pwf/ethernet/eth0.dhcp				    PeasyWiFi
 etc/pwf/interfaces					    PeasyWiFi
 etc/pwf/udhcpc/default.script				    PeasyWiFi
@@ -72,6 +73,7 @@ etc/skel/.xsession-jwm					    jwmconf,jwm-setup-dd64
 etc/skel/.xsession-openbox				    jwm-setup-dd64,jwmconf
 etc/skel/Startup/conkyclock				    jwm-setup-dd64
 etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
+etc/skel/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 etc/skel/Startup/killmenu-cached			    jwmconf
 etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/startup-jwm					    jwmconf,jwm-setup-dd64
@@ -125,6 +127,7 @@ home/puppy/.xsession-jwm				    jwm-setup-dd64
 home/puppy/.xsession-openbox				    jwmconf
 home/puppy/Startup/conkyclock				    jwm-setup-dd64
 home/puppy/Startup/exec_lxinput-autostart		    lxinputsave
+home/puppy/Startup/exec_lxrandr-autostart		    lxrandr-save-fix
 home/puppy/Startup/killmenu-cached			    jwmconf
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/startup-jwm					    jwmconf,jwm-setup-dd64
@@ -746,6 +749,7 @@ root/.xsession-openbox					    jwmconf
 root/Startup/conkyclock					    jwm-setup-dd64
 root/Startup/exec_fwstatus-autostart			    firewall-ng
 root/Startup/exec_lxinput-autostart			    lxinputsave
+root/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 root/Startup/killmenu-cached				    jwmconf
 root/Startup/peasyfwmon_tray				    peasyfwmon
 root/Startup/peasywifi_tray				    PeasyWiFi
@@ -813,6 +817,7 @@ usr/bin/pburn						    pburn
 usr/bin/pet2tgz						    pburn
 usr/bin/pfilesearch					    pfind
 usr/bin/pfind						    pfind
+usr/bin/precord						    precord
 usr/bin/probedisk					    probepart
 usr/bin/probepart					    probepart
 usr/bin/pup-volume-monitor				    pup-volume-monitor
@@ -1492,6 +1497,64 @@ usr/local/.dogradio/playlist/playlist.World		    dogradio
 usr/local/.dogradio/playlist/playlist.default		    dogradio
 usr/local/.dogradio/v0.0.2				    dogradio
 usr/local/.dogradio/v0.0.4				    dogradio
+usr/local/01-create-appimage64/.DirIcon			    create-portable
+usr/local/01-create-appimage64/AppImageAssistant.desktop    create-portable
+usr/local/01-create-appimage64/AppImageAssistant.png	    create-portable
+usr/local/01-create-appimage64/AppRun			    create-portable
+usr/local/01-create-appimage64/abs2rel			    create-portable
+usr/local/01-create-appimage64/etc/fakechroot/chroot.env    create-portable
+usr/local/01-create-appimage64/etc/fakechroot/debootstrap.env create-portable
+usr/local/01-create-appimage64/etc/fakechroot/rinse.env	    create-portable
+usr/local/01-create-appimage64/linux-user-chroot	    create-portable
+usr/local/01-create-appimage64/makeself-header.sh	    create-portable
+usr/local/01-create-appimage64/makeself.sh		    create-portable
+usr/local/01-create-appimage64/opt/docs/.DirIcon	    create-portable
+usr/local/01-create-appimage64/opt/docs/AppRun.template	    create-portable
+usr/local/01-create-appimage64/opt/docs/AppRun_chroot.template create-portable
+usr/local/01-create-appimage64/package			    create-portable
+usr/local/01-create-appimage64/package-old		    create-portable
+usr/local/01-create-appimage64/package.png		    create-portable
+usr/local/01-create-appimage64/runtime			    create-portable
+usr/local/01-create-appimage64/study-bash		    create-portable
+usr/local/01-create-appimage64/unionfs-fuse		    create-portable
+usr/local/01-create-appimage64/usr/bin/ReadMe-AppImage	    create-portable
+usr/local/01-create-appimage64/usr/bin/elficon		    create-portable
+usr/local/01-create-appimage64/usr/bin/elfres		    create-portable
+usr/local/01-create-appimage64/usr/bin/gsu-mod		    create-portable
+usr/local/01-create-appimage64/usr/bin/gsu-xterm	    create-portable
+usr/local/01-create-appimage64/usr/bin/proot		    create-portable
+usr/local/01-create-appimage64/usr/bin/runtime		    create-portable
+usr/local/01-create-appimage64/usr/bin/testappimage	    create-portable
+usr/local/01-create-appimage64/usr/bin/unionfs-fuse	    create-portable
+usr/local/01-create-appimage64/usr/lib/libr.so.0	    create-portable
+usr/local/01-create-appimage64/usr/lib/libr.so.0.0.0	    create-portable
+usr/local/01-create-appimage64/usr/lib/libtalloc.so.2	    create-portable
+usr/local/01-create-appimage64/usr/lib/libtalloc.so.2.1.5   create-portable
+usr/local/01-create-appimage64/usr/share/applications/mimeinfo.cache create-portable
+usr/local/01-create-appimage64/usr/share/applications/python2.7.desktop create-portable
+usr/local/01-create-appimage64/usr/share/pixmaps/package.png create-portable
+usr/local/01-create-appimage64/xdg/BaseDirectory.py	    create-portable
+usr/local/01-create-appimage64/xdg/BaseDirectory.pyc	    create-portable
+usr/local/01-create-appimage64/xdg/Config.py		    create-portable
+usr/local/01-create-appimage64/xdg/Config.pyc		    create-portable
+usr/local/01-create-appimage64/xdg/DesktopEntry.py	    create-portable
+usr/local/01-create-appimage64/xdg/DesktopEntry.pyc	    create-portable
+usr/local/01-create-appimage64/xdg/Exceptions.py	    create-portable
+usr/local/01-create-appimage64/xdg/Exceptions.pyc	    create-portable
+usr/local/01-create-appimage64/xdg/IconTheme.py		    create-portable
+usr/local/01-create-appimage64/xdg/IconTheme.pyc	    create-portable
+usr/local/01-create-appimage64/xdg/IniFile.py		    create-portable
+usr/local/01-create-appimage64/xdg/IniFile.pyc		    create-portable
+usr/local/01-create-appimage64/xdg/Locale.py		    create-portable
+usr/local/01-create-appimage64/xdg/Locale.pyc		    create-portable
+usr/local/01-create-appimage64/xdg/Menu.py		    create-portable
+usr/local/01-create-appimage64/xdg/MenuEditor.py	    create-portable
+usr/local/01-create-appimage64/xdg/Mime.py		    create-portable
+usr/local/01-create-appimage64/xdg/RecentFiles.py	    create-portable
+usr/local/01-create-appimage64/xdg/__init__.py		    create-portable
+usr/local/01-create-appimage64/xdg/__init__.pyc		    create-portable
+usr/local/01-create-appimage64/xdgappdir.py		    create-portable
+usr/local/01-create-appimage64/xdgappdir.pyc		    create-portable
 usr/local/Frisbee/connect				    frisbee
 usr/local/Frisbee/disconnect				    frisbee
 usr/local/Frisbee/interface				    frisbee
@@ -1516,6 +1579,7 @@ usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
 usr/local/bin/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
+usr/local/bin/create-portable				    create-portable
 usr/local/bin/debdog-full-install			    debdoginstallscripts
 usr/local/bin/debdog-install				    debdoginstallscripts
 usr/local/bin/desktop-editor				    desktop-editor
@@ -1523,12 +1587,15 @@ usr/local/bin/desktop_drive_icons			    desktop-drive-icons
 usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
+usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
 usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_ng				    firewall-ng
 usr/local/bin/firewallstatusrestart			    firewall-ng
 usr/local/bin/fixdepinstall				    fixdepinstall
 usr/local/bin/flashplayerchoice				    flashplayerchoice
 usr/local/bin/gdialog					    zenity-2.30
+usr/local/bin/gifenc					    gifenc
+usr/local/bin/gifenc-sel				    gifenc
 usr/local/bin/gifondesktop				    gifondesktop
 usr/local/bin/gifshow					    gifondesktop
 usr/local/bin/gnome-mplayer				    gnome-mplayer-1.0.6
@@ -1572,6 +1639,7 @@ usr/local/bin/mnt-backing				    debdogmountscripts
 usr/local/bin/mnt-img					    filemnt-thunar
 usr/local/bin/mount-wizard				    mount-wizard
 usr/local/bin/mountlink					    debdogmountscripts
+usr/local/bin/move-in-crypt				    move-in-crypt
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwmconf,jwm-setup-dd64
@@ -3655,10 +3723,12 @@ usr/share/applications/ Text to SVG_PNG Fancy Text and Logo Generator.desktop tx
 usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
 usr/share/applications/ConkyClock.desktop		    conkyclock
 usr/share/applications/ConkyClock2.desktop		    conkyclock2
+usr/share/applications/Create Portable-Appimage.desktop	    create-portable
 usr/share/applications/Create-module-from-changes.desktop   remaster-scripts
 usr/share/applications/DDog-Full-Installer.desktop	    debdoginstallscripts
 usr/share/applications/DDog-Installer.desktop		    debdoginstallscripts
 usr/share/applications/DogRadio.desktop			    dogradio
+usr/share/applications/GifenC (video to _gif).desktop	    gifenc
 usr/share/applications/Grub4DosConfig.desktop		    grub4dosconfig
 usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
@@ -3702,6 +3772,7 @@ usr/share/applications/jwm.desktop			    jwm-setup-dd64
 usr/share/applications/keybind.desktop			    openbox-keybinder
 usr/share/applications/menumaker.desktop		    desktop-editor
 usr/share/applications/mount-wizard.desktop		    mount-wizard
+usr/share/applications/move-in-crypt.desktop		    move-in-crypt
 usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/openbox.desktop			    jwm-setup-dd64
 usr/share/applications/palemoon.desktop			    palemoon
@@ -3716,6 +3787,7 @@ usr/share/applications/peasyscan.desktop		    peasyscan
 usr/share/applications/peasywifi.desktop		    PeasyWiFi
 usr/share/applications/peasyxorburn.desktop		    peasyxorburn
 usr/share/applications/pfind.desktop			    pfind
+usr/share/applications/precord.desktop			    precord
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/redshiftgui.desktop		    redshiftgui
@@ -5269,6 +5341,7 @@ usr/share/menu/lxinput					    lxinputsave
 usr/share/menu/m-play					    youtube-get,youtube-get2
 usr/share/menu/menumaker				    desktop-editor
 usr/share/menu/mount-wizard				    mount-wizard
+usr/share/menu/move-in-crypt				    move-in-crypt
 usr/share/menu/palemoon					    palemoon
 usr/share/menu/pavrecord				    pavrecord
 usr/share/menu/pburn					    pburn
@@ -5276,6 +5349,7 @@ usr/share/menu/peasyglue				    peasyglue
 usr/share/menu/peasyscale				    peasyscale
 usr/share/menu/pfind					    pfind
 usr/share/menu/portablesfs				    portablesfs-loadsfs-fuse
+usr/share/menu/precord					    precord
 usr/share/menu/refresh-menus-openbox			    jwm-setup-dd64
 usr/share/menu/resize-save				    resize-save-file
 usr/share/menu/roxterm-gtk2				    roxterm-gtk2
@@ -5311,6 +5385,7 @@ usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/feed_icon.png youtube-vi
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/user.png youtube-viewer
+usr/share/pixmaps/AppImageAssistant.png			    create-portable
 usr/share/pixmaps/BaCon.png				    bacon
 usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
@@ -5344,6 +5419,7 @@ usr/share/pixmaps/frisbee.png				    frisbee
 usr/share/pixmaps/gftp.png				    gftp-gtk
 usr/share/pixmaps/gftp.xpm				    gftp-gtk
 usr/share/pixmaps/gif-file.png				    gifondesktop
+usr/share/pixmaps/gifencc.png				    gifenc
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/gnome-mplayer.xpm			    gnome-mplayer-1.0.6
 usr/share/pixmaps/go-next.png				    youtube-get2
