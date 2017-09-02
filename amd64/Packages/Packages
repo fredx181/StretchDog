@@ -1811,6 +1811,43 @@ SHA256: 51bc19896ed8b8ca7f69f34fcf9bb26f0c93a3cad43780d4b5f6fb2bfdfad2b4
 SHA512: 2288abd5a858905a42028559b2050988aa3078fc6826a9c48880d1e77bd6b7fba41e15bffe91b4f98b66857d1a73b9b94d2b835b0ef55a3b6b173ead12711444
 Description: Mounts ISO/SFS files
 
+Package: httpfs2
+Architecture: amd64
+Version: 0.1.4-1
+Priority: extra
+Section: web
+Maintainer: Michal Suchanek <hramrach@centrum.cz>
+Installed-Size: 68
+Depends: libc6 (>= 2.3), libfuse2 (>= 2.8.1)
+Recommends: fuse-utils
+Filename: ./Extra/httpfs2_0.1.4-1_amd64.deb
+Size: 12484
+MD5sum: aee69e959ba65f73fd6b5adc2bcb005e
+SHA1: a476bd22e5c83be3bb7c5195e98110b487a0da88
+SHA256: 1579dc3b0a82d46fc11675b8fe4660f67c975884232145067017f6d257a664e7
+SHA512: f0d2a378d6abbc9589bcb3db60c96e8560bee3b49bbf112fa2b346a78a4359d863395bdb707701611bc6a1ca219cacc9e047979316da4e263f55e7d5be7d42c9
+Homepage: http://sourceforge.net/projects/httpfs/
+Description: FUSE filesystem for mounting files from http servers
+ httpfs2 is a FUSE based filesystem for mounting http or https URLS as files in
+ the filesystem. There is no notion of listable directories in http so only a
+ single URL can be mounted. The server must be able to send byte ranges.
+
+Package: dog-control-center
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 86
+Depends: libc6, yad, alsa-utils, upgrade-kernel
+Filename: ./Extra/dog-control-center_1.0.0_amd64.deb
+Size: 14804
+MD5sum: af1af14e90232f0fdd213ec9b518448d
+SHA1: 3a19e9a6b4e065b68ca7d03b73ecc995e983a55c
+SHA256: 2f53839afeff59ff8fef3ca6fdfc23d5101631a89c790e932c055b53010328d1
+SHA512: 5c8e5031f9f211692f5cf9a93cc8a5a5905dc0a79b046f63c8ece4004938c1f1b07ea6368696d180c416c79c335b8d1bfd99399adc0b396e316172ad060e68d0
+Description: Control center
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -2152,6 +2189,25 @@ Description:  findnrun 1.10.6 (documentation)
   for freedesktop.org desktop application files.
   Files in this add-on package: larger English help (HTML).
   https://github.com/step-/find-n-run/
+
+Package: jwm-setup
+Architecture: amd64
+Version: 0.0.3
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
+Filename: ./Extra/jwm-setup_0.0.3_amd64.deb
+Size: 592942
+MD5sum: e1620d669fd2737eaf2c5079e248002e
+SHA1: a2f0d7392402e4e1b82f4aee1ec356440bb0e76c
+SHA256: f972d75c619e76fb6f93b003a201173f3450d66a6469e9542119299208cf593e
+SHA512: ea10fe0d524dd72e7a66b3cf9a8e19a6805706f71dcefd29abf30c8bb8c6d25bb9b89190f40e98cf06035e196924f2984748bad1718748c4576349888db1cd57
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
 
 Package: bacon
 Architecture: amd64
