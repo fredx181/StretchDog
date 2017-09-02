@@ -76,6 +76,29 @@ Description: gnome-mplayer library (shared library)
  .
  This package provides the shared library.
 
+Package: firefox-esr
+Architecture: amd64
+Version: 45.9.0esr-1
+Priority: optional
+Section: web
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Installed-Size: 101675
+Provides: gnome-www-browser, www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libhunspell-1.4-0, libnspr4 (>= 2:4.10.9), libnss3 (>= 2:3.26), libpango-1.0-0 (>= 1.14.0), libsqlite3-0 (>= 3.7.12-1~), libstartup-notification0 (>= 0.8), libstdc++6 (>= 5.2), libvpx4 (>= 1.6.0), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6, zlib1g (>= 1:1.2.0), fontconfig, procps, debianutils (>= 1.16)
+Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-good
+Suggests: fonts-stix | otf-stix, fonts-lmodern, mozplugger, libgssapi-krb5-2 | libkrb53, libgnomeui-0, libcanberra0
+Conflicts: iceweasel (<< 45), j2re1.4, pango-graphite (<< 0.9.3)
+Breaks: xul-ext-torbutton
+Filename: ./Included/firefox-esr_45.9.0esr-1_amd64.deb
+Size: 42031412
+MD5sum: b7d44b2d6fbc0dee475f8a05fa4281cf
+SHA1: 14b3fc211afb382a6b669cc7870272c803a46a33
+SHA256: 4306352bbff3d572bdc9a7850c406090f19b721488004caeb5387f0299c2fe6e
+SHA512: a79f228b9f98c2212a5e23eb563b0e85f3a0ec4f58f5620d74cd81eeab9a187b04e3854a6809ee03babb98d29c770a1fdc09a0a720f1d6ecfbb50ade262c31ee
+Description: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+
 Package: domycommand
 Architecture: all
 Version: 9.0.3
@@ -2293,6 +2316,22 @@ Description: Jwm custom setup for Debiandog64, includes:
  - openbox-menu, pipe-menu setup for JWM (NOTE: menu-cached is not used) to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
+
+Package: geany
+Architecture: amd64
+Version: 1:1.28
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1200
+Depends: libc6, libglib2.0-0, libgtk2.0-0
+Filename: ./Extra/geany_1.28_amd64.deb
+Size: 2893944
+MD5sum: e7308cd123c4382966f087c50e53d44b
+SHA1: 1c52f750b32cfa667af2b07d7fea8ed4236109ac
+SHA256: d184e99dd74d12a5ce2fb0b4be334c458a8e72ed5b67a865e9c874510348a29b
+SHA512: c07cf17c5cb2ce15207c5e4743adce0579fc4c3272aac3e132379a96d28f62dcc1826f18769ec85b4fc35f2a5082a1b242357f153f26b493db5286ffdfa12811
+Description: Advanced text editor
 
 Package: libvpx1
 Architecture: amd64
