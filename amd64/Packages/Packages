@@ -1390,6 +1390,22 @@ Description: graphical frontend to sudo
   More information available here:
   http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
 
+Package: chpupsocket
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 15
+Depends: libc6
+Filename: ./Included/chpupsocket_1.0.0_amd64.deb
+Size: 2718
+MD5sum: 4baa2faed1d530c523b697539aac00f7
+SHA1: 4a9a28ccb1ffab3c7578f98d81f9d6cebeab4411
+SHA256: cd948a895f999f152329e5b147e8228f5fcd7db73b544bc99eb0a55c5c727ba0
+SHA512: 76ea136d762ea623e35ab496abe7e4281e92f4a2cc5a8a8443685c841f5764e1399e38b0bbde9ef7d91b8b4d735f4f0560107769dd88f345b9d508617858e5f0
+Description: chpupsocket
+
 Package: epdfview
 Architecture: amd64
 Version: 0.1.8-3
@@ -2049,6 +2065,22 @@ Description:  findnrun 1.10.6 (utility)
   Files in this base package: executable script, desktop and
   icons, smaller English help (markdown), NLS .pot.
   https://github.com/step-/find-n-run/
+
+Package: locale-conf
+Architecture: all
+Version: 1.0.0-s
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 50
+Depends: libc6, httpfs2, yad
+Filename: ./Extra/locale-conf_1.0.0-s_all.deb
+Size: 16728
+MD5sum: 62b80e0f1fe1a3d2129c8df520c97b3a
+SHA1: 59d344d54cb24a7055828387ef94ec1b638d8828
+SHA256: 6bb4106724ed48a5fa0c91f863596297395839af8cf52949bcbc67826197e0cd
+SHA512: b5bdef0db9488c55a32f4c172b5347bdf5ce56cbf456461e45fe3397409c1e872321339f59ce24372c8438057a6c10da6e35fc713e1d92a927c6ca1eda9cde64
+Description: Set system locale
 
 Package: gtkdesklet
 Architecture: amd64

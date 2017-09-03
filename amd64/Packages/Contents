@@ -1638,6 +1638,7 @@ usr/local/bin/apt2sfs-cli				    apt2sfs
 usr/local/bin/apt2sfs-cli-fullinst			    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
 usr/local/bin/camphonetab				    camphonetab
+usr/local/bin/chpupsocket				    chpupsocket
 usr/local/bin/clear-changes				    quick-remaster
 usr/local/bin/clear-changes-start			    quick-remaster
 usr/local/bin/conkyclock				    conkyclock
@@ -1690,6 +1691,7 @@ usr/local/bin/loadmodulegui				    sfsload
 usr/local/bin/loadsfs					    sfsload
 usr/local/bin/loadsfs-fuse				    portablesfs-loadsfs-fuse
 usr/local/bin/loadsfs-fuse-writesfs			    portablesfs-loadsfs-fuse
+usr/local/bin/locale-conf				    locale-conf
 usr/local/bin/lspart					    debdogmountscripts
 usr/local/bin/m-play					    youtube-get,youtube-get2
 usr/local/bin/make-deb-package				    makedebpackage
@@ -3827,6 +3829,7 @@ usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
 usr/share/applications/SaveFolderBackup.desktop		    SaveFolderBackup
+usr/share/applications/Set Locale_Language.desktop	    locale-conf
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-cli-fullinst.desktop	    apt2sfs
@@ -5737,6 +5740,7 @@ usr/share/pixmaps/isotools.png				    isotools
 usr/share/pixmaps/isousb.png				    isotools
 usr/share/pixmaps/keditbookmarks.xpm			    resize-save-file
 usr/share/pixmaps/loadsfs.png				    portablesfs-loadsfs-fuse
+usr/share/pixmaps/locale8.png				    locale-conf
 usr/share/pixmaps/lock.png				    jwm-setup,jwm-setup-dd64,jwmconf
 usr/share/pixmaps/login.png				    slim
 usr/share/pixmaps/logout.png				    jwm-setup,jwm-setup-dd64,jwmconf
