@@ -2524,11 +2524,11 @@ Maintainer: Mao Yu [maoserr@gmail.com]
 Installed-Size: 1100
 Depends: libcurl3, libxcb-randr0
 Filename: ./Extra/redshiftgui_0.2.2-ddjessie_amd64.deb
-Size: 379336
-MD5sum: e94901ccd41ce13b8768cd38b1f4fb85
-SHA1: 3590ce82d8539775f6f890126d54063d47e954da
-SHA256: 99c3659b335f790a1dee6169eb985ec4bc7e2dc4e260a0db7045ecfae83fcad7
-SHA512: 4c9e2219fff53345eb805a6230e627a7ea3e8b330e7f3e8464390feec3cb71822d8c4f82f56c1cf81a797b75d5505a9fc95f088270dfaaebeae7099e09ca53e4
+Size: 378944
+MD5sum: a63e0ea091a3b08c9ba8dee197ea9bd6
+SHA1: a786f6c99cee5b364713fcb10e20adb6c3d82c75
+SHA256: d0a20907fd82bd1239af7c913a8d979e6c414632bf32138af1a04db6bf7d6164
+SHA512: 33b849a68656e5e95d88f109b7fc45c4f6db210bd6766cff4c0bd12059aa14f6ec9de9a459cd6a2ee4a97723ec41e746b9900087896c48b24348abe670fcc5a5
 Description: Monitor color adjustment tool.
 
 Package: weav
