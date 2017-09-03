@@ -994,24 +994,6 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
-Package: zenity-2.30
-Architecture: amd64
-Version: 2.30.0
-Priority: extra
-Section: x11
-Maintainer: fredx <fredx@nomail.nl>
-Installed-Size: 280
-Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libx11-6
-Conflicts: zenity
-Replaces: zenity
-Filename: ./Included/zenity-2.30_2.30.0_amd64.deb
-Size: 105992
-MD5sum: a83b5d41dcea7d68eb964a1001d93eb2
-SHA1: e25755342f65878514319641ca5bdf7140203dec
-SHA256: c5033ef06e9bc2d752ccb4b54e64bb4eee47b55a7a7150dae90cd2971afb2154
-SHA512: c2613b838775837fb9c43bdb5acb111aa1ca450dd85b3997e95565d165eec91689dd5a12dcc07759a8add2875f96764285ad6ca78eae5d94b0c20899414dcd0c
-Description: Small old(er) version of zenity
-
 Package: move-in-crypt
 Architecture: all
 Version: 1.0.1
@@ -1025,6 +1007,22 @@ SHA1: 854d87bccfe57690e688e43fae2d468434eb498c
 SHA256: cb6836edd9bcf3a93938942d26a3e901995df536fa4b8ced30aa73b2e216a335
 SHA512: a082879ec5b61b3dcaaddfdba0f206ec575e7f86f8993afddd6104449535985deff2b6f36086b1c8a1558b4391bde8b06169457613043c929ecad96ede601949
 Description: Manage encrypted save file utility.
+
+Package: petconvert2deb
+Architecture: amd64
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 32
+Depends: libc6, tar, xz-utils
+Filename: ./Included/petconvert2deb_1.0.0_amd64.deb
+Size: 5364
+MD5sum: 1b88bf98dc01eb105d92fad8f0530f44
+SHA1: d190e8678d47a0e3cfffcec9f3da71e5c3282274
+SHA256: 0e69c2ce1a961ec53416a1951d819b1d8e25292a0bd43f21000632e267d6c0e2
+SHA512: ccc27587ada667f1467f3d9e70d0788649e49e89b4c0643600f2431a6d4c5e2b8281fe95c033902f8a76e8ce916f332196271079ec4ca351c1dc151368169841
+Description: Convert .pet to .deb
 
 Package: flashplayerchoice
 Architecture: amd64
@@ -1209,6 +1207,24 @@ Description: GTK+ interface for MPlayer
  The player can be used to play media on websites from your browser when
  used with Gecko Mediaplayer and is the modern replacement for
  mplayerplug-in (from the same author).
+
+Package: zenity-portable
+Architecture: amd64
+Version: 2.30.0
+Priority: extra
+Section: x11
+Maintainer: fredx <fredx@nomail.nl>
+Installed-Size: 280
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libx11-6
+Conflicts: zenity
+Replaces: zenity
+Filename: ./Included/zenity-portable_2.30.0_amd64.deb
+Size: 108138
+MD5sum: cf8b123e4564d1e6b6f2381bd68f09d1
+SHA1: 9981a1df2783d5730fe107496938f45ac6371d08
+SHA256: 758a8cc190632763ed01ab174b540a08fdaaf06f182e71ca2cc1ece1ce2926e3
+SHA512: dfabac6cbe1c6d3b6c5d3f94835126e30580eed3a20911c2e27258fdfe5de38e5610d719bbe4765c2ea00b3d84bd18ebc1687678bd1de553624bc77451939960
+Description: Small portable old(er) version of zenity
 
 Package: debdoginstallscripts
 Architecture: amd64
@@ -2222,11 +2238,11 @@ Maintainer: fredx181
 Installed-Size: 480
 Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
 Filename: ./Extra/jwm-setup_0.0.3_amd64.deb
-Size: 592942
-MD5sum: e1620d669fd2737eaf2c5079e248002e
-SHA1: a2f0d7392402e4e1b82f4aee1ec356440bb0e76c
-SHA256: f972d75c619e76fb6f93b003a201173f3450d66a6469e9542119299208cf593e
-SHA512: ea10fe0d524dd72e7a66b3cf9a8e19a6805706f71dcefd29abf30c8bb8c6d25bb9b89190f40e98cf06035e196924f2984748bad1718748c4576349888db1cd57
+Size: 706742
+MD5sum: 435d49c643adeb8068804229a2c343e7
+SHA1: e891ae0f33e3944a670f62d68c7ae22ed21a0592
+SHA256: ae499481d119526364af13f035a87e347b7c2db5549be70e3b3ad686970e6143
+SHA512: 901babac72f5495cfb3aa46d3a60d94d40008c0b748b2dcae6ee879621db4b68b079c16ac3c1e3748a4ebd6a7d6a7a86234df3d6518e103b728f5d2eaf73a988
 Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
@@ -2324,13 +2340,13 @@ Priority: optional
 Section: utilities
 Maintainer: root
 Installed-Size: 1200
-Depends: libc6, libglib2.0-0, libgtk2.0-0
+Depends: libatk1.0-0, libc6, libcairo2, libgcc1, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6
 Filename: ./Extra/geany_1.28_amd64.deb
-Size: 2893944
-MD5sum: e7308cd123c4382966f087c50e53d44b
-SHA1: 1c52f750b32cfa667af2b07d7fea8ed4236109ac
-SHA256: d184e99dd74d12a5ce2fb0b4be334c458a8e72ed5b67a865e9c874510348a29b
-SHA512: c07cf17c5cb2ce15207c5e4743adce0579fc4c3272aac3e132379a96d28f62dcc1826f18769ec85b4fc35f2a5082a1b242357f153f26b493db5286ffdfa12811
+Size: 2892208
+MD5sum: 4453eaab7918acbf5f3d3991d0d743b1
+SHA1: ec04a4ebdbd37dab032a159e8b2be23688d87786
+SHA256: 64ee4210c80c89c2b415e132972db22d4878d1a509b8fd7cb28ff659c5f474a9
+SHA512: aab5e919892b23462f8e69d5f69166784ebd41803a04c24a2df4b47e92bb21d4f21138850b867803e1e887fa3e5c2c0b76c9bba514071cfb4041483dae927801
 Description: Advanced text editor
 
 Package: libvpx1
