@@ -227,6 +227,22 @@ Description: simple configuration storage system - runtime library
  .
  This package contains the runtime library.
 
+Package: petconvert2deb
+Architecture: i386
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 32
+Depends: libc6
+Filename: ./Included/petconvert2deb_1.0.0_i386.deb
+Size: 5486
+MD5sum: 46dbc788daf2551eb5f422c6d0f1c8a0
+SHA1: f83326bfdc1d6fe96489943567054580cd655b00
+SHA256: 3d8b4f46e89dfb4b26d401272f9bde53a2e1809205dc10b05894c2765646f98e
+SHA512: 7867f023e4f9182c29ca3e66436bc20d34544a4b49ddf9b194b1dbca37f5ac1cd3a605197df2b6bee867e551691986361122f37d893ceb7e3925d3e8cec097c2
+Description: Convert .pet to .deb
+
 Package: gtkdialog
 Architecture: i386
 Version: 0.8.3-1
@@ -948,6 +964,29 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
  Version 1.0.7: added option to create ISO
 
+Package: firefox-esr
+Architecture: i386
+Version: 45.9.0esr-1
+Priority: optional
+Section: web
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Installed-Size: 102528
+Provides: gnome-www-browser, www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.17), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libffi6 (>= 3.0.4), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libhunspell-1.4-0, libnspr4 (>= 2:4.10.9), libnss3 (>= 2:3.26), libpango-1.0-0 (>= 1.14.0), libsqlite3-0 (>= 3.7.12-1~), libstartup-notification0 (>= 0.8), libstdc++6 (>= 5.2), libvpx4 (>= 1.6.0), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxrender1, libxt6, zlib1g (>= 1:1.2.0), fontconfig, procps, debianutils (>= 1.16)
+Recommends: gstreamer1.0-libav, gstreamer1.0-plugins-good
+Suggests: fonts-stix | otf-stix, fonts-lmodern, mozplugger, libgssapi-krb5-2 | libkrb53, libgnomeui-0, libcanberra0
+Conflicts: iceweasel (<< 45), j2re1.4, pango-graphite (<< 0.9.3)
+Breaks: xul-ext-torbutton
+Filename: ./Included/firefox-esr_45.9.0esr-1_i386.deb
+Size: 43955720
+MD5sum: da0d422689320229c2e32197d22629c2
+SHA1: e081f945b6166b1d20b812b75593f15a3d60879a
+SHA256: 92557a226b321d6dde9cfa8fedcda8e0ee42877051622de4771b29ff3953d028
+SHA512: 0d9b5ba6888bc36868063bd84153253da6a703f50dc0405ebfd066f0898e5f4951cfdcee01be7ed12c13147257419328751a9339fb58828aee6245cbf02f84bc
+Description: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+
 Package: squashfuse
 Architecture: i386
 Version: 0.1.0
@@ -1153,6 +1192,22 @@ SHA256: 2172d1284f055271c9bc40683afb126a94b1f88ebead54dad1f74a0a0a317b23
 SHA512: a94d0ac43774b0639850516b455aa1780b5df56226ae06edd2448351b6214e9c6f492bd9192c072c34ed7bb71701aea071a9309d8e04a887aa3bb44fc8e6fded
 Description: precord for DebianDog:
  precord by mcewanw
+
+Package: geany
+Architecture: i386
+Version: 1:0.18
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1900
+Depends: libatk1.0-0, libc6, libcairo2, libgcc1, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libpango-1.0-0, libpangocairo-1.0-0, libstdc++6
+Filename: ./Included/geany_0.18_i386.deb
+Size: 594640
+MD5sum: ff73f38fc7b0d906ba99a3ca0dd431f6
+SHA1: 422421b06d9033f7b5ef103297466b1af64a8b49
+SHA256: 7f000330db47b31e7437f2e6f96dc59797873e2751346f2ed0b7e014ae0e8037
+SHA512: 52df120f1b90d5aee635313c0b37b110b80b97d748ac9b110d26e73465fac71052cd3fa1f7dd8c543737c2d0bff2fad9fabef96d6e6ac8768999eb692a4ed875
+Description: Advanced text editor
 
 Package: dillo
 Architecture: i386
@@ -1871,11 +1926,11 @@ Maintainer: fredx181
 Installed-Size: 480
 Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot
 Filename: ./Included/jwm-setup_0.0.3_i386.deb
-Size: 593264
-MD5sum: d43e98bc17defa4023d9fb795c7da2d2
-SHA1: bf1dbc9c00f994188d6807a9d68a69a332076c7c
-SHA256: 7c556a7268b2681e712c701a1ac6cc7e862242d1157e1002277394d40f8c36e7
-SHA512: caa178a72cd49ea1e2c6646602903de8f02b9eb37b1d91be5b9f214a575057eb97881c32bab3417ac9b87528a3948deee6ea7fac56ca9a1af3479a37dba63796
+Size: 707020
+MD5sum: 8a7946f795b595b7747c6a7d360a3e40
+SHA1: 19c0cf43a2cf96dff163109287edee5acad9ccf4
+SHA256: 94b730545fa12fa3d6cab10f3a56e873a8ab6194767dce29effdf2bf2222b438
+SHA512: 41ee2d2eda7c8d0420c0d376862cd1ca08c820e33966f1b4507584f96756da22e1fe358c55e0a8e2f8ad17098245f55e7841e0c28f50f81551ca1320844acf76
 Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
