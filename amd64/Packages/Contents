@@ -3855,7 +3855,6 @@ usr/share/applications/firewallstatus.desktop		    firewall-ng
 usr/share/applications/fixdepinstall.desktop		    fixdepinstall
 usr/share/applications/flashplayerchoice.desktop	    flashplayerchoice
 usr/share/applications/frisbee.desktop			    frisbee
-usr/share/applications/gdrive-get.desktop		    sfs-get-smokey-get
 usr/share/applications/geany.desktop			    geany
 usr/share/applications/gftp.desktop			    gftp-gtk
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.6
@@ -3887,7 +3886,6 @@ usr/share/applications/redshiftgui.desktop		    redshiftgui
 usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/rox.desktop			    jwmconf
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
-usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
 usr/share/applications/slimjet.desktop			    slimjet
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get

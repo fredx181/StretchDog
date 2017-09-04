@@ -1364,11 +1364,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 224
 Depends: libc6, yad, wget, elinks, gsu | gksu
 Filename: ./Included/sfs-get-smokey-get_1.0.3-stretch_all.deb
-Size: 76898
-MD5sum: 0ff70fde88f3726d8407d497e2538a88
-SHA1: cfd4cb9b8a5da1f9b9f91f2989e8c9ed36df949b
-SHA256: e2f12984354d7c79735c8f52ca3f5d7c217e0002874dad85ca8dfb2813ba385f
-SHA512: 7f90307ecfad4bf5cc19cc0bf446e11a4124dfaf0a1ac7aecaafd7f693c6634fdb31c5d315d67d5568b1af29a0c6282b9fa13620f83a69ebdb501ec519e1bcc0
+Size: 76838
+MD5sum: 390589280c4d2d37d417361fd9a999d4
+SHA1: 97781764d40b9fc3353e283ddc0c7c1e01a446be
+SHA256: f8d1acb444addf5bb794a711a2f3542e9f786cd16a5205ce08978d84c590c2a8
+SHA512: 000f11328507632f531a356cf602d9d2d8497dbeb422a84b501112bb5a93b00a124cdccdb3b7a71bdb2b1ca1846d58432d0853c4b05dce59bd21af20d1228452
 Description: The sfs-get-smokey-get program downloads files from smokey01.com and kazzascorner.com
  sfs-get_smokey-get by MakeDEBPackage-GUI.
 
