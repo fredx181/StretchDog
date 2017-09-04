@@ -66,8 +66,8 @@ etc/skel/.jwm/jwm.main					    jwm-setup,jwm-setup-dd64,jwmconf
 etc/skel/.jwm/jwm.main-debian				    jwm-setup-dd64
 etc/skel/.jwm/jwm.tail					    jwm-setup,jwm-setup-dd64,jwmconf
 etc/skel/.jwmrc						    jwm-setup,jwmconf
-etc/skel/.local/share/applications/gparted.desktop	    jwm-setup,jwm-setup-dd64,jwmconf
-etc/skel/.local/share/applications/synaptic.desktop	    jwm-setup,jwm-setup-dd64,jwmconf
+etc/skel/.local/share/applications/gparted.desktop	    jwmconf,jwm-setup-dd64
+etc/skel/.local/share/applications/synaptic.desktop	    jwmconf,jwm-setup-dd64
 etc/skel/.xsession					    jwm-setup-dd64
 etc/skel/.xsession-jwm					    jwm-setup,jwm-setup-dd64,jwmconf
 etc/skel/.xsession-openbox				    jwm-setup,jwmconf,jwm-setup-dd64
@@ -120,8 +120,8 @@ home/puppy/.jwm/jwm.main				    jwm-setup,jwm-setup-dd64,jwmconf
 home/puppy/.jwm/jwm.main-debian				    jwm-setup-dd64
 home/puppy/.jwm/jwm.tail				    jwm-setup,jwm-setup-dd64,jwmconf
 home/puppy/.jwmrc					    jwm-setup,jwmconf
-home/puppy/.local/share/applications/gparted.desktop	    jwm-setup,jwm-setup-dd64,jwmconf
-home/puppy/.local/share/applications/synaptic.desktop	    jwm-setup,jwm-setup-dd64,jwmconf
+home/puppy/.local/share/applications/gparted.desktop	    jwmconf,jwm-setup-dd64
+home/puppy/.local/share/applications/synaptic.desktop	    jwmconf,jwm-setup-dd64
 home/puppy/.xsession					    jwmconf
 home/puppy/.xsession-jwm				    jwm-setup,jwm-setup-dd64
 home/puppy/.xsession-openbox				    jwm-setup,jwmconf
@@ -721,8 +721,8 @@ root/.jwm/jwm.main					    jwm-setup,jwm-setup-dd64,jwmconf
 root/.jwm/jwm.main-debian				    jwm-setup-dd64
 root/.jwm/jwm.tail					    jwm-setup,jwm-setup-dd64,jwmconf
 root/.jwmrc						    jwm-setup,jwmconf
-root/.local/share/applications/gparted.desktop		    jwm-setup,jwm-setup-dd64,jwmconf
-root/.local/share/applications/synaptic.desktop		    jwm-setup,jwm-setup-dd64,jwmconf
+root/.local/share/applications/gparted.desktop		    jwmconf,jwm-setup-dd64
+root/.local/share/applications/synaptic.desktop		    jwmconf,jwm-setup-dd64
 root/.xhippo/gtkrc					    xhippo
 root/.xhippo/playlists/0default.d.xplist		    xhippo
 root/.xhippo/playlists/0default.d/Bulgaria_BNR1_horizont_low.mp3.m3u xhippo
@@ -1756,6 +1756,7 @@ usr/local/bin/transmission-gtk				    transmission-2.60
 usr/local/bin/transmission-remote			    transmission-2.60
 usr/local/bin/transmission-show				    transmission-2.60
 usr/local/bin/txt2svg					    txt2svg
+usr/local/bin/unzipper					    unzipper
 usr/local/bin/update-menus				    jwm-setup-dd64
 usr/local/bin/upgrade-kernel				    upgrade-kernel
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
@@ -3892,6 +3893,7 @@ usr/share/applications/slimjet.desktop			    slimjet
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/transmission.desktop		    transmission-2.60
+usr/share/applications/unzipper.desktop			    unzipper
 usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/weav.desktop			    weav
 usr/share/applications/wex.desktop			    wex
@@ -5785,6 +5787,7 @@ usr/share/pixmaps/switch.png				    jwm-setup,jwm-setup-dd64,jwmconf
 usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/transmission.png			    transmission-2.60
 usr/share/pixmaps/txt2svg.svg				    txt2svg
+usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg
 usr/share/pixmaps/xhippo.xpm				    xhippo
