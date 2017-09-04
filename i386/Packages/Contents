@@ -113,8 +113,8 @@ etc/skel/.jwm/jwm.head					    jwm-setup,jwmconf
 etc/skel/.jwm/jwm.main					    jwm-setup,jwmconf
 etc/skel/.jwm/jwm.tail					    jwm-setup,jwmconf
 etc/skel/.jwmrc						    jwm-setup,jwmconf
-etc/skel/.local/share/applications/gparted.desktop	    jwm-setup,jwmconf
-etc/skel/.local/share/applications/synaptic.desktop	    jwm-setup,jwmconf
+etc/skel/.local/share/applications/gparted.desktop	    jwmconf
+etc/skel/.local/share/applications/synaptic.desktop	    jwmconf
 etc/skel/.motion/motion.conf				    motion-light
 etc/skel/.notecase/notecase.ini				    notecase-portable
 etc/skel/.ouricorc					    ourico
@@ -180,8 +180,8 @@ home/puppy/.jwm/jwm.head				    jwm-setup,jwmconf
 home/puppy/.jwm/jwm.main				    jwm-setup,jwmconf
 home/puppy/.jwm/jwm.tail				    jwm-setup,jwmconf
 home/puppy/.jwmrc					    jwm-setup,jwmconf
-home/puppy/.local/share/applications/gparted.desktop	    jwm-setup,jwmconf
-home/puppy/.local/share/applications/synaptic.desktop	    jwm-setup,jwmconf
+home/puppy/.local/share/applications/gparted.desktop	    jwmconf
+home/puppy/.local/share/applications/synaptic.desktop	    jwmconf
 home/puppy/.notecase/notecase.ini			    notecase-portable
 home/puppy/.ouricorc					    ourico
 home/puppy/.xsession					    jwmconf
@@ -860,8 +860,8 @@ root/.jwm/jwm.head					    jwm-setup,jwmconf
 root/.jwm/jwm.main					    jwm-setup,jwmconf
 root/.jwm/jwm.tail					    jwm-setup,jwmconf
 root/.jwmrc						    jwm-setup,jwmconf
-root/.local/share/applications/gparted.desktop		    jwm-setup,jwmconf
-root/.local/share/applications/synaptic.desktop		    jwm-setup,jwmconf
+root/.local/share/applications/gparted.desktop		    jwmconf
+root/.local/share/applications/synaptic.desktop		    jwmconf
 root/.motion/motion.conf				    motion-light
 root/.notecase/notecase.ini				    notecase-portable
 root/.ouricorc						    ourico
@@ -2053,6 +2053,7 @@ usr/local/bin/transmission				    transmission-2.31
 usr/local/bin/transmission-gtk				    transmission-2.31
 usr/local/bin/txt2svg					    txt2svg
 usr/local/bin/uextract					    uextract
+usr/local/bin/unzipper					    unzipper
 usr/local/bin/upgrade-kernel				    upgrade-kernel
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
 usr/local/bin/weav					    weav
@@ -4792,6 +4793,7 @@ usr/share/applications/sns.desktop			    sns
 usr/share/applications/start-lumina-info.desktop	    lumina-desktop-debdog
 usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/transmission.desktop		    transmission-2.31
+usr/share/applications/unzipper.desktop			    unzipper
 usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/viewtopic.php?t=60204.desktop	    samba-tng-rcrsn-0.5-rc1-debdog
 usr/share/applications/weav.desktop			    weav
@@ -8379,6 +8381,7 @@ usr/share/pixmaps/switch.png				    jwm-setup,jwmconf
 usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/transmission.png			    transmission-2.31
 usr/share/pixmaps/txt2svg.svg				    txt2svg
+usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg
 usr/share/pixmaps/xfe.png				    xfe
