@@ -1772,11 +1772,11 @@ Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu,
 Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd
 Filename: ./Included/frisbee_1.2-20170430-xcowsay_i386.deb
-Size: 145876
-MD5sum: d1a5e8956a6615a852ca4e5c983ca682
-SHA1: 085577ff53d93f7c8a86333e537333660ade75f7
-SHA256: 4c274afc1f4c97722dffb69bd33e676f9184a0064c5e0df969c4beec154d64cd
-SHA512: ae09026e6cf2387862bcd4abe95c3040964e603161d21afefce155355886665992a20739b4a327545454458b2e2efe729d04dfa38441bd7c86de508ef8538232
+Size: 145856
+MD5sum: e032d342819855a682c090398a442674
+SHA1: 242c382469f35d6c6b1d7f96d08adb8bed9ae4dc
+SHA256: bdef29143d774a569da8a654bb2ff57a77ee7a1368f5c69db6bfc53181d60704
+SHA512: dccedff0cf8b555d0327569caff3714902117dbd72f11e2759f51c244433e996a11ff4a0bbf8615be81c4a1be57124a5c4d2fe4e66f65a8ef57145cf8f5314e4
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
