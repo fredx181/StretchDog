@@ -1986,6 +1986,26 @@ SHA256: 1064c35efc9a5e0fa9cfea8b63a88f76832ba7bbf70f3b3a536f22bd12581f6f
 SHA512: bb02283cb90b93bd07b62fdfd281baf5cbc168e87684d8492248b8abd8b87ecfb2c26860f68fd0e1f26499d0a581427b314ded0b94228a4c1039ecd0614b8fcd
 Description: graphical yad message utility.
 
+Package: jwmconf
+Architecture: amd64
+Version: 0.0.5
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 480
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, sed, jwm, rox-filer, wmctrl, hsetroot, scrot
+Replaces: jwm-setup
+Filename: ./Extra/jwmconf_0.0.5_amd64.deb
+Size: 1030694
+MD5sum: c0ebb42b092eaad032d052e2fa2e2079
+SHA1: 404f038fad898299b60c4da53c801df6e3588aa8
+SHA256: 3e14bf4d7cc3604e303b54231bc3cd4d4bf2f997afd58a7158985dbb67a341ab
+SHA512: b7ae11a97171f245b557d011fbe5868c921705d3bdd321827b53d8fa33f8fe6a750b9e8010594a5457130e2bfaa21ff4cec6291a57ccd8daab07cb98d3071bfd
+Description: Jwm custom setup for Debiandog, includes:
+ - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
+ - jwm-obmenu script for the Jwm window manager. It provides
+ a dynamic menu listing of installed applications.
+
 Package: peasyscan
 Architecture: amd64
 Version: 2.12
