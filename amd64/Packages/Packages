@@ -2440,6 +2440,26 @@ SHA256: e154fee04e53d1d8cf032f82e013d420283ae391d3d1c2756606f58d5657eddc
 SHA512: ae7285e6dcf4c5d58a963ddbb23efdbdbddc055415e169d95a683165d6a7a793228ce04af00df65335cbb3a57b936814df1f6b1077af3e5805305abae2180b40
 Description: Mounts ISO/SFS files
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.5-0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.5-0_amd64.deb
+Size: 16552
+MD5sum: 8959d1982b1336070b7155f7057057eb
+SHA1: b210435aefa3eae00c88250b93972465728fa47b
+SHA256: 0196c2a1899e25c69d44a7df7b75bd033f1a0ecaab24f95028b04e674b0b47a4
+SHA512: 4adcb71a105a2756dab1a6ae0deacac3d1ebd56e163d2e6694989e3db828bc135c674ff79abee169a600bcb01a1211f1b1a94c67f0c4e3c1fca7e4958e7380ee
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+
 Package: broadcom-wl-driver-k4.9.0-3-amd64
 Architecture: amd64
 Version: 1.0

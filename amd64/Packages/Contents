@@ -130,6 +130,7 @@ home/puppy/Startup/exec_lxinput-autostart		    lxinputsave
 home/puppy/Startup/exec_lxrandr-autostart		    lxrandr-save-fix
 home/puppy/Startup/killmenu-cached			    jwmconf,jwm-setup
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
+home/puppy/Startup/peasywifi_tray			    PeasyWiFi
 home/puppy/startup-jwm					    jwmconf,jwm-setup-dd64,jwm-setup
 lib/dhcpcd/dhcpcd-hooks					    frisbee
 lib/dhcpcd/dhcpcd-run-hooks				    frisbee
