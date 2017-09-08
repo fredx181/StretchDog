@@ -4139,6 +4139,26 @@ Description: Independent JPEG Group's JPEG runtime library
  .
  This package contains the shared library.
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.5-0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Filename: ./Extra/peasywifi_4.5-0_i386.deb
+Size: 16456
+MD5sum: c527dfe6e96b558d76be23f73173c3eb
+SHA1: c7187dc25c2f6f16193cfac5bfd4b70658606ad6
+SHA256: 54fb53acef7c487a865697bb2c3d659bbf043d25d39bad8db5448bb44c1b1d99
+SHA512: c83692c1587a614c5c453d25ce0a36394fbe46230f6013fbb40df7f73cdd4a86bd572497b6bbb35113a812cbc6b3399409fa26f0568bd8752dfd3e15f1e037f0
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+
 Package: xhippo
 Architecture: i386
 Version: 1.0.1

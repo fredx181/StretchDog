@@ -194,6 +194,7 @@ home/puppy/Startup/killmenu-cached			    jwm-setup,jwmconf
 home/puppy/Startup/netmon_wce				    wifibox
 home/puppy/Startup/network_tray.sh			    frisbee,ceni,wifibox-dhcpcd,sns
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
+home/puppy/Startup/peasywifi_tray			    PeasyWiFi
 home/puppy/startup-jwm					    jwm-setup,jwmconf
 lib/X11/mini-icons/network_tray				    ceni
 lib/X11/mini-icons/network_tray-xpm/dead.xpm		    ceni
