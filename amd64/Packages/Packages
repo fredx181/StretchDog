@@ -3226,6 +3226,22 @@ SHA256: fcb604179e1d0ee5495a09f5a54bd4f5e52db9e71d0b74b663aea34ea5e6f4e7
 SHA512: 7d250f13d63c7a1464387ffb10ae84619ec2ae1dd7d77b5c6d1d938506b4c4cd7d5376ad40c7de71e5ae9374e2cd449aa7eaeb5ed16e44379f8c89ef669b5ebd
 Description: Pulseaudio emulator using alsa
 
+Package: peasy-dvd-player
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xterm, eject
+Filename: ./Extra/peasy-dvd-player_1.4.deb
+Size: 6196
+MD5sum: ff84e0373890a6fa4f461fa9d055e1ca
+SHA1: b619e87066b7c91f08050ac360bcd8efd367bbd2
+SHA256: 6a452a367b75a470e04d272ab7d2cece6094be6bb4f500840aa7d867c943cadf
+SHA512: 75d012d83085361d5e741d22ce923fef1612a9b91a901339842239bf13ef6b80daae2e2814e589b0228fd11050177c2eb9f466152883b20bd335f354e6671d9f
+Description: DVD movie player
+	needs mplayer and libdvdcss
+
 Package: isotools
 Architecture: all
 Version: 1.0.2
@@ -3242,6 +3258,21 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   Changes in this version 1.0.2
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
+
+Package: libdvdcss-amd64
+Architecture: amd64
+Version: 1.4.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/libdvdcss-amd64_1.4.0.deb
+Size: 15310
+MD5sum: 9e3860de11e3e93ae157014d0bf39890
+SHA1: dd6516bd4b1f2a6987c3d60bcc6a7e7da519deac
+SHA256: 49acc98caeb71a01055b784f92798921d21476b07ddd12b8d514e59ab751ec30
+SHA512: d362c57c16c35f98c4cf22ebb15b2ccb88ec970522335dc9f1f34e8db4c4f3934f5d45ed2015c09e359ecb41679d41e3e4ce5029815d378ae0d5ce50e47ceae3
+Description: DVD decryption library
+  compiled from source in Stretch-Live-64bit
 
 Package: txt2svg
 Architecture: amd64

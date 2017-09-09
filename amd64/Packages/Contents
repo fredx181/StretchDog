@@ -1104,6 +1104,9 @@ usr/lib/i386-linux-gnu/perl5/5.20/auto/WWW/YoutubeViewer/.packlist youtube-viewe
 usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
 usr/lib/libcrypto.so.1					    transmission-2.60
+usr/lib/libdvdcss.so					    libdvdcss-amd64
+usr/lib/libdvdcss.so.2					    libdvdcss-amd64
+usr/lib/libdvdcss.so.2.2.0				    libdvdcss-amd64
 usr/lib/libmusicbrainz3.so.6				    libmusicbrainz3-6
 usr/lib/libmusicbrainz3.so.6.2.0			    libmusicbrainz3-6
 usr/lib/libpupvm.a					    pup-volume-monitor
@@ -1711,6 +1714,7 @@ usr/local/bin/move-in-crypt				    move-in-crypt
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwmconf,jwm-setup-dd64,jwm-setup
+usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
@@ -3872,6 +3876,7 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
+usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyport.desktop		    peasyport
@@ -5754,6 +5759,7 @@ usr/share/pixmaps/optical24.png				    mount-wizard
 usr/share/pixmaps/other.png				    jwmconf,jwm-setup
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasypdf.png				    peasypdf
