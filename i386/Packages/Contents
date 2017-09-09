@@ -1384,6 +1384,9 @@ usr/lib/libLuminaUtils.so.1.0				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0.0				    lumina-desktop-debdog
 usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
+usr/lib/libdvdcss.so					    libdvdcss-i386
+usr/lib/libdvdcss.so.2					    libdvdcss-i386
+usr/lib/libdvdcss.so.2.2.0				    libdvdcss-i386
 usr/lib/libgeany.so					    geany
 usr/lib/libgeany.so.0					    geany
 usr/lib/libgeany.so.0.0.0				    geany
@@ -2002,6 +2005,7 @@ usr/local/bin/mplayer					    gnome-mplayer-1.0.7
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwm-setup,jwmconf
 usr/local/bin/ourico					    ourico
+usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
@@ -4765,6 +4769,7 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
+usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
 usr/share/applications/peasyport.desktop		    peasyport
@@ -8315,6 +8320,7 @@ usr/share/pixmaps/osmo.png				    osmo-portable
 usr/share/pixmaps/other.png				    jwm-setup,jwmconf
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
 usr/share/pixmaps/peasypdf.png				    peasypdf
