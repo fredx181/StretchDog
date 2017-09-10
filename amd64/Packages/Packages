@@ -3259,21 +3259,6 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
 
-Package: libdvdcss-amd64
-Architecture: amd64
-Version: 1.4.0
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Filename: ./Extra/libdvdcss-amd64_1.4.0.deb
-Size: 15310
-MD5sum: 9e3860de11e3e93ae157014d0bf39890
-SHA1: dd6516bd4b1f2a6987c3d60bcc6a7e7da519deac
-SHA256: 49acc98caeb71a01055b784f92798921d21476b07ddd12b8d514e59ab751ec30
-SHA512: d362c57c16c35f98c4cf22ebb15b2ccb88ec970522335dc9f1f34e8db4c4f3934f5d45ed2015c09e359ecb41679d41e3e4ce5029815d378ae0d5ce50e47ceae3
-Description: DVD decryption library
-  compiled from source in Stretch-Live-64bit
-
 Package: txt2svg
 Architecture: amd64
 Version: 20170601
@@ -3374,6 +3359,21 @@ SHA1: db3fc6b5f875e2ca447f6c68d04d2b796adb6bf4
 SHA256: 402bd17e291349e3988ba177c637253d28612dfb1cbdc6414c96db253647e65a
 SHA512: 6525c922a5e1e90d0229ca30c10b88aceb230ddce3a78bf7cece8918cf85777d1048b8692cd22446069ef8361a5e4cd931cef1e46f443a96f79e17c095933e48
 Description: Make screenshot, by sklimkin
+
+Package: libdvdcss
+Architecture: amd64
+Version: 1.4.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/libdvdcss_1.4.0_amd64.deb
+Size: 15304
+MD5sum: f30a8768e14fd9d3e07a429b3d968223
+SHA1: a87bec6e695388cafab0cf58270fc5cea4f43e4d
+SHA256: a1239eb81c94bf8cd16e9ee44a2c4a488ff7dae4ec5d0368a223414ab793cee6
+SHA512: 93db2a05a72731cc547590f5cad3324f3e521ddce21bdb41b3b6c166b1039a99876795c56627e4e3ea4019369adfdc0191e833c79eef6e4b9f70671f11b19890
+Description: DVD decryption library
+  compiled from source in Stretch-Live-64bit
 
 Package: firewall-ng
 Architecture: amd64
