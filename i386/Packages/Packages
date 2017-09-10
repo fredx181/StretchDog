@@ -3664,6 +3664,21 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: libdvdcss
+Architecture: i386
+Version: 1.4.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/libdvdcss_1.4.0_i386.deb
+Size: 16692
+MD5sum: 60356e7a727e8e8fd9eb357baaf91abe
+SHA1: ecb7cbefe600cf5d4344ad8c8e5ba6e1fb3fcd9d
+SHA256: 59cb115892004c3807cb713ddbabf9d6a4bbe41e1a3cd6ab1cd58a4ea73eec14
+SHA512: 8767a1fb21b54e1492bf82c6bc695c6a0bdf32f9fc6c5222640cf6f5ec1d84b32fe57e0f1ff6e3a1d2c5076ac266c105f5abde9b9e1ebe767549b6017d222201
+Description: DVD decryption library
+  compiled from source in Stretch-Live-32bit
+
 Package: libgnutls26
 Architecture: i386
 Version: 2.12.20-8+deb7u3
@@ -4370,21 +4385,6 @@ Description: Curses interface to /etc/network/interfaces
  A Curses user interface for configuring network interfaces with ifupdown.
  Ceni can manage basic network interface ifupdown configuration stanzas for
  ethernet and wireless devices.
-
-Package: libdvdcss-i386
-Architecture: i386
-Version: 1.4.0
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Filename: ./Extra/libdvdcss-i386_1.4.0.deb
-Size: 16694
-MD5sum: 5079f90b76e980308b15b05b892e8f18
-SHA1: cadce0630b24e1f227e4b56e992c91cc1ebf0c5e
-SHA256: 4f74a73e43c3198c6d4e253a10fdaa892b80bb9501f667585cb4d40679834c5f
-SHA512: 9ede95217c5e6874738dba8d2b94375d22f03ca501002672843143c9dc9fb753effd96190244beac6dbb4afc2ca9e2549a304e42eddc1d5f1d46d14bb3e66068
-Description: DVD decryption library
-  compiled from source in Stretch-Live-32bit
 
 Package: jwmconf
 Architecture: i386

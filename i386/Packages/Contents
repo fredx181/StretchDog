@@ -1384,9 +1384,9 @@ usr/lib/libLuminaUtils.so.1.0				    lumina-desktop-debdog
 usr/lib/libLuminaUtils.so.1.0.0				    lumina-desktop-debdog
 usr/lib/libbacon.a					    bacon
 usr/lib/libcrypto.so.0.9.8				    libssl0.9.8
-usr/lib/libdvdcss.so					    libdvdcss-i386
-usr/lib/libdvdcss.so.2					    libdvdcss-i386
-usr/lib/libdvdcss.so.2.2.0				    libdvdcss-i386
+usr/lib/libdvdcss.so					    libdvdcss
+usr/lib/libdvdcss.so.2					    libdvdcss
+usr/lib/libdvdcss.so.2.2.0				    libdvdcss
 usr/lib/libgeany.so					    geany
 usr/lib/libgeany.so.0					    geany
 usr/lib/libgeany.so.0.0.0				    geany
