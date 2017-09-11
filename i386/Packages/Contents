@@ -2009,6 +2009,7 @@ usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasypartview				    peasypartview
 usr/local/bin/peasypdf					    peasypdf
 usr/local/bin/peasyport					    peasyport
 usr/local/bin/peasyscale				    peasyscale
@@ -4772,6 +4773,7 @@ usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
+usr/share/applications/peasypartview.desktop		    peasypartview
 usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
 usr/share/applications/peasyscan.desktop		    peasyscan
@@ -8320,6 +8322,8 @@ usr/share/pixmaps/osmo.png				    osmo-portable
 usr/share/pixmaps/other.png				    jwm-setup,jwmconf
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/partview-24.png			    peasypartview
+usr/share/pixmaps/partview-48.png			    peasypartview
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
