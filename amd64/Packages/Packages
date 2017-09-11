@@ -2281,6 +2281,20 @@ Description:  findnrun 1.10.6 (documentation)
   Files in this add-on package: larger English help (HTML).
   https://github.com/step-/find-n-run/
 
+Package: peasypartview
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasypartview_1.0.deb
+Size: 7266
+MD5sum: d6d767461dba8b73eddfb7d4346a598b
+SHA1: 0e25ceec2b90fd1510072d38d4fe35ab328c74be
+SHA256: 39f274eba959f94ba0a20cfce6a0c76285efd7fcc9b160087eef434288d10d94
+SHA512: d8db6b8f885cb1a305c9472aa80004c01b3888b226157f44302865ad33261a7f96500507851f31406edd905972d23221646bb6ba7d43fc930636e67e8ea7b82f
+Description: Information about drive partitions
+
 Package: jwm-setup
 Architecture: amd64
 Version: 0.0.3
