@@ -610,6 +610,25 @@ SHA256: 6d7d38bbaae0f3cd123ed27183949d487544d0ea356270838ea48bd8fe79654c
 SHA512: e894b70dc45a8210be3ae5fdb50e32d98dec639fcd5522f42dc933a783ff87ea6abdbc4eec37fb899f3560dc3680c2d7b2afe80488585cddb5a869400fdfe5eb
 Description: Make and auto-mount swap file script. Security fix: owner root:root and chmod 0600 for new created swap file.
 
+Package: dogradio
+Architecture: all
+Version: 0.0.7d
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.6 | gmplayer | mplayer, file, streamripper
+Filename: ./Included/dogradio_0.0.7d_all.deb
+Size: 935974
+MD5sum: ef2cbba992ed721de8c0f07d38f20e7f
+SHA1: 7ab36ba60f518e1f2d71b926732be40d62569234
+SHA256: 03a2f65782290a6da84c8b35739c4177618bbecd067f877b64fc547231fd0236
+SHA512: 712f8b003968e640ea3a1315c3c79fc6d570d655ffd138e2c48ac8c34c06c52af5642be373909207f3f26e6d5f1cbda4fc99a026d97d3c9d4aa3521ec25851a4
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
 Package: mount-wizard
 Architecture: all
 Version: 1.0.2
