@@ -3882,6 +3882,25 @@ SHA256: 287283c762d184708c8d11bc39fc26e18edc4e9c974426106bb84d83a68493ee
 SHA512: 0d80e7633b450b8beda300338361a8e9136b2bb49e79b9e414e11302204925e360caf5419e4be9d6dc87448d3f54dc514c89076fd835d68952192e685b26b33e
 Description: Samba share mounter
 
+Package: dogradio
+Architecture: i386
+Version: 0.0.7d
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | gmplayer | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.7d_i386.deb
+Size: 935954
+MD5sum: 59cc2906e16015b3dd0de527918c5495
+SHA1: cf159a7c6055b213306f2f38d3566a5027da1642
+SHA256: 482dda6bb9275eb5558098e673212fdfb7312c55900e6b867af53618ef8d1158
+SHA512: 5cb591f0e9753cfd80e3107f832f8fdcd5ccb47a398dafca6299a2b0499b7381cfcdf7f20894b4b450eb85342e524e08c05b42db10f3ec48726ac1e9a962727a
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
 Package: youtube-get2
 Architecture: i386
 Version: 0.1.7
@@ -4202,6 +4221,23 @@ SHA1: 300a66919bf627ded86db1df7a3daf2a47135c1e
 SHA256: 8980dc5135afec1dc693764aef33326424f570a9c9bdbbf6723eafbc9b699187
 SHA512: 76289675e36857faffdd5fc1b6d0da618b96891e39e2de3d594bbc7766ea3684eeeac62d87e6f7bb3dba373bcd0bb31007b77938ef92a599804b7bf0543b4877
 Description: SMB/CIFS clients for Unix
+
+Package: gmplayer
+Architecture: i386
+Version: 37926-6.3.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1700
+Depends: libsndio6.1, libbluray1, libdvdread4, libcdio-cdda1, libcdio13, libcdio-paranoia1, libfribidi0, libass5, libenca0, libmad0, libvorbisenc2, libvorbis0a, libogg0, libgsm1, libtheora0, liba52-0.7.4, libmpeg2-4, libdca0, libopus0, libbs2b0, libopencore-amrnb0, libopencore-amrwb0, libxvidcore4, libvpx4, libdvdnav4, libdirectfb-1.2-9, libvdpau1, libesd0, libaudio2, libjack0, libopenal1, libdvdcss, peasy-dvd-player
+Conflicts: gnome-mplayer-1.0.7, mplayer
+Filename: ./Extra/gmplayer_37926-6.3.0_i386.deb
+Size: 6239984
+MD5sum: c34244ef70a1f6536d353e2e776afa3d
+SHA1: d2d0d117c0e7e5a4854d6a0835650f91715860b4
+SHA256: 6d05d36705882f60207c6f21e03d8bba89bd25735cc062aa54e8751da0fca7a2
+SHA512: a86a25f4650931d2580cf6f47d2605bb2c6ab133d58d8288500f64af7c5cc4800df94263db3f180312a87965866a3881191a204f767af73ddf921a085bc45447
+Description: Mplayer SVN-r37926, mediaplayer
 
 Package: findnrun-nls
 Architecture: all
