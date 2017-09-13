@@ -3157,11 +3157,11 @@ Installed-Size: 2000
 Depends: liba52-0.7.4, libaa1, libasound2, libass5, libatk1.0-0, libaudio2, libbluray1, libbs2b0, libc6, libcaca0, libcairo2, libcdio-cdda1, libcdio-paranoia1, libcdio13, libcrystalhd3, libdca0, libdirectfb-1.2-9, libdv4, libdvdnav4, libdvdread4, libenca0, libesd0, libfaac0, libfaad2, libfontconfig1, libfreetype6, libfribidi0, libgdk-pixbuf2.0-0, libgif7, libgl1-mesa-glx, libglib2.0-0, libgnutls30, libgsm1, libgtk2.0-0, libjack0, libjpeg62-turbo, liblirc-client0, liblzo2-2, libmad0, libmp3lame0, libmpeg2-4, libmpg123-0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libopus0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libpng16-16, libpulse0, libroar-compat2, librtmp1, libsdl1.2debian, libspeex1, libtheora0, libtinfo5, libvdpau1, libvorbisidec1, libvpx4, libx11-6, libx264-148, libxext6, libxinerama1, libxss1, libxt6, libxv1, libxvidcore4, libxxf86dga1, libxxf86vm1, libdvdcss, peasy-dvd-player
 Conflicts: gnome-mplayer-1.0.6, mplayer
 Filename: ./Extra/gmplayer_37957-6.3.0_amd64.deb
-Size: 6837460
-MD5sum: ac9791f89d7b1e6128155286d22d0bff
-SHA1: 7e3f7e768fd4d313ebf42a91a767fb34f849a9f5
-SHA256: 104c9463309ba9694b835d9d157083a7584807a5ec26e005a9f6e432efd8d62f
-SHA512: f443b52cd1805c2bffe134676780e510a7c7a60d8176f29af2d78c1f95c48415a87c869e08c4361099292cf78a0f6f33cd13bf5468e2be73441931c72657acb1
+Size: 6892552
+MD5sum: 3d9fb919f3e695d21b9f28f62a65afe0
+SHA1: 47353f9bde3a6b4b4168634b85e5921fecbe66a5
+SHA256: cfc471d0c25554e1f859cfc8f143373b42343d9e05b54a13c381501ec01b5537
+SHA512: c134235d37c9661e1d7d8550a1cba7108a34bc1321ac2709295cd9e0c081be623e0a82042638a39281221ed23f1205ea662e84b5df0249f804105e2b0c509b36
 Description: Mplayer SVN-r37957, mediaplayer
 
 Package: libpng12-0
