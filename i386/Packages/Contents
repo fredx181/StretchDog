@@ -864,6 +864,7 @@ root/.jwmrc						    jwm-setup,jwmconf
 root/.local/share/applications/gparted.desktop		    jwmconf
 root/.local/share/applications/synaptic.desktop		    jwmconf
 root/.motion/motion.conf				    motion-light
+root/.mplayer/config					    gmplayer
 root/.notecase/notecase.ini				    notecase-portable
 root/.ouricorc						    ourico
 root/.xhippo/gtkrc					    xhippo

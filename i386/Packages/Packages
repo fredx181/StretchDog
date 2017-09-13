@@ -4232,11 +4232,11 @@ Installed-Size: 1700
 Depends: libsndio6.1, libbluray1, libdvdread4, libcdio-cdda1, libcdio13, libcdio-paranoia1, libfribidi0, libass5, libenca0, libmad0, libvorbisenc2, libvorbis0a, libogg0, libgsm1, libtheora0, liba52-0.7.4, libmpeg2-4, libdca0, libopus0, libbs2b0, libopencore-amrnb0, libopencore-amrwb0, libxvidcore4, libvpx4, libdvdnav4, libdirectfb-1.2-9, libvdpau1, libesd0, libaudio2, libjack0, libopenal1, libdvdcss, peasy-dvd-player
 Conflicts: gnome-mplayer-1.0.7, mplayer
 Filename: ./Extra/gmplayer_37926-6.3.0_i386.deb
-Size: 6239984
-MD5sum: c34244ef70a1f6536d353e2e776afa3d
-SHA1: d2d0d117c0e7e5a4854d6a0835650f91715860b4
-SHA256: 6d05d36705882f60207c6f21e03d8bba89bd25735cc062aa54e8751da0fca7a2
-SHA512: a86a25f4650931d2580cf6f47d2605bb2c6ab133d58d8288500f64af7c5cc4800df94263db3f180312a87965866a3881191a204f767af73ddf921a085bc45447
+Size: 6241066
+MD5sum: 77ed5f21e5f82f4413e38fe7036061dd
+SHA1: 01488027b0d156830306a1f6fba1a16e0c89a5f4
+SHA256: 9f1674ba3b95ff9a0c6a3135d09eaba56049998f6ab0de644d688af6f022a71f
+SHA512: 41c0c4e0634ca6790d8d6e6562919201aec49525a1d8fc6f964dd024006694996ad35bb15e021a75812d96c1c76a57da8c49230bb322c32bc71a1c68ff4f12aa
 Description: Mplayer SVN-r37926, mediaplayer
 
 Package: findnrun-nls
