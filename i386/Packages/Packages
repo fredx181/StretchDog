@@ -3089,6 +3089,21 @@ SHA256: 648b42b4d600bd1b2792dc9e5f39e8b8f62b12bcd6970dc71cf639d38ce5af90
 SHA512: a3560b5d0d7660682ea1fe6283ef9c185a1cfbfa0f9e50dcc8a8728e560571cba0d8da20cf9ac476e2da06659bf307d3210950a94817f7e89cbaf8f27f103586
 Description: Monitor color adjustment tool.
 
+Package: peasymp3
+Architecture: i386
+Version: 4.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gmplayer | gnome-mplayer-1.0.7, icedax, eject, xterm, libasound2-plugin-equal
+Filename: ./Extra/peasymp3_4.1_i386.deb
+Size: 7714
+MD5sum: d0ca044561220db860ab6c8863e34d6c
+SHA1: cbaf1e93a00b53d8adebced60325711dbe4a9898
+SHA256: 7f9a78fa191b7138f3401ce9562b2bd50fee59626c182bb1d5a78bd4035c3e73
+SHA512: 98c60dbc8d064a2ad1eb516f8120b03d2fd3de54f07db97c3707b6834bca9d52e9dee3cf3792d1fc0d5b5300544f8008bd9367c9c2afdc73798c038762040d27
+Description: Media player, CD player, Carousel
+
 Package: gifdance
 Architecture: i386
 Version: 1.0.0
@@ -4317,13 +4332,13 @@ Priority: extra
 Section: checkinstall
 Maintainer: root@debian
 Installed-Size: 168
-Depends: libc6, alsa-base, alsa-utils
+Depends: libc6, alsa-utils
 Filename: ./Extra/apulse_20150727-1_i386.deb
-Size: 32846
-MD5sum: d8ee158c782d3786685a4b1308e6816b
-SHA1: d3593f0362f63f6e023a2cdc86c75293ae5df641
-SHA256: 0ff6d9aa73be9cc3924b1ef20444c493d622d09eb5409ff994a46bf11139f82c
-SHA512: f16994a14d928a83221dc331cbe47d45a26307e3c9860a7c71e55f297780288b462e9c75766142286422d2d7cda9301acff9048be9a84684c3c98008d78b8892
+Size: 32866
+MD5sum: 18a5adc3859256188d391b5c80ee31cb
+SHA1: 4333e310a1ece062e7292d4f8f740409eb646e0a
+SHA256: 94befe2784305e022fc971da47652e4e9e7f19c40921e24e6dafc80ff370856a
+SHA512: 13db9aaa4c812ae938e2c11157fa11ca25e58e1bdee2a9fddc6fe078ff13222711eee46180f1a2946b741ad34aa6f372a2c4b4d30148e5533fc41317bd239c58
 Description: Pulseaudio emulator using alsa
 
 Package: dogradio
