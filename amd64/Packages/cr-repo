@@ -99,5 +99,5 @@ else
 loadmodule -a ../../../git64.squashfs
 fi
 
-. ../../../gitpushstretch-64
+. ../../../gitpush_stretch
 

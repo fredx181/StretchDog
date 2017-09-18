@@ -608,6 +608,7 @@ opt/tmp/snapexit					    porteusbootscripts
 opt/tmp/snapmergepuppy					    porteusbootscripts
 opt/tmp/wmpoweroff					    porteusbootscripts
 opt/tmp/wmreboot					    porteusbootscripts
+root/.asoundrc						    peasymp3
 root/.config/rox.sourceforge.net/MIME-types/application	    jwmconf,jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_png	    jwmconf,jwm-setup
 root/.config/rox.sourceforge.net/MIME-types/image_x-xpixmap jwmconf,jwm-setup
@@ -1717,10 +1718,13 @@ usr/local/bin/move-in-crypt				    move-in-crypt
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwmconf,jwm-setup-dd64,jwm-setup
+usr/local/bin/peasycdplayer				    peasymp3
 usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
 usr/local/bin/peasymount				    peasymount
+usr/local/bin/peasymp3					    peasymp3
+usr/local/bin/peasymp3carousel				    peasymp3
 usr/local/bin/peasypartview				    peasypartview
 usr/local/bin/peasypdf					    peasypdf
 usr/local/bin/peasyport					    peasyport
@@ -3881,9 +3885,12 @@ usr/share/applications/palemoon.desktop			    palemoon
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
+usr/share/applications/peasycdplayer.desktop		    peasymp3
 usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
+usr/share/applications/peasymp3.desktop			    peasymp3
+usr/share/applications/peasymp3carousel.desktop		    peasymp3
 usr/share/applications/peasypartview.desktop		    peasypartview
 usr/share/applications/peasyport.desktop		    peasyport
 usr/share/applications/peasyscale.desktop		    peasyscale
@@ -5837,6 +5844,7 @@ usr/share/pixmaps/partview-48.png			    peasypartview
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
+usr/share/pixmaps/peasymp3.png				    peasymp3
 usr/share/pixmaps/peasypdf.png				    peasypdf
 usr/share/pixmaps/peasyport.png				    peasyport
 usr/share/pixmaps/peasyscale.png			    peasyscale
