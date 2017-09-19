@@ -577,6 +577,36 @@ SHA256: 9d2914446d802a83d2fcd202c41911c6ed528ed58abfab31333990453b21e75e
 SHA512: ecfd46a63c3b2c7840db034c6e354c964e1e429dcfcfdc97e9ac1ecac2d8472d3067118863fbac54d39755e98f9f85a3bf73d41fef91a76ccc3cf97e3a68a371
 Description: Warning - This package works only in DebianDog!
 
+Package: conky-cli-dbg
+Architecture: amd64
+Version: 1.9.0-6
+Priority: extra
+Section: debug
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 403
+Depends: conky-cli (= 1.9.0-6)
+Filename: ./Included/conky-cli-dbg_1.9.0-6_amd64.deb
+Size: 333868
+MD5sum: da45506c30728f13fa200c5d3201538f
+SHA1: e4a251f81abd99385daa813f5816f69bfeaf1eed
+SHA256: e13f8e55723c0b130dab6e65d950af6e9b7e1203ca393009eccdf368679ca60f
+SHA512: 2228def2cc1a04aa21ea56732c2d1bec0ae51bf7b91d194fcb17f1b3ad99df9f5fd0ef16f86b2d517f647ef005dd72aa8ff36ba95c2be73a15b5cdbdaa72e8b5
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (basic version - debug)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a basic package that can be useful in servers or piped with dzen2.
+ It includes the following support:
+ .
+ MPD, MOC, math, apcupsd, ncurses and I/O stats.
+ .
+ This package contains debugging symbols only.
+
 Package: frisbee
 Architecture: amd64
 Version: 1.2-20170408dd64-mod
@@ -912,6 +942,38 @@ SHA256: f8e1dcceab10b0573fb0e351cb0131bb1af494fa9727221ee24edcc68f595a4c
 SHA512: 59c60653f009172376588eed38a943a0358e5a67333a885f932d5250c9d1280aeac70773f8865f9ec105a4865dd119cb988ebb2edc8e92eb940dbbf9610b26e8
 Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
 
+Package: conky-all-dbg
+Architecture: amd64
+Version: 1.9.0-6
+Priority: extra
+Section: debug
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 796
+Depends: conky-all (= 1.9.0-6)
+Filename: ./Included/conky-all-dbg_1.9.0-6_amd64.deb
+Size: 633878
+MD5sum: 87bdb208cc76edc98f4c946c898a24cb
+SHA1: cb91bc351e6387b222d8cd8cf08e3706a38f63ad
+SHA256: 252c9943e2caeab3b743b1e9384a3d1027befd7457664b5d90937f44b14dc512
+SHA512: b3d8810489ec3b8e9d304061304d149c3caa8737002bd838c9b35980f9e39bfff81c26e637f43e246b2db8d44af50f85179f4b2a428ab9ab05f7e356a23e96e2
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (all features enabled - debug)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a full conky with most compile options enabled:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon, RSS,
+ Weather, wireless, IBM, nvidia, eve-online, Imlib2, ALSA mixer,
+ apcupsd, I/O stats, argb, Lua and the cairo and imlib2 lua bindings,
+ Audacious, and XMMS2.
+ .
+ This package contains debugging symbols only.
+
 Package: conkyclock
 Architecture: all
 Version: 0.0.2
@@ -1181,6 +1243,40 @@ SHA256: 66b30d51a0bc16f313627ba429c7cff0c660ae07680dc87d62e933dd698a3997
 SHA512: bbbe85638b426e4d4167b46c935fb0dc8e1770eb7effef5b34ee66c90139d231f5bcfd86fa60883457fed7a87f7df0aaa69fa9dd3eb19b9a25a1211b0810304a
 Description: partition information utilities probedisk and probepart
 
+Package: conky-all
+Architecture: amd64
+Version: 1.9.0-6
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 1236
+Depends: libaudclient2 (>= 2.3), libc6 (>= 2.17), libcairo2 (>= 1.8.0), libcurl3-gnutls (>= 7.16.2), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0), libimlib2 (>= 1.4.5), libiw30 (>= 30~pre1), liblua5.1-0, libncurses5 (>= 5.5-5~), libtinfo5, libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1), libxml2 (>= 2.7.4), libxmmsclient6 (>= 0.7DrNo), libxnvctrl0
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-cli, conky-std
+Breaks: conky (<< 1.8.0-1)
+Replaces: conky (<< 1.8.0-1), conky-cli, conky-std
+Filename: ./Included/conky-all_1.9.0-6_amd64.deb
+Size: 328384
+MD5sum: f9db9ef88b123ff01c52eca9e45ff24c
+SHA1: 2a8acfe6002c2e04b1767d98c15f27ca3eb90ee6
+SHA256: bfad1f0f89e2cc020040a9cecb7d80fa90bb853459976e0d23f65dee7d32d9be
+SHA512: c81b4aefb009e7bad57a1f49b7e2cc07e6039a2bfe286a6d139e4e536254c8c94a6c9ddd4ff2ffd15cbaa02f7934ed405a32580fa893cf0b8516342590229a46
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (all features enabled)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a full conky with most compile options enabled:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon, RSS,
+ Weather, wireless, IBM, nvidia, eve-online, Imlib2, ALSA mixer,
+ apcupsd, I/O stats, argb, Lua and the cairo and imlib2 lua bindings,
+ Audacious, and XMMS2.
+
 Package: filemnt-pcmanfm
 Architecture: amd64
 Version: 1.0.0
@@ -1376,6 +1472,38 @@ SHA256: 0c64f6c3ebaca8a1ec56f42c29c373010873fe873c586b2653c6549abf475cfa
 SHA512: a5b6d25c53f454359575c42307d063320925ccfd0de7fd273aaff1604728656d720c1ee55f40875efd2e77846423ffb38a20efd77881d19844f6eb0278d12284
 Description: squashfs editor
 
+Package: conky-cli
+Architecture: amd64
+Version: 1.9.0-6
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 736
+Depends: libc6 (>= 2.17), libncurses5 (>= 5.5-5~), libtinfo5
+Suggests: apcupsd, moc, mpd
+Conflicts: conky-all, conky-std
+Breaks: conky (<< 1.8.0-1)
+Replaces: conky (<< 1.8.0-1), conky-all, conky-std
+Filename: ./Included/conky-cli_1.9.0-6_amd64.deb
+Size: 218180
+MD5sum: c45e8c3a42c55ddbc060acc6e8b0ff82
+SHA1: 46014e4cf3c0fe20dd0b3a8a41814fb14cac3d8d
+SHA256: 44f0f417dbf4f3ef8340b6a467881218840a5c6998f1e79eb27cffd10c8491ff
+SHA512: cc22e361f445c3a14b19786766ca45698e5323adc0c3d0e70ebe35456fb9047a74ccc1aea24261e767f52ee6799fc310469475183ff8ecb7cabd4a93f9ad270b
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (basic version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a basic package that can be useful in servers or piped with dzen2.
+ It includes the following support:
+ .
+ MPD, MOC, math, apcupsd, ncurses and I/O stats.
+
 Package: sfs-get-smokey-get
 Architecture: all
 Version: 1.0.3-stretch
@@ -1558,6 +1686,31 @@ SHA1: b64b20e9f167324f9b355b972a4681328611e7d9
 SHA256: 00cf05e2b2f4e920b075aec611b7d44e43b63d0ac52535c11e58f68ca3230bf3
 SHA512: 6ddaefb51682705e91c6a619dfc1038d90f506d096fdb94bcb5f7dddb1bec2494ba87ff93365e59347e2fd237e8fa5387ec45f13a8b550ffff5e62017d4009b2
 Description: Load a *.squashfs or *.sfs module.
+
+Package: conky
+Architecture: all
+Version: 1.10.1-3
+Priority: extra
+Section: oldlibs
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 44
+Depends: conky-std | conky-cli | conky-all
+Filename: ./Included/conky_1.10.1-3_all.deb
+Size: 35548
+MD5sum: a120aee8643dfa7a04c5bc1ca64c22e2
+SHA1: 92b2999214b81c8e7f3512d476307cd5b11ec7e7
+SHA256: 282120fd8ac0f8f7b0402637b51514bf0ee6058837420d045627ac8c48984257
+SHA512: 556bc855717323b6a023633dbd2662df9faae0b1f4d6e2005f1db90f10c3ed70350defea81c15cf2e780fc072cfcc7f95807ab4a9f000b792bb8c577a1818e94
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (transitional package)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a dummy package to ease transition to the new packaging scheme.
+ It may be safely removed after upgrade/installation.
 
 Package: filemnt-thunar
 Architecture: amd64
@@ -1939,6 +2092,38 @@ Description: Conky-clock v2 Luxe edition, choose analog clock display on the Des
  Choice from 300 clock images with the appropriate hands
  Option to display the date on the clock
 
+Package: conky-std-dbg
+Architecture: amd64
+Version: 1.9.0-6
+Priority: extra
+Section: debug
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 481
+Depends: conky-std (= 1.9.0-6)
+Filename: ./Extra/conky-std-dbg_1.9.0-6_amd64.deb
+Size: 403664
+MD5sum: 481135ea0da645a5ed15d4a6eed1563f
+SHA1: 9078ec27075054a100477eccfa6143417e19ad93
+SHA256: dcf000a1be5d9554b9c195ab3d018b51c42227f82b814b7686ab5f6d1f566f11
+SHA512: 2ff0e8da4519c368d5de6225931b1347e13ebac86965afb1e335f4ffc1000089749a454412995769131f14e1c52761fbcaabd94b99e08b2eff26f70019d8cac4
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (default version - debug)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This package should be a good compromise for most users that do not
+ need special features.
+ It includes the following support:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon,
+ wireless, ncurses, ALSA mixer, apcupsd, I/O stats, argb and Lua.
+ .
+ This package contains debugging symbols only.
+
 Package: gftp-text
 Architecture: amd64
 Version: 2.0.19-4
@@ -2136,6 +2321,40 @@ SHA1: 2a5ca6d85cd55ad7dfb00635fd03cdbcb68d50b3
 SHA256: f2f14a76a23627f789dead6d7688a9271c27bbf6577ac4f0cd2fa3713c0fc392
 SHA512: e4a838cdfc5e5b278229937f11690aad170b89ea4c0105841f24e47db469d1307fb785709a0da763c9bd2e0d5bb83f1a086667131dd1fda7195d6872a6e117bb
 Description: gtkdesklet-converted-pet-to-deb
+
+Package: conky-std
+Architecture: amd64
+Version: 1.9.0-6
+Priority: optional
+Section: utils
+Source: conky
+Maintainer: Vincent Cheng <vcheng@debian.org>
+Installed-Size: 822
+Depends: libc6 (>= 2.17), libglib2.0-0 (>= 2.12.0), libiw30 (>= 30~pre1), liblua5.1-0, libncurses5 (>= 5.5-5~), libtinfo5, libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1)
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-all, conky-cli
+Breaks: conky (<< 1.8.0-1)
+Replaces: conky (<< 1.8.0-1), conky-all, conky-cli
+Filename: ./Extra/conky-std_1.9.0-6_amd64.deb
+Size: 248908
+MD5sum: c5ae83567ed6b846654fb32729953f55
+SHA1: d35cd2bf77bedf5bb00ee4a8a80d5d686be6c577
+SHA256: 703c6f341ac862cbd431b8fb1da6c3a14f711e3819da00a8e30087e6a2e1343f
+SHA512: 0d4abbd0a8acb1b3e6620f0c2d1a0ea31f018f172da0a856dc227db496b8cdc23d879259167192086d762318b8a5e402b35ca33414356c7ebca20c5d6be0c190
+Homepage: http://conky.sourceforge.net/
+Description: highly configurable system monitor (default version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This package should be a good compromise for most users that do not
+ need special features.
+ It includes the following support:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon,
+ wireless, ncurses, ALSA mixer, apcupsd, I/O stats, argb and Lua.
 
 Package: libhunspell-1.3-0
 Architecture: amd64
@@ -3274,22 +3493,6 @@ SHA1: 35ebb30dc0c0e1d0e61e2b7378abade8946c431a
 SHA256: ea39b03cc59d991b1d5c36c88c1be142e62afa9ab7d50c65d458ec652ea72e86
 SHA512: c108eb93855c73ed26561a76469ceba9a5d61fbd30f173214fdf861b1010c81f3263f2a5f2ffc9537b64a8f8f30f1c9bb1be74177e98e3984e4d5a159b96b668
 Description: Display Animated Gif on Desktop
-
-Package: apulse
-Architecture: i386
-Version: 20150727-1
-Priority: extra
-Section: checkinstall
-Maintainer: root@debian
-Installed-Size: 168
-Depends: libc6, libasound2, alsa-utils
-Filename: ./Extra/apulse_20150727-1_i386.deb
-Size: 32896
-MD5sum: 84f7ddc80eb31998d16e5643a0d422a3
-SHA1: e87bee51c99d450c109377818067665a5a5e0ba3
-SHA256: fcb604179e1d0ee5495a09f5a54bd4f5e52db9e71d0b74b663aea34ea5e6f4e7
-SHA512: 7d250f13d63c7a1464387ffb10ae84619ec2ae1dd7d77b5c6d1d938506b4c4cd7d5376ad40c7de71e5ae9374e2cd449aa7eaeb5ed16e44379f8c89ef669b5ebd
-Description: Pulseaudio emulator using alsa
 
 Package: peasy-dvd-player
 Architecture: all
