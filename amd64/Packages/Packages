@@ -339,6 +339,27 @@ Description: Warning - This package works only in DebianDog! In ver. 1.0.3 fixed
  .
  For creating a *.squashfs module from changes (from /live/cow directory) or full system remaster (from / directory).
 
+Package: mpv
+Architecture: amd64
+Version: 1:0.9.3-ddjessie
+Priority: optional
+Section: misc
+Maintainer: fredx181
+Installed-Size: 6900
+Depends: libc6, libenca0, libfontconfig1, libfreetype6, libfribidi0, libgmp10, libharfbuzz0b, liblua5.1-0, libx11-6, libxcb-shm0, libxcb1, libxext6, libxinerama1, libxrandr2, libxv1, libvdpau1
+Filename: ./Included/mpv_0.9.3-ddjessie_amd64.deb
+Size: 6378826
+MD5sum: d56878c99c5ba96f5bd3a6832fda1d06
+SHA1: 6260de8bb075628f5a674fa804f3a8dff3fea4b1
+SHA256: e91a8b483259c49d4b175b025bb99f7ac871cd1588745b9f17e8ec9f30efca53
+SHA512: 1001e9c663b32e51e9458399a447c8528aae7d3753dc2a6d2c36cca5d0e5b8fcf7712faec88eb6ceb82dc28514612f4b9013c9c82b405f7edbb5b598029912da
+Homepage: https://github.com/mpv-player/mpv-build
+Description: mplayer/mplayer2 based video player, minimal build
+ MPV is a versatile CLI movie player, based on mplayer and mplayer2.
+ .
+ This package is not part of Debian. It was created by mpv-build scripts with
+ statically linked ffmpeg (not libav) and libass from upstream.
+
 Package: apt2sfs
 Architecture: amd64
 Version: 1.0.6

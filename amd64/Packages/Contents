@@ -3521,6 +3521,12 @@ usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/file24.png			    grub4dosconfig
 usr/local/lib/libgmtk.so.0				    gnome-mplayer-1.0.6
 usr/local/lib/libgmtk.so.0.0.0				    gnome-mplayer-1.0.6
+usr/local/lib/libgnutls-deb0.so.28			    mpv
+usr/local/lib/libgnutls-deb0.so.28.41.0			    mpv
+usr/local/lib/libhogweed.so.2				    mpv
+usr/local/lib/libhogweed.so.2.5				    mpv
+usr/local/lib/libnettle.so.4				    mpv
+usr/local/lib/libnettle.so.4.7				    mpv
 usr/local/lib/x86_64-linux-gnu/perl/5.24.1/XML/Fast.pm	    youtube-viewer
 usr/local/lib/x86_64-linux-gnu/perl/5.24.1/auto/LWP/UserAgent/Cached/.packlist youtube-viewer
 usr/local/lib/x86_64-linux-gnu/perl/5.24.1/auto/XML/Fast/.packlist youtube-viewer
