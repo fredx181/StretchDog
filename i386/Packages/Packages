@@ -4024,6 +4024,27 @@ SHA256: 0d21768c3377edac7455574bedc7c188186d0ef1ca757c891054f512fec0d92c
 SHA512: 567b34adfad7339d965dfc87bb0826a29435a1ddb21c1e21b5f8b04b9820ada2d92ce0bfd1a05ba6cee5bfd560dd7255b2a3b7dd3f8da28738844016a9c959b5
 Description: SMB/CIFS clients for Unix
 
+Package: mpv
+Architecture: i386
+Version: 1:0.9.3-ddjessie
+Priority: optional
+Section: misc
+Maintainer: fredx181
+Installed-Size: 6900
+Depends: libc6, libenca0, libfontconfig1, libfreetype6, libfribidi0, libgmp10, libharfbuzz0b, liblua5.1-0, libx11-6, libxcb-shm0, libxcb1, libxext6, libxinerama1, libxrandr2, libxv1, oss-compat
+Filename: ./Extra/mpv_0.9.3-ddjessie_i386.deb
+Size: 7726968
+MD5sum: 280be25bce623f74fd39960e58a58304
+SHA1: 745b9b8d7ca342a39ba4634ead95c19c496a0e25
+SHA256: fc9fb77df8fc776e0833f1721da64c3693d832f1669948433f9dcb1b778545e0
+SHA512: 815993f54ac37af21d3b25a7b9eeb13fbe0c3525eed0563aee7e9c55f0745d90255eabf2bd0771e8faf01c75c1297802e8e37e9d70d665cd1aa50d97d86c3d2e
+Homepage: https://github.com/mpv-player/mpv-build
+Description: mplayer/mplayer2 based video player, minimal build
+ MPV is a versatile CLI movie player, based on mplayer and mplayer2.
+ .
+ This package is not part of Debian. It was created by mpv-build scripts with
+ statically linked ffmpeg (not libav) and libass from upstream.
+
 Package: xvidcap
 Architecture: i386
 Version: 1.1.7
