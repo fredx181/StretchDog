@@ -2181,6 +2181,30 @@ Description: colored FTP client using GLib
  .
   Author:   Brian Masney <masneyb@gftp.org>
 
+Package: slim
+Architecture: amd64
+Version: 1:1.3.6-5-dd
+Priority: optional
+Section: x11
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
+Installed-Size: 2059
+Provides: x-display-manager
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.1.1), libjpeg62-turbo (>= 1.3.1), libpam0g (>= 0.99.7.1), libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.9), libx11-6, libxext6, libxft2 (>> 2.1.1), libxmu6, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), debconf (>= 1.2.9) | debconf-2.0, dbus
+Recommends: xterm
+Suggests: scrot, xauth
+Filename: ./Extra/slim_1.3.6-5-dd_amd64.deb
+Size: 184954
+MD5sum: 58f17fc016f16af95b03114745257e6f
+SHA1: fd27f972d5284ff9081c7ff1c992a56c6029ff53
+SHA256: 757f66c8cc02ec731503786cf2342aa58a3110b3c2e9cff525f9b186b96ebc63
+SHA512: 7c6343745574ab9b5d843153ab200f13726f5dff564ec71dee318597b4ba3c4bb517f572d5c70e0c2ad9da77314a19832d2e2a3431010ccabd8ce56b2a550922
+Homepage: http://sourceforge.net/projects/slim.berlios/
+Description: desktop-independent graphical login manager for X11
+ SLiM aims to be light, simple and independent from the various
+ desktop environments. Although completely configurable through
+ themes and an option file. It is particularly suitable for machines
+ that don't require remote logins.
+
 Package: peasymount
 Architecture: all
 Version: 1.0

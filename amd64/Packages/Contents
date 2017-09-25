@@ -5972,6 +5972,7 @@ usr/share/roxterm/roxterm-config.ui			    roxterm-common
 usr/share/sane/sane-style.rc				    peasyscan
 usr/share/slim/themes/debian-lines/COPYRIGHT.background	    slim
 usr/share/slim/themes/debian-lines/COPYRIGHT.panel	    slim
+usr/share/slim/themes/debian-lines/background.jpg	    slim
 usr/share/slim/themes/debian-lines/background.png	    slim
 usr/share/slim/themes/debian-lines/panel.png		    slim
 usr/share/slim/themes/debian-lines/slim.theme		    slim
