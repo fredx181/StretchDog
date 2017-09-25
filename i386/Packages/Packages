@@ -4588,6 +4588,21 @@ SHA256: 7208c8bd31be977ac881129a5dce38ae1196e56c63245c9d213ad316962d22a0
 SHA512: 71f2b003798f1edafcbe7d8fb262d8fe6f4dd2e5505c1dfa0bb6ac70bcda6c4af1862e0ef8126991a99db1b5e088ce90eccc2e73869a91393b236d5cfee3e676
 Description: Picdrop, resize images, by Terry (sunburnt)
 
+Package: filefinder
+Architecture: all
+Version: 2.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Extra/filefinder_2.4.deb
+Size: 7588
+MD5sum: e5628697a9b05b84cbc6395dc28d4863
+SHA1: 733530220924adcf5af587cba27a1e8934451bde
+SHA256: f71585244c1b9267dd88897bbbdca168387a94daa724503a72fd965bb262f274
+SHA512: ba97f2424069de4b1e24ccc1092895e801e6f882e20385ee7eb56e563bdd860dde606d2fb87311dd32b3032cff52eedc0009374dffb38290639ee2d9fb2688b2
+Description: File searching tool
+
 Package: peasyscale
 Architecture: i386
 Version: 2.0

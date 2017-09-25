@@ -1940,6 +1940,7 @@ usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
 usr/local/bin/echinus					    echinus
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
+usr/local/bin/filefinder				    filefinder
 usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_install				    Firewall-Puppy
 usr/local/bin/firewall_install.sh			    Firewall-Puppy
@@ -4748,6 +4749,7 @@ usr/share/applications/domyfile.desktop			    domyfile
 usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/epdfview.desktop			    epdfview
 usr/share/applications/ffconvert.desktop		    ffconvert
+usr/share/applications/filefinder.desktop		    filefinder
 usr/share/applications/findnrun.desktop			    findnrun
 usr/share/applications/firefox-esr.desktop		    firefox-esr
 usr/share/applications/firewall-puppy.desktop		    Firewall-Puppy
@@ -8347,6 +8349,7 @@ usr/share/pixmaps/epdfview.xpm				    epdfview
 usr/share/pixmaps/fd.png				    mount-wizard
 usr/share/pixmaps/fd2.png				    mount-wizard-2
 usr/share/pixmaps/ffconvert.png				    ffconvert
+usr/share/pixmaps/filefinder.png			    filefinder
 usr/share/pixmaps/filled-xterm_32x32.xpm		    xterm
 usr/share/pixmaps/filled-xterm_48x48.xpm		    xterm
 usr/share/pixmaps/firefox-esr.png			    firefox-esr
