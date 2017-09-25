@@ -3744,6 +3744,21 @@ Description: Screen video capture for X
  .
  Video can be saved in MPEG or AVI files format.
 
+Package: filefinder
+Architecture: all
+Version: 2.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Extra/filefinder_2.4.deb
+Size: 7588
+MD5sum: e5628697a9b05b84cbc6395dc28d4863
+SHA1: 733530220924adcf5af587cba27a1e8934451bde
+SHA256: f71585244c1b9267dd88897bbbdca168387a94daa724503a72fd965bb262f274
+SHA512: ba97f2424069de4b1e24ccc1092895e801e6f882e20385ee7eb56e563bdd860dde606d2fb87311dd32b3032cff52eedc0009374dffb38290639ee2d9fb2688b2
+Description: File searching tool
+
 Package: slimjet
 Architecture: amd64
 Version: 9.0.1.0

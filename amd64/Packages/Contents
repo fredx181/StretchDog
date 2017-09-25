@@ -1674,6 +1674,7 @@ usr/local/bin/dogradio					    dogradio
 usr/local/bin/dogradiorip				    dogradio
 usr/local/bin/drive-info				    debdogmountscripts
 usr/local/bin/exec_desktopfile.awk			    lxrandr-save-fix
+usr/local/bin/filefinder				    filefinder
 usr/local/bin/filemnt					    filemnt-caja,filemnt-pcmanfm
 usr/local/bin/firewall_ng				    firewall-ng
 usr/local/bin/firewallstatusrestart			    firewall-ng
@@ -3879,6 +3880,7 @@ usr/share/applications/domyfile.desktop			    domyfile
 usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/epdfview.desktop			    epdfview
 usr/share/applications/ffconvert.desktop		    ffconvert
+usr/share/applications/filefinder.desktop		    filefinder
 usr/share/applications/findnrun.desktop			    findnrun
 usr/share/applications/firefox-esr.desktop		    firefox-esr
 usr/share/applications/firewall-setup.desktop		    firewall-ng
@@ -5865,6 +5867,7 @@ usr/share/pixmaps/drive24.png				    mount-wizard
 usr/share/pixmaps/epdfview.xpm				    epdfview
 usr/share/pixmaps/fd.png				    mount-wizard
 usr/share/pixmaps/ffconvert.png				    ffconvert
+usr/share/pixmaps/filefinder.png			    filefinder
 usr/share/pixmaps/firefox-esr.png			    firefox-esr
 usr/share/pixmaps/firewall-24.png			    peasyfwmon
 usr/share/pixmaps/firewall-48.png			    peasyfwmon
