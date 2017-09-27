@@ -1310,6 +1310,25 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
  - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
 
+Package: quick-remaster
+Architecture: i386
+Version: 1.1.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.1_i386.deb
+Size: 159406
+MD5sum: 2194d17c9b5e8846de26b615817faf20
+SHA1: bccb5a93df0ced255aed7e0c74b8da2aff35bcc2
+SHA256: 448b79057290b9d861cf50f679f3e0f0256252550538925166e7fee57d2a7353
+SHA512: 4b279d3b08967984cc2cb694a325b3b2263aba3ae2aaa7ed9c2553e7929ca97f61ef6c7a59d6b68c5b3d707d679775df556f2463e6ecf709f06eb6c0c37bb202
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+
 Package: mount-wizard
 Architecture: i386
 Version: 1.0.2
