@@ -785,6 +785,25 @@ SHA256: c76320099a376c597ffa3761ed4b980bc24129b2c19b9bcf269cd5920d81c510
 SHA512: 5863c3b4fd70579d18799a7a25266f1038f903997311e920f5782219c6c570de7afe4df94677202115a8565442db16b9fe515a2afc6bede00ff973a5d0e1494e
 Description: Wireless Network manager
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.1_amd64.deb
+Size: 159400
+MD5sum: cdc4dccbeefd6dc91d4d27df450b3d47
+SHA1: be0805824a4b2a97f595654a28a905cea57f17e7
+SHA256: 819f6a8b6cece75f1928418dd3cac58441f0665389df3d8a97440846ae33cec6
+SHA512: e0d89d658c506135ad5c74b9116ef5b74131433b282a2da3b14c9d694bb4b57016c57191c3510654cb717cfe3bcfe3d1305be8d1ff18a6f2717df2274a848919
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+
 Package: pup-volume-monitor
 Architecture: amd64
 Version: 0.1.15-2
