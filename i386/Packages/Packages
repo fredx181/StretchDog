@@ -3792,11 +3792,11 @@ Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tool
 Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
 Filename: ./Extra/peasywifi_4.5-1_i386.deb
-Size: 16496
-MD5sum: 8a2a35b779ac3d2a1885191f31d9418a
-SHA1: 48c0b2f18cfe4e25a8ec129b05345813936f282d
-SHA256: 9f65e8678eb7ea627338d21fdd2ae33668c21eb11d7d3897573f9784cbbb2fb7
-SHA512: bf93c0d487ac203f86682eb3eef2fcb476bc8472e222fb33a3223d831d6fba61ba6e4837bd64f35208e8e884fe5f256d744f91a883902cbf8ac5e6247b5df2b3
+Size: 16576
+MD5sum: 123acc6e05275d80f5c5cfa529910d0f
+SHA1: 359aace59382af0a85a51158f78a3967bac75b21
+SHA256: c56fedabc5098f7e6299cbbc6ace275b4ef6c823903714f7ae40e08408134883
+SHA512: b2f1449a4b7a51ec16a6232cf4852f460afaeb6814cc1864d81c5fda91f7bdce040be9b02d6e5139e0c5635e1b7916d47e28ced40b173ef6b5a821b8aa3e1f6f
 Description: Reliable network manager
  -changes in v4.4-0 in peasywifi script by rcrsn51:
  - added option (Ethernet tab) to bring the interface down
