@@ -732,6 +732,25 @@ Description: Load a *.squashfs or *.sfs module.
  Changes compared to included scripts in DebianDog-2015-09-02 iso: loadmodule and loadsfs
  In case unloading failed at first, find out (by 'aubusy', from aufs-tools) which process is keeping it from unloading and kill it, then try again.
 
+Package: frisbee
+Architecture: i386
+Version: 1.2-20170928-xcowsay
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, xcowsay
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20170928-xcowsay_i386.deb
+Size: 145988
+MD5sum: b5fbd2dd01c88bf686aa865aaad36b83
+SHA1: c405b95bfd4117ab33f08b9440f4b4569055d741
+SHA256: 1827136162dd7b39849204854c57c20bcaff29dafa98e7eb22ce7d417677ee18
+SHA512: cb13aaab436cf9d103fd4b954dec19089e864c6ad12217384ad1dc812a066af8480bedc86eba49704f481e7661d5eaf8bed79e670224385b5e9352ae3f1c0599
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: apt2sfs
 Architecture: i386
 Version: 1.1.2
@@ -3763,6 +3782,29 @@ SHA512: e1490c50fe489c45b8a0932511a329a818b9ac56f20cda33329402299fa9507c4efd0a15
 Description: flite-hts-engine for DebianDog:
  stdout patched version by mcewanw with 1kB buffer
 
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.5-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./Extra/peasywifi_4.5-1_i386.deb
+Size: 16702
+MD5sum: f9cbd9848828b0187606c95f2202c354
+SHA1: 1cb20e9e25e4b148d85244812c7e82b3450bb1bb
+SHA256: 5af77ace9176d2a4bdefe587ada0d47b1fc5542258f1b15c92f82b1d8338b3b5
+SHA512: 971e40bfa08900bae08fbea4f5f9f6f0325bb2629cfca4015f033838129793f24507ad0948afc1c17df82208207aba4614607ccebdcf046786ccf2b189cbe270
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - fredx181, multi-user support
+
 Package: peasyxorburn
 Architecture: all
 Version: 1.1
@@ -4539,6 +4581,28 @@ SHA1: 2da0b44a54373b8ae92354aacb5c8197f7c5207b
 SHA256: 88f584142a0aaeb73174450e0940b7ce66a15b5e57097177b6799f66164c318e
 SHA512: 5e7dfc717f2989b2bc7b0935a3f2ab6691f97b06c872d04dee5ebcf3b9511870f4b7637e1c0bedb1d85f8ecfc94220f0ab7f9eeb33cbfc4d7ae8a8eefded44a8
 Description: Backup/restore tool for any file/folder.
+
+Package: ceni
+Architecture: i386
+Version: 2.31b
+Priority: optional
+Section: net
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Installed-Size: 235
+Depends: perl, libcurses-ui-perl, libexpect-perl, libterm-readkey-perl, ifupdown, udev, wpasupplicant, resolvconf, dhcpcd | dhcpcd5, xterm
+Suggests: wpagui
+Conflicts: frisbee, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: frisbee, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Extra/ceni_2.31b_i386.deb
+Size: 67230
+MD5sum: 54263f1f997e7272433fb54a068e61cd
+SHA1: 5538a59f10895bf535ede5ef3211cd480b1dc480
+SHA256: aaf7be99af7f95177399aeb207065e5588d0c66ce169c9204643dc00c312371c
+SHA512: 70183e0d48e971855455c3da237e5a8b8468a04c6dc4e75248ec7e7fa42086a3eea91579ae649f20d35f607c080da20b8e173500bf04dca6461bb8c9947f1f46
+Description: Curses interface to /etc/network/interfaces
+ A Curses user interface for configuring network interfaces with ifupdown.
+ Ceni can manage basic network interface ifupdown configuration stanzas for
+ ethernet and wireless devices.
 
 Package: peasyfwmon
 Architecture: i386

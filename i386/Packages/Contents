@@ -131,6 +131,7 @@ etc/skel/startup-jwm					    jwm-setup,jwmconf
 etc/slim.conf						    slim
 etc/slitaz/dhcpcd.conf					    wifibox-dhcpcd
 etc/slitaz/wifibox_udhcpc				    wifibox
+etc/sudoers.d/peasywifi					    PeasyWiFi
 etc/udhcpc/default.script				    wifibox
 etc/weav/LICENSE					    weav
 etc/weav/cmd_lists/CMD1_combo				    weav
