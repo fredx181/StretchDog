@@ -3793,10 +3793,10 @@ Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, 
 Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
 Filename: ./Extra/peasywifi_4.5-1_i386.deb
 Size: 16702
-MD5sum: f9cbd9848828b0187606c95f2202c354
-SHA1: 1cb20e9e25e4b148d85244812c7e82b3450bb1bb
-SHA256: 5af77ace9176d2a4bdefe587ada0d47b1fc5542258f1b15c92f82b1d8338b3b5
-SHA512: 971e40bfa08900bae08fbea4f5f9f6f0325bb2629cfca4015f033838129793f24507ad0948afc1c17df82208207aba4614607ccebdcf046786ccf2b189cbe270
+MD5sum: 78abd9f680731ee6b0b65b8fd5778ba8
+SHA1: 2d3e01db6f488b1001bfb4d4a591a9901160242b
+SHA256: 4198f6287903f727f009d5d401c171ce1d2051ec9e1e2098d95fe654b391204c
+SHA512: 48335bb942ce545ca1809e743aed93c4a528835312752ef9aa4664cddde4058e427654fe80f67219a914fc116af2fecc777944091ccbef49e6e0c0ed4afe96bf
 Description: Reliable network manager
  -changes in v4.4-0 in peasywifi script by rcrsn51:
  - added option (Ethernet tab) to bring the interface down
