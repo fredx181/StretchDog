@@ -2925,6 +2925,22 @@ SHA256: d0a20907fd82bd1239af7c913a8d979e6c414632bf32138af1a04db6bf7d6164
 SHA512: 33b849a68656e5e95d88f109b7fc45c4f6db210bd6766cff4c0bd12059aa14f6ec9de9a459cd6a2ee4a97723ec41e746b9900087896c48b24348abe670fcc5a5
 Description: Monitor color adjustment tool.
 
+Package: dog-control-center
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 86
+Depends: libc6, locale-conf, yad, alsa-utils, upgrade-kernel
+Filename: ./Extra/dog-control-center_1.0.1_all.deb
+Size: 14828
+MD5sum: 640da1f1276bba06fdeb4bb8848fa891
+SHA1: 392695a2cab4a3a2162b1a73dafa6f9dae651b1f
+SHA256: 9f167cdb313c0096cd3a3bdd8078a82937aba0e77a78245b1aadcba68ac95789
+SHA512: a92b15a8251013692da04d50c1eeaf3459f8dd2e26a56e408f7579fa2d8662a75a8ea6103352315657b828fbe7fc3100a4c3803f244d630c7eea93af2ab5f5c7
+Description: Control center
+
 Package: weav
 Architecture: all
 Version: 9.1.0
