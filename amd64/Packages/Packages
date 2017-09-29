@@ -2953,11 +2953,11 @@ Maintainer: root
 Installed-Size: 86
 Depends: libc6, locale-conf, yad, alsa-utils, upgrade-kernel
 Filename: ./Extra/dog-control-center_1.0.1_all.deb
-Size: 14828
-MD5sum: 640da1f1276bba06fdeb4bb8848fa891
-SHA1: 392695a2cab4a3a2162b1a73dafa6f9dae651b1f
-SHA256: 9f167cdb313c0096cd3a3bdd8078a82937aba0e77a78245b1aadcba68ac95789
-SHA512: a92b15a8251013692da04d50c1eeaf3459f8dd2e26a56e408f7579fa2d8662a75a8ea6103352315657b828fbe7fc3100a4c3803f244d630c7eea93af2ab5f5c7
+Size: 14762
+MD5sum: 09597cbf0b4fb85a35aba7d5af4d744e
+SHA1: e8bfb9e7cb4e6f4a312ce5f31e4376aef9e284d4
+SHA256: 3627306c1b5d5a62eed6d6beb0e2cbb0080aa266313adf5cf99c0ed81cce2b63
+SHA512: 746152c572aadf2012e0f969e6126b0baf7426ea29bcefcd635d28dae1554a8fd39a1d18abae833d991065b39a89f68a5f372b38959cd7e44789dd03b21897da
 Description: Control center
 
 Package: weav
