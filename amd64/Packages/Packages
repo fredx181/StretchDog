@@ -1283,6 +1283,25 @@ SHA256: 66b30d51a0bc16f313627ba429c7cff0c660ae07680dc87d62e933dd698a3997
 SHA512: bbbe85638b426e4d4167b46c935fb0dc8e1770eb7effef5b34ee66c90139d231f5bcfd86fa60883457fed7a87f7df0aaa69fa9dd3eb19b9a25a1211b0810304a
 Description: partition information utilities probedisk and probepart
 
+Package: frisbee
+Architecture: amd64
+Version: 1.2-20170928dd64-mod
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 524
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20170928dd64-mod_amd64.deb
+Size: 92222
+MD5sum: 6e10d7774d2c4506c8c640631706f146
+SHA1: 69d50dc09607cc8a3b0ed42d4faba1051b7fd32b
+SHA256: 8f1ffd3dfcb5f3e7ac3f18c57d6e03e9949e4ab5c516973003918f5e09b2665a
+SHA512: 4a4539aca1296001806cb9cbbe4d3ad3a67a58051fb14ecc1a91e8cb2269e23c0c6bc1b871a651f9b99d27c770a1ad494d019c9b75004952cef354afd36ecfbf
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: conky-all
 Architecture: amd64
 Version: 1.9.0-6
