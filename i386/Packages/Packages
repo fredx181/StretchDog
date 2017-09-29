@@ -3285,29 +3285,6 @@ Description: low level cryptographic library (public-key cryptos)
 
 Package: PeasyWiFi
 Architecture: i386
-Version: 4.0-0
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
-Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
-Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
-Filename: ./Extra/peasywifi_4.0-0_i386.deb
-Size: 16620
-MD5sum: cfcff2fcdf7cb777e978ed5f18592784
-SHA1: 33713e3986652cb2ed267f589cc4bcb3b56fe44c
-SHA256: 1da9b3aa631b5913e017bdbc6a3df3a9cbd15310752ec5a997ed4897ac2e7f81
-SHA512: 239b81e7e15146065f2a9a0a28716ac5a4a81fd44d1f45fee72b93f14691a90099eca8d3895166eb3b17fa6bbe0bb8f9780d7c82ad1c881554e762d0268db7b9
-Description: Reliable network manager
- -changes in v4.4-0 in peasywifi script by rcrsn51:
- - added option (Ethernet tab) to bring the interface down
- - added Names button (to select interface names)
- - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
- - Updated Help screen
- - fredx181, multi-user support
-
-Package: PeasyWiFi
-Architecture: i386
 Version: 4.4-0
 Priority: optional
 Section: base
@@ -3804,6 +3781,29 @@ SHA256: 9dfc172ce5e784dc524071eb3e14b7a16ddf32b1b7c94c142d982af43bc09f8c
 SHA512: e1490c50fe489c45b8a0932511a329a818b9ac56f20cda33329402299fa9507c4efd0a1556b6e0059806407f173efd459da39eddd9f6825e5f7bbb35c0bf625a
 Description: flite-hts-engine for DebianDog:
  stdout patched version by mcewanw with 1kB buffer
+
+Package: PeasyWiFi
+Architecture: i386
+Version: 4.5-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./Extra/peasywifi_4.5-1_i386.deb
+Size: 16616
+MD5sum: 240135cd09826e34a49f822f3c6e706d
+SHA1: 860891a27b02228dd9d27016d6a8b84018da88f0
+SHA256: bfa263584caac1fe36d849f1598dde19a31da4775139e29bcc330a2620c2079e
+SHA512: 8bf7e56ddebe73cbf35e919a29c81ed33873c2a34dd4ca29e36f2b66273fe0ab638378b3ca675e6fe921a3c9758cbfae955d1deef72c9f173675b461a4e659f5
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
 
 Package: peasyxorburn
 Architecture: all
