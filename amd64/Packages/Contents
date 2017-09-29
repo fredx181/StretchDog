@@ -78,8 +78,10 @@ etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
 etc/skel/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 etc/skel/Startup/killmenu-cached			    jwmconf,jwm-setup
 etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
+etc/skel/Startup/peasywifi_tray				    PeasyWiFi
 etc/skel/startup-jwm					    jwmconf,jwm-setup-dd64,jwm-setup
 etc/slim.conf						    slim
+etc/sudoers.d/peasywifi					    PeasyWiFi
 etc/weav/LICENSE					    weav
 etc/weav/cmd_lists/CMD1_combo				    weav
 etc/weav/weav_default.rc				    weav
