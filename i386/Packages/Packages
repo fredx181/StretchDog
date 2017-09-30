@@ -1035,6 +1035,26 @@ SHA512: dbf560128bdf2484013c2e2140590d81fe9c5c63b3993a46fda893bc82c18eafe4c19fc3
 Description: Mount .squashfs as unprivileged user.
  Squashfuse lets you mount SquashFS archives in user-space
 
+Package: quick-remaster
+Architecture: i386
+Version: 1.1.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.2_i386.deb
+Size: 159448
+MD5sum: fdd9587ac9772069ef7b659d48921faa
+SHA1: 9607f683d9cef007c95b92f5da29451202b2fcf2
+SHA256: 3d6ad27827f113eda7ee5ffba484cec1bd98e635bba4361baf626184810fc87d
+SHA512: aedeb70ccc387397e873d9386ab84611e46e7c61a5d35555256ff00a402b08da83308187ae93b89d50de2ab2cf5f2053c8687e214d1b2273cec1507456a65114
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version 1.1.2, cleaning, do not remove /etc/rc.d
+
 Package: fixdepinstall
 Architecture: i386
 Version: 1.0.3
