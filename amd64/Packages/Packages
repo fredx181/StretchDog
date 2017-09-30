@@ -1888,6 +1888,26 @@ Description: Warning - This package works only in DebianDog! Fix: Force being us
  - apt2sfs, GUI using yad
  - apt2sfs-fullinst, GUI using yad, can be used on a full install
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.2_amd64.deb
+Size: 159420
+MD5sum: 9db1f091873a4c36c0da7ab913508d3b
+SHA1: dc2e9b474ef073ad174d244a165569e0bbfd397a
+SHA256: b0b46e42c985df67ef08efe0a1db6c203de58c8f7e0b8c31090225b5a03014b9
+SHA512: d1df0affb4a9db2791f9a7eac2034ccdfcf35729891839db9ee92a6c13fe46d44258472768b6fe1839a512a3b60a82d2eb1831e69fd104bf2d2c4bbe6c31724e
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+
 Package: squashfuse
 Architecture: amd64
 Version: 0.1.1
