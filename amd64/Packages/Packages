@@ -459,6 +459,27 @@ Description: Tools for mounting and manipulating filesystems
  This package provides the mount(8), umount(8), swapon(8),
  swapoff(8), and losetup(8) commands.
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.3
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.3_amd64.deb
+Size: 159736
+MD5sum: c9c205a54c2f1615e6386c3e0af554f5
+SHA1: 11c1949198aa5fd92d10082f3d02f583d99433a0
+SHA256: b44f885042b806b78734cc6e54271443a9f3a60f613610c2d2334031cc8a37a9
+SHA512: 7b6c71db816aad45fba98463a202c12fc7a818a0d92a2065163f1a52405ab78490e1d4a03644ca7f73f1ef73d79972d7bdac5452706b85edd908a806215b27e6
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+
 Package: portablesfs-loadsfs-fuse
 Architecture: all
 Version: 1.0.4
