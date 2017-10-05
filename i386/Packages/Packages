@@ -1969,6 +1969,27 @@ Description: Load a *.squashfs or *.sfs module.
  - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
  version 1.0.8: second argument for loadsfs-fuse now supported, e.g. loadsfs-fuse /path/modules.squashfs <app-name>
 
+Package: quick-remaster
+Architecture: i386
+Version: 1.1.3
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.3_i386.deb
+Size: 159712
+MD5sum: ce74533fcc6e8818aeaa46d63b723b5d
+SHA1: b21bb73104aac4b6b4f63203d4dfdd84ead6839d
+SHA256: 5b01a563b56e08e48355b2a0f55d828562825bd27ca619e35fd08b9a39c55f99
+SHA512: 430164fafec34860c7bbeb0dcfe7eaaf71ff0bb576630b827c70e9f3391b38bc110bac273d0535e3eae3ee4ee9f4b2ddf99668b12293b4476094c7b523b58518
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version 1.1.2, cleaning, do not remove /etc/rc.d
+ Version 1.1.3, added GUI progress bar
+
 Package: porteusbootscripts
 Architecture: i386
 Version: 0.0.1a
