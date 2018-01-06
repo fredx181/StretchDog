@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: Debian
+Label: DebianDog
+Suite: testing
+Version: 1.0
+Codename: stretch
+Architectures: i386
+Components: main
+Description: DebianDog repository
+Date: Fri, 05 Jan 2018 10:44:25 +0000
+MD5Sum:
+ 59a2d16d9a7c6b6ed33a52b1c9a6871a           225296 Packages
+ 28daafbb89eb4c1cc0cbf3c629fbf901            82689 Packages.gz
+ 9a4be69b3ab163e8c53e9b17c0d5d50e              187 Release
+ 28daafbb89eb4c1cc0cbf3c629fbf901            82689 Translation-en.gz
+SHA1:
+ 8f6e34db852d0844e9c088a2451ef12f7efa7544           225296 Packages
+ c469a94b9646e182b7580c0007e5f9c0e178c5de            82689 Packages.gz
+ fd8653b7821c167d4fb4d2b98e256e398063922c              187 Release
+ c469a94b9646e182b7580c0007e5f9c0e178c5de            82689 Translation-en.gz
+SHA256:
+ dfc1ccb77ef558cc0eee11fedec0e01e17131679128d7e0420ab6078e81b52f2           225296 Packages
+ ab188c9a6588c8caf5febba04c7fe60dbcf94b46c1649ed368cb4b8d56676fcc            82689 Packages.gz
+ 7cbc4da259076d2ae34c580cca245768b43e86877a73378a18dd3152b5e9e470              187 Release
+ ab188c9a6588c8caf5febba04c7fe60dbcf94b46c1649ed368cb4b8d56676fcc            82689 Translation-en.gz
+SHA512:
+ f1cffde9f66a523fb0c5499473001a103f4c5abb2dbcfb5fc90ca01c63de66006c28c751f2f3b7b8ff38bbfa20b8a4255e012a01864278f93f73857bf30b6234           225296 Packages
+ cb1241ae16e211e58f36c7badd46a3b507142a5ce75b414456e0224bfe81716ee1f7a445014620418db2d1aef90aabfd18108a419d94bfb1dd0040839db99ace            82689 Packages.gz
+ 485af7d8c9b8575348c38cd6913ec9b4aeba18e0cd918659b3f06de1c8c7b3781978a485c1f476519f9d7956bf91745f6a13894b9db8f4c1cbad6c551c2c01e8              187 Release
+ cb1241ae16e211e58f36c7badd46a3b507142a5ce75b414456e0224bfe81716ee1f7a445014620418db2d1aef90aabfd18108a419d94bfb1dd0040839db99ace            82689 Translation-en.gz
+-----BEGIN PGP SIGNATURE-----
+
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAlpPVxEACgkQrYe8en1z
+CB0qBwgAqQPZaa1P+0A6y9djiqZ5bq+IfFB5SvHgaNSYXWmN9gfS9sc+d7fuQ+S6
+DZLBO6l4DpnPByvUs1ALly9B8ah2LlWgvxH+y9vNp8rSdirca7h2yfoBHLwYr7lJ
+2BnP8uJDLzznDpLfTSLfAXCqwHfi0QYeOz30vaJoucKE3q8jT7up3gRX+zFxJH/j
+46JZmLPkHt6STc2JjiB0HiR3GFmtGRbbab/+mFSHUgIMdXlwiPVSpQmv5qBFxMdG
+rZlMz6ELBWL5SPUYiGty+4QLyw40qxjAWaLQQM/Q/ETcc6zjZdy5KZEij7KpELz4
+OT4F0+8f4N6BCvB47fnIgvlNuczlbg==
+=jBGT
+-----END PGP SIGNATURE-----
