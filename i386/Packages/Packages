@@ -3702,6 +3702,20 @@ SHA256: 68c3bb6af223dfde996149435299aefdc3cb5dc8e4883fa140a418cc2a3a9c8f
 SHA512: 2db06ce89e1bfe7269470f3977efe695ecae9c47c8defde113fafde9494658c9c90bd984235ed7e05ab4477d1f48a6922deaacf813606013dc0e8e5e503f144d
 Description: Create GIF from dancing letters
 
+Package: timidity-old
+Architecture: i386
+Version: 2.13.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/timidity-old_2.13.1_i386.deb
+Size: 7058420
+MD5sum: ab9a4fbccf53a909d19af3fff8c30648
+SHA1: 7d56cca32086c7b99a560ec855e87c8950982b62
+SHA256: 85ce4259300eae9448e72cf4a30884e694e28872e23316363c18358a6dc7c309
+SHA512: a80ecbff1da2634c8b0d0163eb9ceb746aad3456aed6e5a192c0cc631a3e100f1f4be69cfedb57b28ae0fd7c53d6391e0fa3644bfbeb78f8c512dbd93e6421be
+Description: MIDI to WAV converter
+
 Package: peasymount
 Architecture: all
 Version: 1.3
@@ -5128,6 +5142,36 @@ Description: Secure Sockets Layer toolkit - shared libraries
  .
  It provides the libssl and libcrypto shared libraries.
 
+Package: img2pdf-old
+Architecture: all
+Version: 0.1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: python
+Filename: ./Extra/img2pdf-old_0.1.6.deb
+Size: 229102
+MD5sum: 6169a3ca10e438024c48b25a873d3c4a
+SHA1: dc402beca14fa3e9acc401a6c52241a61114f542
+SHA256: 349e15cbc2415f91922c67f3668b1f747e2713b7ccdb54bf9f36dbc9fb3d73bc
+SHA512: 60d56306575b769099cca645ec5a5f65bf78c57f1db65909afc401dc2de9a4da45b4c3b0bd72f1eb4eb4afcc59fab87a71cc7f6c1fa688625bc1e1152d773396
+Description: Convert a folder of JPEGs to a PDF > part of PeasyPDF
+
+Package: samba4-control
+Architecture: all
+Version: 2.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Extra/samba4-control_2.1.deb
+Size: 6598
+MD5sum: 078d85a40d4ef3ec8c3b7fcaf5321842
+SHA1: 6dba2a59df63baea8897c399df17d7ea2355f345
+SHA256: 433371e5aae2329650c0a8c712eb7094dce16d06ca78e192cc5e670632c9af3a
+SHA512: 8c8076b3033d8bc866f514645065f64e02da2ac04f09569f4d0cd6ce82f2ac71c99c817834a5a3add57e08f300a080bca2c7f413e13d8d3a693c4f16dac68a53
+Description: Samba server control panel
+
 Package: sound-card-selector
 Architecture: all
 Version: 1.0
@@ -5540,6 +5584,21 @@ SHA1: a726888df04de31ad5a3ef8d46a54c688db4f69f
 SHA256: 9560ce19e0c0420653cf64bcf9be232aa0e74e8e44ba3923849421b86f7762e3
 SHA512: 6fa176a0781b9cf3d6fec02d7f24e1f0d584f1ff616e1a6abeb6c8d68c6996230ae5e1597e0cfc8b16c7fe1682945bd54446806faf0339d83ec3777c94f3c805
 Description: Wireless Network manager
+
+Package: bt4stretch
+Architecture: i386
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends:  gmplayer | gnome-mplayer-1.0.7, bluez, libbluetooth3, obexfs
+Filename: ./Extra/bt4stretch_1.0_i386.deb
+Size: 152240
+MD5sum: c490f19ea4f0f0ac264c55d696489c5b
+SHA1: 70f3bc081afd81f785a28b24ebbc5c6ba5ba4f85
+SHA256: bb399fa34bacaafcf4facf5687e057abe62392c35a5685d27c337f347d33d2f6
+SHA512: 4dd9b03258183bb565c5304cda8e8031490167a9d7321c05e4718f928e157805b778d11137da47914d705bae532c290f6bc3375b503a65e4fdf3eab5f9057ea7
+Description: Bluetooth manager and audio playeer
 
 Package: SaveFolderBackup
 Architecture: all
