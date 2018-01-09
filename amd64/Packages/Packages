@@ -4719,6 +4719,23 @@ SHA512: 75d012d83085361d5e741d22ce923fef1612a9b91a901339842239bf13ef6b80daae2e28
 Description: DVD movie player
 	needs mplayer and libdvdcss
 
+Package: googledrivegui2
+Architecture: amd64
+Version: 2.1.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 6900
+Depends: gtkdialog, yad
+Replaces: googledrivegui
+Filename: ./Extra/googledrivegui2_2.1.0_amd64.deb
+Size: 1704474
+MD5sum: 4c35117b9a059d2d810e63587743cfdb
+SHA1: 6be641c4cdedcd58480af871749a731358dd06b4
+SHA256: bf7390e0cb31246f79817260808780ac6603747c1d544b1147465f619ffa7d6d
+SHA512: 55234fc33bc0972d67ea90367041acacb3bdb077b7ad96cb6333744ea2c45ec4b1ca575797009ead402f997cd13ee02272fe26edb3c3635fe7f569b711e9615d
+Description: Google-drive Filemanager v2
+
 Package: isotools
 Architecture: all
 Version: 1.0.2
