@@ -1,16 +1,16 @@
-i386/Packages/cr-index
-i386/Packages/cr-repo
 i386/Packages/cr-repo-s
+i386/Packages/cr-repo
 i386/Packages/gpg
 i386/Packages/.gnupg
-amd64/Packages/cr-index
 amd64/Packages/cr-repo
 amd64/Packages/.gnupg
 cr-index
 mkindex
-
-
-
+gitpush_stretch
+gitpush_stretch-index
+aufs_squashfs-k4.9.0-5/cr-index
+aufs_squashfs-k4.9.0-4/cr-index
+aufs_squashfs-k4.9.0-6/cr-index
 
 
 

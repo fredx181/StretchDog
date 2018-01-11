@@ -235,6 +235,28 @@ Description: Load a *.squashfs or *.sfs module.
  Changes in v 1.0.5:
  - kill processes which are keeping from proper unmounting (might be needed in some cases for SFS-load mode)
 
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.7-wiak-B-1
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./Included/gtkdialog_0.8.7-wiak-B-1_amd64.deb
+Size: 116926
+MD5sum: 25dcacd8a63cb489609071d62808002d
+SHA1: 92eee65c40a4fd909b0755b42f7da7fc22d09eb0
+SHA256: 40ebabe7c53635f2a84e965ea87605ebb1dad5e69af6270f3e23350db4cbab88
+SHA512: 352d385862ff4f72ffa445b978619e602da4bdbf4d8a6b834cb1f6306c6e19d085efa649771d548a6fc964b4e3a59a86ef01e792a43c2a180228d1e4219a8824
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
+
 Package: filemnt-caja
 Architecture: amd64
 Version: 1.0.0
@@ -284,6 +306,26 @@ SHA1: 44f20a78b6d85bd8bcbbe8385e249352a4f9ec50
 SHA256: 5d6fd24071e4c69b154177b951dc1a022393ef8a8da731ecd42b101ff9b8dba7
 SHA512: d4e289d33badab7ed447f524d0bfd894c81ec462c383cdda229128e681b3c09707e5166b75feea4e814d9964eded85c94daf25b577879579d20ffc77d739dd31
 Description: Wireless Network manager
+
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.7-wiak-B
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Filename: ./Included/gtkdialog_0.8.7-wiak-B_amd64.deb
+Size: 117228
+MD5sum: 59cab990df8c9c68e5c466d3e5501688
+SHA1: d1fbb2bbcf641a436000070fa159dc86c0d1b2c3
+SHA256: 55f448cf59b6338033ddcdc3aa75370ebec89fbabac9749d31edd13424551f9a
+SHA512: f6d3a427f4f428896e69e7e042f66909c87e320ac1bbb0156cffe51a5c5ea22e97a6aca973b3f41ffc97f0d34158b58e2bb69c98af32a56883a28c40327ec0cc
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
 
 Package: pburn
 Architecture: amd64
@@ -379,6 +421,25 @@ Description: Warning - This package works only in DebianDog! Fix: Force being us
  - apt2sfs-fullinst, GUI using yad, can be used on a full install
  - apt2sfs-cli-fullinst, commandline only, can be used on a full install
 
+Package: dogradio
+Architecture: amd64
+Version: 0.0.8b
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.6 | gmplayer | mplayer, file, streamripper
+Filename: ./Included/dogradio_0.0.8b_amd64.deb
+Size: 1864678
+MD5sum: 32a3d15599f51e2afb579d23fdc5e234
+SHA1: 2bdc7c1905caa45a92bbedf12816942ef2524d66
+SHA256: 5054209798660219f5298620a9e51e60130cbf10fdddcd364eceea04063efeeb
+SHA512: dd1b5b4b1c02b610f0a568d82abfa083604ceddfb5d9ab8aa72aa698728c1923178949aa13e8d9b9381755a5688891fab47fb9c9d42b17a5af934b2f8a063552
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
 Package: desktop-editor
 Architecture: all
 Version: 1.0
@@ -431,6 +492,37 @@ SHA256: e011f062be46fb09fe20f9a8c4de218b249dab6a1acaf1ed9aa9ed5cf591eb0a
 SHA512: 7f2feaa0df1051095fa6f8a2f08af92da6ec814cb75108e8aa8e2ccf1adc90cc4447fc482dc9163349623485c774f27e97d787413e6ee544f2b9107b1abef385
 Description: Mount .squashfs as unprivileged user.
  Squashfuse lets you mount SquashFS archives in user-space
+
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.6-3
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: libasound2, libc6, libcairo2, libcurl3-gnutls, libdbus-1-3, libdbus-glib-1-2, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk-3-0, libmusicbrainz3-6, libnotify4, libgif4, libx11-6, libxss1, libbz2-1.0, libcdparanoia0, libdv4, libfaac0, libfontconfig1, libfreetype6, libfribidi0, libgl1-mesa-glx, libjack0 | libjack-jackd2-0, libmad0, libmng1, libmp3lame0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libpng12-0, libsdl1.2debian, libtheora0, libvpx1, libxext6, libxinerama1, libxv1, libxvidcore4, libxxf86dga1, libxxf86vm1, libgmlib0, libjpeg8, libx264-122
+Suggests: gecko-mediaplayer
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Filename: ./Included/gnome-mplayer-1.0.6_1.0.6-3_amd64.deb
+Size: 3327960
+MD5sum: b7dc4797fa4609911a13e876e8421ede
+SHA1: b93d222386f6e56a66c3b5d36d08a60a54b37d09
+SHA256: f11c009742a9558651ad2e2451e8ec54429ee6f80f2807d7a45547d156f878a8
+SHA512: d02b5f3956ecdceaa5c425ede0651abca82c0c90868efa8b39743c426a1392f2da0cf5c42764c3978580125a8bb09f9b234870e26cda23a847b352f33caf798d
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
 
 Package: mount
 Architecture: amd64
@@ -601,6 +693,20 @@ Description: Yet Another Dialog - dialogs for shell
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
 
+Package: sfsload
+Architecture: amd64
+Version: 1.0.4
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 47
+Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
+Filename: ./Included/sfsload_1.0.4_amd64.deb
+Size: 6346
+MD5sum: 2f566247bdea44aea58cee34b3f04122
+SHA1: 1b6f92484985d944f65795a3bc97de71519e5978
+SHA256: 9d48dbce7f49efdca06c0e3de77e072aa6a9cf15977e8dead642635b51658e3c
+SHA512: c12cc1ce73293df3710cb365d1da361009b4f0f565bff5595c17f67b4ab050b7415fe7593b68ba43e1c50ba2ad3a85fec664fca9be02f3fb953cd8a7430a9a23
+Description: Load a *.squashfs or *.sfs module.
+
 Package: conky-cli-dbg
 Architecture: amd64
 Version: 1.9.0-6
@@ -649,6 +755,25 @@ SHA256: 9a17bf0f68598ad132741f477e1156b51c44c36911e7c647964a247376cd5ddc
 SHA512: 612805dbd80043aa2712168b50edb49d9cc734a31ebd41c8bcf8d861e0f745031c3645cfe416b8f070181f34d22c3a53eb57159ee9b09964655517b4e5d6c512
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
+Package: porteusbootscripts
+Architecture: all
+Version: 0.0.5
+Section: checkinstall
+Maintainer: root@jessie
+Installed-Size: 56
+Depends: libc6, gtkdialog, yad, rsync
+Filename: ./Included/porteusbootscripts_0.0.5_all.deb
+Size: 21488
+MD5sum: 02458d6ea850828eadf258029493e198
+SHA1: 3e8539578459309a400ebd6379beb7d088038347
+SHA256: caf6ee5a52ce954656d67c83885e2c0631485a68cce97aecb55a73b366323a97
+SHA512: 4a2b4771debc90c39c2100eaa7cca119695c3c49a381901853de7e934921ded7e12f3971c4c7d0fdd4227a2815bf9eacaf2f300ddd78b99fabe3bf77f3ea2529
+Description: Porteus-boot helper-scripts (Note: works only on DebianDog)
+ This version has included the scripts for the new-save-setup
+ Note: Removing this package does not make any change.
+ This is on purpose because the scrips are essential for porteus-boot to work
+ Bug fix: set the correct permissions for /tmp (save2flash script)
 
 Package: makeswap
 Architecture: all
@@ -966,6 +1091,23 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - Latest version from Adobe (= 16 Mb uncompressed)
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 18 Mb uncompressed)
 
+Package: precord
+Architecture: all
+Version: 9.0.5
+Priority: extra
+Section: audio
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 79
+Depends: libc6, gtkwialog, lame
+Filename: ./Included/precord_9.0.5_all.deb
+Size: 10318
+MD5sum: 6978817ac44a33d133a4c0dbeb268ba7
+SHA1: 7463b9cba0104c6b16f10a86eb8d47909e35c03c
+SHA256: 222720f4675e906827b49047dd509032cab7133ea3fe20978a75479a8d10b4b1
+SHA512: 665d65fb3d01fc1514a12713a9a5cbd176d32bfcc634da12503cacc139dd877a47f115faa1e7a993531faff110b7ebd6d6c8f3e76db3a6af12a397c5562f61cc
+Description: precord for DebianDog:
+ precord by mcewanw
+
 Package: pfind
 Architecture: all
 Version: 1.0.0-1
@@ -1128,6 +1270,47 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Easy add/remove radio stream items
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
+
+Package: yad
+Architecture: amd64
+Version: 1:0.38.2
+Priority: extra
+Section: x11
+Maintainer: fredx181
+Installed-Size: 429
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0)
+Filename: ./Included/yad_0.38.2_amd64.deb
+Size: 181324
+MD5sum: 9ff1bfa9f35e6806131dd2c2f178446d
+SHA1: 700cc75e2a9078cbd2cb762cd5b1f0a89c0433dd
+SHA256: ec1b1678dc39596ac917245e2fa9f61f2c0b24367c4f6ec04e5959bb1f19f619
+SHA512: 68c573f8cdafc1528688fc51532f6027a6dde9e6a5b7eba9108f98cded7d8807b4a6803eded6610c917f0daf71d5b542f905adc5abcdb2bc949e33a24a992163
+Homepage: http://code.google.com/p/yad/
+Description: Yet Another Dialog - dialogs for shell
+ Yad (yet another dialog) is a fork of Zenity with many improvements, such
+ as custom buttons, additional dialogs, pop-up menu in notification icon
+ and more.
+ .
+ There were two main reasons to make this fork. The first one is to remove
+ dependencies on deprecated libraries, such as libglade and gnome-canvas.
+ And the second one - as for me, Zenity looks like an abandoned project. Its
+ ChangeLog consists of just "bump version to..." and "translation updated" for
+ the long time, but many interesting ideas which are ignored by
+ developers/maintainers were in GNOME Bugzilla.
+
+Package: sfsload
+Architecture: amd64
+Version: 1.0.5
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 47
+Depends: libc6, yad, gsu | gksu, aufs-tools, lsof
+Filename: ./Included/sfsload_1.0.5_amd64.deb
+Size: 6420
+MD5sum: 030419cc7963e0c0518657d85d14a8d8
+SHA1: 8d4aa8fb84e9f4c362731332a1c8f2d68c1ba706
+SHA256: 5abfca5f63c258547293026c7f7785e98c4e917f7c1ec598103b563f8d84d61c
+SHA512: eb384523d825ff2ec6a0beecff699e0f876fc888ee9a4b081039886792a4d3f1e58fde7e6e1f21c0934648a5f342efd14987c953ab719073ef03669315131d56
+Description: Load a *.squashfs or *.sfs module.
 
 Package: move-in-crypt
 Architecture: all
@@ -1297,6 +1480,22 @@ SHA256: 66b30d51a0bc16f313627ba429c7cff0c660ae07680dc87d62e933dd698a3997
 SHA512: bbbe85638b426e4d4167b46c935fb0dc8e1770eb7effef5b34ee66c90139d231f5bcfd86fa60883457fed7a87f7df0aaa69fa9dd3eb19b9a25a1211b0810304a
 Description: partition information utilities probedisk and probepart
 
+Package: pfind
+Architecture: all
+Version: 6.3-1
+Priority: optional
+Section: utilities
+Maintainer: zigbert
+Installed-Size: 100
+Depends: gtkdialog
+Filename: ./Included/pfind_6.3-1_all.deb
+Size: 29100
+MD5sum: 4eb2ec28e428ebdb059d5f2347377110
+SHA1: 10c448f4283c7529057de9d87fa470a4121cbbb8
+SHA256: b8009e4d08cc130ab3481ce004c1e44ba120fbc8cad792beaf9bea7842840d20
+SHA512: e9d7a9d4f68fb2699e14292e101f40c497cc06b3c8ca23781b683fced62db133bd5824a128239d274d93156be8d156a52ed87d9289c16f513d6da56ddb306f6a
+Description: pfind-converted-pet-to-deb by zigbert
+
 Package: frisbee
 Architecture: amd64
 Version: 1.2-20170928dd64-mod
@@ -1364,6 +1563,23 @@ SHA1: 28a51eb48b67c0c04582366ad7de61902f9ac67c
 SHA256: 87aaff2055a6bba425fa1b6e2f768912fe65a47a7e6407577f3960c09877406b
 SHA512: 1ba8e2c8e0d129540db55f9e27aac56b223e1d78e9a34a668dea89a9f59c1ca67437f0f8f721647d77b3f037ea62a2a745d31c291bac0c783e6dd7cb73fe369f
 Description: Mount images, savefile, modules
+
+Package: precord
+Architecture: all
+Version: 9.0.6
+Priority: extra
+Section: audio
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 79
+Depends: libc6, gtkdialog, lame
+Filename: ./Included/precord_9.0.6_all.deb
+Size: 10334
+MD5sum: 6a2912b40c591715779fb7e0ee9e6574
+SHA1: 5c129ea630671203257abc2a545275cb9e2696d3
+SHA256: 4afd01c9c2411f4ac54f5f07483a29edd76c295292a2702e379a53bd5f38adfc
+SHA512: b4920e38e45dfdc8e1fa6ef27c65a49a936a4820b18e4f13fced017762c9baee552b4474ec76d8f1016473873dec33df76bb6a15f0427835e4750f0dbffc41d8
+Description: precord for DebianDog:
+ precord by mcewanw
 
 Package: gnome-mplayer-1.0.6
 Architecture: amd64
@@ -1929,6 +2145,27 @@ Description: Warning - This package works only in DebianDog! Fix: Force being us
  - apt2sfs, GUI using yad
  - apt2sfs-fullinst, GUI using yad, can be used on a full install
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.4
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.4_amd64.deb
+Size: 159600
+MD5sum: 76befacd569c94e5e685d5c861237c72
+SHA1: 863b14b6b48519eee5ddd0b92e8f12fc02258589
+SHA256: dc73d7acc125881903fc3f14c4b4ad1dcff24f3111028815bd59ef86f5272e98
+SHA512: 527ad9a1801ae12909f16184ef22f1bc799d4929078634e548d6adac6d3f6b90767053336aa2ce2953b0a305b5de9b674e3e0ef59f5b835a6bf63a7c09481145
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+
 Package: sfs-get-smokey-get
 Architecture: all
 Version: 1.0.4-stretch
@@ -2187,6 +2424,21 @@ SHA256: d6b2ce74aece8049a4355f37728c10910adb1be0fcab9f7ebdc25ca1c4a0463e
 SHA512: 99d44b521b7118de012e526fd1ab9eb395f1a9f1455754c376770b19bbbfbc044ecc90417254080179bee387467fc1396ac9c9d0f198d16d8903545860c4a246
 Description: Network port scanner
 
+Package: snappie
+Architecture: amd64
+Version: 1.1-1
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Depends: netpbm
+Filename: ./Extra/snappie_1.1-1_amd64.deb
+Size: 20484
+MD5sum: 4dc7cd1fa7f8f4c2560028624ba8eae8
+SHA1: cfd4df8f5fabdae1f8b203132184702a2c9ded17
+SHA256: 45d40e5565d2c982dca2c33f90cedbacca39fa2924555656129cdcef4e49a152
+SHA512: 665e6769b545eb3c732df62f7df843e1f227d62557627b61882a1a332f8365f54a2beb403a5a74ddd59e42afd13f11592601741aa6f26cccdb3f3c1b1b16bfd8
+Description: Screen snapshot
+
 Package: unzipper
 Architecture: all
 Version: 1.3
@@ -2232,6 +2484,21 @@ SHA256: 51bc19896ed8b8ca7f69f34fcf9bb26f0c93a3cad43780d4b5f6fb2bfdfad2b4
 SHA512: 2288abd5a858905a42028559b2050988aa3078fc6826a9c48880d1e77bd6b7fba41e15bffe91b4f98b66857d1a73b9b94d2b835b0ef55a3b6b173ead12711444
 Description: Mounts ISO/SFS files
 
+Package: camphonetab
+Architecture: all
+Version: 1.6-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs, mtp-tools
+Filename: ./Extra/camphonetab_1.6-1.deb
+Size: 3522
+MD5sum: 72bf7ae3c9f519492ea71b73955eeaa1
+SHA1: 428e16e6dfa2a8110d01d98e62e7e09833bc3f92
+SHA256: 1266a249c1e585104e833156b3d09c7c5fb242e26517ed57d72b0bacfea523f7
+SHA512: a2e2b339dd61d1d07df8c623dd1a6260f6bbd9a9259e1e7ff588ac8956592da03fb762c4ed1ed4313fe9e8be11141f1ffd4a4cac12022a8d51a01549f3cfe293
+Description: mounts hand-held devices over USB
+
 Package: httpfs2
 Architecture: amd64
 Version: 0.1.4-1
@@ -2252,6 +2519,27 @@ Description: FUSE filesystem for mounting files from http servers
  httpfs2 is a FUSE based filesystem for mounting http or https URLS as files in
  the filesystem. There is no notion of listable directories in http so only a
  single URL can be mounted. The server must be able to send byte ranges.
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.5.1-0-stretch
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.5.1-0-stretch_all.deb
+Size: 429018
+MD5sum: cd119c8a3dabe7961493c3467ba74b6f
+SHA1: b4f6265c56c5016cd72de943bd69fa3f316d1ca9
+SHA256: b4d079d37ffe154f770c8d159f753b3ef3a07cb2631108de32a64777e69c5b66
+SHA512: 845888ee31e6cfad3c376cedef0c8701f96b2ca7a4e1d5aa5bce248116c5f41c8324a749e45b6a5009605170cfb7758d6ff6196621c8e1aa1148721f1fd8fa6b
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: batterup
 Architecture: amd64
@@ -2283,6 +2571,78 @@ SHA256: 2f53839afeff59ff8fef3ca6fdfc23d5101631a89c790e932c055b53010328d1
 SHA512: 5c8e5031f9f211692f5cf9a93cc8a5a5905dc0a79b046f63c8ece4004938c1f1b07ea6368696d180c416c79c335b8d1bfd99399adc0b396e316172ad060e68d0
 Description: Control center
 
+Package: ms-sys
+Architecture: amd64
+Version: 2.2.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/ms-sys_2.2.1_amd64.deb
+Size: 14770
+MD5sum: 5d070acd023bb9ed0c3007ed415997e1
+SHA1: 90402f8a137ecf462119e30b090c31facb62ff7e
+SHA256: 637b8d94b0a2956cbe738ea1ae080396c16c3050f0326fbc6d4dc3c0aa4801e8
+SHA512: dbd74a98aa4a1f9fcae24b24a5c532b896835ca319a41c252fbc88c65ee88d1569251f2f519530d6d5441325d7c6d992b4b543d43250a4e1d2ed94a64c9aac91
+Description: Restores the DOS/Win MBR
+
+Package: iupluacontrols-stretch-gtk2
+Architecture: amd64
+Version: 3.24
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 1357
+Depends: iuplua-core-stretch-gtk2
+Filename: ./Extra/iupluacontrols-stretch-gtk2_3.24_amd64.deb
+Size: 415112
+MD5sum: 06c7ce4761cb507b76de3b0a942f9575
+SHA1: 6d0f11403de623ff79ab49fcec5de1ac80f8f73f
+SHA256: a60820fb3e639e12bfcbd8f756c571de97311a34da7f7fa92a53a503438f5aa0
+SHA512: fce22de0357d3fd6a38d4849eeed4d5e93bd1a93252efb5fe5794bce5d75ea153bbdd760fc98fe6406f615878f205c864d93037f0368384208466d294ac3f756
+Description: The iupluacontrols-stretch-gtk2:
+ The tecgraf-MIT licensed iupluacontrols-stretch-gtk2 program
+ provides additional graphical toolkit widgets for additional
+ functionality such as matrix drawing.
+ iupluacontrols-stretch-gtk2 by tecgraf-pkg-wiak.
+
+Package: camphonetab
+Architecture: all
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gphoto2, gphotofs, jmtpfs, mtp-tools
+Filename: ./Extra/camphonetab_1.6.deb
+Size: 3522
+MD5sum: 6d6163aa9dd77e213a4288fc1e1d33fb
+SHA1: 6d35f13814c39d28b90f591028b84a034c401afd
+SHA256: 42fab822c6f4e9733d8047d507effab697b8d8a54bc46300dc1c9d9164b56df9
+SHA512: 7511af6f022ddc66d5b3303863021be5bc34d250c462eab1e7def5270e1d24ef2258b5d67190c7e63d149ddea651a1a4484a710278abe4eed8cf6978b2b9cd42
+Description: mounts hand-held devices over USB
+
+Package: thunar
+Architecture: amd64
+Version: 1:1.6.11-1
+Priority: optional
+Section: xfce
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
+Installed-Size: 886
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.6.0), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.88), libexo-1-0 (>= 0.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libgudev-1.0-0 (>= 146), libice6 (>= 1:1.0.0), libnotify4 (>= 0.7.0), libpango-1.0-0 (>= 1.14.0), libsm6, libthunarx-2-0 (>= 1.1.0), libxfce4ui-1-0 (>= 4.9.1), libxfce4util7 (>= 4.9.0), libxfconf-0-2 (>= 4.6.0), thunar-data (= 1.6.11-1), desktop-file-utils, shared-mime-info, exo-utils
+Recommends: default-dbus-session-bus | dbus-session-bus, libfontconfig1 (>= 2.11), libfreetype6 (>= 2.2.1), libpangocairo-1.0-0 (>= 1.14.0), libpangoft2-1.0-0 (>= 1.14.0), xfce4-panel (>= 4.11), xfce4-panel (<< 4.13), thunar-volman, tumbler, xdg-user-dirs, gvfs
+Suggests: thunar-archive-plugin, thunar-media-tags-plugin
+Breaks: thunar-data (<< 1.2.3-3)
+Replaces: thunar-data (<< 1.2.3-3)
+Filename: ./Extra/thunar-no-root-warning_1.6.11-1_amd64.deb
+Size: 273594
+MD5sum: c3804311daad063ca6596b17a4e5770e
+SHA1: c3ff39e5ca7b9b9d7267e830ba9d46fbb6a45a47
+SHA256: c84374ed4cfd5101414bdb61aac2d09a0eb9397eacb5379cac12fad95a9ebef2
+SHA512: ebb0db22db7b4434813285b7e68b89bcbe4c991c2995363334413fea64e32e8e89706e8cb0a3fedaefced79fc9b6fdd3c2a172f0ea0c743b324fa491164b4040
+Homepage: http://thunar.xfce.org
+Description: File Manager for Xfce
+ Thunar is the file manager designed to be the default file manager for the
+ Xfce desktop environment. It has been designed to be fast and easy to use.
+ .
+ Also included is an Xfce panel plugin which can manage the desktop trash.
+
 Package: conkyclock2
 Architecture: all
 Version: 1.0.1
@@ -2299,6 +2659,21 @@ SHA512: 2a55a2ee81402089ac3535180b9587e232aeea7ad622c423ae9a78a6da628bab8d6406fb
 Description: Conky-clock v2 Luxe edition, choose analog clock display on the Desktop
  Choice from 300 clock images with the appropriate hands
  Option to display the date on the clock
+
+Package: touchpad
+Architecture: all
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput
+Filename: ./Extra/touchpad_1.5.deb
+Size: 6156
+MD5sum: 18ab5b250c9c7baa37d1fc9827560a65
+SHA1: 1a1ce609cb778c82e34c16daf4432d67076329c5
+SHA256: 505760460c8e8853d5710985f426ead21cbeb86ae765f4c4673d42cd71a9066e
+SHA512: bdd2493d912e525b1d5bf418e774d9c3369eb19fb0d241c1ccf6d3ada139e1bf2aa1457b2811ffcd386bf72220472b4708b119c00987fcf38d76a8d2d870b981
+Description: Touchpad/mouse/touchscreen setup
 
 Package: conky-std-dbg
 Architecture: amd64
@@ -2382,6 +2757,42 @@ Description: colored FTP client using GLib
  .
   Author:   Brian Masney <masneyb@gftp.org>
 
+Package: mpv
+Architecture: amd64
+Version: 1:0.27.1-ddstretch
+Priority: optional
+Section: misc
+Maintainer: fredx181
+Installed-Size: 21000
+Depends: libasound2, libbluray1, libc6, libcaca0, libdrm2, libegl1-mesa, libfontconfig1, libfreetype6, libfribidi0, libgbm1, libgl1-mesa-glx, libgnutls30, libharfbuzz0b, libjack0 | libjack-jackd2-0, libjpeg62-turbo, liblcms2-2, liblua5.2-0, libpulse0, librubberband2, libuchardet0, libva1, libva-drm1, libva-x11-1, libvdpau1, libx11-6, libxcb1, libxcb-shape0, libxcb-xfixes0, libxext6, libxinerama1, libxrandr2, libxss1, libxv1, zlib1g
+Filename: ./Extra/mpv_0.27.1-ddstretch_amd64.deb
+Size: 7120308
+MD5sum: 55da21c5af8b66f552cb52861638d79d
+SHA1: c81fc01d754ae169f6a188bce2a5c0bd56ca01e8
+SHA256: 358ec65646f27bd4831aa4f785d526201ef064abd2a00c01f3cc9a75147e951b
+SHA512: fd94931ec6307981a2926c4b495ae0e6b295294235c334dabb4f5ec740d38a8c46e4c742ab597fa1e37abd1ce6e7cdc8a5f818bca2d3c394b5542c57fc21718e
+Homepage: https://github.com/mpv-player/mpv-build
+Description: mplayer/mplayer2 based video player, minimal build
+ MPV is a versatile CLI movie player, based on mplayer and mplayer2.
+ .
+ This package is not part of Debian. It was created by mpv-build scripts with
+ statically linked ffmpeg (not libav) and libass from upstream.
+
+Package: peasymp3
+Architecture: amd64
+Version: 4.1-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gmplayer | gnome-mplayer-1.0.6, icedax, eject, xterm, libasound2-plugin-equal
+Filename: ./Extra/peasymp3_4.1-2_amd64.deb
+Size: 11964
+MD5sum: 5cf093bfb6e4b5dec70c700dcad616d5
+SHA1: e0d5c5da3992b897902cb9815d0a8f383b6a60cf
+SHA256: 0275bca2330b015a60b47d0799ff77535b377e4a8807d95caf6ad113c5d215e8
+SHA512: 5cf4ed3747bb7be7aba67764455d07f5b0a8368db2d0128bf04df44ed847aa1734d4ed7df478bcd28c43f5ecf8ce526b9de4f94ad573722132c61a715052182b
+Description: Media player, CD player, Carousel
+
 Package: youtube-get2
 Architecture: all
 Version: 0.1.9
@@ -2446,6 +2857,21 @@ Description: The Ultimate Music Player
   * duration calculation is as precise as possible for vbr mp3
     files (with and without xing/info tags)
 
+Package: bt4stretch
+Architecture: amd64
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, libbluetooth3, obexfs
+Filename: ./Extra/bt4stretch_1.1_amd64.deb
+Size: 153192
+MD5sum: 228353d722ea9f39eb1c5330a4235543
+SHA1: ee45e905b75b5c33d8779c9acc36983d26589632
+SHA256: 1a8276887187ef5007efb9f381bf3f16e46142e841caabe2ba8f3e26c1ad145e
+SHA512: b55716aa0464f1fe8dc83c8d28e64feb1f9678dfe1c34eb7b647cc2decad42fdfda322578a197c424a592ca8319bc677249f72ac61da49fe17efcd25bcfae4e4
+Description: Bluetooth manager and audio playeer
+
 Package: googledrivegui
 Architecture: amd64
 Version: 0.1.0
@@ -2491,6 +2917,19 @@ SHA256: f997447c8cd88ef9858a6c8f352ed3af1ddf3bcfe04bca9d661538d2c9d1cf30
 SHA512: 8f6b66a86ab8e91b6aaa8e8155641e10f9609148c95eccf58772bfb78b9cbd8ac4288e08811cd49f896471e4d0e303d89d957393dc72865443ec7d25306adedf
 Description: Sets system date, time, zone
 
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.3-1
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.3-1_amd64.deb
+Size: 6778
+MD5sum: dd0072b1333c0a505a37303144d1713f
+SHA1: 87b926bd9d1f4d878c820046cfb38ef870036305
+SHA256: d6bb4904518e91ca6924ecea4b5078b392de46bd2328fcbf09770c3429f45c33
+SHA512: 6296c433d83418d0f634a71f47be718f3e3cf6012ee2e64777690671c3e6e38c455592e235defdc1af474f13c22380c4064a475ddb6b0f9ee234dde46274f0fb
+Description: Load squashfs modules on-the-fly
+
 Package: slim
 Architecture: amd64
 Version: 1:1.3.6-5-dd
@@ -2529,6 +2968,27 @@ SHA256: e18a3f0b453c1826ce8442eb304825c63adb1a76583fc23d50928999aa39b574
 SHA512: efcb607048b7624bd60a1bb19f0a0e5ab16376a8b79c5c79d2978139297df0897a2afd0bd582e7fec939afeb30175412bb9efdf14f14b2b5f0067f77bfabb207
 Description: Mounts ISO/SFS files
 
+Package: redshift-gui-lite
+Architecture: amd64
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 389
+Depends: libc6, curl
+Conflicts: redshiftgui
+Replaces: redshiftgui
+Filename: ./Extra/redshift-gui-lite_0.0.1_amd64.deb
+Size: 102450
+MD5sum: d197f6c5f83ddda90863058e76fe9864
+SHA1: 5c9f5808edf3a4bce8dc8452bb2a315eaaf4f261
+SHA256: 98aba212bf515ce0e891a86f02f7e4ff10cdd5b146952ae2324cd1ddb6b82226
+SHA512: 418778b3e472643d8d1ea060b0bae16d578d89288ce8fb0f506012bf48ca3e218a380a6a93ef406184425c999b46f0079d826c8250e62578435bda5efd9a518a
+Description: Monitor color adjustment tool
+ Redshift-gui light is using yad ("notification" icon)
+ and the redshift commandline utility (yad and redshift are builtin) 
+ Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
+
 Package: yad-splash
 Architecture: all
 Version: 1.0.1
@@ -2544,6 +3004,20 @@ SHA1: 79cedf45ee487cce49e72e5f9f1e5917e928c60c
 SHA256: 1064c35efc9a5e0fa9cfea8b63a88f76832ba7bbf70f3b3a536f22bd12581f6f
 SHA512: bb02283cb90b93bd07b62fdfd281baf5cbc168e87684d8492248b8abd8b87ecfb2c26860f68fd0e1f26499d0a581427b314ded0b94228a4c1039ecd0614b8fcd
 Description: graphical yad message utility.
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.7
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Extra/upgrade-kernel_1.0.7_all.deb
+Size: 10654
+MD5sum: 4774c697f86fbcc8c33a874d21be7f22
+SHA1: 081ff3003ff358b61f566b6717fc51c607ad1cc3
+SHA256: d15061e3c46b7b921940b425972eb5124d87763d267df8eb88b37270e4a91523
+SHA512: 071c47a7ea4309891fb1646fa11fee3f31fff91c59eec10b25bea755f4e9d428e80ee05175b67e73cc4aac1f0c9411134608b1ac0cf620640b58cade3deb0bcd
+Description: Warning - This package works only in DebianDog!
 
 Package: googledrivegui2
 Architecture: amd64
@@ -2561,6 +3035,23 @@ SHA1: b982e37ecc1c050404ad99812e08da3917193165
 SHA256: f92612e1a1350f8d70ac50f90ea18b2371b2e87665e005b1bc880ab8f448eb33
 SHA512: e7319bacb553331367390d3b234a1c04e9868566d356bce64d6df2e6b09681dc19402a8ebfc4ede79aafc9294e4241cffcaa0b6588a592bc272f6875e126a056
 Description: Google-drive Filemanager v2
+
+Package: wex
+Architecture: all
+Version: 0.8.18-1
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 168
+Depends: libc6, gtkdialog, ffmpeg, weav, scrox
+Replaces: weav
+Filename: ./Extra/wex_0.8.18-1_all.deb
+Size: 32268
+MD5sum: 46d927a200d147c252253b870f59c77b
+SHA1: 6fa3f617c83e33c8594badd8e5f9369f1f3f4e7c
+SHA256: a81c77f5417dc25cbd06a75fc7326de72d103476744335bb7ec22708cb9b6019
+SHA512: 467c17ef40115c7e47a3246d6cc075851a4603903dc017f00b3a0fef9e2027bd60c4a2e261973f131ae9b9687cd9f9ba2a0ac07ba27ab51bd14f8f4ee81bbf8d
+Description:
+ weX is a media recorder for audio, screencast, or webcam
+ weX is by mcewanw.
 
 Package: PeasyWiFi
 Architecture: amd64
@@ -2605,6 +3096,22 @@ Description: Jwm custom setup for Debiandog, includes:
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
 
+Package: tzupdate
+Architecture: all
+Version: 1.1.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, python-requests, ntpdate, gtkdialog
+Filename: ./Extra/tzupdate_1.1.1_all.deb
+Size: 10378
+MD5sum: ec62b188f7317ac884f1b1c283ffe609
+SHA1: 071b298ad81e259cdbdde69b12ef42743e960200
+SHA256: 9cf5167c4b1dd8fd33b715e47b40229cde345119e233aa6c02040b2cf16c2a63
+SHA512: 8be166817614eba54821eb3cd3c4c85d7fdf1360d2b7e98a50ae210af244f094e8349d527c7fc454f1228b73000b4b16f6d859c4f75a8f2c3aff7f938dfcdf60
+Description: Automatically detect timezone
+
 Package: peasyscan
 Architecture: amd64
 Version: 2.12
@@ -2622,6 +3129,22 @@ SHA512: 97cf11ea342d7b525a6a44b8660678ee713d97863ae3b434fdfb477e87040f66d50dfb5e
 Description: Document scanning tool
 	contains the binary xscanimage-peasy
 
+Package: inxi-gui
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 569
+Depends: yad, perl, pciutils, usbutils, parted, dmidecode
+Filename: ./Extra/inxi-gui_0.0.1_all.deb
+Size: 127806
+MD5sum: 584a5998adf784154e962934458506d7
+SHA1: 4ed52d6b5344a313c0191495e5e9c556a0d9dd43
+SHA256: 3804baaf8803f61bad9ef11514ba89276f79853c79591d2b4c14a14f39f9d63a
+SHA512: a1e7990a54f0b218979542597702529426612bfe6435b3f07e6a56772e59e40be17dd1150105cee7165ab4d09aed9c4e76c16209f23ff7d8f759f4f7cd7551a1
+Description: System Info, taken from antiX, original by Misko_2083, modified for DebianDog, Stretch-live
+
 Package: dropboxgui
 Architecture: all
 Version: 1.0.4
@@ -2637,6 +3160,23 @@ SHA1: 97c0b21bf014ebfeb259edb55dc7cd36004b92b1
 SHA256: f984ef089563e9d49743f83ffcc150901612bc51874275ac27c910f3a00d8992
 SHA512: 48c210fc18a1436ae3937eac78b92bae2fd97d96a9947beaea25adaf3194b37eb8112323bc9fc4e44909eafc202617f363afa846b7e92b69f967b4e483f93085
 Description: DropboxGUI, by mikeb
+
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks
+Filename: ./Extra/upgrade-kernel2_0.0.2_all.deb
+Size: 1031988
+MD5sum: cabc5c15fbfe15e8254303ed34c48b90
+SHA1: 67383adc2e9f0bbc0969c0d9b8e304251f6329c1
+SHA256: 9539b12bfc4ee51d900b306fb0ac71d80aa118067ab950f1f4b582a5b6deec7b
+SHA512: c548ba246b1005a30cff453f0bac40fbb402f6567138cd3ef47ab217cb81f27e7ebad61e6eb60514a534aa4b1e8cf228b84c2692f8ebf8a62578f6eff764a77a
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
 
 Package: gifenc
 Architecture: all
@@ -2690,6 +3230,27 @@ SHA1: ee49757f9e19ada09fbab4b46efdd290076b28db
 SHA256: f2274a2da48e0155c7bb5847583ac20f88b1e4fb0c88d0844927045c6e9570c2
 SHA512: d2482c760e3f0d9028c90070c748356fcb242d6fe94b01438763f16997e39af5c9ebb6160df55eaeae21e1d99e224c383e880d25a4821faf1cd0f4a26b5bd6cc
 Description: Google-drive Filemanager
+
+Package: redshift-gui-lite
+Architecture: amd64
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 389
+Depends: libc6, curl
+Conflicts: redshiftgui
+Replaces: redshiftgui
+Filename: ./Extra/redshift-gui-lite_0.0.3_amd64.deb
+Size: 175342
+MD5sum: 9e6b2ba9a503b7f37a9e16449a91c9db
+SHA1: dcf19a2bd8f502e65105f86b44d6badaa62c7f63
+SHA256: 59ea0141aa6248663bf4da247c8be6cec5cbb6c542659cfe048bbeab4d17f01b
+SHA512: eb773f57a080567d6ccc4d601e23dbd84c472a3ada37ba3a4f14f69074539b5a90d54a145255d6b36f4b604dd6436f3d1b76d8fa4f5b9ec09fcd2693ea5f950a
+Description: Monitor color adjustment tool
+ Redshift-gui light is using yad ("notification" icon)
+ and the redshift commandline utility (yad and redshift are builtin) 
+ Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
 
 Package: roxterm-common
 Architecture: all
@@ -2868,6 +3429,22 @@ SHA256: 13fc923dc1af7b95a85168f03223d3ecb5cc8f157cb26cd7d28c0f133697f9ff
 SHA512: d2a82c6a9778b40058a1c2be5ac164a60ce444f685a82092138ed749bb7a0c5443970efe7fbb5633d695ac7a1040c068914cd7c7cdc3ff023af7e252bb299da4
 Description: DropboxGUI, by mikeb
 
+Package: gifenc
+Architecture: all
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 45
+Depends: libc6, ffmpeg, yad
+Filename: ./Extra/gifenc_1.0.2_all.deb
+Size: 15828
+MD5sum: f6f803e9aec33435531cf36b1d6e75d2
+SHA1: a08b449d84fa373fc9b4d2c7132840cd750f3ea2
+SHA256: fe82da75e759eed8c89cb889c3f6031816862c6d2f44bf222fc25184c90c7e87
+SHA512: d63826adb7cf9640b9e61cac07f991f6f777d1a4c40593d55e7e947b875a75c56e37256ff56d8125f3e44e66612cf3dd772667c54db7843efa5ca64c7b606f37
+Description: Convert video (or portion of video) to Animated GIF
+
 Package: gtkdesklet
 Architecture: amd64
 Version: 1.0.1
@@ -2883,6 +3460,126 @@ SHA1: 2a5ca6d85cd55ad7dfb00635fd03cdbcb68d50b3
 SHA256: f2f14a76a23627f789dead6d7688a9271c27bbf6577ac4f0cd2fa3713c0fc392
 SHA512: e4a838cdfc5e5b278229937f11690aad170b89ea4c0105841f24e47db469d1307fb785709a0da763c9bd2e0d5bb83f1a086667131dd1fda7195d6872a6e117bb
 Description: gtkdesklet-converted-pet-to-deb
+
+Package: yassm
+Architecture: all
+Version: 4.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan
+Filename: ./Extra/yassm_4.3.deb
+Size: 7522
+MD5sum: 9bb0fbe951ed8ca24bbfb86d4e196fbd
+SHA1: c8283dbabebc2c365c6a3c7afc6c624d78a46d25
+SHA256: 7f2c72875dad6306634347c4de1fcc6ae9e1890734b6a82f3aed7dd9443695c7
+SHA512: c74f32202989430fdd2aff684be31de23d3a8100ccea970b4b84eb6bb65cc7c3069c59093baa240289be6079fdfb01d790c87ac42f3444a640e19ca2757f6121
+Description: Samba share mounter
+
+Package: libxml2
+Architecture: i386
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: standard
+Section: libs
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 1870
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.15), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Recommends: xml-core
+Filename: ./Extra/libxml2_2.9.1+dfsg1-5+deb8u4_i386.deb
+Size: 833398
+MD5sum: bcb5b9fc3113f1eb362b8d1a625a43f0
+SHA1: 1094be1fe69d01766df72cbf95c4632b811f27bd
+SHA256: f70a6ce3d7504d79c3c0f403e03cd2611f40fdf57b903315b5f72bd1cfdf44ba
+SHA512: 4232d64b706bae1c030a98be965de7dcf055624d350ed28a7dac25201287d94f09a071433aa07ce25acc7d60da7a459603a3efbe57cdb1f18f9dfeba455e4481
+Homepage: http://xmlsoft.org/
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+
+Package: peasy-net-player
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: peasymp3
+Filename: ./Extra/peasy-net-player_1.0.deb
+Size: 4912
+MD5sum: 7033feeee2844716becbfc071c491c5b
+SHA1: 8a62fd2964dc1c8a7bf387f8815050f74f45fce2
+SHA256: 1554a0ce6224a53c492f6b554914528ca6f20dc1235c73b8a85209128cb31e58
+SHA512: b7caeeacd5b257e56c0ff9e4d41bdc71318c0601a91ef224a0a2cf51722639ed1411bfcefa7e10dff8a3b4ac403279edb22d96b4e5904b51ad88e72ad42f4bfa
+Description: Get tracks from HTTP music server, open in PeasyMP3
+
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.2_all.deb
+Size: 1035548
+MD5sum: 1614a3145c2183a2be94ffc7e928dcde
+SHA1: 9be5c4cf1f0329a3d62b7f3b93993badf51a44f0
+SHA256: 33be9e9de404f7a4ef06c2220f18b99b50d9cbd17be41a86438e4db9d3c169fd
+SHA512: 7f2d3405a853e358087fba409df046f2a034527ff00ec5b7b687c39a8f9f8e9f851d81761f50aefc22d717037ecf695c9b35ca72622e216a41dea2ca9cbad894
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
+Package: libxml2-dev
+Architecture: i386
+Version: 2.9.1+dfsg1-5+deb8u4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxml2
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2532
+Depends: libxml2 (= 2.9.1+dfsg1-5+deb8u3)
+Suggests: pkg-config
+Filename: ./Extra/libxml2-dev_2.9.1+dfsg1-5+deb8u4_i386.deb
+Size: 744294
+MD5sum: 8eb8aae2670ff63298f6be90898cad5a
+SHA1: ee17879845bbe9dd29480684100330e9bb00b0e1
+SHA256: 0e486455dfab196eaa34c691923187b5b0450fec7ba46479d63ef1be522699c7
+SHA512: 58d816e0e51938d56fdb207e8e9c1426d5f83674690b73f47de1782ed37e15f9d2a113f5a7a90635559f09f9b5160e010470871c98c8c8d6da920fc454f0cf41
+Homepage: http://xmlsoft.org/
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
+Package: bt4stretch
+Architecture: amd64
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, libbluetooth3, obexfs
+Filename: ./Extra/bt4stretch_1.2_amd64.deb
+Size: 119632
+MD5sum: aa3f4a369c900774b2e186e0ab410bae
+SHA1: 5ca3a46570193ed20be091f1bd9c15f2cea3e11b
+SHA256: 4c9d8b62d0f258679dd464eea5b101994974c1387f333da6c2ea05bd56dc4c51
+SHA512: d8d23f6574ac395c268fffd92cc4e6ee86c0e80c7da7311ed8ada25ee8e568449b4ab401ff9a511adc720f64f22fbf9b2bad77b00f9cdec6f0585a7924a962b9
+Description: Bluetooth manager and audio playeer
 
 Package: conky-std
 Architecture: amd64
@@ -2917,6 +3614,37 @@ Description: highly configurable system monitor (default version)
  .
  X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon,
  wireless, ncurses, ALSA mixer, apcupsd, I/O stats, argb and Lua.
+
+Package: evince
+Architecture: amd64
+Version: 1:2.32.0-1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1200
+Depends: libc6, libgail18, libpoppler-glib8
+Filename: ./Extra/evince_2.32.0-1_amd64.deb
+Size: 796118
+MD5sum: 40cc96b6d2fecabcbd885c2b7116fb98
+SHA1: c26df0c0bfb09b41eac400c2110226bbf6771e75
+SHA256: 5735539d239adb7f42aa9cb6cd6efd457ab5b067066fc901a9a5697fac8ff0b7
+SHA512: 7c8148afa18111e90c0abe3e4ca7c91f7573de02d347bc7f99db0add4e991b27d4d7c5bac9b83e4959ba7f56e85dff10126b84ea23516a5667f36a59ca7d8fe3
+Description: evince-converted-pet-to-deb
+
+Package: hplip-print-scan
+Architecture: amd64
+Version: 3.18.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cups, sane-utils, peasyscan, libjpeg8
+Filename: ./Extra/hplip-print-scan_3.18.3_amd64.deb
+Size: 786540
+MD5sum: 44390ea9299f49cb059b3b26bd67f329
+SHA1: 0745f28c55845dce22caf2b743b7117bf3d39493
+SHA256: 3e5ec8be0fc2b0495f485688194d284d9562efb7cccc8ff09104d562aed960da
+SHA512: 6f51882501a34bac1f30014805b5accd3afd5fef56c3e8ec7abd723e29bccaadda0643e27182cdf5e5fc5fba11f572de8c550da6dfd6a93ba656adf963f374ad
+Description: HP print/scan driver
 
 Package: libhunspell-1.3-0
 Architecture: amd64
@@ -2957,6 +3685,24 @@ Description: spell checker and morphological analyzer (shared library)
     forbidden words, pseudoroots and homonyms.
  .
  This package contains the shared library.
+
+Package: firewall-ng
+Architecture: amd64
+Version: 1.0.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 163
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy, peasyfwmon
+Replaces: firewall-puppy, peasyfwmon
+Filename: ./Extra/firewall-ng_1.0.2_amd64.deb
+Size: 18012
+MD5sum: 9a8280c0257a39295da1c72e83f96fc6
+SHA1: 9a64fdfb453f4c5bc70248e5d9d5fd01bad59be1
+SHA256: e00581f14844b6bb9a011b488e0bb3b3fdb5b65a64f402f1385645d25414a136
+SHA512: cfd138e4832088ae80f92fdbba3e8787f8e7e3adb8b6010b0b30ec0bb50a425c2a0bbb8893ede2fc04ed901bff32f210abd130c3ad128ef7670d1f7d1774d7ed
+Description: Firewall-ng by 01micko, based on Alien Bob's Firewall
 
 Package: upgrade-kernel
 Architecture: all
@@ -3090,6 +3836,22 @@ Description: X/GTK+ FTP client
  .
   Author:   Brian Masney <masneyb@gftp.org>
 
+Package: yradio
+Architecture: amd64
+Version: 0.0.6-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.6-1_amd64.deb
+Size: 199340
+MD5sum: 6075db3fcff81185255b4ecc1a250fa0
+SHA1: e55ea204a9a1461a6e7621719b371b97e2db5e91
+SHA256: 3846f93dffbd11b8e5f63ef62ac7c7a373b66e17d13f321f7b66ec6e0f83ef42
+SHA512: c98f2ed7756ef261069cb1aa2926d8a906e8717845b2f2c828ee4554baf0eeef0cae3a774d988426c0987428a7ce80a2a55b8f57fcdb6fcadc245a5e40e0012a
+Description: Internet Radio Player
+
 Package: roxterm-gtk2
 Architecture: amd64
 Version: 2.9.5-1
@@ -3115,6 +3877,36 @@ Description: Multi-tabbed GTK+/VTE terminal emulator - GTK2 version
  .
  This package provides the GTK+2 version of the binaries. The roxterm-gtk3
  package provides a GTK+3 version.
+
+Package: yassm
+Architecture: all
+Version: 4.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan
+Filename: ./Extra/yassm_4.2.deb
+Size: 7474
+MD5sum: 8fd98f411f40fefb950d8e80c5b15a1f
+SHA1: cb6a0cdb3aaebac20ea84f25008b67b66e057a92
+SHA256: 05dd5d9ff18fb31a287a8426e688f2ef5a1b7e56b3a130a515105e93cfc79ea3
+SHA512: 6a17b8b0c52a566d290dcb65c37bf92ad3299d6c9a3b806a70148f26f4207efc3b4b3e1f440dfc3e45259234f34369bfaa4af3c38dad6ed9edb195a45a33f554
+Description: Samba share mounter
+
+Package: inkgui
+Architecture: all
+Version: 0.5.2-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: ink, libinklevel5, gxmessage
+Filename: ./Extra/inkgui_0.5.2-1.deb
+Size: 2260
+MD5sum: 4139539a8939b1a6865e99ab21f22766
+SHA1: 6df7908064f491c0caf3cc609f125ba4ba59ebc9
+SHA256: 305cc39bf3391ee1eaa4a00a1774db39c0039195ea6b9b7576c3d1436730b753
+SHA512: 39940fdd1e33d0fe2ee805d277e731905fa29a85e8e620522db4120003bdcf70e3273cec3f9289d98df0e994c460bbb26fd81ce4ffffcb53d0bca8e7901cb5cd
+Description: Reports printer ink levels
 
 Package: f3-flash-check
 Architecture: all
@@ -3181,6 +3973,21 @@ SHA1: 0f1884769f06ec5f1d0c0a7aeccffd062026e0af
 SHA256: c780c04a5179b1e8ed82029377abe64b50e720cbb02a3395eb21d1efc247304c
 SHA512: 8bd6deb507310cd8ba90e8d2e8d18b0e9468be227a36c0c64d6b99d45db8823b3b1be2aa3dcf5bc0ebf400df890537fb1ad7e97a2b5d73fe370f9eed70e2b893
 Description: Test health of flash media
+
+Package: touchpad
+Architecture: all
+Version: 1.7-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./Extra/touchpad_1.7-1.deb
+Size: 5874
+MD5sum: 08fcec314f713a520204514c80bce99e
+SHA1: 8e7edf0662bc2c186a296f8528e8c8c5bbe3e84e
+SHA256: b060b8892b14911b481c7bbaf4e9a2d840bf54b07325ab6d7037fb8815a142f9
+SHA512: 929d95466da50e6ea5f11d2bc6ba80393847919b26bf1de0b8e83f1da24ce4151f989749f354714818a2714dca3c7981d7b6194eb09a774b407ae9dad7097dae
+Description: Touchpad/mouse/touchscreen setup
 
 Package: upgrade-kernel
 Architecture: all
@@ -3258,6 +4065,20 @@ SHA256: 39f274eba959f94ba0a20cfce6a0c76285efd7fcc9b160087eef434288d10d94
 SHA512: d8db6b8f885cb1a305c9472aa80004c01b3888b226157f44302865ad33261a7f96500507851f31406edd905972d23221646bb6ba7d43fc930636e67e8ea7b82f
 Description: Information about drive partitions
 
+Package: alsa-master-volume
+Architecture: amd64
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/alsa-master-volume_1.0_amd64.deb
+Size: 3916
+MD5sum: 0db048f1fafa70ae20fdc3d7902bc746
+SHA1: d8f5d9f670315f8e3a035b86a418cf13eb49e604
+SHA256: bac2d3bc45389bcb593dac7535fc1849ba74c68a7474d3b337b30e4e558ceb76
+SHA512: dc761e4f7d246c4fe5b604b41de3938baee1c5ccca079fca8f3db0a9d099757e8042afb70ae08958a184d3a440bd4a3bed29a26ad115ff2319198692128fc77e
+Description: Tray applet for ALSA volume
+
 Package: jwm-setup
 Architecture: amd64
 Version: 0.0.3
@@ -3291,6 +4112,62 @@ SHA256: bbea4fefde84620a92a31471c52c89f7104fa35aa84666cf56db6d8a1a1d8a6e
 SHA512: fbb491ce54796bbc5fba63e7017cd3dc6cf3105b77d6cc429193ea0e04c18c36667b8969ba5fd68182165663a7f36a37d11c6f3006a300dad14f44e8f7e75ca1
 Description: Sets system date, time, zone
 
+Package: peasy-dvd-player
+Architecture: amd64
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xterm, eject, gmplayer | gnome-mplayer-1.0.6, libdvdcss
+Filename: ./Extra/peasy-dvd-player_1.6_amd64.deb
+Size: 5872
+MD5sum: 22a737ce0995119d3172804022872766
+SHA1: bfa9fb0b7aa2d3f5ae8b84ff1b9c46a71cdeeebb
+SHA256: 7dae59f68f09f2569bae82875a08f0b379190f93cc556e567a828f7f1977115f
+SHA512: 8832c55409a56089cac4d14a497e6518b1b0febdac1b44cc2c85799a842ee238e3fa1bcda64be474c3d59e71d9c44123081bd7ce8d7dce4305c4b8defc5562c9
+Description: DVD movie player
+
+Package: peasypartview
+Architecture: all
+Version: 1.1-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasypartview_1.1-1.deb
+Size: 7288
+MD5sum: 86de3329534ac2331372ac1af9b0fdbb
+SHA1: 9afaef1d18f603f497c86fdd38024749ae101ad1
+SHA256: d23bf0c4f7933fc2cc60ed8388834e114ca5b00ebdced9f92a6081d27ae9dab6
+SHA512: 1639d812e99092cd9f6ff91e509727f64566995c8e865eac1767300510768854bcac876305a9be2d1577da1011624ef916d55a2a0a2e4c86eb61958d73f16a47
+Description: Information about drive partitions
+
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.2
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.2_amd64.deb
+Size: 6630
+MD5sum: 1c79c5f39bd62e39b359caccaee45562
+SHA1: e709af67b05153ac3466e4915992a60c8c3ad4e6
+SHA256: ce3df0b5b94fe08e3b2078480a9d7a7467bee7a5343703a34bdc085b42d942eb
+SHA512: 8d8b1440abc4641ab958c83c803e4f1a204d5a36e4b47f8affaf51fb20e812af86709a2b159bde54da3586752315f495d2ba571569812b4aed58bdd3a785782b
+Description: Load squashfs modules on-the-fly
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.1.deb
+Size: 3822
+MD5sum: 6c092fd24c22991fcb7a6f9165944769
+SHA1: 30ccc3494a96dfc0c930cc509baa49971a0d8bcf
+SHA256: d29dae8526f076306921be8be08424a1344b0c8fc5ce67c0b1e25de44e9873d2
+SHA512: 20890349afc8fce22c2cddb410201843365ac2b7082b7472a044c3b9a87c6a934a5c63cc6dc888f015a902f0968a5c6929736e23f401332a2942b955e36fec65
+Description: Select a sound card and set ALSA defaults
+
 Package: bacon
 Architecture: amd64
 Version: 3.5.4-1
@@ -3314,6 +4191,39 @@ Description: Free BASIC to C converter for Unix-based systems.
  Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
  clang/LLVM compiler and possibly also by other C compilers.
 
+Package: mm-view
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 73
+Depends: gtkdialog, leafpad
+Filename: ./Extra/mm-view_0.0.1_all.deb
+Size: 16992
+MD5sum: c9ceaeca391946f3356279ea01f811ce
+SHA1: 459e00d04c687310f527de05dbdb0705811c13e9
+SHA256: 43cc9f5c1eede3b1589b58c1d5eb09948e4be9ad1defe203a25e31fdd455a0f1
+SHA512: 51c1d521dc4a7d97dd2340db775fe9fe7a39625521076a0ca53a8e56bcb8d731f3dbc9839686469ccbd1a8d04e99f16b2ca873e5248df4eec4b7dbd49c1e498d
+Description: Universal File Viewer by Mochimoppel
+
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.3_all.deb
+Size: 1035396
+MD5sum: 2c8a1409ceaa3e9a3ccb06f0b7935652
+SHA1: 0b5b340765727f3ede020b1a7d4432b06a8067be
+SHA256: abffbeeee990146429ccaa4436ab32502d7597ab9a3c6b97c827bba686db181c
+SHA512: 875f480865395be243c1ae77fb10b33e7e752d6f800f66841746ff71f7608b46b76001efdbd3833c4294fdfbe8a55bb43ef13c2e1ee21e5ad1d622b36f7ad053
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: jwmconf
 Architecture: amd64
 Version: 0.0.3
@@ -3333,6 +4243,27 @@ Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
+
+Package: redshift-gui-lite
+Architecture: amd64
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 389
+Depends: libc6, curl
+Conflicts: redshiftgui
+Replaces: redshiftgui
+Filename: ./Extra/redshift-gui-lite_0.0.2_amd64.deb
+Size: 102920
+MD5sum: caa3df578fa80be463604b3bc2b8ab46
+SHA1: 6edd5bfe794d7bc1cad1ffede25e43e4510cd579
+SHA256: 397d6d752488df0f73fcdb162e3e8639682f67eb0ced92c61edfc44bd15774c3
+SHA512: 6f8d9994917595a90c70485e24baa6bd9195eecfc3bd2a16b64caf951ed25bd9e08444e8cde6e3eabcf7fd51e8be92c1c9c46be0db8402f4690193337a489c2c
+Description: Monitor color adjustment tool
+ Redshift-gui light is using yad ("notification" icon)
+ and the redshift commandline utility (yad and redshift are builtin) 
+ Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
 
 Package: libssl0.9.8
 Architecture: amd64
@@ -3392,6 +4323,32 @@ SHA256: 64ee4210c80c89c2b415e132972db22d4878d1a509b8fd7cb28ff659c5f474a9
 SHA512: aab5e919892b23462f8e69d5f69166784ebd41803a04c24a2df4b47e92bb21d4f21138850b867803e1e887fa3e5c2c0b76c9bba514071cfb4041483dae927801
 Description: Advanced text editor
 
+Package: stream2chromecast
+Architecture: all
+Version: 0+git20180507-0~webupd8~0
+Priority: extra
+Section: net
+Maintainer: Alin Andrei <andrew@webupd8.org>
+Installed-Size: 110
+Depends: python, ffmpeg | libav-tools
+Filename: ./Extra/stream2chromecast_0+git20180507-0~webupd8~0_all.deb
+Size: 26734
+MD5sum: 53bda6fed8c2b7d455c7f462d9b9b94e
+SHA1: e35456510ad342ff54402b8e1793f442b43c985f
+SHA256: c6ac18f8929298e042fad10ae6ea6b87519a2be50de05f7123004391bc57a539
+SHA512: c2eda0a9c730b684c48506eb23bba369fec359d172df83cf7d3e7e485b831ecb718db9e2bd77ad9eeb74703a6b19f9e8b842d59bf1ee048f3af643215631cb8d
+Homepage: https://github.com/Pat-Carter/stream2chromecast
+Description: Python Chromecast media streamer for Linux
+ Stream2Chromecast casts audio and video files to a
+ Chromecast device from Linux. It can also transcode any
+ unsupported files in real time and play them on the
+ Chromecast.
+ .
+ It is written in Python 2.7 and uses either ffmpeg or
+ avconv for transcoding.
+ This copy modded by wiak (of murga-linux.com/puppy forum) 
+ to allow piping from stdin via transcoder ffmpeg or avconv.
+
 Package: libvpx1
 Architecture: amd64
 Version: 1.3.0-3
@@ -3430,6 +4387,20 @@ SHA1: 1c4d3818c719555e9af9fbaaf138672ce6cb0814
 SHA256: e154fee04e53d1d8cf032f82e013d420283ae391d3d1c2756606f58d5657eddc
 SHA512: ae7285e6dcf4c5d58a963ddbb23efdbdbddc055415e169d95a683165d6a7a793228ce04af00df65335cbb3a57b936814df1f6b1077af3e5805305abae2180b40
 Description: Mounts ISO/SFS files
+
+Package: apulse
+Architecture: amd64
+Version: 20181001
+Priority: extra
+Maintainer: rcrsn51
+Depends: libc6, alsa-utils
+Filename: ./Extra/apulse_20181001_amd64.deb
+Size: 37062
+MD5sum: 8efdd21e2b2206084918e62a716fe686
+SHA1: fc2f4aeeb2c177151138e580cfa220fb51b2ce47
+SHA256: df2358e276260e411c7e69c3533901a85cce245b901052058a2d0543e0801d1f
+SHA512: 67db43eaf0fe4d7d212976f6b88a10cb4ed36066b894c6cacaf994f1ac784b4d0938afe504944aa5d9da667302821ea86b4e3ff2aba81b586ba5760cb85bd549
+Description: Pulseaudio emulator using alsa
 
 Package: mpv
 Architecture: amd64
@@ -3471,6 +4442,28 @@ Description: Reliable network manager
  - added Names button (to select interface names)
  - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
  - Updated Help screen
+
+Package: youtube-get2
+Architecture: all
+Version: 0.2.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu
+Recommends: locales
+Replaces: youtube-get
+Filename: ./Extra/youtube-get2_0.2.0_all.deb
+Size: 1589348
+MD5sum: 62713261e0142b3afccd90718b9d5946
+SHA1: 0a7de08eafd9a3cbc1c23389b1f81b3f95a1a109
+SHA256: 96ea574f3454bfa6bc324274e697bb2f2945a0eea946d9a24c08cf69aaedec33
+SHA512: 8d63a2e78ea4d28229e2566dbb534612b0fd46a79d6ad3e339216436a2c3c24cac5c36f794c7d4dbcca6b91663200d832222e8565f30350b0996c7530433c7c9
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
 
 Package: libmusicbrainz3-6
 Architecture: amd64
@@ -3616,6 +4609,22 @@ SHA256: 3627306c1b5d5a62eed6d6beb0e2cbb0080aa266313adf5cf99c0ed81cce2b63
 SHA512: 746152c572aadf2012e0f969e6126b0baf7426ea29bcefcd635d28dae1554a8fd39a1d18abae833d991065b39a89f68a5f372b38959cd7e44789dd03b21897da
 Description: Control center
 
+Package: yradio
+Architecture: amd64
+Version: 0.0.5-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.5-1_amd64.deb
+Size: 193266
+MD5sum: 82ecc64e09b7da8b53c5954ddefa69cb
+SHA1: be250358daa06796b24e5ac8c2ac60513adfa47e
+SHA256: 2835d204a0f2fa901c9938d5b19b0f0cd2295a0a4227a6f8b14be9191c1e6984
+SHA512: c502cf1928058494279ba19275e59bf49e56ab2829c9eca104e065f3675ce66aa3a0dd793beb155910a52b3dfb84f88199e3e9af4ef629659ba26d61d9522cb3
+Description: Internet Radio Player
+
 Package: weav
 Architecture: all
 Version: 9.1.0
@@ -3632,6 +4641,93 @@ SHA1: 9158ad6943f061ab8d3767eb76c2f12dcbfcb63c
 SHA256: 7760d85632120dbecd4bd5a6146129ac602932c36328477fb9d64d3129734652
 SHA512: e12217a00929d9f0326169e1c6a65f38489c967a1460293ba272c4a609f4ac74e0dbe2157b3c246a9e49c560e0dfb9da54a54505e634895481737a73e1525188
 Description: weav commandline processor
+
+Package: libnl1
+Architecture: amd64
+Version: 1.1-7+deb7u1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libnl
+Maintainer: Michael Biebl <biebl@debian.org>
+Installed-Size: 397
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.8)
+Filename: ./Extra/libnl1_1.1-7%2Bdeb7u1_amd64.deb
+Size: 143840
+MD5sum: 0d572419f752b750dd4424ba862495a5
+SHA1: d31f07c5fc75c265281c9ce448d102a1f3c2d5e7
+SHA256: ea0b99d6a1fec9a7d6bfcbd34ff5e3b854ea6925a5a5b26c73b028739603a84d
+SHA512: c44ba7e2eedb03680b02cdeb19fa3691aa97b031beb07fab37a1b364d3e499cfa571f69b7afe002df2dfd339728e62cb590affba139cf46882eabc33c7b11bfe
+Homepage: http://www.infradead.org/~tgr/libnl/
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+
+Package: iuplua-core-stretch-gtk2
+Architecture: amd64
+Version: 3.24
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 1103
+Depends: lua5.3
+Filename: ./Extra/iuplua-core-stretch-gtk2_3.24_amd64.deb
+Size: 344770
+MD5sum: 1fa2806ec6d46dc851da44c4731a832d
+SHA1: d091fb652219fb8d616276405974aa02db3adf28
+SHA256: 38ec7bfdbda64083ad469dd42fe670b6dee1eb23774fb6709a680c7459b324aa
+SHA512: 72041e2e80a772effa18dd02d93f7aab509c0ff5b866b456f1ec6767a14dc7d7601dec95034c5f762f4790450cf0fbc56141b2ad2d847d5ed7c04e71b4cef12f
+Description: The iuplua-core-stretch-gtk2:
+ The tecgraf-MIT licensed iuplua-core-stretch-gtk2 program provides
+ core graphical toolkit widgets for building Lua GUIs.
+ iuplua-core-stretch-gtk2 by tecgraf-pkg-wiak.
+
+Package: pdf-to-djvu
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 39
+Depends: libc6, pdf2djvu, yad, xterm
+Filename: ./Extra/pdf-to-djvu_0.0.1_all.deb
+Size: 15038
+MD5sum: b29f1af716006e372a16ee6975d56c40
+SHA1: ce384bf6b14033275019097053110697e357fcc9
+SHA256: d0e84cddfe5234e05d54cdabbd9693924e67ae31a9c7acf517a3ad96e0e59bbd
+SHA512: d2176e04e9db4a4d9a22087e1ba59ab4470cc185a6604e84ea56dbeba77313a8d72c105b50b3427bdc1b33caae7ecc5831b9e2a472160689fb3583f338b3177b
+Description: Simple script to convert .pdf to .djvu
+
+Package: p910nd-print-server
+Architecture: amd64
+Version: 0.97.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./Extra/p910nd-print-server_0.97.3_amd64.deb
+Size: 14480
+MD5sum: f65fd59f8e8bf6dab74636d1a34e0730
+SHA1: 55b3d310ba43dfa9550f44dc50316bd722a6d4b7
+SHA256: 4ab7f2c51dd5bd75c3995cd99581efc0643a790565d0b4f58ae98619642db932
+SHA512: 8fa8046acccb744584be0d029e35f3a9007b0e57f63e57702c4ec5bbaaaa13cf141096ab999a84d151894746957c4d2d925b934e21db5d2519a09345af6deb94
+Description: Manages printers
+
+Package: create-portable
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 1100
+Depends: libc6, unionfs-fuse, xorriso, yad, python, linux-user-chroot
+Filename: ./Extra/create-portable_1.0.1_amd64.deb
+Size: 333672
+MD5sum: 2a4b580ca74b092f25aaf242e27df20a
+SHA1: 3b26173f92fa35a5cb520248c1cbfd32e9552ceb
+SHA256: 01c486841917de12186a1fe0d6eb0bae660003457c0c51c1945a83b9cf0cf33e
+SHA512: cb53b5b42f9cadc02ba9f2f4977baef9bd14875704d8e80575862f2a6ccabf4881135eb76151659fcf408c340797c1d85e290ef2ce7474f4cf8019ecbedccce2
+Description: Create portable AppImage
 
 Package: PeasyWiFi
 Architecture: amd64
@@ -3728,6 +4824,90 @@ SHA256: 7f08d640fedf273e881f1c959b81a9441561fbb89781b239ccdde863424dd9d7
 SHA512: 648ca7acb15293382ac6ac17de31e2d35aa2a6f2f4d06b7af725324da21033262f53fe9e89235d66a9834a29c42aeb70f755fb1f3a9c7504b193f7439d7b0d54
 Description: Touchpad/mouse/touchscreen setup
 
+Package: cputemp
+Architecture: amd64
+Version: 3.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils
+Filename: ./Extra/cputemp_3.1_amd64.deb
+Size: 5494
+MD5sum: 0115d53b0febdad168298e601bb1adf4
+SHA1: a4fdb2286c2ac0563b15d6f3b9546fa8b056dbd2
+SHA256: 85b3cb0844385df4fe13dc2142e4715703de1f67c15d4916223cb258a0354e5c
+SHA512: 2981e4ed118d746ff2ca2c8eae0c1d7f7d1f0f3ee7869522970daf3417a9195984c32f40fedb792daed6c2e6ba02a9e6ee0411fb30963caca3976a1b6615fb96
+Description: CPU temperature monitor
+
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.1
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.1_amd64.deb
+Size: 6418
+MD5sum: d7f49acec0e8da572181c98fc429fc96
+SHA1: d4822fbacb35418e4de7ab3871758bf4bd30bcf1
+SHA256: 31299ffc5a284f80eecb167f7fe53606c371a676913c8537a0e03816ac589728
+SHA512: 3d7f5639f4c89993fa75d1f870159a9cae462729e1f5ce579a68ebbae9d348d3e9bc1bf77b67efc7aa1a3baf5f96ad4d2068cf4e2d9470d9597d68ac837c01bb
+Description: Load squashfs modules on-the-fly
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.5
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Extra/upgrade-kernel_1.0.5_all.deb
+Size: 10754
+MD5sum: 8e41b5d0452831ef0434defef3554cc4
+SHA1: 01e23fc544ff8b020acc64437787d569a70d8602
+SHA256: e5c1d1cf462780f501405876d78b911fbac8e79b933a6772526ec9270b03ad16
+SHA512: d428af2fddd27fe2d88d0df83cbfd73347f2f879ed039592c25a5bc1fd322088205cb50ec0eaf3d7e86a5036a9112afffc0e3d6185016c8cc7616129569a4de2
+Description: Warning - This package works only in DebianDog!
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.8
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Extra/upgrade-kernel_1.0.8_all.deb
+Size: 10708
+MD5sum: 9008cd64de86f5793a36693d3e3611be
+SHA1: bf0699fe32ff24749b3d2d68471e6be0955ec0c5
+SHA256: f0aa0d4c912461360d9b0fc048dade75dfb5987d86b82113faf0c428d425ce97
+SHA512: a1bce30b31497d809a8dee0f0d61efa32136b62243f7adbe31a94f766d04bf579f7e122caf58f3b328ce0e6de836a48293f85896f772ecf52fcd3c8aec9fd76b
+Description: Warning - This package works only in DebianDog!
+
+Package: diff-sync-umount
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/diff-sync-umount_1.0.deb
+Size: 12762
+MD5sum: 46cd9dbbfcb0a31f4ded152224ba5e12
+SHA1: 5dae45b1bc50891aa6441f745988dffaa40f2d1e
+SHA256: 8fb8a85301a49ad535df6b7801be9686f7955a130a80bd9c1e7dff0efa9f3223
+SHA512: ba484497c62de51aa7d92bdf2d2aa13bbed033a6a7779b7ab83cd07ee72e7657c559c22d95eb64e725d42a4bcd409af29c732928383ef5ea83a1809a960f0fe8
+Description: diffing, syncing, umounting GUI applets
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.6
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Extra/upgrade-kernel_1.0.6_all.deb
+Size: 10792
+MD5sum: e06a040771d5e38acb773f8437c24394
+SHA1: d90b92f4bf061091dc3cd6a832cc763d49cd97f8
+SHA256: 574a75c99f8b4be08b78da606ee58057aaba198293bbda3cd8f0284967aa8ae8
+SHA512: 931d2781dff67ace4679ca135c5a73693499c6c00a9f410660f1795b60f23f3c096ebbd00ebee8ad91b04a486e7896f88d4a0ed6bfe5678eab3c6d33eec58578
+Description: Warning - This package works only in DebianDog!
+
 Package: peasymp3
 Architecture: amd64
 Version: 4.1
@@ -3790,6 +4970,20 @@ SHA1: 7eb565f532a2d0cad1835d30364cb53f3eaa88b0
 SHA256: 13e5cbe62ccfd8633c29c0e9a4af33cb0988830fdd7a0b20d1e7c28a7cedeed3
 SHA512: c4dfd6e119b2b4c129c794efb161acfc630585426650882d41eb0357a56e7ae49174d201521865cd672cbb4bc32cfb0f30a578a615aa528f2ff2689182432f43
 Description: Volume control for system tray
+
+Package: upgrade-kernel
+Architecture: all
+Version: 1.0.9
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 20
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools
+Filename: ./Extra/upgrade-kernel_1.0.9_all.deb
+Size: 10710
+MD5sum: 43abd2a5d6e0a18edf425e423b938a41
+SHA1: 0e6aa4af69a33c478ac3b08b481707a8201a97f0
+SHA256: 535eef8e9727a2408c6f79d1b7a67d918ffab80362e57802f978cf15af86e9b1
+SHA512: c8b6e83d3fb12350f2bccb9d8b27ce569a1c5b75f5f6a94d1c2149dacf9e6ccc63e4af53c8015f3af0ddd44cd99b7b20f37e76423b67b7ff4d7d05e0c79c1075
+Description: Warning - This package works only in DebianDog!
 
 Package: touchpad
 Architecture: all
@@ -3874,6 +5068,22 @@ SHA256: 86c32ab31d49053c314c75ac1bd68e6158900d1400255f9a3bb52d57419539e4
 SHA512: b0d090cf48bd2d3a9deb91dc08cc93c3688799c4c88080fbf5b8ae19e972438f3b77c6cd23603023b53a35c0b1b14175a6c9f4cc4d79e3fde1ed763d85144b79
 Description: DropboxGUI, by mikeb
 
+Package: dropboxgui
+Architecture: all
+Version: 1.0.7
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 87
+Depends: libc6, gtkdialog, gxmessage
+Filename: ./Extra/dropboxgui_1.0.7_all.deb
+Size: 17312
+MD5sum: cef8ccde96a87e313b2b7660f7694934
+SHA1: 720a62c08f6035ddb00b8b7c475d7d3878ccea1f
+SHA256: a3cf47066a32316a55e2986e8772b46c5fe1979c88547681067af034ac6ade4b
+SHA512: 9232ab844d774a32e984e0c8ca84651c8df99ad707a835eca9f59e7b6f63a0f636afe41d385176f40d3e58c48ed21ac2aacf80defe85f0dd149f55e0c7bbff56
+Description: DropboxGUI, by mikeb
+
 Package: x11-xserver-utils
 Architecture: amd64
 Version: 7.7+2+b1
@@ -3949,6 +5159,41 @@ SHA256: a72d3eb4960ed6ad5638e89679390d773f91f199e40c0b61b212407c58967f6d
 SHA512: 12fb693f29bba01ea1d3fcb791a1c61cf160da96fd4652cab38abc486e0db6cea6aff24948ffb63126fdb6689293fb4f813561afbb008aeb474494b79e655102
 Description: Samba share mounter
 
+Package: wlanmaker
+Architecture: amd64
+Version: 1.3
+Priority: extra
+Maintainer: rcrsn51
+Filename: ./Extra/wlanmaker_1.3_amd64.deb
+Size: 195030
+MD5sum: d890ccd72f63b606bde3331432c43958
+SHA1: 9ebf1c2ecf9281c87b7a64db46faba9263747705
+SHA256: 927395225b8fd9690242f3e3b46f76f1ed4efd429165b8f2faa6a8c413d242a7
+SHA512: 2645cd16c599dba5b1be0ba2802558f34164a9dc5328b72eedc46dc3ecd4474c8da8888ed1ccdeed809021bc14cfe24bcc8a6396a1212feca73a6ec8ad192b85
+Description: Makes a WiFi access point, needs legacy libnl1
+
+Package: cast2chrome
+Architecture: all
+Version: 0.0.4
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 55
+Depends: bash, gtkwialog, stream2chromecast
+Filename: ./Extra/cast2chrome_0.0.4_all.deb
+Size: 7862
+MD5sum: b6d2cb3e7ffd7d7021200c284daf18bf
+SHA1: 559c681fe5bf05d65dfb3ce4883cfbb44f43d481
+SHA256: 0907c05e76aed11e6d80790936a8431273ff84650156d654d2dd34be33a58428
+SHA512: 031c1936efb823b55e02bc85965d4e5e7c003278d41c8f8dd2828d42be55b422a5537b5848fee05def6413dc4bdb6b9c1360873e2fe324e77ff61d3fef761f5a
+Homepage: https://github.com/wiake
+Description:
+ cast2chrome is a GUI frontend for stream2chromecast
+ Stream2Chromecast casts audio and video files to a
+ Chromecast device from Linux. It can also transcode any
+ unsupported files in real time and play them on the
+ Chromecast.
+ cast2chrome supports youtube urls and can save media.
+ It is written in bash/gtkwialog v 0.8.5 and above.
+
 Package: libgif4
 Architecture: amd64
 Version: 4.1.6-11+deb8u1
@@ -3972,6 +5217,20 @@ Description: library for GIF images (library)
  images.
  .
  This package contains the library.
+
+Package: batterup
+Architecture: amd64
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.4_amd64.deb
+Size: 7356
+MD5sum: cf7bd4243eb5cbd34a5e85d091899e2f
+SHA1: 24150ae9cd3be6cadc86af32511903a7a9a1660f
+SHA256: 6c69c776f9aaeef2712415919c1108b3529f3b76618d25021415af13ba5a800d
+SHA512: e0af1254672ccfad067428a6e6195dc2fbcc24ed7c42f9e59d2608f40d05909b58fe6f738a90479d32db2edf15db81e96d7725ba502dbd16d04f96f92b30351f
+Description: Batterup battery monitor
 
 Package: peasypdf
 Architecture: all
@@ -4053,6 +5312,28 @@ Description: low level cryptographic library (symmetric and one-way cryptos)
  algorithms. To avoid having this package depend on libgmp, the
  asymmetric cryptos reside in a separate library, libhogweed.
 
+Package: min
+Architecture: amd64
+Version: 1.7.0-1
+Priority: optional
+Section: web
+Maintainer: Min Developers <280953907a@zoho.com>
+Installed-Size: 162022
+Depends: gconf2, gconf-service, gvfs-bin, libc6, libcap2, libgtk2.0-0, libudev0 | libudev1, libgcrypt11 | libgcrypt20, libnotify4, libnss3, libxtst6, python, xdg-utils
+Recommends: lsb-release
+Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0
+Filename: ./Extra/min_1.7.0_amd64.deb
+Size: 43109716
+MD5sum: e20a7b70f4bbf01ffb4797e530feed97
+SHA1: 3dd7d515d1d2bdc3e78ec79639a4e91c4d213bb0
+SHA256: 8f706bc35d5e944fb86aef1aadbc96969e868f67d3f4af8680c1e6632245c96d
+SHA512: b90bd02a38a206172ab13e6922f5a2055e5e12dc21c1d69949273de27e53c0badede60cf94ced918d868cee049c2014f6e6d830e17697cf0b480df60c51c8205
+Homepage: https://palmeral.github.io/min/
+Description: Min is a faster, smarter web browser.
+ A web browser with smarter search, improved tab management, and built-in ad 
+ blocking. Includes full-text history search, instant answers from DuckDuckGo, 
+ the ability to split tabs into groups, and more.
+
 Package: jwmconf
 Architecture: amd64
 Version: 0.0.4
@@ -4072,6 +5353,21 @@ Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
+
+Package: peasyport
+Architecture: all
+Version: 2.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.6.deb
+Size: 4946
+MD5sum: 822afd0aa0f0d889807db53d9ed2a64b
+SHA1: d5aa461367a67871429b50629f55b3ae82db1cfa
+SHA256: 141e29b75d9231971df021806e141451448d054c615f29d390d041db8b344806
+SHA512: 52ae096ea707d3cfdab981da5bd4e98612d37e401326d5a966af1b87f87b46205e2ee88243a08ce79777d42a0afe5523a7866ee4535a54fe0f4d430de7efd110
+Description: Network port scanner
 
 Package: googledrivegui
 Architecture: amd64
@@ -4421,6 +5717,55 @@ SHA256: ac2cb19e5515606c76ae3c9b2f5e0cfaa9d7df70bdc84ff7f83d49ba47692c48
 SHA512: 1b065b64a2dcf3da050cef970f73cc39601d90e5f00a141aa5a32e453fbf416d9c2af2b8854bb14dac0f60bb7fabb6694b9c3189b91d36a1f67d533534c37166
 Description: Google-drive Filemanager
 
+Package: cputemp
+Architecture: amd64
+Version: 3.1-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils
+Filename: ./Extra/cputemp_3.1-1_amd64.deb
+Size: 6208
+MD5sum: 15383c0fc9b8cd50ed373d3aad052a2f
+SHA1: 94cdaec705a094308c7460c55302d36cdae203f1
+SHA256: e6c121492b34e4c83bc95fb3bc581aaa3a1f3204e8e5265470dacedf4d1ba50c
+SHA512: 25c724985f9a417e8ef28a7b19ed40329464810904a2992962d7b6c34ed1ff2409b39e82a77016459dfa26bbed283f73415a637ec5ceca21a976c9549d5b9c09
+Description: CPU temperature monitor
+
+Package: gopoststuff
+Architecture: amd64
+Version: 0.1.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 136
+Depends: yad, par2
+Conflicts: posterpy
+Replaces: posterpy
+Filename: ./Extra/gopoststuff_0.1.1_amd64.deb
+Size: 1043260
+MD5sum: 3fba5266823da7ed27840691742dcaf4
+SHA1: 0ee1faf42adb391dda1b05b2adc7951fdaba3c3e
+SHA256: 24f2f2a2ac0e1b659ac7f2ca02bb327de49357bc9e8e35ea0136d74bb483e29f
+SHA512: 9c40700f095e50f105bbfc071370268d135e86e7cff7474a7b32bb3502d0cb5c029e3fb89078fb4b55ec6f5030d50f258a436c0d639dd38adf57e9c77d807def
+Description: Usenet Poster
+
+Package: yradio
+Architecture: amd64
+Version: 0.0.6
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.6_amd64.deb
+Size: 199336
+MD5sum: bee8336ce6be34de074802dfe80cadcd
+SHA1: b20bbae434b912cca1eebc21cf2ca5cc641642f6
+SHA256: eb9b98a48b6cc35e2f95bff9e407210aeb4fed06e759ae74a35b2a47dc227143
+SHA512: 73b926af207aee6a542a1af96411a528f71a1462b13b9f4cbce3ca21bed038ad29f258a0858ed1031e465439f168aca82b9ae7aa0d6334a4c30bcc19aa23e786
+Description: Internet Radio Player
+
 Package: youtube-viewer
 Architecture: all
 Version: 3.3.1-stretch
@@ -4459,6 +5804,90 @@ SHA256: 81f6aafce7f3b09693c244ad36c3e2953f38750259482dee900fc79f5587d4a7
 SHA512: b7fa275ddf4d7e47d5904d2234646a92b252385909d7c461801a8a9696651ac6e339fd23a621aa52f841164eed855455feafec20bf811663f09f8e6e8ac6b422
 Description: weX AV and X11 recorder
 
+Package: peasypartview
+Architecture: all
+Version: 1.1-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasypartview_1.1-2.deb
+Size: 7288
+MD5sum: f981b0ce37acb7a827954c6fd9d2d25b
+SHA1: ac25eacad72be13af4c0e0260d01f765c0e5f6a1
+SHA256: d65c184474b634531d8573d6a2f05aa497f4c036fbbcd2acf5606883ab3bc0ee
+SHA512: e442abcded16543ce1ebfd930e0a5d6ede52759ba7b4284f2eab262d115badde9fcb145503da73bdde546fd61030ff82c4576556ffe6132289604610fcd2ad30
+Description: Information about drive partitions
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.4.deb
+Size: 4352
+MD5sum: 7982aa422b4954989424bf81aa90b185
+SHA1: b9be966593bf28d003c01bbc2a0979894d24fae2
+SHA256: b3a713cee8241ebcfa370e5d5d57bb30640e7195ec2f8a91cc800012ec6a72a0
+SHA512: 028f51991bdb1da921f043e0f87b532036f672c2ae232261e0b1de03693f9e7afc617bfd2da674ec1c767f15597ffc74a93eddb8fc70b056f7fc3426ecbb28de
+Description: Select a sound card and set ALSA defaults
+
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.6-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ccrypt
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./Extra/peasywifi_4.6-2_amd64.deb
+Size: 19064
+MD5sum: 3160b30cb049f0c8c1ec7c517169861c
+SHA1: ead16096c8263436f561f9faac5fe8ca3e204d08
+SHA256: 7e9e43b15180a8ebf788663550fdfc52fdad404a3fd36a6915a2ab6f99ff492e
+SHA512: 1dc355f854198f72c7f4b5dfe72cb37ce2bd7dcb6fa894f517e09bd216fb82e14fc1f215761767b8a4adfa15715f1c800b1d4fc8dc8cf7524d65dfb96d7ccd0c
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+
+Package: p910nd-print-server
+Architecture: amd64
+Version: 0.97.3-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./Extra/p910nd-print-server_0.97.3-2_amd64.deb
+Size: 14668
+MD5sum: 1f03fca32dcb2708c4ce37664f59e8c1
+SHA1: 7fc105da99f6b6c832500f5b173d246c2031335f
+SHA256: dea9ff613d166644388c72362576f6b95d4e29d9213a035b185cb5d60524e69b
+SHA512: e48e5f999187111670b55d2fd0a75ad2e4354be2eb7ca48e60c6b4df3fe0575f211ee63157fcdba46cc5375cb65b9e0592ed6e1289cd7fd5af5bb3d24844b309
+Description: Manages printers
+
+Package: gmplayer
+Architecture: amd64
+Version: 37957-6.3.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 2000
+Depends: liba52-0.7.4, libaa1, libasound2, libass5, libatk1.0-0, libaudio2, libbluray1, libbs2b0, libc6, libcaca0, libcairo2, libcdio-cdda1, libcdio-paranoia1, libcdio13, libcrystalhd3, libdca0, libdirectfb-1.2-9, libdv4, libdvdnav4, libdvdread4, libenca0, libesd0, libfaac0, libfaad2, libfontconfig1, libfreetype6, libfribidi0, libgdk-pixbuf2.0-0, libgif7, libgl1-mesa-glx, libglib2.0-0, libgnutls30, libgsm1, libgtk2.0-0, libjack0 | libjack-jackd2-0, libjpeg62-turbo, liblirc-client0, liblzo2-2, libmad0, libmp3lame0, libmpeg2-4, libmpg123-0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libopus0, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libpng16-16, libpulse0, libroar-compat2, librtmp1, libsdl1.2debian, libspeex1, libtheora0, libtinfo5, libvdpau1, libvorbisidec1, libvpx4, libx11-6, libx264-148, libxext6, libxinerama1, libxss1, libxt6, libxv1, libxvidcore4, libxxf86dga1, libxxf86vm1, libdvdcss
+Conflicts: gnome-mplayer-1.0.6, mplayer
+Filename: ./Extra/gmplayer_37957-6.3.2_amd64.deb
+Size: 6890620
+MD5sum: c2851e042cb38b8f463d8f5b60a61975
+SHA1: 949452339ea25c2588bfe98ae3e3f51fcada526d
+SHA256: 36eca3234b1bdaf8cf8f44057755187202f21f25b1038cef71adc61b3c646ec5
+SHA512: c2878614fcad63f32d8009e1b43773f9ceefc2d249a5c0082faaacb569faea814ec0ddc9d7f63c5926d04b82f38ea32c3ba8f94249ee76b3f32b8124de85cd37
+Description: Mplayer SVN-r37957, mediaplayer
+
 Package: dropboxgui
 Architecture: all
 Version: 1.0.6
@@ -4474,6 +5903,20 @@ SHA1: ef04e3038182750b67694429a8ace43ab90e37f6
 SHA256: 8d5224b735ee55af329edb70eebace77ab4c0a9107e8b779ae0718f15f79aacf
 SHA512: d4f1cab4e683544a6f9d3c119ac230cb80fa4e1f2c7c8f9a9453667db4ab8646f6cbbbf89e364bbe76f882d2909970b958d0bc69a785fc720fa7b227eb9a9430
 Description: DropboxGUI, by mikeb
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.3.deb
+Size: 3968
+MD5sum: 4fac64aa6daaa1fb850de63aa44bace0
+SHA1: eded92feccf9bc6d5fabf7af579afe27ff2efd63
+SHA256: 2f4936406056b4bb421fac91d0e2c250de54e1740db1ab0f2d6ccbe694159a6b
+SHA512: 0f3be819763932b324807b32bea7a3d87a508b673c29b01f8f222d90571391a57ae20fde74ae361da657235604305d624a313667a5675973a36e74c84e7f0726
+Description: Select a sound card and set ALSA defaults
 
 Package: gmplayer
 Architecture: amd64
@@ -4491,6 +5934,23 @@ SHA1: 47353f9bde3a6b4b4168634b85e5921fecbe66a5
 SHA256: cfc471d0c25554e1f859cfc8f143373b42343d9e05b54a13c381501ec01b5537
 SHA512: c134235d37c9661e1d7d8550a1cba7108a34bc1321ac2709295cd9e0c081be623e0a82042638a39281221ed23f1205ea662e84b5df0249f804105e2b0c509b36
 Description: Mplayer SVN-r37957, mediaplayer
+
+Package: peasyscan
+Architecture: amd64
+Version: 2.13
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./Extra/peasyscan_2.13_amd64.deb
+Size: 51230
+MD5sum: 34a1a4a9b615b3ab4730ab0e178ae7eb
+SHA1: 9c70fda9e2944c2e42f284dcca36a0d217a76c9a
+SHA256: ac87c4ee77c628bbbaaebdbf1e1f786dda6e5ff7da83240f8674756b4cb0b958
+SHA512: 4bc94d33f04ee204d12a643730ea2fba2e9e1776c19bc969c186c6f3f8f840cafa7b2874852e52a0a7e4d0a48e7064723e528b05ccbb8055e2ab91b21146fe80
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
 
 Package: libpng12-0
 Architecture: amd64
@@ -4537,6 +5997,21 @@ SHA256: 9a30e9bf2184e574d4f8fecc9a7ab1304c8dde92017034e7bea90673be406b2c
 SHA512: a9ef6d8374de0d80cc1cabec7310628c2c10b5fd5d91fd3fb70811a8bc510491eaa635a8ebd0fdb35d61b321f7867a9d0f7b3888cb7a3db5312daf84e42cf105
 Description: Peasy Firewall Monitor
 
+Package: pmirrorget
+Architecture: all
+Version: 0.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51 via gposil
+Depends: wget
+Filename: ./Extra/pmirrorget_0.1.deb
+Size: 5674
+MD5sum: 5181810e9da8cd2753854d0a27d5ee3d
+SHA1: 58aa5d2bdf85640225597656a2645245d7d2520d
+SHA256: 8172ef1ecc0618cf0178ef54c13d792d1667d03d7f2ae2e2a999e368f6a45edc
+SHA512: d00f400c35882de658951517fd2826fb7524825c410fee041e77ceba83ed604bab13006e537cff3034222c7b979cf301dabb1c96eda42a78e8b57bdc6450b0f2
+Description: Network downloader
+
 Package: img2pdf-old
 Architecture: all
 Version: 0.1.6
@@ -4566,6 +6041,23 @@ SHA1: 6dba2a59df63baea8897c399df17d7ea2355f345
 SHA256: 433371e5aae2329650c0a8c712eb7094dce16d06ca78e192cc5e670632c9af3a
 SHA512: 8c8076b3033d8bc866f514645065f64e02da2ac04f09569f4d0cd6ce82f2ac71c99c817834a5a3add57e08f300a080bca2c7f413e13d8d3a693c4f16dac68a53
 Description: Samba server control panel
+
+Package: pschedule
+Architecture: all
+Version: 1.1.6
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 88
+Depends: busybox-static, gxmessage
+Filename: ./Extra/pschedule_1.1.6_all.deb
+Size: 8264
+MD5sum: 8f985f73956743b1d8687034eaa84e3c
+SHA1: c2b9458979e3daea4b3e4b434969f3634c04fb88
+SHA256: 2b6f67978c4dc5c6ae04e92b57422c06595867721714a01cee20d2e77f1e9e7e
+SHA512: 1404704ec3b8a09f847c5b1f7624f892d5bdbc0fd23b0ec3c90ab5f7bbf54e3502d74bba5df2388f096bbc677ddf96e54ddc3f70ca0d0e244ecb069ef7113449
+Description: pschedule-converted-pet-to-deb
+ Pschedule task on time
 
 Package: sound-card-selector
 Architecture: all
@@ -4610,6 +6102,21 @@ SHA1: 286a9d8ae637a11c449f3bb560739c14f7394d47
 SHA256: 89e28c6b5ec3432a62cda954648e84888310c37af9a211f3fbddf06cc6ae8e6c
 SHA512: e95a11a2d6ab0224c8be1e250c90ee5e04223071ee132a67370e3d5eedef7463f282b860434c81675b07e48147ffaaa35fc547a642c51cef1fded5da72f21965
 Description: xhippo-converted-pet-to-deb
+
+Package: touchpad
+Architecture: all
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput
+Filename: ./Extra/touchpad_1.6.deb
+Size: 6122
+MD5sum: abd4a37962258d88cfcaca158f2a2e08
+SHA1: 0d58f607cbdd4d99ed72f0f38aa2a85be808d24e
+SHA256: c782323ad205f5aa48197a42120102df2fc1b169ac8ae49759eea3ca0f7c9a71
+SHA512: f4574eada4e72b103c44bdac50a3a617a501fffbbb6b7fbda9a04ae5e1708808157210d8f0442a515a732e5ca6b7657ee35065ab8d32c6cbd8481af180ab678c
+Description: Touchpad/mouse/touchscreen setup
 
 Package: findnrun-nls
 Architecture: all
@@ -4689,6 +6196,36 @@ SHA256: 98d6800ba19f445d4c71b5b7af7b2c99983b78d65cb2771b003a01df873af820
 SHA512: 018b58509a0ee5d79255e28e744a83d4f22cf9d573026e0988fa3b3b45a603b5fd31c9f485eaab67031928e7e3e05470f7ef48db9f11abf406c002bd46b857a6
 Description: MIDI to WAV converter
 
+Package: peasyprint
+Architecture: all
+Version: 2.9
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, cups, poppler-utils
+Filename: ./Extra/peasyprint_2.9.deb
+Size: 7934
+MD5sum: dd7fec7f7f4a0031f807ae7ecd0361fc
+SHA1: 797066c5a2a43c5c7564cae33136f6db74de4138
+SHA256: b21419e2bde15bba6a8f100df15a5881fea529e06fed3f8fce28c1bdebe7df20
+SHA512: 323b4a0c7f652cc038f9fc5d069f97521b8025b20ad38350a57a9e1495db4d4c495aa8547e90bbbddb1f36086187d6bd1d78752592de24c3ed478063dc38ae62
+Description: prints graphic files
+
+Package: p910nd-print-server
+Architecture: amd64
+Version: 0.97.3-3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/p910nd-print-server_0.97.3-3_amd64.deb
+Size: 14658
+MD5sum: b02dfac79a40bf82fda4a62d428a3804
+SHA1: 4e37e8ba8bcc448bfa8a3fe0bc85875738e43d2a
+SHA256: baeead574db1ea6dbf6a3275c6e273ea1ebd82629c25afc4e4218f80b4ebb1b8
+SHA512: 93ad39a81888b827cf716b0785d0a2096cfc0d9a956396f7f43bad2ed2775b3c29432709c8dabbc65388570fee27258ed877d5752a0e7568944a73b7d64097bb
+Description: Manages printers
+
 Package: peasyclock
 Architecture: all
 Version: 1.4
@@ -4753,6 +6290,35 @@ Description: Create iso, edit iso, burn iso or write (hybrid) iso to usb. Change
   - Display progress bar for writing ISO to USB
   - Changed entry box for to enter usb drive, to: display a list of available drives to choose from.
 
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.0_all.deb
+Size: 1032286
+MD5sum: 4d67f05871ff5c92e99b0fa387045bc4
+SHA1: 00a38d38114a6242fe6410bc832e95d5a4f6087d
+SHA256: 811d4f8e01b21ebf7abe7689386179b428c48ed1970d43036b03c249a2983a87
+SHA512: 3e963ffb8f5e85460da4ebcb9d0b46522a0daeefab229ba48e89f999414898452e7f5bfba72fb69f09aa6584a786e9e87689cabc66034cb94b7e13b35d527f5b
+Description: Warning - This package works only in DebianDog!
+
+Package: peasyport
+Architecture: all
+Version: 2.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.5.deb
+Size: 4740
+MD5sum: 11262c1ca408a3ae1b08c814b9f59c71
+SHA1: 11fe545fb77109dd4ccad3a4e765bebd9d6b44aa
+SHA256: c442439de1325cb38830b8e53b2b85327d6796a28df79ada9ab10eb130f9d189
+SHA512: 246fef7d36cf7c273c42b764cdb2af526265d286b5b861bc01457850ee56ade0d138760d8ae223e2c5b474967532ee900e147a108eb09ea4d6923de69dbc82b6
+Description: Network port scanner
+
 Package: txt2svg
 Architecture: amd64
 Version: 20170601
@@ -4807,6 +6373,34 @@ SHA256: de50f33e07ba6448f407ddf48ffb20edb5f4dc2cae227f091772eaf5ce1061b4
 SHA512: 833057f069b78323ed2080e0d6cf79913285cd0c6e1ca92c2bba84ebacd82ea038a19854a574ca1fcd5c2649f56357d0d13a19d0746df616c3376beebc8bf8dd
 Description: Mplayer SVN-r37957, mediaplayer
 
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.3
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.3_amd64.deb
+Size: 6772
+MD5sum: c7cb45ec980458288306f5c855e04d1c
+SHA1: ca4bf3b09ea6e861b91d0bc8e1206c8111a5bf50
+SHA256: 2cadb43e2605f13ac08c011d114f2e6ffc115f6356c664ccb0c9a746bc5fd8e7
+SHA512: 5fc0439c7909455910d2886eb89e5dfa90dad934ebd3955f27cbcb157745a7b82fa8207066e3444ea1a362c4bb956adf385d7cb4fb777adf6b42f72d56a7f968
+Description: Load squashfs modules on-the-fly
+
+Package: unzipper
+Architecture: all
+Version: 1.5-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gzip, bzip2, xz-utils, unzip, p7zip, unrar
+Filename: ./Extra/unzipper_1.5-1.deb
+Size: 3840
+MD5sum: 62e633a5d58b264d604c007bf60da413
+SHA1: 17cef7a4488657d0303b225f6ea2702cac79a202
+SHA256: bdfebd4a215f0bf7e029ad734e614133166f07a08d744a213e65cd9214f63f3b
+SHA512: d3a6a9f2fd77222bec4ec9c24c7b60a7f7f5bb9ef7ba369d0fdb425358c00e0e3cc3e2d49247bfb7600f90f229309fc89a6cf5d4655b5abb26354bff0f92547d
+Description: Extract gz, tgz, bz2, xz, zip, 7z archives
+
 Package: xfce4-whiskermenu-plugin-mod
 Architecture: amd64
 Version: 1.6.2-1
@@ -4831,6 +6425,22 @@ Description: Alternate menu plugin for the Xfce desktop environment
  buttons on the side. Top level categories make browsing fast, and simple to
  switch between. Additionally, Whisker Menu keeps a list of the last ten
  applications that you've launched from it.
+
+Package: yradio
+Architecture: amd64
+Version: 0.0.5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.34.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.5_amd64.deb
+Size: 193272
+MD5sum: f9be501c9bb84a6e8839964a0ac0e39b
+SHA1: 1a622b38432a5387aa8d49ccbb906f06002a1c28
+SHA256: c1e905640d4a50a2b221626d33563942a5f8663eb854573138ec63a7908b7f8b
+SHA512: b36fb8ac2513d809b3ea0656854b9bbfddeba21e0f6fa2af951e18f4f8436dae7954ff0f9fc4e0b91685966a10680287f13bcd156d11b3ed2e3d427961ab318e
+Description: Internet Radio Player
 
 Package: SaveFolderBackup
 Architecture: all
@@ -4863,6 +6473,23 @@ SHA256: afb05c7d4da9f0fd9e641550cd5fcdcab5b8f8a78cd8894c34c058f291138bfe
 SHA512: 4f0f61db2dbdd53794937b8057638fbf1e3e1c7bc048becfd4bde302dbd4dfcb7cf21c9703873e5eac6c95f6720a001a961e114fe3b9d7931a765961bf694711
 Description: Show drive icons on desktop
 
+Package: xlunch
+Architecture: amd64
+Version: 3.2.12-7
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libc6, libimlib2, libpng16-16, xterm, librsvg2-bin
+Filename: ./Extra/xlunch_3.2.12-7_amd64.deb
+Size: 1316696
+MD5sum: 44be8bf26460cfbc041794e18c36ecad
+SHA1: da37656805939d440bfe98146a8e71d391e3e848
+SHA256: d86e8ae3cd82897a176b51b0a3a16225332b328fd995e63cdf88406aa168c024
+SHA512: 0160fa713de7da34037c83a9fa32e73c7533d2d558098d0d50152ba61eebaec4830933cec169f4774c7f165c81aea9cf359b9b4df38791c6e4e375adb47c978b
+Description: xlunch by Tomas M
+ Graphical app launcher
+
 Package: apulse
 Architecture: amd64
 Version: 20150727-1
@@ -4878,6 +6505,35 @@ SHA1: 188f34e960060ab16bbd6dfff9de2e38e8b91941
 SHA256: 91aaccacda59f857d19996a87f9127e1148b55e12e04c69ab7d53ea142413cf8
 SHA512: b1970cbf26592ae73d3df80d73da0723548e3573d66e1907ef7f29838fbde9fd6f6e0acd42c8078c2791fe054de74af868ed53c416d1933b77bc847124760782
 Description: Pulseaudio emulator using alsa
+
+Package: p910nd-print-server
+Architecture: amd64
+Version: 0.97.3-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./Extra/p910nd-print-server_0.97.3-1_amd64.deb
+Size: 14494
+MD5sum: d60492c579f8ed666b24432488f977b1
+SHA1: ddcaa3542df69873e074c1a22bed55d961b142c4
+SHA256: 5ad8832f465e230042d8dee0ef65891797bbcd2b9da4a77635c8fb304ee89166
+SHA512: ca6bb57f1cc7746de1d58020b78c2074ebd4c371f959b77f91359cea815b17cf442e179b60795d352f74837e7f06e86faa42fc7dde09f0fc567e3728625e7e69
+Description: Manages printers
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.2.deb
+Size: 3964
+MD5sum: 650658b49d6984bbef2bb5f05a5bfde4
+SHA1: 6d80ab1ce8f6b04aaffe5d92db7e9861da3e3a58
+SHA256: ac76706f4ebdaf82d3b6a2d50aeb3fb566693be43b686ba26e8529e701629515
+SHA512: 706b45e73b54b4f05859364e02d8438222e67c0a4a2f4709966e851fbb1b70e4b868a84b2f99ee2798c7f69d0862095339f4be2a19b94e74f8aeb4400fa3d914
+Description: Select a sound card and set ALSA defaults
 
 Package: tzupdate
 Architecture: all
@@ -4910,6 +6566,21 @@ SHA1: 9b63e5c1ca87e279380d6dd8e3ff525a91845ab6
 SHA256: 857c5acc720cf64fcc8e3f63112bcf5ad9f51ec4638503cbcbe3dec8e1b94fe1
 SHA512: 01d7e372942ab5b514c08d713e68f3817c914c54b2d2997b0e7257d910591567c39a8f084cc83a1bcd42eef0d955b4bb7aec458d30a825a184c9b8d9fda4659c
 Description: Automatically detect timezone
+
+Package: yassm
+Architecture: all
+Version: 4.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./Extra/yassm_4.4.deb
+Size: 7484
+MD5sum: 4e801c1ea8900b86a7c48aeb7f384ffc
+SHA1: 83b7f64592cdd375cc2d31adc128114621b9fbe9
+SHA256: 7171d10a2fd2674414aa39eb72e66bc8e33b920362a838c18429b6cb44a854dd
+SHA512: 7a61ca48eebab3f7eb64540610c61ee58eaf767c517babcacbe99cb6bd8447d6e53844efb92cadda29374139e8accb7a83c6c21832409ac102b8ac429139156e
+Description: Samba share mounter
 
 Package: unzipper
 Architecture: all
@@ -4947,6 +6618,21 @@ Description: X/GTK+ and console FTP client (metapackage)
   * version for the console, using only GLib
  .
  This is an upgrade convenience package, it's only useful for depending on.
+
+Package: touchpad
+Architecture: all
+Version: 1.4-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput
+Filename: ./Extra/touchpad_1.4-1.deb
+Size: 6110
+MD5sum: de4e8b0ba9a4cc2e6fcc46c860f24dae
+SHA1: 1788a0a6767f48abb12c6f5af2f2866c0f753be6
+SHA256: 1e68ec87b4a3343c9ee5bdd046600ffb158f7124ced64e388adeb209eaaf2841
+SHA512: 6a5f86494e323880cb6f65afa57a92cfe259ea790dbc613ff866164d6b96098946b4cee93e7f4c0431cfcfbdca85d6d0468f110fcbc7443f8f8484dde37acb9e
+Description: Touchpad/mouse/touchscreen setup
 
 Package: broadcom-wifi
 Architecture: amd64
@@ -5041,6 +6727,35 @@ SHA256: a8ce8962d0074451d31b917ffdac1756afe5e20f043442cbb21e62403182580e
 SHA512: 8e77fe218b6aa9d4496510e80edc797102202fa9dc7a33784770853d8363218125cb0c78dd06f97ec4482f4a59322c22d8a3c44f5c53ec39975abbd1d50af111
 Description: Picdrop, resize images, by Terry (sunburnt)
 
+Package: peasymount
+Architecture: all
+Version: 1.4-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/peasymount_1.4-1.deb
+Size: 3964
+MD5sum: 4f6d5fb547df6da0297730402e5561e7
+SHA1: a740186283d8b642d695c17169076a6b31da06a5
+SHA256: f2a97c9b1dbf2e2047e8d6f27b7aec5abbc054275f0788414e4ec3c82409dc5d
+SHA512: 97cdfc2a7130206091fff99fa1772b757347579dec45226d0703ef54aa219a776a8ee9a32599cb879b57ad0e7585f349787b09c5e1a7f7d78e35dfcbb7691ea8
+Description: Mounts ISO/SFS files
+
+Package: peasy-net-viewer
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: viewnior
+Filename: ./Extra/peasy-net-viewer_1.1.deb
+Size: 6664
+MD5sum: 997ab6f902322d80248682cb6f5f9918
+SHA1: 0f26630951622d928248975728e2e4e96553b618
+SHA256: 764befeefb5e46f8b658311b63bfbc6ea3d4cddd38cb4aaecc36eb3c533c0fca
+SHA512: 5d9836c546582df67e69abab0ff68e86373f108b72eb62aabb697a85114ead1d40f959a72eba5a182cc7fc1fbdd2937bb60456d85bdf349dc90140d2f23d8524
+Description: Get pictures from HTTP server, open in Viewnior
+
 Package: snappie
 Architecture: amd64
 Version: 1.1
@@ -5055,6 +6770,27 @@ SHA1: d883a5c468d5a229d8957b3059d2627a3b1f4830
 SHA256: 78b6564dcfc9a9cc91873a2073980da33ed0eac7baa034a3e127c6e800b12f9b
 SHA512: 0e372bdef529e897cca529ab515ac6d488a57297c04368da8deed5ecbfc79d825c1212a2c94222490d84356bbf1ce7018ea24d053447d121f21dc3d0a4916206
 Description: Screen snapshot
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.3.1-2-stretch
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.3.1-2-stretch_all.deb
+Size: 412186
+MD5sum: 13457e47a68e41f7113f5818dc54acc4
+SHA1: a9918a848c62f8cadfb9aeb957b16ef9ad652838
+SHA256: 1943f30782b9ed6b383742c56aba98cec3078097a173bddaa44138f58515203e
+SHA512: 59b44b9e31ff1e9967796271811b006b4eb7441c4a2c76fcffd9caeeae8acc1ed7857ec74b4edc63d491171ea7338dba721c9c8d2f333d70d819861d7652093e
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: xvidcap
 Architecture: amd64
@@ -5128,6 +6864,30 @@ SHA256: 9f76504fd9b1dad2c0fb0f35039114743411319c77d8e9971bb6d1ec39b61961
 SHA512: b65a80eb8190d0908cd42ff8ee05fa1afde228c5cb38a4f6f92980dba763e1e49d35e96f78e442ee64d7d7474c11af5ebb34fef30258ae9ed0e4cdc16c7c1e22
 Description: mounts hand-held devices over USB
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.6-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ccrypt
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./Extra/peasywifi_4.6-1_amd64.deb
+Size: 19010
+MD5sum: be7af9f92ee586310689c587e99ad6c1
+SHA1: 04bad2293c183bb78a8719be088ce1409228448f
+SHA256: 4ccf7e2afedd759e45ef5d62bca9cb996fd7a9d2e667c16f790872bdea0a0afd
+SHA512: a74ce40bca95f5c7e46baf070e1d7d9dcf88b6f0dcdd1159f7844ce0c67e61d4efb905bfb363b1e1d2b5ed1063d5980367d3c61cc457fc9d207bad2ed9b80d87
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+
 Package: madedit
 Architecture: amd64
 Version: 0.2.9-1
@@ -5162,6 +6922,21 @@ SHA1: 08e45c7bfedae8b531a16a79a79876977a52fb42
 SHA256: 0d7e8890c345e5eaaf943b0fd57ff60fe57eec4debbbe73771ad8b5e03ca306b
 SHA512: b6da309d18171fc981f8a262ee40b3b3624a060d9a6e0f614befa71b34cc889123859c86b1d9e692c5087e5297bd46152e29c8dac347b14603eae8a2dd2a3e21
 Description: Media player, CD player, Carousel
+
+Package: peasyprint
+Architecture: all
+Version: 3.0
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, cups, poppler-utils, peasyscale
+Filename: ./Extra/peasyprint_3.0.deb
+Size: 7992
+MD5sum: 4ff047c2991cf9d9761185c37f32af14
+SHA1: 3fc02fc7450355e51bf4e7a465cfb6b87a316fcb
+SHA256: e2ff8db9cde93ea76953d346f7ccb558e5406aa70cee4496b22048dd8eca444f
+SHA512: 949032b1b9247b08786a84a4547705c36460fee451860ee2f37158dbc4cbb8af8deb9d709cf932e57284196a709ecbde70210a6fb90884a0bacacb69cb64886b
+Description: prints graphic files
 
 Package: peasyxorburn
 Architecture: all
