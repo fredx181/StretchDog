@@ -44,7 +44,6 @@ etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
 etc/ppp/options.gprs					    frisbee
 etc/precord/.precordrc					    precord
-etc/precord/precordrc					    precord
 etc/pwf/ethernet/eth0.dhcp				    PeasyWiFi
 etc/pwf/interfaces					    PeasyWiFi
 etc/pwf/udhcpc/default.script				    PeasyWiFi

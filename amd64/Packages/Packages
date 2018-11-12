@@ -1091,23 +1091,6 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - Latest version from Adobe (= 16 Mb uncompressed)
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 18 Mb uncompressed)
 
-Package: precord
-Architecture: all
-Version: 9.0.5
-Priority: extra
-Section: audio
-Maintainer: wiak <https://github.com/wiake>
-Installed-Size: 79
-Depends: libc6, gtkwialog, lame
-Filename: ./Included/precord_9.0.5_all.deb
-Size: 10318
-MD5sum: 6978817ac44a33d133a4c0dbeb268ba7
-SHA1: 7463b9cba0104c6b16f10a86eb8d47909e35c03c
-SHA256: 222720f4675e906827b49047dd509032cab7133ea3fe20978a75479a8d10b4b1
-SHA512: 665d65fb3d01fc1514a12713a9a5cbd176d32bfcc634da12503cacc139dd877a47f115faa1e7a993531faff110b7ebd6d6c8f3e76db3a6af12a397c5562f61cc
-Description: precord for DebianDog:
- precord by mcewanw
-
 Package: pfind
 Architecture: all
 Version: 1.0.0-1
@@ -1563,23 +1546,6 @@ SHA1: 28a51eb48b67c0c04582366ad7de61902f9ac67c
 SHA256: 87aaff2055a6bba425fa1b6e2f768912fe65a47a7e6407577f3960c09877406b
 SHA512: 1ba8e2c8e0d129540db55f9e27aac56b223e1d78e9a34a668dea89a9f59c1ca67437f0f8f721647d77b3f037ea62a2a745d31c291bac0c783e6dd7cb73fe369f
 Description: Mount images, savefile, modules
-
-Package: precord
-Architecture: all
-Version: 9.0.6
-Priority: extra
-Section: audio
-Maintainer: wiak <https://github.com/wiake>
-Installed-Size: 79
-Depends: libc6, gtkdialog, lame
-Filename: ./Included/precord_9.0.6_all.deb
-Size: 10334
-MD5sum: 6a2912b40c591715779fb7e0ee9e6574
-SHA1: 5c129ea630671203257abc2a545275cb9e2696d3
-SHA256: 4afd01c9c2411f4ac54f5f07483a29edd76c295292a2702e379a53bd5f38adfc
-SHA512: b4920e38e45dfdc8e1fa6ef27c65a49a936a4820b18e4f13fced017762c9baee552b4474ec76d8f1016473873dec33df76bb6a15f0427835e4750f0dbffc41d8
-Description: precord for DebianDog:
- precord by mcewanw
 
 Package: gnome-mplayer-1.0.6
 Architecture: amd64
