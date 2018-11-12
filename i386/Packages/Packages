@@ -5578,6 +5578,28 @@ SHA256: ed7a1daeb6b8c426b6f2ab3f7e2c4564ca721d34e823e2814946293fc8947da9
 SHA512: 1549e9b0aa0a49978605a75c50766c633659d417306f1dc6efa1ab176ec7913460599cde89f83323094803178a18efbe1829d86d000c2a01ffbd08938b477933
 Description: Light window manager
 
+Package: cast2chrome
+Architecture: all
+Version: 0.0.4-2
+Maintainer: wiak <https://github.com/wiake>
+Installed-Size: 55
+Depends: bash, gtkdialog (>= 0.8.7-wiak-B-1), stream2chromecast
+Filename: ./Extra/cast2chrome_0.0.4-2_all.deb
+Size: 7896
+MD5sum: 339daec4950f644fdf95d885bf979d36
+SHA1: d2aeef211f66ee6d76cf87c4d6e118d29619dd28
+SHA256: c02d966c2b80143be78c6f18cf0688170afd201ab9759b10524c07389cd23ea8
+SHA512: 5301de4ac0267ec303364a1106cc6c7f8cf1fd62c96281e19eb920af47a528c1ecbee4f80c5b926af2bdb445db5918e2c637b77e729b3535a91267cdd1f2d12c
+Homepage: https://github.com/wiake
+Description:
+ cast2chrome is a GUI frontend for stream2chromecast
+ Stream2Chromecast casts audio and video files to a
+ Chromecast device from Linux. It can also transcode any
+ unsupported files in real time and play them on the
+ Chromecast.
+ cast2chrome supports youtube urls and can save media.
+ It is written in bash/gtkwialog v 0.8.5 and above.
+
 Package: youtube-viewer
 Architecture: all
 Version: 3.1.5.1-stretch
