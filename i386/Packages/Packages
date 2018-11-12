@@ -1096,23 +1096,6 @@ Description: ffconvert for DebianDog.
  ffconvert by MakeDEBPackage-GUI.
  checks for Debian version and recommends libav-tools if it is 8 or higher.
 
-Package: precord
-Architecture: all
-Version: 9.0.5
-Priority: extra
-Section: audio
-Maintainer: wiak <https://github.com/wiake>
-Installed-Size: 79
-Depends: libc6, gtkwialog, lame
-Filename: ./Included/precord_9.0.5_all.deb
-Size: 10318
-MD5sum: 6978817ac44a33d133a4c0dbeb268ba7
-SHA1: 7463b9cba0104c6b16f10a86eb8d47909e35c03c
-SHA256: 222720f4675e906827b49047dd509032cab7133ea3fe20978a75479a8d10b4b1
-SHA512: 665d65fb3d01fc1514a12713a9a5cbd176d32bfcc634da12503cacc139dd877a47f115faa1e7a993531faff110b7ebd6d6c8f3e76db3a6af12a397c5562f61cc
-Description: precord for DebianDog:
- precord by mcewanw
-
 Package: quick-remaster
 Architecture: all
 Version: 1.1.0
@@ -1758,23 +1741,6 @@ Description: Yet Another Dialog - dialogs for shell
  ChangeLog consists of just "bump version to..." and "translation updated" for
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
-
-Package: precord
-Architecture: all
-Version: 9.0.6
-Priority: extra
-Section: audio
-Maintainer: wiak <https://github.com/wiake>
-Installed-Size: 79
-Depends: libc6, gtkdialog, lame
-Filename: ./Included/precord_9.0.6_all.deb
-Size: 10334
-MD5sum: 273c477432a96e2500967e9c5f95e3cd
-SHA1: bcdee548e41547339b538d82078e98bfaebe6522
-SHA256: f443c250f9510fc80a5c278ecc0601f89c450cab1fd683cfe7750986260b75aa
-SHA512: 41b6c182afc3bcc98eae8ddd1f5fc370a1c51e4e2228a082d74834b71bc0c7ef0192cbd8bfe8018684e97d303ec03d8c9a763041329297984ccf0847342ac683
-Description: precord for DebianDog:
- precord by mcewanw
 
 Package: create-portable
 Architecture: i386
