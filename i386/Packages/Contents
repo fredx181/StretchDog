@@ -5812,6 +5812,8 @@ usr/local/bin/portablesfs				    portablesfs-loadsfs-fuse
 usr/local/bin/postergo					    gopoststuff
 usr/local/bin/postergo-sel				    gopoststuff
 usr/local/bin/pschedule					    pschedule
+usr/local/bin/qiv-gui-info.sh				    qiv-slideshow
+usr/local/bin/qiv-gui.sh				    qiv-slideshow
 usr/local/bin/quick-remaster				    quick-remaster
 usr/local/bin/quick-remaster-start			    quick-remaster
 usr/local/bin/quick-remastergui				    quick-remaster
@@ -7951,6 +7953,7 @@ usr/local/lib/X11/mini-icons/networkout.xpm		    sns
 usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/file24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/ok.xpm			    sns
+usr/local/lib/X11/pixmaps/qiv.png			    qiv-slideshow
 usr/local/lib/dillo/dpi/bookmarks/bookmarks.dpi		    dillo
 usr/local/lib/dillo/dpi/cookies/cookies.dpi		    dillo
 usr/local/lib/dillo/dpi/datauri/datauri.filter.dpi	    dillo
@@ -9080,6 +9083,7 @@ usr/share/applications/poster-sel.desktop		    gopoststuff
 usr/share/applications/poster.desktop			    gopoststuff
 usr/share/applications/precord.desktop			    precord
 usr/share/applications/pschedule.desktop		    pschedule
+usr/share/applications/qiv-slideshow.desktop		    qiv-slideshow
 usr/share/applications/qtweb.desktop			    qtweb
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
@@ -13296,6 +13300,7 @@ usr/share/pixmaps/puppy/qual_9.svg			    wifibox
 usr/share/pixmaps/puppy/shield_internet.svg		    firewall-ng
 usr/share/pixmaps/puppy/shield_no.svg			    firewall-ng
 usr/share/pixmaps/puppy/shield_yes.svg			    firewall-ng
+usr/share/pixmaps/qiv.png				    qiv-slideshow
 usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/reboot-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/restart.png				    jwm-setup,jwmconf
