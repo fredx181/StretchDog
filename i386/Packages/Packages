@@ -3086,6 +3086,23 @@ SHA256: f950e47ba5c18ad2d2de6b87ab736b7ae4ad7ea6b1a1b5dd0588a304b41eb86f
 SHA512: e7c95fdf2447926bb431d171e5e64d7d39db1819e3126e265c4570f68b12fb489e02e36bd9e7801ff5768a17f5c422e8bb5a3fe81a496c5e07e8c34a19b4b9c5
 Description: uextract-converted-pet-to-deb
 
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.4_all.deb
+Size: 1035264
+MD5sum: a4644683136544b1e0f47289169dc7db
+SHA1: c49238947b534a353cc65cba4854909808116ff6
+SHA256: 3b03cf09399d187927caef4258685306dc70ffdd27ab18b2ef9df1984971092a
+SHA512: 7130e6e42be7d732d8e860eac58ecc14aa46cd05d6d2944ed53dd2f6f2391b90dd2dd6aeffcd43d68594c36c2c01f658e3e4ab6f4a8774f8817163bfd847f446
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: googledrivegui
 Architecture: i386
 Version: 0.3.2
