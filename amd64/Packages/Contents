@@ -5632,6 +5632,8 @@ usr/local/bin/postergo					    gopoststuff
 usr/local/bin/postergo-sel				    gopoststuff
 usr/local/bin/ppm2mpeg.sh				    xvidcap
 usr/local/bin/pschedule					    pschedule
+usr/local/bin/qiv-gui-info.sh				    qiv-slideshow
+usr/local/bin/qiv-gui.sh				    qiv-slideshow
 usr/local/bin/quick-remaster				    quick-remaster
 usr/local/bin/quick-remaster-start			    quick-remaster
 usr/local/bin/quick-remastergui				    quick-remaster
@@ -7714,6 +7716,7 @@ usr/local/isodata/live/stretch-x86_64.sgn		    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee
 usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/file24.png			    grub4dosconfig
+usr/local/lib/X11/pixmaps/qiv.png			    qiv-slideshow
 usr/local/lib/i386-linux-gnu/perl/5.24.1/XML/Fast.pm	    youtube-viewer
 usr/local/lib/i386-linux-gnu/perl/5.24.1/auto/LWP/UserAgent/Cached/.packlist youtube-viewer
 usr/local/lib/i386-linux-gnu/perl/5.24.1/auto/XML/Fast/.packlist youtube-viewer
@@ -8307,6 +8310,7 @@ usr/share/applications/poster-sel.desktop		    gopoststuff
 usr/share/applications/poster.desktop			    gopoststuff
 usr/share/applications/precord.desktop			    precord
 usr/share/applications/pschedule.desktop		    pschedule
+usr/share/applications/qiv-slideshow.desktop		    qiv-slideshow
 usr/share/applications/quick-remaster.desktop		    quick-remaster
 usr/share/applications/quick-remastergui.desktop	    quick-remaster
 usr/share/applications/redshiftgui.desktop		    redshiftgui
@@ -11108,6 +11112,7 @@ usr/share/pixmaps/puppy/firewall.svg			    firewall-ng
 usr/share/pixmaps/puppy/shield_internet.svg		    firewall-ng
 usr/share/pixmaps/puppy/shield_no.svg			    firewall-ng
 usr/share/pixmaps/puppy/shield_yes.svg			    firewall-ng
+usr/share/pixmaps/qiv.png				    qiv-slideshow
 usr/share/pixmaps/re-fresh.png				    quick-remaster
 usr/share/pixmaps/restart.png				    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/rocket.png				    desktop-editor

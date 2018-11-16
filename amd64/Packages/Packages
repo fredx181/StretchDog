@@ -3972,6 +3972,21 @@ SHA256: b060b8892b14911b481c7bbaf4e9a2d840bf54b07325ab6d7037fb8815a142f9
 SHA512: 929d95466da50e6ea5f11d2bc6ba80393847919b26bf1de0b8e83f1da24ce4151f989749f354714818a2714dca3c7981d7b6194eb09a774b407ae9dad7097dae
 Description: Touchpad/mouse/touchscreen setup
 
+Package: qiv-slideshow
+Architecture: all
+Version: 0.0.1
+Maintainer: fredx181 root@nomail.nl
+Installed-Size: 48
+Depends: yad, qiv
+Filename: ./Extra/qiv-slideshow_0.0.1_all.deb
+Size: 25168
+MD5sum: f08e6de5d9ef28a66d16fca1ec2d9737
+SHA1: f4c0fd94269f8879cddebf4e89fcc0f837e718fc
+SHA256: dd20c94b670c0b206499306e5a6c79e0e2b3e703afc83e026692848b70c49772
+SHA512: 4f6abee93ca40f7531533d52e221813af242f6de835507fac7b57296745bb9b968b05513847a99025d5820391fff55887e8f278b7fbf8eae35473f8bb6fb1317
+Description: QIV-slideshow:
+ Slideshow using qiv and yad
+
 Package: upgrade-kernel
 Architecture: all
 Version: 1.0.3
