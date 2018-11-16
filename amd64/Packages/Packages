@@ -2971,6 +2971,23 @@ SHA256: 1064c35efc9a5e0fa9cfea8b63a88f76832ba7bbf70f3b3a536f22bd12581f6f
 SHA512: bb02283cb90b93bd07b62fdfd281baf5cbc168e87684d8492248b8abd8b87ecfb2c26860f68fd0e1f26499d0a581427b314ded0b94228a4c1039ecd0614b8fcd
 Description: graphical yad message utility.
 
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.4_all.deb
+Size: 1035264
+MD5sum: a4644683136544b1e0f47289169dc7db
+SHA1: c49238947b534a353cc65cba4854909808116ff6
+SHA256: 3b03cf09399d187927caef4258685306dc70ffdd27ab18b2ef9df1984971092a
+SHA512: 7130e6e42be7d732d8e860eac58ecc14aa46cd05d6d2944ed53dd2f6f2391b90dd2dd6aeffcd43d68594c36c2c01f658e3e4ab6f4a8774f8817163bfd847f446
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: upgrade-kernel
 Architecture: all
 Version: 1.0.7
