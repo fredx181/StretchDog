@@ -1809,6 +1809,21 @@ Description: graphical frontend to sudo
   More information available here:
   http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
 
+Package: flashplayerchoice
+Architecture: amd64
+Version: 1.0.4
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.4_amd64.deb
+Size: 5782
+MD5sum: 3c0da03cab18818b8a0da8d8d4ce6480
+SHA1: cf9abc0dbe09dfc5760ddb0268f2bc7f02e2f73d
+SHA256: c90d33292a21ac50c0885daaba87500b55b9c1ff26e04377d8ab60796107d9f9
+SHA512: aa331aa124c6cd22c5f4c35400b7605de10332567def704966bb21c4dd0df328b98057353216c12381a5a486be16679b84e9730b4d908c6a371c0f83580a3e05
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Latest version from Adobe (= 16 Mb uncompressed)
+
 Package: chpupsocket
 Architecture: amd64
 Version: 1.0.0
