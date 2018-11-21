@@ -1604,6 +1604,25 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Bug fix: set the correct permissions for /tmp 
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
 
+Package: frisbee
+Architecture: i386
+Version: 1.2-20181120
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, iproute2, wireless-tools
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20181120_i386.deb
+Size: 145848
+MD5sum: 9e312178d9baa9647e92d6476065ac0b
+SHA1: 038883427deb8bd24ec162f25067cd763c13fa72
+SHA256: 1f265addb136ad46b2b38bfdd9c3e189a891de1a123089a5f77b59ff997e9996
+SHA512: a36ab595b9916efef97e6631e47fa8a3a089b92ca9caeb05a23bf03d914f39d3d67118e110a3936dc52c42afc127eea66da8f1170fd01e0cac18955e99fd37f7
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: sns
 Architecture: i386
 Version: 2.1.1
