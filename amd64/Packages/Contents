@@ -159,6 +159,7 @@ home/puppy/Startup/exec_fwstatus-autostart		    firewall-ng
 home/puppy/Startup/exec_lxinput-autostart		    lxinputsave
 home/puppy/Startup/exec_lxrandr-autostart		    lxrandr-save-fix
 home/puppy/Startup/killmenu-cached			    jwmconf,jwm-setup
+home/puppy/Startup/network_tray.sh			    frisbee
 home/puppy/Startup/peasyfwmon_tray			    peasyfwmon
 home/puppy/Startup/peasywifi_tray			    PeasyWiFi
 home/puppy/Startup/rshift-gui-lite			    redshift-gui-lite
@@ -1046,6 +1047,7 @@ root/Startup/exec_lxinput-autostart			    lxinputsave
 root/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 root/Startup/killmenu-cached				    jwmconf,jwm-setup
 root/Startup/my_squash_loader_tray			    my-squash-loader
+root/Startup/network_tray.sh				    frisbee
 root/Startup/p910nd-start				    p910nd-print-server
 root/Startup/peasyfwmon_tray				    peasyfwmon
 root/Startup/peasymp3_tray				    peasymp3

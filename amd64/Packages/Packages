@@ -1481,6 +1481,25 @@ Description: pfind-converted-pet-to-deb by zigbert
 
 Package: frisbee
 Architecture: amd64
+Version: 1.2-20181120
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 524
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, wireless-tools, iproute2, iproute2
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20181120_amd64.deb
+Size: 92404
+MD5sum: fc4b56a17f50300f5e1491fd5aa6cf9f
+SHA1: 17350b1bcddea607d00c5d2bae2ff7a3f5e0d66e
+SHA256: 5c7b64e9be0dc9bde03d40164998309581e55d1f1926a9ac68f92028961ac75c
+SHA512: ff1861797744e165ddc804d59cbf162d4b3eae1b230b46e315a71140bada5eb6f648df9faf9fdf48251c1dd8929c866f4df49c80aaa76ec53cfb911ebdc0ae71
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
+Package: frisbee
+Architecture: amd64
 Version: 1.2-20170928dd64-mod
 Priority: extra
 Section: checkinstall
