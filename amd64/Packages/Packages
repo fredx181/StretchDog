@@ -1795,6 +1795,25 @@ Description: highly configurable system monitor (basic version)
  .
  MPD, MOC, math, apcupsd, ncurses and I/O stats.
 
+Package: frisbee
+Architecture: amd64
+Version: 1.2-20181120-dd
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 524
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, wireless-tools, iproute2
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20181120-dd_amd64.deb
+Size: 92320
+MD5sum: cc7c1375373d67d9481568d611a94d87
+SHA1: 95ddd26efe2f4c7b854c8a3dab035952332a58bc
+SHA256: 297e0816f970c12d2e8a8be33406545a6fd191d47de43c3dbb38f871a83785a7
+SHA512: c1327e6e9e812844fb76a93a9675480ac313f624979e4f9a885c4435028323e7ffd850483172d2b8067c02636e8e1364fe9f86c2d0bb329b324e6153505ace08
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: sfs-get-smokey-get
 Architecture: all
 Version: 1.0.3-stretch
