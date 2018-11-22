@@ -210,6 +210,25 @@ SHA256: 8015001f203de92ebdcc6a6f0af51cbb5a166b1f789f746a2fe1045ea78b959f
 SHA512: 7aa64cb03215514d9763507b75b5d616ef474a4e55a17896e5a725f1c34f02b7a75caeb3e9391e794a9b3c14ff7802a43a6f759846a744023a6ddaf17f1932a6
 Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
 
+Package: frisbee
+Architecture: i386
+Version: 1.2-20181120-dd
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, iproute2, wireless-tools
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.2-20181120-dd_i386.deb
+Size: 145924
+MD5sum: f64d343e1ec71274b4154cc84b68d04e
+SHA1: 06bb22644b209fb6ee795923a1ea27f32f1c48e5
+SHA256: ffa444260ca24af5894a7cd08bdf7a7cff32418649fd9b1b66385e3401d6ce8f
+SHA512: faa52445d0618d4fd44ddfc31ae821cb6d0a681dab118236e7c450ed45251a0eddefdcde4611824ffaa48c7c530d1467fda5cd282233b85550219e686bef7e1d
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: xdm
 Architecture: i386
 Version: 1:1.1.11-2
