@@ -1966,6 +1966,28 @@ Description: Independent JPEG Group's JPEG runtime library
  .
  This package contains the shared library.
 
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.7-wiak-B-2
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./Included/gtkdialog_0.8.7-wiak-B-2_amd64.deb
+Size: 117404
+MD5sum: 921ff0b4d4d3e7967bfae2353c3d45ba
+SHA1: 9e4a5e76b56b6e536a33b6af5630d816cc11b72c
+SHA256: d41d7b6cd52ebbb6839033f61bdb6167fe6a2ebc59e239fb8f7c8c8d7b345262
+SHA512: 1adfdfca0a85dd3eb424533c292ffe9074ac206bed0b2daf12701fb413b2d96331566b6a4651403edad5caa69c5b2a6d2c9ea766c4b3a153b4f60e5f148eba53
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
+
 Package: libx264-122
 Architecture: amd64
 Version: 3:0.122.2184+git5c85e0a-0.1
@@ -2472,6 +2494,27 @@ SHA1: ae514a0ebc0a37b370007ab9fed42944d3de513b
 SHA256: 0839eb7c1158417d7f5cc7fde0ebd919ab33a698b2724fc6d988638ac73abc21
 SHA512: 889a07b13807abc7dc288759b64088db6530714e93419def219e57c321171382d74a584466c061fea47c396d999945f16daf8333d4e62df504261a2a550a0a0f
 Description: Extract gz, tgz, bz2, xz, zip, 7z archives
+
+Package: redshift-gui-lite
+Architecture: amd64
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 389
+Depends: libc6, curl
+Conflicts: redshiftgui
+Replaces: redshiftgui
+Filename: ./Extra/redshift-gui-lite_0.0.4_amd64.deb
+Size: 175472
+MD5sum: 136f430b3f31cee7d30daf6ea1eb5bac
+SHA1: 495bc6e760256bfa72c425f45b956a24af45b4dd
+SHA256: 18f75cfd6be51f4534de4074ae9e2da1aad38696a47c1d79f34cb359cf50f2f2
+SHA512: 9ca3c4e024e10a9b8323f6cc06f0bcd589d2780433e33a403393813e38d80e0814deb05cf0f47707e787249ab4ecee81fb97d82a0dbc101c536a83ba29fdd124
+Description: Monitor color adjustment tool
+ Redshift-gui light is using yad (notification icon)
+ and the redshift commandline utility (yad and redshift are builtin) 
+ Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
 
 Package: peasyscale
 Architecture: amd64
@@ -4148,6 +4191,23 @@ Description: Jwm custom setup for Debiandog, includes:
  - openbox-menu, pipe-menu setup for JWM to display entries in *.desktop files
  - jwm-obmenu script for the Jwm window manager. It provides
  a dynamic menu listing of installed applications.
+
+Package: xlunch
+Architecture: amd64
+Version: 4.1.1-3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 1600
+Depends: libatk1.0-0, libc6, libcairo2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgtk2.0-0, libmenu-cache3, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libimlib2, libpng16-16, xterm, librsvg2-bin, devilspie2
+Filename: ./Extra/xlunch_4.1.1-3_amd64.deb
+Size: 1319378
+MD5sum: daac11fc8ddeb7858be89f21478c15df
+SHA1: f8c37ad84ac784be8d705b7d096877ab1d7674fb
+SHA256: ed0ee9c175ae8e57deb10e720c5522803f63c6f2648b393a57109ea15b129860
+SHA512: c9252cc1c5479c049f309b75118fc6264c4bc5ba694641b9a548ffad78e22e9cc6b8f7f1cc73c60c797266495d663d69d07c18cb11dc21cb34bd6d9b9ea48c25
+Description: xlunch by Tomas M
+ Graphical app launcher
 
 Package: peasyclock
 Architecture: all
@@ -5950,6 +6010,22 @@ Description: Reliable network manager
  - Updated Help screen
  - added multi-user support (fredx181)
  - changed bcrypt to ccrypt
+
+Package: create-portable
+Architecture: amd64
+Version: 1.0.3
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, xorriso, yad, linux-user-chroot
+Filename: ./Extra/create-portable_1.0.3_amd64.deb
+Size: 86032
+MD5sum: cd1c544c95316856e9e2bddeb9bec109
+SHA1: 6429e454e822f9c2f24bef6895c8fbc3a8bd8a36
+SHA256: 8997091d236577e8b2f93d294d54db942c6c918141e307741fc8f3bc4c8bb6cd
+SHA512: 7eb6c544a74ca79a2ed41c529e122aefde6c2135b7c8dbb9d596f8c282b45c2bb92f35b4ec12f826a0d7a47e41e1366a920fb5c29a2ae1dcd14f8610c8a56741
+Description: Create portable AppImage
 
 Package: p910nd-print-server
 Architecture: amd64

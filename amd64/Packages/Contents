@@ -110,6 +110,7 @@ etc/wex/user_utilities					    wex
 etc/wex/wexrc						    wex
 etc/wgetrc						    wget
 etc/xdg/menus/dog-applications.menu			    jwmconf,jwm-setup-dd64,jwm-setup
+etc/xdg/menus/xlunch-applications.menu			    xlunch
 etc/xdg/pup-volume-monitor/main.conf			    pup-volume-monitor
 etc/xdg/rox.sourceforge.net/MIME-types/application_pdf	    evince
 etc/xdg/rox.sourceforge.net/MIME-types/application_postscript evince
@@ -123,6 +124,9 @@ etc/xdg/rox.sourceforge.net/SendTo/evince		    evince
 etc/xdg/templates/jwm.head				    jwmconf,jwm-setup
 etc/xdg/templates/jwm.main				    jwmconf,jwm-setup
 etc/xlunch/logout.dsv					    xlunch
+etc/xlunch/logout/xlunch.lua				    xlunch
+etc/xlunch/max.lua					    xlunch
+etc/xlunch/xlunch.lua					    xlunch
 home/puppy/.config/autostart/firewallstatus.desktop	    firewall-ng
 home/puppy/.config/rox.sourceforge.net/MIME-types/application jwmconf,jwm-setup
 home/puppy/.config/rox.sourceforge.net/MIME-types/image_png jwmconf,jwm-setup
@@ -5367,6 +5371,7 @@ usr/local/01-create-appimage64/opt/docs/AppRun_chroot.template create-portable
 usr/local/01-create-appimage64/package			    create-portable
 usr/local/01-create-appimage64/package-old		    create-portable
 usr/local/01-create-appimage64/package.png		    create-portable
+usr/local/01-create-appimage64/package1			    create-portable
 usr/local/01-create-appimage64/runtime			    create-portable
 usr/local/01-create-appimage64/study-bash		    create-portable
 usr/local/01-create-appimage64/unionfs-fuse		    create-portable
@@ -5379,6 +5384,7 @@ usr/local/01-create-appimage64/usr/bin/proot		    create-portable
 usr/local/01-create-appimage64/usr/bin/runtime		    create-portable
 usr/local/01-create-appimage64/usr/bin/testappimage	    create-portable
 usr/local/01-create-appimage64/usr/bin/unionfs-fuse	    create-portable
+usr/local/01-create-appimage64/usr/bin/yad		    create-portable
 usr/local/01-create-appimage64/usr/lib/libr.so.0	    create-portable
 usr/local/01-create-appimage64/usr/lib/libr.so.0.0.0	    create-portable
 usr/local/01-create-appimage64/usr/lib/libtalloc.so.2	    create-portable
@@ -5692,6 +5698,9 @@ usr/local/bin/xhrecord					    xhippo
 usr/local/bin/xload					    jwmconf,jwm-setup-dd64,jwm-setup
 usr/local/bin/xlunch					    xlunch
 usr/local/bin/xlunch-logout				    xlunch
+usr/local/bin/xlunch-menu				    xlunch
+usr/local/bin/xlunch-menu-gen				    xlunch
+usr/local/bin/xlunch-menu-update			    xlunch
 usr/local/bin/xlunch_gentries				    xlunch
 usr/local/bin/xlunch_help				    xlunch
 usr/local/bin/xlunch_quickgentries			    xlunch
@@ -8335,6 +8344,7 @@ usr/share/applications/transmission.desktop		    transmission-2.60
 usr/share/applications/tzupdate.desktop			    tzupdate
 usr/share/applications/umounting.desktop		    diff-sync-umount
 usr/share/applications/unzipper.desktop			    unzipper
+usr/share/applications/update-entries.desktop		    xlunch
 usr/share/applications/upgrade-kernel-bpo.desktop	    upgrade-kernel-bpo
 usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/upgrade-kernel2.desktop		    upgrade-kernel2
