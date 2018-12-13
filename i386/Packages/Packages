@@ -3827,6 +3827,21 @@ Description: gethosts script from SteveRiley: https://www.kubuntuforums.net/show
   Thanks to jockjunior: http://www.murga-linux.com/puppy/viewtopic.php?p=899122#899122
  .
 
+Package: peasyport
+Architecture: all
+Version: 2.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.7.deb
+Size: 4928
+MD5sum: 221e54f3287c35697ca169cb6b3c1b2a
+SHA1: d09ebdf8265cab36b6425cfaf1fb73058c1246b6
+SHA256: cc98dce3018930702af01e6462bce4fd368290c206f5311993bd433c92a6fcde
+SHA512: 9c79b9ab1fb20ab3ec2e5342aa8901b03bb71ef9d0b378ee2e311bd706b52b7ae645ecb4f764c259a9e038cbe4fe66ffb4737d8e2bbaeca9faeecc73e6aa2cc9
+Description: Network port scanner
+
 Package: xinit
 Architecture: i386
 Version: 1.3.4-1
@@ -3845,6 +3860,21 @@ SHA512: 470cd1bce13e6c753d1aa5ca9605a322cf50d85d76a8c8912ed17e07669d0553db2c3719
 Description: X server initialisation tool
  xinit and startx are programs which facilitate starting an X server, and
  loading a base X session.
+
+Package: cputemp
+Architecture: i386
+Version: 3.1-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils, lshw
+Filename: ./Extra/cputemp_3.1-2_i386.deb
+Size: 5588
+MD5sum: bd22e27e10c9773d2938d3cbf60c05e7
+SHA1: 98e51a74fb4adcb2965302d6e4698eec5624c699
+SHA256: a0b4c35e309e29ddabdff001b2454d5338ca55284103288d36aa78fdbae21ce1
+SHA512: 7e4ea89475fd2373a78ec41f4e8755ab4135b4a8a91704a74d9362294d43a4224cd4e3ae34e00af46c1ed6884dda01e7594c510230906819080d2cdc0f6c30b5
+Description: CPU temperature monitor
 
 Package: snappie
 Architecture: i386
@@ -5358,6 +5388,19 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
+Package: my-squash-loader
+Architecture: i386
+Version: 1.3-2
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.3-2_i386.deb
+Size: 6826
+MD5sum: 89f525c9c1ebb56dcbc4c00e79f55e90
+SHA1: a9a716a0534dbb4439ce5c626f653e78e862d608
+SHA256: 90914b6708c4fd52991382f8edf6848d6390e2e184ac5608929917469c121e48
+SHA512: e3ed90ec24b3c1e3f409233e3ebf01114e4c5a5c183a12b1720d51f62350e833e7c746fa18deff9f97f76d84ea623703b90a1c36aecb358607b17799f929f5d7
+Description: Load squashfs modules on-the-fly
+
 Package: mpv
 Architecture: i386
 Version: 1:0.27.0-ddstretch
@@ -5647,6 +5690,21 @@ SHA256: 714c0e63987864a481c26f6fb310271db64329676d22c217e5611b73b0d66409
 SHA512: 44569449f599ee0b179a192adc526cc16f666242ab96f7c6578cc1c35035495887621c1d44f10a854d79039d775707c58f04103acbb35d0785162ee49f386194
 Description: Media player, CD player, Carousel
 
+Package: yassm
+Architecture: all
+Version: 4.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./Extra/yassm_4.5.deb
+Size: 7466
+MD5sum: 4a03b342fb9526d55147d4702b652882
+SHA1: db834efb1605b4a4656c5069ee06c33d41db6a8d
+SHA256: 56ae4d1dcdbd297727b1757185de7ba4e0edbe7e081864825e81456ac9fff2d6
+SHA512: d82c025540bc9d69d0a39047a63b567de685b298a7f30500999d9d2acf2b5853aa77e014be7965cddd08f1ebc81f621787586c7b73e1e2e29b6d983b5b2e5b5c
+Description: Samba share mounter
+
 Package: libxml2
 Architecture: i386
 Version: 2.9.1+dfsg1-5+deb8u3
@@ -5750,6 +5808,21 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: peasyxorburn
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, cdrskin, eject, xterm
+Filename: ./Extra/peasyxorburn_1.2.deb
+Size: 10282
+MD5sum: 6a010af2a46108617eea115d7c37bc91
+SHA1: a21a029574beb057b0a976b2228b8053c704cce8
+SHA256: a37dbe8c2b7b0edc23fc6c36587050ed4937cf844bc075403c795c84fa759ea8
+SHA512: 617a096669bb578830d728c9c107112618599a70e4eeefb14c7d6168b5db26b1970f23a6a9aac237d481d951a83cf8b4357f1291b916c0c7c58f86c558d810e3
+Description: Simple burning tool
+
 Package: libdvdcss
 Architecture: i386
 Version: 1.4.0
@@ -5852,6 +5925,21 @@ SHA1: 12b373eafa273bcaba6f1e859b89a808f69a290c
 SHA256: d6220096d94dbf7371cee559697a56e20e82f29f50aca2693865aaef321ebb5c
 SHA512: a6b4ed69737403c5b1541e184a9452931111b44a62115e7cbcc2784c0d956069e512e7c6a4222dae6b753bc6d4a784267a083623e4c225e2bcc9d61a6423e301
 Description: graphic-utility
+
+Package: snappie
+Architecture: i386
+Version: 1.2
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Depends: netpbm
+Filename: ./Extra/snappie_1.2_i386.deb
+Size: 21212
+MD5sum: ea665483b0b431f94806c574d11ad43f
+SHA1: 9258a0fbc2f3e1dd50450cdccb4162b089097169
+SHA256: c16154fafab51047e4893107af4c11a92d0e4c07e637597abd7fbc1b0d7f5bd2
+SHA512: 6d540c2a28a18d05ac32e93e19fbb9ed07e9321710470283f71e3be4a558f86ab3bdf9ac9c0a82c6b401943cdedc3c400250997ff05e9de690c522251a16ab9e
+Description: Screen snapshot
 
 Package: PeasyWiFi
 Architecture: i386
@@ -7260,6 +7348,20 @@ Description: Alternate menu plugin for the Xfce desktop environment
  buttons on the side. Top level categories make browsing fast, and simple to
  switch between. Additionally, Whisker Menu keeps a list of the last ten
  applications that you've launched from it.
+
+Package: batterup
+Architecture: i386
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.5_i386.deb
+Size: 7500
+MD5sum: 4b615db5e1ecf21945fbc24140ebbafe
+SHA1: 2a7bed65c9c0020fde197d20d388fc178fa76742
+SHA256: 35f41749a6b059e76667af63668a7b5e00c07ff310af0d3d2bd7c080dea20713
+SHA512: cad5eb83756094b15f8bc7a9067057eff11eb80bc0172b6991f9c87bc0e2bc3b2554e4c51f223bb17f359fa142efa7659746601138d185f74a0741bc921b896c
+Description: Batterup battery monitor
 
 Package: sound-card-selector
 Architecture: all

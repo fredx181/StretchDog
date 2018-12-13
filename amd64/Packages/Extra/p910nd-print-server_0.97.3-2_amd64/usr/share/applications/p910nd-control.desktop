@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=P910nd Control Panel
+Icon=/usr/share/pixmaps/p910nd-control.png
+Comment=Manage the p910nd print server
+Exec=p910nd-control
+Terminal=false
+Type=Application
+Categories=Network;
+GenericName=p910nd-control

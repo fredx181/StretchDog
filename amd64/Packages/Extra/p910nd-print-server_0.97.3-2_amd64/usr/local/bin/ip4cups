@@ -1,0 +1,48 @@
+#!/bin/sh
+#rcrsn51 2015-01-05
+#updated 2016-04-30
+
+export TEXTDOMAIN=p910nd-control
+export OUTPUT_CHARSET=UTF-8
+
+cancel -a		#to kill any zombie print jobs
+
+which arp-scan
+if [ $? -gt 0 ]; then
+	Xdialog --title "IP4CUPS" --msgbox "$(gettext 'The arp-scan program is not installed!')" 0 0
+	exit
+fi
+
+if [ ! -f /etc/ip4cups.data ]; then
+	Xdialog --title "IP4CUPS" --msgbox "$(gettext 'Data file /etc/ip4cups.data not found!')" 0 0
+	exit
+fi
+
+Xdialog --title "IP4CUPS" --ok-label Fast --cancel-label Slow --yesno "Scanning speed" 0 0
+SPEED=$? #0=fast 1=slow
+
+Xdialog --title "IP4CUPS" --no-buttons --infobox "$(gettext 'Scanning for printers ...')" 4 30 120000 &
+MSGPID=$!
+
+if [ $SPEED -eq 0 ]; then
+	arp-scan -l > /tmp/arp-scan.dat
+else
+	rm -f /tmp/arp-scan.dat
+	SUBNET=$(busybox ip route | tail -n1 | cut -d. -f1-3)
+	for P in {1..254}; do 
+		arp-scan ${SUBNET}.$P 2>/dev/null | grep "^$SUBNET" | cut -f 1-2 >> /tmp/arp-scan.dat &
+		sleep 0.1
+	done
+fi
+
+while read NAME MAC; do
+	[ -z "$NAME" -o -z "$MAC" ] && continue
+	IP=$(grep $MAC /tmp/arp-scan.dat | awk '{print $1}')
+	[ -z "$IP" ] && continue
+	cp /etc/hosts /etc/hosts.old
+	grep  -iv $NAME /etc/hosts.old > /etc/hosts
+	echo $IP $NAME >> /etc/hosts
+done < /etc/ip4cups.data
+
+kill $MSGPID
+cat /etc/hosts | Xdialog --title "/etc/hosts" --no-cancel --textbox - 20 60

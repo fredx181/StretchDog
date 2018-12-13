@@ -1,0 +1,213 @@
+#!/bin/sh
+# rcrsn51 2016-05-01
+
+export TEXTDOMAIN=p910nd-control
+export OUTPUT_CHARSET=UTF-8
+
+CUPSSTATUS ()
+{
+echo "$(gettext 'Current print jobs:')" > /tmp/p910nd.dat
+lpstat | awk '{print "  " $1}' >> /tmp/p910nd.dat
+echo >> /tmp/p910nd.dat
+echo "$(gettext 'Print queues:')" >> /tmp/p910nd.dat
+lpstat -p | grep "idle" | awk '{print "  " $2 " " $4}' >> /tmp/p910nd.dat
+lpstat -p | grep "disabled" | awk '{print "  " $2 " " $3 "."}' >> /tmp/p910nd.dat
+lpstat -a | grep "not accepting" | awk '{print "  " $1 " " $2 " " $3 " " $4 "."}' >> /tmp/p910nd.dat
+cat /tmp/p910nd.dat | Xdialog --title " " --no-cancel --textbox - 20 60
+}
+export -f CUPSSTATUS
+
+PINGREMOTE ()
+{
+if [ ! -f /etc/ip4cups.data ]; then
+	Xdialog --title " " --msgbox "$(gettext 'Printers must be managed with IP4CUPS!')" 0 0
+	exit
+fi
+PRINTERLIST=$(awk '{print $1}' /etc/ip4cups.data)
+rm -f /tmp/p910nd2.dat
+for P in $PRINTERLIST; do
+	busybox ping -c 1 -W 2 $P
+	if [ $? -eq 0 ]; then
+		echo $P $(gettext 'is online') >> /tmp/p910nd2.dat
+	else
+		echo $P $(gettext 'is NOT online') >> /tmp/p910nd2.dat
+	fi
+done
+cat /tmp/p910nd2.dat | Xdialog --title " " --no-cancel --textbox - 15 60
+}
+export -f PINGREMOTE
+
+CANCELJOBS ()
+{
+cancel -a
+rm -f /var/spool/cups/tmp/*
+Xdialog --title " " --msgbox "$(gettext 'All print jobs cancelled.')" 0 0
+}
+export -f CANCELJOBS
+
+RESUMEPRINTERS ()
+{
+PRINTERLIST=$(lpstat -v | cut -d " " -f 3 | cut -d ":" -f 1)
+for P in $PRINTERLIST; do
+	cupsenable $P; cupsaccept $P
+done
+Xdialog --title " " --msgbox "$(gettext 'All printers resumed.')" 0 0
+}
+export -f RESUMEPRINTERS
+
+############
+
+mkdir -p /etc/pwf #just in case
+APPFILE=/etc/pwf/appfile
+if [ ! -f $APPFILE ]; then
+	echo "export TEXTEDITOR=leafpad" > $APPFILE
+	echo "export FILEMANAGER=pcmanfm" >> $APPFILE
+	echo "export WEBBROWSER=/usr/lib/firefox/firefox" >> $APPFILE
+	echo "export IMAGEVIEWER=viewnior" >> $APPFILE
+	Xdialog --title " " --msgbox "$(gettext 'Open the file /etc/pwf/appfile.\nSet your helper applications.')" 0 0
+	exit
+fi
+. $APPFILE
+
+if [ ! -f $HOME/Startup/p910nd-start ]; then
+	echo "#!/bin/sh" > $HOME/Startup/p910nd-start
+	echo "killall p910nd" >> $HOME/Startup/p910nd-start
+	echo "mkdir -p /var/lock/subsys" >> $HOME/Startup/p910nd-start
+	echo "p910nd -f /dev/usb/lp0 0" >> $HOME/Startup/p910nd-start
+fi
+
+STATUS1=0
+[ "$(busybox pidof p910nd)" ] && STATUS1=1
+
+STATUS2=0
+[ -x $HOME/Startup/p910nd-start ] && STATUS2=1
+
+export DIALOG="
+<window title=\"P910nd Control Panel\">
+<vbox>
+<frame $(gettext 'Server')>"
+
+if [ $STATUS1 -eq 1 ]; then
+	DIALOG=$DIALOG"<text><label>$(gettext 'The P910nd print server is running')</label></text>"
+else
+	DIALOG=$DIALOG"<text><label>$(gettext 'The P910nd print server is NOT running')</label></text>"
+fi
+
+if [ $STATUS2 -eq 1 ]; then
+	DIALOG=$DIALOG"<text><label>$(gettext 'Auto-start at bootup is ON')</label></text>"
+else
+	DIALOG=$DIALOG"<text><label>$(gettext 'Auto-start at bootup is OFF')</label></text>"
+fi
+
+if [ $STATUS1 -eq 0 ]; then
+	DIALOG=$DIALOG"
+		<hbox>
+			<text><label>$(gettext 'Start the server now')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>sh $HOME/Startup/p910nd-start</action>
+				<action>Exit:restart</action>
+			</button>
+		</hbox>"
+else
+	DIALOG=$DIALOG"
+		<hbox>
+			<text><label>$(gettext 'Stop the server now')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>killall p910nd</action>
+				<action>Exit:restart</action>
+			</button>
+		</hbox>"
+fi
+
+if [ $STATUS2 -eq 0 ]; then
+	DIALOG=$DIALOG"
+		<hbox>
+			<text><label>$(gettext 'Set auto-start at bootup ON')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>chmod +x $HOME/Startup/p910nd-start</action>
+				<action>Exit:restart</action>
+			</button>
+		</hbox>"
+else
+	DIALOG=$DIALOG"
+		<hbox>
+			<text><label>$(gettext 'Set auto-start at bootup OFF')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>chmod -x $HOME/Startup/p910nd-start</action>
+				<action>Exit:restart</action>
+			</button>
+		</hbox>"
+fi
+
+DIALOG=$DIALOG"
+	</frame>
+	<frame $(gettext 'Client')>
+		<hbox>
+			<text><label>$(gettext 'Run the CUPS setup wizard')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>$WEBBROWSER http://localhost:631 &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Check the status of my printers')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>CUPSSTATUS &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Check remote printers')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>PINGREMOTE &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Cancel all print jobs')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>CANCELJOBS &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Resume paused printers')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>RESUMEPRINTERS &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Edit /etc/ip4cups.data')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>$TEXTEDITOR /etc/ip4cups.data &</action>
+			</button>
+		</hbox>
+		<hbox>
+			<text><label>$(gettext 'Run IP4CUPS hosts file update')</label></text>		
+			<button>
+				<label>\"    \"</label>
+				<action>ip4cups &</action>
+			</button>
+		</hbox>
+	</frame>
+	<hbox>
+		<button>
+			<label>$(gettext 'Help')</label>
+			<action>$WEBBROWSER http://www.murga-linux.com/puppy/viewtopic.php?p=455543#455543 &</action>
+		</button>
+		<text><label>\"    \"</label></text>
+		<button><label>$(gettext 'Quit')</label></button>
+	</hbox>
+</vbox>
+</window>"
+
+export DIALOG
+eval $(gtkdialog3 -c -p DIALOG | grep EXIT)
+sleep 1
+[ "$EXIT" = "restart" ] && exec $0
