@@ -1,4 +1,0 @@
-#!/bin/sh
-killall p910nd	#stop any current instances
-mkdir -p /var/lock/subsys
-p910nd -f /dev/usb/lp0 0

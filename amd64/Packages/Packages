@@ -2979,6 +2979,21 @@ SHA256: f997447c8cd88ef9858a6c8f352ed3af1ddf3bcfe04bca9d661538d2c9d1cf30
 SHA512: 8f6b66a86ab8e91b6aaa8e8155641e10f9609148c95eccf58772bfb78b9cbd8ac4288e08811cd49f896471e4d0e303d89d957393dc72865443ec7d25306adedf
 Description: Sets system date, time, zone
 
+Package: snappie
+Architecture: amd64
+Version: 1.2
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Depends: netpbm
+Filename: ./Extra/snappie_1.2_amd64.deb
+Size: 20532
+MD5sum: 220b87d6b0c54ea922025b889b3f3e6d
+SHA1: 40b3d45ee20fc888bdc39e01dd1eac4524daa9ed
+SHA256: 3810249d8ce3265b724ebd1bb7b31fda58cf8d8cd69180206c63a785a7b8ae5d
+SHA512: e56ea99a77c0500232ce222bfc6c6df95a053099d128366758fda2becbb8a6ea61441a90aeec71aec892e59beaa9cc109eaa24afb5e786c0cc57d7850bbc4556
+Description: Screen snapshot
+
 Package: my-squash-loader
 Architecture: amd64
 Version: 1.3-1
@@ -3083,6 +3098,20 @@ SHA256: 3b03cf09399d187927caef4258685306dc70ffdd27ab18b2ef9df1984971092a
 SHA512: 7130e6e42be7d732d8e860eac58ecc14aa46cd05d6d2944ed53dd2f6f2391b90dd2dd6aeffcd43d68594c36c2c01f658e3e4ab6f4a8774f8817163bfd847f446
 Description: Install backports kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
+
+Package: batterup
+Architecture: amd64
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.5_amd64.deb
+Size: 7372
+MD5sum: 1b36f9ca1ef8933cff60c202e0d6f45b
+SHA1: 058544b69451125e8403fd7dab756d7d80480a16
+SHA256: a58e867e7825c832959523658664540bd3bac2eada89d1aec1946f045b5c4372
+SHA512: be5c5fd5c08402b4ad0716744ebdb813fbcedb3a5a788ee58b07f9e71050b5229d6958b6bedf390f29509e4ce1d720e4f5359a69182fcf73ed1da53b62fcde46
+Description: Batterup battery monitor
 
 Package: upgrade-kernel
 Architecture: all
@@ -3764,6 +3793,21 @@ Description: spell checker and morphological analyzer (shared library)
     forbidden words, pseudoroots and homonyms.
  .
  This package contains the shared library.
+
+Package: peasyport
+Architecture: all
+Version: 2.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.7.deb
+Size: 4928
+MD5sum: 221e54f3287c35697ca169cb6b3c1b2a
+SHA1: d09ebdf8265cab36b6425cfaf1fb73058c1246b6
+SHA256: cc98dce3018930702af01e6462bce4fd368290c206f5311993bd433c92a6fcde
+SHA512: 9c79b9ab1fb20ab3ec2e5342aa8901b03bb71ef9d0b378ee2e311bd706b52b7ae645ecb4f764c259a9e038cbe4fe66ffb4737d8e2bbaeca9faeecc73e6aa2cc9
+Description: Network port scanner
 
 Package: firewall-ng
 Architecture: amd64
@@ -5467,6 +5511,21 @@ Description: Min is a faster, smarter web browser.
  blocking. Includes full-text history search, instant answers from DuckDuckGo, 
  the ability to split tabs into groups, and more.
 
+Package: yassm
+Architecture: all
+Version: 4.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./Extra/yassm_4.5.deb
+Size: 7466
+MD5sum: 4a03b342fb9526d55147d4702b652882
+SHA1: db834efb1605b4a4656c5069ee06c33d41db6a8d
+SHA256: 56ae4d1dcdbd297727b1757185de7ba4e0edbe7e081864825e81456ac9fff2d6
+SHA512: d82c025540bc9d69d0a39047a63b567de685b298a7f30500999d9d2acf2b5853aa77e014be7965cddd08f1ebc81f621787586c7b73e1e2e29b6d983b5b2e5b5c
+Description: Samba share mounter
+
 Package: jwmconf
 Architecture: amd64
 Version: 0.0.4
@@ -5539,6 +5598,21 @@ SHA1: d539a65bb66c9c27150ef5be1f3103a8995aecfa
 SHA256: 1a09ff80e30c1a77c3214a7e8569eaba93ba0b8c8e9f53e702d82f0ec51a1c8c
 SHA512: 9d03eb1a47f7a20717e0a17233208ae05ce90409e8efa2c80a67409e97dbf78cfe46e33a43962847246d24329229377cc25d65cbc33dd6cf6e5e42ff59eb1eca
 Description: Google-drive Filemanager
+
+Package: peasyxorburn
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, cdrskin, eject, xterm
+Filename: ./Extra/peasyxorburn_1.2.deb
+Size: 10282
+MD5sum: 6a010af2a46108617eea115d7c37bc91
+SHA1: a21a029574beb057b0a976b2228b8053c704cce8
+SHA256: a37dbe8c2b7b0edc23fc6c36587050ed4937cf844bc075403c795c84fa759ea8
+SHA512: 617a096669bb578830d728c9c107112618599a70e4eeefb14c7d6168b5db26b1970f23a6a9aac237d481d951a83cf8b4357f1291b916c0c7c58f86c558d810e3
+Description: Simple burning tool
 
 Package: xfce4-whiskermenu-plugin
 Architecture: amd64
@@ -6089,6 +6163,21 @@ SHA256: 2f4936406056b4bb421fac91d0e2c250de54e1740db1ab0f2d6ccbe694159a6b
 SHA512: 0f3be819763932b324807b32bea7a3d87a508b673c29b01f8f222d90571391a57ae20fde74ae361da657235604305d624a313667a5675973a36e74c84e7f0726
 Description: Select a sound card and set ALSA defaults
 
+Package: cputemp
+Architecture: amd64
+Version: 3.1-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils, lshw
+Filename: ./Extra/cputemp_3.1-2_amd64.deb
+Size: 5664
+MD5sum: 74b86abf9426bb1cc7409ea221b5a995
+SHA1: e32dc3be291141a97f30dd2a39a063ec04bd1ffc
+SHA256: a051dda8dd933d125d243129b4b5245b27fd8e2f903116f66a753febb485bf12
+SHA512: aec0ee4267ec3f674391de9b95658b0405942d734a55b2ad4c353953b213ed874ec4bdec0010260bd44cf01512ca94ce5f66aadd6b0330b32878d60f50193579
+Description: CPU temperature monitor
+
 Package: gmplayer
 Architecture: amd64
 Version: 37957-6.3.0
@@ -6571,6 +6660,19 @@ SHA1: 17cef7a4488657d0303b225f6ea2702cac79a202
 SHA256: bdfebd4a215f0bf7e029ad734e614133166f07a08d744a213e65cd9214f63f3b
 SHA512: d3a6a9f2fd77222bec4ec9c24c7b60a7f7f5bb9ef7ba369d0fdb425358c00e0e3cc3e2d49247bfb7600f90f229309fc89a6cf5d4655b5abb26354bff0f92547d
 Description: Extract gz, tgz, bz2, xz, zip, 7z archives
+
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.3-2
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.3-2_amd64.deb
+Size: 6786
+MD5sum: abebc5cbecd69e406cae5cabbb1e698a
+SHA1: 1df3e518f8b77409d9b1373e97d0412ee123ba1c
+SHA256: 3f6c533d85dbf7e1b3f70a4cd9342a4dd8772368002c1867401e111f2cb5fb78
+SHA512: cf07ad8568d00bc939efe98c2c73d5fcb2a9b0badf0a46ddd31931752d04acba236976055e07d2004b3ddba70ccc17ac4c7c056ecd754ccaa05a68c4b9bd9657
+Description: Load squashfs modules on-the-fly
 
 Package: xfce4-whiskermenu-plugin-mod
 Architecture: amd64

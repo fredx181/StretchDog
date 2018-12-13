@@ -1,8 +1,0 @@
-Package: p910nd-print-server
-Version: 0.97.3-2
-Section: base
-Priority: optional
-Architecture: amd64
-Maintainer: rcrsn51
-Description: Manages printers
-Depends: arp-scan
