@@ -5388,6 +5388,22 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
+Package: websearch
+Architecture: all
+Version: 3.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./Extra/websearch_3.0.0_all.deb
+Size: 13380
+MD5sum: 2697dbf58a0f1683f35ca0803a0f4a33
+SHA1: 5bca9ccc022f2ad2a53b1598be453a56a3dc7ba7
+SHA256: 93397a3e2bf504d19d16081d5bee05188781fbf93537cdf19aa225d611e8b26f
+SHA512: 8b7fa8196175f13bb7b61e3c35ab1e882a127ce1a1385b354c9e954b171f0c577b1b6bdcffb0758c20edc64d7e2373f13bcec0076af4990bb6465a58d31280f8
+Description: Search the web, by Argolance, choice of 36 search engines
+
 Package: my-squash-loader
 Architecture: i386
 Version: 1.3-2
