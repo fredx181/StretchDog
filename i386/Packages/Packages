@@ -2702,6 +2702,22 @@ Description: Debian package management system
  .
  For Debian package development tools, install dpkg-dev.
 
+Package: websearch
+Architecture: all
+Version: 3.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./Extra/websearch_3.0.1_all.deb
+Size: 13400
+MD5sum: 77959fe7f5eb41da1a9c36e737b723f1
+SHA1: ca8ca3053ef7b45a930ec90c13921a339cb67919
+SHA256: 6ba54381645a657f0f3b4ae342b9eb2c6dd038127abe510407db9a5dd4820d2b
+SHA512: ae6fcf6bde93f875601b757bf362a3274286dd21fb322ce3451e649f3c2e9cfa6a1d10db21f3e46cd0a2cfec913b3966382540e7315f302e933173c963696576
+Description: Search the web, by Argolance, choice of 36 search engines
+
 Package: upgrade-kernel
 Architecture: all
 Version: 1.0.4
