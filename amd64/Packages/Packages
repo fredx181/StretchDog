@@ -5162,6 +5162,22 @@ SHA256: 535eef8e9727a2408c6f79d1b7a67d918ffab80362e57802f978cf15af86e9b1
 SHA512: c8b6e83d3fb12350f2bccb9d8b27ce569a1c5b75f5f6a94d1c2149dacf9e6ccc63e4af53c8015f3af0ddd44cd99b7b20f37e76423b67b7ff4d7d05e0c79c1075
 Description: Warning - This package works only in DebianDog!
 
+Package: websearch
+Architecture: all
+Version: 3.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./Extra/websearch_3.0.0_all.deb
+Size: 13380
+MD5sum: 2697dbf58a0f1683f35ca0803a0f4a33
+SHA1: 5bca9ccc022f2ad2a53b1598be453a56a3dc7ba7
+SHA256: 93397a3e2bf504d19d16081d5bee05188781fbf93537cdf19aa225d611e8b26f
+SHA512: 8b7fa8196175f13bb7b61e3c35ab1e882a127ce1a1385b354c9e954b171f0c577b1b6bdcffb0758c20edc64d7e2373f13bcec0076af4990bb6465a58d31280f8
+Description: Search the web, by Argolance, choice of 36 search engines
+
 Package: touchpad
 Architecture: all
 Version: 1.4

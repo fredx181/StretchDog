@@ -5689,6 +5689,7 @@ usr/local/bin/upgrade-kernel-bpo			    upgrade-kernel-bpo
 usr/local/bin/upgrade-kernel-start			    upgrade-kernel
 usr/local/bin/upgrade-kernel2				    upgrade-kernel2
 usr/local/bin/weav					    weav
+usr/local/bin/websearch					    websearch
 usr/local/bin/wee.mbr					    debdoginstallscripts
 usr/local/bin/wex					    wex
 usr/local/bin/wlanmaker					    wlanmaker
@@ -8148,6 +8149,44 @@ usr/local/smokey-get/tempestuous			    sfs-get-smokey-get
 usr/local/smokey-get/ttuuxxx				    sfs-get-smokey-get
 usr/local/smokey-get/wuxiandianzi			    sfs-get-smokey-get
 usr/local/smokey-get/zigbert				    sfs-get-smokey-get
+usr/local/websearch/engines/500px			    websearch
+usr/local/websearch/engines/Ask				    websearch
+usr/local/websearch/engines/Bandcamp			    websearch
+usr/local/websearch/engines/Bing			    websearch
+usr/local/websearch/engines/CNN				    websearch
+usr/local/websearch/engines/Cplusplus			    websearch
+usr/local/websearch/engines/Crunchyroll			    websearch
+usr/local/websearch/engines/Docker Hub			    websearch
+usr/local/websearch/engines/Dribbble			    websearch
+usr/local/websearch/engines/DuckDuckGo			    websearch
+usr/local/websearch/engines/Ecosia			    websearch
+usr/local/websearch/engines/Facebook			    websearch
+usr/local/websearch/engines/Gibiru			    websearch
+usr/local/websearch/engines/Giphy			    websearch
+usr/local/websearch/engines/Google			    websearch
+usr/local/websearch/engines/Internet Archive		    websearch
+usr/local/websearch/engines/Lilo			    websearch
+usr/local/websearch/engines/Netflix			    websearch
+usr/local/websearch/engines/NhacCuaTui			    websearch
+usr/local/websearch/engines/Pinterest			    websearch
+usr/local/websearch/engines/Quora			    websearch
+usr/local/websearch/engines/Qwant			    websearch
+usr/local/websearch/engines/Rotten Tomatoes		    websearch
+usr/local/websearch/engines/Slideshare			    websearch
+usr/local/websearch/engines/SoundCloud			    websearch
+usr/local/websearch/engines/Stack Overflow		    websearch
+usr/local/websearch/engines/Swisscows			    websearch
+usr/local/websearch/engines/The Register		    websearch
+usr/local/websearch/engines/Twitter			    websearch
+usr/local/websearch/engines/Vimeo			    websearch
+usr/local/websearch/engines/Wikipedia			    websearch
+usr/local/websearch/engines/WolframAlpha		    websearch
+usr/local/websearch/engines/Yahoo			    websearch
+usr/local/websearch/engines/Yandex			    websearch
+usr/local/websearch/engines/YouTube			    websearch
+usr/local/websearch/engines/eBay			    websearch
+usr/local/websearch/restart.sh				    websearch
+usr/local/websearch/websearch				    websearch
 usr/local/xlunch/xlunch					    xlunch
 usr/local/youtube-get2/1url.desktop			    youtube-get2
 usr/local/youtube-get2/2playlist.desktop		    youtube-get2
@@ -8349,6 +8388,7 @@ usr/share/applications/upgrade-kernel-bpo.desktop	    upgrade-kernel-bpo
 usr/share/applications/upgrade-kernel.desktop		    upgrade-kernel
 usr/share/applications/upgrade-kernel2.desktop		    upgrade-kernel2
 usr/share/applications/weav.desktop			    weav
+usr/share/applications/websearch.desktop		    websearch
 usr/share/applications/wex.desktop			    wex
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlunch-help.desktop		    xlunch
@@ -8812,6 +8852,7 @@ usr/share/doc/mount/copyright				    mount
 usr/share/doc/mount/examples/fstab			    mount
 usr/share/doc/nls/findnrun/findnrun.pot			    findnrun
 usr/share/doc/nls/grub4dosconfig/grub4dosconfig.pot	    grub4dosconfig
+usr/share/doc/nls/websearch/websearch.pot		    websearch
 usr/share/doc/palemoon/changelog.Debian.gz		    palemoon
 usr/share/doc/palemoon/copyright			    palemoon
 usr/share/doc/pburn.html				    pburn
@@ -10203,6 +10244,7 @@ usr/share/icons/hicolor/48x48/apps/mplayer.png		    gmplayer
 usr/share/icons/hicolor/48x48/apps/palemoon.png		    palemoon
 usr/share/icons/hicolor/48x48/apps/redshiftgui.png	    redshiftgui
 usr/share/icons/hicolor/48x48/apps/weav48.png		    weav
+usr/share/icons/hicolor/48x48/apps/websearch.png	    websearch
 usr/share/icons/hicolor/48x48/apps/wex48.png		    wex
 usr/share/icons/hicolor/48x48/apps/xfce4-whiskermenu.png    xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/icons/hicolor/48x48/apps/xlunch.png		    xlunch
@@ -10382,6 +10424,7 @@ usr/share/locale/fr/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fr/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
+usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
 usr/share/locale/fr/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/fr/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/locale/fr/LC_MESSAGES/yad.mo			    yad
@@ -11065,6 +11108,7 @@ usr/share/pixmaps/gtk-info.png				    youtube-get2
 usr/share/pixmaps/gtk-youtube-viewer.png		    youtube-viewer
 usr/share/pixmaps/icewm_32x32.xpm			    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/icon_epdfview-48.png			    epdfview
+usr/share/pixmaps/in_out_h.png				    websearch
 usr/share/pixmaps/inkgui.png				    inkgui
 usr/share/pixmaps/input-keyboard.png			    lxinputsave
 usr/share/pixmaps/install.png				    debdoginstallscripts
@@ -11156,6 +11200,7 @@ usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/updater.png				    apulse
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/upgrade-kernel2.png			    upgrade-kernel2
+usr/share/pixmaps/websearch.png				    websearch
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg
 usr/share/pixmaps/xhippo.xpm				    xhippo
 usr/share/pixmaps/xhippo/mini-record.xpm		    xhippo
