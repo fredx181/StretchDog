@@ -6238,6 +6238,22 @@ Description: File Manager for Xfce
  .
  Also included is an Xfce panel plugin which can manage the desktop trash.
 
+Package: yradio
+Architecture: i386
+Version: 0.0.7-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.7-0_i386.deb
+Size: 190068
+MD5sum: f3fb7229a8caeab4272d6b47a6d504a9
+SHA1: ce96d3eafbbf578aaa99b22ba8aad1db8f7dc0fe
+SHA256: 9e7cedd96fc8f2dd4dd37534f438403701bc5fc927910ee17a95b45287adf799
+SHA512: 2762c7114f932f95ec01a494ee90d097a4e6b001c50ad3443518e4a52b1af2fb000d354fee44cc1bc14be149840ff128d4da9c4503ff6f47411f86bdebab27bf
+Description: Internet Radio Player
+
 Package: peasyclock
 Architecture: all
 Version: 1.3

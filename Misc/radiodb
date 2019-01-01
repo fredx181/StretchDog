@@ -695,7 +695,7 @@ http://142.4.216.91:8002/listen.pls|MonoSolEstereo|merengue
 http://142.4.216.91:8012|LA MEXICANA 950 AM - 104.9 FM Mexico|Mexican
 http://142.4.216.91:8016/listen.pls|Forjando el Rock|glam-rock
 http://142.4.216.91:8100/listen.pls|Auto dj|salsa
-http://142.4.216.91:8136/listen.pls||world
+http://142.4.216.91:8136/listen.pls|_|world
 http://142.4.216.91:8142/listen.pls|Radio IUS|classical
 http://142.4.216.91:8188/listen.pls|RADIO VOZ DE VIDA|christian
 http://142.4.216.91:8230/listen.pls|www.tritonoradio.es.tl|glam-rock
@@ -1160,7 +1160,7 @@ http://149.13.0.81/bgestrada.m3u|BG Radio - Estrada Bulgaria|Adult Standards / N
 http://149.13.0.81/bgradio128.m3u|BG Radio Bulgaria|Folk
 http://149.13.0.81/radio1.ogg|Radio 1 Bulgaria|Variety
 http://149.202.158.84:7775/;|Radio Alpin Romania|Folk
-http://149.202.186.135:4060/listen.pls||zouk
+http://149.202.186.135:4060/listen.pls|_|zouk
 http://149.202.186.135:4310/listen.pls|MIX LA RADIO ETUDIANTE|80s
 http://149.202.186.135:4710/listen.pls|Radio-SUN //|pop
 http://149.202.186.135:4720/listen.pls|bayo //|alternative
@@ -2377,7 +2377,7 @@ http://173.193.205.96:7525/listen.pls?sid=1|StreamMyStation.com - 102.9 The Z|to
 http://173.193.205.96:7533/listen.pls?sid=1|StreamMyStation.com - WZEP|country
 http://173.193.205.96:8018/listen.pls?sid=1|92.1 The Possum|classic-rock
 http://173.193.205.96:8043/listen.pls?sid=1|105 FM - The Big Station|country
-http://173.193.205.96:8054/listen.pls||christian
+http://173.193.205.96:8054/listen.pls|_|christian
 http://173.193.205.96:8058/listen.pls|KHYI 95.3 FM Howe, TX USA|Americana
 http://173.193.205.96:8058/listen.pls?sid=1|95-3 The Range|americana
 http://173.193.205.96:8064/listen.pls?sid=1|WCLU Radio 1490AM|news
@@ -2404,7 +2404,7 @@ http://173.193.205.96:8276/listen.pls?sid=1|Gospel Music|gospel
 http://173.193.205.96:8286/listen.pls?sid=1|KECO 96.5|country
 http://173.193.205.96:8288/listen.pls?sid=1|Scanner|talk
 http://173.193.205.96:8308/listen.pls?sid=1|Radio Renovacion|gospel
-http://173.193.205.96:8322/listen.pls||jewish
+http://173.193.205.96:8322/listen.pls|_|jewish
 http://173.193.205.96:9016|Radio New York Jewish USA|Religious-Jewish
 http://173.193.205.96:9016/listen.pls|..:: New York Jewish Radio ::..|jewish
 http://173.193.205.96:9030/stream|Tha Afterparty Radio A-Side USA|Rap/Hip Hop
@@ -3235,7 +3235,7 @@ http://184.154.202.243:8357/listen.pls?sid=1|singersongwriterradio,ne t|pop
 http://184.154.43.106:8006/listen.pls?sid=1|KGUP FM Emerge Radio Stream|indie
 http://184.154.43.106:8016|Radio Momentos de Costa Rica Costa Rica|Latin
 http://184.154.43.106:8039/listen.pls?sid=1|Gente 3 Lagos|community
-http://184.154.43.106:8043/listen.pls||talk
+http://184.154.43.106:8043/listen.pls|_|talk
 http://184.154.43.106:8072/listen.pls?sid=1|Classic Hits 666|oldies
 http://184.154.43.106:8113/listen.pls|KVOH - Voz de Esperanza|christian
 http://184.154.43.106:8137/listen.pls?sid=1|WereWOOFS Stream|talk
@@ -7429,7 +7429,7 @@ http://37.187.79.93:8016/live|Radio Deshi FM.com Bangladesh|Variety
 http://37.187.79.93:8031/listen.pls?sid=1|Different Drumz DnB Radio|bass
 http://37.187.79.93:8192/|lbi Radio - Lebanon Lebanon|Arabic
 http://37.187.79.93:8200/listen.pls?sid=1|â¶:|glitch-hop
-http://37.187.79.93:8221/listen.pls?sid=1||country
+http://37.187.79.93:8221/listen.pls?sid=1|_|country
 http://37.187.79.93:8248/listen.pls?sid=1|96.3 WRocK Cebu Philippines|classic-rock
 http://37.187.79.93:8264/;|Radio Musica Amica Italy|Variety
 http://37.187.79.93:8264/listen.pls?sid=1|Radio Musica Amica Stream|dance
@@ -7445,7 +7445,7 @@ http://37.187.79.93:8640/stream|Charity Radio Ireland|Variety
 http://37.187.79.93:9254/listen.pls?sid=1|Hard Rock Hell Radio|classic-rock
 http://37.187.88.49:8090/plagefm256|Plage FM 89.1 France|Variety
 http://37.187.90.121:3074/stream|Raidió Corca Baiscinn 94.8 fm Ireland|Community
-http://37.187.90.121:3244/listen.pls?sid=1||electronic
+http://37.187.90.121:3244/listen.pls?sid=1|_|electronic
 http://37.187.90.121:3262/stream|Lina Web Radio Italy|Pop
 http://37.187.90.121:3326/listen.pls|Countrykanalen Sweden|country
 http://37.187.90.121:3330/listen.pls?sid=1|A New You Radio|drum-and-bass
@@ -8291,14 +8291,14 @@ http://46.4.33.73:10624/listen.pls|Bomba Fm Europa-DesdeTenerife-Mad rid-Cali-Lo
 http://46.4.33.73:5008/listen.pls|RADIO IMPACTO 90.7  HUARAL|folk
 http://46.4.33.73:5022/|Radio JCR 105.3FM - Huaura Peru|Folk
 http://46.4.33.73:5066/listen.pls?sid=1|ADN502 - Eres lo que escuchas, eres 502.|top-40
-http://46.4.33.73:5152/listen.pls||classical
+http://46.4.33.73:5152/listen.pls|_|classical
 http://46.4.33.73:5156/listen.pls|RADIO SABOR MIX |cumbia
 http://46.4.33.73:5196/;|Radio Pop Music Chile Chile|Pop
 http://46.4.33.73:5196/listen.pls?sid=1|Pop Music Chile|pop
 http://46.4.33.73:5214/listen.pls|RadioTVSalsa|salsa
 http://46.4.33.73:5224/;|Radio Adventista 96.5 FM El Salvador|Christian-Contemporary
 http://46.4.33.73:5250/listen.pls|RADIO FIESTA|cumbia
-http://46.4.33.73:5314/listen.pls?sid=1||classic-rock
+http://46.4.33.73:5314/listen.pls?sid=1|_|classic-rock
 http://46.4.33.73:5316/listen.pls|WHISKEY D RADIO|classic-rock
 http://46.4.33.73:7092/listen.pls?sid=1|FMHolaRadio.com|80s
 http://46.4.33.73:7700|SferaMedia Spain|Pop
@@ -10409,7 +10409,7 @@ http://78.129.189.182:33925/listen.pls|Hagas-bluesrock-Welle|blues
 http://78.129.189.182:34245/listen.pls|HerzBlutRadio-Cologne-Eu er Sender Live Im WEB|acid-house
 http://78.129.189.182:38684/listen.pls|Surfradio Int.|classic-rock
 http://78.129.189.182:6371/listen.pls|Ol Skool Rockabilly Radio|oldies
-http://78.129.190.50:11819/listen.pls||alternative
+http://78.129.190.50:11819/listen.pls|_|alternative
 http://78.129.190.50:12411/listen.pls?sid=1|BoomSVG106.9FM|urban
 http://78.129.190.50:17202/listen.pls|Masjid-e-Noorul Islam Bolton|spiritual
 http://78.129.190.50:18601/listen.pls?sid=1|2ac Radio Cantonese Channel|talk
@@ -10479,7 +10479,7 @@ http://78.129.224.15:13831/listen.pls|SUN Radio 97.1|pop
 http://78.129.224.15:15587/listen.pls|XBlues|blues
 http://78.129.224.15:16754/listen.pls|Missao Unida|gospel
 http://78.129.224.15:17388|Ράδιο Νίκη 96.4 (Filiatra) Greece|Variety
-http://78.129.224.15:17388/listen.pls||greek
+http://78.129.224.15:17388/listen.pls|_|greek
 http://78.129.224.15:19907/listen.pls|XSpanish|spanish
 http://78.129.224.15:21838/listen.pls|la esquina rumbera|salsa
 http://78.129.224.15:25947/listen.pls|la mas deportiva|classical
@@ -25015,7 +25015,7 @@ http://s4.myradiostream.com:7648|West Coast FM 107.7 Namibia|Adult Contemporary
 http://s4.myradiostream.com:7900/listen.pls|KCSA 97.1 LPFM San Angelo, TX USA|Oldies
 http://s4.nexuscast.com:8036/;|Hot 97 FM Saint Vincent and the Grenadines|Hits
 http://s4.nexuscast.com/tunein/gumbe.pls|Radio Gumbe -|African
-http://s4.onweb.gr:8062/listen.pls||pop
+http://s4.onweb.gr:8062/listen.pls|_|pop
 http://s4.onweb.gr:8076|Πρωινός 105.3 (Trikala) Greece|Variety
 http://s4.onweb.gr:8402|Radio DeeJay 90.6 (Xanthi) Greece|Hits
 http://s4.onweb.gr:8406/|Ρυθμός 106 (Xanthi) Greece|Pop
