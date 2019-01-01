@@ -51,6 +51,26 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - version 11 from https://dl.dropboxusercontent.com (= 19 Mb uncompressed)
  - Install flashplugin-nonfree with apt-get (= 25 Mb uncompressed)
 
+Package: dogradio
+Architecture: amd64
+Version: 0.0.9
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.6 | gmplayer | mplayer, file, streamripper
+Filename: ./Included/dogradio_0.0.9_amd64.deb
+Size: 903216
+MD5sum: aad28d3da72ee2f735abb99004e09fd6
+SHA1: 8fdb8f334bb9cec5a7ed94e2fceafb333e45c839
+SHA256: 89dd34473a6b90cdb9ef18b0e3d120759e9bb7d480640ea173b1b94b57f5023b
+SHA512: d22480ef28c30c115e77acf0748d961782a0fa1e6d59b6d9a4acf36a83bceb2b3f61e3b3791663250215988803ad35b94513b002d89eef9ed4d97f74ad8437b5
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+
 Package: edit-sfs-thunar
 Architecture: all
 Version: 2.3
@@ -5173,11 +5193,11 @@ Maintainer: fredx181
 Installed-Size: 878
 Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
 Filename: ./Extra/yradio_0.0.7-0_amd64.deb
-Size: 190024
-MD5sum: c0ad48cad815a7429a7de407ab7638a3
-SHA1: 96120f02400d7b1f2ae8b81e7ed6e948c5fedea1
-SHA256: 3bf2a6528d5360e7a22a96c75efc5bbacbf41038fc798293077efaf99a57dc3d
-SHA512: a62de664c1899484dd6a43634af787bd60fd552e2729de65d012d5513bb50307f603dd73ce5ef211b93c1b7697bb2b1974865e1b54c2077cd880b0e9b103ed41
+Size: 190110
+MD5sum: 58a3a4e38dfab63345e47b59c63986b2
+SHA1: e714325033c6e37a8ae8b8900cdcfa2e8f87d900
+SHA256: 45fbc6f52a2d635722fa0627c6d1520ad303b478caf0333a1705dd3ed658a57b
+SHA512: 16dd0293d6edc7c5c17c86e02e39517c437839f5f913cf4dfb8c0d39b4f6cb603d724b83be94518a2f6209bda156e8ea20d5149dd4245b3fabdb1c93b6553e24
 Description: Internet Radio Player
 
 Package: upgrade-kernel

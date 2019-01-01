@@ -5354,6 +5354,7 @@ usr/local/.dogradio/playlist/playlist.default		    dogradio
 usr/local/.dogradio/v0.0.2				    dogradio
 usr/local/.dogradio/v0.0.4				    dogradio
 usr/local/.dogradio/v0.0.8				    dogradio
+usr/local/.dogradio/v0.0.9				    dogradio
 usr/local/01-create-appimage64/.DirIcon			    create-portable
 usr/local/01-create-appimage64/AppImageAssistant.desktop    create-portable
 usr/local/01-create-appimage64/AppImageAssistant.png	    create-portable
