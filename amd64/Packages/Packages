@@ -5164,6 +5164,22 @@ SHA256: 13e5cbe62ccfd8633c29c0e9a4af33cb0988830fdd7a0b20d1e7c28a7cedeed3
 SHA512: c4dfd6e119b2b4c129c794efb161acfc630585426650882d41eb0357a56e7ae49174d201521865cd672cbb4bc32cfb0f30a578a615aa528f2ff2689182432f43
 Description: Volume control for system tray
 
+Package: yradio
+Architecture: amd64
+Version: 0.0.7-0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.7-0_amd64.deb
+Size: 190024
+MD5sum: c0ad48cad815a7429a7de407ab7638a3
+SHA1: 96120f02400d7b1f2ae8b81e7ed6e948c5fedea1
+SHA256: 3bf2a6528d5360e7a22a96c75efc5bbacbf41038fc798293077efaf99a57dc3d
+SHA512: a62de664c1899484dd6a43634af787bd60fd552e2729de65d012d5513bb50307f603dd73ce5ef211b93c1b7697bb2b1974865e1b54c2077cd880b0e9b103ed41
+Description: Internet Radio Player
+
 Package: upgrade-kernel
 Architecture: all
 Version: 1.0.9
