@@ -2967,6 +2967,25 @@ SHA256: 505760460c8e8853d5710985f426ead21cbeb86ae765f4c4673d42cd71a9066e
 SHA512: bdd2493d912e525b1d5bf418e774d9c3369eb19fb0d241c1ccf6d3ada139e1bf2aa1457b2811ffcd386bf72220472b4708b119c00987fcf38d76a8d2d870b981
 Description: Touchpad/mouse/touchscreen setup
 
+Package: dogradio
+Architecture: i386
+Version: 0.0.9
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | gmplayer | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.9_i386.deb
+Size: 903156
+MD5sum: 1affead4b16b420e90e774c3d8ef437c
+SHA1: 4656133c5efcd4bbf29c03dea49c28059d02799a
+SHA256: fc2e871fa0845aff88934b4fd7d19e34566d9dcffe8e2e205c6e7953f1e383dd
+SHA512: 148d1044cd2e87569c7fa0d6f5478bbad77e768d05e90bcc462f1180b66b22d319dbc11213b580d3a86414abbdf8b5ad5fa1cb418c89fdc6fc50cc0131e35720
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+
 Package: cputemp
 Architecture: i386
 Version: 3.1-1
@@ -6247,11 +6266,11 @@ Maintainer: fredx181
 Installed-Size: 878
 Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
 Filename: ./Extra/yradio_0.0.7-0_i386.deb
-Size: 190068
-MD5sum: f3fb7229a8caeab4272d6b47a6d504a9
-SHA1: ce96d3eafbbf578aaa99b22ba8aad1db8f7dc0fe
-SHA256: 9e7cedd96fc8f2dd4dd37534f438403701bc5fc927910ee17a95b45287adf799
-SHA512: 2762c7114f932f95ec01a494ee90d097a4e6b001c50ad3443518e4a52b1af2fb000d354fee44cc1bc14be149840ff128d4da9c4503ff6f47411f86bdebab27bf
+Size: 190090
+MD5sum: 06129dd39292a306b61d69e2280c4073
+SHA1: be589e26908a71bfe5a42f1fdaba5c4375f894b6
+SHA256: 522e01071e3a3d63a7d03f2c11d031fc05ee6746fa363cbd6aaeb1047c16a218
+SHA512: 47e01e7d075d0351b5837e4035477d7a1fe9b2e4b67571c5f7668e8cf4484999718ad75e1a66f36956fc8ab41a92711f67b3a710bb77c37797ebe5d77483171a
 Description: Internet Radio Player
 
 Package: peasyclock
