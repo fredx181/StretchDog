@@ -18,6 +18,26 @@ Description: graphical frontend to sudo - this version is fix for Jessie and SID
   More information available here:
   http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
 
+Package: dogradio
+Architecture: amd64
+Version: 0.0.9-1
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.6 | gmplayer | mplayer, file, streamripper
+Filename: ./Included/dogradio_0.0.9-1_amd64.deb
+Size: 902920
+MD5sum: 0ce7997e81d575ed7204a218a65e07e1
+SHA1: a357e8069cc030af045095d479c27cd17df65db6
+SHA256: dc1bfcaf05483b71f301532f78c7a75ddfb5f8b81b58e493b60b9b7fec914e62
+SHA512: 9f5ee8e0c59e26ffbea1f3359d26297591bd23f7016bd351b73e11a884bd7dfbcda46ffb365be467e418810d0ed24fcdae290cf74f1364168f1d03d45ae2efe6
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
+ v0.0.9: new database
+
 Package: edit-sfs-thunar
 Architecture: all
 Version: 2.4
@@ -3043,6 +3063,22 @@ SHA256: d6bb4904518e91ca6924ecea4b5078b392de46bd2328fcbf09770c3429f45c33
 SHA512: 6296c433d83418d0f634a71f47be718f3e3cf6012ee2e64777690671c3e6e38c455592e235defdc1af474f13c22380c4064a475ddb6b0f9ee234dde46274f0fb
 Description: Load squashfs modules on-the-fly
 
+Package: yradio
+Architecture: amd64
+Version: 0.0.7-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.7-1_amd64.deb
+Size: 190168
+MD5sum: 77eaea90f288c11e0b7b356b8315632b
+SHA1: a477c399731cb98ddf1f264b328d0a9ff0818a98
+SHA256: 245f4feeacecd0654ab391ec9a8f51dfbd5f23ba4dbc829d6a4ade83a12389d0
+SHA512: 58cce6c890d6dc41f8fdff58ba58587df35ba7e725954d5f39170feb0ccb3de7a849facfdd15f16fd4348ef35a7524ff5ff2cec5b04456d9592f08e1b2b62748
+Description: Internet Radio Player
+
 Package: slim
 Architecture: amd64
 Version: 1:1.3.6-5-dd
@@ -5183,6 +5219,22 @@ SHA1: 7eb565f532a2d0cad1835d30364cb53f3eaa88b0
 SHA256: 13e5cbe62ccfd8633c29c0e9a4af33cb0988830fdd7a0b20d1e7c28a7cedeed3
 SHA512: c4dfd6e119b2b4c129c794efb161acfc630585426650882d41eb0357a56e7ae49174d201521865cd672cbb4bc32cfb0f30a578a615aa528f2ff2689182432f43
 Description: Volume control for system tray
+
+Package: websearch
+Architecture: all
+Version: 5.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./Extra/websearch_5.0.0_all.deb
+Size: 16620
+MD5sum: 7e912386a02db1cc909154e34daafccd
+SHA1: 80ab03bceb535222c0a6cea5261eec07fc9b60c3
+SHA256: b08e89ca88f13ce92d4f12477b84d124b7665ff94b025e88d3c216a626fd0114
+SHA512: ad245065cc2b9658709966de9a652cdedfc9c19aa87f7a91db12360bcd9249e12d91aa28ebf4dbfc4fcfdeb63df868fbc0b7a08de52b7a241b6ccc0863934131
+Description: Search the web, by Argolance, choice of 36 search engines
 
 Package: yradio
 Architecture: amd64
