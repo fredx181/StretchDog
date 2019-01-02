@@ -1182,6 +1182,7 @@ tmp/instyad.sh						    wifibox-dhcpcd,wifibox
 usr/bin/Ceni						    ceni
 usr/bin/Frisbee						    frisbee
 usr/bin/Lumina-DE					    lumina-desktop-debdog
+usr/bin/RPhoto						    rphoto
 usr/bin/Thunar						    thunar
 usr/bin/Xdialog						    gtkdialog
 usr/bin/apulse						    apulse
@@ -1765,6 +1766,12 @@ usr/lib/libsbc.so					    bt4stretch
 usr/lib/libsbc.so.1					    bt4stretch
 usr/lib/libsbc.so.1.2.1					    bt4stretch
 usr/lib/libssl.so.0.9.8					    libssl0.9.8
+usr/lib/libwx_baseu-2.8.so.0				    rphoto
+usr/lib/libwx_baseu-2.8.so.0.8.0			    rphoto
+usr/lib/libwx_gtk2u_core-2.8.so.0			    rphoto
+usr/lib/libwx_gtk2u_core-2.8.so.0.8.0			    rphoto
+usr/lib/libwx_gtk2u_html-2.8.so.0			    rphoto
+usr/lib/libwx_gtk2u_html-2.8.so.0.8.0			    rphoto
 usr/lib/lua/5.3/iuplua.so				    iuplua-core-stretch-gtk2
 usr/lib/lua/5.3/iupluacontrols.so			    iupluacontrols-stretch-gtk2
 usr/lib/mime/packages/epdfview				    epdfview
@@ -9145,6 +9152,7 @@ usr/share/applications/redshiftgui.desktop		    redshiftgui
 usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/rox.desktop			    rox-filer,jwmconf
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
+usr/share/applications/rphoto.desktop			    rphoto
 usr/share/applications/rshift.desktop			    redshift-gui-lite
 usr/share/applications/samba-login.desktop		    yassm-smbclient-mpscan
 usr/share/applications/samba-search.desktop		    yassm-smbclient-mpscan
@@ -12449,6 +12457,7 @@ usr/share/locale/de/LC_MESSAGES/findnrun.mo		    findnrun-nls
 usr/share/locale/de/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/de/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/de/LC_MESSAGES/luksformat.mo		    cryptsetup-bin
+usr/share/locale/de/LC_MESSAGES/rphoto.mo		    rphoto
 usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/locale/de/LC_MESSAGES/xfe.mo			    xfe
@@ -12498,6 +12507,7 @@ usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fr/LC_MESSAGES/jwm.mo			    jwm
 usr/share/locale/fr/LC_MESSAGES/libgnutls26.mo		    libgnutls26
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
+usr/share/locale/fr/LC_MESSAGES/rphoto.mo		    rphoto
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
 usr/share/locale/fr/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/locale/fr/LC_MESSAGES/xfe.mo			    xfe
@@ -13367,6 +13377,7 @@ usr/share/pixmaps/restart.png				    jwm-setup,jwmconf
 usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
+usr/share/pixmaps/rphoto.xpm				    rphoto
 usr/share/pixmaps/rshift.png				    redshift-gui-lite
 usr/share/pixmaps/samba-menu.png			    samba-tng-rcrsn-0.5-rc1-debdog
 usr/share/pixmaps/samba4-control.png			    samba4-control
