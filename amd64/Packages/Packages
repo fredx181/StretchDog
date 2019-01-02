@@ -5646,6 +5646,20 @@ SHA256: 56ae4d1dcdbd297727b1757185de7ba4e0edbe7e081864825e81456ac9fff2d6
 SHA512: d82c025540bc9d69d0a39047a63b567de685b298a7f30500999d9d2acf2b5853aa77e014be7965cddd08f1ebc81f621787586c7b73e1e2e29b6d983b5b2e5b5c
 Description: Samba share mounter
 
+Package: rphoto
+Architecture: amd64
+Version: 0.4.4
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Filename: ./Extra/rphoto_0.4.4_amd64.deb
+Size: 1574254
+MD5sum: bfea874e86ead18ca0d6e9e386aaa921
+SHA1: 4f556cc323caba224eb84fcb080c0c3113aa97ad
+SHA256: c385c7b4724958ab24c755bfe3525c5edaf26b1af85f828339f15d2f698ef36a
+SHA512: 4f065deadf09fef1892892841ffdbbe82776792de03d4e71e088d2072fb580c5f4286b079526286b0746a6250f94f3f1a15f14b1e306d11ff85b6a690ab9d309
+Description: scales photos
+
 Package: jwmconf
 Architecture: amd64
 Version: 0.0.4

@@ -1072,6 +1072,7 @@ share/doc/scrox/scrot/README.scrox			    scrox
 share/doc/scrox/scrot/copyright				    scrox
 usr/bin/Ceni						    ceni
 usr/bin/Frisbee						    frisbee
+usr/bin/RPhoto						    rphoto
 usr/bin/Thunar						    thunar
 usr/bin/Xdialog						    gtkdialog
 usr/bin/apulse						    apulse
@@ -5187,6 +5188,12 @@ usr/lib/x86_64-linux-gnu/libungif.so.4.1.6		    gnome-mplayer-1.0.6
 usr/lib/x86_64-linux-gnu/libvpx.so.1			    libvpx1
 usr/lib/x86_64-linux-gnu/libvpx.so.1.3			    libvpx1
 usr/lib/x86_64-linux-gnu/libvpx.so.1.3.0		    libvpx1
+usr/lib/x86_64-linux-gnu/libwx_baseu-2.8.so.0		    rphoto
+usr/lib/x86_64-linux-gnu/libwx_baseu-2.8.so.0.8.0	    rphoto
+usr/lib/x86_64-linux-gnu/libwx_gtk2u_core-2.8.so.0	    rphoto
+usr/lib/x86_64-linux-gnu/libwx_gtk2u_core-2.8.so.0.8.0	    rphoto
+usr/lib/x86_64-linux-gnu/libwx_gtk2u_html-2.8.so.0	    rphoto
+usr/lib/x86_64-linux-gnu/libwx_gtk2u_html-2.8.so.0.8.0	    rphoto
 usr/lib/x86_64-linux-gnu/libx264.so.122			    libx264-122
 usr/lib/x86_64-linux-gnu/libxml2.a			    libxml2-dev
 usr/lib/x86_64-linux-gnu/libxml2.so			    libxml2-dev
@@ -8372,6 +8379,7 @@ usr/share/applications/redshiftgui.desktop		    redshiftgui
 usr/share/applications/resize-save.desktop		    resize-save-file
 usr/share/applications/rox.desktop			    jwmconf
 usr/share/applications/roxterm.desktop			    roxterm-gtk2
+usr/share/applications/rphoto.desktop			    rphoto
 usr/share/applications/rshift.desktop			    redshift-gui-lite
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
@@ -10366,6 +10374,7 @@ usr/share/locale/de/LC_MESSAGES/geany.mo		    geany
 usr/share/locale/de/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/de/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/de/LC_MESSAGES/mtpaint.mo		    mtpaint
+usr/share/locale/de/LC_MESSAGES/rphoto.mo		    rphoto
 usr/share/locale/de/LC_MESSAGES/uextract.mo		    uextract
 usr/share/locale/de/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/de/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
@@ -10429,6 +10438,7 @@ usr/share/locale/fr/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fr/LC_MESSAGES/mtpaint.mo		    mtpaint
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
+usr/share/locale/fr/LC_MESSAGES/rphoto.mo		    rphoto
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
 usr/share/locale/fr/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/fr/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
@@ -11179,6 +11189,7 @@ usr/share/pixmaps/restart.png				    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/rocket.png				    desktop-editor
 usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
+usr/share/pixmaps/rphoto.xpm				    rphoto
 usr/share/pixmaps/rshift.png				    redshift-gui-lite
 usr/share/pixmaps/samba4-control.png			    samba4-control
 usr/share/pixmaps/sd.png				    mount-wizard
