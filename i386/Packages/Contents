@@ -8338,6 +8338,8 @@ usr/local/websearch/engines/Yahoo			    websearch
 usr/local/websearch/engines/Yandex			    websearch
 usr/local/websearch/engines/YouTube			    websearch
 usr/local/websearch/engines/eBay			    websearch
+usr/local/websearch/help_files/websearch_engines_en.txt	    websearch
+usr/local/websearch/help_files/websearch_engines_fr.txt	    websearch
 usr/local/websearch/restart.sh				    websearch
 usr/local/websearch/websearch				    websearch
 usr/local/xlunch/xlunch					    xlunch

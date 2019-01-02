@@ -5103,6 +5103,22 @@ SHA512: ffe9c931ba3d2fcdee4f11bde191fb27ca34af054331bae7875727bace20f07992f0b937
 Description: kernel modules
   8192cu.ko, 8192du.ko, 8192eu.ko, 8812au.ko
 
+Package: yradio
+Architecture: i386
+Version: 0.0.7-1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 878
+Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.7 | gmplayer, xdotool, unzip, streamripper
+Filename: ./Extra/yradio_0.0.7-1_i386.deb
+Size: 190186
+MD5sum: fd2a32ef4681784cee5e90b9e5a0ec88
+SHA1: afaed9f52d287fe524827f7754e998d356978784
+SHA256: 690cc6f0d1dd06c589e1979e2af9006f5a979edc6b322d5345be2b4d605e977b
+SHA512: d94080b91c01180314118a1c28da187e79536eb3b57457ed3ae3fd0a4682b03d9ece8a36d6abcfbcaff0dc78f47142c4aea8e6ce575becc188f3f812300b8939
+Description: Internet Radio Player
+
 Package: pdf-to-djvu
 Architecture: all
 Version: 0.0.1
@@ -5211,6 +5227,25 @@ SHA1: 01e23fc544ff8b020acc64437787d569a70d8602
 SHA256: e5c1d1cf462780f501405876d78b911fbac8e79b933a6772526ec9270b03ad16
 SHA512: d428af2fddd27fe2d88d0df83cbfd73347f2f879ed039592c25a5bc1fd322088205cb50ec0eaf3d7e86a5036a9112afffc0e3d6185016c8cc7616129569a4de2
 Description: Warning - This package works only in DebianDog!
+
+Package: dogradio
+Architecture: i386
+Version: 0.0.9-1
+Maintainer: fredx181
+Installed-Size: 3100
+Depends: libc6, gtk2-engines-murrine, yad, sed, conky, gnome-mplayer-1.0.7 | gmplayer | mplayer, file, streamripper
+Filename: ./Extra/dogradio_0.0.9-1_i386.deb
+Size: 903020
+MD5sum: 315714c3f7ca42c8c4fd32cf1b6d3f8c
+SHA1: 9633704680a401f540bb6a4163514f6e87db749a
+SHA256: 4576ca78d57e244128e559e8e59a86c47abb9073fdc2992abb0877deeea9fa53
+SHA512: 0fafecb764a9b1453f3f4ce246d1f9011130a21f0633684c86ce1e2cb5ecfbc42a8cad51a80b32eb7053eb151c603b915e3007df95e259fd1b0eb3520a7f72dc
+Description: Dogradio is a GUI displaying icons for playing radio streams.
+ - Change in v 0.0.5: added option to rip streams (from right-click on tray-icon) 
+ - Using yad for the icons GUI
+ - Easy add/remove radio stream items
+ - Using conky for 'conky ticker', showing metadata
+ (can be enabled/disabled from tray icon menu + other settings)
 
 Package: upgrade-kernel
 Architecture: all
@@ -5389,6 +5424,22 @@ SHA1: 742f50e2f87d032e8bbbe07a2a062c8f7cd951f6
 SHA256: 5c672f0480409b7bff88505fb5a7422fa66236b31b483052e437b7c2995484e9
 SHA512: 4a9a97f89f73cfa99c5692ccd3affdc578411d5100d250e38e338a36214d315e3251787fb0d405e1b97d5aeab4ba953bc52c8ce9ee7677e93b0c84eadef48a1f
 Description: Google-drive Filemanager
+
+Package: websearch
+Architecture: all
+Version: 5.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 60
+Depends: libc6, gtkdialog, xdg-utils
+Filename: ./Extra/websearch_5.0.0_all.deb
+Size: 16620
+MD5sum: 7e912386a02db1cc909154e34daafccd
+SHA1: 80ab03bceb535222c0a6cea5261eec07fc9b60c3
+SHA256: b08e89ca88f13ce92d4f12477b84d124b7665ff94b025e88d3c216a626fd0114
+SHA512: ad245065cc2b9658709966de9a652cdedfc9c19aa87f7a91db12360bcd9249e12d91aa28ebf4dbfc4fcfdeb63df868fbc0b7a08de52b7a241b6ccc0863934131
+Description: Search the web, by Argolance, choice of 36 search engines
 
 Package: upgrade-kernel
 Architecture: all
