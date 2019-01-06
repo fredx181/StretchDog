@@ -4888,6 +4888,21 @@ SHA256: 215e31c7dda0ebf7aed95ff078a4fa0e9689acd5bc104ecd4f1f7ed3ee8fa28b
 SHA512: 573c09f7313b57e0868972c75085004a74bc1d5b0a0a1a0afceee6c6bac4ac53608392a805292d6ef24d4de248106f191020dab98a5bcb92549789d9f9479c6e
 Description: Volume control for system tray
 
+Package: yassm
+Architecture: all
+Version: 4.5-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./Extra/yassm_4.5-1.deb
+Size: 7454
+MD5sum: 6d9ea85dfff3c316f539368118b5cd76
+SHA1: a7da928e3e2c20f5844f81ec10dfcd2402563580
+SHA256: c475b3d55b91f81525325c77873fc03e9bb3fe356b65819cc1e3b2f3d587ab0a
+SHA512: 23de193faf7ab75ba46d634a31921bde8769b25f5615eb7c8de65b7939b741f481ec5c3eb9b964c5f0ff08b728b50a05f9591e6a099a24e350520d82e524453d
+Description: Samba share mounter
+
 Package: apulse
 Architecture: i386
 Version: 20181001
