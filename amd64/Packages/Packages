@@ -3072,11 +3072,11 @@ Maintainer: fredx181
 Installed-Size: 878
 Depends: yad (>= 1:0.36.0), gnome-mplayer-1.0.6 | gmplayer, xdotool, unzip, streamripper
 Filename: ./Extra/yradio_0.0.7-1_amd64.deb
-Size: 190168
-MD5sum: 77eaea90f288c11e0b7b356b8315632b
-SHA1: a477c399731cb98ddf1f264b328d0a9ff0818a98
-SHA256: 245f4feeacecd0654ab391ec9a8f51dfbd5f23ba4dbc829d6a4ade83a12389d0
-SHA512: 58cce6c890d6dc41f8fdff58ba58587df35ba7e725954d5f39170feb0ccb3de7a849facfdd15f16fd4348ef35a7524ff5ff2cec5b04456d9592f08e1b2b62748
+Size: 190226
+MD5sum: 722c0841d54187af9e79af02ef0eda12
+SHA1: d026926332b6328604e64e03b30d1850ad7b3b2a
+SHA256: dbfc5f2061d2b861b04fda35ec99958aa1ed8b40913dd04f1d4621e3db460270
+SHA512: cf93fb93315338e11ef8ed82a9ce03d24a6f91f020c76a696483bd490ff7c8c06bfa2210088a2c9d6f7a78d0fbd0c5fc951c93b26b34a46eba6bf56eb063edea
 Description: Internet Radio Player
 
 Package: slim
@@ -4713,6 +4713,21 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
+
+Package: yassm
+Architecture: all
+Version: 4.5-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, arp-scan, pnscan
+Filename: ./Extra/yassm_4.5-1.deb
+Size: 7454
+MD5sum: 6d9ea85dfff3c316f539368118b5cd76
+SHA1: a7da928e3e2c20f5844f81ec10dfcd2402563580
+SHA256: c475b3d55b91f81525325c77873fc03e9bb3fe356b65819cc1e3b2f3d587ab0a
+SHA512: 23de193faf7ab75ba46d634a31921bde8769b25f5615eb7c8de65b7939b741f481ec5c3eb9b964c5f0ff08b728b50a05f9591e6a099a24e350520d82e524453d
+Description: Samba share mounter
 
 Package: libmusicbrainz3-6
 Architecture: amd64
