@@ -3866,6 +3866,21 @@ Description: spell checker and morphological analyzer (shared library)
  .
  This package contains the shared library.
 
+Package: image-slicer
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm
+Filename: ./Extra/image-slicer_1.0_all.deb
+Size: 3764
+MD5sum: 51147305872f29f233535812f980aa16
+SHA1: 3d5004a47ed77fdb3afe6b588759e83148b102fd
+SHA256: 0a848284e83ff06a293cecfbab1a5905568bb8cc1418420683c36eefe79f623d
+SHA512: ad70ee949fb591d8b73ce289d92eb38ad59b7c9c72275ef3ff82d9315e2ebfc0d84b4a8f827bf614a6f5433f2ff7cfcced9b40ae6c758af5b98fcfe8365dc9ec
+Description: Slices an image into sections
+
 Package: peasyport
 Architecture: all
 Version: 2.7
@@ -6480,6 +6495,19 @@ SHA1: dc402beca14fa3e9acc401a6c52241a61114f542
 SHA256: 349e15cbc2415f91922c67f3668b1f747e2713b7ccdb54bf9f36dbc9fb3d73bc
 SHA512: 60d56306575b769099cca645ec5a5f65bf78c57f1db65909afc401dc2de9a4da45b4c3b0bd72f1eb4eb4afcc59fab87a71cc7f6c1fa688625bc1e1152d773396
 Description: Convert a folder of JPEGs to a PDF > part of PeasyPDF
+
+Package: my-squash-loader
+Architecture: amd64
+Version: 1.4
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.4_amd64.deb
+Size: 6810
+MD5sum: 16839500552c9bd725c48c5125d5cce6
+SHA1: 73764058412bfe1b3bf218c76cb2d4e720f58ff9
+SHA256: c4dfaff0e74da4a323e3a895aa083258ea0ec02654b2600571446ede506cfb3c
+SHA512: 188c025f227cd30cf0c71a3c72afc731c0c021dc6a31b517c56c20d4db541d935506b1c0d2915d2936143ca9ba2868f91afdf86d30f2224b7461e22fe86c910e
+Description: Load squashfs modules on-the-fly
 
 Package: samba4-control
 Architecture: all

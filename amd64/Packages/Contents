@@ -5604,6 +5604,7 @@ usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/gvidcap					    xvidcap
 usr/local/bin/image-changer				    peasyscale
+usr/local/bin/image-slicer				    image-slicer
 usr/local/bin/inkgui					    inkgui
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
 usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
@@ -8369,6 +8370,7 @@ usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.6
 usr/share/applications/googledrivegui.desktop		    googledrivegui
 usr/share/applications/googledrivegui2.desktop		    googledrivegui2
 usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer
+usr/share/applications/image-slicer.desktop		    image-slicer
 usr/share/applications/inkgui.desktop			    inkgui
 usr/share/applications/jwm-theme-change.desktop		    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/applications/jwm.desktop			    jwm-setup,jwm-setup-dd64
@@ -11292,6 +11294,7 @@ usr/share/pixmaps/gtk-info.png				    youtube-get2
 usr/share/pixmaps/gtk-youtube-viewer.png		    youtube-viewer
 usr/share/pixmaps/icewm_32x32.xpm			    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/icon_epdfview-48.png			    epdfview
+usr/share/pixmaps/image-slicer.png			    image-slicer
 usr/share/pixmaps/in_out_h.png				    websearch
 usr/share/pixmaps/inkgui.png				    inkgui
 usr/share/pixmaps/input-keyboard.png			    lxinputsave
