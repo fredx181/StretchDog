@@ -5776,6 +5776,7 @@ usr/local/bin/gsu-xterm					    gsu
 usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/image-changer				    peasyscale
+usr/local/bin/image-slicer				    image-slicer
 usr/local/bin/inkgui					    inkgui
 usr/local/bin/install-deb-and-dependencies		    fixdepinstall
 usr/local/bin/install-dir-debs-and-dependencies		    fixdepinstall
@@ -9133,6 +9134,7 @@ usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.7
 usr/share/applications/googledrivegui.desktop		    googledrivegui
 usr/share/applications/googledrivegui2.desktop		    googledrivegui2
 usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer
+usr/share/applications/image-slicer.desktop		    image-slicer
 usr/share/applications/inkgui.desktop			    inkgui
 usr/share/applications/jwm-theme-change.desktop		    jwm-setup,jwmconf
 usr/share/applications/jwm.desktop			    jwm-setup
@@ -13447,6 +13449,7 @@ usr/share/pixmaps/hound2.png				    frisbee
 usr/share/pixmaps/hound3.png				    frisbee
 usr/share/pixmaps/icewm_32x32.xpm			    jwm-setup,jwmconf
 usr/share/pixmaps/icon_epdfview-48.png			    epdfview
+usr/share/pixmaps/image-slicer.png			    image-slicer
 usr/share/pixmaps/in_out_h.png				    websearch
 usr/share/pixmaps/inkgui.png				    inkgui
 usr/share/pixmaps/input-keyboard.png			    lxinputsave

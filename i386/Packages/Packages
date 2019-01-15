@@ -3781,6 +3781,19 @@ SHA512: 4a8acb26790c54fba6c91b29e73876b3b69750af15d7538e9a25f4c56afc389976e43f52
 Description: Samba server control panel
 	uses the Samba4 Basic 32bit PET
 
+Package: my-squash-loader
+Architecture: i386
+Version: 1.4
+Priority: optional
+Maintainer: rcrsn51
+Filename: ./Extra/my-squash-loader_1.4_i386.deb
+Size: 6842
+MD5sum: 52c9d89acefa404f1690c67d81c0afed
+SHA1: 3334b78b6815bf375f7d5c2322a15fca1ddcc4c7
+SHA256: 1e5452cbedba1148a50c4c4bd6de947ec280f394bcfa914e44183eba5bc1d045
+SHA512: f7a75684666b9bd5f6c4b59f17ee89fd6daeb84ca628b29a34609e0e6cb383155ce9805f6725bdaab84d1830821bd2a4c68ee67fa673fe1bbfe2f1625b1828a9
+Description: Load squashfs modules on-the-fly
+
 Package: emelfm2
 Architecture: i386
 Version: 0.9.1-1~trusty~ppa1
@@ -3861,6 +3874,21 @@ SHA512: 1e465cd8a01e377f5e0e05600e94c0a47696e18b453f38e81fa457db72629877d5574ca1
 Description: gethosts script from SteveRiley: https://www.kubuntuforums.net/showthread.php?56419-Script-to-automate-building-an-adblocking-hosts-file
   Thanks to jockjunior: http://www.murga-linux.com/puppy/viewtopic.php?p=899122#899122
  .
+
+Package: image-slicer
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm
+Filename: ./Extra/image-slicer_1.0_all.deb
+Size: 3764
+MD5sum: 51147305872f29f233535812f980aa16
+SHA1: 3d5004a47ed77fdb3afe6b588759e83148b102fd
+SHA256: 0a848284e83ff06a293cecfbab1a5905568bb8cc1418420683c36eefe79f623d
+SHA512: ad70ee949fb591d8b73ce289d92eb38ad59b7c9c72275ef3ff82d9315e2ebfc0d84b4a8f827bf614a6f5433f2ff7cfcced9b40ae6c758af5b98fcfe8365dc9ec
+Description: Slices an image into sections
 
 Package: peasyport
 Architecture: all
