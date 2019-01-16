@@ -4732,6 +4732,20 @@ SHA256: e154fee04e53d1d8cf032f82e013d420283ae391d3d1c2756606f58d5657eddc
 SHA512: ae7285e6dcf4c5d58a963ddbb23efdbdbddc055415e169d95a683165d6a7a793228ce04af00df65335cbb3a57b936814df1f6b1077af3e5805305abae2180b40
 Description: Mounts ISO/SFS files
 
+Package: batterup
+Architecture: i386
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.6_i386.deb
+Size: 7624
+MD5sum: 10f05048bb5ec196810c6ce5dd38a5b4
+SHA1: 7a1d7284c0ecfde796526d306f99271d12f332cf
+SHA256: 1ff4ac08ceb471b6b9bbd95bd4b9c6b16ecfa11df41043870d0b8d98c0d608a6
+SHA512: 906708231e8ff12c02636bd998d6d96013b4f5ca22b037b93fdd821dfc4477cdec63a455acd42478f5500f85b8e6973fa800f27c755e9bf053ed517aca2d2360
+Description: Batterup battery monitor
+
 Package: jwmconf
 Architecture: i386
 Version: 0.0.5
@@ -4865,6 +4879,23 @@ SHA256: 00d831ef15c7e026a55f1b5e055986e16b11d6df6fcd8c2f11f3542f0570f414
 SHA512: 98a25b5a6c08ea407f06b143f468805edb2a01974ec7552e3428ab2e5026ad254c787e02811695f0b913059adc0acda7171a23b3f68c64abcc9b5edcea39e8cd
 Description: Document scanning tool
 	contains the binary xscanimage-peasy
+
+Package: peasyglue
+Architecture: all
+Version: 2.2
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 268
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, netpbm, poppler-utils
+Filename: ./Extra/peasyglue_2.2.deb
+Size: 6450
+MD5sum: cd5725a190e1d10459f62146e1129b28
+SHA1: cb7b30301bd6695104a26c339c296f3354e1532f
+SHA256: 1c5e1eea95520af4913cbb44a4593a7ad7921f6d3b5011e5531eeeebbe005b46
+SHA512: 58f541b40ccd64956e7f42b77ce0fa9c7c33dd9764d3a866296088a990d1d5bae4267a0b7a39768b8e7a3982ba5f0bd13e2ca6ae7b36ddba80147b2c639ce05a
+Description: graphic-utility
 
 Package: ms-sys
 Architecture: i386
