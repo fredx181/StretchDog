@@ -4707,6 +4707,23 @@ Description: Reliable network manager
  - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
  - Updated Help screen
 
+Package: peasyglue
+Architecture: all
+Version: 2.2
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 268
+Provides: pictures-joiner
+Depends: libc6, gtkdialog, netpbm, poppler-utils
+Filename: ./Extra/peasyglue_2.2.deb
+Size: 6450
+MD5sum: cd5725a190e1d10459f62146e1129b28
+SHA1: cb7b30301bd6695104a26c339c296f3354e1532f
+SHA256: 1c5e1eea95520af4913cbb44a4593a7ad7921f6d3b5011e5531eeeebbe005b46
+SHA512: 58f541b40ccd64956e7f42b77ce0fa9c7c33dd9764d3a866296088a990d1d5bae4267a0b7a39768b8e7a3982ba5f0bd13e2ca6ae7b36ddba80147b2c639ce05a
+Description: graphic-utility
+
 Package: youtube-get2
 Architecture: all
 Version: 0.2.0
@@ -5216,6 +5233,20 @@ SHA1: 2c3922f9c4ca99d8461a2217025f9270907c42cb
 SHA256: 51b03482331fd2d26a60e3329fad6018ae8dc43439b13da7a0a8883ce99d813a
 SHA512: 96f754a4754c4f27ad6781df37342445497e010543ec340627b34dc6b96f2bc6114e44902948cb538cee5aa194c2715ba104b106a04bfb13f03641f20f7761b1
 Description: Media player, CD player, Carousel
+
+Package: batterup
+Architecture: amd64
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.6_amd64.deb
+Size: 7496
+MD5sum: d987c2a790c9aa02af2970a12eecc44d
+SHA1: fc306f0bccd2f025562e190edcee61cec12d6b50
+SHA256: c2fa7a8a1c3aba1ca8f00d0845acf988e56be1572139f597101d1574e4a9005a
+SHA512: ff50c7e49b2b721b9c1f6981f3f745a6c4ac25c2b59f0323613343fb65176370534ebfff23ba3163d19aca0acbb4f547363f5bded4c4e77d7ca4664320b49063
+Description: Batterup battery monitor
 
 Package: guessfstype
 Architecture: amd64
