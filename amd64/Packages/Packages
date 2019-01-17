@@ -4383,6 +4383,20 @@ SHA256: d23bf0c4f7933fc2cc60ed8388834e114ca5b00ebdced9f92a6081d27ae9dab6
 SHA512: 1639d812e99092cd9f6ff91e509727f64566995c8e865eac1767300510768854bcac876305a9be2d1577da1011624ef916d55a2a0a2e4c86eb61958d73f16a47
 Description: Information about drive partitions
 
+Package: xscreenshot
+Architecture: amd64
+Version: 1.0
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Filename: ./Extra/xscreenshot_1.0_amd64.deb
+Size: 16292
+MD5sum: 14578b02f1034c0e0ca3db9a79271097
+SHA1: efbefbad337ba1457bb59b7b48341dee09132dd4
+SHA256: a3eb4cf2a91b9eee92431f5aa560be71313dc1e185a5335685b2912f66362d6a
+SHA512: 293db44ca283d0de53bc05207a03f7d583222be3588175e71e4bff7966fafcd46f0a7e1441a14ff2153999cbf14383cccdabe0db3a3030f43582615f509af305
+Description: Screen snapshot tool from jamesbond
+
 Package: my-squash-loader
 Architecture: amd64
 Version: 1.2
@@ -7354,26 +7368,6 @@ SHA1: 733530220924adcf5af587cba27a1e8934451bde
 SHA256: f71585244c1b9267dd88897bbbdca168387a94daa724503a72fd965bb262f274
 SHA512: ba97f2424069de4b1e24ccc1092895e801e6f882e20385ee7eb56e563bdd860dde606d2fb87311dd32b3032cff52eedc0009374dffb38290639ee2d9fb2688b2
 Description: File searching tool
-
-Package: slimjet
-Architecture: amd64
-Version: 9.0.1.0
-Priority: optional
-Section: web
-Maintainer: FlashPeak <support@flashpeak.com>
-Installed-Size: 213680
-Provides: www-browser
-Pre-Depends: dpkg (>= 1.14.0)
-Depends: gconf-service, libasound2 (>= 1.0.23), libatk1.0-0 (>= 1.12.4), libcap2 (>= 2.10), libc6 (>= 2.11), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.2.14), libexpat1 (>= 1.95.8), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgconf-2-4 (>= 2.31.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 1.8.0.10), libnss3 (>= 3.14.3), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:5.0), libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), libxrender1, libxss1, libxtst6, ca-certificates, libappindicator1, libcurl3, lsb-base (>= 3.2), xdg-utils (>= 1.0.2), wget
-Filename: ./Extra/slimjet_9.0.1.0_amd64.deb
-Size: 57907800
-MD5sum: 8ffb091528fdbfee8b4acba7acccaf3b
-SHA1: 73abbadf5cfeaeb8be2025ce01b80be040500efe
-SHA256: 6320d5b12c65f6c6b839a75fbd3127149906c55fbdd7c03e85c3ee2b32328dda
-SHA512: a8c80d035398fd4b6a75511c3c458503481523828b2dd77d4f261f9d7c62d6b83863656aa9b73782196f5fccfa80955320262e6b41a4474c2935b411164d2836
-Homepage: http://www.slimjet.com
-Description: Fast, smart and powerful browser based on Blink
- Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
 
 Package: camphonetab
 Architecture: all
