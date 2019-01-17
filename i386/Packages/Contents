@@ -5935,6 +5935,7 @@ usr/local/bin/xluncher1					    xlunch
 usr/local/bin/xluncher2					    xlunch
 usr/local/bin/xluncher3					    xlunch
 usr/local/bin/xrecord					    xhippo
+usr/local/bin/xscreenshot				    xscreenshot
 usr/local/bin/xwd					    snappie
 usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/yassm					    yassm
@@ -9234,6 +9235,7 @@ usr/share/applications/xfw.desktop			    xfe
 usr/share/applications/xhippo.desktop			    xhippo
 usr/share/applications/xlunch-help.desktop		    xlunch
 usr/share/applications/xrecord.desktop			    xhippo
+usr/share/applications/xscreenshot.desktop		    xscreenshot
 usr/share/applications/xvidcap.desktop			    xvidcap
 usr/share/applications/yassm.desktop			    yassm
 usr/share/apport/package-hooks/conky.py			    conky-all,conky-std,conky-cli
@@ -13603,6 +13605,7 @@ usr/share/pixmaps/xhippo/refresh.png			    xhippo
 usr/share/pixmaps/xhippo/shuffle.png			    xhippo
 usr/share/pixmaps/xhippo/stop.png			    xhippo
 usr/share/pixmaps/xlunch-logo.png			    xlunch
+usr/share/pixmaps/xscreenshot.png			    xscreenshot
 usr/share/pixmaps/xterm-color_32x32.xpm			    xterm
 usr/share/pixmaps/xterm-color_48x48.xpm			    xterm
 usr/share/pixmaps/xterm_32x32.xpm			    xterm

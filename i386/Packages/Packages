@@ -8167,6 +8167,20 @@ SHA256: 9f76504fd9b1dad2c0fb0f35039114743411319c77d8e9971bb6d1ec39b61961
 SHA512: b65a80eb8190d0908cd42ff8ee05fa1afde228c5cb38a4f6f92980dba763e1e49d35e96f78e442ee64d7d7474c11af5ebb34fef30258ae9ed0e4cdc16c7c1e22
 Description: mounts hand-held devices over USB
 
+Package: xscreenshot
+Architecture: i386
+Version: 1.0
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Filename: ./Extra/xscreenshot_1.0_i386.deb
+Size: 16072
+MD5sum: 58ba5d0a0c4044fe2c53e3c468cc685e
+SHA1: 52ea52c01aa6232c6e01ebb7846085fb20131284
+SHA256: 47346635de18456547dee6f96b5495f182beda8cc802738c8288291efc002341
+SHA512: bd32ee1dbbdadc4f4daa7e4e5f4ab7466b66a5bef6f95003efe84091850fab051238f10e2e28dbda1e866ff18adb1331ed6f3b9ea7ffc1799f1e677963eab2c9
+Description: Screen snapshot tool from jamesbond
+
 Package: evince
 Architecture: i386
 Version: 1:2.32.0-2
