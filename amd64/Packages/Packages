@@ -4276,6 +4276,20 @@ Description:  findnrun 1.10.6 (documentation)
   Files in this add-on package: larger English help (HTML).
   https://github.com/step-/find-n-run/
 
+Package: batterup
+Architecture: amd64
+Version: 1.6-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.6-1_amd64.deb
+Size: 7494
+MD5sum: 00906ab8457f7373a9afc6ce229b7ca2
+SHA1: a186ff36ef807c14615a40643c9961350b5744bc
+SHA256: a0d0e9d3744d6fa05d3be8fda98aa94b8a30cfa56ab65ffcbcb4da5da9550bea
+SHA512: fc364640695c75260024e216118b0c30268ea9952bc3c76add1eb84d8789d984ba8b96300e57054cabf6be1520f1011e1de6945b320c7b2cd18cab890273c6e5
+Description: Batterup battery monitor
+
 Package: peasypartview
 Architecture: all
 Version: 1.0
