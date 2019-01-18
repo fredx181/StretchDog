@@ -3721,6 +3721,20 @@ SHA256: 46d334dd3a4d0b960298fc6917c41f67c66cc640fc09b49134e2c344110d87eb
 SHA512: 7098032b45715065e393fb44b47c40d69952e7780057704636262a70dcbcde4d1ab89ea462cd24fe4ed45dc31a930f3e9b12d86a5f3c7e276d16965fc0eb361d
 Description: Screen snapshot
 
+Package: batterup
+Architecture: i386
+Version: 1.6-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/batterup_1.6-1_i386.deb
+Size: 7628
+MD5sum: c9e2b8621f7cffb5f7981d97541361df
+SHA1: bf2146a482aa388814ff653fc76d72d4b8adfb79
+SHA256: 552802f5c9a48e4b48e93bae210ac26cf0657fcf10e511bdffc0e386105e0176
+SHA512: d02d6fee74d8667389e10440a94674e94fb781ee9b6d6066a26e40ad9c5d22faa4d48b52facdbbbe9f82ac9b9baf79bbef7c38956b61d608e8ee2e196c87206c
+Description: Batterup battery monitor
+
 Package: yassm
 Architecture: all
 Version: 4.3
