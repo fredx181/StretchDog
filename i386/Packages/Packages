@@ -3460,6 +3460,20 @@ SHA256: c4fe3cdd4a520d37b20041291154379db28146d892d7c533468a60218e16d570
 SHA512: fa1d1063199c2f577f3f036fdcd12d641b52625cf997060f81a7512ab14b2242ac61c29354f5b52fc8c8cda15bae492488cea398613d7d861cf7b5c7f55c2ce2
 Description: Control center
 
+Package: conkyclock
+Architecture: all
+Version: 0.0.3
+Maintainer: fredx181 <fredx@nomail.nl>
+Installed-Size: 2700
+Depends: libc6, yad (>= 0.26.0), sed, conky-all, liblua5.1-0, wmctrl, hsetroot, menu
+Filename: ./Extra/conkyclock_0.0.3_all.deb
+Size: 2682456
+MD5sum: 56168cc30ba8ff1991caafc1c2713b33
+SHA1: 72729c30deaf55cfcd4d2a6b2d402eaec266fe30
+SHA256: b9488c1af57687733395fcf70f18e8270ec207b1dc69e9d2d53f5ced9adb70ad
+SHA512: b1c2a18711c16a28c2acf8ef6717cb8a4fa4d8cb591875d92f19c01acdb7bf1545598ee63f69663d1de4f7e531a58f6842b7525d20c7f05a73c31e4d927e4e06
+Description: Conky-clock, choose analog clock display on the Desktop
+
 Package: mpv
 Architecture: i386
 Version: 1:0.9.4-ddjessie
@@ -4835,6 +4849,21 @@ Description: Oxygen icon theme
  Oxygen is the standard icon theme for KDE 4, but follows the freedesktop.org
  icon schemes, so it can be used in other desktop environments using this
  specification.
+
+Package: image-slicer
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm
+Filename: ./Extra/image-slicer_1.1_all.deb
+Size: 3970
+MD5sum: 6d4f1d8e71443f5210380a5476ed26cc
+SHA1: 3b60e45a93c90c3261625a630560a633e5e03671
+SHA256: 673c368946b4d853e4d48f95e5aee40ef2359f7899bceef6887d97577637196a
+SHA512: 6680fced98d788d9c620f469d35ee97282c904627325d00ff7bdc3b1af9cd103fd45f9a3d79b76f4b24fb2131e975adbd1b82b4d5ff3a617e1ec8e0f549ce90b
+Description: Slices an image into sections
 
 Package: xfce4-whiskermenu-plugin
 Architecture: i386
