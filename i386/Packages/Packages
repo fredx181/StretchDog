@@ -8162,6 +8162,21 @@ SHA256: f71585244c1b9267dd88897bbbdca168387a94daa724503a72fd965bb262f274
 SHA512: ba97f2424069de4b1e24ccc1092895e801e6f882e20385ee7eb56e563bdd860dde606d2fb87311dd32b3032cff52eedc0009374dffb38290639ee2d9fb2688b2
 Description: File searching tool
 
+Package: peasypdf
+Architecture: all
+Version: 4.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale
+Filename: ./Extra/peasypdf_4.2.deb
+Size: 6836
+MD5sum: 3d39b8943b5be7a47480a3bc561e5986
+SHA1: 664938839ec5e442ee2d2b096618520ffd7c3f0a
+SHA256: 21242082fae07bf533d59e7870c5bc15dd63e5cce240e9e8dbc84b395b714106
+SHA512: 3e798268521c544f4dad42ac250fab44bf6483809ceb280539f07d8bca5c282138f0cbeb44620c74398e233ef2a24f01b2926d2fa1e542d8c036636048aa4394
+Description: Manipulate PDF documents
+
 Package: peasyscale
 Architecture: i386
 Version: 2.0
