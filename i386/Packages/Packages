@@ -2747,6 +2747,34 @@ SHA256: d6b2ce74aece8049a4355f37728c10910adb1be0fcab9f7ebdc25ca1c4a0463e
 SHA512: 99d44b521b7118de012e526fd1ab9eb395f1a9f1455754c376770b19bbbfbc044ecc90417254080179bee387467fc1396ac9c9d0f198d16d8903545860c4a246
 Description: Network port scanner
 
+Package: palemoon
+Architecture: i386
+Version: 28.3.1
+Priority: optional
+Section: web
+Maintainer: fredx181 <fredx@nomail.nl>
+Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
+Installed-Size: 61619
+Provides: x-www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
+Suggests: gstreamer0.10-ffmpeg
+Filename: ./Extra/palemoon_28.3.1_i386.deb
+Size: 42506574
+MD5sum: c2c296afe8a3a5c547cf0729e97cc7bc
+SHA1: 93732017b84d66e588e34b8cbc7b1a62ed1f2c5c
+SHA256: 81c0c77b76cf803b67fa5c7ae1df07e1f8689e66b44e18e72358ae0ec2a4fcd1
+SHA512: 0705d25d0014372cc0f2342283dbe9fd8c0634bf862c98a34d066a957254691691d64eb50b9de16cd0c364f451bfa003eb3441bbf63949469599f7d97e72426e
+Homepage: http://www.palemoon.org/
+Description: Firefox-based, efficient and easy to use web browser
+ Pale Moon offers selected features and optimizations to maximize
+ the browser's speed, stability and user experience, while maintaining
+ compatibility with the thousands of Firefox extensions you have come
+ to love and rely on.
+ .
+ Pale Moon requires a processor that supports the SSE2 instruction set.
+ Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
+ that your processor supports it.
+
 Package: libmusicbrainz3-6
 Architecture: i386
 Version: 3.0.2-2.1
@@ -4275,35 +4303,6 @@ SHA256: dd20c94b670c0b206499306e5a6c79e0e2b3e703afc83e026692848b70c49772
 SHA512: 4f6abee93ca40f7531533d52e221813af242f6de835507fac7b57296745bb9b968b05513847a99025d5820391fff55887e8f278b7fbf8eae35473f8bb6fb1317
 Description: QIV-slideshow:
  Slideshow using qiv and yad
-
-Package: palemoon
-Architecture: i386
-Version: 26.1.0
-Priority: optional
-Section: web
-Maintainer: fredx181 <fredx@nomail.nl>
-Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
-Installed-Size: 60619
-Provides: x-www-browser
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
-Suggests: gstreamer0.10-ffmpeg
-Replaces: iceweasel
-Filename: ./Extra/palemoon_26.1.0_i386.deb
-Size: 23980266
-MD5sum: 70dde8a779eb406343e663121c524ea2
-SHA1: cb8958a94df919c1aba033b033bf92777f814241
-SHA256: b5a49f59ae44bf034b676a828f9175adcc0d7867eb11ca36a30e7c308cb08b2d
-SHA512: fb67293c2e62e854b68eb4dd6557a39b13bcb4e094de4409781f82dfef449a5321cc07483274eff55fd8a0c6671d73a6453b42949393cb77eba69945269e00c6
-Homepage: http://www.palemoon.org/
-Description: Firefox-based, efficient and easy to use web browser
- Pale Moon offers selected features and optimizations to maximize
- the browser's speed, stability and user experience, while maintaining
- compatibility with the thousands of Firefox extensions you have come
- to love and rely on.
- .
- Pale Moon requires a processor that supports the SSE2 instruction set.
- Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
- that your processor supports it.
 
 Package: my-squash-loader
 Architecture: i386
@@ -7642,6 +7641,22 @@ Description: Alternate menu plugin for the Xfce desktop environment
  buttons on the side. Top level categories make browsing fast, and simple to
  switch between. Additionally, Whisker Menu keeps a list of the last ten
  applications that you've launched from it.
+
+Package: run-as-user
+Architecture: i386
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm
+Filename: ./Extra/run-as-user_0.0.2_i386.deb
+Size: 20458
+MD5sum: 324c3e7a8f835a4b97fd7c316b6768bc
+SHA1: b726f0ecc573d4d6c4f4e7b646e3f7e098e442fa
+SHA256: 73e421ebd8771e0e7d744d4442be19fcd90d5195d8d292c879d02f29f4e74ced
+SHA512: 1990e26a90363eaa88658f67815e2491d0574eb09d342b1d7529ec7c1bdc29a3e7a5a44a4593d5ffa70f26eeecf0f15d9163a0e8ee92a8be32dc9297b93dd487
+Description: Run application as unprivileged user (from root account)
 
 Package: batterup
 Architecture: i386
