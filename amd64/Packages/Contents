@@ -610,8 +610,12 @@ root/.jwm/jwm.main					    jwmconf,jwm-setup-dd64,jwm-setup
 root/.jwm/jwm.main-debian				    jwm-setup-dd64
 root/.jwm/jwm.tail					    jwmconf,jwm-setup-dd64,jwm-setup
 root/.jwmrc						    jwmconf,jwm-setup
+root/.local/share/applications/chromium.desktop		    run-as-user
+root/.local/share/applications/google-chrome.desktop	    run-as-user
 root/.local/share/applications/gparted.desktop		    jwmconf,jwm-setup-dd64
+root/.local/share/applications/run-as-user.desktop	    run-as-user
 root/.local/share/applications/synaptic.desktop		    jwmconf,jwm-setup-dd64
+root/.local/share/applications/vlc.desktop		    run-as-user
 root/.mplayer/config					    gmplayer
 root/.xhippo/gtkrc					    xhippo
 root/.xhippo/playlists/0default.d.xplist		    xhippo
@@ -4444,6 +4448,7 @@ usr/lib/min/snapshot_blob.bin				    min
 usr/lib/min/ui_resources_200_percent.pak		    min
 usr/lib/min/version					    min
 usr/lib/min/views_resources_200_percent.pak		    min
+usr/lib/palemoon/active-update.xml			    palemoon
 usr/lib/palemoon/application.ini			    palemoon
 usr/lib/palemoon/browser/blocklist.xml			    palemoon
 usr/lib/palemoon/browser/chrome.manifest		    palemoon
@@ -4452,6 +4457,7 @@ usr/lib/palemoon/browser/chrome/icons/default/default32.png palemoon
 usr/lib/palemoon/browser/chrome/icons/default/default48.png palemoon
 usr/lib/palemoon/browser/components/components.manifest	    palemoon
 usr/lib/palemoon/browser/components/libbrowsercomps.so	    palemoon
+usr/lib/palemoon/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi palemoon
 usr/lib/palemoon/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/icon.png palemoon
 usr/lib/palemoon/browser/extensions/{972ce4c6-7e08-4474-a285-3208198ce6fd}/install.rdf palemoon
 usr/lib/palemoon/browser/icons/mozicon128.png		    palemoon
@@ -4645,6 +4651,10 @@ usr/lib/palemoon/distribution/bundles/{3ff46564-d77c-491c-bfc5-fc555c87dbc4}/chr
 usr/lib/palemoon/distribution/bundles/{3ff46564-d77c-491c-bfc5-fc555c87dbc4}/defaults/preferences/htmlruby.js palemoon
 usr/lib/palemoon/distribution/bundles/{3ff46564-d77c-491c-bfc5-fc555c87dbc4}/install.rdf palemoon
 usr/lib/palemoon/distribution/bundles/{3ff46564-d77c-491c-bfc5-fc555c87dbc4}/license.txt palemoon
+usr/lib/palemoon/fonts/.uuid				    palemoon
+usr/lib/palemoon/fonts/TwemojiMozilla.ttf		    palemoon
+usr/lib/palemoon/icons/updater.png			    palemoon
+usr/lib/palemoon/icudt58l.dat				    palemoon
 usr/lib/palemoon/libfreebl3.chk				    palemoon
 usr/lib/palemoon/libfreebl3.so				    palemoon
 usr/lib/palemoon/libfreeblpriv3.chk			    palemoon
@@ -4652,7 +4662,10 @@ usr/lib/palemoon/libfreeblpriv3.so			    palemoon
 usr/lib/palemoon/libicudata.so.58			    palemoon
 usr/lib/palemoon/libicui18n.so.58			    palemoon
 usr/lib/palemoon/libicuuc.so.58				    palemoon
+usr/lib/palemoon/liblgpllibs.so				    palemoon
 usr/lib/palemoon/libmozalloc.so				    palemoon
+usr/lib/palemoon/libmozavcodec.so			    palemoon
+usr/lib/palemoon/libmozavutil.so			    palemoon
 usr/lib/palemoon/libmozjs.so				    palemoon
 usr/lib/palemoon/libmozsqlite3.so			    palemoon
 usr/lib/palemoon/libnspr4.so				    palemoon
@@ -4677,6 +4690,12 @@ usr/lib/palemoon/plugin-container			    palemoon
 usr/lib/palemoon/precomplete				    palemoon
 usr/lib/palemoon/removed-files				    palemoon
 usr/lib/palemoon/run-mozilla.sh				    palemoon
+usr/lib/palemoon/update-settings.ini			    palemoon
+usr/lib/palemoon/updater				    palemoon
+usr/lib/palemoon/updater.ini				    palemoon
+usr/lib/palemoon/updates.xml				    palemoon
+usr/lib/palemoon/updates/backup-update.log		    palemoon
+usr/lib/palemoon/updates/last-update.log		    palemoon
 usr/lib/pkgconfig/pupvm.pc				    pup-volume-monitor
 usr/lib/pup-volume-monitor/libcdrom.a			    pup-volume-monitor
 usr/lib/pup-volume-monitor/libcdrom.la			    pup-volume-monitor
@@ -5155,6 +5174,7 @@ usr/local/bin/conkyclock				    conkyclock
 usr/local/bin/conkyclock-2				    conkyclock2
 usr/local/bin/conv-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/local/bin/create-portable				    create-portable
+usr/local/bin/ddliveapp					    run-as-user
 usr/local/bin/debdog-full-install			    debdoginstallscripts
 usr/local/bin/debdog-install				    debdoginstallscripts
 usr/local/bin/defaultfilemanager			    pfind
@@ -5295,6 +5315,7 @@ usr/local/bin/remasterdog-cli				    remaster-scripts
 usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
+usr/local/bin/run-as-user				    run-as-user
 usr/local/bin/samba4-control				    samba4-control
 usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwmconf,jwm-setup
@@ -10729,6 +10750,7 @@ usr/share/pixmaps/camphonetab.png			    camphonetab
 usr/share/pixmaps/card24.png				    mount-wizard
 usr/share/pixmaps/ceni-16.xpm				    ceni
 usr/share/pixmaps/ceni.xpm				    ceni
+usr/share/pixmaps/chromium64.png			    run-as-user
 usr/share/pixmaps/clock_face33.png			    conkyclock2
 usr/share/pixmaps/clock_face45.png			    conkyclock
 usr/share/pixmaps/computer.png				    inxi-gui
@@ -10881,6 +10903,7 @@ usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/gnome-mplayer.xpm			    gnome-mplayer-1.0.6
 usr/share/pixmaps/go-next.png				    youtube-get2
 usr/share/pixmaps/go-previous.png			    youtube-get2
+usr/share/pixmaps/google-chrome64.png			    run-as-user
 usr/share/pixmaps/google-drive-128.png			    googledrivegui,googledrivegui2
 usr/share/pixmaps/gtk-go-back.png			    youtube-get2
 usr/share/pixmaps/gtk-go-forward.png			    youtube-get2
@@ -10981,6 +11004,8 @@ usr/share/pixmaps/unzipper.png				    unzipper
 usr/share/pixmaps/updater.png				    apulse
 usr/share/pixmaps/upgrade-kernel.png			    upgrade-kernel
 usr/share/pixmaps/upgrade-kernel2.png			    upgrade-kernel2
+usr/share/pixmaps/user-home64.png			    run-as-user
+usr/share/pixmaps/vlc64.png				    run-as-user
 usr/share/pixmaps/websearch.png				    websearch
 usr/share/pixmaps/xfce4-backdrop.png			    scrotdlg
 usr/share/pixmaps/xhippo.xpm				    xhippo

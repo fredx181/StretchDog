@@ -4132,6 +4132,34 @@ SHA256: 305cc39bf3391ee1eaa4a00a1774db39c0039195ea6b9b7576c3d1436730b753
 SHA512: 39940fdd1e33d0fe2ee805d277e731905fa29a85e8e620522db4120003bdcf70e3273cec3f9289d98df0e994c460bbb26fd81ce4ffffcb53d0bca8e7901cb5cd
 Description: Reports printer ink levels
 
+Package: palemoon
+Architecture: amd64
+Version: 28.3.1
+Priority: optional
+Section: web
+Maintainer: fredx181 <fredx@nomail.nl>
+Original-Maintainer: Marian Kadanka <marian.kadanka@openmailbox.org>
+Installed-Size: 61619
+Provides: x-www-browser
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.20.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6, libxext6, libxrender1, libxt6
+Suggests: gstreamer0.10-ffmpeg
+Filename: ./Extra/palemoon_28.3.1_amd64.deb
+Size: 41300984
+MD5sum: 7f21b6d6bf83b295e0601404e795b784
+SHA1: c312746a14c6719a92785366e51fae0d0637cb6a
+SHA256: f9e43b6702a9ca730c83e04a1e2e4d9ac7a0da1a8ee1fedffabf2abb133bc19e
+SHA512: d16bf78a1476a49c119fa3ec4373e64b0caacbe2db894d3dbbaecfddc856e06890418d44c8f4156b1b236b6df03f9e6882e6dd44f270287d5446b81b47e9cf7d
+Homepage: http://www.palemoon.org/
+Description: Firefox-based, efficient and easy to use web browser
+ Pale Moon offers selected features and optimizations to maximize
+ the browser's speed, stability and user experience, while maintaining
+ compatibility with the thousands of Firefox extensions you have come
+ to love and rely on.
+ .
+ Pale Moon requires a processor that supports the SSE2 instruction set.
+ Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
+ that your processor supports it.
+
 Package: f3-flash-check
 Architecture: all
 Version: 6.0
@@ -6873,6 +6901,22 @@ SHA1: 00a38d38114a6242fe6410bc832e95d5a4f6087d
 SHA256: 811d4f8e01b21ebf7abe7689386179b428c48ed1970d43036b03c249a2983a87
 SHA512: 3e963ffb8f5e85460da4ebcb9d0b46522a0daeefab229ba48e89f999414898452e7f5bfba72fb69f09aa6584a786e9e87689cabc66034cb94b7e13b35d527f5b
 Description: Warning - This package works only in DebianDog!
+
+Package: run-as-user
+Architecture: amd64
+Version: 0.0.2
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 72
+Depends: libc6, gtkdialog, xterm
+Filename: ./Extra/run-as-user_0.0.2_amd64.deb
+Size: 26398
+MD5sum: c476262295d238b279bcff89d9e1bc31
+SHA1: a630b7dee19ef1c9ed8d0bf4232a8ec29093488d
+SHA256: e795f54294320158fb38cb00afc4afc2dd3c453c701be786beadba3aec7b0b0d
+SHA512: 1602fae8dbe86c423af92d33e1981bb8aaffddc61ec52cdd30a5d623aafbfac33d23711040dd0139b26415fb0b9b2f07351fafe189c135695b4d459fb68e9923
+Description: Run application as unprivileged user (from root account)
 
 Package: peasyport
 Architecture: all
