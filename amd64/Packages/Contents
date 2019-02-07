@@ -659,6 +659,7 @@ root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
 root/Startup/samba-autostart				    samba4-control
 root/Startup/start-ntpdate				    tzupdate
+root/Startup/xautolock_start				    slideshow-qiv
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwmconf,jwm-setup-dd64,jwm-setup
@@ -5203,6 +5204,7 @@ usr/local/bin/gdrive_gui				    googledrivegui
 usr/local/bin/gdrive_gui2				    googledrivegui2
 usr/local/bin/geany					    geany
 usr/local/bin/gentriesquick				    xlunch
+usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gifenc					    gifenc
 usr/local/bin/gifenc-sel				    gifenc
 usr/local/bin/gifondesktop				    gifondesktop
@@ -5321,6 +5323,7 @@ usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwmconf,jwm-setup
 usr/local/bin/sfs-get					    sfs-get-smokey-get
 usr/local/bin/simpleHTTPserver				    simple-python-http-server
+usr/local/bin/slideshow-qiv				    slideshow-qiv
 usr/local/bin/smokey-get				    sfs-get-smokey-get
 usr/local/bin/snap					    porteusbootscripts
 usr/local/bin/snappie					    snappie
@@ -8042,6 +8045,7 @@ usr/share/applications/rshift.desktop			    redshift-gui-lite
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
 usr/share/applications/simpleHTTPserver.desktop		    simple-python-http-server
+usr/share/applications/slideshow-qiv.desktop		    slideshow-qiv
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/snappie.desktop			    snappie
 usr/share/applications/sound-card-selector.desktop	    sound-card-selector
@@ -10986,6 +10990,7 @@ usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown.png				    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/simpleHTTPserver.png			    simple-python-http-server
+usr/share/pixmaps/slideshow-qiv.png			    slideshow-qiv
 usr/share/pixmaps/snappie.png				    snappie
 usr/share/pixmaps/soundcard.png				    sound-card-selector
 usr/share/pixmaps/squash.png				    my-squash-loader

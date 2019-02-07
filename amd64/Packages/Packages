@@ -2551,6 +2551,22 @@ SHA256: 0839eb7c1158417d7f5cc7fde0ebd919ab33a698b2724fc6d988638ac73abc21
 SHA512: 889a07b13807abc7dc288759b64088db6530714e93419def219e57c321171382d74a584466c061fea47c396d999945f16daf8333d4e62df504261a2a550a0a0f
 Description: Extract gz, tgz, bz2, xz, zip, 7z archives
 
+Package: peasyscale
+Architecture: amd64
+Version: 2.0-1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libgtk2.0-0, libpango1.0-0, libcairo2, libglib2.0-0
+Filename: ./Extra/peasyscale_2.0-1_amd64.deb
+Size: 12638
+MD5sum: 7fe8b22e32f6d95102dd48dd6d9ee7a4
+SHA1: 40a01695515f19fb2b587130f4e3e857aa1a875a
+SHA256: e38f79d6f20d719860609d6878dc475a2a3d99853aee8fb77fe1d9842d869242
+SHA512: ec8348d70a1dedc0d01faedf1c3d9599b2fa79370d25c7c3c0b7c1d751c5be98685a510522676b4ecb3811640dd8033d203f877b9a7ed1968155cd81e02fb274
+Description: peasyscale from rcrsn51 for Puppy linux
+
 Package: redshift-gui-lite
 Architecture: amd64
 Version: 0.0.4
@@ -2874,6 +2890,21 @@ Description: colored FTP client using GLib
    * stop button, and many more features.
  .
   Author:   Brian Masney <masneyb@gftp.org>
+
+Package: slideshow-qiv
+Architecture: all
+Version: 1.1
+Priority: optional
+Section: graphics
+Maintainer: rcrsn51
+Depends: qiv, xautolock
+Filename: ./Extra/slideshow-qiv_1.1_all.deb
+Size: 6622
+MD5sum: 4cba77d4378d140835aef3fbbb0ac9ce
+SHA1: 0660c7b5b68faf4d692c05579e8932a5aede8047
+SHA256: d24259d04bf10ceda6909fc6226f6104ad60865706a6abfa1f8d356d962d1f56
+SHA512: 17705be1f78776ac4d9e843e0ecbae9d3a3f58d035fb53fed2b7b3b6cb358e8131bf9bd89018d5a4909a0cdd2a60f5c58e06fa9e04c5ebb2ddb88396a6a4c87e
+Description: Slideshow using qiv
 
 Package: mpv
 Architecture: amd64
@@ -6807,6 +6838,21 @@ MD5sum: dd7fec7f7f4a0031f807ae7ecd0361fc
 SHA1: 797066c5a2a43c5c7564cae33136f6db74de4138
 SHA256: b21419e2bde15bba6a8f100df15a5881fea529e06fed3f8fce28c1bdebe7df20
 SHA512: 323b4a0c7f652cc038f9fc5d069f97521b8025b20ad38350a57a9e1495db4d4c495aa8547e90bbbddb1f36086187d6bd1d78752592de24c3ed478063dc38ae62
+Description: prints graphic files
+
+Package: peasyprint
+Architecture: all
+Version: 3.1-2
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, cups, poppler-utils, peasyscale
+Filename: ./Extra/peasyprint_3.1-2.deb
+Size: 8260
+MD5sum: bafad4fe4085a70ea8db276fcc2b6488
+SHA1: 32b0ea787b3cf586eeb771d0831a1f34cbe6968f
+SHA256: 920d26ff2781555e56f998d38d65bd04168a9d0ee317d574ac691886281069ed
+SHA512: 271025a7378e461a664e743a12174f943fa6ec69cfd46d914a7a7ab3374db50df3beea8d0d273a0b615f09e5cde4fca1fa42b9e15640187997899a4bf231c39c
 Description: prints graphic files
 
 Package: p910nd-print-server

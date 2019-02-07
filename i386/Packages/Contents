@@ -1170,6 +1170,7 @@ root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
 root/Startup/samba-autostart				    samba4-control
 root/Startup/start-ntpdate				    tzupdate
+root/Startup/xautolock_start				    slideshow-qiv
 root/fisherman.jpg					    jwmconf
 root/sand.jpg						    jwmconf
 root/startup-jwm					    jwm-setup,jwmconf
@@ -5590,6 +5591,7 @@ usr/local/bin/gdrive_gui				    googledrivegui
 usr/local/bin/gdrive_gui2				    googledrivegui2
 usr/local/bin/geany					    geany
 usr/local/bin/gentriesquick				    xlunch
+usr/local/bin/get-image-size				    peasyscale
 usr/local/bin/gethosts					    debdog-advert-blocker
 usr/local/bin/gifdance					    gifdance
 usr/local/bin/gifenc					    gifenc
@@ -5720,6 +5722,7 @@ usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwm-setup,jwmconf
 usr/local/bin/sfs-get					    sfs-get-smokey-get
 usr/local/bin/simpleHTTPserver				    simple-python-http-server
+usr/local/bin/slideshow-qiv				    slideshow-qiv
 usr/local/bin/smokey-get				    sfs-get-smokey-get
 usr/local/bin/snap					    porteusbootscripts
 usr/local/bin/snappie					    snappie
@@ -9036,6 +9039,7 @@ usr/share/applications/samba-stop.desktop		    samba-tng-rcrsn-0.5-rc1-debdog
 usr/share/applications/sfs-get.desktop			    sfs-get-smokey-get
 usr/share/applications/sfsportable.desktop		    portablesfs-loadsfs-fuse
 usr/share/applications/simpleHTTPserver.desktop		    simple-python-http-server
+usr/share/applications/slideshow-qiv.desktop		    slideshow-qiv
 usr/share/applications/slimjet.desktop			    slimjet
 usr/share/applications/smokey-get.desktop		    sfs-get-smokey-get
 usr/share/applications/snappie.desktop			    snappie
@@ -13395,6 +13399,7 @@ usr/share/pixmaps/sfsload.png				    sfsload
 usr/share/pixmaps/shutdown-lumina.png			    lumina-desktop-debdog
 usr/share/pixmaps/shutdown.png				    jwm-setup,jwmconf
 usr/share/pixmaps/simpleHTTPserver.png			    simple-python-http-server
+usr/share/pixmaps/slideshow-qiv.png			    slideshow-qiv
 usr/share/pixmaps/slimjet.xpm				    slimjet
 usr/share/pixmaps/snappie.png				    snappie
 usr/share/pixmaps/sns.xpm				    sns
