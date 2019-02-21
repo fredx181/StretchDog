@@ -4590,6 +4590,21 @@ SHA256: d23bf0c4f7933fc2cc60ed8388834e114ca5b00ebdced9f92a6081d27ae9dab6
 SHA512: 1639d812e99092cd9f6ff91e509727f64566995c8e865eac1767300510768854bcac876305a9be2d1577da1011624ef916d55a2a0a2e4c86eb61958d73f16a47
 Description: Information about drive partitions
 
+Package: bt4stretch
+Architecture: i386
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: bluez, libbluetooth3, obexfs
+Filename: ./Extra/bt4stretch_1.3_i386.deb
+Size: 151716
+MD5sum: 0ef28c43c2a2698d84c288dbbc5d27f5
+SHA1: 4ad7a8e5d1f874a540781ad4f60d7bb92a205b55
+SHA256: 999db6174f6da2dffa136a43b98ce41c72a03f50d7ec41d21ffaac607316c508
+SHA512: 09f74b86b885eab6995d29ce44cc421fb731247e1dc587baaab795c6f99c77f761aaa30ae79787d299e311c43719deada68fb9e0c55c35fb71420c973877e2b6
+Description: Bluetooth manager and audio playeer
+
 Package: yradio
 Architecture: i386
 Version: 0.0.6-1
@@ -6441,6 +6456,22 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Easy add/remove radio stream items
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
+
+Package: peasyscale
+Architecture: i386
+Version: 2.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 48
+Depends: libc6, gtkdialog, libgtk2.0-0, libpango1.0-0, libcairo2, libglib2.0-0
+Filename: ./Extra/peasyscale_2.1_i386.deb
+Size: 11942
+MD5sum: fcc7f0601d00c3930ba24da31c6f215f
+SHA1: e36270e0ddaef6652b544797e4384d09bcaed889
+SHA256: 646b022bd9fa60fcf492a4c92a3c21b94b1c54f502b07911338d7c9d4dc7e00b
+SHA512: 79e1ec0009af44a999da03f95d82482988b800dd99fa085fae02c17531c655e870994c6f2b22c31589eb166785789f21c0127046af06efbb93cf4ab74fdce98c
+Description: peasyscale from rcrsn51 for Puppy linux
 
 Package: xlunch
 Architecture: i386
