@@ -4673,6 +4673,21 @@ SHA256: 43cc9f5c1eede3b1589b58c1d5eb09948e4be9ad1defe203a25e31fdd455a0f1
 SHA512: 51c1d521dc4a7d97dd2340db775fe9fe7a39625521076a0ca53a8e56bcb8d731f3dbc9839686469ccbd1a8d04e99f16b2ca873e5248df4eec4b7dbd49c1e498d
 Description: Universal File Viewer by Mochimoppel
 
+Package: mp3-ogg-wav-converter
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame, vorbis-tools
+Filename: ./Extra/mp3-ogg-wav-converter_1.0_all.deb
+Size: 5256
+MD5sum: ea6fd40fe653b7e9442ae4b9eab8e674
+SHA1: a2d88c340050896b2fad03be5cf6a6f74469d230
+SHA256: e28c6f53a8137a0e619eefad7de17f94fdec513e0e3da54f25bf2ac58749a012
+SHA512: a35370c453209df10229a2a02f3ac3715c9be1a337a1b4d210b39f439d9919d8c50236155ea4b94f1a40a5d4656ecbdc02369e123eb9432ce35446b516c7e205
+Description: converts mp3/ogg/wav files
+
 Package: upgrade-kernel-bpo
 Architecture: all
 Version: 0.0.3
@@ -6885,6 +6900,21 @@ SHA512: ff79ba367b8aadaae4b281656bb607d09e77a97ece9fb567fa0e039199b8a45e42d678a6
 Homepage: http://www.slimjet.com
 Description: Fast, smart and powerful browser based on Blink
  Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
+
+Package: peasydial
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: usb-modeswitch, wvdial
+Filename: ./Extra/peasydial_1.0_all.deb
+Size: 2946
+MD5sum: 67011a0eff8754e98522a83a65c56256
+SHA1: a184a0bd4a3dd939e6a2ccde8231c98e8f3ac2aa
+SHA256: e7f992c83e5e8c924ccba8b5a11dce5dfe4fe889e51b5bb8954e2ecbe3d41fe3
+SHA512: 421ca1ca4356ca8b0a1ac33a596b49d94172b821bb8129488a8690db30efe97d0ec50413abdb6ee74566453c7ae2c02f957f3bf2fb222c735c9550dafbbd47e0
+Description: modem dialer
 
 Package: dancing-letters
 Architecture: i386

@@ -4588,6 +4588,21 @@ SHA256: 43cc9f5c1eede3b1589b58c1d5eb09948e4be9ad1defe203a25e31fdd455a0f1
 SHA512: 51c1d521dc4a7d97dd2340db775fe9fe7a39625521076a0ca53a8e56bcb8d731f3dbc9839686469ccbd1a8d04e99f16b2ca873e5248df4eec4b7dbd49c1e498d
 Description: Universal File Viewer by Mochimoppel
 
+Package: mp3-ogg-wav-converter
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lame, vorbis-tools
+Filename: ./Extra/mp3-ogg-wav-converter_1.0_all.deb
+Size: 5256
+MD5sum: ea6fd40fe653b7e9442ae4b9eab8e674
+SHA1: a2d88c340050896b2fad03be5cf6a6f74469d230
+SHA256: e28c6f53a8137a0e619eefad7de17f94fdec513e0e3da54f25bf2ac58749a012
+SHA512: a35370c453209df10229a2a02f3ac3715c9be1a337a1b4d210b39f439d9919d8c50236155ea4b94f1a40a5d4656ecbdc02369e123eb9432ce35446b516c7e205
+Description: converts mp3/ogg/wav files
+
 Package: upgrade-kernel-bpo
 Architecture: all
 Version: 0.0.3
@@ -6613,6 +6628,21 @@ SHA256: ac87c4ee77c628bbbaaebdbf1e1f786dda6e5ff7da83240f8674756b4cb0b958
 SHA512: 4bc94d33f04ee204d12a643730ea2fba2e9e1776c19bc969c186c6f3f8f840cafa7b2874852e52a0a7e4d0a48e7064723e528b05ccbb8055e2ab91b21146fe80
 Description: Document scanning tool
 	contains the binary xscanimage-peasy
+
+Package: peasydial
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: usb-modeswitch, wvdial
+Filename: ./Extra/peasydial_1.0_all.deb
+Size: 2946
+MD5sum: 67011a0eff8754e98522a83a65c56256
+SHA1: a184a0bd4a3dd939e6a2ccde8231c98e8f3ac2aa
+SHA256: e7f992c83e5e8c924ccba8b5a11dce5dfe4fe889e51b5bb8954e2ecbe3d41fe3
+SHA512: 421ca1ca4356ca8b0a1ac33a596b49d94172b821bb8129488a8690db30efe97d0ec50413abdb6ee74566453c7ae2c02f957f3bf2fb222c735c9550dafbbd47e0
+Description: modem dialer
 
 Package: libpng12-0
 Architecture: amd64

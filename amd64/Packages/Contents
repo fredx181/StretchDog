@@ -5262,6 +5262,7 @@ usr/local/bin/mnt-img					    filemnt-thunar
 usr/local/bin/mount-wizard				    mount-wizard
 usr/local/bin/mountlink					    debdogmountscripts
 usr/local/bin/move-in-crypt				    move-in-crypt
+usr/local/bin/mp3-ogg-wav-converter			    mp3-ogg-wav-converter
 usr/local/bin/mplayer					    gnome-mplayer-1.0.6
 usr/local/bin/ms-sys					    ms-sys
 usr/local/bin/my_squash_loader				    my-squash-loader
@@ -5271,6 +5272,7 @@ usr/local/bin/p910nd-control				    p910nd-print-server
 usr/local/bin/pdf-to-djvu				    pdf-to-djvu
 usr/local/bin/peasycdplayer				    peasymp3
 usr/local/bin/peasyclock				    peasyclock
+usr/local/bin/peasydial					    peasydial
 usr/local/bin/peasydvdplayer				    peasy-dvd-player
 usr/local/bin/peasyfwmon				    peasyfwmon
 usr/local/bin/peasyglue					    peasyglue
@@ -8001,6 +8003,7 @@ usr/share/applications/min.desktop			    min
 usr/share/applications/mmview.desktop			    mm-view
 usr/share/applications/mount-wizard.desktop		    mount-wizard
 usr/share/applications/move-in-crypt.desktop		    move-in-crypt
+usr/share/applications/mp3-ogg-wav-converter.desktop	    mp3-ogg-wav-converter
 usr/share/applications/mplayer.desktop			    gmplayer
 usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/mtpaint.desktop			    mtpaint
@@ -8013,6 +8016,7 @@ usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
 usr/share/applications/peasycdplayer.desktop		    peasymp3
 usr/share/applications/peasyclock.desktop		    peasyclock
+usr/share/applications/peasydial.desktop		    peasydial
 usr/share/applications/peasydvdplayer.desktop		    peasy-dvd-player
 usr/share/applications/peasyglue.desktop		    peasyglue
 usr/share/applications/peasymount.desktop		    peasymount
@@ -10940,6 +10944,7 @@ usr/share/pixmaps/mini-record.xpm			    pavrecord
 usr/share/pixmaps/mkinitrd.png				    upgrade-kernel-bpo
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
+usr/share/pixmaps/mp3-ogg-wav-converter.png		    mp3-ogg-wav-converter
 usr/share/pixmaps/mplayer.png				    youtube-get,youtube-get2
 usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/mtpaint.png				    mtpaint
@@ -10951,6 +10956,7 @@ usr/share/pixmaps/palemoon.xpm				    palemoon
 usr/share/pixmaps/partview-24.png			    peasypartview
 usr/share/pixmaps/partview-48.png			    peasypartview
 usr/share/pixmaps/peasyclock.png			    peasyclock
+usr/share/pixmaps/peasydial.png				    peasydial
 usr/share/pixmaps/peasydvd.png				    peasy-dvd-player
 usr/share/pixmaps/peasyglue48.png			    peasyglue
 usr/share/pixmaps/peasymount-48.png			    peasymount
