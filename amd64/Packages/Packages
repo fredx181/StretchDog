@@ -5862,28 +5862,6 @@ Description: low level cryptographic library (symmetric and one-way cryptos)
  algorithms. To avoid having this package depend on libgmp, the
  asymmetric cryptos reside in a separate library, libhogweed.
 
-Package: min
-Architecture: amd64
-Version: 1.7.0-1
-Priority: optional
-Section: web
-Maintainer: Min Developers <280953907a@zoho.com>
-Installed-Size: 162022
-Depends: gconf2, gconf-service, gvfs-bin, libc6, libcap2, libgtk2.0-0, libudev0 | libudev1, libgcrypt11 | libgcrypt20, libnotify4, libnss3, libxtst6, python, xdg-utils
-Recommends: lsb-release
-Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0
-Filename: ./Extra/min_1.7.0_amd64.deb
-Size: 43109716
-MD5sum: e20a7b70f4bbf01ffb4797e530feed97
-SHA1: 3dd7d515d1d2bdc3e78ec79639a4e91c4d213bb0
-SHA256: 8f706bc35d5e944fb86aef1aadbc96969e868f67d3f4af8680c1e6632245c96d
-SHA512: b90bd02a38a206172ab13e6922f5a2055e5e12dc21c1d69949273de27e53c0badede60cf94ced918d868cee049c2014f6e6d830e17697cf0b480df60c51c8205
-Homepage: https://palmeral.github.io/min/
-Description: Min is a faster, smarter web browser.
- A web browser with smarter search, improved tab management, and built-in ad 
- blocking. Includes full-text history search, instant answers from DuckDuckGo, 
- the ability to split tabs into groups, and more.
-
 Package: yassm
 Architecture: all
 Version: 4.5

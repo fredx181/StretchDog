@@ -5481,28 +5481,6 @@ SHA256: 8fb8a85301a49ad535df6b7801be9686f7955a130a80bd9c1e7dff0efa9f3223
 SHA512: ba484497c62de51aa7d92bdf2d2aa13bbed033a6a7779b7ab83cd07ee72e7657c559c22d95eb64e725d42a4bcd409af29c732928383ef5ea83a1809a960f0fe8
 Description: diffing, syncing, umounting GUI applets
 
-Package: min
-Architecture: i386
-Version: 1.7.0-1
-Priority: optional
-Section: web
-Maintainer: Min Developers <280953907a@zoho.com>
-Installed-Size: 165981
-Depends: gconf2, gconf-service, gvfs-bin, libc6, libcap2, libgtk2.0-0, libudev0 | libudev1, libgcrypt11 | libgcrypt20, libnotify4, libnss3, libxtst6, python, xdg-utils
-Recommends: lsb-release
-Suggests: gir1.2-gnomekeyring-1.0, libgnome-keyring0
-Filename: ./Extra/min_1.7.0_i386.deb
-Size: 43988822
-MD5sum: 8e18ef92b02f2401187c3cf2ffce65f2
-SHA1: b23e970abc0aecd583c12ab694feb7edb0536d2d
-SHA256: 3c96bccb379f4d49bd4203189f9de661c241e114571b9ea0548337b1c5d484ba
-SHA512: ead4cfc4620a2fa20a82b6d779dd73d9414f158b23e21b32d74769097134f89b8abb128f45e240baa95bc2d82e3f5b0c947a66561ad7d2d8ed46c8732bafdf86
-Homepage: https://palmeral.github.io/min/
-Description: Min is a faster, smarter web browser.
- A web browser with smarter search, improved tab management, and built-in ad 
- blocking. Includes full-text history search, instant answers from DuckDuckGo, 
- the ability to split tabs into groups, and more.
-
 Package: upgrade-kernel
 Architecture: all
 Version: 1.0.6
@@ -6880,26 +6858,6 @@ Description: Screen video capture for X
  standards-based alternative to tools like Lotus ScreenCam.
  .
  Video can be saved in MPEG or AVI files format.
-
-Package: slimjet
-Architecture: i386
-Version: 12.0.6.0
-Priority: optional
-Section: web
-Maintainer: FlashPeak <support@flashpeak.com>
-Installed-Size: 197904
-Provides: www-browser
-Pre-Depends: dpkg (>= 1.14.0)
-Depends: gconf-service, libasound2 (>= 1.0.23), libatk1.0-0 (>= 1.12.4), libcap2 (>= 2.10), libc6 (>= 2.11), libcairo2 (>= 1.6.0), libcups2 (>= 1.4.0), libdbus-1-3 (>= 1.2.14), libexpat1 (>= 1.95.8), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.3.9), libgcc1 (>= 1:4.1.1), libgconf-2-4 (>= 2.31.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libnspr4 (>= 1.8.0.10), libnss3 (>= 3.14.3), libpango1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3 (>= 1:5.0), libxi6 (>= 2:1.2.99.4), libxrandr2 (>= 2:1.2.99.2), libxrender1, libxss1, libxtst6, ca-certificates, libappindicator1, libcurl3, lsb-base (>= 3.2), xdg-utils (>= 1.0.2), wget
-Filename: ./Extra/slimjet_12.0.6.0_i386.deb
-Size: 53283788
-MD5sum: e61b8777f3516ceabd638468010892e9
-SHA1: 957fc4dbfd495413a87aede4a1532744d990b910
-SHA256: 7e5aaf1599bc67616c2af96e2b77388adab8807ce478018671f0341c569c4cf8
-SHA512: ff79ba367b8aadaae4b281656bb607d09e77a97ece9fb567fa0e039199b8a45e42d678a6f85cb45170ed72ef5e7d0d7a6610bd7d9c3b73cd4fb50d22c1a32eed
-Homepage: http://www.slimjet.com
-Description: Fast, smart and powerful browser based on Blink
- Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
 
 Package: obkey
 Architecture: all
