@@ -6901,6 +6901,39 @@ Homepage: http://www.slimjet.com
 Description: Fast, smart and powerful browser based on Blink
  Slimjet is a fast, smart and powerful web browser based on the Blink engine. It is built on top of the Chromium open source project, on which Google chrome is also based. Slimjet integrates a lot of powerful and convenient features to help users maximize their online productivity. Slimjet also includes many options and settings so that users can customize the browser to best suit their own personal preference.
 
+Package: obkey
+Architecture: all
+Version: 1.3.1-1
+Priority: optional
+Section: x11
+Maintainer: fredx181
+Installed-Size: 157
+Depends: python, python-gi, libgtk-3-0, gir1.2-gtk-3.0
+Filename: ./Extra/obkey_1.3.1-1_all.deb
+Size: 25794
+MD5sum: 2e84e4efd28619a060957fedee65667e
+SHA1: b18a5d6ba527ac0796abd99a5549260655293f24
+SHA256: a6782de96034e28f9fb705a1e3756fb227936fb3136610fe0fcf253c99e69f8f
+SHA512: a36a3113075fd502121c9d4d82ee0fa0ce8ec047225e2c88e7874ddd56b4f15859913217bb115ca15d728d47e8ce8216dc0e4fb59bf12a76400c580f0cd28461
+Homepage: https://github.com/luffah/obkey
+Description: Openbox Key Editor
+ .
+ A keybinding editor for OpenBox, it includes launchers and window management keys.
+ .
+ It allows to:
+     * can check almost all keybinds in one second.
+     * add new keybinds, the default key associated will be 'a' and no action will be associated;
+     * add new child keybinds;
+     * setup existing keybinds :
+         * add/remove/sort/setup actions in the actions list;
+         * change the keybind by clicking on the item in the list;
+     * duplicate existing keybinds;
+     * remove a keybind.
+ .
+ The current drawbacks :
+     * XML inculsion is not managed. If you want to edit many files, then you shall open them with ;
+     *  conditionnal tag is not supported (but did you knew it exists).
+
 Package: peasydial
 Architecture: all
 Version: 1.0

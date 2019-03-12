@@ -775,6 +775,7 @@ usr/bin/mtpaint						    mtpaint
 usr/bin/network_tray					    frisbee
 usr/bin/network_tray.sh					    frisbee
 usr/bin/nicinfo						    ceni
+usr/bin/obkey						    obkey
 usr/bin/palemoon					    palemoon
 usr/bin/pavrecord					    pavrecord
 usr/bin/pburn						    pburn
@@ -4791,6 +4792,18 @@ usr/lib/python2.7/dist-packages/cupsext.la		    hplip-print-scan
 usr/lib/python2.7/dist-packages/cupsext.so		    hplip-print-scan
 usr/lib/python2.7/dist-packages/hpmudext.la		    hplip-print-scan
 usr/lib/python2.7/dist-packages/hpmudext.so		    hplip-print-scan
+usr/lib/python2.7/dist-packages/obkey-1.3.1.egg-info	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/ActionList.py   obkey
+usr/lib/python2.7/dist-packages/obkey_parts/Gui.py	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/KeyTable.py	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/KeyUtils.py	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/OBKeyboard.py   obkey
+usr/lib/python2.7/dist-packages/obkey_parts/OpenboxConfig.py obkey
+usr/lib/python2.7/dist-packages/obkey_parts/PropertyTable.py obkey
+usr/lib/python2.7/dist-packages/obkey_parts/Resources.py    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/XmlUtils.py	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/__init__.py	    obkey
+usr/lib/python2.7/dist-packages/obkey_parts/__version__.py  obkey
 usr/lib/python2.7/dist-packages/pcardext.la		    hplip-print-scan
 usr/lib/python2.7/dist-packages/pcardext.so		    hplip-print-scan
 usr/lib/python2.7/dist-packages/scanext.la		    hplip-print-scan
@@ -7913,6 +7926,7 @@ usr/share/Thunar/sendto/thunar-sendto-email.desktop	    thunar
 usr/share/aclocal/libxml2.m4				    libxml2-dev
 usr/share/aclocal/yad.m4				    yad
 usr/share/alsa/alsa.conf.d/20-bluealsa.conf		    bt4stretch
+usr/share/appdata/obkey.appdata.xml			    obkey
 usr/share/appdata/thunar.appdata.xml			    thunar
 usr/share/applications/ Text to SVG_PNG Fancy Text and Logo Generator.desktop txt2svg
 usr/share/applications/Animated Gif on Desktop.desktop	    gifondesktop
@@ -8008,6 +8022,7 @@ usr/share/applications/mplayer.desktop			    gmplayer
 usr/share/applications/mpv.desktop			    mpv
 usr/share/applications/mtpaint.desktop			    mtpaint
 usr/share/applications/my-squash-loader.desktop		    my-squash-loader
+usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup,jwm-setup-dd64
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server
 usr/share/applications/palemoon.desktop			    palemoon
@@ -8532,6 +8547,7 @@ usr/share/doc/mount/examples/fstab			    mount
 usr/share/doc/nls/findnrun/findnrun.pot			    findnrun
 usr/share/doc/nls/grub4dosconfig/grub4dosconfig.pot	    grub4dosconfig
 usr/share/doc/nls/websearch/websearch.pot		    websearch
+usr/share/doc/obkey/changelog.Debian.gz			    obkey
 usr/share/doc/palemoon/changelog.Debian.gz		    palemoon
 usr/share/doc/palemoon/copyright			    palemoon
 usr/share/doc/pburn.html				    pburn
@@ -10140,6 +10156,7 @@ usr/share/locale/bn/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/bn/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/bn_IN/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/br/LC_MESSAGES/evince.mo		    evince
+usr/share/locale/bs/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/ca/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/ca/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/ca/LC_MESSAGES/geany.mo		    geany
@@ -10232,6 +10249,7 @@ usr/share/locale/fr/LC_MESSAGES/geany.mo		    geany
 usr/share/locale/fr/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/fr/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
 usr/share/locale/fr/LC_MESSAGES/mtpaint.mo		    mtpaint
+usr/share/locale/fr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/fr/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/fr/LC_MESSAGES/rphoto.mo		    rphoto
 usr/share/locale/fr/LC_MESSAGES/websearch.mo		    websearch
@@ -10258,6 +10276,7 @@ usr/share/locale/he_IL/LC_MESSAGES/epdfview.mo		    epdfview
 usr/share/locale/hi/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/hi/LC_MESSAGES/geany.mo		    geany
 usr/share/locale/hr/LC_MESSAGES/gftp.mo			    gftp-common
+usr/share/locale/hr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/hr/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/hr/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/locale/hu/LC_MESSAGES/epdfview.mo		    epdfview
@@ -10412,6 +10431,7 @@ usr/share/locale/sq/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/sr/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/sr/LC_MESSAGES/geany.mo		    geany
 usr/share/locale/sr/LC_MESSAGES/gftp.mo			    gftp-common
+usr/share/locale/sr/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/sr/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/sr/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
 usr/share/locale/sr@Latn/LC_MESSAGES/gftp.mo		    gftp-common
@@ -10441,6 +10461,7 @@ usr/share/locale/uk/LC_MESSAGES/evince.mo		    evince
 usr/share/locale/uk/LC_MESSAGES/geany.mo		    geany
 usr/share/locale/uk/LC_MESSAGES/gftp.mo			    gftp-common
 usr/share/locale/uk/LC_MESSAGES/gnutls-deb0-28.mo	    libgnutls-deb0-28
+usr/share/locale/uk/LC_MESSAGES/obkey.mo		    obkey
 usr/share/locale/uk/LC_MESSAGES/roxterm.mo		    roxterm-common
 usr/share/locale/uk/LC_MESSAGES/wget.mo			    wget
 usr/share/locale/uk/LC_MESSAGES/xfce4-whiskermenu-plugin.mo xfce4-whiskermenu-plugin,xfce4-whiskermenu-plugin-mod
@@ -10712,6 +10733,8 @@ usr/share/mplayer/skins/nativeRed/symbols.fnt		    gmplayer
 usr/share/mplayer/skins/nativeRed/symbols.png		    gmplayer
 usr/share/mplayer/skins/nativeRed/volbutton.png		    gmplayer
 usr/share/mplayer/skins/nativeRed/volstop.png		    gmplayer
+usr/share/obkey/icons/add_child.png			    obkey
+usr/share/obkey/icons/add_sibling.png			    obkey
 usr/share/perl5/Ceni/Backend.pm				    ceni
 usr/share/perl5/WWW/YoutubeViewer.pm			    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/Activities.pm		    youtube-viewer
