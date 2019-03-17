@@ -6109,6 +6109,22 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: dropboxgui
+Architecture: all
+Version: 1.0.8
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 87
+Depends: libc6, gtkdialog, gxmessage
+Filename: ./Extra/dropboxgui_1.0.8_all.deb
+Size: 17296
+MD5sum: 9488a8d10478357544ed8fe4d55db0be
+SHA1: 4c11f53e6c50c3a4c7e414b0fc45c01a0c8f6796
+SHA256: 1f744a4ea944c84762af38a7eb3310dab2ae840b665e4cb2e89427841b3d9680
+SHA512: 5efd4899f33661a3f3030b61e07489400452ef708bd28aa362ffcde33edec51bba7c4c2cb05fcafb545ca6491248b570e28b035618ad296336fedc26021f4a59
+Description: DropboxGUI, by mikeb
+
 Package: peasyxorburn
 Architecture: all
 Version: 1.2
@@ -6836,6 +6852,23 @@ SHA1: eded92feccf9bc6d5fabf7af579afe27ff2efd63
 SHA256: 2f4936406056b4bb421fac91d0e2c250de54e1740db1ab0f2d6ccbe694159a6b
 SHA512: 0f3be819763932b324807b32bea7a3d87a508b673c29b01f8f222d90571391a57ae20fde74ae361da657235604305d624a313667a5675973a36e74c84e7f0726
 Description: Select a sound card and set ALSA defaults
+
+Package: googledrivegui2
+Architecture: i386
+Version: 2.1.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 6000
+Depends: gtkdialog, yad
+Replaces: googledrivegui
+Filename: ./Extra/googledrivegui2_2.1.1_i386.deb
+Size: 1925672
+MD5sum: f6f18ae6781e1ac5b94e13c4e7126f8e
+SHA1: bbdf5035f08faae1f803e3776d71d7b2915e8c9e
+SHA256: a5b6e567b12a78b1a02b1d80f4b89209f423bb66b7adb0a89bda622bd384f505
+SHA512: 85829f9081ce18bba81e15da37416c867ddf1cccf1b699e56cf726c39c1a91c27a7cbd5692f314530c395cf9850d8be7d637a7ae68860f98883005fe20fb49e0
+Description: Google-drive Filemanager v2
 
 Package: xvidcap
 Architecture: i386

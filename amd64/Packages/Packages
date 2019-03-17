@@ -3169,6 +3169,23 @@ Description: Monitor color adjustment tool
  and the redshift commandline utility (yad and redshift are builtin) 
  Options are: Manual mode and Auto mode, see 'Redshift Help' (right-click on icon)
 
+Package: googledrivegui2
+Architecture: amd64
+Version: 2.1.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 6900
+Depends: gtkdialog, yad
+Replaces: googledrivegui
+Filename: ./Extra/googledrivegui2_2.1.1_amd64.deb
+Size: 2013538
+MD5sum: 102b3a09becbbcdcccc7ad41189f063c
+SHA1: 1b12f1738b9499184fa0671f40108bc7bdd29679
+SHA256: ddf9c9506d1903078bfcdf3bc44a8e73e4374d57f3b2b6ebd6fdfa4fa45fb305
+SHA512: 3f78c2fec1302471a4e2ff4d5b4886ba98333f592c3c4b209e8f472673d772328cc0290b385a991fe02694889cec9ceaf251c1c405c00353279b47978009933d
+Description: Google-drive Filemanager v2
+
 Package: yad-splash
 Architecture: all
 Version: 1.0.1
@@ -5963,6 +5980,22 @@ SHA1: d539a65bb66c9c27150ef5be1f3103a8995aecfa
 SHA256: 1a09ff80e30c1a77c3214a7e8569eaba93ba0b8c8e9f53e702d82f0ec51a1c8c
 SHA512: 9d03eb1a47f7a20717e0a17233208ae05ce90409e8efa2c80a67409e97dbf78cfe46e33a43962847246d24329229377cc25d65cbc33dd6cf6e5e42ff59eb1eca
 Description: Google-drive Filemanager
+
+Package: dropboxgui
+Architecture: all
+Version: 1.0.8
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 87
+Depends: libc6, gtkdialog, gxmessage
+Filename: ./Extra/dropboxgui_1.0.8_all.deb
+Size: 17296
+MD5sum: 9488a8d10478357544ed8fe4d55db0be
+SHA1: 4c11f53e6c50c3a4c7e414b0fc45c01a0c8f6796
+SHA256: 1f744a4ea944c84762af38a7eb3310dab2ae840b665e4cb2e89427841b3d9680
+SHA512: 5efd4899f33661a3f3030b61e07489400452ef708bd28aa362ffcde33edec51bba7c4c2cb05fcafb545ca6491248b570e28b035618ad296336fedc26021f4a59
+Description: DropboxGUI, by mikeb
 
 Package: peasyxorburn
 Architecture: all
