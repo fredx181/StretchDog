@@ -5476,6 +5476,22 @@ SHA256: b08e89ca88f13ce92d4f12477b84d124b7665ff94b025e88d3c216a626fd0114
 SHA512: ad245065cc2b9658709966de9a652cdedfc9c19aa87f7a91db12360bcd9249e12d91aa28ebf4dbfc4fcfdeb63df868fbc0b7a08de52b7a241b6ccc0863934131
 Description: Search the web, by Argolance, choice of 36 search engines
 
+Package: dropboxgui
+Architecture: all
+Version: 1.0.9
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 87
+Depends: libc6, gtkdialog, gxmessage
+Filename: ./Extra/dropboxgui_1.0.9_all.deb
+Size: 17310
+MD5sum: fdd682943aa3cd7c40ffe839109e43f0
+SHA1: e3ec03165bce0c47fd8d9009253b75a6c995dd44
+SHA256: 464139b416a2fda7c5e83e06e1c48c56b347494145683b079f12b9b9eb94d058
+SHA512: 717b6ef2090ddcc68b87eb789edf8f8dcdeeb0718d9b68255f68ac1e9e6381e10909a57eac773f5dd407535b07ccb9f092bf8ce94355819f83e54374c0e64cb6
+Description: DropboxGUI, by mikeb
+
 Package: yradio
 Architecture: amd64
 Version: 0.0.7-0

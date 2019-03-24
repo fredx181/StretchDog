@@ -5306,6 +5306,7 @@ usr/share/applications/dmmediaconverter.desktop		    dmmediaconverter
 usr/share/applications/domycommand.desktop		    domycommand
 usr/share/applications/domyfile.desktop			    domyfile
 usr/share/applications/dropbox.desktop			    dropboxgui
+usr/share/applications/dropboxGUI.desktop		    dropboxgui
 usr/share/applications/edit-sfs.desktop			    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/applications/emelfm2.desktop			    emelfm2
 usr/share/applications/epdfview.desktop			    epdfview
