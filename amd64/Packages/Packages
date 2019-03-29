@@ -5635,6 +5635,22 @@ SHA256: 1b1fd645a238dfad20d754a093e29372439366628770ded58ccc72304e729dc9
 SHA512: 70e16819b2437a771aa44fc07c47ed97ad0dbfcecb2e560db85aa58610cd338236893f5cb5b919039531f01e74e0ff96143216a570dc96078955ce17ffb473ef
 Description: HP print/scan driver
 
+Package: googledrivegui
+Architecture: amd64
+Version: 0.3.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 6700
+Depends: gtkdialog, yad
+Filename: ./Extra/googledrivegui_0.3.3_amd64.deb
+Size: 1700190
+MD5sum: 950e605555ba38cffa909c2ceea4a740
+SHA1: 548f6c0f19a17e8253fcb261c53390aa1fe32cd8
+SHA256: 416634c29f4bc52ea032b939bead1ed828cdda99a629ddb1d1c4875dec6930f5
+SHA512: f9cf6457bc53eda8aad77811edb484d2850ebdcbbc5a5fdbcb8ae9916ce7a85c7805738bfdbcba379d6cc20881665574943a0af67ef2829e290c25a05878bb0f
+Description: Google-drive Filemanager
+
 Package: dropboxgui
 Architecture: all
 Version: 1.0.2
