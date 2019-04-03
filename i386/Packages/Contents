@@ -1716,6 +1716,7 @@ usr/local/01-create-appimage32/package-old		    create-portable
 usr/local/01-create-appimage32/package.png		    create-portable
 usr/local/01-create-appimage32/package1			    create-portable
 usr/local/01-create-appimage32/runtime			    create-portable
+usr/local/01-create-appimage32/runtime-new		    create-portable
 usr/local/01-create-appimage32/study-bash		    create-portable
 usr/local/01-create-appimage32/unionfs-fuse		    create-portable
 usr/local/01-create-appimage32/usr/bin/ReadMe-AppImage	    create-portable
@@ -1734,6 +1735,7 @@ usr/local/01-create-appimage32/usr/lib/libtalloc.so.2	    create-portable
 usr/local/01-create-appimage32/usr/lib/libtalloc.so.2.1.1   create-portable
 usr/local/01-create-appimage32/usr/share/applications/mimeinfo.cache create-portable
 usr/local/01-create-appimage32/usr/share/applications/python2.7.desktop create-portable
+usr/local/01-create-appimage32/usr/share/pixmaps/d.png	    create-portable
 usr/local/01-create-appimage32/usr/share/pixmaps/package.png create-portable
 usr/local/01-create-appimage32/xdg/BaseDirectory.py	    create-portable
 usr/local/01-create-appimage32/xdg/BaseDirectory.pyc	    create-portable

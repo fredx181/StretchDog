@@ -1627,6 +1627,22 @@ Description: Yet Another Dialog - dialogs for shell
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
 
+Package: create-portable
+Architecture: i386
+Version: 2.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Included/create-portable_2.0.0_i386.deb
+Size: 175600
+MD5sum: ec740dc2947c5889b759b25d1fdcc6bd
+SHA1: e60a85ea0c2d2ded0efeb9d04539e2afb0d2dad6
+SHA256: 7f333f5d3c1374821b1cabb1b1a4c909e00578532b2b74e2d55817cd6c5ce5d1
+SHA512: 73668b4cb9790fd65d6fd2dd2a029f5dbf890555b2082b45bebd6ad7fcbd4a11f36cb32c496057eb01427c429232b779f18c298873b59c0b03d3bab9c35c6d86
+Description: Create portable AppImage v2.0
+
 Package: quick-remaster
 Architecture: all
 Version: 1.0.6

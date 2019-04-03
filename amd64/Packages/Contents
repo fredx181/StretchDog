@@ -1807,6 +1807,7 @@ usr/local/01-create-appimage64/package-old		    create-portable
 usr/local/01-create-appimage64/package.png		    create-portable
 usr/local/01-create-appimage64/package1			    create-portable
 usr/local/01-create-appimage64/runtime			    create-portable
+usr/local/01-create-appimage64/runtime-new		    create-portable
 usr/local/01-create-appimage64/study-bash		    create-portable
 usr/local/01-create-appimage64/unionfs-fuse		    create-portable
 usr/local/01-create-appimage64/usr/bin/ReadMe-AppImage	    create-portable

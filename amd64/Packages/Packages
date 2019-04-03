@@ -4910,6 +4910,22 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
 
+Package: create-portable
+Architecture: amd64
+Version: 2.0.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Extra/create-portable_2.0.0_amd64.deb
+Size: 149572
+MD5sum: 7ab5de85cc881b1934d545ce5a0e2597
+SHA1: 41f327a09720cc3ec630f577162fa4506dfffb11
+SHA256: 745312de4121e6dc52ce32a396211b1a6549a6526b329f544e7ca85ca1316c09
+SHA512: 011d3c6e2b61d0feb14865de274ab63c538d0e08dbf511bf3d8053150b50a52d8a1d7175fe281e8d9b9b8ff9abed939169989f911fdedaef66dfc854301e7281
+Description: Create portable AppImage v2.0
+
 Package: yassm
 Architecture: all
 Version: 4.5-1
