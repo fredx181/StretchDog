@@ -7350,6 +7350,7 @@ usr/share/man/man3/WWW::YoutubeViewer.3pm		    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Activities.3pm	    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Authentication.3pm   youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::Channels.3pm	    youtube-viewer
+usr/share/man/man3/WWW::YoutubeViewer::CommentThreads.3pm   youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::ConfigData.3pm	    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::GetCaption.3pm	    youtube-viewer
 usr/share/man/man3/WWW::YoutubeViewer::GuideCategories.3pm  youtube-viewer
@@ -7498,6 +7499,7 @@ usr/share/perl5/WWW/YoutubeViewer.pm			    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/Activities.pm		    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/Authentication.pm	    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/Channels.pm		    youtube-viewer
+usr/share/perl5/WWW/YoutubeViewer/CommentThreads.pm	    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/ConfigData.pm		    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/GetCaption.pm		    youtube-viewer
 usr/share/perl5/WWW/YoutubeViewer/GuideCategories.pm	    youtube-viewer

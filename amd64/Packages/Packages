@@ -3473,6 +3473,27 @@ SHA256: f2274a2da48e0155c7bb5847583ac20f88b1e4fb0c88d0844927045c6e9570c2
 SHA512: d2482c760e3f0d9028c90070c748356fcb242d6fe94b01438763f16997e39af5c9ebb6160df55eaeae21e1d99e224c383e880d25a4821faf1cd0f4a26b5bd6cc
 Description: Google-drive Filemanager
 
+Package: youtube-viewer
+Architecture: all
+Version: 3.5.4-0-stretch
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.5.4-0-stretch_all.deb
+Size: 273808
+MD5sum: a833c816bd08fc221c1880ff9c6deddf
+SHA1: 1f9cbf12114b20a7c659ac89a0fe8fa361bf563c
+SHA256: 48746940cf01465c17540fc173d906043c40ad40ccdee551cb64ed4b69286819
+SHA512: 8b8073fba5fab2a45ce7696c359955137e21ee0bf98b87e208fb7d94b9e7b6b3868e23ce08c39244b4ef261dd07c37ca8afc26255410e99ecf954883eb957730
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
 Package: redshift-gui-lite
 Architecture: amd64
 Version: 0.0.3
