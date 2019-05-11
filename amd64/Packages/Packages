@@ -4245,6 +4245,22 @@ Description: Firefox-based, efficient and easy to use web browser
  Run /proc/cpuinfo in a terminal, and look for sse2 in the flags to ensure
  that your processor supports it.
 
+Package: md2html
+Architecture: amd64
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 232
+Depends: libc6, gtkdialog
+Filename: ./Extra/md2html_0.0.3_amd64.deb
+Size: 44284
+MD5sum: 2f32c922305f1a09c7d72d246e72c4c3
+SHA1: 96172e228c5c26759fb5f80b7defd147697c2af6
+SHA256: fd1dfbac6407ff8c17f85a32093ab4513f25026e2e0fffb01251123e6beadd59
+SHA512: 736903ccc0c34d6c9e11f6c1cb94d01ff85fd796b399940ffd346093f7940366bda681bd8f3f11865fb7c98a797a00dfc51eaecf4290f104b368953adad77ecf
+Description: Markdown to HTML converter
+
 Package: f3-flash-check
 Architecture: all
 Version: 6.0
@@ -4550,6 +4566,27 @@ SHA1: e709af67b05153ac3466e4915992a60c8c3ad4e6
 SHA256: ce3df0b5b94fe08e3b2078480a9d7a7467bee7a5343703a34bdc085b42d942eb
 SHA512: 8d8b1440abc4641ab958c83c803e4f1a204d5a36e4b47f8affaf51fb20e812af86709a2b159bde54da3586752315f495d2ba571569812b4aed58bdd3a785782b
 Description: Load squashfs modules on-the-fly
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.5.4-1-stretch
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.5.4-1-stretch_all.deb
+Size: 280570
+MD5sum: 5a1795b4d09840ea257a9c5defc0922f
+SHA1: 3884fe65fa80e893821d6472e032a21f4c20d7df
+SHA256: 0dae0582b9f63e3f0512d8b8d5af664439867953a141f5705c3c1f199e90410a
+SHA512: d3e0200c1f961eed081897280e1a9ec94fe94a96e133e724e0d38eca37c4528605c1b7fb8ffb79397531a1b4021ab15a164e446add569cf77f8a4850215f6bd1
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: sound-card-selector
 Architecture: all

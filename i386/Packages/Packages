@@ -4658,6 +4658,27 @@ SHA256: e8043510d3fe413e80fb0ad18b34954bcfa6c3cf2f1cec8e262071aba77fbdc2
 SHA512: a7e176df46a6446a83e5f3cac09157915940e9ea770f4dc242cd7b12c77c2e34a89d21d2b7124a2fcb1ad61e3b3e9f064ef5eba8815e5a1cb90503d8dfc086a9
 Description: Internet Radio Player
 
+Package: youtube-viewer
+Architecture: all
+Version: 3.5.4-1-stretch
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Filename: ./Extra/youtube-viewer_3.5.4-1-stretch_all.deb
+Size: 280570
+MD5sum: 5a1795b4d09840ea257a9c5defc0922f
+SHA1: 3884fe65fa80e893821d6472e032a21f4c20d7df
+SHA256: 0dae0582b9f63e3f0512d8b8d5af664439867953a141f5705c3c1f199e90410a
+SHA512: d3e0200c1f961eed081897280e1a9ec94fe94a96e133e724e0d38eca37c4528605c1b7fb8ffb79397531a1b4021ab15a164e446add569cf77f8a4850215f6bd1
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
 Package: sound-card-selector
 Architecture: all
 Version: 1.1
@@ -8516,6 +8537,22 @@ SHA1: e137d96aa74f264bf48edb4cbc6d8322dbf188e0
 SHA256: d655d3da2cbb2ad228a9e09b0d9742f56fd0302030c55db98c2363492fe89c39
 SHA512: 9ab509330ed07621062e03a3ddb88e3e9d36d0c293a0c758672c8d4314665d00310ee4694172b56f1f0b03e6818059e019cb68dbd0e0af9785f3df4039cd7387
 Description: Pulseaudio emulator using alsa
+
+Package: md2html
+Architecture: i386
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 232
+Depends: libc6, gtkdialog
+Filename: ./Extra/md2html_0.0.3_i386.deb
+Size: 44736
+MD5sum: 3763bf83ea8cb1418bad58466211c0a5
+SHA1: 72ad991908c38b68166b9e9eee8a26fbace431f5
+SHA256: 6af5fb5e34255cba96447bd2a298eaf62acec16def077edbbfe57418d7c39aa2
+SHA512: d7080c6528d453cbf77a8765e2bcda1ac9f24857b3c3203958d86f61c6f27ce1543b94957dea74d8af4780d7f9f1fc367060fe7c2772fec90337b2cb5501399e
+Description: Markdown to HTML converter
 
 Package: peasyprint
 Architecture: all
