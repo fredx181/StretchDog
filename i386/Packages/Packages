@@ -2945,6 +2945,22 @@ Description: Reliable network manager
  - added option (Ethernet tab) to bring the interface down
  - added Names button (to select interface names)
 
+Package: create-portable
+Architecture: i386
+Version: 2.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Extra/create-portable_2.0.1_i386.deb
+Size: 314530
+MD5sum: 0b581503195065054bc0da1f33ac4bf5
+SHA1: ff35c1f28d5204c9cdb3f93d3101675d5c8b8b94
+SHA256: 9059b61f53495fa513e29802f632f8d957ac547b11d259e03865cfc9b2d853ab
+SHA512: a6d68eba96f0eef73a10c9d76b01b468e87f132dfd73fa825552d06033d6373f995d9b4508f76c8e5c8e7bd94a67808e8ac991c76fec4e299fa399181859ed8d
+Description: Create portable AppImage v2.0
+
 Package: camphonetab
 Architecture: all
 Version: 1.6

@@ -1812,6 +1812,7 @@ usr/local/01-create-appimage64/runtime-new		    create-portable
 usr/local/01-create-appimage64/study-bash		    create-portable
 usr/local/01-create-appimage64/unionfs-fuse		    create-portable
 usr/local/01-create-appimage64/usr/bin/ReadMe-AppImage	    create-portable
+usr/local/01-create-appimage64/usr/bin/appimagetool	    create-portable
 usr/local/01-create-appimage64/usr/bin/elficon		    create-portable
 usr/local/01-create-appimage64/usr/bin/elfres		    create-portable
 usr/local/01-create-appimage64/usr/bin/gsu-mod		    create-portable
@@ -1821,6 +1822,7 @@ usr/local/01-create-appimage64/usr/bin/runtime		    create-portable
 usr/local/01-create-appimage64/usr/bin/testappimage	    create-portable
 usr/local/01-create-appimage64/usr/bin/unionfs-fuse	    create-portable
 usr/local/01-create-appimage64/usr/bin/yad		    create-portable
+usr/local/01-create-appimage64/usr/lib/appimagekit/mksquashfs create-portable
 usr/local/01-create-appimage64/usr/lib/libr.so.0	    create-portable
 usr/local/01-create-appimage64/usr/lib/libr.so.0.0.0	    create-portable
 usr/local/01-create-appimage64/usr/lib/libtalloc.so.2	    create-portable
