@@ -218,6 +218,20 @@ SHA256: bf01c206b2dee04f015cecdb35997ae57bf56f1690a566e7648cad6979c35305
 SHA512: 17af69e214e13001b0d7d381e24220a5681340353324a8c2e4ad60c12687c6925f89963faa9bfedf4ad08ff5833145e2a8771a853c47aba9447bdd509fcd475a
 Description: Special DebianDog mount and drive information scripts.
 
+Package: debdoginstallscripts
+Architecture: amd64
+Version: 1.1.1
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.1_amd64.deb
+Size: 441056
+MD5sum: 0ade6040ebed2737fd9ea8f1adeae986
+SHA1: fc3671b2e53a79a8eff83307537e15b604778236
+SHA256: 0032cddcb1b730afca4fffa98bc2150b28f61b01541a106f489a6b9d1542d701
+SHA512: 7dd72375628bf18ee666c567c642a5eef494e8d4006af5a5fde536059a374274898a2baffbfa3bc73b74f2362f188f7699d4e0f57bb79d18a9ed17378f0fb66a
+Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: edit-sfs-pcmanfm
 Architecture: all
 Version: 2.1

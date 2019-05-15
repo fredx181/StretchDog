@@ -2139,6 +2139,20 @@ Description: A lightweight file manager for X11
  a simple text editor (Xfw),a simple package manager (Xfp)
  and a simple image viewer (Xfi).
 
+Package: debdoginstallscripts
+Architecture: i386
+Version: 1.1.1
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.1_i386.deb
+Size: 435550
+MD5sum: b334973de7ec3e65b34a19ecfe96e178
+SHA1: 4f03618894e38c1281e409451ff20f751e311c70
+SHA256: 8215398a41546df349aa5fcf700e24604aa21dc24acd78c266652c55b4cf7032
+SHA512: 30b5ae1b8c1fe23fadb07f0757c8e4f282ef341e940afe8e08d037b9114ff5443022f30e1e61a5e1e8ee5e1fc1ebc290ed5484c47eb4e5e07fb82adb417d69ac
+Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: transmission-2.31
 Architecture: i386
 Version: 2.31
