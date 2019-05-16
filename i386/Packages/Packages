@@ -1741,6 +1741,22 @@ Description: very small lightweight pure X11 window manager with tray and menus
  Compared to other light WM, like Fvwm95, the Jwm consumes considerably
  less memory while providing the same functionality.
 
+Package: create-portable
+Architecture: i386
+Version: 2.0.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Included/create-portable_2.0.2_i386.deb
+Size: 174002
+MD5sum: f279cfda3e76c0a7240b5886ced84174
+SHA1: 1564798d1997e57f80963f5688b2147be6642252
+SHA256: 11c708a3a3587c872c531f15d8cac4091df4f957e68f90b5616b51c6f1465b55
+SHA512: f330fdc98d44b0582e658d9cd98d3296c9f843266a2bf75ee418ff93db5940e5eb10fd293390a14944aaea0c8870569b1f21d38255672b461e5acf1dad4036b2
+Description: Create portable AppImage v2.0
+
 Package: pfind
 Architecture: all
 Version: 6.3-1
