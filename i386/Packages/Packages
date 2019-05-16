@@ -1201,6 +1201,20 @@ Description: Mozilla Firefox web browser - Extended Support Release (ESR)
  Firefox ESR is a powerful, extensible web browser with support for modern
  web application technologies.
 
+Package: debdoginstallscripts
+Architecture: i386
+Version: 1.1.2
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.2_i386.deb
+Size: 435416
+MD5sum: 9faa8fe93fdd93aa2879aceb12ca221e
+SHA1: d03ec072d8fd19ea4a133159b11e3571e238dd4e
+SHA256: 665053f02e04bb9a61d0da12fa24143162d4743d31fabbe44855dcb178d52ebd
+SHA512: d41d84c3d773dccc066b7ac3dedd69f90b0ea2370be1696313a617e62537a3d0da4efc1170f30a9b33855c1068b95f09d0e90bfc7e438e629530991a899bbbbf
+Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: squashfuse
 Architecture: i386
 Version: 0.1.0
