@@ -1082,11 +1082,11 @@ Maintainer: root
 Installed-Size: 863
 Depends: libc6, debdogmountscripts
 Filename: ./Included/debdoginstallscripts_1.1.3_amd64.deb
-Size: 440944
-MD5sum: 5b4e4733a73ae37816f6215424d65302
-SHA1: 196378af2c204ec8bf4a374d152c7c2fb9707488
-SHA256: 7ca036a2a766f79f2d3aba06dc8cb4a43d22e0621466da21c2339045b426a446
-SHA512: af6ed0d0c12c0f5bb06e109a229164b2551978c1cf806c0e20427795a052fa72335b65e19c40491bada5c880314593790655121df16871b32c1c4b9a8890f4af
+Size: 440980
+MD5sum: 81bf701b71f940d0515076d5143332fe
+SHA1: f4f8f95298e0cb9c40bb8f9eaee1f14e342101a4
+SHA256: ceba55e39e6036a58126578859e0a6aebf54939b05f28211f27d801136688db3
+SHA512: 44adbdd26408d7b2e9f2c1bcfc422bc36c5e18278ff9ad8c1acfc050236a435b7355dbdf18d2934f16ad460ce5ccf9bdb62aca5f773007c2fa9fff66353db3d3
 Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: porteusbootscripts

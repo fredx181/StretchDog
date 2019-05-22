@@ -25,11 +25,11 @@ Maintainer: root
 Installed-Size: 863
 Depends: libc6, debdogmountscripts
 Filename: ./Included/debdoginstallscripts_1.1.3_i386.deb
-Size: 435454
-MD5sum: 8ad6bf57fce1425472e89b71c4365e0e
-SHA1: b04056ea3df107e45051fae29111812df8c5dddd
-SHA256: cedffcfe6742ebe521490811556f529db16ee8d961009d4d2354400af3605174
-SHA512: 5f4f78684c19614fad6635e56d87dc651aa2ff608285c4d9a3b2c8981baa9603596311c4c620c426d378a5a74a38e1c37a7998f90dddce589494bd6fb9086988
+Size: 435508
+MD5sum: 2569a023a520c464bd01d036618c143b
+SHA1: 8ea9cdcfc6b8c45235bc6447243302f8948c7129
+SHA256: 09fd5431e4780103c3150d474a436d9dcf2ef949dcf6edf394b953a6f47fc37a
+SHA512: 36802a5091c8e9cf433ef9f3b87b54c32f6f23cd7c335d9dc85bb5dc13e676aa770818fda833f7462a59f20db1dc099a1e03c8b41aee0d1731487986348121dd
 Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
 
 Package: edit-sfs-thunar
