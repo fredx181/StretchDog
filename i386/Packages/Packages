@@ -18,6 +18,20 @@ Description: graphical frontend to sudo - this version is fix for Jessie and SID
   More information available here:
   http://www.murga-linux.com/puppy/viewtopic.php?p=829680#829680
 
+Package: debdoginstallscripts
+Architecture: i386
+Version: 1.1.3
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.3_i386.deb
+Size: 435454
+MD5sum: 8ad6bf57fce1425472e89b71c4365e0e
+SHA1: b04056ea3df107e45051fae29111812df8c5dddd
+SHA256: cedffcfe6742ebe521490811556f529db16ee8d961009d4d2354400af3605174
+SHA512: 5f4f78684c19614fad6635e56d87dc651aa2ff608285c4d9a3b2c8981baa9603596311c4c620c426d378a5a74a38e1c37a7998f90dddce589494bd6fb9086988
+Description: Special DDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: edit-sfs-thunar
 Architecture: all
 Version: 2.4

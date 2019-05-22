@@ -1075,6 +1075,20 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
  Version 1.0.7: added option to create ISO
 
+Package: debdoginstallscripts
+Architecture: amd64
+Version: 1.1.3
+Maintainer: root
+Installed-Size: 863
+Depends: libc6, debdogmountscripts
+Filename: ./Included/debdoginstallscripts_1.1.3_amd64.deb
+Size: 440944
+MD5sum: 5b4e4733a73ae37816f6215424d65302
+SHA1: 196378af2c204ec8bf4a374d152c7c2fb9707488
+SHA256: 7ca036a2a766f79f2d3aba06dc8cb4a43d22e0621466da21c2339045b426a446
+SHA512: af6ed0d0c12c0f5bb06e109a229164b2551978c1cf806c0e20427795a052fa72335b65e19c40491bada5c880314593790655121df16871b32c1c4b9a8890f4af
+Description: Special DebianDog frugal and full install scripts + added SD card support + full install loop module loading.
+
 Package: porteusbootscripts
 Architecture: all
 Version: 0.0.4
