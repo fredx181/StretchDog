@@ -3144,6 +3144,22 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 
+Package: dancing-letters
+Architecture: i386
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 108
+Depends: libc6
+Filename: ./Extra/dancing-letters_1.0.1_i386.deb
+Size: 54224
+MD5sum: f6b35dd95233e36748a88b6e28998e14
+SHA1: 492adc5396e97dfdca3b79bf9dd8be950ac5ab45
+SHA256: 045ff34febef783039e15908e6018b9204ae52688ec45cc1246af4618a3b5ebc
+SHA512: 2fe2a68afb64146684b86205f9d4eb9ac76dac5efde35dc860550a55f0c5a546fae58bd3fe5c89c4afe2b5453a188bdcbd064fbfb0b1fea23ddc02d2059556b3
+Description: Dancing Letters Generator (forum and HTML)
+
 Package: slideshow-qiv
 Architecture: all
 Version: 1.1
@@ -6973,6 +6989,22 @@ SHA1: df45885cc1ef3afcd8b18308b72e0135f3c9c8d5
 SHA256: 1310bc37ac755b064a816b7c87fd972fec9668c55d601acb9d669c92b071914b
 SHA512: dcc5b542ff39fc084688e66d582f09ce948c5463a34d241e0d9cf01c6c18d0a44a69ce0c2c82d581206dd2e845c2acbdad9737f66170932143d553ef18b76b98
 Description: Google-drive Filemanager
+
+Package: gifdance
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 355
+Depends: libc6, imagemagick, yad
+Filename: ./Extra/gifdance_1.0.1_all.deb
+Size: 1031780
+MD5sum: 6a44b8ae8d403673144fc92603f81850
+SHA1: a7bc279c0ca0052d429281c57f2a67e9202042b9
+SHA256: b925b30cec71c4f3ad760b371e4fd8af1bec7cabd6ed7e09510a1a76122b5085
+SHA512: ad0b6193acc8ca733da2bc25c6b4485e91f8c19d1459d1a4bd617ffc203112192b88a747ad425157ae93107d3a8539e6993f028020570692251759621e5a3ab9
+Description: Create GIF from dancing letters
 
 Package: wlanmaker
 Architecture: i386

@@ -4987,6 +4987,22 @@ SHA256: 673c368946b4d853e4d48f95e5aee40ef2359f7899bceef6887d97577637196a
 SHA512: 6680fced98d788d9c620f469d35ee97282c904627325d00ff7bdc3b1af9cd103fd45f9a3d79b76f4b24fb2131e975adbd1b82b4d5ff3a617e1ec8e0f549ce90b
 Description: Slices an image into sections
 
+Package: dancing-letters
+Architecture: amd64
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 108
+Depends: libc6
+Filename: ./Extra/dancing-letters_1.0.1_amd64.deb
+Size: 64332
+MD5sum: 7ee7771679e6e6f0b0250513e91dcb8c
+SHA1: bae467bcfd146de782107b9c7f10879b722f6b96
+SHA256: dc9a625ca61602b9ae37d98a4e238476bf79c02c2808d01ce688b750f7864b3c
+SHA512: 04ad1f5294cb25acf0884c96d1920d26cf933d8b158d9582ae218f916ff33aad3cb38322ba43f138165fa3c73c5e4c298336e33d0733f463d557aff081bccc79
+Description: Dancing Letters Generator (forum and HTML)
+
 Package: peasyglue
 Architecture: all
 Version: 2.2
@@ -6723,6 +6739,22 @@ SHA1: 7fc105da99f6b6c832500f5b173d246c2031335f
 SHA256: dea9ff613d166644388c72362576f6b95d4e29d9213a035b185cb5d60524e69b
 SHA512: e48e5f999187111670b55d2fd0a75ad2e4354be2eb7ca48e60c6b4df3fe0575f211ee63157fcdba46cc5375cb65b9e0592ed6e1289cd7fd5af5bb3d24844b309
 Description: Manages printers
+
+Package: gifdance
+Architecture: all
+Version: 1.0.1
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 355
+Depends: libc6, imagemagick, yad
+Filename: ./Extra/gifdance_1.0.1_all.deb
+Size: 1031780
+MD5sum: 6a44b8ae8d403673144fc92603f81850
+SHA1: a7bc279c0ca0052d429281c57f2a67e9202042b9
+SHA256: b925b30cec71c4f3ad760b371e4fd8af1bec7cabd6ed7e09510a1a76122b5085
+SHA512: ad0b6193acc8ca733da2bc25c6b4485e91f8c19d1459d1a4bd617ffc203112192b88a747ad425157ae93107d3a8539e6993f028020570692251759621e5a3ab9
+Description: Create GIF from dancing letters
 
 Package: gmplayer
 Architecture: amd64
