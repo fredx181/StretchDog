@@ -1173,6 +1173,29 @@ Description: The flashplayerchoice script gives choice of several options to ins
  - Latest version from Adobe (= 16 Mb uncompressed)
  - version 11 from http://www.smokey01.com/OscarTalks/ (= 18 Mb uncompressed)
 
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.7-wiak-B-3
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./Included/gtkdialog_0.8.7-wiak-B-3_amd64.deb
+Size: 117678
+MD5sum: 634c47530069b9da33f033c57df00708
+SHA1: ef73fdc408371d225c4279e60284383912ef642b
+SHA256: bd6c673a0fb6f31a8115a2b4ce7d16faf7efdcea585dd6c6cb42da7f791bc907
+SHA512: e4e788b98d1d7359e1ad8b8d35295e90d2c1fb5fd07af4b7e9e8295a6142c1182c59592fc13cd7ab9e623e2c868761c6d9ff304bd7c5014f0b1135445211c77e
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
+ 2019-06-15, fredx181, changes and fixes for 'gtkdialog-splash' script
+
 Package: pfind
 Architecture: all
 Version: 1.0.0-1
