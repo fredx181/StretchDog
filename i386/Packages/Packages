@@ -1600,24 +1600,6 @@ SHA256: db37d28054e5a97557b802b2206aa1450d9a432eb7c2e8a91ffbb72b9ad1ed7e
 SHA512: 5d784390326ab3053b01d6648fb741d93776703daf446b10648a2d63b79cbc8957923ea7371839747af1d1b2a6259dac871f82362eaaf0f1a3aaacd0e0317020
 Description: Mount images, savefile, modules
 
-Package: flashplayerchoice
-Architecture: i386
-Version: 1.0.2
-Maintainer: root
-Installed-Size: 14
-Depends: libc6, wget, inotify-tools, yad, sed, apt, squashfs-tools, menu, tar, gsu | gksu
-Filename: ./Included/flashplayerchoice_1.0.2_i386.deb
-Size: 5884
-MD5sum: b4d08ab7c3dec4afe918428a2d80fee0
-SHA1: a5053617bf68f19f1b1db6cfa1b48c48017280a5
-SHA256: 055cf0a10f6ae2eaf46ec4978cd1463b287298a598b24fcb6b10a44aa1e028e2
-SHA512: 33b17ec742cb0f2b73d2bb2b64fd7b75356f3d9e7c8610c4e10c809dc9f44bcf75493996bff2cd05bbaa4b3dd520bbe332d63ab9c2b57cb21ddd76565a9c4c0b
-Description: The flashplayerchoice script gives choice of several options to install flashplayer :
- - version 10 from http://www.smokey01.com/OscarTalks/ (= 12 Mb uncompressed)
- - version 11 from http://www.smokey01.com/OscarTalks/ (= 17 Mb uncompressed)
- - Install flashplugin-nonfree with apt-get (= 34 Mb uncompressed)
- - Create flashplugin-nonfree.sfs module (= 8,9 Mb compressed)
-
 Package: quick-remaster
 Architecture: i386
 Version: 1.1.1
@@ -4111,6 +4093,22 @@ SHA512: 1e465cd8a01e377f5e0e05600e94c0a47696e18b453f38e81fa457db72629877d5574ca1
 Description: gethosts script from SteveRiley: https://www.kubuntuforums.net/showthread.php?56419-Script-to-automate-building-an-adblocking-hosts-file
   Thanks to jockjunior: http://www.murga-linux.com/puppy/viewtopic.php?p=899122#899122
  .
+
+Package: tzupdate
+Architecture: all
+Version: 1.1.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, python-requests, ntpdate, gtkdialog, curl
+Filename: ./Extra/tzupdate_1.1.2_all.deb
+Size: 10496
+MD5sum: c0a9d4b88e2d8e53a923b2538d72e37e
+SHA1: 66be44f477d3a0df7e979500d91623e1dad6c32a
+SHA256: b6fb1f526f33270e90fbebcf22fe89e881eb93bf50f1472e47af6d88557c1ce7
+SHA512: 48ab6a01a3ac7ae37b989fad28475184a281f1e578c9cd37993a0ce451b903cbf1e81eab692a8a126c0fb7c2e5527705db2d5825cb196c1632a04dec391285ac
+Description: Automatically detect timezone
 
 Package: image-slicer
 Architecture: all

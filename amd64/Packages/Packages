@@ -4030,6 +4030,22 @@ Description: spell checker and morphological analyzer (shared library)
  .
  This package contains the shared library.
 
+Package: tzupdate
+Architecture: all
+Version: 1.1.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 47
+Depends: libc6, python-requests, ntpdate, gtkdialog, curl
+Filename: ./Extra/tzupdate_1.1.2_all.deb
+Size: 10496
+MD5sum: c0a9d4b88e2d8e53a923b2538d72e37e
+SHA1: 66be44f477d3a0df7e979500d91623e1dad6c32a
+SHA256: b6fb1f526f33270e90fbebcf22fe89e881eb93bf50f1472e47af6d88557c1ce7
+SHA512: 48ab6a01a3ac7ae37b989fad28475184a281f1e578c9cd37993a0ce451b903cbf1e81eab692a8a126c0fb7c2e5527705db2d5825cb196c1632a04dec391285ac
+Description: Automatically detect timezone
+
 Package: image-slicer
 Architecture: all
 Version: 1.0
