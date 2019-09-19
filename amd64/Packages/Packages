@@ -1702,6 +1702,25 @@ Description: GTK+ interface for MPlayer
  used with Gecko Mediaplayer and is the modern replacement for
  mplayerplug-in (from the same author).
 
+Package: frisbee
+Architecture: amd64
+Version: 1.4.9
+Priority: extra
+Section: checkinstall
+Maintainer: root@wheezy
+Installed-Size: 554
+Depends: gtkdialog, libgtk2.0-0, libglade2-0, psmisc, wpasupplicant, gsu | gksu, rfkill, net-tools, yad
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, peasywifi
+Filename: ./Included/frisbee_1.4.9_amd64.deb
+Size: 154956
+MD5sum: 3b81181e9863ef3609a7ec39845d79f6
+SHA1: 4d07713d88f2e8a1513c88448e9d7a0a061bce56
+SHA256: ed4e998ebdfea3e4f4f401d74faa619c33292a0f88c2e114d419127a443020d9
+SHA512: af409f4309569f39acbf9ddd094b8adb07a63934e5a53edbe364f7b04c553fc32428bc6f178d778c818b2453c31ecce497ec725a355ff81bb1b0a8a6ed8b1dc3
+Description: Wireless Network manager
+ Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
+
 Package: zenity-portable
 Architecture: amd64
 Version: 2.30.0
@@ -2346,6 +2365,28 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Fix in v 1.0.6: skip symlinks while cleaning man and doc files
  Version 1.0.7: added option to create ISO
  Version: 1.1.2, cleaning, do not remove /etc/rc.d
+
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.5
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.5_amd64.deb
+Size: 159896
+MD5sum: e0a57931f663005271ece083509563dd
+SHA1: c9243eb2ded0854463578d5cfdde756e68566124
+SHA256: 5d0c549c41dc09675988386343f27b3c6071304dffd695cf8f0119a4b84dbae1
+SHA512: 9ffc24405beca5949d71e941eb7125890fc843bb8888778741ecaa48f0b5aa38de620d0da9145a7f12ad61f6620882e5e361496b83575a8d893e018d04dd0b29
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
 
 Package: squashfuse
 Architecture: amd64
@@ -5945,6 +5986,22 @@ SHA256: 9b28584655f57abfd294be4bb6459bbaf48ea2135e81fbc655459296ab6e2992
 SHA512: 8a74622842e0e6f7d2a6fa69e424e1c4759fd6c70289e34a9b0a29049bb2d8ee3a96bb21b5e56b05d2a14a8efba48fcdc608fa6569ce67ad92550d18e94d2432
 Description: Network port scanner
   NETBIOS names lookup requires samba-common-bin > big
+
+Package: trans-tray
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 90
+Depends: libc6, yad, xclip, gawk
+Filename: ./Extra/trans-tray_0.0.1_all.deb
+Size: 58546
+MD5sum: 6e244058814fc7f5903a57aa2ed4aedf
+SHA1: 82683eb7d275b38ec33433351d14b24216766e00
+SHA256: d50222b8c0926741eabcca0daeb62ab242456379826fed71d2d096e7de9110e1
+SHA512: ff84c81ee0b24b2cfce390957b323e37deec4d8f1ad61f823246a139375ff8ca608c0d78d62bc195ef443663e3fd1e8d96a63de2a56b97efef254999765ddf2e
+Description: Run application as unprivileged user (from root account)
 
 Package: yassm
 Architecture: all

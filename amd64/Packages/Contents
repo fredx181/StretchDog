@@ -42,7 +42,9 @@ etc/pam.d/slim						    slim
 etc/pavrecord/.pavrecordrc				    pavrecord
 etc/ppp/chatscripts/gprs-connect-chat			    frisbee
 etc/ppp/chatscripts/gprs-disconnect-chat		    frisbee
+etc/ppp/gprs.conf					    frisbee
 etc/ppp/options.gprs					    frisbee
+etc/ppp/peers/gprs-editable				    frisbee
 etc/precord/.precordrc					    precord
 etc/pwf/ethernet/eth0.dhcp				    PeasyWiFi
 etc/pwf/interfaces					    PeasyWiFi
@@ -85,6 +87,7 @@ etc/skel/Startup/exec_fwstatus-autostart		    firewall-ng
 etc/skel/Startup/exec_lxinput-autostart			    lxinputsave
 etc/skel/Startup/exec_lxrandr-autostart			    lxrandr-save-fix
 etc/skel/Startup/killmenu-cached			    jwmconf,jwm-setup
+etc/skel/Startup/network_tray.sh			    frisbee
 etc/skel/Startup/peasyfwmon_tray			    peasyfwmon
 etc/skel/Startup/peasywifi_tray				    PeasyWiFi
 etc/skel/Startup/rshift-gui-lite			    redshift-gui-lite
@@ -830,6 +833,7 @@ usr/bin/xsetroot					    x11-xserver-utils
 usr/bin/xstdcmap					    x11-xserver-utils
 usr/bin/xvidtune					    x11-xserver-utils
 usr/bin/yad						    yad
+usr/bin/yad-splash-frisbee				    frisbee
 usr/bin/youtube-viewer					    youtube-viewer
 usr/include/evince/2.32/evince-document.h		    evince
 usr/include/evince/2.32/evince-view.h			    evince
@@ -2119,6 +2123,8 @@ usr/local/bin/start-stop-tzupdate			    tzupdate
 usr/local/bin/syncing					    diff-sync-umount
 usr/local/bin/timidity					    timidity-old
 usr/local/bin/touchpad					    touchpad
+usr/local/bin/trans					    trans-tray
+usr/local/bin/trans_tray				    trans-tray
 usr/local/bin/transmission-cli				    transmission-2.60
 usr/local/bin/transmission-create			    transmission-2.60
 usr/local/bin/transmission-daemon			    transmission-2.60
@@ -4291,6 +4297,15 @@ usr/local/dog-control-center/upgrade/upgrade-kernel.desktop dog-control-center
 usr/local/dog-control-center/users_and_groups/Add_RemoveUserfromgroups.desktop dog-control-center
 usr/local/dog-control-center/users_and_groups/addnewuser.desktop dog-control-center
 usr/local/etc/xhippo.config				    xhippo
+usr/local/frisbee/disconnect				    frisbee
+usr/local/frisbee/frisbee-gprs-connect			    frisbee
+usr/local/frisbee/frisbee-gprs-disconnect		    frisbee
+usr/local/frisbee/frisbee-main				    frisbee
+usr/local/frisbee/frisbee-mode-disable			    frisbee
+usr/local/frisbee/frisbee-mode-enable			    frisbee
+usr/local/frisbee/frisbee-wifi-connect			    frisbee
+usr/local/frisbee/frisbee-wifi-disconnect		    frisbee
+usr/local/frisbee/func					    frisbee
 usr/local/isodata/Examples-boot-codes.txt		    quick-remaster
 usr/local/isodata/isolinux/boot.cat			    quick-remaster
 usr/local/isodata/isolinux/isolinux.bin			    quick-remaster
@@ -4300,6 +4315,7 @@ usr/local/isodata/isolinux/menu.cfg			    quick-remaster
 usr/local/isodata/isolinux/splash.png			    quick-remaster
 usr/local/isodata/isolinux/stdmenu.cfg			    quick-remaster
 usr/local/isodata/isolinux/vesamenu.c32			    quick-remaster
+usr/local/isodata/live/beowulf-x86_64.sgn		    quick-remaster
 usr/local/isodata/live/stretch-x86_64.sgn		    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee
 usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
@@ -5023,6 +5039,7 @@ usr/share/applications/syncing.desktop			    diff-sync-umount
 usr/share/applications/thunar-settings.desktop		    thunar
 usr/share/applications/touchpad.desktop			    touchpad
 usr/share/applications/transmission.desktop		    transmission-2.60
+usr/share/applications/transtray.desktop		    trans-tray
 usr/share/applications/tzupdate.desktop			    tzupdate
 usr/share/applications/umounting.desktop		    diff-sync-umount
 usr/share/applications/unzipper.desktop			    unzipper
@@ -5646,6 +5663,7 @@ usr/share/firefox-esr/browser/icons/mozicon128.png	    firefox-esr
 usr/share/firefox-esr/distribution/searchplugins/common/debsearch.xml firefox-esr
 usr/share/firefox-esr/webapprt/omni.ja			    firefox-esr
 usr/share/firefox-esr/webapprt/webapprt.ini		    firefox-esr
+usr/share/fonts/CherryCreamSoda.ttf			    frisbee
 usr/share/frisbee/connect				    frisbee
 usr/share/frisbee/disconnect				    frisbee
 usr/share/frisbee/func					    frisbee
@@ -7892,6 +7910,10 @@ usr/share/pixmaps/gtk-go-back.png			    youtube-get2
 usr/share/pixmaps/gtk-go-forward.png			    youtube-get2
 usr/share/pixmaps/gtk-info.png				    youtube-get2
 usr/share/pixmaps/gtk-youtube-viewer.png		    youtube-viewer
+usr/share/pixmaps/hound1-r.png				    frisbee
+usr/share/pixmaps/hound1.png				    frisbee
+usr/share/pixmaps/hound2.png				    frisbee
+usr/share/pixmaps/hound3.png				    frisbee
 usr/share/pixmaps/icewm_32x32.xpm			    jwmconf,jwm-setup-dd64,jwm-setup
 usr/share/pixmaps/icon_epdfview-48.png			    epdfview
 usr/share/pixmaps/image-slicer.png			    image-slicer
@@ -7982,6 +8004,7 @@ usr/share/pixmaps/syncing.png				    diff-sync-umount
 usr/share/pixmaps/system-users.png			    xfce4-whiskermenu-plugin-mod
 usr/share/pixmaps/term.png				    jwmconf
 usr/share/pixmaps/touchpad.png				    touchpad
+usr/share/pixmaps/trans_tray.png			    trans-tray
 usr/share/pixmaps/transmission.png			    transmission-2.60
 usr/share/pixmaps/txt2svg.svg				    txt2svg
 usr/share/pixmaps/tzupdate.png				    tzupdate
