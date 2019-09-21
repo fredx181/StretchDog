@@ -375,6 +375,29 @@ SHA256: 5d6fd24071e4c69b154177b951dc1a022393ef8a8da731ecd42b101ff9b8dba7
 SHA512: d4e289d33badab7ed447f524d0bfd894c81ec462c383cdda229128e681b3c09707e5166b75feea4e814d9964eded85c94daf25b577879579d20ffc77d739dd31
 Description: Wireless Network manager
 
+Package: quick-remaster
+Architecture: amd64
+Version: 1.1.7
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.7_amd64.deb
+Size: 159910
+MD5sum: 70073d2093cd1e3c05dfa79782f79a8c
+SHA1: 879e748ca2102b13a5bdf93ecc1a9f8854385571
+SHA256: a94863bd5934b432fda307f12038c44fd926ce95ec06751fe9d3df090f517149
+SHA512: 81faa887e122f24ab394920cada8f9322956a63c9ce561da3bd92343258f8cc0a201f032d92137338d20b51394d628c79a9e02eb565e8a907114fa50962cd563
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+
 Package: gtkdialog
 Architecture: amd64
 Version:  0.8.7-wiak-B

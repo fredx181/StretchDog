@@ -98,6 +98,29 @@ Description: highly configurable system monitor (all features enabled - debug)
  This package contains debugging symbols only.
 Build-Ids: 1bdc7ce6be01b225a186008d13ce2b7549bf1532 474aef8048b9e127d8b5b3f6cd7a57b464b7bd97 4af9e7a68ff8f4acae1ad0432896adec28f445dd 766dd7fa4905c6be4b4720292b53b60ee0e9a921 e97d55388187958eaf7bd201765398d56226f2da
 
+Package: quick-remaster
+Architecture: i386
+Version: 1.1.7
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.1.7_i386.deb
+Size: 159918
+MD5sum: f5ce321ac2667027301d7ff528eb077c
+SHA1: b0fc2bf322e95761cb8383f3f66ac37589761764
+SHA256: 01ed0cbf5f02e6f97420fe504c0fc7c5c5f26bd71f7d0d21239d0411c7c30857
+SHA512: 2e0a7a0f688e0b5755b0d1d8f733e0699c83119fd60f36b982c74d7e4bb03a4440c60506b34bb0af964f16c4b201a43d0818c8550e980c80d5f57676d444266c
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version 1.1.2, cleaning, do not remove /etc/rc.d
+ Version 1.1.3, added GUI progress bar
+ Version 1.1.5, for Devuan beowulf 
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+
 Package: rox-filer
 Architecture: i386
 Version: 1:2.11
