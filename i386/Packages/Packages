@@ -4267,6 +4267,23 @@ SHA256: 59984cc7db32add711dbf06f34b95fdd79b54f341efd1fd85a5f7c0a046af1e5
 SHA512: 974ff493cd094aeb8ff3b83c460abd63a526f4cc74a7b41291e1ad472d5e1244affb38a3646cbb7c4d11ea48a7a0ab013d0950854ae3f1af45330c03ad34d5c8
 Description: Batterup battery monitor
 
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.5_all.deb
+Size: 1034940
+MD5sum: 79d1cf72d1149a0628fdd6ed8152a640
+SHA1: 9e977a752d5b3616a91c87e608958d7e38182fbc
+SHA256: e2c8761286cfec35b54d2b6e8d6ce91911ac71bb3c32e5dfae5b57018c8c8b75
+SHA512: db50dcbe62017428fe4597f611ffe2ecfe236b761769016d49219a6f53c751905d202821bfcc4777c119a9560a9ac9be8c5abb01cd6b706bcb4189d478cb9048
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
+
 Package: gmplayer
 Architecture: i386
 Version: 37926-6.3.1
