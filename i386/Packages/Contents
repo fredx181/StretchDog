@@ -3986,6 +3986,13 @@ usr/local/cr-initrd/initramfs/bin/uniq			    upgrade-kernel-bpo,upgrade-kernel
 usr/local/cr-initrd/initramfs/bin/usleep		    upgrade-kernel-bpo,upgrade-kernel
 usr/local/cr-initrd/initramfs/bin/vi			    upgrade-kernel-bpo,upgrade-kernel
 usr/local/cr-initrd/initramfs/cleanup			    upgrade-kernel-bpo,upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/console		    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/null			    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/ram0			    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/tty1			    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/tty2			    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/tty3			    upgrade-kernel
+usr/local/cr-initrd/initramfs/dev/tty4			    upgrade-kernel
 usr/local/cr-initrd/initramfs/etc/mtab			    upgrade-kernel-bpo,upgrade-kernel
 usr/local/cr-initrd/initramfs/fatal			    upgrade-kernel-bpo,upgrade-kernel
 usr/local/cr-initrd/initramfs/init			    upgrade-kernel-bpo,upgrade-kernel

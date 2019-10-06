@@ -5967,6 +5967,20 @@ SHA256: a3cf47066a32316a55e2986e8772b46c5fe1979c88547681067af034ac6ade4b
 SHA512: 9232ab844d774a32e984e0c8ca84651c8df99ad707a835eca9f59e7b6f63a0f636afe41d385176f40d3e58c48ed21ac2aacf80defe85f0dd149f55e0c7bbff56
 Description: DropboxGUI, by mikeb
 
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.1_all.deb
+Size: 1032010
+MD5sum: 3551dec50e90309cf67e7dd6fbb3a759
+SHA1: 3fde60ec0ec051f8983bf0420dcd423f078e033a
+SHA256: c26b9082edc0907442adfb60bbe9c3f3c558667d9501e223a4860d8c22ecbd50
+SHA512: ed8321b90e92d5a436cf4c27e1d6a05742b4193098ab2d1d8b8c3d21d8e94d40da8a48fe2d18baa3875d3015ded14b41ba5c6c22f676ad6abd249de8d7a9acc5
+Description: Warning - This package works only in DebianDog!
+
 Package: x11-xserver-utils
 Architecture: amd64
 Version: 7.7+2+b1
