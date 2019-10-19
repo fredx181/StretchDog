@@ -899,6 +899,21 @@ Description: Dogradio is a GUI displaying icons for playing radio streams.
  - Using conky for 'conky ticker', showing metadata
  (can be enabled/disabled from tray icon menu + other settings)
 
+Package: flashplayerchoice
+Architecture: amd64
+Version: 1.0.6
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu, elinks
+Filename: ./Included/flashplayerchoice_1.0.6_amd64.deb
+Size: 5820
+MD5sum: 2ab51f68db2d5d2d31a888f40aed50d6
+SHA1: c310b82432d3a684c45f9c007ba5fd313015c7e9
+SHA256: 261b8447d90f788f3784981b418e1461f5f59d590b66ffa1347aba50cf13eeda
+SHA512: 25dd6ca9f37da8a655c258ad50eac862b338dcf652b3acdc7c41dc90e4daedad726a2a5843ee8576f06cd33ca1b9d1cbead75ef49e5722cf15ae5802f624eab9
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Latest version from Adobe (= 16 Mb uncompressed)
+
 Package: mount-wizard
 Architecture: all
 Version: 1.0.2
@@ -6859,6 +6874,21 @@ Description: Reliable network manager
  - added multi-user support (fredx181)
  - changed bcrypt to ccrypt
 
+Package: touchpad
+Architecture: all
+Version: 1.9-3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./Extra/touchpad_1.9-3.deb
+Size: 6360
+MD5sum: 0aa5e20b886e0c6339dcde1b9667d750
+SHA1: 56bd64b48a1c6af800eb5e06bc66d858106a6c62
+SHA256: d03b5666971ef8c7f0b33236f4c04363b5d0e81e9ebe5d3c0fb080c41976078b
+SHA512: d35f6aee507c6f3b85ae64f5590607766b046c32da9049c46d405d7be4f9cab7ae03d5a080fe4d6abf4d7070d9e0cf5703b83e5ea9871293a3a5583136f40435
+Description: Touchpad/mouse/touchscreen setup
+
 Package: create-portable
 Architecture: amd64
 Version: 1.0.3
@@ -7627,6 +7657,21 @@ SHA1: 9347b5a137290c90457259e2cc070890252d9a67
 SHA256: afb05c7d4da9f0fd9e641550cd5fcdcab5b8f8a78cd8894c34c058f291138bfe
 SHA512: 4f0f61db2dbdd53794937b8057638fbf1e3e1c7bc048becfd4bde302dbd4dfcb7cf21c9703873e5eac6c95f6720a001a961e114fe3b9d7931a765961bf694711
 Description: Show drive icons on desktop
+
+Package: peasyxorburn
+Architecture: all
+Version: 1.3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xorriso, growisofs, cdrskin, eject, xterm
+Filename: ./Extra/peasyxorburn_1.3.deb
+Size: 10340
+MD5sum: 36ef293e535f9e6eddaf59ec99a94098
+SHA1: de6c3d7ce8ace4f79d09cd506a3849868342a2d8
+SHA256: 2693e294f710d22235ea3dbc0e1523c7948883ad1a4b8b4c8362fc0d5479bbe2
+SHA512: 727c477e56a6b8fa537c51a80296bdf84d1ac2ff8aba02a1be91e6e4dcf3b35c07606418316e1aeeda076c1d7cc7ad686a275026f07160ab39f87de25727fbbd
+Description: Simple burning tool
 
 Package: xlunch
 Architecture: amd64
