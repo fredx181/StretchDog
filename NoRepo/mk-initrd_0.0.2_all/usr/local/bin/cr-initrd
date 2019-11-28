@@ -1,3 +1,0 @@
-#!/bin/bash
-[ "`whoami`" != "root" ] && exec gsu ${0}
-xterm -T "Create initrd1.xz (for porteus-boot) and initrd.img" -si -sb -fg white -bg SkyBlue4 -geometry 80x22 -e /usr/local/crinitrd/cr-initrd
