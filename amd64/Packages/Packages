@@ -5122,6 +5122,21 @@ SHA256: 673c368946b4d853e4d48f95e5aee40ef2359f7899bceef6887d97577637196a
 SHA512: 6680fced98d788d9c620f469d35ee97282c904627325d00ff7bdc3b1af9cd103fd45f9a3d79b76f4b24fb2131e975adbd1b82b4d5ff3a617e1ec8e0f549ce90b
 Description: Slices an image into sections
 
+Package: peasydial
+Architecture: all
+Version: 1.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: usb-modeswitch, wvdial
+Filename: ./Extra/peasydial_1.2_all.deb
+Size: 3274
+MD5sum: 99bcd12d685d1efeb769cd561b15366c
+SHA1: 6c20ac8cebdf7187610de8853271e9e32089542f
+SHA256: 3157162aa258984fad29af2155bcc424497d08c138deb0d8f05f7f2e1e57aea6
+SHA512: d3510471715afdd4482eb30b00ed9cfb719089403c8e2db4391b592e55fb7cb09c75a191ec3c9fc9c9b28540b404a4ae7073010b07bf93116a6850146aeec754
+Description: modem dialer
+
 Package: dancing-letters
 Architecture: amd64
 Version: 1.0.1
