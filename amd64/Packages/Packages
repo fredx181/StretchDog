@@ -7721,6 +7721,21 @@ SHA256: 91aaccacda59f857d19996a87f9127e1148b55e12e04c69ab7d53ea142413cf8
 SHA512: b1970cbf26592ae73d3df80d73da0723548e3573d66e1907ef7f29838fbde9fd6f6e0acd42c8078c2791fe054de74af868ed53c416d1933b77bc847124760782
 Description: Pulseaudio emulator using alsa
 
+Package: cputemp
+Architecture: amd64
+Version: 3.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils, lshw
+Filename: ./Extra/cputemp_3.2_amd64.deb
+Size: 6318
+MD5sum: e4b5f150e04cc09a56926760b0d27545
+SHA1: c62ca32717d866fef2f38b052ae6f3bd7aec486d
+SHA256: 297d688047cbe0d04107716ea7650df8ba06e4497f89320801a1b9592bc6739d
+SHA512: 0f6e77e3295fdf4f0d1084455912dd0e5fd54d498322ce4033c2a61478cc795cb8feec34268245552ab866a93b0e4c132ecddb463c5f9b8baaeeddfac20cff12
+Description: CPU temperature monitor
+
 Package: p910nd-print-server
 Architecture: amd64
 Version: 0.97.3-1

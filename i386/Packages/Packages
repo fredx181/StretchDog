@@ -6436,6 +6436,21 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: cputemp
+Architecture: i386
+Version: 3.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lm-sensors, cpufrequtils, lshw
+Filename: ./Extra/cputemp_3.2_i386.deb
+Size: 6170
+MD5sum: 8534f728912fedb2e0d1a2a4bb67a492
+SHA1: c1a8ed6c832835cededb49c6a932ab6ae63a56ab
+SHA256: ed63ccdddec3285b03575c03a76c707fb6afee27985ef6c7dbb92744634d96e5
+SHA512: 0c5e0d90b9105d72f3e232462d50bdf0d6da7ad90b19e9c4ff9a1da060f26576dba5842bc48a61b109bd268e2af29a64493c235aca8166b22a611009be4d0c27
+Description: CPU temperature monitor
+
 Package: dropboxgui
 Architecture: all
 Version: 1.0.8
