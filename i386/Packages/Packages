@@ -6467,6 +6467,20 @@ SHA256: 1f744a4ea944c84762af38a7eb3310dab2ae840b665e4cb2e89427841b3d9680
 SHA512: 5efd4899f33661a3f3030b61e07489400452ef708bd28aa362ffcde33edec51bba7c4c2cb05fcafb545ca6491248b570e28b035618ad296336fedc26021f4a59
 Description: DropboxGUI, by mikeb
 
+Package: wlanmaker
+Architecture: all
+Version: 2.0
+Priority: extra
+Maintainer: rcrsn51
+Depends: hostapd
+Filename: ./Extra/wlanmaker_2.0_all.deb
+Size: 1586
+MD5sum: 71a6dcd008256e97c1f44a0b5e603f10
+SHA1: 5f4c461676b9ebeef3e8d92411a484059fe50dc2
+SHA256: 309a55471bf12a8896e9daf9d10fb25f87b41edd7cdba4dce55fc20467d0067d
+SHA512: a563ed492f71ef7cd5f71b7177dc3b1a5e6d653b89067032755f3dc9fb60b3551e121483d7fc764a67e3ed677f1086e2a5619f44db55c7c09c07841886d50cf0
+Description: Makes a WiFi access point, needs iptables for internet
+
 Package: peasyxorburn
 Architecture: all
 Version: 1.2
