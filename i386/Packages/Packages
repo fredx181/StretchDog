@@ -4080,6 +4080,21 @@ SHA512: 4a8acb26790c54fba6c91b29e73876b3b69750af15d7538e9a25f4c56afc389976e43f52
 Description: Samba server control panel
 	uses the Samba4 Basic 32bit PET
 
+Package: gnetcat
+Architecture: all
+Version: 1.3-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: lzop
+Filename: ./Extra/gnetcat_1.3-1_all.deb
+Size: 5368
+MD5sum: a5a9ace47353bd8988ed64ad9cdd1fff
+SHA1: 237f1597592efa786564262f901b542dcff047af
+SHA256: c9e8fad1dbdc93b51436eabf7bae2fc3100793dece9e5991d9e0b136df5d0438
+SHA512: 3c7b3615e1d6a4610aedf40404c7953489764ce95b81a963384046aa7b5b0c4773877f94b17363022459f93ad04e388fb340090502fa59784cf58a005295d660
+Description: File transfer with busybox nc
+
 Package: my-squash-loader
 Architecture: i386
 Version: 1.4

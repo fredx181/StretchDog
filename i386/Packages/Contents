@@ -1963,6 +1963,7 @@ usr/local/bin/gifenc					    gifenc
 usr/local/bin/gifenc-sel				    gifenc
 usr/local/bin/gifondesktop				    gifondesktop
 usr/local/bin/gifshow					    gifondesktop
+usr/local/bin/gnetcat					    gnetcat
 usr/local/bin/gnome-mplayer				    gnome-mplayer-1.0.7
 usr/local/bin/gopoststuff				    gopoststuff
 usr/local/bin/grldr					    debdoginstallscripts
@@ -5542,6 +5543,7 @@ usr/share/applications/freememapplet-on.desktop		    freememapplettray
 usr/share/applications/frisbee.desktop			    frisbee
 usr/share/applications/geany.desktop			    geany
 usr/share/applications/genentries.desktop		    xlunch
+usr/share/applications/gnetcat.desktop			    gnetcat
 usr/share/applications/gnome-mplayer.desktop		    gnome-mplayer-1.0.7
 usr/share/applications/googledrivegui.desktop		    googledrivegui
 usr/share/applications/googledrivegui2.desktop		    googledrivegui2
@@ -9854,6 +9856,7 @@ usr/share/pixmaps/frisbee.png				    frisbee
 usr/share/pixmaps/gif-file.png				    gifondesktop
 usr/share/pixmaps/gifenc.png				    gifenc
 usr/share/pixmaps/gifencc.png				    gifenc
+usr/share/pixmaps/gnetcat.png				    gnetcat
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
 usr/share/pixmaps/go-next.png				    youtube-get2
 usr/share/pixmaps/go-previous.png			    youtube-get2
