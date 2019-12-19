@@ -7440,6 +7440,22 @@ SHA256: f83254af0b2479ff0710e9356b5f16ac8305c3a34d5c4fce165f5951334f56ad
 SHA512: f34a3313c7e4e2a855a416dcb2605b04094abb801460678e75d053196348df49e4ef6310cd2287a0e1c6e73169915d5b3812c7cd48472910672c04b04c3ddf7d
 Description: Sets system date, time, zone
 
+Package: yalarm
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./Extra/yalarm_0.0.1_all.deb
+Size: 39088
+MD5sum: 3df27afe9e0e0a348d7a433ec2466e83
+SHA1: e26947ce275d6b9eb6e12adcbf2e9bfb3844b534
+SHA256: 1401660cfe0fd42a580bf883899f06b4e6b4b1ea527cad3dbdda906d3fa969b5
+SHA512: 9937bef7ed29a68702f37db7a014b9e71f986c4b5cb57a66f4343ec781701154a9e4a36046d6d24ea2e51e39132f161c117bac18e673040128410798e43edfc6
+Description: Alarm scheduler
+
 Package: peasy-dvd-player
 Architecture: all
 Version: 1.4

@@ -7904,6 +7904,22 @@ SHA256: 448486d0806a28f7852d0bfb10eb4b2c1a52f240899b12303b7519c5728153d0
 SHA512: 3c04cca172cae6088ca1ad5fc7b77fcecf1506ee4a29294dde219a659ff176c87ca626229af8e0abe87c4901e3fe07204155644c81b3e6c3834359b62414aa5d
 Description: Bluetooth manager and audio playeer
 
+Package: yalarm
+Architecture: all
+Version: 0.0.1
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: yad, libc6
+Filename: ./Extra/yalarm_0.0.1_all.deb
+Size: 39088
+MD5sum: 3df27afe9e0e0a348d7a433ec2466e83
+SHA1: e26947ce275d6b9eb6e12adcbf2e9bfb3844b534
+SHA256: 1401660cfe0fd42a580bf883899f06b4e6b4b1ea527cad3dbdda906d3fa969b5
+SHA512: 9937bef7ed29a68702f37db7a014b9e71f986c4b5cb57a66f4343ec781701154a9e4a36046d6d24ea2e51e39132f161c117bac18e673040128410798e43edfc6
+Description: Alarm scheduler
+
 Package: peasy-dvd-player
 Architecture: all
 Version: 1.4

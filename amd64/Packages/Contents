@@ -2168,6 +2168,7 @@ usr/local/bin/xscreenshot				    xscreenshot
 usr/local/bin/xvidcap					    xvidcap
 usr/local/bin/xwd					    snappie
 usr/local/bin/yad-splash				    yad-splash
+usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
 usr/local/bin/youtube-get				    youtube-get
@@ -4850,6 +4851,10 @@ usr/local/websearch/help_files/websearch_engines_fr.txt	    websearch
 usr/local/websearch/restart.sh				    websearch
 usr/local/websearch/websearch				    websearch
 usr/local/xlunch/xlunch					    xlunch
+usr/local/yalrm/TickingTimebombBB.ttf			    yalarm
+usr/local/yalrm/alarm_142x164.png			    yalarm
+usr/local/yalrm/current_time.png			    yalarm
+usr/local/yalrm/yalarm					    yalarm
 usr/local/youtube-get2/1url.desktop			    youtube-get2
 usr/local/youtube-get2/2playlist.desktop		    youtube-get2
 usr/local/youtube-get2/3ytuser.desktop			    youtube-get2
@@ -4944,6 +4949,7 @@ usr/share/applications/Xlunch2.desktop			    xlunch
 usr/share/applications/Xlunch3.desktop			    xlunch
 usr/share/applications/Xlunchlogout.desktop		    xlunch
 usr/share/applications/YRadio.desktop			    yradio
+usr/share/applications/Yalarm Alarm scheduler.desktop	    yalarm
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
 usr/share/applications/apt2sfs-cli-fullinst.desktop	    apt2sfs
@@ -5680,6 +5686,7 @@ usr/share/firefox-esr/distribution/searchplugins/common/debsearch.xml firefox-es
 usr/share/firefox-esr/webapprt/omni.ja			    firefox-esr
 usr/share/firefox-esr/webapprt/webapprt.ini		    firefox-esr
 usr/share/fonts/CherryCreamSoda.ttf			    frisbee
+usr/share/fonts/TickingTimebombBB.ttf			    yalarm
 usr/share/frisbee/connect				    frisbee
 usr/share/frisbee/disconnect				    frisbee
 usr/share/frisbee/func					    frisbee
@@ -7750,6 +7757,7 @@ usr/share/pixmaps/BaCon.png				    bacon
 usr/share/pixmaps/BaCon24.png				    bacon
 usr/share/pixmaps/MPlayer.png				    gmplayer
 usr/share/pixmaps/UExtract.png				    uextract
+usr/share/pixmaps/alarm_142x164.png			    yalarm
 usr/share/pixmaps/alsa-master-volume.png		    alsa-master-volume
 usr/share/pixmaps/alsamixertray.png			    alsamixer-tray
 usr/share/pixmaps/application-x-squashfs.png		    sfs-get-smokey-get
