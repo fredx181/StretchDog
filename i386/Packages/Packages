@@ -3070,6 +3070,21 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: touchpad
+Architecture: all
+Version: 1.9-4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct, xbacklight
+Filename: ./Extra/touchpad_1.9-4_all.deb
+Size: 6336
+MD5sum: 6931f05f39879712e273a983b86835b7
+SHA1: 2a84db8524e0442cbaa1078ed4dbbc81a64353bb
+SHA256: 3c315ac8d3b08554247e6fae081c1753a07fa0542293d6b64c0324146e1762a1
+SHA512: 70d587a18eeab115ad125d40ab074c3e4723bceb6e0b6776cddb4f484c154627ebce4396acfe8f949439e2b8491b8c1d6565322cf5b5ade6726261f7ea0c63bd
+Description: Touchpad/mouse/touchscreen setup
+
 Package: PeasyWiFi
 Architecture: i386
 Version: 4.3-1

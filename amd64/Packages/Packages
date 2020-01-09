@@ -2819,6 +2819,21 @@ Description: A Gtk2 application for searching and streaming videos from YouTube.
  WWW-YoutubeViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: touchpad
+Architecture: all
+Version: 1.9-4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct, xbacklight
+Filename: ./Extra/touchpad_1.9-4_all.deb
+Size: 6336
+MD5sum: 6931f05f39879712e273a983b86835b7
+SHA1: 2a84db8524e0442cbaa1078ed4dbbc81a64353bb
+SHA256: 3c315ac8d3b08554247e6fae081c1753a07fa0542293d6b64c0324146e1762a1
+SHA512: 70d587a18eeab115ad125d40ab074c3e4723bceb6e0b6776cddb4f484c154627ebce4396acfe8f949439e2b8491b8c1d6565322cf5b5ade6726261f7ea0c63bd
+Description: Touchpad/mouse/touchscreen setup
+
 Package: batterup
 Architecture: amd64
 Version: 1.2
@@ -5105,6 +5120,21 @@ Description: Reliable network manager
  - added Names button (to select interface names)
  - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
  - Updated Help screen
+
+Package: peasyport
+Architecture: amd64
+Version: 2.8
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.8_amd64.deb
+Size: 11662
+MD5sum: 62f189fb1dced0c925b0deefc823ab93
+SHA1: 6a0efc9441f13b8f24ebdcb01b16745b4320a477
+SHA256: da405ef1903e654f427fb6112cd4619d566fea43e05d805d576586a67a3af293
+SHA512: ec5c30372211b8a4b3958137066ec2f09c4ebfbe07ea5c8ff053d4ea6e6c417128ab0848db2b17bb859c8f238cbe6b07716959d8e2a9707ee8a6aecb59989e21
+Description: Network port scanner
 
 Package: create-portable
 Architecture: amd64
