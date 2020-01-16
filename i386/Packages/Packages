@@ -5689,6 +5689,21 @@ SHA256: 351b1bf5da63267f91a78bc4d1b17b70590192cf6473b4583a685477db5f871f
 SHA512: e46df85c0b0c109bd5a54ea55c124057576525427defd5d9c0da13b6ba4e0625e53848305421df47ff87c5954ffb08eb30e3d03701e1056c661542004a27c4a1
 Description: Painting tool
 
+Package: unzipper
+Architecture: all
+Version: 1.5-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gzip, bzip2, xz-utils, unzip, p7zip, unrar
+Filename: ./Extra/unzipper_1.5-2_all.deb
+Size: 3864
+MD5sum: d84168b4776f93c0a6b92d9128e5322b
+SHA1: b817dae29406196c4a4e33b38032c5ffc30ae500
+SHA256: 5248739051f05dfceaf3fd398278b031027304e10a7e6334b30a687ec6646f57
+SHA512: db999dc408fde50a2691b998b465b2719801b6ccbbb6a24a5de9a34175ff777c837f6fae351001726b99e7f4950238fcc8227fca7ab331c193be78f6b44dbb3c
+Description: Extract gz, tgz, bz2, xz, zip, 7z archives
+
 Package: touchpad
 Architecture: all
 Version: 1.3
@@ -7271,6 +7286,20 @@ SHA1: ef04e3038182750b67694429a8ace43ab90e37f6
 SHA256: 8d5224b735ee55af329edb70eebace77ab4c0a9107e8b779ae0718f15f79aacf
 SHA512: d4f1cab4e683544a6f9d3c119ac230cb80fa4e1f2c7c8f9a9453667db4ab8646f6cbbbf89e364bbe76f882d2909970b958d0bc69a785fc720fa7b227eb9a9430
 Description: DropboxGUI, by mikeb
+
+Package: sound-card-selector
+Architecture: all
+Version: 1.5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.5_all.deb
+Size: 4148
+MD5sum: 6d3543b7decf1612d83528af3e5549c5
+SHA1: 99904dd2ef9e54d477f8ecbdf476f00a8e453eb8
+SHA256: 194b79a4e4b27207aeb3bddaee9276e3ee890b887c4d0bb81b244696072ff813
+SHA512: 6f2552198b80fab69e6a499f3b0cc467b67ed568df2302fdd504e01736bea6e8a4acc21f28eb8768e17908d3880f2db187e539d9af7d8829156776d73ec63fd3
+Description: Select a sound card and set ALSA defaults
 
 Package: sound-card-selector
 Architecture: all
