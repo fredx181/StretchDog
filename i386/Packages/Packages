@@ -3828,6 +3828,20 @@ Description: Multi-tabbed GTK+/VTE terminal emulator - common files
  This package contains files used by both the GTK+2 (roxterm-gtk2) and
  GTK+3 (roxterm-gtk3) versions.
 
+Package: sound-card-selector
+Architecture: all
+Version: 1.6
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.6_all.deb
+Size: 4150
+MD5sum: 85b97059604808a97600b746a058a020
+SHA1: 7d5e6c2b1369ee2397e79eba3f94dd6a349e3f30
+SHA256: 730da01e8445a6c27779abc2f5dc33363cecbd676b774215881c138ae26c2cc9
+SHA512: d959a15789e2f60c178739347774bbaf7db668444178e3961770a09b4b626741926072fd610c08518cc62952f20c0224b0d222db6b29be85528c8054355ba62c
+Description: Select a sound card and set ALSA defaults
+
 Package: PeasyWiFi
 Architecture: i386
 Version: 4.4-1
