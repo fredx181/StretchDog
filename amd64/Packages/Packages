@@ -1925,6 +1925,21 @@ SHA256: 603b797a24db3a3e98669d1a12bc56bd53450cb9fab25a14b3872228f3ffe19a
 SHA512: 7bb1a379073907fa728682b18bde07e86349bf4e681cdff033082b878624e1d4d7d70ef2b8c592703a94f0f36747975dded37cbf923e59113fd95b46aaccab7c
 Description: gtkdialog
 
+Package: flashplayerchoice
+Architecture: amd64
+Version: 1.0.7
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.7_amd64.deb
+Size: 5916
+MD5sum: 900222861ce49bb18f4ac3fa9346419a
+SHA1: 0ffb0ec6f5abfa6ee075ebcd4af207b4c823f27c
+SHA256: f839d0da7f2cb5ccb6a091cd8ff193ea287cc030fdcd2c2455274428d1f01a82
+SHA512: 8d13d8a73757b13dc55d1ea1ccbe826dc3f19424207a04aa177ca444fa04769ea08bd6dbcc38087d24852eadf5b14ea6b7a3c8439c712f822481f59d6c4b0b4b
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Latest version from Adobe (= 16 Mb uncompressed)
+
 Package: conky-cli
 Architecture: amd64
 Version: 1.9.0-6

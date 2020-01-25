@@ -65,6 +65,22 @@ SHA256: ee2043366b5a1c957dd11436e6aecf33d99f85d12eb7a402f6d21dbd4a154a97
 SHA512: 6f196e8f87d4e393dda2cc469e97704e129f5ad34b2341d7aac623ee68ab5991d5cb85c7196fa9d3493e37e879ce812210e5ebab26748aae7d12b054ccd0259c
 Description: Advanced text editor
 
+Package: flashplayerchoice
+Architecture: i386
+Version: 1.0.7
+Maintainer: root
+Installed-Size: 38
+Depends: libc6, wget, yad, sed, menu, tar, gsu | gksu
+Filename: ./Included/flashplayerchoice_1.0.7_i386.deb
+Size: 6004
+MD5sum: ebe99d48367b3a509167a4c0b92cb7e0
+SHA1: 27cbff7de11dc577da47de845cbc015beef44124
+SHA256: 118192e50ad77151671c5b76f5774d9f3ca58bcc5846c2d887e2e859461e9e33
+SHA512: cb0871da23f87d45d851c44d115a024348a2c8fa2db45c22b0ef81f97163b693fb8b39a07c9acb2194cfb7bf4d657233da530946b10619ac807f8a5aa144030c
+Description: The flashplayerchoice script gives choice of several options to install flashplayer :
+ - Latest version from Adobe (= 16 Mb uncompressed)
+ - version 11 from http://www.smokey01.com/OscarTalks/ (= 18 Mb uncompressed)
+
 Package: conky-all-dbg
 Architecture: i386
 Version: 1.10.1-3
