@@ -5705,6 +5705,21 @@ Description: Free BASIC to C converter for Unix-based systems.
  Code converted by BaCon can be compiled by GCC, the Compaq C Compiler, TCC, the
  clang/LLVM compiler and possibly also by other C compilers.
 
+Package: peasyprint
+Architecture: all
+Version: 4.0
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, poppler-utils, libtiff-tools, peasyscale, cups-client
+Filename: ./Extra/peasyprint_4.0_all.deb
+Size: 8058
+MD5sum: ed4c481915004691cfc034ea8294b93b
+SHA1: 9ce2a3a66c97ee9e83e5a45d992491077cd6474c
+SHA256: 8699edf0283b41f1a624b4dfef06abbd82601bbf6e1030ab27b7c667cd671cd1
+SHA512: 6ff73594aa5e2a99ca19713e960f3cec76c66b2eb14a88cc9fa1083b401c0881930c849c638204b8729425c2cdfbf178f80e581180586565be20c8f207c8ced5
+Description: prints graphic files
+
 Package: azpainter
 Architecture: i386
 Version: 2.1.1
@@ -6893,6 +6908,20 @@ SHA256: 7163eb7ef64bb4373f7ccd581e472bf7b160ec9761a9dff50842930cd5ba02eb
 SHA512: 4bcf7049de516444e1b0b314b7f1e6fe0c035bcc31f1eefca0609f4a452b4dd136772a6b52ae3c13c6dec9b34c0d635a7e5bf608c5dd7b273bbf72d0f3617f86
 Description: Batterup battery monitor
 
+Package: sound-card-selector
+Architecture: all
+Version: 1.6-1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/sound-card-selector_1.6-1_all.deb
+Size: 4158
+MD5sum: 498d4299f0951d30f7c6a6f289cf27ab
+SHA1: 3054fb61be523435bdc5a7a54e0a8f13dab4c80f
+SHA256: bb9ace17e7e16643039e6b6169394d059eebbd2c5158453a8efde7fd25df02ab
+SHA512: 22cdc6920c735064638079d381bbf038ad8bbd889c6a7f90bf294fd0454563fab1ed9431a82b551bdd6d70fd23f284090e4d2aaec0b8475abd36f7997c23f166
+Description: Select a sound card and set ALSA defaults
+
 Package: dogradio
 Architecture: i386
 Version: 0.0.5
@@ -7151,6 +7180,21 @@ Description: FUSE filesystem for mounting files from http servers
  httpfs2 is a FUSE based filesystem for mounting http or https URLS as files in
  the filesystem. There is no notion of listable directories in http so only a
  single URL can be mounted. The server must be able to send byte ranges.
+
+Package: peasypdf
+Architecture: all
+Version: 4.2-3
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client
+Filename: ./Extra/peasypdf_4.2-3_all.deb
+Size: 6828
+MD5sum: 915f8c3053b516ad285cd00d1682057e
+SHA1: 21c21853d812ba689369ffa888d22ea7f22a1dc8
+SHA256: 1a1f7fdeadd6f8192d9d7352bf4fef022f865a70dd7b513e8097974dd3d75402
+SHA512: 12eb93957a99beac2922cfd03e945c53ff374a43cb0fe34b45f8d58615f4a6c3fcade884ec7c18e18d56178b5c3eaf37fe5af81bb8a7d5895b883c7198d536d9
+Description: Manipulate PDF documents
 
 Package: youtube-viewer
 Architecture: all
