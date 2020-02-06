@@ -6393,21 +6393,6 @@ SHA256: 6bae72423635d11e292cc1296a6691174c080007d8e58709371d444afd6d3128
 SHA512: 44b1f6f88f414450739e28a1a957c8fd694e2fabde18832f1cec03fa2d44b66a85eddbbb4adabe9f612476fe699b074c3b7ba5961ecd226860ce6334b6964081
 Description: Extract gz, tgz, bz2, xz, zip, 7z archives
 
-Package: peasyprint
-Architecture: all
-Version: 4.1
-Priority: optional
-Section: Graphics;
-Maintainer: rcrsn51
-Depends: libc6, gtkdialog, netpbm, poppler-utils, libtiff-tools, peasyscale, cups-client
-Filename: ./Extra/peasyprint_4.1_all.deb
-Size: 8244
-MD5sum: 5acc9edfc307f46983971d4a2e0f2202
-SHA1: 2e8f5485162acdd608efe35fd060e90a3f581002
-SHA256: d296d5ea0e7a49ea3f8a4f7093698771f90c806fd15a3d722e57970786d04d53
-SHA512: 8ca657952d7a1b560354f470950be24c718f14d2e57756c85b5b33c4bc61380a31d762545da2d724105d6a87605a02d9776f225e74ad533858deb238ad27c2ee
-Description: prints graphic files
-
 Package: peasymp3
 Architecture: i386
 Version: 4.1-2
@@ -7029,21 +7014,6 @@ SHA1: be589e26908a71bfe5a42f1fdaba5c4375f894b6
 SHA256: 522e01071e3a3d63a7d03f2c11d031fc05ee6746fa363cbd6aaeb1047c16a218
 SHA512: 47e01e7d075d0351b5837e4035477d7a1fe9b2e4b67571c5f7668e8cf4484999718ad75e1a66f36956fc8ab41a92711f67b3a710bb77c37797ebe5d77483171a
 Description: Internet Radio Player
-
-Package: peasypdf
-Architecture: all
-Version: 4.3
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client
-Filename: ./Extra/peasypdf_4.3.deb
-Size: 6828
-MD5sum: 3328e8ea138bbee787742e821fb3189e
-SHA1: 835af40ea4e0b26c9fd7ae4cfdec5267750fe08d
-SHA256: b8fed70315bf2515deeea702464bf2a940003931781ffd4d505cea4db9c47505
-SHA512: ae9c62c76a7ab2f120b257ca5ce40202d7657b622ed0de829884556ce7088fee34f4824a5004dd3835a65905bc30dc1c49061aae63f503f8033e8893927dab01
-Description: Manipulate PDF documents
 
 Package: peasyclock
 Architecture: all
