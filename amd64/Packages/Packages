@@ -6912,6 +6912,23 @@ SHA256: e6c121492b34e4c83bc95fb3bc581aaa3a1f3204e8e5265470dacedf4d1ba50c
 SHA512: 25c724985f9a417e8ef28a7b19ed40329464810904a2992962d7b6c34ed1ff2409b39e82a77016459dfa26bbed283f73415a637ec5ceca21a976c9549d5b9c09
 Description: CPU temperature monitor
 
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
+Filename: ./Extra/upgrade-kernel2_0.0.3_all.deb
+Size: 1041324
+MD5sum: c6beec56ee71f3dbd92402c6a11a880e
+SHA1: 434e75f9c692c8101feac7616e5936ec6ddae856
+SHA256: e7ba3df370883ecc3ea29c35c328df6820daa72d3fff0a0eaea87914d74b5f6d
+SHA512: 3747c02d4f18b100cdb4623d7eff5a29bd140b3f1ffe1d9c046029895e82831dc27378a5c8c2c5dd935ba651a9a0345d737a4442432608ef5c86d52b7d16bab1
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
+
 Package: gopoststuff
 Architecture: amd64
 Version: 0.1.1

@@ -7114,6 +7114,23 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
 
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.3
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
+Filename: ./Extra/upgrade-kernel2_0.0.3_all.deb
+Size: 1041324
+MD5sum: c6beec56ee71f3dbd92402c6a11a880e
+SHA1: 434e75f9c692c8101feac7616e5936ec6ddae856
+SHA256: e7ba3df370883ecc3ea29c35c328df6820daa72d3fff0a0eaea87914d74b5f6d
+SHA512: 3747c02d4f18b100cdb4623d7eff5a29bd140b3f1ffe1d9c046029895e82831dc27378a5c8c2c5dd935ba651a9a0345d737a4442432608ef5c86d52b7d16bab1
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
+
 Package: libxml2-dev
 Architecture: i386
 Version: 2.9.1+dfsg1-5+deb8u3

@@ -5481,6 +5481,7 @@ usr/share/applications/ISO-Tools.desktop		    isotools
 usr/share/applications/Jwm.desktop			    jwm
 usr/share/applications/Make ISO from frugal install.desktop quick-remaster
 usr/share/applications/Make Swap.desktop		    makeswap
+usr/share/applications/Make initrd.desktop		    upgrade-kernel2
 usr/share/applications/MakeScreenshot.desktop		    scrotdlg
 usr/share/applications/Markdown_to_HTML.desktop		    md2html
 usr/share/applications/Pdf to Djvu convert.desktop	    pdf-to-djvu
@@ -9907,6 +9908,7 @@ usr/share/pixmaps/md2html.png				    md2html
 usr/share/pixmaps/mini.xterm_32x32.xpm			    xterm
 usr/share/pixmaps/mini.xterm_48x48.xpm			    xterm
 usr/share/pixmaps/mkinitrd.png				    upgrade-kernel-bpo
+usr/share/pixmaps/mkinitrd2.png				    upgrade-kernel2
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
 usr/share/pixmaps/mp3-ogg-wav-converter.png		    mp3-ogg-wav-converter
