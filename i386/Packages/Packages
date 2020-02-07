@@ -3560,6 +3560,20 @@ SHA256: 154f2f063c581bf9bdf548cc776dcca856882e489722352257a0a9bcddadbb39
 SHA512: 816f514d0876cb1085027edb7ed328f0a2900dde89388f7309954cbfe61b68dc357357cce710f910466cf9a108eed340505d4b7920744681c3ba9466eb7a36ea
 Description: Internet Radio Player
 
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.2_all.deb
+Size: 1032864
+MD5sum: 3d81c579fb753e1ef9521c98a3e156a8
+SHA1: 23489662ddabb44becb7860c21721f4ea531fe7b
+SHA256: 7c19c9b64fda78613670e48a0c1e1ce25005cc8ce59f92d87d3572222324bf1c
+SHA512: 7096e839e834f9ef44162ef83a2773a528eaaab0067a2683d8ec7acddbcd4cfdd28cd374d382f71b7805a2bf753c2b424de37c043d711e56a30201e9a44e1dab
+Description: Warning - This package works only in DebianDog!
+
 Package: midori
 Architecture: i386
 Version: 0.5.2
@@ -4625,6 +4639,21 @@ SHA256: b060b8892b14911b481c7bbaf4e9a2d840bf54b07325ab6d7037fb8815a142f9
 SHA512: 929d95466da50e6ea5f11d2bc6ba80393847919b26bf1de0b8e83f1da24ce4151f989749f354714818a2714dca3c7981d7b6194eb09a774b407ae9dad7097dae
 Description: Touchpad/mouse/touchscreen setup
 
+Package: peasypdf
+Architecture: all
+Version: 4.4
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm, ghostscript, libtiff-tools, poppler-utils, peasyscale, cups-client, dc
+Filename: ./Extra/peasypdf_4.4_all.deb
+Size: 6832
+MD5sum: 08ec85ad4e1997d42a672bc4cf0dafec
+SHA1: 9ff72ca3ef5f411739f30ef6817c89dd23d2ae4b
+SHA256: c648941a7bc1bd9cc19e189a410ce4d7712be96a3d129e60e0f4de8491096171
+SHA512: 0f4d0a72a994799212554d5d53a3fd41cb27bc61b59ef463f7e7b1144211a1253adc058ab2a29a8cda13f919b81a034d42b5cac2672b0c730c0ba7e525e70d53
+Description: Manipulate PDF documents
+
 Package: qiv-slideshow
 Architecture: all
 Version: 0.0.1
@@ -5290,6 +5319,21 @@ Description: Alternate menu plugin for the Xfce desktop environment
  buttons on the side. Top level categories make browsing fast, and simple to
  switch between. Additionally, Whisker Menu keeps a list of the last ten
  applications that you've launched from it.
+
+Package: peasyprint
+Architecture: all
+Version: 4.2
+Priority: optional
+Section: Graphics;
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, netpbm, poppler-utils, libtiff-tools, peasyscale, cups-client, dc
+Filename: ./Extra/peasyprint_4.2_all.deb
+Size: 8252
+MD5sum: 10135012d494db643bb0f0756cfb2276
+SHA1: fd9bcee1f0bd998bacb91c614ae44bd2d29aa5b2
+SHA256: 8294f7e1c7da9997c9880e93df28e6307c0823b88cf33447fb93e214492b78b3
+SHA512: e6beda5f8731d71ce5c1512645977319e2fa995bde2049f172df4053ea453e20c785f7d75058b22fd26a52dc7353a1bfcee3a2e2a9e1f99bc8615d617dae4dc5
+Description: prints graphic files
 
 Package: abiword-portable
 Architecture: i386
