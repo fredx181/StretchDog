@@ -704,6 +704,37 @@ Description: generic buffer management API -- runtime
  .
  GBM is intended to be used as a native platform for EGL on drm or openwfd.
 
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.9-0
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk2.0-0, libnotify4, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, gconf-service, libgconf-2-4, libbz2-1.0, libcdparanoia0, libdv4, libfaac0, libfribidi0, libgl1, libjack0, libmad0, libmng1, libmp3lame0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libsdl1.2debian, libtheora0, libxext6, libxinerama1, libxss1, libxv1, libxvidcore4, libxxf86dga1, libgmlib0, libjpeg8, libx264-122, libxcb-randr0, libgif4, libpng12-0, libvpx1
+Suggests: gecko-mediaplayer
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Filename: ./Included/gnome-mplayer-1.0.6_1.0.9-0_amd64.deb
+Size: 3348218
+MD5sum: f9234ee39b1211c0825d71e24ea898f0
+SHA1: 0a630cc6629521622a5dfa3a6296ac7a06140afc
+SHA256: 811916cb8c4663c92f7587271cf2b614ef304ac36ae2da5533e12baa4dd065be
+SHA512: 8346c2c29736b63c1b8ba6fc725abab5138b061abf2a11d0520df0f45433123c05418b55ad1937dd67f238e1bdc8e240874703b592df93b47e0011ec7aa2a202
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
+
 Package: quick-remaster
 Architecture: amd64
 Version: 1.0.9
