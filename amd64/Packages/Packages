@@ -1265,6 +1265,37 @@ Description:
  Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
  2019-06-15, fredx181, changes and fixes for 'gtkdialog-splash' script
 
+Package: gnome-mplayer-1.0.6
+Architecture: amd64
+Version: 1.0.9-1
+Priority: optional
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Installed-Size: 1275
+Depends: libasound2, libatk1.0-0, libc6, libcairo2, libdbus-1-3, libdbus-glib-1-2, libfontconfig1, libfreetype6, libgdk-pixbuf2.0-0, libglib2.0-0, libgpod4, libgtk2.0-0, libnotify4, libpango-1.0-0, libpangocairo-1.0-0, libpangoft2-1.0-0, libx11-6, gconf-service, libgconf-2-4, libbz2-1.0, libcdparanoia0, libdv4, libfaac0, libfribidi0, libgl1, libjack0, libmad0, libmng1, libmp3lame0, libncurses5, libogg0, libopenal1, libopencore-amrnb0, libopencore-amrwb0, libsdl1.2debian, libtheora0, libxext6, libxinerama1, libxss1, libxv1, libxvidcore4, libxxf86dga1, libgmlib0, libjpeg8, libx264-122, libxcb-randr0, libgif4, libpng12-0, libvpx1
+Suggests: gecko-mediaplayer
+Conflicts: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Replaces: gmplayer, gnome-mplayer, mplayer, mplayer2, gmplayer-portable, smplayer
+Filename: ./Included/gnome-mplayer-1.0.6_1.0.9-1_amd64.deb
+Size: 3348798
+MD5sum: d9eb3fbdbd3f48086e676cb13a7133eb
+SHA1: c5e338043073d6f0ab4371baf5b40f16646dc174
+SHA256: 5d60a57fcc5655814635f37749e8697d1ab5c9e9ae7486d228177408618dc9d1
+SHA512: b103a089141ebf912c8979f7eeb859c0d98b4230c7fd69bf023e0464bbdd1efe8d4320d262154d70c0ee87947e4d10baf99b2b8e0ff600a2da4d24044baed701
+Homepage: http://code.google.com/p/gnome-mplayer
+Description: GTK+ interface for MPlayer
+ The power of MPlayer combined with a friendly interface for your desktop.
+ You can play all your multimedia (audio, video, CD, DVDs, and VCDs, streams
+ etc. with full DVD and MKV chapter support), organize, sort and create
+ playlists, take screenshots while playing videos, be notified about media
+ changes, retrieve cover art and more.
+ Gnome-MPlayer fully supports subtitles giving the ability to specify
+ preferred audio and subtitle languages.
+ .
+ The player can be used to play media on websites from your browser when
+ used with Gecko Mediaplayer and is the modern replacement for
+ mplayerplug-in (from the same author).
+
 Package: pfind
 Architecture: all
 Version: 1.0.0-1
