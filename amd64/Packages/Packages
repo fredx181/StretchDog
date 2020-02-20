@@ -3054,11 +3054,11 @@ Maintainer: fredx181
 Installed-Size: 2800
 Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
 Filename: ./Extra/upgrade-kernel2_0.0.4_all.deb
-Size: 1042394
-MD5sum: f4f2c8823b91a7f4025729bcc0143066
-SHA1: 939ca43948748e4ceb6860680aa2abdf7da21427
-SHA256: ca78ecd9a8cf234cc28b8f4ba545943e9b8e59e5809997a3e436a3f46e0b2575
-SHA512: 55d0bedd380bc8c5a20ff6a9bb306e19435158cdd7addaea1fe58b11db85d6f3778f7c5e016ddf22cf85b476596360caad4c8d734085d7ef768f8f2937b23430
+Size: 1042608
+MD5sum: b02dba299c5a29d62996125a05b1e1c5
+SHA1: e21ca2205820c6f2fbe180ca2baf4b5a15ae15b9
+SHA256: a8554921e18dcf680b2ac63e448e0107e0844541668862b65bd77fcf3aa41f32
+SHA512: f3ea44f551c056fd353fdd31c5dabac821b21215525a2461bd39671f110a6fa4ccea42cb7c99f1f5e8615ec72c272431ef57d44b8a3039dabeaeb3d967617320
 Description: Install latest stable kernel in chroot
  And create initrd1.xz and initrd.img
 
@@ -3493,11 +3493,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 2600
 Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
 Filename: ./Extra/upgrade-kernel_2.0.3_all.deb
-Size: 1034766
-MD5sum: d6f2d4645a648210a3299ef5e6682b0f
-SHA1: e2b70f3bdef86ef46b42055e2090b103d1106fd7
-SHA256: 61c248be4ffc8e9a8f6760a1dd3bd7c3a1c5cafbfe8f0e844423ad449f2f7c67
-SHA512: ec8d5ae42c20b262aefb2bc83d08b178eb667c0dc9a5c939ea2e79c42750a1d3790363253fa24eda677f5ab149fc168b4f0b0809f98e1dfd8c473dc6bdd827c7
+Size: 1034338
+MD5sum: 867b9f1b354d1b7a134d9857e1ccd64d
+SHA1: d31f79d5a3cf586a23b2c3eb058284ff11161517
+SHA256: e8fd04e0a19848d5a281309199b29a30d90961a568e22972cf10b4a606a7d7f3
+SHA512: 1f1e78cd0c81334372d72cbb905b0cdabaa5833bf9f8e8128e9985bb05bdda36b405521d98a92f13637e6c43729e07c8fcb87c8e35e6d3fbc8584e1b5ada178f
 Description: Warning - This package works only in DebianDog!
 
 Package: upgrade-kernel
