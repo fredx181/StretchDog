@@ -3260,6 +3260,23 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
+Filename: ./Extra/upgrade-kernel2_0.0.4_all.deb
+Size: 1042394
+MD5sum: f4f2c8823b91a7f4025729bcc0143066
+SHA1: 939ca43948748e4ceb6860680aa2abdf7da21427
+SHA256: ca78ecd9a8cf234cc28b8f4ba545943e9b8e59e5809997a3e436a3f46e0b2575
+SHA512: 55d0bedd380bc8c5a20ff6a9bb306e19435158cdd7addaea1fe58b11db85d6f3778f7c5e016ddf22cf85b476596360caad4c8d734085d7ef768f8f2937b23430
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
+
 Package: dancing-letters
 Architecture: i386
 Version: 1.0.1
@@ -3478,6 +3495,20 @@ SHA256: 3b03cf09399d187927caef4258685306dc70ffdd27ab18b2ef9df1984971092a
 SHA512: 7130e6e42be7d732d8e860eac58ecc14aa46cd05d6d2944ed53dd2f6f2391b90dd2dd6aeffcd43d68594c36c2c01f658e3e4ab6f4a8774f8817163bfd847f446
 Description: Install backports kernel and build aufs using aufs-dkms
  And create initrd1.xz and initrd.img
+
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.3
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.3_all.deb
+Size: 1034766
+MD5sum: d6f2d4645a648210a3299ef5e6682b0f
+SHA1: e2b70f3bdef86ef46b42055e2090b103d1106fd7
+SHA256: 61c248be4ffc8e9a8f6760a1dd3bd7c3a1c5cafbfe8f0e844423ad449f2f7c67
+SHA512: ec8d5ae42c20b262aefb2bc83d08b178eb667c0dc9a5c939ea2e79c42750a1d3790363253fa24eda677f5ab149fc168b4f0b0809f98e1dfd8c473dc6bdd827c7
+Description: Warning - This package works only in DebianDog!
 
 Package: googledrivegui
 Architecture: i386

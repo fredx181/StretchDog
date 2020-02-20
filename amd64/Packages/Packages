@@ -3045,6 +3045,23 @@ SHA256: 505760460c8e8853d5710985f426ead21cbeb86ae765f4c4673d42cd71a9066e
 SHA512: bdd2493d912e525b1d5bf418e774d9c3369eb19fb0d241c1ccf6d3ada139e1bf2aa1457b2811ffcd386bf72220472b4708b119c00987fcf38d76a8d2d870b981
 Description: Touchpad/mouse/touchscreen setup
 
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.4
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
+Filename: ./Extra/upgrade-kernel2_0.0.4_all.deb
+Size: 1042394
+MD5sum: f4f2c8823b91a7f4025729bcc0143066
+SHA1: 939ca43948748e4ceb6860680aa2abdf7da21427
+SHA256: ca78ecd9a8cf234cc28b8f4ba545943e9b8e59e5809997a3e436a3f46e0b2575
+SHA512: 55d0bedd380bc8c5a20ff6a9bb306e19435158cdd7addaea1fe58b11db85d6f3778f7c5e016ddf22cf85b476596360caad4c8d734085d7ef768f8f2937b23430
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
+
 Package: conky-std-dbg
 Architecture: amd64
 Version: 1.9.0-6
@@ -3468,6 +3485,20 @@ SHA1: 058544b69451125e8403fd7dab756d7d80480a16
 SHA256: a58e867e7825c832959523658664540bd3bac2eada89d1aec1946f045b5c4372
 SHA512: be5c5fd5c08402b4ad0716744ebdb813fbcedb3a5a788ee58b07f9e71050b5229d6958b6bedf390f29509e4ce1d720e4f5359a69182fcf73ed1da53b62fcde46
 Description: Batterup battery monitor
+
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.3
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.3_all.deb
+Size: 1034766
+MD5sum: d6f2d4645a648210a3299ef5e6682b0f
+SHA1: e2b70f3bdef86ef46b42055e2090b103d1106fd7
+SHA256: 61c248be4ffc8e9a8f6760a1dd3bd7c3a1c5cafbfe8f0e844423ad449f2f7c67
+SHA512: ec8d5ae42c20b262aefb2bc83d08b178eb667c0dc9a5c939ea2e79c42750a1d3790363253fa24eda677f5ab149fc168b4f0b0809f98e1dfd8c473dc6bdd827c7
+Description: Warning - This package works only in DebianDog!
 
 Package: upgrade-kernel
 Architecture: all
