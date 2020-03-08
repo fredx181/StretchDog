@@ -570,6 +570,28 @@ SHA512: 12bab068158c7123f7083d990ec6611ece75101e807983883d92ddf132da9f81e6a9b83a
 Description: Wireless Network manager
  Fixed refreshing network_tray icon, e.g. when plugging the cable in/out and when connecting to wireless
 
+Package: gtkdialog
+Architecture: i386
+Version: 0.8.8-wiak-B-2
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/wiake>
+Installed-Size: 332
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./Included/gtkdialog_0.8.8-wiak-B-2_i386.deb
+Size: 122102
+MD5sum: 52f6eb12179b7c2602a3d87736588ab7
+SHA1: 2b7d324893fae7e5adba84fa76f388ff26e94b29
+SHA256: 3a1cb3429068bc1fba4eef988a29ea5a91d7e3da72ca3b918e3fa6a7420e881b
+SHA512: 90c546a64c7f9a0a5e2f921a81d64abba8d299e2716e136e75c1092b3e317abaeae698ca7880c08b8d1c6a91d3a3559af5c8cf11955e4ed7a4a971b33c3ef3e7
+Description:
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
+
 Package: pavrecord
 Architecture: i386
 Version: 9.0.5
@@ -3345,6 +3367,22 @@ Description: YouTube Downloader, frontend for youtube-dl
  - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
  - Download from Playlist supports channel download also now (version 0.1.8)
 
+Package: pmusic
+Architecture: all
+Version: 6.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 69
+Depends: ffmpeg, gtkdialog
+Filename: ./Extra/pmusic_6.0.0_all.deb
+Size: 129996
+MD5sum: 415c38e0d6be502e66d79a2326a2b097
+SHA1: 99ac0594144a7082638bf22793fa2344bda6fc42
+SHA256: 2d7181428397c09f9f132b9050c72238c83ed09c106ffb5d95e4c6d937a49999
+SHA512: 9717dd2436fdeaa3f719872910746089e5ef81fdf888095ed4a5778c7ae04803cd6d1e1df7d041ef1ba2606d256ca58535e1ea36a576f1261c283f07cb4aba29
+Description: -Radio -Podcast -Music
+
 Package: touchpad
 Architecture: all
 Version: 1.2
@@ -4422,6 +4460,22 @@ SHA1: 1a32ea0e6d639f80d0542d8a9f67636c1fdd587e
 SHA256: c405f37cc03f55c5d36c77c9dd75489b06c61b0c67d98b8aa7753ddbd8d26fe9
 SHA512: 3604d53a14e62214a02815a7ba68f33bf311868dcb96696ff538350ce9ebcc1512efdc863f95c02aa901b940b9bc755dc9754987a43cc2254b33b8ff7f134ead
 Description: Mplayer SVN-r37926, mediaplayer
+
+Package: pequalizer
+Architecture: all
+Version: 0.9.0
+Priority: extra
+Section: system
+Maintainer: root@jessie
+Installed-Size: 363
+Depends: libasound2-plugin-equal, gtkdialog
+Filename: ./Extra/pequalizer_0.9.0_all.deb
+Size: 4784
+MD5sum: 466910a67bdf8fe3dac236f4a0186477
+SHA1: b04f2fa04081014b6937a5a34b808412d27a066c
+SHA256: e23842500caacff5a7e3ded38eee86f79612d3f3fdcaa49400a0a955e58b886c
+SHA512: 1ede86db401471ef9a6cbdc1819849bedb5ac8fda1bfb36809e987f6c8259f51eb4e5ebf6d11673e27ec9fb37e8412715a6839d01fbac47b38a74a541752df96
+Description: pequalizer by 01micko
 
 Package: upgrade-kernel
 Architecture: all
@@ -7376,6 +7430,29 @@ Description: mplayer/mplayer2 based video player, minimal build
  .
  This package is not part of Debian. It was created by mpv-build scripts with
  statically linked ffmpeg (not libav) and libass from upstream.
+
+Package: straw-viewer
+Architecture: all
+Version: 0.0.2
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl, libgtk3-perl, wget
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./Extra/straw-viewer_0.0.2_all.deb
+Size: 366392
+MD5sum: aeeb14cde9974c999ba0394f53370ad7
+SHA1: 6492f810d2446a2b716d1ffe7380a6da18b26ca4
+SHA256: 384a28a9f45ecb6f70a7b688497913f51e065bfd28621144ba8be6aecc3526e4
+SHA512: 19d55627b6b590e361ffee0ff5eb84b589b9841ac1bcccc9d1f524a2899c276b5cd09008dac3dc83a64b7143170b47087b5fd372c2e9dabc3233407309f7ecde
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: touchpad
 Architecture: all
