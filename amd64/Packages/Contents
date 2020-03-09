@@ -2015,6 +2015,7 @@ usr/local/bin/gsu-notimeout				    gsu
 usr/local/bin/gsu-root					    remaster-scripts
 usr/local/bin/gsu-timeout				    gsu
 usr/local/bin/gsu-xterm					    gsu
+usr/local/bin/gtk-straw-viewer				    straw-viewer
 usr/local/bin/gtkdialog-desklet				    gtkdesklet
 usr/local/bin/guess_fstype				    guessfstype
 usr/local/bin/gvidcap					    xvidcap

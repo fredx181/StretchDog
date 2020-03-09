@@ -6375,6 +6375,29 @@ SHA256: a3cf47066a32316a55e2986e8772b46c5fe1979c88547681067af034ac6ade4b
 SHA512: 9232ab844d774a32e984e0c8ca84651c8df99ad707a835eca9f59e7b6f63a0f636afe41d385176f40d3e58c48ed21ac2aacf80defe85f0dd149f55e0c7bbff56
 Description: DropboxGUI, by mikeb
 
+Package: straw-viewer
+Architecture: all
+Version: 0.0.2-1
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl, libgtk3-perl, wget, at-spi2-core
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./Extra/straw-viewer_0.0.2-1_all.deb
+Size: 366374
+MD5sum: 2a40f2a1b2e18e877dfa264a18ca290f
+SHA1: c1412e84f1b37b4023fd0ab19274d0b9471015d4
+SHA256: 1e7427539e0596042d64566a684180dee70a500279afc7bc44ffd8459074ced1
+SHA512: 3997095be4c2c2b38f3b59cc3aa4b8045ace9919f7585734df2fe57debc18bbf57d7917ecc082d5f1b1a0f8ff0c20f37e6e97e2dffbe77a74c86172de9cc8a97
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
 Package: upgrade-kernel
 Architecture: all
 Version: 2.0.1
