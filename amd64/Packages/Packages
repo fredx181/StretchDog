@@ -6435,6 +6435,21 @@ SHA256: a72d3eb4960ed6ad5638e89679390d773f91f199e40c0b61b212407c58967f6d
 SHA512: 12fb693f29bba01ea1d3fcb791a1c61cf160da96fd4652cab38abc486e0db6cea6aff24948ffb63126fdb6689293fb4f813561afbb008aeb474494b79e655102
 Description: Samba share mounter
 
+Package: ip4cups
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/ip4cups_1.0_all.deb
+Size: 7164
+MD5sum: 816c5c31ff35d528f85b7c680d56fcf2
+SHA1: bae8f4f823ec9e92e868bdd91772e819a63abefc
+SHA256: 9b68da71e417ab231a7c47c372b2fa39986784297e18a722aaeac259ba2bd9cd
+SHA512: 1e7d7ab70529c9654725f715953eb0ffd83a0eaff99d4a79003b28435fbc9231e556e2320bca6103e8ab57505e4e8d17a8852d68ce4b0b2feccfa8685f68c1ad
+Description: Manages networked printers
+
 Package: wlanmaker
 Architecture: amd64
 Version: 1.3

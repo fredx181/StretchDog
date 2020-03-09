@@ -1998,7 +1998,8 @@ usr/local/bin/instdeb-cli				    fixdepinstall
 usr/local/bin/instdeb-gui				    fixdepinstall
 usr/local/bin/inxi					    inxi-gui
 usr/local/bin/inxi-gui					    inxi-gui
-usr/local/bin/ip4cups					    p910nd-print-server
+usr/local/bin/ip4cups					    p910nd-print-server,ip4cups
+usr/local/bin/ip4cups-control				    ip4cups
 usr/local/bin/ipinfo					    PeasyWiFi
 usr/local/bin/isotools					    isotools
 usr/local/bin/jpegtopnm					    peasyglue
@@ -5809,6 +5810,7 @@ usr/share/applications/googledrivegui2.desktop		    googledrivegui2
 usr/share/applications/gtk-youtube-viewer.desktop	    youtube-viewer,straw-viewer
 usr/share/applications/image-slicer.desktop		    image-slicer
 usr/share/applications/inkgui.desktop			    inkgui
+usr/share/applications/ip4cups.desktop			    ip4cups
 usr/share/applications/jwm-theme-change.desktop		    jwm-setup,jwmconf
 usr/share/applications/jwm.desktop			    jwm-setup
 usr/share/applications/keybind.desktop			    openbox-keybinder
@@ -10198,6 +10200,7 @@ usr/share/pixmaps/input-keyboard.png			    lxinputsave
 usr/share/pixmaps/install.png				    debdoginstallscripts
 usr/share/pixmaps/internet_radio_48.png			    yradio
 usr/share/pixmaps/internetradio.png			    dogradio
+usr/share/pixmaps/ip4cups.png				    ip4cups
 usr/share/pixmaps/isoburn.png				    isotools
 usr/share/pixmaps/isoedit.png				    isotools
 usr/share/pixmaps/isomake.png				    isotools
