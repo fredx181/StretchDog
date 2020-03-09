@@ -8103,6 +8103,29 @@ SHA256: 88f584142a0aaeb73174450e0940b7ce66a15b5e57097177b6799f66164c318e
 SHA512: 5e7dfc717f2989b2bc7b0935a3f2ab6691f97b06c872d04dee5ebcf3b9511870f4b7637e1c0bedb1d85f8ecfc94220f0ab7f9eeb33cbfc4d7ae8a8eefded44a8
 Description: Backup/restore tool for any file/folder.
 
+Package: straw-viewer
+Architecture: all
+Version: 0.0.2-2
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl, libgtk3-perl, wget
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./Extra/straw-viewer_0.0.2-2_all.deb
+Size: 366274
+MD5sum: baa0a3375214d4cba67df9eefef70c57
+SHA1: e3d2a47ba949d162287dcc5671e9f95d4f39ce09
+SHA256: 9c4aa6e4e671cc39fb9a18a1c65b821bdc8552d805c1f3ba39f411fcdb9beecb
+SHA512: b288bf7d9761a4c8fe704fcc6039496a9c6263cb5d681b5df5471cecaeefb2d22f4b5cde24d80588d2d37da46ab1ebac2a369241bf35f2451397ea9288ea8a8c
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
+
 Package: desktop-drive-icons
 Architecture: amd64
 Version: 0.0.5
