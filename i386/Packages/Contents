@@ -701,6 +701,7 @@ root/.config/rox.sourceforge.net/SendTo/Multi-Paste	    jwm-setup,jwmconf
 root/.config/xfe/scripts/edit-sfs			    edit-sfs-thunar,edit-sfs-pcmanfm
 root/.config/xfe/scripts/install-deb-and-dependencies	    fixdepinstall
 root/.config/xfe/scripts/install-dir-debs-and-dependencies  fixdepinstall
+root/.config/youtube-viewer/api.json			    youtube-viewer
 root/.config/youtube-viewer/categories-US-en_US.json	    youtube-viewer
 root/.config/youtube-viewer/categories-us.json		    youtube-viewer
 root/.config/youtube-viewer/gtk-youtube-viewer.conf	    youtube-viewer
@@ -9930,10 +9931,10 @@ usr/share/omf/xvidcap/xvidcap-de.omf			    xvidcap
 usr/share/omf/xvidcap/xvidcap-es.omf			    xvidcap
 usr/share/omf/xvidcap/xvidcap-it.omf			    xvidcap
 usr/share/perl5/Ceni/Backend.pm				    ceni
-usr/share/perl5/LWP/UserAgent/Cached.pm			    straw-viewer
-usr/share/perl5/Mozilla/CA.pm				    straw-viewer
-usr/share/perl5/Mozilla/CA/cacert.pem			    straw-viewer
-usr/share/perl5/Mozilla/mk-ca-bundle.pl			    straw-viewer
+usr/share/perl5/LWP/UserAgent/Cached.pm			    straw-viewer,youtube-viewer
+usr/share/perl5/Mozilla/CA.pm				    straw-viewer,youtube-viewer
+usr/share/perl5/Mozilla/CA/cacert.pem			    straw-viewer,youtube-viewer
+usr/share/perl5/Mozilla/mk-ca-bundle.pl			    straw-viewer,youtube-viewer
 usr/share/perl5/Test/Number/Delta.pm			    straw-viewer
 usr/share/perl5/WWW/StrawViewer.pm			    straw-viewer
 usr/share/perl5/WWW/StrawViewer/Activities.pm		    straw-viewer
@@ -9983,7 +9984,11 @@ usr/share/perl5/auto/share/dist/WWW-StrawViewer/icons/spinner.gif straw-viewer
 usr/share/perl5/auto/share/dist/WWW-StrawViewer/icons/user.png straw-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/gtk-youtube-viewer.desktop youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/gtk-youtube-viewer.glade youtube-viewer
+usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/gtk2-youtube-viewer.glade youtube-viewer
+usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/gtk3-youtube-viewer.glade youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/default_thumb.jpg youtube-viewer
+usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/feed.png youtube-viewer
+usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/feed_gray.png youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/feed_icon.png youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/gtk-youtube-viewer.png youtube-viewer
 usr/share/perl5/auto/share/dist/WWW-YoutubeViewer/icons/spinner.gif youtube-viewer

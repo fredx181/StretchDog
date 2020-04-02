@@ -5535,6 +5535,20 @@ SHA256: c475b3d55b91f81525325c77873fc03e9bb3fe356b65819cc1e3b2f3d587ab0a
 SHA512: 23de193faf7ab75ba46d634a31921bde8769b25f5615eb7c8de65b7939b741f481ec5c3eb9b964c5f0ff08b728b50a05f9591e6a099a24e350520d82e524453d
 Description: Samba share mounter
 
+Package: p910nd-print-server
+Architecture: i386
+Version: 0.97.3-5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/p910nd-print-server_0.97.3-5_i386.deb
+Size: 11768
+MD5sum: 265aa7b9e279b2e32850e0b8d079f64d
+SHA1: 76e61ae5c12724469497321063b83e90b8df378e
+SHA256: b9ad9cb841143920d21a144ba26740e73a378e7709b481cf650657e7d079bdd4
+SHA512: cd708902efab76f3fa3089b1162d45faf681ff60ff3fa006c10f04a9b2563f992a8b531677f5996c7babc27b18637a3663a9b281b9d4732376dd92dcf1e92da7
+Description: Runs an Appsocket/Jetdirect print server
+
 Package: apulse
 Architecture: i386
 Version: 20181001
@@ -8200,6 +8214,21 @@ Description: The iupluacontrols-stretch-gtk2:
  functionality such as matrix drawing.
  iupluacontrols-stretch-gtk2 by tecgraf-pkg-wiak.
 
+Package: touchpad
+Architecture: all
+Version: 1.9-5
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: xserver-xorg-input-libinput, xinput, sct
+Filename: ./Extra/touchpad_1.9-5_all.deb
+Size: 6328
+MD5sum: 732ffa5d37cce4ea3491ff81275102f2
+SHA1: 8729086809945a5505208454fae0ed6efb5da56f
+SHA256: ed4a13bfc0c863f59e3bbeabf8006296a198966bc3bb410d133bc49ae6e2618b
+SHA512: 5eb01dd101ff3bc730aae140d8ea676a993a57a5153698f32d766be9cda986bfc2583a5f666818d2b298c4bbc89dae5ec12c479efa6b43b347f077bda03ca18b
+Description: Touchpad/mouse/touchscreen setup
+
 Package: peasyclock
 Architecture: all
 Version: 1.4
@@ -8853,6 +8882,29 @@ SHA1: b22bc1dfde5bebe4dcc2fdc037be01714b5ac532
 SHA256: 7dbda5ed33a12f0435719ffdfd5f1892c108137e0b12d116a49bc62b4cf81ecc
 SHA512: 25f018c07b5c6fd782ae6bea624a66507ce190fd11c1815c089545ec2f9e9f1a1a5842084f831584dd942050bf87bf886038225d05f7ae9696994c9dd453b10c
 Description: evince-converted-pet-to-deb
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.4-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./Extra/youtube-viewer_3.7.4-0_all.deb
+Size: 366478
+MD5sum: dcf495906d97f248ca104c73ac5e6111
+SHA1: a73cda14cdb02412fe49a658379b652bacb95355
+SHA256: f54756fe8a63d0cbfc77409214f64fcd5f5d5168bc02c765921df381276675c6
+SHA512: 65f4571109b4a54cd84a6ed41dcdff7e31d31d6826c575113cb0597e36eed459afea2145e0070c163aff5a66bb5b6027c501d0cf7c914fbb7b37e61a965ce515
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: peasyfwmon
 Architecture: i386
