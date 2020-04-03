@@ -459,6 +459,10 @@ opt/stream2chromecast/cc_media_controller.py		    stream2chromecast
 opt/stream2chromecast/cc_message.py			    stream2chromecast
 opt/stream2chromecast/stream2chromecast.py		    stream2chromecast
 opt/tmp/deb3.gif					    porteusbootscripts
+opt/tmp/defaultimageviewer				    takeashot
+opt/tmp/defaultpaint					    takeashot
+opt/tmp/getcurpos					    takeashot
+opt/tmp/getcurpos64					    takeashot
 opt/tmp/initchanges.sh					    porteusbootscripts
 opt/tmp/jwm						    jwmconf,jwm-setup
 opt/tmp/jwm-debdog					    jwmconf,jwm-setup
@@ -815,6 +819,7 @@ usr/bin/snapmergepuppy					    porteusbootscripts
 usr/bin/squashfuse					    squashfuse
 usr/bin/straw-viewer					    straw-viewer
 usr/bin/stream2chromecast				    stream2chromecast
+usr/bin/tas						    takeashot
 usr/bin/thunar						    thunar
 usr/bin/thunar-settings					    thunar
 usr/bin/usleep						    pburn
@@ -4353,6 +4358,7 @@ usr/local/isodata/isolinux/vesamenu.c32			    quick-remaster
 usr/local/isodata/live/beowulf-x86_64.sgn		    quick-remaster
 usr/local/isodata/live/stretch-x86_64.sgn		    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee
+usr/local/lib/X11/mini-icons/mini-camera.xpm		    takeashot
 usr/local/lib/X11/pixmaps/edit24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/file24.png			    grub4dosconfig
 usr/local/lib/X11/pixmaps/qiv.png			    qiv-slideshow
@@ -5325,6 +5331,7 @@ usr/share/applications/snappie.desktop			    snappie
 usr/share/applications/sound-card-selector.desktop	    sound-card-selector
 usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/syncing.desktop			    diff-sync-umount
+usr/share/applications/tas.desktop			    takeashot
 usr/share/applications/thunar-settings.desktop		    thunar
 usr/share/applications/touchpad.desktop			    touchpad
 usr/share/applications/transmission.desktop		    transmission-2.60

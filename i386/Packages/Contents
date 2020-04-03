@@ -569,6 +569,10 @@ opt/stream2chromecast/cc_media_controller.py		    stream2chromecast
 opt/stream2chromecast/cc_message.py			    stream2chromecast
 opt/stream2chromecast/stream2chromecast.py		    stream2chromecast
 opt/tmp/deb3.gif					    porteusbootscripts
+opt/tmp/defaultimageviewer				    takeashot
+opt/tmp/defaultpaint					    takeashot
+opt/tmp/getcurpos					    takeashot
+opt/tmp/getcurpos64					    takeashot
 opt/tmp/initchanges.sh					    porteusbootscripts
 opt/tmp/jwm						    jwm-setup,jwmconf
 opt/tmp/jwm-debdog					    jwm-setup,jwmconf
@@ -951,6 +955,7 @@ usr/bin/squashfuse					    squashfuse
 usr/bin/startx						    xinit
 usr/bin/straw-viewer					    straw-viewer
 usr/bin/stream2chromecast				    stream2chromecast
+usr/bin/tas						    takeashot
 usr/bin/thunar						    thunar
 usr/bin/thunar-settings					    thunar
 usr/bin/unsquashfs					    squashfs-tools
@@ -4379,6 +4384,7 @@ usr/local/isodata/live/beowulf-i486.sgn			    quick-remaster
 usr/local/isodata/live/stretch-i486.sgn			    quick-remaster
 usr/local/lib/X11/mini-icons				    frisbee,ceni,wifibox-dhcpcd
 usr/local/lib/X11/mini-icons/info16.xpm			    sns
+usr/local/lib/X11/mini-icons/mini-camera.xpm		    takeashot
 usr/local/lib/X11/mini-icons/mini-question.xpm		    sns
 usr/local/lib/X11/mini-icons/networkblank.xpm		    sns
 usr/local/lib/X11/mini-icons/networkboth.xpm		    sns
@@ -5891,6 +5897,7 @@ usr/share/applications/sound-card-selector.desktop	    sound-card-selector
 usr/share/applications/start-lumina-info.desktop	    lumina-desktop-debdog
 usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/syncing.desktop			    diff-sync-umount
+usr/share/applications/tas.desktop			    takeashot
 usr/share/applications/thunar-settings.desktop		    thunar
 usr/share/applications/touchpad.desktop			    touchpad
 usr/share/applications/transmission.desktop		    transmission-2.31

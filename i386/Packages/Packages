@@ -2899,6 +2899,22 @@ Description: Debian package management system
  .
  For Debian package development tools, install dpkg-dev.
 
+Package: mm-view
+Architecture: all
+Version: 0.28.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 73
+Depends: gtkdialog, leafpad | geany, rox-filer
+Filename: ./Extra/mm-view_0.28.0_all.deb
+Size: 25852
+MD5sum: b88d774d2d1f4e43071095c5911be6f4
+SHA1: 76492a93158674fb6161b51be9144a93fa641839
+SHA256: 2938044900e941f58a90ffa849bd45b83e28fdba0b83981c895ffe927b904f67
+SHA512: 050ee20b0a82cc8c64ae08f7f7c4a269c5fb6810f382d53d52a7b987a5eb0870d0257d1eb0ab03657530af6f1c0f72e6d33bbf5a4c166521c51922730707eeeb
+Description: Universal File Viewer by Mochimoppel
+
 Package: websearch
 Architecture: all
 Version: 3.0.1
@@ -4595,6 +4611,22 @@ Description: fast, lightweight graphical web browser
   * Customizable and extensible interface.
   * Support for extensions (written in C).
   * Custom context menu actions.
+
+Package: takeashot
+Architecture: all
+Version: 1.15.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 68
+Depends: ffmpeg, gtkdialog
+Filename: ./Extra/takeashot_1.15.0_all.deb
+Size: 11084
+MD5sum: b3c7a8f3b32cd45b7b8f5ca85f616d20
+SHA1: 78ce9ee2ba8e311774e8af9b0444cd8ac36d45ef
+SHA256: 7c6a6c1f9b98d0d588cbf681052f3f63c958c06ee4add96f09e59eb755a5d948
+SHA512: 581b0796904fa4bbd53957561b828f2a69079d80fa19798d262230e97c692734c28abdb4e4e3b8cefd0893a437efbf5309d7f8c968f049c7d0a7ecacc9ef7d68
+Description: TAS Screenshot utility, by SFR
 
 Package: f3-flash-check
 Architecture: all
