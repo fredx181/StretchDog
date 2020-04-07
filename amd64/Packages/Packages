@@ -8394,6 +8394,21 @@ Description: X/GTK+ and console FTP client (metapackage)
  .
  This is an upgrade convenience package, it's only useful for depending on.
 
+Package: peasyport
+Architecture: amd64
+Version: 2.8-2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: pnscan, arp-scan
+Filename: ./Extra/peasyport_2.8-2_amd64.deb
+Size: 11616
+MD5sum: b614795e8a336fac6543fd13eeb1c4f9
+SHA1: aef2cc17c3e402a133c9de816a721f73a8ee924a
+SHA256: 9eb86a94abdb16114a6ffc8c1c6eb4670e2cac65dfdb0609f30dd8077e1699d4
+SHA512: 07c973506b77c98df6ff8fd12b1c96081c32dce8834eac64f1493a929d1e7c2a3e711437579cf9acbafc682a36b02b0f6004a402d442191c6a19f502480fa406
+Description: Network port scanner
+
 Package: touchpad
 Architecture: all
 Version: 1.4-1
