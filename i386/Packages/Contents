@@ -1920,6 +1920,7 @@ usr/local/bin/batterup_restart				    batterup
 usr/local/bin/batterup_tray				    batterup
 usr/local/bin/beep.wav					    batterup
 usr/local/bin/bt4stretch				    bt4stretch
+usr/local/bin/busybox-pscan				    peasyport
 usr/local/bin/camphonetab				    camphonetab
 usr/local/bin/cast2chrome				    cast2chrome
 usr/local/bin/ch-face					    xfce4-whiskermenu-plugin-mod

@@ -7839,6 +7839,21 @@ SHA256: 349e15cbc2415f91922c67f3668b1f747e2713b7ccdb54bf9f36dbc9fb3d73bc
 SHA512: 60d56306575b769099cca645ec5a5f65bf78c57f1db65909afc401dc2de9a4da45b4c3b0bd72f1eb4eb4afcc59fab87a71cc7f6c1fa688625bc1e1152d773396
 Description: Convert a folder of JPEGs to a PDF > part of PeasyPDF
 
+Package: peasyport
+Architecture: i386
+Version: 3.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./Extra/peasyport_3.1_i386.deb
+Size: 11264
+MD5sum: ab1db59978a10d6484fb1ece7db2e148
+SHA1: 78049a1085b8de95525d544497b0d28dbd6ceafb
+SHA256: 07da4a890f8d6583e0b880741ed1bfe875904ecc0ad128711ff85c5e7f8e27b6
+SHA512: 318b685713d26281d7016b5366d568b1bd284f2d117395b7da89a82534b2c1a0c22645daea3449353aab3190ebf496f5b257782a6332ad9ffd76cc4d2093d6a3
+Description: Network port scanner
+
 Package: samba4-control
 Architecture: all
 Version: 2.1

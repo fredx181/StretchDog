@@ -5797,6 +5797,21 @@ SHA256: d0e84cddfe5234e05d54cdabbd9693924e67ae31a9c7acf517a3ad96e0e59bbd
 SHA512: d2176e04e9db4a4d9a22087e1ba59ab4470cc185a6604e84ea56dbeba77313a8d72c105b50b3427bdc1b33caae7ecc5831b9e2a472160689fb3583f338b3177b
 Description: Simple script to convert .pdf to .djvu
 
+Package: peasyport
+Architecture: amd64
+Version: 3.1
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: arp-scan
+Filename: ./Extra/peasyport_3.1_amd64.deb
+Size: 11332
+MD5sum: f268d432f6c4ec08f1700b7b4da344c3
+SHA1: 24b2a716b474d7512c780580c14c18b64d3a9c77
+SHA256: ba0e28a8a7f1bdc28690900f241731d5d12705d260587a96985844464edb6fa2
+SHA512: adbd06986f7d93e6c61ae38b07ac1b8f5e1a877f70efb553297b58a650ada34d5f7826d3d8ab4fa14cf250ba2aa2c07ada173e71c793f4b5ec8077f749f6ae75
+Description: Network port scanner
+
 Package: p910nd-print-server
 Architecture: amd64
 Version: 0.97.3
