@@ -3792,6 +3792,22 @@ Description: mplayer/mplayer2 based video player, minimal build
  This package is not part of Debian. It was created by mpv-build scripts with
  statically linked ffmpeg (not libav) and libass from upstream.
 
+Package: create-portable
+Architecture: amd64
+Version: 2.1.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Extra/create-portable_2.1.0_amd64.deb
+Size: 148940
+MD5sum: 2ee654c5852af60721e2f5188febdf3e
+SHA1: b9962d74bc4a07623bc1e9321289911a68aedfc2
+SHA256: 4838801b453b950d14583964b19146d91d0843b189b22724cb87a34958724ca0
+SHA512: 559c91684b1669bab56b3125474511f6d22b49645147504a66c20d5e54cdf51fe050ffbf9ea482618faa0e0d3a6e73b41e8d0ccae89548f060d45782610bec97
+Description: Create portable AppImage v2.0
+
 Package: googledrivegui
 Architecture: amd64
 Version: 0.3.2

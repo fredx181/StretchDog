@@ -9,35 +9,35 @@ Codename: stretch
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Sat, 18 Apr 2020 05:55:30 +0000
+Date: Tue, 21 Apr 2020 09:20:42 +0000
 MD5Sum:
- 2de21109037e53edaf52954a6fb1cb4a           375577 Packages
- b8082e1d1e011ff8dcfc00d1e12f43ca           138507 Packages.gz
- a4086c90827edca224739561d397af28              187 Release
- b8082e1d1e011ff8dcfc00d1e12f43ca           138507 Translation-en.gz
+ b119cae92587382383fc89d97cb1f286           376198 Packages
+ b23f42991daed7f783e7d0174d10e016           138814 Packages.gz
+ fd339f643130d93f888566a03a85ecd1              187 Release
+ b23f42991daed7f783e7d0174d10e016           138814 Translation-en.gz
 SHA1:
- b14004d81c5ce82f519aa80988277577ff821c85           375577 Packages
- e89e08eb867a5d70898d3be0d330ba7ff9ade057           138507 Packages.gz
- 43d9b005c496994dc2ddcb35a346e7871161f783              187 Release
- e89e08eb867a5d70898d3be0d330ba7ff9ade057           138507 Translation-en.gz
+ 302aaa6b4720f7a3f7a01eeb07d6dbc9d2eac700           376198 Packages
+ c8649eb6633ea829c25186c4e54d1c99b11fdd27           138814 Packages.gz
+ 89d1c798520d1cdc5206b3821b26c629549cfe85              187 Release
+ c8649eb6633ea829c25186c4e54d1c99b11fdd27           138814 Translation-en.gz
 SHA256:
- 284ab760022309ac9d4ca45c64fd09927dd20ac1eab71eb76031bb564920eaf2           375577 Packages
- 523b359ea31992ee35fddb389986e048b552f7869b2497dfeefd6d9d4d765acf           138507 Packages.gz
- 2559e83c13e6918075bd2567713bec422ddd5092f9e2ecc87738076332f0c034              187 Release
- 523b359ea31992ee35fddb389986e048b552f7869b2497dfeefd6d9d4d765acf           138507 Translation-en.gz
+ 5445c8564a1b258a1d211920841184909ff1cd1c78fefc13d71fa7d6ed5e9767           376198 Packages
+ e8d5c661ce311fe503dc3f052894992d891e1d9616b5cc42c0f6a3a318f72578           138814 Packages.gz
+ 882242d7326977364f854f9cadeb26778a8508f5697164aaf79db9f4b47146d9              187 Release
+ e8d5c661ce311fe503dc3f052894992d891e1d9616b5cc42c0f6a3a318f72578           138814 Translation-en.gz
 SHA512:
- 3729fa6c509b0abf34204a950eeaa8538d10336de185af8b89c5d99b81f2e5154fcdf49bf477927a0cfd8c7e54399822a8c621e7e77ba8a748dcfcb39a124111           375577 Packages
- 39002a52cbfdfb6a33b9ef027a0bc4e149ec4d0355cbcac77a2b11c75e8c688fe15917fe198659160abbac18e70247f60a38bdcc36c6523ed956607d30ca1ece           138507 Packages.gz
- 1743ada577c1ad82e31ef746fc2e7d1f75f31de26d55c9b829e2c8d2228af65e6503955a2d2eddd5b3143ecb4cfe7f7630ddd8871768fb060511839cb9942a47              187 Release
- 39002a52cbfdfb6a33b9ef027a0bc4e149ec4d0355cbcac77a2b11c75e8c688fe15917fe198659160abbac18e70247f60a38bdcc36c6523ed956607d30ca1ece           138507 Translation-en.gz
+ 68862cb9729cf823dfa392dd1b258d844f88f7e2fc8756330f581c1c154d83983a405d578a514f18245c2cbfa2efc74d3393f509fec49113e6c04dbdba359ccc           376198 Packages
+ b46fc5803143920f7923a87a4d36661d37522fbb7731163886aa154636047be2d3a504904c7b23fd404751820f72fd173f79595d7a6f26d992bf1b0ff8d3e97d           138814 Packages.gz
+ 23c4080bf5352cf9a99a276f57c743a062767b06cda179558a38a7a242e4fcb81a9caf4fc28085919886924698cb1d81b2fa6fbd1bc42c6c63324bf45cf63daa              187 Release
+ b46fc5803143920f7923a87a4d36661d37522fbb7731163886aa154636047be2d3a504904c7b23fd404751820f72fd173f79595d7a6f26d992bf1b0ff8d3e97d           138814 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl6allQACgkQrYe8en1z
-CB1f2gf/Q/XZkb7DfMm4IvMaKt8F1s8NZoy/+Eieg06wE59Q3GxG7ZayOnVbP7/8
-2+gDtXDB6IZ9X/EEd+plkEcVhkhXNkx6g42oRxs3AkXvwuCsgIJC8nnqkicYETz+
-ucCWGydMkoqYmaSCPG3YEuyDWpKeZLJ0itHZ5TZR1yKsjCuY3d6YaqqWgDqxESAZ
-aDb5MbKmgpl0cZaBiOsTtV3uuqdH0Q3b8rzhMfbFaQWMKXH6qZ89QUOTOK3j6HMp
-9pwIW6OB28l5K0pTjD7kQwZCTdDZv52CSsGE4oKg74/g82Xr2dmnkfFDSB/RdCik
-1/4kmwp4S+H/MAPpG+ROw0FvMYM8FQ==
-=GzKb
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl6euusACgkQrYe8en1z
+CB1IOwgAm0bL4/ZHlASos9IGTMIyKSGK0i/npI42z37692XJzW0Z6/x0r35+HuyY
+za2CUASD7icw7k/y7Blpy9oU7EBpeGIr9hPPVlsttrCCqYPp8vg9ISN8cK/GO9Rp
+pFXCIuszI5n6SBBR/VupjDhM2P2alpKiAjjpuGOzFlD7Uw8sSbR4Hr0uyyadfaql
+dCbP0HHRpzvwwyUteSVuanq2+ewivqCT3Pm+u0WAN8yUXuc7tmEHQLdUMFmxdegY
+AuAiPfd9QAYE4uryyvinSnEZAaK3Yzw6QwC7jo+bshnfzvb2A5vaVLug3kdAc08p
+gIlVtEmPcd5CdHmEfjG166hRi2AAWA==
+=sim5
 -----END PGP SIGNATURE-----

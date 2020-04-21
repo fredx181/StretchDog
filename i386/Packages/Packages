@@ -3476,6 +3476,22 @@ SHA256: 41971e9a47634eb0fbf3de95d8430baa0a346c55505563765214429ce4d1d3b5
 SHA512: 2f9535ade342e709999d6ca58675b9d0d89334fa5ca45b9698d912879fe03593605a7e11a1f930e55b7c10b65479350915e4220d4e872c435ba20a4eacac0867
 Description: Load squashfs modules on-the-fly
 
+Package: create-portable
+Architecture: i386
+Version: 2.1.0
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 900
+Depends: libc6, unionfs-fuse, squashfs-tools, yad, linux-user-chroot, squashfuse
+Filename: ./Extra/create-portable_2.1.0_i386.deb
+Size: 314860
+MD5sum: 9ccaa60a9f1ad8ef11756ff990f447f9
+SHA1: 960388560e3db35629222d960c9706190a00a846
+SHA256: 079b0de6a02af4e5e86977663e4b1d3caed464d4860dcfd700eaa3f52dcae300
+SHA512: 421927387778f8ca04f8b4472c1df1ea091683e3e79c3e54fa2317f59ded802827718f23ecd925f22cd1a8ed9b2e7f9401ab553c1380091f806c5af873e0c716
+Description: Create portable AppImage v2.0
+
 Package: grub4dosconfig
 Architecture: i386
 Version: 1.8.9b
