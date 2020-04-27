@@ -2037,6 +2037,21 @@ SHA256: ea07bc427098613e3500cc958eb0e1e889b7c0e010a99f8d935b0959577aafdd
 SHA512: 214da3151a19e4206349ccc4c8fec044a65f1c9ab70c9f69fe297ae77383098fd6ddd7d590e3fb35e07ce5ad42527395e34bda999bcced6485824b1ed9c56d4f
 Description: Porteus-boot-scripts
 
+Package: yassm
+Architecture: all
+Version: 4.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, samba-common-bin, peasyport (>= 3.0)
+Filename: ./Included/yassm_4.7_all.deb
+Size: 7090
+MD5sum: 796f4dccb98fcc9172357d922e0a8c23
+SHA1: 857c4dab2e1c9108d6865be1aba05f4d6d9efaf6
+SHA256: 669871f1e8ad43af5e1cb9e495fcacadfec8770217dd7cc972d2b7d7eeace7e7
+SHA512: b5aaf6f1dcd008e6a4584e31d75943fb16717dc82a85785444469f87295bc7614560c14a4824b35d0860726a5e9530f2ab5ce993f66dd0b93cf132683ea74032
+Description: Samba share mounter
+
 Package: libqt3-mt
 Architecture: i386
 Version: 3:3.3.8b-8+b1
@@ -2233,6 +2248,21 @@ Description: Yet Another Dialog - dialogs for shell
  ChangeLog consists of just "bump version to..." and "translation updated" for
  the long time, but many interesting ideas which are ignored by
  developers/maintainers were in GNOME Bugzilla.
+
+Package: samba4-control
+Architecture: all
+Version: 2.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Included/samba4-control_2.2_all.deb
+Size: 6742
+MD5sum: 15e7bfc1caf35771d22600174baa8f47
+SHA1: 5c9ede0e6a292c28055ceac8e1f81bbc5c0f8daa
+SHA256: fea7e0966e87c0bffd7be2c617c73d2fcac3efef3c561ee93d3bf1b06ee43720
+SHA512: e0b5b884bebd4835ddff468748ec420c0bfb35e3d98d3a2ac6ca2e2ed7704162714dca0d66e3adcb56b910dfa7f23bf98df94148ff5f3b6583257e39cfad5379
+Description: Samba server control panel
 
 Package: pburn
 Architecture: i386
@@ -7730,6 +7760,21 @@ Description: Openbox Key Editor
      * XML inculsion is not managed. If you want to edit many files, then you shall open them with ;
      *  conditionnal tag is not supported (but did you knew it exists).
 
+Package: yassm
+Architecture: all
+Version: 4.7
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: cifs-utils, smbclient, samba-common-bin, peasyport (>= 3.0)
+Filename: ./Extra/yassm_4.7_all.deb
+Size: 7090
+MD5sum: 796f4dccb98fcc9172357d922e0a8c23
+SHA1: 857c4dab2e1c9108d6865be1aba05f4d6d9efaf6
+SHA256: 669871f1e8ad43af5e1cb9e495fcacadfec8770217dd7cc972d2b7d7eeace7e7
+SHA512: b5aaf6f1dcd008e6a4584e31d75943fb16717dc82a85785444469f87295bc7614560c14a4824b35d0860726a5e9530f2ab5ce993f66dd0b93cf132683ea74032
+Description: Samba share mounter
+
 Package: peasydial
 Architecture: all
 Version: 1.0
@@ -8352,6 +8397,21 @@ SHA256: 6a452a367b75a470e04d272ab7d2cece6094be6bb4f500840aa7d867c943cadf
 SHA512: 75d012d83085361d5e741d22ce923fef1612a9b91a901339842239bf13ef6b80daae2e2814e589b0228fd11050177c2eb9f466152883b20bd335f354e6671d9f
 Description: DVD movie player
 	needs mplayer and libdvdcss
+
+Package: samba4-control
+Architecture: all
+Version: 2.2
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: gtkdialog
+Filename: ./Extra/samba4-control_2.2_all.deb
+Size: 6742
+MD5sum: 15e7bfc1caf35771d22600174baa8f47
+SHA1: 5c9ede0e6a292c28055ceac8e1f81bbc5c0f8daa
+SHA256: fea7e0966e87c0bffd7be2c617c73d2fcac3efef3c561ee93d3bf1b06ee43720
+SHA512: e0b5b884bebd4835ddff468748ec420c0bfb35e3d98d3a2ac6ca2e2ed7704162714dca0d66e3adcb56b910dfa7f23bf98df94148ff5f3b6583257e39cfad5379
+Description: Samba server control panel
 
 Package: isotools
 Architecture: all
