@@ -2147,6 +2147,7 @@ usr/local/bin/start-stop-slim				    slim
 usr/local/bin/start-stop-tzupdate			    tzupdate
 usr/local/bin/syncing					    diff-sync-umount
 usr/local/bin/timidity					    timidity-old
+usr/local/bin/tkagif					    takeagif
 usr/local/bin/touchpad					    touchpad
 usr/local/bin/trans					    trans-tray
 usr/local/bin/trans_tray				    trans-tray
@@ -5079,6 +5080,19 @@ usr/local/smokey-get/tempestuous			    sfs-get-smokey-get
 usr/local/smokey-get/ttuuxxx				    sfs-get-smokey-get
 usr/local/smokey-get/wuxiandianzi			    sfs-get-smokey-get
 usr/local/smokey-get/zigbert				    sfs-get-smokey-get
+usr/local/takeagif/.DirIcon				    takeagif
+usr/local/takeagif/AppRun				    takeagif
+usr/local/takeagif/tkagif.desktop			    takeagif
+usr/local/takeagif/tkagif.png				    takeagif
+usr/local/takeagif/usr/bin/scrox32			    takeagif
+usr/local/takeagif/usr/bin/scrox64			    takeagif
+usr/local/takeagif/usr/bin/tkagif			    takeagif
+usr/local/takeagif/usr/lib32/libgiblib.so.1		    takeagif
+usr/local/takeagif/usr/lib32/libgiblib.so.1.0.6		    takeagif
+usr/local/takeagif/usr/lib64/libgiblib.so.1		    takeagif
+usr/local/takeagif/usr/lib64/libgiblib.so.1.0.6		    takeagif
+usr/local/takeagif/usr/share/pixmaps/camera-photo.png	    takeagif
+usr/local/takeagif/usr/share/pixmaps/tkagif.png		    takeagif
 usr/local/websearch/engines/500px			    websearch
 usr/local/websearch/engines/Ask				    websearch
 usr/local/websearch/engines/Bandcamp			    websearch
@@ -5333,6 +5347,7 @@ usr/share/applications/start-stop-slim.desktop		    slim
 usr/share/applications/syncing.desktop			    diff-sync-umount
 usr/share/applications/tas.desktop			    takeashot
 usr/share/applications/thunar-settings.desktop		    thunar
+usr/share/applications/tkagif.desktop			    takeagif
 usr/share/applications/touchpad.desktop			    touchpad
 usr/share/applications/transmission.desktop		    transmission-2.60
 usr/share/applications/transtray.desktop		    trans-tray

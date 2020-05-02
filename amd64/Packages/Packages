@@ -3132,6 +3132,22 @@ Description: highly configurable system monitor (default version - debug)
  .
  This package contains debugging symbols only.
 
+Package: takeagif
+Architecture: all
+Version: 1.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 234
+Depends: ffmpeg, gtkdialog
+Filename: ./Extra/takeagif_1.0.0_all.deb
+Size: 57150
+MD5sum: 1df4211bade831765412e9b0d426ed52
+SHA1: f380bc2e55061d77d9b552505959fccd866bb0b8
+SHA256: d63ca09c6be65422bfedb9ad052012e5edb395a09747d30f4598453bcc3d6ba0
+SHA512: 2259927e12db939b0f2142e315f61dc9ceae5cb08e88cebe08f34ddc4cb3f157a993836d4187bbe9ca32439809a16deafefbc318748695f3f7dfd4ae0ee85314
+Description: Modified from TAS Screenshot utility, more focused on creating an animated GIF
+
 Package: apulse
 Architecture: amd64
 Version: 20171016-1
