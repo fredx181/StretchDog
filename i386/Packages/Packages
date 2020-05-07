@@ -2430,6 +2430,30 @@ SHA256: c426dd3bc7dcf2565c5a1b77b829ffc556f73f25208fa9b0efebca58245114c2
 SHA512: c40d4982eef191c8a4f06d59a8f8102082e5ca8072673ba5dccd4863069a27181a09e9d95acc7dfbc43ddef7436bf8a12dbe348f21294f90d86f58a38b4f3de4
 Description: squashfs editor, converter
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.0
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.2.0_all.deb
+Size: 158890
+MD5sum: 9e2ab88d824d0da558eac8973ac0df98
+SHA1: 00567b3343a47a72d1fa55bb0e78a7e19650471d
+SHA256: 8db8f85ad306d2efe10c5dbb7c97967a7941bb9d0481a1267726a9b1737ff0bc
+SHA512: 0485eca418ff5f0b3dcf2796109aa7fcfa873b94530b1a282028cf57df1bf22746624bca0868114bbbc9b99fb8ea6a8aff4f94d3b4aa9a98f0e2897a4b20e47e
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+
 Package: conky
 Architecture: all
 Version: 1.10.1-3
