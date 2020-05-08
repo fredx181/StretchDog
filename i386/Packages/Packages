@@ -2079,6 +2079,32 @@ Description: Qt GUI Library (Threaded runtime version), Version 3
 
 Package: quick-remaster
 Architecture: all
+Version: 1.2.1
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.2.1_all.deb
+Size: 159290
+MD5sum: a9dbd1530b035f4dee32bd3b51090c0b
+SHA1: 16a4d805e5c1bd187a797fd54eece3162c40750f
+SHA256: 9922c68539731e9b7f853dff2c1b660af4b619ba9ad09e7e702c5509e61dc8d4
+SHA512: 03a21d8c843be813f5acc2d38213e499a61a0e175a13a5941d16634beabfd75b1fb81385cdb1a43cc2f8b6c2a239f2912d2bc02d4482059b255d1c0508f6233d
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+
+Package: quick-remaster
+Architecture: all
 Version: 1.0.9
 Maintainer: fredx181 dog@root.nl
 Installed-Size: 336
