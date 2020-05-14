@@ -4441,6 +4441,23 @@ SHA256: b6fb1f526f33270e90fbebcf22fe89e881eb93bf50f1472e47af6d88557c1ce7
 SHA512: 48ab6a01a3ac7ae37b989fad28475184a281f1e578c9cd37993a0ce451b903cbf1e81eab692a8a126c0fb7c2e5527705db2d5825cb196c1632a04dec391285ac
 Description: Automatically detect timezone
 
+Package: upgrade-kernel2
+Architecture: all
+Version: 0.0.5
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse, yad, elinks, live-boot, live-tools
+Filename: ./Extra/upgrade-kernel2_0.0.5_all.deb
+Size: 1042380
+MD5sum: 1cfb2e2d3d80ffa125534a5fb4b5ba67
+SHA1: c0c33a45d6a29121385c87dda92eab90133113ea
+SHA256: 39c29e9969e24fee96581ed396d7d237d13336d6485e22c454bc19c5e0685a88
+SHA512: 7ae59285195f027a196d78598636707036c179d73db172fb7ec14bcad7329eb29d52b4ccc15309074b2b3cdc45cd6e83479d51154dd04a78c84529fd6f8f2bd7
+Description: Install latest stable kernel in chroot
+ And create initrd1.xz and initrd.img
+
 Package: image-slicer
 Architecture: all
 Version: 1.0
@@ -5545,6 +5562,23 @@ SHA1: fd9bcee1f0bd998bacb91c614ae44bd2d29aa5b2
 SHA256: 8294f7e1c7da9997c9880e93df28e6307c0823b88cf33447fb93e214492b78b3
 SHA512: e6beda5f8731d71ce5c1512645977319e2fa995bde2049f172df4053ea453e20c785f7d75058b22fd26a52dc7353a1bfcee3a2e2a9e1f99bc8615d617dae4dc5
 Description: prints graphic files
+
+Package: upgrade-kernel-bpo
+Architecture: all
+Version: 0.0.6
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 2800
+Depends: libc6, xterm, xz-utils, cpio, bsdutils, gtkdialog, unionfs-fuse
+Filename: ./Extra/upgrade-kernel-bpo_0.0.6_all.deb
+Size: 1036188
+MD5sum: fa40db6a15c725cf3635a89aa5230de2
+SHA1: dceace1ba15afca977f166a3d7b78dbbd6500df5
+SHA256: a7306e017eede8b00015292d05b623dba01fcece419041a956ccd8d2ed5e6c6e
+SHA512: d8c6d19cf94ce711c2ecbcf45aefdfa56fb3bc9f8f0113a8d7196f82b519161989c7b3fc153e9cd2a3612299e180fbe7ffef687a0a88881a98c86d226d9246ba
+Description: Install backports kernel and build aufs using aufs-dkms
+ And create initrd1.xz and initrd.img
 
 Package: peasyglue
 Architecture: all
@@ -6917,6 +6951,20 @@ Description: Alternate menu plugin for the Xfce desktop environment
  buttons on the side. Top level categories make browsing fast, and simple to
  switch between. Additionally, Whisker Menu keeps a list of the last ten
  applications that you've launched from it.
+
+Package: upgrade-kernel
+Architecture: all
+Version: 2.0.4
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 2600
+Depends: libc6, dpkg, findutils, cpio, xz-utils, gzip, gsu | gksu, live-tools, elinks
+Filename: ./Extra/upgrade-kernel_2.0.4_all.deb
+Size: 1034582
+MD5sum: e27faa461e3e57414248b93a503fc375
+SHA1: de71f20123001ee0a26e9327aeeac8118dd613fe
+SHA256: f83f9e3029fc8563bddbb090a6dc5d30aab7b6cb4afd238b5692a81b63c83d33
+SHA512: 34f7df868738ad2924a3384a83bd5efb79884cd124714a33b22b5a1d5fabdd3a62913c9524f1ad662d3e514fb50571ab2187a769edfae29f2beb6a6f8ba8bcd0
+Description: Warning - This package works only in DebianDog!
 
 Package: peasyglue
 Architecture: all
