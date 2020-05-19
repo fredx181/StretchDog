@@ -5706,6 +5706,22 @@ SHA256: b5c081026ffa3246b19db39661395bdfc92398288a6670475f6bd3a99f992ba3
 SHA512: 81c185b5bd8e558e85894d2bdb55fe4ecd75f977c462b7fa131ef0675e4f13a217658c236085fc7448328a84527b680b80b4d17fab22c8ae3b1281964a3c7b6f
 Description: Network port scanner
 
+Package: takeagif
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 234
+Depends: ffmpeg, gtkdialog
+Filename: ./Extra/takeagif_2.0.0_all.deb
+Size: 57334
+MD5sum: 20db62bc79edf37cf0c99272276b829b
+SHA1: ab7b70bab0f063d29c49efea58570c6e56e02db6
+SHA256: 5b9f859d744d5c1b9b55bdd288bae480355961f0e87dcf56bf52f5c964dc7810
+SHA512: 256ac7b2f7b444f13ed120f396fcc7fe081ad2ef5e2e103d5289b90b038d765376c19425c9e7f144b3cc29b06951ef57030cfb5673dcb97c813d18489ef85b06
+Description: Modified from TAS Screenshot utility, more focused on creating an animated GIF
+
 Package: libssl1.0.0
 Architecture: amd64
 Version: 1.0.1t-1+deb8u6

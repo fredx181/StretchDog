@@ -5727,6 +5727,22 @@ SHA256: b9ad9cb841143920d21a144ba26740e73a378e7709b481cf650657e7d079bdd4
 SHA512: cd708902efab76f3fa3089b1162d45faf681ff60ff3fa006c10f04a9b2563f992a8b531677f5996c7babc27b18637a3663a9b281b9d4732376dd92dcf1e92da7
 Description: Runs an Appsocket/Jetdirect print server
 
+Package: takeagif
+Architecture: all
+Version: 2.0.0
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 234
+Depends: ffmpeg, gtkdialog
+Filename: ./Extra/takeagif_2.0.0_all.deb
+Size: 57334
+MD5sum: 20db62bc79edf37cf0c99272276b829b
+SHA1: ab7b70bab0f063d29c49efea58570c6e56e02db6
+SHA256: 5b9f859d744d5c1b9b55bdd288bae480355961f0e87dcf56bf52f5c964dc7810
+SHA512: 256ac7b2f7b444f13ed120f396fcc7fe081ad2ef5e2e103d5289b90b038d765376c19425c9e7f144b3cc29b06951ef57030cfb5673dcb97c813d18489ef85b06
+Description: Modified from TAS Screenshot utility, more focused on creating an animated GIF
+
 Package: apulse
 Architecture: i386
 Version: 20181001
