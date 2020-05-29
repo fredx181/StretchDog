@@ -729,6 +729,7 @@ usr/bin/gmplayer					    gmplayer
 usr/bin/gtk-straw-viewer				    straw-viewer
 usr/bin/gtk-youtube-update				    youtube-viewer,straw-viewer
 usr/bin/gtk-youtube-viewer				    youtube-viewer
+usr/bin/gtk2-youtube-viewer				    youtube-viewer
 usr/bin/gtkdialog					    gtkdialog
 usr/bin/gtkdialog-splash				    gtkdialog
 usr/bin/gtkdialog3					    gtkdialog

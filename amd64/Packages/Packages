@@ -2518,6 +2518,28 @@ Description: Warning - This package works only in DebianDog booted with porteus 
  Version: 1.1.2, cleaning, do not remove /etc/rc.d
  Version: 1.1.3, added GUI progress bar
 
+Package: gtkdialog
+Architecture: amd64
+Version:  0.8.9-wiak-B-1
+Priority: extra
+Maintainer: William McEwan (wiak) <https://github.com/mcewanw>
+Installed-Size: 295
+Depends: libc6, libgtk2.0-0, libglade2-0, procps, libgdk-pixbuf2.0-0, libglib2.0-0, libatk1.0-0, libpango1.0-0, libcairo2, libfreetype6, libfontconfig1, libxml2, libvte9
+Conflicts: gtkwialog
+Replaces: gtkwialog
+Filename: ./Included/gtkdialog_0.8.9-wiak-B-1_amd64.deb
+Size: 120452
+MD5sum: 634cd93eae906158331f21b1bd93d692
+SHA1: 49f7069691fe30f792e1db20ef4840536ee6a0ac
+SHA256: 43b7ba16c3380ace3c40c95b5a72a8585e55672bdf4e0349253debadf9fb9db0
+SHA512: b6fb4f6587db61ebb54e60f38f382e37c36a584f2c74f76e6fe7f2448b2cd33da3bf0e2b188858b970ae4a6c6f154296632f44575e01f7e466468cbfbf837e0c
+Description: 
+ Gtkwialog is a fork of Pere László's Gtkdialog, a small utility for
+ fast and easy GUI building
+ Gtkwialog uses various, more secure and flexible, glib calls than
+ legacy Gtkdialog to effect its action and input tag command spawning.
+ Gtkwialog fork by wiak. (package made as replacement for gtkdialog by fredx181)
+
 Package: sfs-get-smokey-get
 Architecture: all
 Version: 1.0.4-stretch
@@ -4258,6 +4280,29 @@ SHA1: 237f1597592efa786564262f901b542dcff047af
 SHA256: c9e8fad1dbdc93b51436eabf7bae2fc3100793dece9e5991d9e0b136df5d0438
 SHA512: 3c7b3615e1d6a4610aedf40404c7953489764ce95b81a963384046aa7b5b0c4773877f94b17363022459f93ad04e388fb340090502fa59784cf58a005295d660
 Description: File transfer with busybox nc
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.7.6-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./Extra/youtube-viewer_3.7.6-0_all.deb
+Size: 235886
+MD5sum: d4c8d9b3bedce41b613f5e77350a56e9
+SHA1: 72912b252b7e2cb4b4c9d0f7a96dbef9e6193466
+SHA256: 1db7e88e6975351a87a5b919bf04f0c908c5fbb4d30858a5c379bc244572be89
+SHA512: 085644ba85b1f52605cc9857d6cf208a4f809cee387e44da2ae3be99eb233d2e709cc3dbea9fdefec8457d156fb5773711057827ac6211ff666b879ac5faa583
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: upgrade-kernel-bpo
 Architecture: all
