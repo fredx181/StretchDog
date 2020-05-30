@@ -3205,6 +3205,24 @@ SHA256: 1266a249c1e585104e833156b3d09c7c5fb242e26517ed57d72b0bacfea523f7
 SHA512: a2e2b339dd61d1d07df8c623dd1a6260f6bbd9a9259e1e7ff588ac8956592da03fb762c4ed1ed4313fe9e8be11141f1ffd4a4cac12022a8d51a01549f3cfe293
 Description: mounts hand-held devices over USB
 
+Package: peasyfwmon
+Architecture: i386
+Version: 2.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 163
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy
+Replaces: firewall-puppy
+Filename: ./Extra/peasyfwmon_2.2_i386.deb
+Size: 28086
+MD5sum: b21004b066c1a0166f1bf16f83111cc8
+SHA1: 6621272cfc52d84a3ccb877d8e9673f40926c1ad
+SHA256: 4a71c098e9e463debd309c25c5b091cd25ab56ef220d1c63ba433b981322c084
+SHA512: 75c006b4188ba2fdd0e8f94b7dbc6976f61c0e561f01782d2a8740325db861591ee9b62d84c7b61d1ed39c596f45dd3641135e16a65588d44f671d11af3ad735
+Description: Peasy Firewall Monitor
+
 Package: youtube-viewer
 Architecture: all
 Version: 3.5.1-0-stretch
@@ -5856,6 +5874,23 @@ Description: Reliable network manager
  - added Names button (to select interface names)
  - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
  - Updated Help screen
+
+Package: peasyscan
+Architecture: i386
+Version: 2.15
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./Extra/peasyscan_2.15_i386.deb
+Size: 49926
+MD5sum: c4d900e7189c2f71251c6281ee17dae8
+SHA1: 458c8645025b62b1664ee862dd18a1d7ffaab135
+SHA256: d6dfef720aa17e74a371ed080252fe2d10e2e09cb745eb30a1547ce4aa839e67
+SHA512: 58816916170834e4367b499df46a2fdebe1da5035564671099053d4319a43699fa5812a9a4b2d363f970372aef7f2ba78676b3c03861df07f75b07bba99c5ba8
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
 
 Package: osmo-portable
 Architecture: i386

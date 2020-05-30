@@ -2898,6 +2898,23 @@ SHA256: e38f79d6f20d719860609d6878dc475a2a3d99853aee8fb77fe1d9842d869242
 SHA512: ec8348d70a1dedc0d01faedf1c3d9599b2fa79370d25c7c3c0b7c1d751c5be98685a510522676b4ecb3811640dd8033d203f877b9a7ed1968155cd81e02fb274
 Description: peasyscale from rcrsn51 for Puppy linux
 
+Package: peasyscan
+Architecture: amd64
+Version: 2.15
+Priority: optional
+Section: Graphics;
+Maintainer: root
+Installed-Size: 180
+Depends: libc6, gtkdialog, sane-utils, netpbm, libtiff-tools
+Filename: ./Extra/peasyscan_2.15_amd64.deb
+Size: 50938
+MD5sum: bb662f340e7baf3a9b16825c1400852b
+SHA1: 88b9d86fa3e4a3e8e8e0c0307c33ca665466bf56
+SHA256: 1afd95bea3581fc0dcaecfca40853f64e2ab46b8b10da7724a5c7a4398e70eef
+SHA512: 63ef758eb7dc7e0a0d132b63dea0f8e18b6d23ee21a73bc51ada134d57354799351f25b580550d6063ee6b32ebb0ae0fa17a62bfffcbd169c3830a347d6f8169
+Description: Document scanning tool
+	contains the binary xscanimage-peasy
+
 Package: redshift-gui-lite
 Architecture: amd64
 Version: 0.0.4
@@ -7633,6 +7650,24 @@ SHA1: a7bc279c0ca0052d429281c57f2a67e9202042b9
 SHA256: b925b30cec71c4f3ad760b371e4fd8af1bec7cabd6ed7e09510a1a76122b5085
 SHA512: ad0b6193acc8ca733da2bc25c6b4485e91f8c19d1459d1a4bd617ffc203112192b88a747ad425157ae93107d3a8539e6993f028020570692251759621e5a3ab9
 Description: Create GIF from dancing letters
+
+Package: peasyfwmon
+Architecture: amd64
+Version: 2.2
+Priority: optional
+Section: utilities
+Maintainer: root
+Installed-Size: 163
+Depends: libc6, gtkdialog, iptables
+Conflicts: firewall-puppy
+Replaces: firewall-puppy
+Filename: ./Extra/peasyfwmon_2.2_amd64.deb
+Size: 28416
+MD5sum: adfd411ae14e1078eff2352f87c3a987
+SHA1: c2a92caede08b9c507d8ebcfeb69194a629409d2
+SHA256: 714f74355a072712427430be9ece7fcee2d139d8bc43f2a0f591a41590c57943
+SHA512: 22905d8a88de745ba3c7e6d92c157de4506cf0642488b638890b13b625c9043a96d92e5f78fcdd54cf4fd89ac0bc856f38149f9ec393bcbd82d080f6e6ca679c
+Description: Peasy Firewall Monitor
 
 Package: gmplayer
 Architecture: amd64

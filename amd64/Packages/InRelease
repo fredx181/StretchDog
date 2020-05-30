@@ -9,35 +9,35 @@ Codename: stretch
 Architectures: i386
 Components: main
 Description: DebianDog repository
-Date: Fri, 29 May 2020 14:35:55 +0000
+Date: Sat, 30 May 2020 20:09:44 +0000
 MD5Sum:
- 1865353200e27c33ea9c6748cd852b98           384341 Packages
- 5d997d3ee1abdb1eba7a46b711ca6864           140830 Packages.gz
- 8eb695ee1382e1f92a195584acabfc2b              187 Release
- 5d997d3ee1abdb1eba7a46b711ca6864           140830 Translation-en.gz
+ fb3a7d7fb266e1d293d3aaa96fb4cc71           385563 Packages
+ 583d48df786e299189775b88683d4a6c           141367 Packages.gz
+ 8c6df7bc2d1ab11d961b72d718181e8b              187 Release
+ 583d48df786e299189775b88683d4a6c           141367 Translation-en.gz
 SHA1:
- 34d5630700ba1b8c769af0e4872793c3d4b50201           384341 Packages
- a024ee778058cdbee0697cf5bb43cd8ece52e09c           140830 Packages.gz
- 64c26480ec78413c52a084ae2683ba2528465941              187 Release
- a024ee778058cdbee0697cf5bb43cd8ece52e09c           140830 Translation-en.gz
+ ffff1969f8e6f3b9106492d869c73bc60403a440           385563 Packages
+ 67478838c3ad58142be7ad674451a950f3500ff5           141367 Packages.gz
+ 89302ea8708331096833cdaa1d7b0f32cdd3ee82              187 Release
+ 67478838c3ad58142be7ad674451a950f3500ff5           141367 Translation-en.gz
 SHA256:
- 9a5f52693fd7c58205c267c16c0fbeb7fce6ba412577f72feee6196264531d5e           384341 Packages
- 5f9a08d8c12453f146a81a98743c224394b7c19be476a7a2e88fbfbad64a07e6           140830 Packages.gz
- 14134bba772d3fa9997d52588df57b986f2c05bb55a3f351ff707e6ee0d540ec              187 Release
- 5f9a08d8c12453f146a81a98743c224394b7c19be476a7a2e88fbfbad64a07e6           140830 Translation-en.gz
+ 0e8b97d7d7367faf5a19d927bf1a2a756f1c5788edaa4e5cfd7950c98e67f205           385563 Packages
+ 404cfa552935b459a012855a10fe73ecd306c8fa03aed56b23cb6b2507406f08           141367 Packages.gz
+ 0e7934394891fe14b40926328d26bb19a9ad642483b2aa84240dd642057a995d              187 Release
+ 404cfa552935b459a012855a10fe73ecd306c8fa03aed56b23cb6b2507406f08           141367 Translation-en.gz
 SHA512:
- e0fded2fbed4adab414994c0a4301866a0babffd402ca2cce958af5e36e6afbd2d863f590b277ac6e02e2551fc6f87c025e80275782916e3bd13d86f620973ef           384341 Packages
- ba0a34e40c75b740e7bf9fb929db59867adc5e8f47188fcad2c0cd262d3659971fe6eb37bd98969fadeb56ceb61acb26b2eee3478216d6e3c8a8eedd803ad4cd           140830 Packages.gz
- 9626180900f8c3d42d3580ea7a3d3609f079c0026c248a1eea918c7129368faeffdb48b92cec51415b8a6291dcb019188be4084a3af87d4657c68e5b368f0303              187 Release
- ba0a34e40c75b740e7bf9fb929db59867adc5e8f47188fcad2c0cd262d3659971fe6eb37bd98969fadeb56ceb61acb26b2eee3478216d6e3c8a8eedd803ad4cd           140830 Translation-en.gz
+ 3e6bf713a4a257e27f8f2c6deeb98c5b39693ce46033e84b49eee8e5ec12a0b199f4922899d637bad4ce8873dd9c7ae58fa2b40c2b2a29fe6a9e8d4f947fedd4           385563 Packages
+ 71f364fc033e7099a603a4242f5b0be2c84685999b6bc410c7536132f4791bdff3e9e59e29dca2a22d67d205d25ec8258287522bdab1e805c099266d8e23b173           141367 Packages.gz
+ bbd14d8985f3d6790719200ef78affbcf861f50673e6cdce80d5b66d44db9450772db213c84b8623acb07c7b996b2e01d828187dc824865f380475ec8a8cd35c              187 Release
+ 71f364fc033e7099a603a4242f5b0be2c84685999b6bc410c7536132f4791bdff3e9e59e29dca2a22d67d205d25ec8258287522bdab1e805c099266d8e23b173           141367 Translation-en.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl7RHcwACgkQrYe8en1z
-CB2G2QgAjAFasgXZq4ZxMZ4rbRqktXN1HwemsUHqVpkLZLzVLm6mxa2i92kHgDSo
-ZAIOzhNm2P6bh2cEk+eNjwUF/jauRIGOvvzlfZA6GG2LE82m2hybL9hdOnKW5yLd
-+2wGAs8cuO49p5COzFR5eY9RXvOI0nrzsINK6DtQY5u68pi9P2XhcoIo4JiIW4Fy
-qPS/oKz7loi/GT9U3AbyFSknX2NUwJmb/MlQ3+9wvWa5bjLX6wxerPkrflgg5zEl
-e5gjwjbawQzvHn32S4oDzkj6GUb7X3S5K7QXWdGFIQ5dLKliz21vKwItSVjuVXjV
-LVjdCNM2PN4sJmQVb18VeIrww0IylQ==
-=/Gaw
+iQEzBAEBCAAdFiEEEzvZDupk2V//eP5nrYe8en1zCB0FAl7SvYkACgkQrYe8en1z
+CB0k8wgAn1ec88NkMczqVJC3vOM42fI8KJb4zrKZRmliTS0uyzmU4abKu3fQdTBc
+Atr9KKhRzERZnKep90SHL3cPiLeZsqP4YdCkkGem92XCvX3R+MXcVDd+3fbP3r8L
+w7CmiG/+wFMT2EhyANEk3X4JgCdKrGPa559HwJnmi4HP0lPdSp4M6fKWj+oQWV0o
+LyNGVGbrHMGjNk/YMqPx0NAx2oEi02JkZAds/DcZH+9mcBka45jfilrNuBhzuzpa
+8AZ1Kkwgimi3uYSwrQFMmJgyCUoDWYq3cMaeqGsl11+nUGMnpncKX15nE7FgaGfv
+2g3tZbIsYDWyVJKIWtbgOqqQ7nr8tA==
+=F9k1
 -----END PGP SIGNATURE-----
