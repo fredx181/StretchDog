@@ -637,6 +637,33 @@ Description: GTK+ interface for MPlayer
  used with Gecko Mediaplayer and is the modern replacement for
  mplayerplug-in (from the same author).
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.2
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.2.2_all.deb
+Size: 159078
+MD5sum: cc0f74864b1ca73e24a54dde8e8f7f1c
+SHA1: abad6cbf080432ca03767621a584e18e2c72ad43
+SHA256: 729abe7ad7115f55e9198960b77d84e5208c8126e77d99789b79a62333c3066a
+SHA512: fbd50132100e9cf88f01cdf4a2e4adddc10a46f0b81699dc5007f745a186210aea8f977eb5c4eb8b7c0954aaa645de26683d66ed779be0ec29b8eaafda8bff52
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+
 Package: mount
 Architecture: amd64
 Version: 2.26.2-6
