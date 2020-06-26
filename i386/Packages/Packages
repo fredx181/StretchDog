@@ -8009,6 +8009,22 @@ SHA256: 2f4936406056b4bb421fac91d0e2c250de54e1740db1ab0f2d6ccbe694159a6b
 SHA512: 0f3be819763932b324807b32bea7a3d87a508b673c29b01f8f222d90571391a57ae20fde74ae361da657235604305d624a313667a5675973a36e74c84e7f0726
 Description: Select a sound card and set ALSA defaults
 
+Package: master-pdf-editor
+Architecture: i386
+Version: 4.3.61
+Priority: optional
+Section: utilities
+Maintainer: fredx181
+Installed-Size: 30000
+Depends: libsane, libqt4-svg, libqt4-network
+Filename: ./Extra/master-pdf-editor_4.3.61_i386.deb
+Size: 9661748
+MD5sum: f53a112d449433b48b3393b5927f0dec
+SHA1: 1f36728b946c33082898cb8d276cab70e297f01a
+SHA256: 185e7789d48b5a6850d33c12ba7433abc36dd761299f3056369cfe8977567883
+SHA512: 0d99ceed118843886d937ae8e937e0eaaf6bd3fda91ba7656067928f031d2f96e5ad7d90c06df48375e2ec5711777dbd770be7bf1da13657528836fb195c8515
+Description: Master PDF Editor https://code-industry.net/masterpdfeditor/
+
 Package: googledrivegui2
 Architecture: i386
 Version: 2.1.1
