@@ -5233,6 +5233,33 @@ SHA256: 7dae59f68f09f2569bae82875a08f0b379190f93cc556e567a828f7f1977115f
 SHA512: 8832c55409a56089cac4d14a497e6518b1b0febdac1b44cc2c85799a842ee238e3fa1bcda64be474c3d59e71d9c44123081bd7ce8d7dce4305c4b8defc5562c9
 Description: DVD movie player
 
+Package: PeasyWiFi
+Architecture: amd64
+Version: 4.7.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: libc6, gtkdialog, gettext-base, net-tools, wpasupplicant, wireless-tools, x11-utils, ccrypt
+Conflicts: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Replaces: ceni, dhcpcd, dhcpcd5, resolvconf, isc-dhcp-client, isc-dhcp-common, sns, xpns-tool, wifibox, wifibox-dhcpcd, frisbee
+Filename: ./Extra/peasywifi_4.7.0_amd64.deb
+Size: 16420
+MD5sum: 11dbd177ae7cff9cf6e41e511a978898
+SHA1: 11db026dbca612152c4ddda604a439663fcea891
+SHA256: 425deb68639c353a0d6680b36f9bcd9fd4758929a426fb234247a24eadad5522
+SHA512: 6996165b185619167cc853f87bfb37b905b8737d51bb98f5d8e98bc507bb94ddf3f61f90a6d4eab9de42f41abf2202fad00663cc865edc71530fad791d626113
+Description: Reliable network manager
+ -changes in v4.4-0 in peasywifi script by rcrsn51:
+ - added option (Ethernet tab) to bring the interface down
+ - added Names button (to select interface names)
+ - A modification to Names. It resets the Ethernet profiles in /etc/pwf/ethernet
+ - Updated Help screen
+ - added multi-user support (fredx181)
+ - changed bcrypt to ccrypt
+ Changes in v4.7:
+ 1. The Encrypt section has been removed. To hide the passphrase in a profile, just replace all (or part) of it with XXXX. When you connect, PWF will prompt for the actual passphrase.
+ 2. There are improved instructions for setting up an alternate Ethernet interface like usb0
+
 Package: peasypartview
 Architecture: all
 Version: 1.1-1
@@ -6333,6 +6360,21 @@ SHA1: d90b92f4bf061091dc3cd6a832cc763d49cd97f8
 SHA256: 574a75c99f8b4be08b78da606ee58057aaba198293bbda3cd8f0284967aa8ae8
 SHA512: 931d2781dff67ace4679ca135c5a73693499c6c00a9f410660f1795b60f23f3c096ebbd00ebee8ad91b04a486e7896f88d4a0ed6bfe5678eab3c6d33eec58578
 Description: Warning - This package works only in DebianDog!
+
+Package: palettizer
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Depends: netpbm
+Filename: ./Extra/palettizer_1.0_all.deb
+Size: 3464
+MD5sum: a0f96760b2c9082aef58f19040a0e54d
+SHA1: 41a16b3996a17551444d518dce35a033d58e3248
+SHA256: 6b1037fbdfef2a171da2beb69141804135f29b7435e97f2bd4021428d7a05d3e
+SHA512: 080e99b713b74b5354b3e20857a0656920b2e2479bdf3ba0eb96db5f9749044e95b4f361c0a3cbd69e08aea19e80b6bf9095743a046e8085603049540917ff3a
+Description: Converts a PNG graphic from RGB to indexed palette
 
 Package: peasymp3
 Architecture: amd64
@@ -8178,6 +8220,20 @@ SHA1: 6ff56e8ba537806f87bc750559e175075434d80a
 SHA256: 2e4aceb5fc736f68b4492bda205ff6c47e7401f5a03c26b96b0f3ce2ee181608
 SHA512: 097d9a11d596d461aaac4a55a8b4435fa61b124bba5ebaedd1e6bcae69265e3fb55964fb09203086864b4bbf5af1685151eba92ebcb91122ba2944796c749837
 Description: Mounts ISO/SFS files
+
+Package: backlight-keys
+Architecture: all
+Version: 1.0
+Priority: optional
+Section: base
+Maintainer: rcrsn51
+Filename: ./Extra/backlight-keys_1.0_all.deb
+Size: 1252
+MD5sum: be178e2b6a0fc8e9c6daa1811d235150
+SHA1: 9bf1cafed937149081c17065bb08645d2002fdc2
+SHA256: b130d722854b591351e2883d2fa4e381b64851be288d952fa60d398abda7b89b
+SHA512: 7d9d44ce1669ddf79a1b0ae9aa0483afa0e4fcee5a1c058de96efc2704db58bacfe61a6acbcd1967fff80f33ad38b1f4feca9c9914a46e1b2da657b8e762a6fa
+Description: controls laptop backlight with keyboard brightness keys
 
 Package: xhippo
 Architecture: amd64

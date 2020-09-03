@@ -1987,6 +1987,8 @@ usr/local/bin/apt2sfs					    apt2sfs
 usr/local/bin/apt2sfs-cli				    apt2sfs
 usr/local/bin/apt2sfs-cli-fullinst			    apt2sfs
 usr/local/bin/apt2sfs-fullinst				    apt2sfs
+usr/local/bin/backlight-keys				    backlight-keys
+usr/local/bin/backlight-keys.txt			    backlight-keys
 usr/local/bin/batterup					    batterup
 usr/local/bin/batterup_restart				    batterup
 usr/local/bin/batterup_tray				    batterup
@@ -2107,6 +2109,7 @@ usr/local/bin/my_squash_loader				    my-squash-loader
 usr/local/bin/obshutdown				    obshutdown
 usr/local/bin/openbox-menu				    jwmconf,jwm-setup-dd64,jwm-setup
 usr/local/bin/p910nd-control				    p910nd-print-server
+usr/local/bin/palettizer				    palettizer
 usr/local/bin/pdf-to-djvu				    pdf-to-djvu
 usr/local/bin/peasycdplayer				    peasymp3
 usr/local/bin/peasyclock				    peasyclock
@@ -5338,6 +5341,7 @@ usr/share/applications/obkey.desktop			    obkey
 usr/share/applications/openbox.desktop			    jwm-setup,jwm-setup-dd64
 usr/share/applications/p910nd-control.desktop		    p910nd-print-server
 usr/share/applications/palemoon.desktop			    palemoon
+usr/share/applications/palettizer.desktop		    palettizer
 usr/share/applications/pavrecord.desktop		    pavrecord
 usr/share/applications/pburn.desktop			    pburn
 usr/share/applications/peasy_firewall_monitor.desktop	    peasyfwmon
@@ -8365,6 +8369,7 @@ usr/share/pixmaps/other.png				    jwmconf,jwm-setup
 usr/share/pixmaps/p910nd-control.png			    p910nd-print-server
 usr/share/pixmaps/palemoon.png				    palemoon
 usr/share/pixmaps/palemoon.xpm				    palemoon
+usr/share/pixmaps/palettizer.png			    palettizer
 usr/share/pixmaps/partview-24.png			    peasypartview
 usr/share/pixmaps/partview-48.png			    peasypartview
 usr/share/pixmaps/peasyclock.png			    peasyclock
