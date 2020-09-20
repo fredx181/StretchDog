@@ -240,6 +240,35 @@ SHA256: bf01c206b2dee04f015cecdb35997ae57bf56f1690a566e7648cad6979c35305
 SHA512: 17af69e214e13001b0d7d381e24220a5681340353324a8c2e4ad60c12687c6925f89963faa9bfedf4ad08ff5833145e2a8771a853c47aba9447bdd509fcd475a
 Description: Special DebianDog mount and drive information scripts.
 
+Package: quick-remaster
+Architecture: all
+Version: 1.2.4
+Maintainer: fredx181 dog@root.nl
+Installed-Size: 336
+Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
+Filename: ./Included/quick-remaster_1.2.4_all.deb
+Size: 159556
+MD5sum: 1269c7729b88dd547710bbf0538d973b
+SHA1: 5752fdc95e46eda3365191ea079c0a96626e629a
+SHA256: 4772aa6835fe75452c07b787d673435afddc4bf45616c5bdbca81650cd46a100
+SHA512: 46c06b9b7616711ab57c1e91bb63a034c40d29199cc928fd900288ab742aaf6f1488907dfc01c8d5dd4ac5a138435a4aa5a314e235133f56d210cb086ffcc02d
+Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
+ Included GUI version using yad: quick-remastergui
+ Bug fix: gz compression option not working in previous version 1.0.3
+ Bug fix: set the correct permissions for /tmp 
+ Fix in v 1.0.6: skip symlinks while cleaning man and doc files
+ Version 1.0.7: added option to create ISO
+ Version: 1.1.2, cleaning, do not remove /etc/rc.d
+ Version: 1.1.3, added GUI progress bar
+ Version: 1.1.5, for Devuan beowulf
+ Version 1.1.7, major bugfix, previously worked properly only when used EXIT: parameter
+ Version 1.1.9, added mksquashfs compression option zstd
+ Version 1.2.0, very different method, using mksquashfs -exclude option (e.g. for cleaning)
+ Version 1.2.1, added more info in GUI
+ Version 1.2.1, bugfix, when canceling, restore backup worked not properly
+ Version 1.2.3, bugfix, fixed that in some cases the path to the live folder not found
+ Version 1.2.4, choice to merge extra loaded squashfs modules or not.
+
 Package: debdoginstallscripts
 Architecture: amd64
 Version: 1.1.1
@@ -3226,6 +3255,29 @@ SHA1: 1a1ce609cb778c82e34c16daf4432d67076329c5
 SHA256: 505760460c8e8853d5710985f426ead21cbeb86ae765f4c4673d42cd71a9066e
 SHA512: bdd2493d912e525b1d5bf418e774d9c3369eb19fb0d241c1ccf6d3ada139e1bf2aa1457b2811ffcd386bf72220472b4708b119c00987fcf38d76a8d2d870b981
 Description: Touchpad/mouse/touchscreen setup
+
+Package: straw-viewer
+Architecture: all
+Version: 0.0.9
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl, libgtk3-perl,liblwp-protocol-https-perl,  wget
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl
+Conflicts: youtube-viewer
+Replaces: youtube-viewer
+Filename: ./Extra/straw-viewer_0.0.9_all.deb
+Size: 237084
+MD5sum: 9fef69205c4562503359de6d834e13d5
+SHA1: 240339b8d8d6e01631f2f3859fc7ac2f36dd9a4d
+SHA256: 037daa98f57f6a3b41737320d00529af129f509fa4c21a0625107024ddcce863
+SHA512: 79699193d7d9263c4c9f52afa3d7296f46e87c9a0b6cb15d888c607cd6c396417f6f3e08abd23d59ea7dc02d8aa001c69bec5f1be749e51d40d2776f34cc54b4
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk3 application for searching and streaming videos from YouTube.
+ WWW-StrawViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: upgrade-kernel2
 Architecture: all
