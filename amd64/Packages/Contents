@@ -51,7 +51,6 @@ etc/pwf/interfaces					    PeasyWiFi
 etc/pwf/udhcpc/default.script				    PeasyWiFi
 etc/rc.d/rc.firewall.pfm				    peasyfwmon
 etc/rc.d/rc.network					    PeasyWiFi
-etc/samba/smb.conf.orig					    samba4-control
 etc/skel/.config/autostart/firewallstatus.desktop	    firewall-ng
 etc/skel/.config/rox.sourceforge.net/MIME-types/application jwmconf,jwm-setup
 etc/skel/.config/rox.sourceforge.net/MIME-types/image_png   jwmconf,jwm-setup
@@ -696,7 +695,6 @@ root/Startup/peasyfwmon_tray				    peasyfwmon
 root/Startup/peasymp3_tray				    peasymp3
 root/Startup/peasywifi_tray				    PeasyWiFi
 root/Startup/rshift-gui-lite				    redshift-gui-lite
-root/Startup/samba-autostart				    samba4-control
 root/Startup/start-ntpdate				    tzupdate
 root/Startup/xautolock_start				    slideshow-qiv
 root/fisherman.jpg					    jwmconf
@@ -2163,7 +2161,6 @@ usr/local/bin/remasterdog-start				    remaster-scripts
 usr/local/bin/resize-save				    resize-save-file
 usr/local/bin/rshift-gui-lite				    redshift-gui-lite
 usr/local/bin/run-as-user				    run-as-user
-usr/local/bin/samba4-control				    samba4-control
 usr/local/bin/scrox					    scrox
 usr/local/bin/setbackdrop				    jwmconf,jwm-setup
 usr/local/bin/sfs-get					    sfs-get-smokey-get
@@ -5261,7 +5258,6 @@ usr/share/applications/PeasyPDF.desktop			    peasypdf
 usr/share/applications/Play_with_mplayer.desktop	    youtube-get,youtube-get2
 usr/share/applications/Remaster-DebianDog.desktop	    remaster-scripts
 usr/share/applications/SFS-Load-GUI.desktop		    sfsload
-usr/share/applications/Samba4-Control.desktop		    samba4-control
 usr/share/applications/SaveFolderBackup.desktop		    SaveFolderBackup
 usr/share/applications/Set Locale_Language.desktop	    locale-conf
 usr/share/applications/System Info.desktop		    inxi-gui
@@ -8410,7 +8406,6 @@ usr/share/pixmaps/rox.png				    jwmconf
 usr/share/pixmaps/roxterm.xpm				    roxterm-common
 usr/share/pixmaps/rphoto.xpm				    rphoto
 usr/share/pixmaps/rshift.png				    redshift-gui-lite
-usr/share/pixmaps/samba4-control.png			    samba4-control
 usr/share/pixmaps/sd.png				    mount-wizard
 usr/share/pixmaps/sfs.png				    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/share/pixmaps/sfsload.png				    sfsload

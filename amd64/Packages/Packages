@@ -8213,21 +8213,6 @@ SHA256: c4dfaff0e74da4a323e3a895aa083258ea0ec02654b2600571446ede506cfb3c
 SHA512: 188c025f227cd30cf0c71a3c72afc731c0c021dc6a31b517c56c20d4db541d935506b1c0d2915d2936143ca9ba2868f91afdf86d30f2224b7461e22fe86c910e
 Description: Load squashfs modules on-the-fly
 
-Package: samba4-control
-Architecture: all
-Version: 2.1
-Priority: optional
-Section: base
-Maintainer: rcrsn51
-Depends: gtkdialog
-Filename: ./Extra/samba4-control_2.1.deb
-Size: 6598
-MD5sum: 078d85a40d4ef3ec8c3b7fcaf5321842
-SHA1: 6dba2a59df63baea8897c399df17d7ea2355f345
-SHA256: 433371e5aae2329650c0a8c712eb7094dce16d06ca78e192cc5e670632c9af3a
-SHA512: 8c8076b3033d8bc866f514645065f64e02da2ac04f09569f4d0cd6ce82f2ac71c99c817834a5a3add57e08f300a080bca2c7f413e13d8d3a693c4f16dac68a53
-Description: Samba server control panel
-
 Package: pschedule
 Architecture: all
 Version: 1.1.6
@@ -8302,6 +8287,29 @@ SHA1: 286a9d8ae637a11c449f3bb560739c14f7394d47
 SHA256: 89e28c6b5ec3432a62cda954648e84888310c37af9a211f3fbddf06cc6ae8e6c
 SHA512: e95a11a2d6ab0224c8be1e250c90ee5e04223071ee132a67370e3d5eedef7463f282b860434c81675b07e48147ffaaa35fc547a642c51cef1fded5da72f21965
 Description: xhippo-converted-pet-to-deb
+
+Package: youtube-viewer
+Architecture: all
+Version: 3.8.0-0
+Priority: optional
+Section: perl
+Maintainer: fredx181
+Installed-Size: 1100
+Depends: perl, libjson-perl, libjson-xs-perl, libdata-dump-perl, libfile-sharedir-perl, libgtk2-perl, libwww-perl, libterm-readline-gnu-perl, mpv | vlc, python, curl
+Recommends: youtube-get2
+Suggests: gcap, liblwp-protocol-https-perl, libtext-charwidth-perl, libterm-readkey-perl, libterm-ui-perl, wget
+Conflicts: straw-viewer
+Replaces: straw-viewer
+Filename: ./Extra/youtube-viewer_3.8.0-0_all.deb
+Size: 244998
+MD5sum: 8a2de4cdf78327b5048b315e925e57ac
+SHA1: 5aa6f087e78363e779142c0d1232cb9905c19eec
+SHA256: 2cc5d8e9c38c20d4412d8f09776623e2364d6caaf8901ccff6c9761a6a7619f6
+SHA512: 51b7df20b4eb39a918bea51199370088b05c0a5c7ebf0503aeea47cae996407c77db3ca328edf8c1ddc875426863faf22f1e8912a2037c40d914a3c7b5af068a
+Homepage: https://github.com/trizen/youtube-viewer
+Description: A Gtk2 application for searching and streaming videos from YouTube.
+ WWW-YoutubeViewer - a very easy interface to YouTube.
+ Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
 Package: touchpad
 Architecture: all
