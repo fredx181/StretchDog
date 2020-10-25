@@ -734,6 +734,7 @@ usr/bin/epdfview					    epdfview
 usr/bin/evince						    evince
 usr/bin/evince-previewer				    evince
 usr/bin/evince-thumbnailer				    evince
+usr/bin/fdkaac						    fdkaac
 usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
 usr/bin/findnrun					    findnrun
@@ -805,6 +806,7 @@ usr/bin/img2pdf.py					    img2pdf-old
 usr/bin/ipinfo						    frisbee
 usr/bin/jp2.py						    img2pdf-old
 usr/bin/losetup-FULL					    filemnt-caja,filemnt-thunar,filemnt-pcmanfm
+usr/bin/mac						    monkeys-audio
 usr/bin/madedit						    madedit
 usr/bin/masterpdfeditor4				    master-pdf-editor
 usr/bin/md2html-gui					    md2html
@@ -1629,6 +1631,8 @@ usr/lib/x86_64-linux-gnu/Thunar/thunar-sendto-email	    thunar
 usr/lib/x86_64-linux-gnu/alsa-lib/libasound_module_ctl_bluealsa.so bt4stretch
 usr/lib/x86_64-linux-gnu/alsa-lib/libasound_module_pcm_bluealsa.so bt4stretch
 usr/lib/x86_64-linux-gnu/libcrypto.so.1.0.0		    libssl1.0.0
+usr/lib/x86_64-linux-gnu/libfdk-aac.so.1		    libfdk-aac1
+usr/lib/x86_64-linux-gnu/libfdk-aac.so.1.0.0		    libfdk-aac1
 usr/lib/x86_64-linux-gnu/libgbm.so.1			    libgbm1
 usr/lib/x86_64-linux-gnu/libgbm.so.1.0.0		    libgbm1
 usr/lib/x86_64-linux-gnu/libgif.so.4			    libgif4
@@ -1643,6 +1647,8 @@ usr/lib/x86_64-linux-gnu/libhunspell-1.3.so.0		    libhunspell-1.3-0
 usr/lib/x86_64-linux-gnu/libhunspell-1.3.so.0.0.0	    libhunspell-1.3-0
 usr/lib/x86_64-linux-gnu/libjpeg.so.8			    libjpeg8
 usr/lib/x86_64-linux-gnu/libjpeg.so.8.4.0		    libjpeg8
+usr/lib/x86_64-linux-gnu/libmac.so.2			    libmac2
+usr/lib/x86_64-linux-gnu/libmac.so.2.0.0		    libmac2
 usr/lib/x86_64-linux-gnu/libnettle.so.4			    libnettle4
 usr/lib/x86_64-linux-gnu/libnettle.so.4.7		    libnettle4
 usr/lib/x86_64-linux-gnu/libnl.so.1			    libnl1
@@ -5686,6 +5692,9 @@ usr/share/doc/epdfview/README.Debian			    epdfview
 usr/share/doc/epdfview/THANKS				    epdfview
 usr/share/doc/epdfview/changelog.Debian.gz		    epdfview
 usr/share/doc/epdfview/copyright			    epdfview
+usr/share/doc/fdkaac/changelog.Debian.gz		    fdkaac
+usr/share/doc/fdkaac/changelog.gz			    fdkaac
+usr/share/doc/fdkaac/copyright				    fdkaac
 usr/share/doc/findnrun/CREDITS.md			    findnrun
 usr/share/doc/findnrun/LICENSE.md			    findnrun
 usr/share/doc/findnrun/LUBUNTU.md			    findnrun
@@ -5765,6 +5774,9 @@ usr/share/doc/help/C/grub4dosconfig.html		    grub4dosconfig
 usr/share/doc/help/images/gnibbles.png			    grub4dosconfig
 usr/share/doc/httpfs2/changelog.Debian.gz		    httpfs2
 usr/share/doc/httpfs2/copyright				    httpfs2
+usr/share/doc/libfdk-aac1/changelog.Debian.gz		    libfdk-aac1
+usr/share/doc/libfdk-aac1/changelog.gz			    libfdk-aac1
+usr/share/doc/libfdk-aac1/copyright			    libfdk-aac1
 usr/share/doc/libgbm1/changelog.Debian.gz		    libgbm1
 usr/share/doc/libgbm1/copyright				    libgbm1
 usr/share/doc/libgif4/AUTHORS				    libgif4
@@ -5793,6 +5805,13 @@ usr/share/doc/libjpeg8/README.gz			    libjpeg8
 usr/share/doc/libjpeg8/changelog.Debian.gz		    libjpeg8
 usr/share/doc/libjpeg8/changelog.gz			    libjpeg8
 usr/share/doc/libjpeg8/copyright			    libjpeg8
+usr/share/doc/libmac2/AUTHORS				    libmac2
+usr/share/doc/libmac2/NEWS.gz				    libmac2
+usr/share/doc/libmac2/README				    libmac2
+usr/share/doc/libmac2/TODO				    libmac2
+usr/share/doc/libmac2/changelog.Debian.gz		    libmac2
+usr/share/doc/libmac2/changelog.gz			    libmac2
+usr/share/doc/libmac2/copyright				    libmac2
 usr/share/doc/libmusicbrainz3-6/AUTHORS.txt		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/NEWS.txt.gz		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/README.txt		    libmusicbrainz3-6
@@ -5855,6 +5874,13 @@ usr/share/doc/libxml2/copyright				    libxml2
 usr/share/doc/madedit/changelog.Debian.gz		    madedit
 usr/share/doc/madedit/changelog.gz			    madedit
 usr/share/doc/madedit/copyright				    madedit
+usr/share/doc/monkeys-audio/AUTHORS			    monkeys-audio
+usr/share/doc/monkeys-audio/NEWS.gz			    monkeys-audio
+usr/share/doc/monkeys-audio/README			    monkeys-audio
+usr/share/doc/monkeys-audio/TODO			    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.Debian.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/copyright			    monkeys-audio
 usr/share/doc/mount/README.mount			    mount
 usr/share/doc/mount/changelog.Debian.gz			    mount
 usr/share/doc/mount/changelog.gz			    mount
@@ -7871,6 +7897,7 @@ usr/share/man/man1/conky.1.gz				    conky-all,conky-std,conky-cli
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/epdfview.1.gz			    epdfview
 usr/share/man/man1/evince.1				    evince
+usr/share/man/man1/fdkaac.1.gz				    fdkaac
 usr/share/man/man1/firefox-esr.1.gz			    firefox-esr
 usr/share/man/man1/geany.1				    geany
 usr/share/man/man1/gftp-gtk.1.gz			    gftp-gtk

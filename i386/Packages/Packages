@@ -7881,6 +7881,37 @@ Description: A Gtk3 application for searching and streaming videos from YouTube.
  WWW-StrawViewer - a very easy interface to YouTube.
  Highly recommended: install mpv or vlc mediaplayer and youtube-get2 (includes youtube-dl) to be able to play all videos without exceptions.
 
+Package: libmac2
+Architecture: i386
+Version: 4.11-u4-b5-s7-dmo3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: monkeys-audio
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 169
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.0), libstdc++6 (>= 5)
+Filename: ./Extra/libmac2_4.11-u4-b5-s7-dmo3_i386.deb
+Size: 65952
+MD5sum: 744aa828eb6786b52a6d093929263ddf
+SHA1: 41d7db9742407a961adf9dd25fb91ce2e14c4151
+SHA256: 6d489fd4f5c522e0e02829d1a5a08d9a72f79d9766128b1bf165669d4da28b17
+SHA512: 9aff66fd1ac7c8de54968edeb7aa3a0910246d0ba5da6a27cb1a272ddc0071e5883a99d004d51c3b30257b7827ec439f4c45f7b8d53f66f1b5405db5f450f2cd
+Description: monkey's audio lossless audio codec - library
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+
 Package: peasyscale
 Architecture: i386
 Version: 1.8
@@ -7963,6 +7994,39 @@ SHA1: 21c21853d812ba689369ffa888d22ea7f22a1dc8
 SHA256: 1a1f7fdeadd6f8192d9d7352bf4fef022f865a70dd7b513e8097974dd3d75402
 SHA512: 12eb93957a99beac2922cfd03e945c53ff374a43cb0fe34b45f8d58615f4a6c3fcade884ec7c18e18d56178b5c3eaf37fe5af81bb8a7d5895b883c7198d536d9
 Description: Manipulate PDF documents
+
+Package: monkeys-audio
+Architecture: i386
+Version: 4.11-u4-b5-s7-dmo3
+Priority: optional
+Section: sound
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 32
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.0), libmac2, libstdc++6 (>= 5)
+Filename: ./Extra/monkeys-audio_4.11-u4-b5-s7-dmo3_i386.deb
+Size: 12976
+MD5sum: 59944388b528f77c34aae7c121fa0658
+SHA1: 6128d1c59cb55994486cd0f52873025d405b6016
+SHA256: 9b045b242917504d262809d0ec4a27c9a997cda179a134c76e1b9260493ab8a5
+SHA512: eb810391988d960a9097562cfb17f175c7efd52cc854615497bc501b4cb94a9a2eabd3510063820fb8751c275ceb06ca00e28dc6bd5ea60a28e183b616195de0
+Description: monkey's audio lossless audio codec - binary
+ Monkey's Audio is a highly efficient and popular lossless audio codec.
+ .
+ It is a tuned compressor for audio, like mp3, ogg, etc - but "lossless" in
+ that it does not completely discard information, and performs more of a
+ "zipping" that can be reversed at any time and generate the original source
+ audio file (hence "lossless" vs "lossy").
+ .
+ Features:
+  * Efficient (fast and great compression)
+  * Perfect sound - absolutely no quality loss
+  * Incorporates redundant CRC's to ensure proper decompression of data
+  * Tagging support - extremely flexible APE Tags
+ .
+ Support for file format before 3.99 has been removed. If you have old files
+ use the mac-old binary from the monkeys-audio-old package (support for all
+ files before 3.99) or ffmpeg 2.0 (support from 3.93 to 4.11).
 
 Package: youtube-viewer
 Architecture: all
@@ -8179,6 +8243,28 @@ SHA1: eded92feccf9bc6d5fabf7af579afe27ff2efd63
 SHA256: 2f4936406056b4bb421fac91d0e2c250de54e1740db1ab0f2d6ccbe694159a6b
 SHA512: 0f3be819763932b324807b32bea7a3d87a508b673c29b01f8f222d90571391a57ae20fde74ae361da657235604305d624a313667a5675973a36e74c84e7f0726
 Description: Select a sound card and set ALSA defaults
+
+Package: libfdk-aac2
+Architecture: i386
+Version: 1:2.0.1-dmo1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: fdk-aac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 1421
+Depends: libc6 (>= 2.4)
+Filename: ./Extra/libfdk-aac2_2.0.1-dmo1_i386.deb
+Size: 633136
+MD5sum: f32fe4a736ff87671596b6bc148f0633
+SHA1: eaf6a305df3a97f76ce63960687027c8134dae32
+SHA256: 2949c11930e2d41675e55b47b28a61eab9c6d1e0f514021aa09878b39b2c2535
+SHA512: 40842b34d7cfbfa1cc2180ea28784a3006b37f66190d3df22810edc5167b2aa86b19f5061d670b4052e5a78ee44d0ffe2df9dab2da4f7252f8532864262fd936
+Homepage: http://www.iis.fraunhofer.de/en/bf/amm/implementierungen/fdkaaccodec.html
+Description: Fraunhofer FDK AAC codec library.
+ Fraunhofer IIS software implementations of the open ISO MPEG audio codecs
+ AAC, HE-AAC, HE-AACv2 and AAC-ELD.
 
 Package: master-pdf-editor
 Architecture: i386
@@ -9792,6 +9878,27 @@ SHA1: 5b371deef30a138ae7f780ca94d41ef13606b1fc
 SHA256: 7f800e7645da96a1b184159a754c93ce75d0b92799d6c6581e954829a0cbbeb3
 SHA512: ec194e68fe3b34390d06ee46528a330e23a4f2557490c22c73efd34af94699a3880f7dd5307d743d845a3f5751ce6826b57e2d9a3dccb251e62472bbe07ff00d
 Description: Bluetooth manager and audio playeer
+
+Package: fdkaac
+Architecture: i386
+Version: 1:1.0.1-dmo1
+Priority: optional
+Section: sound
+Source: fdkaac-dmo
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Installed-Size: 114
+Depends: libc6 (>= 2.7), libfdk-aac2 (>= 1:2.0.1)
+Filename: ./Extra/fdkaac_1.0.1-dmo1_i386.deb
+Size: 45488
+MD5sum: 8758f5628b8821be58289d9f8d650e32
+SHA1: 83611befac7bc08a3b25279e615b3ee1345a42de
+SHA256: fca4d00f2e307163013e81dad32d5df688e210706fd6ba82b18a81eff4420a59
+SHA512: 66b418f3bbd8bf0ead8f3bad2bb3d057d43107e60490a30fcba210b48099f994c36f4e0aa9525e1d41900fa008f6aaeb8f5d7f98643613c2618dcdaee0924797
+Homepage: https://github.com/nu774/fdkaac
+Description: command line encoder frontend for libfdk-aac
+ Command line encoder frontend for libfdk-aac with more options than aac-enc
+ from libfdk-aac.
 
 Package: youtube-viewer
 Architecture: all

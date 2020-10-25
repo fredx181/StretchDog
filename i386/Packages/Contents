@@ -846,6 +846,7 @@ usr/bin/edit-sfs					    edit-sfs-thunar,edit-sfs-pcmanfm
 usr/bin/emelfm2						    emelfm2
 usr/bin/epdfview					    epdfview
 usr/bin/evince						    evince
+usr/bin/fdkaac						    fdkaac
 usr/bin/ffconvert					    ffconvert
 usr/bin/ffinfo						    ffconvert
 usr/bin/ffmpeg						    ffmpeg
@@ -930,6 +931,7 @@ usr/bin/lumina-screenshot				    lumina-desktop-debdog
 usr/bin/lumina-search					    lumina-desktop-debdog
 usr/bin/lumina-xconfig					    lumina-desktop-debdog
 usr/bin/lxterm						    xterm
+usr/bin/mac						    monkeys-audio
 usr/bin/madedit						    madedit
 usr/bin/masterpdfeditor4				    master-pdf-editor
 usr/bin/md2html-gui					    md2html
@@ -1336,6 +1338,8 @@ usr/lib/i386-linux-gnu/i686/cmov/libssl.so.1.0.0	    libssl1.0.0
 usr/lib/i386-linux-gnu/libcrypto.so.1.0.0		    libssl1.0.0
 usr/lib/i386-linux-gnu/libdconf.so.0			    libdconf0
 usr/lib/i386-linux-gnu/libdconf.so.0.0.0		    libdconf0
+usr/lib/i386-linux-gnu/libfdk-aac.so.2			    libfdk-aac2
+usr/lib/i386-linux-gnu/libfdk-aac.so.2.0.1		    libfdk-aac2
 usr/lib/i386-linux-gnu/libgnutls-deb0.so.28		    libgnutls-deb0-28
 usr/lib/i386-linux-gnu/libgnutls-deb0.so.28.41.0	    libgnutls-deb0-28
 usr/lib/i386-linux-gnu/libgnutls-extra.so.26		    libgnutls26
@@ -1348,6 +1352,8 @@ usr/lib/i386-linux-gnu/libhunspell-1.3.so.0		    libhunspell-1.3-0
 usr/lib/i386-linux-gnu/libhunspell-1.3.so.0.0.0		    libhunspell-1.3-0
 usr/lib/i386-linux-gnu/libjpeg.so.8			    libjpeg8
 usr/lib/i386-linux-gnu/libjpeg.so.8.4.0			    libjpeg8
+usr/lib/i386-linux-gnu/libmac.so.2			    libmac2
+usr/lib/i386-linux-gnu/libmac.so.2.0.0			    libmac2
 usr/lib/i386-linux-gnu/libnettle.so.4			    libnettle4
 usr/lib/i386-linux-gnu/libnettle.so.4.7			    libnettle4
 usr/lib/i386-linux-gnu/libnl.so.1			    libnl1
@@ -6244,6 +6250,9 @@ usr/share/doc/epdfview/README.Debian			    epdfview
 usr/share/doc/epdfview/THANKS				    epdfview
 usr/share/doc/epdfview/changelog.Debian.gz		    epdfview
 usr/share/doc/epdfview/copyright			    epdfview
+usr/share/doc/fdkaac/changelog.Debian.gz		    fdkaac
+usr/share/doc/fdkaac/changelog.gz			    fdkaac
+usr/share/doc/fdkaac/copyright				    fdkaac
 usr/share/doc/findnrun/CREDITS.md			    findnrun
 usr/share/doc/findnrun/LICENSE.md			    findnrun
 usr/share/doc/findnrun/LUBUNTU.md			    findnrun
@@ -6276,6 +6285,9 @@ usr/share/doc/jwm/todo.txt.gz				    jwm
 usr/share/doc/libdconf0/NEWS.gz				    libdconf0
 usr/share/doc/libdconf0/changelog.Debian.gz		    libdconf0
 usr/share/doc/libdconf0/copyright			    libdconf0
+usr/share/doc/libfdk-aac2/changelog.Debian.gz		    libfdk-aac2
+usr/share/doc/libfdk-aac2/changelog.gz			    libfdk-aac2
+usr/share/doc/libfdk-aac2/copyright			    libfdk-aac2
 usr/share/doc/libgnutls-deb0-28/AUTHORS			    libgnutls-deb0-28
 usr/share/doc/libgnutls-deb0-28/NEWS.Debian.gz		    libgnutls-deb0-28
 usr/share/doc/libgnutls-deb0-28/NEWS.gz			    libgnutls-deb0-28
@@ -6301,6 +6313,13 @@ usr/share/doc/libjpeg8/README.gz			    libjpeg8
 usr/share/doc/libjpeg8/changelog.Debian.gz		    libjpeg8
 usr/share/doc/libjpeg8/changelog.gz			    libjpeg8
 usr/share/doc/libjpeg8/copyright			    libjpeg8
+usr/share/doc/libmac2/AUTHORS				    libmac2
+usr/share/doc/libmac2/NEWS.gz				    libmac2
+usr/share/doc/libmac2/README				    libmac2
+usr/share/doc/libmac2/TODO				    libmac2
+usr/share/doc/libmac2/changelog.Debian.gz		    libmac2
+usr/share/doc/libmac2/changelog.gz			    libmac2
+usr/share/doc/libmac2/copyright				    libmac2
 usr/share/doc/libmusicbrainz3-6/AUTHORS.txt		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/NEWS.txt.gz		    libmusicbrainz3-6
 usr/share/doc/libmusicbrainz3-6/README.txt		    libmusicbrainz3-6
@@ -6373,6 +6392,13 @@ usr/share/doc/lumina/ROADMAP				    lumina-desktop-debdog
 usr/share/doc/madedit/changelog.Debian.gz		    madedit
 usr/share/doc/madedit/changelog.gz			    madedit
 usr/share/doc/madedit/copyright				    madedit
+usr/share/doc/monkeys-audio/AUTHORS			    monkeys-audio
+usr/share/doc/monkeys-audio/NEWS.gz			    monkeys-audio
+usr/share/doc/monkeys-audio/README			    monkeys-audio
+usr/share/doc/monkeys-audio/TODO			    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.Debian.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/changelog.gz		    monkeys-audio
+usr/share/doc/monkeys-audio/copyright			    monkeys-audio
 usr/share/doc/mount/README.mount			    mount
 usr/share/doc/mount/changelog.Debian.gz			    mount
 usr/share/doc/mount/changelog.gz			    mount
@@ -9639,6 +9665,7 @@ usr/share/man/man1/dpkg-trigger.1.gz			    dpkg
 usr/share/man/man1/dpkg.1.gz				    dpkg
 usr/share/man/man1/emelfm2.1				    emelfm2
 usr/share/man/man1/epdfview.1.gz			    epdfview
+usr/share/man/man1/fdkaac.1.gz				    fdkaac
 usr/share/man/man1/firefox-esr.1.gz			    firefox-esr
 usr/share/man/man1/httpfs2.1.gz				    httpfs2
 usr/share/man/man1/iceauth.1.gz				    x11-xserver-utils
