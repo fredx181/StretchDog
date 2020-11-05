@@ -5821,6 +5821,29 @@ SHA256: dc9a625ca61602b9ae37d98a4e238476bf79c02c2808d01ce688b750f7864b3c
 SHA512: 04ad1f5294cb25acf0884c96d1920d26cf933d8b158d9582ae218f916ff33aad3cb38322ba43f138165fa3c73c5e4c298336e33d0733f463d557aff081bccc79
 Description: Dancing Letters Generator (forum and HTML)
 
+Package: youtube-get2
+Architecture: all
+Version: 0.2.1
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get
+Filename: ./Extra/youtube-get2_0.2.1_all.deb
+Size: 1704144
+MD5sum: 57937cfd4a51587be3378c2c68b9821b
+SHA1: 88100cb37608cc618474dfcb4f103d7fb78a102c
+SHA256: ef65fd9897f1ec1ee2ad13d6f044fb6568969bbf8f5b0de6e71bced5ffab10e2
+SHA512: f2e41435e941590f657f2bf91dfa07f8f1d08986f80ffe8e6a430f123a852d2422045fa7ede71833186c2e6126cc820d969a4d49fc17ffa361632ca6353f8fbf
+Description: YouTube Downloader, frontend for youtube-dl
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - v0.2.1 Speedup waiting time for downloads to be started
+
 Package: peasyprint
 Architecture: all
 Version: 4.2
@@ -7557,6 +7580,33 @@ Description: shared files for other gFTP packages
    * stop button, and many more features.
  .
   Author:   Brian Masney <masneyb@gftp.org>
+
+Package: youtube-get3
+Architecture: all
+Version: 1.3.0
+Maintainer: fredx181
+Installed-Size: 938
+Depends: libc6, yad, sed, wget, python, gsu | gksu, curl
+Recommends: locales
+Replaces: youtube-get, youtube-get2
+Filename: ./Extra/youtube-get3_1.3.0_all.deb
+Size: 1732404
+MD5sum: 237cb624f8f7c8c1252ed2d56e727a15
+SHA1: fb7b1c898befa33c11196d18007f8cfdfcbe5535
+SHA256: 26df1d5800494b9b8d21abbf310dbe22044928b34926ce1b7bd6faa514f7ea74
+SHA512: 85bbda411df84c7c61113d54a75cf836d2eb40872d965567f9ae11a2d20b2c20aa95a5f3961a813d4aae8b50e027e824877a1970a841e811ad7619674592ea57
+Description: YouTube Downloader, frontend for youtube-dlc
+ A Youtube update broke the search function of previous versions; fixed in this version.
+ - A shell script (bash) with yad as GUI for youtube-dl
+ - Options to enter url(s), playlist, username and to do a search:
+ - Gives choice which quality to download, e.g. 360p or 720p, Audio streams, etc...
+ - Extra addition: m-play script + menu entry for playing YouTube url with mplayer or mpv
+ - Download from Playlist supports channel download also now (version 0.1.8)
+ - Search option improved, compared to youtube-get2
+ - Bugfix, different method used to build lists
+ - v 1.3.0:
+ - Speedup drasticly the waiting time for downloads to be started.
+ - Added 'Update youtube-dlc' button
 
 Package: sound-card-selector
 Architecture: all

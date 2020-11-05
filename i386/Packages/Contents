@@ -2209,9 +2209,11 @@ usr/local/bin/yad-splash				    yad-splash
 usr/local/bin/yalarm					    yalarm
 usr/local/bin/yassm					    yassm
 usr/local/bin/youtube-dl				    youtube-get2
+usr/local/bin/youtube-dlc				    youtube-get3
 usr/local/bin/youtube-get				    youtube-get
 usr/local/bin/youtube-get-xterm				    youtube-get
 usr/local/bin/youtube-get2				    youtube-get2
+usr/local/bin/youtube-get3				    youtube-get3
 usr/local/bin/yradio					    yradio
 usr/local/bin/zenity					    zenity-portable
 usr/local/conky-clock/Analog_clock/choice.sh		    conkyclock
@@ -5096,6 +5098,15 @@ usr/local/youtube-get2/icons/yt-playlist.pngg		    youtube-get2
 usr/local/youtube-get2/icons/yt-search.png		    youtube-get2
 usr/local/youtube-get2/icons/yt-url.png			    youtube-get2
 usr/local/youtube-get2/icons/yt-user.png		    youtube-get2
+usr/local/youtube-get3/1url.desktop			    youtube-get3
+usr/local/youtube-get3/2playlist.desktop		    youtube-get3
+usr/local/youtube-get3/3ytuser.desktop			    youtube-get3
+usr/local/youtube-get3/4search.desktop			    youtube-get3
+usr/local/youtube-get3/icons/yt-playlist.png		    youtube-get3
+usr/local/youtube-get3/icons/yt-playlist.pngg		    youtube-get3
+usr/local/youtube-get3/icons/yt-search.png		    youtube-get3
+usr/local/youtube-get3/icons/yt-url.png			    youtube-get3
+usr/local/youtube-get3/icons/yt-user.png		    youtube-get3
 usr/local/yradio/icons/edit.png				    yradio
 usr/local/yradio/icons/fav.png				    yradio
 usr/local/yradio/icons/gtk-help.png			    yradio
@@ -5781,6 +5792,7 @@ usr/share/applications/YRadio.desktop			    yradio
 usr/share/applications/Yalarm Alarm scheduler.desktop	    yalarm
 usr/share/applications/YouTube-Get.desktop		    youtube-get
 usr/share/applications/YouTube-Get2.desktop		    youtube-get2
+usr/share/applications/YouTube-Get3.desktop		    youtube-get3
 usr/share/applications/abiword-portable.desktop		    abiword-portable
 usr/share/applications/apt2sfs-fullinst.desktop		    apt2sfs
 usr/share/applications/apt2sfs.desktop			    apt2sfs
@@ -10075,7 +10087,7 @@ usr/share/pixmaps/dirs.png				    jwm-setup,jwmconf
 usr/share/pixmaps/disc.png				    mount-wizard
 usr/share/pixmaps/disc2.png				    mount-wizard-2
 usr/share/pixmaps/djvu2.png				    pdf-to-djvu
-usr/share/pixmaps/dload.png				    youtube-get2
+usr/share/pixmaps/dload.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/dmmediaconverter.png			    dmmediaconverter
 usr/share/pixmaps/dog-control.png			    dog-control-center
 usr/share/pixmaps/drive.png				    mount-wizard
@@ -10224,13 +10236,13 @@ usr/share/pixmaps/gifenc.png				    gifenc
 usr/share/pixmaps/gifencc.png				    gifenc
 usr/share/pixmaps/gnetcat.png				    gnetcat
 usr/share/pixmaps/gnibbles.png				    grub4dosconfig
-usr/share/pixmaps/go-next.png				    youtube-get2
-usr/share/pixmaps/go-previous.png			    youtube-get2
+usr/share/pixmaps/go-next.png				    youtube-get2,youtube-get3
+usr/share/pixmaps/go-previous.png			    youtube-get2,youtube-get3
 usr/share/pixmaps/google-drive-128.png			    googledrivegui,googledrivegui2
 usr/share/pixmaps/gtk-about.png				    sns
-usr/share/pixmaps/gtk-go-back.png			    youtube-get2
-usr/share/pixmaps/gtk-go-forward.png			    youtube-get2
-usr/share/pixmaps/gtk-info.png				    youtube-get2
+usr/share/pixmaps/gtk-go-back.png			    youtube-get2,youtube-get3
+usr/share/pixmaps/gtk-go-forward.png			    youtube-get2,youtube-get3
+usr/share/pixmaps/gtk-info.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/gtk-network.png			    sns
 usr/share/pixmaps/gtk-youtube-viewer.png		    youtube-viewer,straw-viewer
 usr/share/pixmaps/help-about.png			    sns
@@ -10271,7 +10283,7 @@ usr/share/pixmaps/mkinitrd2.png				    upgrade-kernel2
 usr/share/pixmaps/mkiso.png				    quick-remaster
 usr/share/pixmaps/mmview.png				    mm-view
 usr/share/pixmaps/mp3-ogg-wav-converter.png		    mp3-ogg-wav-converter
-usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get
+usr/share/pixmaps/mplayer.png				    youtube-get2,youtube-get3,youtube-get
 usr/share/pixmaps/mpv.png				    mpv
 usr/share/pixmaps/network-workgroup.png			    sns
 usr/share/pixmaps/notecase.xpm				    notecase-portable
@@ -10414,10 +10426,10 @@ usr/share/pixmaps/xterm_48x48.xpm			    xterm
 usr/share/pixmaps/xvidcap.png				    xvidcap
 usr/share/pixmaps/yassm.png				    yassm,yassm-smbclient-mpscan
 usr/share/pixmaps/youtube.svg				    youtube-viewer,straw-viewer
-usr/share/pixmaps/yt.png				    youtube-get2
+usr/share/pixmaps/yt.png				    youtube-get2,youtube-get3
 usr/share/pixmaps/ytb.png				    youtube-get
-usr/share/pixmaps/ytt.png				    youtube-get2,youtube-get
-usr/share/pixmaps/yyt.png				    youtube-get2
+usr/share/pixmaps/ytt.png				    youtube-get2,youtube-get3,youtube-get
+usr/share/pixmaps/yyt.png				    youtube-get2,youtube-get3
 usr/share/pkgconfig/adwaita-icon-theme.pc		    adwaita-icon-theme
 usr/share/polkit-1/actions/org.xfce.thunar.policy	    thunar
 usr/share/pyshared/PIL.pth				    img2pdf-old
