@@ -820,11 +820,11 @@ Maintainer: fredx181 dog@root.nl
 Installed-Size: 336
 Depends: libc6, yad, coreutils, menu, squashfs-tools, mount, sed, xterm, rsync, dpkg, findutils, procps, gsu | gksu, xorriso, isolinux
 Filename: ./Included/quick-remaster_1.2.6_all.deb
-Size: 159512
-MD5sum: 03fb3c65fa9a829b0972e25177cde993
-SHA1: cbe0551f655185e367bad1ff7f069ae7df135d22
-SHA256: 41e6653d0394f6cca4536395d38fb990eebaf0333b9e41cd7e50430816ce9bcb
-SHA512: 1618d7db2296699b0d2ee1e3b682bbacb2f63093b0f845653de9a319332a62a79d6302553b3d262ab44852016c6cec2c744b34e0027cb2a43d1c8762b0a45086
+Size: 159518
+MD5sum: 55f163c71924ef9cad79180955401aad
+SHA1: 94402b65c824d5663fb0f2db1d7e34a596b905ed
+SHA256: 9aed8b583f48caf3a448631211b3afb632fa4ac326cb90900c43f373d347d78f
+SHA512: 6bcbc7870d7028d0ef814a5f2d705ceec9e7159bfc5774c9b4c2115a45d56966eae8ebbecae4121e51a0517b4ff94644bccb37b65615efdc820a22d7dd17c0c5
 Description: Warning - This package works only in DebianDog booted with porteus boot-style!.
  Included GUI version using yad: quick-remastergui
  Bug fix: gz compression option not working in previous version 1.0.3
